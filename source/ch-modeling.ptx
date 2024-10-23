@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-modeling" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Mathematical Models</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-modeling-overview.ptx" />
+  <xi:include href="sec-modeling-linear.ptx" />
+  <xi:include href="sec-modeling-overview.ptx"/>
+</chapter>
