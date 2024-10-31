@@ -39,8 +39,7 @@
         is closed. 
       </p>
       <image source="images/How_Credit_Cards_Work.png">
-        <shortdescription>Diagram showing three monthly payments. 1. Beginning of first month: Open an account and start using the card. 2. Beginning of second month: first monthly billing statement issued: all transactions from first month and annual fee if any. 3. Near the end of second month: first montly bill due; pay any amount between the minimum payment and full statement balance. 4. Beginning of third month: second monthly billing statement issued: all transactions applied during second month, unpaid balance carried over from first month, if any, and finance charge on first month's balance, if any. 5. Near the end of third month: second monthly payment due; pay any amount between the minimum payment and the full balance. 6. After end of third month: Third monthly billing statement issued: all transactions applied during second month, unpaid balance carried over from previous months, if any, and finance charge on second month's balance, if any.
-   </shortdescription>
+        <shortdescription>Three monthly payments are diagramed, showing the monthly billing statement generated at the end of each monthly cycle and due 21-25 days into the subsequent cycle. Each bill includes the total spending from the current month, any remaining unpaid balance from the previous month, and a finance charge on the previous month.</shortdescription>
    <caption>Diagram of three monthly billing cycles of a credit card.</caption>
       </image>
       <p>
