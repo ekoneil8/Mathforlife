@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-finance-credit-cards" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Credit Cards</title>
+
+  <p>Credit cards are a common source of debt. The Federal Reserve Bank reported that in the second quarter of 2024, Americans 
+    owed $1.14 trillion in credit card debt, which is an average of about $4,400 per adult. In this section, we will investigate 
+    how credit cards work with the goal of empowering readers to make educated financial decisions about these accounts.</p>
+    <objectives>
+      <introduction>
+        <p>
+          Students will be able to:
+        </p>
+      </introduction>>
+      <ul>
+        <li>
+          <p>
+            Find rates and fees in the "fine print" of credit card agreements.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate credit card finance charges using the ending balance method and the average daily balance method.
+          </p>
+        </li>
+        <li>
+          <p>
+            Something about making good decisions or recommendations about which credit card a consumer should select based on the terms and the individual's buying habits and level of self control.
+          </p>
+        </li>
+      </ul>
+    </objectives>
+    <subsection>
+      <title>What is a Credit Card?</title>
+      <p>
+        Credit cards are a form of revolving debt. With most loans, such as mortgages or car loans, the money is borrowed all at 
+        once and paid back with interest over time. With credit cards, borrowers use the card to make purchases, and they pay back 
+        some or all of the amount borrowed each month, and this cycle of borrowing and making payments continues until the account 
+        is closed. 
+      </p>
+      <image source="images/How_Credit_Cards_Work.png">
+        <shortdescription>Diagram showing three monthly payments. 1. Beginning of first month: Open an account and start using the card. 2. Beginning of second month: first monthly billing statement issued: all transactions from first month and annual fee if any. 3. Near the end of second month: first montly bill due; pay any amount between the minimum payment and full statement balance. 4. Beginning of third month: second monthly billing statement issued: all transactions applied during second month, unpaid balance carried over from first month, if any, and finance charge on first month's balance, if any. 5. Near the end of third month: second monthly payment due; pay any amount between the minimum payment and the full balance. 6. After end of third month: Third monthly billing statement issued: all transactions applied during second month, unpaid balance carried over from previous months, if any, and finance charge on second month's balance, if any.
+   </shortdescription>
+   <caption>Diagram of three monthly billing cycles of a credit card.</caption>
+      </image>
+      <p>
+        Credit card accounts are unique in that if the borrower pays the entire statement balance each month, there is no interest 
+        charged on purchases made using the card.  Further, many cards offer rewards to the consumer in the form of cash back, 
+        points or miles in rewards programs, or even reducing the balance of a home loan! On the other hand, the if the borrower is 
+        unable to pay the entire statement balance each month, they begin to accrue finance charges, which are calculated using the 
+        simple interest formula. The interest rates on credit card accounts tend to be significantly higher than those for other 
+        types of loans, so borrowers can find themselves amassing a large amount of debt quite quickly. 
+      </p>
+    </subsection> 
+      
+   <subsection> 
+  <title>Credit Card Agreements: Reading the Fine Print</title>
+  <p>
+    A credit card agreement describes the policies and rates which apply to the account. It should contain a table summarizing the interest rates and fees. An example is provided below.
+  </p>
+  <p>
+    <image source="images/Credit_card_rates_table.png">
+     
+    </image>
+  </p>
+</subsection>
+</section>

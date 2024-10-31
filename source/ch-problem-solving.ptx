@@ -4,10 +4,30 @@
   <title>Problem Solving</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p>
+        The goal of mathematics education is to develop problem-solving skills. However, most students in mathematics courses 
+        spend the majority of their time working through practice exercises. What is the difference?    
+    </p>
+    <p>
+        When working on a <term>problem</term>, you probably don't know at first how to approach solving it. You don't know what mathematical 
+        tools might be applied in finding a solution. Part of solving a problem is understanding what is being asked, and figuring out 
+        what a solution should look like. Solving a problem often involves false starts, making mistakes, and lots of scratch paper!
+         The best way to get better at solving problems is to solve problems!
+    </p>
+    <p>
+		When working an <term>exercise</term>, you are practicing a skill.  You may have seen a teacher demonstrate a technique, or you may 
+		have read a worked example in the book. You then practice on very similar assignments, with the goal of mastering 
+		that skill. Mastering skills is like adding tools to your toolbox for solving problems. 
+	</p>
+  <p>
+    This chapter demonstrates tools for working with percents and proportional reasoning and provides a general framework for an approach 
+    to solving new problems. It provides
+  </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-problemsolving-ratio-proportion.ptx" />
+ 
   <xi:include href="sec-problemsolving-percents.ptx" />
+  <xi:include href="sec-problemsolving-proportion.ptx" />
+  <xi:include href="sec-problemsolving-strategies.ptx" />
 </chapter>

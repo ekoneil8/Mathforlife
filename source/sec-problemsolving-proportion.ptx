@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Proportional Reasoning</title>
+
+  <objectives>
+    <introduction>
+      <p>
+        Students will be able to:
+      </p>
+    </introduction>
+    <ul>
+            <li>
+        <p>
+          Solve problems that involve percents, rates and/or proportions.
+        </p>
+      </li>
+      <li>
+        <p>
+          Solve problems that involve unit conversions.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+  
+  
+  <subsection>
+    <title>Solving Problems with Unit Conversions</title>
+  
+    <p>
+      Many situations also require unit conversions. Here are some common conversion rates used.
+    </p>
+    <assemblage>
+      <title>Unit Conversions for Length</title>
+      <sidebyside>
+        <stack>
+          <p>
+            1 foot (ft) = 12 inches (in)
+          </p>
+          <p>
+            1 mile (mi) = 5,280 feet (ft)
+          </p>
+          <p>
+            1000 millimeters (mm) = 1 meter (m)
+          </p>
+          <p>
+            1000 meters (m) = 1 kilometer (km)
+          </p>
+        </stack>
+        <stack>
+          <p>
+            1 yard (yd) = 3 feet (ft)
+          </p>
+          <p>
+            2.54 centimeters (cm) = 1 inch (in)
+          </p>
+          <p>
+            100 centimeters (cm) = 1 meter (m)
+          </p>
+        </stack>
+      </sidebyside>
+    </assemblage>
+    <assemblage>
+      <title>Unit Conversions for Weight and Mass</title>
+      <sidebyside>
+        <stack>
+          <p>
+            1 pound (lb) = 16 ounces (oz)
+          </p>
+          <p>
+            1000 millgrams (mg) = 1 gram (g)
+          </p>
+        </stack>
+        <stack>
+          <p>
+            1 US ton = 2000 pounds (lbs)
+          </p>
+          <p>
+            1000 grams (g) = 1 kilogram (kg)
+          </p>
+        </stack>
+      </sidebyside>
+          <p>
+            1 kilogram (kg) <m>\approx</m> 2.2 pounds (lbs) in Earth's gravity
+          </p>
+    </assemblage>
+    <assemblage>
+      <title>Unit Conversions for Volume and Capacity</title>
+      <sidebyside>
+        <stack>
+          <p>
+            1 gallon (gal) = 4 quarts (qt)
+          </p>
+          <p>
+            1 quart (qt) = 2 pints (pt)
+          </p>
+          <p>
+            1 pint (pt) = 2 cups (c)
+          </p>
+          <p>
+            1000 milliliters (ml) = 1 liter (L)
+          </p>
+        </stack>
+        <stack>
+          <p>
+            1 cup (c) = 8 fluid ounces (fl oz)
+          </p>
+          <p>
+            1 cup (c) = 16 Tablespoons (T)
+          </p>
+          <p>
+            1 Tablespoon (T) = 3 Teaspoons (t)
+          </p>
+        </stack>
+      </sidebyside>
+      <p>
+        Note: Fluid ounces are a capacity measurement for liquids. 1 fluid ounce weighs about 1 ounce for water only.
+      </p>
+    </assemblage>
+    <p>
+      Unit conversions use rates so we will be multiplying or dividing. We can use our number sense to determine which operation to use, or we can line up the units to help us. Here we will line up the units to show you how. This is called <term>dimensional analysis</term>. Each conversion factor can be written two ways. For example, since 1 pint is equal to 2 cups, both of these fractions are equal to 1.
+      <me>\frac{1\text{ pint}}{2\text{ cups}}=\frac{2\text{ cups}}{1\text{ pint}}=1</me>
+      We can multiply by either one of these by lining up the units we want to cancel out. Because the rate is equal to 1, the value stays equivalent in the new units. Let's look at an example.
+    </p>
+    <example>
+      <statement>
+      <p>
+        Your dog was stung by a bee and your veterinarian recommended you give them Benedryl. The dosage is 2 milligrams per kilogram of body weight and you want to double check the dose. Your dog weighs 54 pounds and the tablets are 25 mg each. How many tablets should you give your dog?
+      </p>
+      </statement>
+      <solution>
+        <p>
+          First we will convert the pounds to kilograms by setting up the pounds to cancel out.
+          <me>54\,\cancel{\mathrm{ pounds}}\cdot\frac{1\text{ kilogram}}{2.2\,\cancel{\mathrm{ pounds}}}\approx 24.55\text{ kilograms}</me>
+          Then we multiply that by the dosage, setting up the kilograms to cancel.
+          <me>24.55\,\cancel{\mathrm{ kilograms}}\cdot\frac{2\text{ milligrams}}{1\,\cancel{\mathrm{ kilogram}}}\approx 49.1\text{ milligrams}</me>
+        </p>
+        <p>
+          Or we can also do this in one step
+          <me>54\,\cancel{\mathrm{ pounds}}\cdot\frac{1\,\cancel{\mathrm{ kilogram}}}{2.2\,\cancel{\mathrm{ pounds}}}\cdot\frac{2\text{ milligrams}}{1\,\cancel{\mathrm{ kilogram}}}\approx 49.1\text{ milligrams}</me>
+        </p>You should give your dog about 49.1 milligrams. Since the tablets are 25 mg each, we will divide 49.1 mg by 25 mg.
+        <me>\frac{49.1\,\cancel{\mathrm{ mg}}}{25\,\cancel{\mathrm{ mg}}}\approx 1.96\text{ tablets}</me>
+        Check with your vet to make sure it's within an acceptable range, but it looks like you should give your dog 2 tablets. There are also liquid forms of medication to avoid giving partial tablets.
+      </solution>
+    </example>
+  </subsection>
+  
+  <subsection>
+    <title>Solving Problems with Geometry</title>
+  
+    <p>
+      If there are geometric shapes in a problem we may need to look up some formulas. Here are a few of the most common.
+    </p>
+    <assemblage>
+      <title>Perimeter and Area</title>
+      <sidebyside>
+        <stack>
+          <p>
+            <term>Rectangle</term>
+          </p>
+          <p>
+            Perimeter = <m>2L + 2W\text{ units}</m>
+          </p>
+          <p>
+            Area = <m>L\cdot W\text{ units}^2</m>
+          </p>
+        </stack>
+        <stack>
+          <p>
+            <term>Circle</term>
+          </p>
+          <p>
+            Circumference = <m>2\pi r\text{ units}</m>
+          </p>
+          <p>
+            Area = <m>\pi r^2\text{ units}^2</m>
+          </p>
+        </stack>
+      </sidebyside>
+      <!-- todo: try to fix the centering in the columns to look better in pdf-->
+      <sidebyside widths="30% 18%" margins="0% 30%">
+        <p>
+          <image source="images/language_logic_rules/problem_solving/rectangle.png">
+            <shortdescription>A rectangle with the width labeled W and the length labeled L.</shortdescription>
+          </image>
+        </p>
+        <p>
+          <image source="images/language_logic_rules/problem_solving/circle.png">
+            <shortdescription>A circle with the radius labeled r.</shortdescription>
+          </image>
+        </p>
+      </sidebyside>
+    </assemblage>
+    <assemblage>
+      <title>Volume</title>
+      <sidebyside>
+        <stack>
+          <p>
+            <term>Rectangular Box</term>
+          </p>
+          <p>
+            Volume = <m>L\cdot W\cdot H\text{ units}^3</m>
+          </p>
+        </stack>
+        <stack>
+          <p>
+            <term>Cylinder</term>
+          </p>
+          <p>
+            Volume = <m>\pi r^2 H\text{ units}^3</m>
+          </p>
+        </stack>
+      </sidebyside>
+      <!-- todo: try to fix the centering in the columns to look better in pdf-->
+      <sidebyside widths="26% 20%" margins="0% 30%">
+        <p>
+        <image source="images/language_logic_rules/problem_solving/rectangular_box.png">
+            <shortdescription>A rectangular box with the width labeled W, length labeled L, and height labeled H</shortdescription>
+        </image>
+        </p>
+        <p>
+        <image source="images/language_logic_rules/problem_solving/cylinder.png">
+            <shortdescription>A cylinder with the radius labeled r and height labeled H</shortdescription>
+            </image>
+          </p>
+      </sidebyside>
+    </assemblage>
+  
+    <example>
+      <statement>
+      <p>
+        You need to replace the boards on your deck and you'd like to do it yourself to save money. You want to estimate how much you will need to save up for the wood.
+      </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>Step 1:</alert> We want to know how much the wood for the deck will cost. In building and construction, estimates usually add 10% for parts of boards that don't get used so we will do that as well.
+        </p>
+        <p>
+          <alert>Step 2:</alert> We need to know the size and shape of the deck, the type of boards and cost per board. You measure your deck and it's a 16-foot by 24-foot rectangle. Looking up prices online, you find 5<solidus/>4-inch by 4-inch by 8-foot cedar deck boards for $11.99 each. We will estimate the cost of the wood to be in the thousands of dollars, possibly about $1000-3000.
+        </p>
+        <p>
+          <alert>Step 3:</alert> There are a few approaches we could take to this problem: 1) Go out to your deck and count the boards, 2) calculate the number of boards you will need using the area of the deck, or 3) calculate the area of the deck and find the approximate cost per square foot for deck boards.
+        </p>
+        <p>
+          <alert>Step 4:</alert> Option 3 seems like the most efficient approach so we will try that. The area of the deck is <me>16\text{ feet} \cdot 24\text{ feet} = 384\text{ feet}^2</me>
+        </p>
+        <p>
+          To find the cost per square foot for decking boards, we could compute the area of the top of a single board, and then divide the cost by the area. Since the width of a board is 4 inches we also need to convert that into feet. So the area of a single board is
+        </p>
+        <p>
+          <me>8\text{ feet}\cdot\left(4\,\cancel{\mathrm{ inches}}\cdot\frac{1\text{ foot}}{12\,\cancel{\mathrm{ inches}}}\right)=2.667\text{ ft}^2</me>
+            The cost per square foot of one board is
+            <me>\frac{\$11.99}{2.667\text{ ft}^2}\approx \$4.4957\text{ per square foot}</me>
+        </p>
+        <p>
+          This will allow us to estimate the material cost for the whole deck by multiplying
+          <me>384\,\cancel{\mathrm{ feet}^2}\cdot\frac{\$4.4957}{\cancel{\mathrm{ feet}^2}}\approx\$1{,}726.35</me>
+          </p>
+          <p>
+          Then we will add 10% to the cost. We can calculate the 10% and then add, or multiply by 1.10.
+          <me>\$1{,}726.35(1.10)\approx \$1{,}898.99</me>
+          <alert>Step 5:</alert> This answer is reasonable and fits with our original estimate. You should save up or set aside about $1900 for this project. This is just the cost of the wood and doesn't include nails, screws or any foundation materials.
+        </p>
+        <p>
+          For confirmation with a second method, we could use option 2. If we divide the deck area by the board area that should tell us approximately how many boards we need. This calculation would also be necessary when you go to make the purchase. We divide
+          <me>\frac{384\,\cancel{\mathrm{ feet}^2}}{2.667\,\cancel{\mathrm{ feet}^2}}=143.98\text{ boards}</me>
+        </p>
+        <p>Then adding 10% to that will tell us how many boards to buy.
+        <me>143.98(1.10)\approx 158.389\text{ boards}</me>
+        If you round up to 159 boards the cost will be
+        <me>159(\$11.99)\approx \$1{,}906.41</me>
+        This cost is very close to our other method but slightly higher because we are taking full boards into consideration. Using two methods we can say you should save about $1,900-2,000 for the wood decking.
+      </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          You are making many pizzas for a large party. Your favorite recipe makes 20 ounces of dough for two 12-inch diameter pizzas. You want the pizzas to be larger for the party so you plan to make six 16-inch pizzas. How much dough do you need and by what factor should you multiply or scale the recipe?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <alert>Step 1:</alert> We want to find out how much dough is needed in total and how to scale the recipe. For this context we need to consider how the weight of the dough will scale. The weight is based on the volume of the dough, but the size is based on just the top or bottom of the pizza. Since this is your favorite dough, we assume the thickness of the crust should be the same.
+        </p>
+        <p>
+          <alert>Step 2:</alert> To estimate a reasonable answer we will switch to pounds because we have more number sense with pounds.
+          <me>20\,\cancel{\mathrm{ ounces}}\cdot\frac{1\text{ pound}}{16\,\cancel{\mathrm{ ounces}}}=1.25\text{ pounds}</me>
+          Twenty ounces is 1.25 pounds, so with three times as many pizzas that are larger in diameter, we will estimate around 4-6 pounds of pizza dough. Converting back, we multiply by 16 and that would be 64 to 96 ounces.
+        </p>
+        <p>
+          <alert>Step 3:</alert> We will try finding the area of each size pizza and see if that helps us scale the recipe.
+        </p>
+        <p>
+          <alert>Step 4:</alert> The formula for the area of a circle uses the radius, so we need to divide each diameter by 2 to get the radius. Using the formula for the area of a circle we have
+          <me>\text{Area of a 12-inch pizza }=\pi(6)^2\approx 113\text{ inches}^2</me>
+          <me>\text{Area of a 16-inch pizza }=\pi(8)^2\approx 201\text{ inches}^2</me>
+          Since the pizzas will have the same thickness, we can scale based on the areas and divide to get the scaling factor.
+        </p>
+        <p>
+          <me>\frac{201\,\cancel{\mathrm{ inches}^2}}{113\,\cancel{\mathrm{ inches}^2}}= 1.78\text{ times}</me>
+          The area of the larger pizza is 1.78 times the smaller pizza and we need three times as many pizzas, so we would scale the recipe by
+          <me>1.78\cdot3 = 5.34\text{ or about } 5 \frac{1}{3}\text{ times}</me>
+          Then to find out how much dough that will make, we need to multiply that by 20 ounces.
+          <me>5 \frac{1}{3}(20\text{ ounces})\approx 106.67 \text{ ounces}</me>
+        </p>
+        <p>
+          <alert>Step 5:</alert> We got a scale factor of 5<nbsp/>1<solidus/>3 times for our recipe which would make 106.67 ounces of dough. This is a little higher than our estimate, but we didn't take into account that we are scaling the length and width of a pizza, so our answer seems reasonable.
+        </p>
+        <!-- cancel\highlight or highlignt\cancel? -->
+        <p>
+           To verify our solution by using another method, we can set up a proportion to scale the dough. For the original recipe for 2 pizzas we have
+           <md>
+             <mrow>\frac{x\text{ ounces}}{201\text{ inches}^2}\amp=\frac{20\text{ ounces}}{113\text{ inches}^2}</mrow>
+             <mrow>\cancel{\highlight{201\,\mathrm{ inches}^2}}\cdot\frac{x\text{ ounces}}{\cancel{201\,\mathrm{ inches}^2}}\amp=\highlight{201\text{ inches}^2}\cdot\frac{20\text{ ounces}}{113\text{ inches}^2}</mrow>
+             <mrow>x\amp=\frac{201\,\cancel{\mathrm{ inches}^2}\cdot{20\text{ ounces}}}{113\,\cancel{\mathrm{ inches}^2}}</mrow>
+             <mrow>\amp\approx35.575\text{ ounces}</mrow>
+           </md>
+             We need about 35.575 ounces of dough for two 16-inch pizzas. Now we multipy that by 3 to get the amount needed for six 16-inch pizzas.
+             <me>35.575(3)=106.73\text{ ounces}</me>
+             This is very close to what we got for our first method. To scale the recipe we would use the ratio
+             <me>\frac{106.73\,\cancel{\mathrm{ ounces}}}{20\,\cancel{\mathrm{ ounces}}}\approx 5.34 \text{ times}</me>
+        </p>
+        <p>
+          It is interesting to note that while the diameter is 1.33 times as large, the dough required, which scales with area, is <m>(1.33)^2</m> = 1.78 times as large for each pizza.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  
+  
+  <title>Exercises</title>
+ 
+      
+  </section>

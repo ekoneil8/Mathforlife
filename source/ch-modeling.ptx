@@ -9,6 +9,9 @@
 
   <!-- include sections -->
   <xi:include href="sec-modeling-overview.ptx" />
-  <xi:include href="sec-modeling-linear.ptx" />
-  <xi:include href="sec-modeling-overview.ptx"/>
+  <xi:include href="sec-modeling-lines.ptx" />
+  <xi:include href="./sec-modeling-exponential.ptx" />
+  <xi:include href="./sec-modeling-logistic.ptx" />
+  <xi:include href="./sec-modeling-logarithms.ptx" />
+    
 </chapter>

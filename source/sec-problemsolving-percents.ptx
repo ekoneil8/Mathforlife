@@ -38,21 +38,25 @@
   <subsection>
     <title>Percents</title>
       <p>
-        If you went shopping and one shirt was $20 off and another shirt was $30 off it might be hard to tell which is the better value. What if they were 20% off and 30% off? Percentages can make quantities easier to compare.
+        If you went shopping and one shirt was $20 off and another shirt was $30 off it might be hard to tell which is the
+         better value. What if they were 20% off and 30% off? Percentages can make quantities easier to compare.
       </p>
       <p>
-        Percent, denoted by %, means “per 100,” or “parts per hundred.” In Spanish it's literally por ciento which means for one hundred. When we write 30% off, that means you save 30 out of every 100 dollars. We can write this percentage as the fraction <m>\frac{30}{100}</m>. When we divide 30 by 100, we get
+        Percent, denoted by %, means “per 100,” or “parts per hundred.” In Spanish it's literally por ciento which means
+         for one hundred. When we write 30% off, that means you save 30 out of every 100 dollars. We can write this 
+         percentage as the fraction <m>\frac{30}{100}</m>. When we divide 30 by 100, we get
         <me>\frac{30}{100}=0.30</me>
-        We can also say you would save 30 cents out of every dollar. Many equivalent fractions can be written that equal 30%. Notice that 60 out of 200 and 15 out of 50 are also 30%, since
+        We can also say you would save 30 cents out of every dollar. Many equivalent fractions can be written that equal 30%. 
+        Notice that 60 out of 200 and 15 out of 50 are also 30%, since
         <me>\frac{60}{200}=\frac{15}{50}=\frac{30}{100}=0.30</me>
       </p>
       <example>
         <p>
-          As an example, let's compare two shirts on sale and add some prices:
+          As an example, let's compare two jackets on sale and add some prices:
         </p>
         <sidebyside widths="40% 40%">
           <p>
-            Shirt 1:
+            Jacket 1:
             <ul marker = "disc">
               <li>
                 <p>
@@ -67,7 +71,7 @@
             </ul>
           </p>
           <p>
-            Shirt 2:
+            Jacket 2:
             <ul marker = "disc">
               <li>
                 <p>
@@ -83,15 +87,15 @@
           </p>
         </sidebyside>
           <p>
-            What is the sale price and sale percentage for each shirt? Which is the better buy?
+            What is the sale price and sale percentage for each jacket? Which is the better buy?
           </p>
           <sidebyside widths="40% 40%">
             <stack>
               <p>
-                Shirt 1:
+                Jacket 1:
               </p>
             <p>
-              For this shirt we have the dollar amount of the sale so we will subtract it from the original price.
+              For this jacket we have the dollar amount of the sale so we will subtract it from the original price.
             </p>
             <p>
               <me>\$80-\$20 = \$60</me>
@@ -101,7 +105,7 @@
               <me>\frac{\$20}{\$80} = 0.25</me>
             </p>
             <p>
-              This shirt is 25% off and the sale price is $60.
+              This jacket is 25% off and the sale price is $60.
             </p>
             </stack>
             <stack>
@@ -109,7 +113,8 @@
               Shirt 2:
             </p>
             <p>
-              For this shirt we know the percentage off so we need to find 30% of $100. We used a base of 100 so $30 off per $100 is $30.
+              For this jacket we know the percentage off so we need to find 30% of $100. We used a base of 100 so $30 off per $100 is 
+              $30.
             </p>
             <p>
               <m>30\% \text{ off of } \$100 \text{ is } \$30</m>
@@ -119,12 +124,14 @@
               <me>\$100-30 = \$70</me>
             </p>
             <p>
-              This shirt is 30% off and the sale price is $70.
+              This jacket is 30% off and the sale price is $70.
             </p>
             </stack>
           </sidebyside>
         <p>
-          Which shirt do you think is the better deal? You would save more with shirt 2, but shirt 1 is cheaper.
+          Which do you think is the better deal? You would save more with jacket 2, but jacket 1 is cheaper. If the jackets are 
+          similar in quality and desirability, jacket 1 would be a good choice. If jacket 2 is warmer, looks better on you, or offers better 
+          rain protection, you might consider whether it is worth spending an additional $10 to have a better jacket.
         </p>
       </example>
     </subsection>

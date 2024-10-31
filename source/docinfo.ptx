@@ -13,6 +13,7 @@
   <!-- The next three lines are likely for mature projects only: -->
 
   <!-- <brandlogo url="" source="images/cover.png"/> -->
+  <brandlogo url="https://www.olympic.edu" source="images/OC_Logo_Round_Red.png" />
   <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
   <!-- <document-id>unique-book-id</document-id> -->
 

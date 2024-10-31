@@ -39,7 +39,8 @@
     <!-- QR code image: set path to an image to put in center of QR codes -->
       <!-- <qrcode image="image.png" /> -->
   </common>
-
+  <exercise-inline hint="no" answer="no" solution="yes"/>
+  <exercise-divisional hint="no" answer="no" solution="no"/>
 
   <!-- Set where external assets and generated assets will be   -->
   <!-- stored or created.  Directories are relative to the main -->
@@ -109,6 +110,7 @@
   </latex>
 
   <html>
+    <knowl exercise-inline="no" example="no"/>
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->
     <!--<html short-answer-responses="always">-->
 

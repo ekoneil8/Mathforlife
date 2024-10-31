@@ -5,14 +5,16 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Mathematics in Society</title>
+    <subtitle>A work in Progress</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
     <xi:include href="./ch-problem-solving.ptx" />
+    <xi:include href="./ch-modeling.ptx" />
+    <xi:include href="./ch-personal-finance.ptx" />
 
 
     <!-- Include backmatter -->

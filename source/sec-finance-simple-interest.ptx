@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-finance-simple-interest" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Simple Interest</title>
+
+  <objectives>
+    <introduction>
+        <p>
+            Students will be able to
+        </p>
+    </introduction>
+    <ul>
+        <li>
+            <p>
+                Calculate interest and future values in simple interest applications.
+            </p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <p>
+                Find present value and interest rates in simple interest appliations.
+            </p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <p>
+                Calculate credit card finance charges.
+            </p>
+        </li>
+    </ul>
+  </objectives>
+  
+  <p> </p>
+
+</section>
