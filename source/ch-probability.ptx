@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-probability" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Counting Methods and Probability</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-probability-tables.ptx" />
+  <xi:include href="sec-probability-theoretical-probability.ptx" />
+  <xi:include href="sec-probability-expected-value.ptx" />
+  <xi:include href="sec-probability-combinatorics.ptx" />
+</chapter>

@@ -2,16 +2,16 @@
 
 <section xml:id="sec-finance-credit-cards" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Credit Cards</title>
-
+<introduction>
   <p>Credit cards are a common source of debt. The Federal Reserve Bank reported that in the second quarter of 2024, Americans 
     owed $1.14 trillion in credit card debt, which is an average of about $4,400 per adult. In this section, we will investigate 
     how credit cards work with the goal of empowering readers to make educated financial decisions about these accounts.</p>
     <objectives>
-      <introduction>
+      
         <p>
           Students will be able to:
         </p>
-      </introduction>>
+      
       <ul>
         <li>
           <p>
@@ -30,6 +30,7 @@
         </li>
       </ul>
     </objectives>
+  </introduction>
     <subsection>
       <title>What is a Credit Card?</title>
       <p>
@@ -38,10 +39,12 @@
         some or all of the amount borrowed each month, and this cycle of borrowing and making payments continues until the account 
         is closed. 
       </p>
+      <figure xml:id="How_Credit_Cards_Work">
+        <caption>Diagram of three monthly billing cycles of a credit card.</caption>
       <image source="images/How_Credit_Cards_Work.png">
-        <shortdescription>Three monthly payments are diagramed, showing the monthly billing statement generated at the end of each monthly cycle and due 21-25 days into the subsequent cycle. Each bill includes the total spending from the current month, any remaining unpaid balance from the previous month, and a finance charge on the previous month.</shortdescription>
-   <caption>Diagram of three monthly billing cycles of a credit card.</caption>
-      </image>
+        <shortdescription>Three monthly payments are diagrammed, showing the monthly billing statement generated at the end of each monthly cycle and due 21-25 days into the subsequent cycle. Each bill includes the total spending from the current month, any remaining unpaid balance from the previous month, and a finance charge on the previous month.</shortdescription>
+         </image>
+    </figure>
       <p>
         Credit card accounts are unique in that if the borrower pays the entire statement balance each month, there is no interest 
         charged on purchases made using the card.  Further, many cards offer rewards to the consumer in the form of cash back, 
@@ -58,9 +61,12 @@
     A credit card agreement describes the policies and rates which apply to the account. It should contain a table summarizing the interest rates and fees. An example is provided below.
   </p>
   <p>
-    <image source="images/Credit_card_rates_table.png">
-     
-    </image>
+    <figure xml:id="Credit_card_rates_table">
+      <caption>Sample excerpt from a credit card account agreement.</caption>
+    
+    <image source="images/Credit_card_rates_table.png"><shortdescription>A screen reader accessible version of the table is available in this <url href="external/Sample-Credit-Card-Fine-Print-Accessible.docx">Word Document</url></shortdescription></image>
+    
+  </figure>
   </p>
 </subsection>
 </section>

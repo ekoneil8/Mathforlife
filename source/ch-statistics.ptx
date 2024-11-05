@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-statistics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Statistics</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-statistics-describing-data.ptx" />
+  <xi:include href="sec-statistics-measures-of-center.ptx" />
+  <xi:include href="sec-statistics-measures-of-variation.ptx" />
+  <xi:include href="sec-statistics-normal-distribution.ptx" />
+</chapter>

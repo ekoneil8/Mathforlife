@@ -15,6 +15,9 @@
     <xi:include href="./ch-problem-solving.ptx" />
     <xi:include href="./ch-modeling.ptx" />
     <xi:include href="./ch-personal-finance.ptx" />
+    <xi:include href="ch-statistics.ptx" />
+    <xi:include href="ch-probability.ptx" />
+    <xi:include href="ch-democracy.ptx" />
 
 
     <!-- Include backmatter -->

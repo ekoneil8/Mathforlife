@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-problemsolving-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Proportional Reasoning</title>
 
   <objectives>
@@ -329,8 +329,26 @@
     </example>
   </subsection>
   
+  <exercises>
+    <title>Exercises and Problems</title>
+    <exercise>
+      <statement>
+        <p>
+          This is a trial exercise.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is the solution.
+        </p>
+      </solution>
+    </exercise>
+    
+  </exercises>
+
   
-  <title>Exercises</title>
- 
-      
+    
+  
+  
+       
   </section>

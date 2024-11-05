@@ -2,13 +2,13 @@
 
 <section xml:id="sec-percents" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Percents</title>
-
+<introduction>
   <objectives>
-    <introduction>
+    
       <p>
         Students will be able to:
       </p>
-    </introduction>
+    
     <ul>
       <li>
         <p>
@@ -32,7 +32,7 @@
       </li>
     </ul>
   </objectives>
-  
+</introduction>
   <p>  </p>
 
   <subsection>
