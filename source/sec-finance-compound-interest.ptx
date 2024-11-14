@@ -4,5 +4,21 @@
   <title>Compound Interest</title>
 
   <p> </p>
-
+  <note>
+    <title>About Rounding</title>
+    <p>
+    When completing the table above, we rounded each interest amount to the nearest cent and used the rounded value in subsequent calculations. This
+    is how banking institutions calculate and apply or charge interest.
+    </p>
+    <p>
+      In this section, we will develop and use a formula to calculate future value in one step without making a table. Using this formula 
+      bypasses the intermediate rounding steps and can result in values that may be slightly different from the correct value. Don't worry: 
+      the results typically are off by a few cents at most, so using the formula provides a highly efficient way to make long-term predictions.
+    </p>
+    <p>
+      Since banks use mathematical formulas to calculate loan payments, these small differences affect us in "real life", too! If you or
+       someone you know is paying off a loan, the bank may have adjusted the payment size by a few cents to account for rounding.
+    </p>
+    
+  </note>
 </section>

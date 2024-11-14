@@ -4,7 +4,7 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <book xml:id="my-great-book">
+  <book xml:id="math-in-society">
     <title>Mathematics in Society</title>
     <subtitle>A work in Progress</subtitle>
 
@@ -12,9 +12,9 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-problem-solving.ptx" />
-    <xi:include href="./ch-modeling.ptx" />
-    <xi:include href="./ch-personal-finance.ptx" />
+    <xi:include href="ch-problem-solving.ptx" />
+    <xi:include href="ch-modeling.ptx" />
+    <xi:include href="ch-personal-finance.ptx" />
     <xi:include href="ch-statistics.ptx" />
     <xi:include href="ch-probability.ptx" />
     <xi:include href="ch-democracy.ptx" />

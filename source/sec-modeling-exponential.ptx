@@ -3,6 +3,73 @@
 <section xml:id="sec-modeling-exponential" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exponential Growth</title>
 
-  <p> </p>
+  <p> The next growth model we will examine is exponential growth. Linear growth occurs when
+    a population increases by the same <em>amount</em> in each unit of time. Exponential growth happens when an initial
+    population increases by the same <em>percentage or factor</em> in each unit of time.
+  </p>
+  <p> For example, consider a town of 1,000 people that is experiencing a population boom due to an abundance of jobs and affordable housing. 
+    The population grows exponentially by 20% per year.  After one year, there will be <m>1000+0.20\cdot 1000=1200</m> people. The next year, the population will grow by 20%
+    of 1,200 people, so there will be <m>1200+0.20\cdot 1200=1440</m> people. The year after that,
+    there will be <m>1440+0.20 \cdot 1440=1728</m> people.
+    
+    </p>
+    <p>
+      Let's compare this population that start with 1,000 people and grows by 20% per year, which is exponential growth, with a population that
+      starts with 1,000 people and grows by 200 people per year, which is linear growth.
+    </p>
+    <table>
+      <title>Linear and Exponential Growth</title>
+      <tabular halign="center">
+        <row header="yes" bottom="minor" >
+          <cell>Year</cell>
+          <cell>Population Subject to Linear Growth</cell>
+          <cell>Population Subject to Exponential Growth</cell>
+          
+        </row>
+        <row>
+          <cell>0</cell>
+          <cell>1000</cell>
+          <cell>1000</cell>
+          
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>1200</cell>
+          <cell>1200</cell>
+          
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>1400</cell>
+          <cell>1440</cell>
+          
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>1600</cell>
+          <cell>1728</cell>
+          
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>1800</cell>
+          <cell>2074</cell>
+          
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>2000</cell>
+          <cell>1488</cell>
+        </row>
+        <row>
+          <cell>10</cell>
+          <cell>3000</cell>
+          <cell>6192</cell>
+        </row>
+        
+      </tabular>
+    
+    </table>
+
 
 </section>

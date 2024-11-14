@@ -4,11 +4,11 @@
   <title>Percents</title>
 <introduction>
   <objectives>
-    
+    <introduction>
       <p>
         Students will be able to:
       </p>
-    
+    </introduction>
     <ul>
       <li>
         <p>
@@ -43,7 +43,7 @@
       </p>
       <p>
         Percent, denoted by %, means “per 100,” or “parts per hundred.” In Spanish it's literally por ciento which means
-         for one hundred. When we write 30% off, that means you save 30 out of every 100 dollars. We can write this 
+         for one hundred. When we write 30% off, that means you save 30 out of every 100 dollars. A $100 item would be $30 off, a $200 item would be $60 off, and so on. We can write this 
          percentage as the fraction <m>\frac{30}{100}</m>. When we divide 30 by 100, we get
         <me>\frac{30}{100}=0.30</me>
         We can also say you would save 30 cents out of every dollar. Many equivalent fractions can be written that equal 30%. 
@@ -56,7 +56,7 @@
         </p>
         <sidebyside widths="40% 40%">
           <p>
-            Jacket 1:
+            <em>Jacket 1:</em>
             <ul marker = "disc">
               <li>
                 <p>
@@ -71,7 +71,7 @@
             </ul>
           </p>
           <p>
-            Jacket 2:
+            <em>Jacket 2:</em>
             <ul marker = "disc">
               <li>
                 <p>
@@ -89,10 +89,10 @@
           <p>
             What is the sale price and sale percentage for each jacket? Which is the better buy?
           </p>
-          <sidebyside widths="40% 40%">
+          <sidebyside widths="40% 40%" valign="top">
             <stack>
               <p>
-                Jacket 1:
+                <em>Jacket 1:</em>
               </p>
             <p>
               For this jacket we have the dollar amount of the sale so we will subtract it from the original price.
@@ -110,7 +110,7 @@
             </stack>
             <stack>
             <p>
-              Shirt 2:
+              <em>Jacket 2:</em>
             </p>
             <p>
               For this jacket we know the percentage off so we need to find 30% of $100. We used a base of 100 so $30 off per $100 is 
@@ -145,6 +145,18 @@
         To go the other way, if we have <m>0.10</m>, we can multiply it by 100% or move the decimal two places to the right and add the % symbol.
         <me>0.10 = 0.10(100\%)=10\%</me>
       </p>
+      <assemblage xml:id="percents-caution">
+        <title>Caution</title>
+        
+          <p>
+            Be careful with fractions and decimals! Banks sometimes use fractions when expressing interest rates of loans. For example, <m>6\frac{3}{4}\%</m> is the same as <m>6.75\%</m> because <m>3\div4=0.75</m>. We can convert to decimal form by moving the decimal two places to the left to obtain <m>0.0675</m>.
+          </p>
+          <p>
+            Be careful with small percentages! For example, <m>0.5\%</m> expressed in decimal form is <m>0.005</m>. The decimal starts out to the left of the 5, and when we shift the decimal two places to the left we must fill in with two additional zeros.
+          </p>
+        
+        </assemblage>
+    
   
     <example>
       <statement>
@@ -381,7 +393,7 @@
       </solution>
     </example>
     <p>
-      Note, most interest is compounded daily or monthly so we simplified the example above. We will come back to this and learn how to calculate compound interest in the financial math chapter.
+      Note: The example above is an example of <term>simple interest</term>. Most accounts use something called "<term>compound interest</term>. Both types of interest are addressed in <xref ref="ch-personal-finance" />.
     </p>
     
     <example>
