@@ -70,6 +70,385 @@
       </tabular>
     
     </table>
+    <p>
+      Please notice that at first, the populations according the the two models are very close, but as time goes on, the exponential model
+      becomes increasingly larger than the linear model. This is because the linear model grows by the same amount in each unit of time 
+      while the exponential model grows by an increasing amount in each unit of time. We can use a graph to help visualize the difference 
+      between linear and exponential growth.
+    </p>
+    <figure xml:id="linear-vs-exponential-growth-graphs">
+      <caption>Linear and Exponential Growth</caption>
+      <image source="images/exp-vs-lin-graph.png" width="60%">
+        <shortdescription>Graph of linear growth which is a straight line and exponential growth which at first nearly matches the linear growth but then grows faster and faster.</shortdescription>
+      </image>
+    </figure>
+<example>
+  <title>Duck Population</title>
+  
+  
+  <statement>A population of ducks in a park grows exponentially. Initially, there were 200 ducks, and the population grows by 10% per month. 
+    <ol>
+      <li>
+        <p>
+          Find the population after one month.
+        </p>
+      </li>
+      <li>
+        <p>
+          Find the population after two months.
+        </p>
+      </li>
+      <li>
+        <p>
+          Find the population after ten months.
+        </p>
+      </li>
+      <li>
+        <p>
+          Develop a formula for the duck population after <m>t</m> months.
+        </p>
+      </li>
+    </ol>
+  </statement>
+    <solution>
+      
+    <p>
+      <ol>
+        <li>
+          <p>
+            After one month, the population will have increased by <m>0.10\cdot200=20</m>. The new population is 220 ducks.
+          </p>
+          <p>
+            <em>Important Observation:</em> We just calculated <m>200+0.10\cdot200</m>. Factoring out the 200, this is the same as <m>200(1+0.10)</m> which can be simplified to <m>200(1.1)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            In the second month, the population begins at 220 ducks and increases by <m>0.10*220=22</m>. The new population is 242 ducks.
+          </p>
+          <p>
+            <em>Important Observation:</em> Using the same logic above, we could have calculated this as <m>220(1.1)</m>. Recall that we found 220 by multiplying <m>200(1.1)</m>, so the population after 2 months will be <m>200(1.1)(1.1)=242</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Consider the "important observations" in the first parts of this example. To find the population after ten months, we can start with the initial population of 200 ducks and multiply by a factor of 1.1 for each month. Using exponential form, that is, <m>200(1.1)^{10}\approx 519</m> ducks. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Generalizing the answer to the previous part of this exercise, we obtain <m>P(t)=200(1.1)^{t}</m>.
+          </p>
+        </li>
+      </ol>
+      
+    </p>
+    </solution>
+</example>
 
+  <p>
+    We can generalize the solution to the above example to develop a formula for exponential growth. In the function <m>P(t)=200(1.1)^{t}</m>, what do the 200, the 1.1, and the <m>t</m> represent in context?
+  </p>
+  <p>
+    200 is the initial or starting duck population. Recall from <xref ref="sec-modeling-lines"/> that we use <m>P_0</m> to represent the initial value.
+  </p>
+  <p>
+    We found the value 1.1 by adding 1 and 0.10, which is the 10% exponential growth rate. (We can also think of 1.1=1.10 as meaning that after each month there are 110% as many ducks as there were in the previous month.) We will use the variable <m>r</m> to represent the exponential growth rate. So we have <m>1.1=1+0.10=1+r</m>.
+  </p>
+  <p>
+   We will continue to use the variable <m>t</m> to represent time using units that are appropriate to the situation, such as years, months, days, etc.
+  </p>
+  <p>
+    Putting this information together, we can build the exponential growth model <m>P(t)=P_0(1+r)^{t}</m>.
+  </p>
+           
+    <assemblage xml:id="assemblage-exponential-growth">
+      <title>Exponential Growth Model</title>
+      <p>
+        <me>
+          P(t)=P_0(1+r)^{t}
+        </me>
+        where
+           
+      </p>
+      <p>
+        <m>P(t)</m> is the population or value at time <m>t</m>,
+      </p>
+      <p>
+        <m>P_0</m> is the initial population or value, and
+      </p>
+      <p>
+        <m>r</m> is the relative growth rate in decimal or fraction form.
+      </p>
+       <p>
+        <m>r</m> is positive if the population or value is increasing, and <m>r</m> is negative if the population or value is decreasing.
+       </p>
+    </assemblage>
+    <example>
+      <title>Population Growth</title>
+      <statement>
+        <p>
+          Develop an exponential model for the population of a small town with an initial population of 2,000 people and an annual growth rate of 2.75%
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can measure population as the number of people, so <m>P_0=2000</m>.
+        </p>
+        <p>
+          We will measure time in years since we are given an annual growth rate. Therefore, <m>r=0.0275</m>.
+        </p>
+        <p> The model of the form <m>P(t)=P_0(1+r)^{t}</m> is
+          <me>
+            P(t)=2000(1+0.0275)^{t}
+          </me>
+          which we can simplify to
+          <me>
+            P(t)=2000(1.0275)^{t}
+          </me>.
+          
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <title>Population Decline</title>
+      <statement>
+        <p>
+          Develop an exponential model for the population of a city with an initial population of 2,000,000 people and is losing 4% of its population each year.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For simplicity, we can choose to measure the population in millions, so <m>P_0=2</m>.
+        </p>
+        <p>
+          We will measure time in years since we are given an annual rate. Because the town is <em>losing</em> population, the growth rate is <em>negative</em>. Thus, <m>r=-0.04</m>.
+        </p>
+        <p>
+          The resulting equation of the form <m>P(t)=P_0(1+r)^{t}</m> is <me>
+            P(t)=2(1+(-0.04))^{t}
+          </me>
+          which we can simplify to
+          <me>
+            P(t)=2(0.96)^{t}
+          </me>.
+          
+        </p>
+      </solution>
+    </example>
 
+    <example>
+      <title>Inflation</title>
+      <statement>
+        <p>
+          The average inflation rate in October, 2024, was 2.6% per year. If a new car cost $35,000 in October, 2024, how much would it cost to buy the same kind of car new in October, 2030? You may assume that the price of new cars will increase with inflation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's use <m>t=0</m> to denote October, 2024, and count time in years. The initial value is <m>P_0=35000</m> and the growth rate is <m>r=2.6\%=0.026</m>.
+        </p>
+        <p>
+          The value of the car after <m>t</m> years can be found using the formula <m>
+            P(t)=35000(1+0.026)^{t}
+          </m>. We can simplify this expression to <m>P(t)=35000(1.026)^{t}</m>.
+          
+        </p>
+        <p>
+          We are looking for the population in the year 2030, which is <m>t=2030-2024=6</m>. Therefore, in 2030 a new car would cost
+          <me>
+            P(6)=35000(1.026)^{6}\approx$40,827.45
+          </me>.
+          
+        </p>
+        
+      </solution>
+    </example>
+    
+
+<example xml:id="example-covid">
+  <title>Spread of Disease</title>
+  <statement>
+    <p>
+      In the early days of an epidemic or pandemic, disease spreads according to an exponential model. On March 13, 2020, Kitsap County, Washington, had a total of seven confirmed positive COVID-19 cases. By March 22 of that year, there were 31. If the disease continued to spread at the same exponential rate, how many cases would have accumulated by March 27? How many by April 27? (Round the growth rate to four decimal places.)
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let's start by writing down what we know and what we need to find:
+    </p>
+    <ul>
+      <li>
+        <p>
+          We are told that this is exponential growth, so we will use the formula <m>P(t)=P_0(1+r)^{t}</m> where <m>P(t)</m> is the total of accumulated positive cases at time <m>t</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The initial value is <m>P_0=7</m> where <m>t=0</m> corresponds to March 13, 2020.
+        </p>
+      </li>
+      <li>
+        <p>
+          On March 22, there were 31 total cases. Measuring time in days, March 22 is day <m>t=22-13=9</m>. Then we can translate the number of cases on March 22 into mathematical notation as <m>P(9)=31</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          We do not know the growth rate <m>r</m>, but we can set up an equation using the above information to find it.
+        </p>
+      </li>
+      <li>
+        <p>
+          Once we finish building our function, we can use the function to find the predicted total number of positive COVID tests on March 27 and April 13 of 2020.
+        </p>
+      </li>
+    </ul>
+    <p>
+      To find the value of the growth rate, <m>r</m>, we will plug in the values of <m>P_0</m> and <m>P(9)</m> and solve the resulting equation as follows:
+      <me>
+        P(t)=P_0(1+r)^{t}
+      </me>
+      <me>
+        P(9)=7(1+r)^{9}=31
+      </me>
+      <me>
+        (1+r)^{9}=\frac{31}{7}
+      </me>
+      <me>
+        \sqrt[9]{(1+r)^{9}}=\sqrt[9]{\frac{31}{7}}
+      </me>
+      <me>
+        1+r=\sqrt[9]{\frac{31}{7}}
+      </me>
+     <me>
+      r=\sqrt[9]{\frac{31}{7}}-1\approx0.1798
+     </me>
+     The growth rate was about 17.98% per day. 
+    </p>
+    <p>
+     To calculate the ninth root on a calculator, you can use the nth root button which is likely to look like <m>\sqrt[n]{}</m>. The keyboard shortcut in the DESMOS calculator is <em>nthroot</em>.
+      
+    </p>
+    <p>
+      Now we can assemble the function:
+      <me>
+        P(t)=7(1+0.1798)^{t}.
+      </me>
+      We can simplify to <m>P(t)=7(1.1798)^{t}</m>.
+    </p>
+    <p>
+      Finally, we can use this function to answer the questions. 
+    </p>
+    <p>
+      March 27 is day <m>t=27-13=14</m>. TO find the number of cases on day 14, we evaluate <m>P(14)=7(1.1798)^{14}\approx71</m> cases. (In reality, there were 70 cases on this date, so the prediction is very close!)
+    </p>
+    <p>
+      April 13 is exactly one month after March 13. Since there are 31 days in march, this is day <m>t=31</m>. To find the number of cases accumulated on this day, we evaluate <m>P(31)=7(1.1798)^{31}\approx1178</m> cases.(In reality, there were only 135 cases on this date. We may infer that the infection had already stopped spreading at an exponential rate.)
+    </p>
+    <p>
+      $0
+    </p>
+  </solution>
+</example>
+<example xml:id="exp-decay">
+  <title>Exponential Decay</title>
+  <statement>
+    <p>
+      Hydrogen-3, also known as tritium, is a radioactive isotope of hydrogen and a byproduct of nuclear energy production. It decays exponentially with a half-life of 12 years, meaning that after 12 years, the amount of tritium in a sample is reduced by half. (The decayed tritium doesn't just disappear; it is converted to helium, releasing an electron and a small amount of radiation in the process.) If there are 40 grams of tritium now, how much will be left in 6 years? Round the growth rate to six decimal places.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First we will build a model of the form <m>P(t)=P_0(1+r)^{t}</m> where time is measured in years and the <m>P</m> is measured in grams. We are given that <m>P_0=40</m>. 
+    </p>
+    <p>
+      Since the half-life of tritium is 12 years, we know that after 12 years, we will be left with half of our 40-gram starting amount.
+      <me>
+        P(12)=40(1+r)^{12}=20
+      </me>
+       We can solve this equation for <m>r</m>.
+       <me>
+        40(1+r)^{12}=20
+       </me>
+       <me>
+        (1+r)^{12}=\frac{1}{2}
+       </me>
+       <me>
+        sqrt[12]{(1+r)^{12}}=sqrt[12]{\frac{1}{2}}
+       </me>
+       <me>
+        1+r=sqrt[12]{\frac{1}{2}}
+       </me>
+       <me>
+        r=sqrt[12]{\frac{1}{2}}-1\approx-0.056126
+       </me>
+       The growth rate is negative because the amount of tritium is decreasing.
+       
+    </p>
+    <p>
+      The resulting model is <m>P(t)=40(1+(-0.56126))^{t}</m>, which can be simplified to <m>P(t)=40(0.943874)^{t}</m>.
+    </p>
+    <p>
+      We are looking for the amount remaining after 6 hours.
+      <me>
+        P(6)=40(0.943874)^{6}\approx28
+      </me>
+      Therefore, there are 28g of tritium remaining after 6 hours.
+    </p>
+    <p>
+      <em>Comment:</em> It would be very tempting to observe that 6 hours is half of a half-life. If 20 grams of tritium decay in 12 hours, why don't 10 grams of tritium decay in 6 hours, leaving 30 grams? This type of proportional reasoning only works with linear models where the value changes by the same amount in each unit of time. With exponential decay, the rate of change is a percentage of the amount of substance remaining at each point in time. So the rate of change is not constant.
+    </p>
+    </solution>
+    </example>
+
+<subsection>
+  <title>When Good Models Go Bad</title>
+  <p>
+    Recall that in <xref ref="example-covid"/>, the exponential model worked well in predicting <m>P(14)</m>, the total confirmed positive cases by March 22, but the prediction for <m>P(31)</m>, the total confirmed positive cases by April 13 was not even close to the actual value. The graph below shows the number of accululated cases by day and the graph of the function we built to model the situation.
+  </p>
+  <figure xml:id="covid-data-and-model">
+    <caption>Total accumulated covid cases in Kitsap County, WA, and exponential model <m>P(t)=7(1.1798)^{t}</m>. Data obtained from Kitsap Public Health Department.</caption>
+    <image source="images/covid-graph.png" width="75%">
+      <shortdescription>Graph of the exponential model closely matches data points for t between -6 and 15. After t=15, the exponential model continues to veer upward while the data points level off. </shortdescription>
+     </image>
+  </figure>
+  <p>
+    The function <m>P(t)=7(1.1798)^{t}</m> closely models the number of cases very early in the pandemic, but the model appears to break down after about <m>t=15</m> which is March 25 when the number of cases appears to start leveling off. This could be related to the "Stay Home, Stay Healthy" executive order announced on March 23, 2020, which banned social gatherings and closed all but essential businesses to in-person work. 
+  </p> 
+  <p>
+    In practice, all exponential models break down eventually. It is not feasible for something to keep growing forever. Populations will run out of space or resources, and viruses will run out of individuals to infect. Exponential decay models break down when, for example, there is less than one atom remaining of a radioactive element. 
+  </p>
+  <p>
+    Like linear models, exponential models are useful tools for short-term predictions but should be used with caution for long-term predictions.
+  </p>
+  </subsection>
+  <subsection xml:id="subsec-special-cases-and-shortcuts">
+    <title>Special Cases and Shortcuts</title>
+    <p>
+      The general formula <m>P(t)=P_0(1+r)^{t}</m> can be applied broadly in exponential growth and decay applications. However, with a few minor adjustments, we can create shortcuts to save time in some common situations.
+    </p>
+    <subsubsection xml:id="subsubsec-halflife-doubling">
+      <title>Half-Lives and Multiplying Time</title>
+      <p>
+        <example>
+          <title>Half-Life Shortcut</title>
+          <p>
+            In <xref ref="exp-decay" />, we found used 
+          </p>
+          
+        </example>
+      </p>
+
+  </subsection>
+  <exercises xml:id="exercises-modeling-exponential">
+    <exercise>
+      <statement>
+        <p>
+         
+        </p>
+      </statement>
+    </exercise>
+  </exercises>
 </section>
