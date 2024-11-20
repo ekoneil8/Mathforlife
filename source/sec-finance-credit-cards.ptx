@@ -6,12 +6,13 @@
   <p>Credit cards are a common source of debt. The Federal Reserve Bank reported that in the second quarter of 2024, Americans 
     owed $1.14 trillion in credit card debt, which is an average of about $4,400 per adult. In this section, we will investigate 
     how credit cards work with the goal of empowering readers to make educated financial decisions about these accounts.</p>
+  </introduction>
     <objectives>
-      
+      <introduction>
         <p>
           Students will be able to:
         </p>
-      
+      </introduction>
       <ul>
         <li>
           <p>
@@ -30,7 +31,7 @@
         </li>
       </ul>
     </objectives>
-  </introduction>
+  
     <subsection>
       <title>What is a Credit Card?</title>
       <p>
@@ -60,13 +61,13 @@
   <p>
     A credit card agreement describes the policies and rates which apply to the account. It should contain a table summarizing the interest rates and fees. An example is provided below.
   </p>
-  <p>
+  
     <figure xml:id="Credit_card_rates_table">
-      <caption>Sample excerpt from a credit card account agreement.</caption>
+      <caption>Sample excerpt from a credit card account agreement. A screenreader accessible version is found <url href="external/Sample-Credit-Card-Fine-Print-Accessible.docx">here</url></caption>
     
-    <image source="images/Credit_card_rates_table.png"><shortdescription>A screen reader accessible version of the table is available in this <url href="external/Sample-Credit-Card-Fine-Print-Accessible.docx">Word Document</url></shortdescription></image>
+    <image source="images/Credit_card_rates_table.png"><shortdescription> Use the link in the caption for an accessible version.</shortdescription></image>
     
   </figure>
-  </p>
+  
 </subsection>
 </section>

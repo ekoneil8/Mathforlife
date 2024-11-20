@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-percents" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-alg-percents" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Percents</title>
-<introduction>
   <objectives>
     <introduction>
       <p>
@@ -32,8 +31,7 @@
       </li>
     </ul>
   </objectives>
-</introduction>
-  <p>  </p>
+
 
   <subsection>
     <title>Percents</title>

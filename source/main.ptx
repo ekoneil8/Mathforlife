@@ -12,7 +12,7 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="ch-problem-solving.ptx" />
+    <xi:include href="ch-alg-review.ptx" />
     <xi:include href="ch-modeling.ptx" />
     <xi:include href="ch-personal-finance.ptx" />
     <xi:include href="ch-statistics.ptx" />

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-alg-review" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Algebra</title>
+
+  <introduction>
+    <p> 
+      This chapter covers algebraic tools and problem-solving techniques that are applied in several other chapters. 
+      
+
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-alg-percents.ptx" />
+  <xi:include href="sec-alg-proportion.ptx" />
+  <xi:include href="sec-alg-equations.ptx" />
+  <xi:include href="sec-alg-problemsolving.ptx" />
+</chapter>

@@ -11,6 +11,7 @@
 
 <publication>
   <common>
+    <tableofcontents level="2" />
     <!-- Level at which are html files generated (chapter/section/etc): -->
       <!--<chunking level="1" />-->
 
@@ -21,8 +22,8 @@
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project).                                                           -->
-      <!--<exercise-inline statement="yes" hint="yes" answer="no" solution="no" />-->
-      <!--<exercise-divisional statement="yes" hint="yes" answer="no" solution="yes" />-->
+      <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes" />
+      <exercise-divisional statement="yes" hint="yes" answer="no" solution="no" />
       <!--<exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />-->
       <!--<exercise-reading statement="yes" hint="yes" answer="no" solution="no" />-->
       <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
@@ -145,14 +146,11 @@
     <!-- put <css style="oscarlevin"/>                         -->
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
-      <!--<css
+      <!-- <css
           style="oscarlevin"
-          colors="blue_red"
-          knowls="crc"
-          toc="crc"
-          banner="crc"
-          navbar="crc"
-      />-->
+          colors="gold_red"
+
+      /> -->
 
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->

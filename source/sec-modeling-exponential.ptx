@@ -2,6 +2,35 @@
 
 <section xml:id="sec-modeling-exponential" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exponential Growth</title>
+  <objectives>
+    <introduction>
+      <p>
+        Students will be able to:
+      </p>
+    </introduction>
+      <ul>
+          <li>
+            <p>
+              Distinguish between exponential and linear growth.
+            </p>
+          </li>
+          <li>
+            <p>
+              Develop exponential functions to model growth and decay in context.
+            </p>
+          </li>
+          <li>
+            <p>
+              Interpret exponential models and their outputs in context.
+            </p>
+          </li>
+        </ul>
+        
+  </objectives>
+  
+<subsection xml:id="subsec-general-exp-growth">
+  <title>Exponential Growth and Decay Models</title>
+  
 
   <p> The next growth model we will examine is exponential growth. Linear growth occurs when
     a population increases by the same <em>amount</em> in each unit of time. Exponential growth happens when an initial
@@ -86,7 +115,9 @@
   <title>Duck Population</title>
   
   
-  <statement>A population of ducks in a park grows exponentially. Initially, there were 200 ducks, and the population grows by 10% per month. 
+  <statement>
+    <p>A population of ducks in a park grows exponentially. Initially, there were 200 ducks, and the population grows by 10% per month. </p>
+    <p>
     <ol>
       <li>
         <p>
@@ -109,6 +140,7 @@
         </p>
       </li>
     </ol>
+  </p>
   </statement>
     <solution>
       
@@ -278,6 +310,7 @@
     <p>
       Let's start by writing down what we know and what we need to find:
     </p>
+    <p>
     <ul>
       <li>
         <p>
@@ -305,19 +338,20 @@
         </p>
       </li>
     </ul>
+  </p>
     <p>
       To find the value of the growth rate, <m>r</m>, we will plug in the values of <m>P_0</m> and <m>P(9)</m> and solve the resulting equation as follows:
       <me>
-        P(t)=P_0(1+r)^{t}
+        P(t)=P_0\left(1+r\right)^{t}
       </me>
       <me>
         P(9)=7(1+r)^{9}=31
       </me>
       <me>
-        (1+r)^{9}=\frac{31}{7}
+        \left(1+r\right)^{9}=\frac{31}{7}
       </me>
       <me>
-        \sqrt[9]{(1+r)^{9}}=\sqrt[9]{\frac{31}{7}}
+        \sqrt[9]{\left(1+r\right)^{9}}=\sqrt[9]{\frac{31}{7}}
       </me>
       <me>
         1+r=\sqrt[9]{\frac{31}{7}}
@@ -334,9 +368,9 @@
     <p>
       Now we can assemble the function:
       <me>
-        P(t)=7(1+0.1798)^{t}.
+        P(t)=7\left(1+0.1798\right)^{t}.
       </me>
-      We can simplify to <m>P(t)=7(1.1798)^{t}</m>.
+      We can simplify to <m>P(t)=7\left(1.1798\right)^{t}</m>.
     </p>
     <p>
       Finally, we can use this function to answer the questions. 
@@ -376,13 +410,13 @@
         (1+r)^{12}=\frac{1}{2}
        </me>
        <me>
-        sqrt[12]{(1+r)^{12}}=sqrt[12]{\frac{1}{2}}
+        \sqrt[12]{(1+r)^{12}}=\sqrt[12]{\frac{1}{2}}
        </me>
        <me>
-        1+r=sqrt[12]{\frac{1}{2}}
+        1+r=\sqrt[12]{\frac{1}{2}}
        </me>
        <me>
-        r=sqrt[12]{\frac{1}{2}}-1\approx-0.056126
+        r=\sqrt[12]{\frac{1}{2}}-1\approx-0.056126
        </me>
        The growth rate is negative because the amount of tritium is decreasing.
        
@@ -402,7 +436,7 @@
     </p>
     </solution>
     </example>
-
+  </subsection>
 <subsection>
   <title>When Good Models Go Bad</title>
   <p>
@@ -424,31 +458,141 @@
     Like linear models, exponential models are useful tools for short-term predictions but should be used with caution for long-term predictions.
   </p>
   </subsection>
-  <subsection xml:id="subsec-special-cases-and-shortcuts">
-    <title>Special Cases and Shortcuts</title>
-    <p>
-      The general formula <m>P(t)=P_0(1+r)^{t}</m> can be applied broadly in exponential growth and decay applications. However, with a few minor adjustments, we can create shortcuts to save time in some common situations.
-    </p>
-    <subsubsection xml:id="subsubsec-halflife-doubling">
-      <title>Half-Lives and Multiplying Time</title>
-      <p>
-        <example>
-          <title>Half-Life Shortcut</title>
-          <p>
-            In <xref ref="exp-decay" />, we found used 
-          </p>
-          
-        </example>
-      </p>
 
-  </subsection>
-  <exercises xml:id="exercises-modeling-exponential">
-    <exercise>
-      <statement>
+  <subsection xml:id="subsec-special-cases">
+    <title>Special Cases</title>
+
+    <p>
+      The general formula <m>P(t)=P_0(1+r)^{t}</m> can be applied broadly in exponential growth and decay applications. However, with a few minor adjustments, we can create special models to save time in some common situations.
+    </p>
+    
+      
+      <p>
+        In <xref ref="exp-decay" />, we had <m>1+r=\sqrt[12]{\frac{1}{2}}</m>. Using this exact value, we can write the function as
+      </p>
+<p>
+  <me>
+    P(t)=40(1+r)^{t}=40\left(\sqrt[12]{\frac{1}{2}}\right)^{t}.
+  </me>
+  Recall the exponent rules that <m>\sqrt[n]{x}=x^{\frac{1}{n}}</m> and <m>(x^{m})^{n}=x^{m \cdot n}</m>. Using these rules, we can simplify the function as follows:
+  <me>
+    P(t)=40\left(\sqrt[12]{\frac{1}{2}}\right)^{t}
+  </me>
+  <me>
+    P(t)=40\left(\left(\frac{1}{2}\right)^{\frac{1}{12}}\right)^{t}
+  </me>
+  
+  <me>
+    P(t)=40\left(\frac{1}{2}\right)^{(\frac{1}{12})\cdot t}
+  </me>
+  <me>
+    P(t)=40\left(\frac{1}{2}\right)^{\frac{t}{12}}
+  </me>
+  
+</p>
+<p>
+  Using the special model for tritium in the form <m>P(t)=40\left(\frac{1}{2}\right)^{\frac{t}{12}}</m>, we can see both the initial value and the half-life of 12 years in the function!
+</p>
+<p>
+  In general, we can model exponential decay with the formula <m>P(t)=P_0 \left(\frac{1}{2}\right)^{\frac{t}{h}}</m> where <m>P_0</m> is the initial amount and <m>h</m> is the half-life.
+</p>
+<example>
+  <title>Use the Half-Life Model to Build a Function</title>
+  <statement>
+    <p>
+      A sample of a radioactive substance with half-life 27 seconds has an initial amount of 12 kilograms. Write an exponential function to model the amount of the substance in kilograms remaining after <m>t</m> seconds.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      P(t)=12 \left( \frac{1}{2}right)^{\frac{t}{27}}
+    </p>
+  </answer>
+</example>
+<example>
+  <title>Half-Life Model Interpretation</title>
+  <statement>
+    <p>
+      A sample of a radioactive substance decays according to the model <m>P(t)=50\left(\frac{1}{2}\right)^{\frac{t}{4}}</m>, where <m>P</m> is measured in grams and <m>t</m> is measured in hours. What is the inital amount of the substance, and what is the half-life? 
+    </p>
+  </statement>
+  <answer>
+    <p>
+      The initial amount is <m>50</m> grams, and the half-life is <m>4</m> hours.
+    </p>
+  </answer>
+   
+</example>
+<p>
+  In population studies, it is common to focus on the <term>doubling time</term>, or the amount of time it takes for a population to double in size. We can make a simple adjustment on the half-life model to develop a doubling-time model: 
+  <me>
+    P(t)=P_0\left(2\right)^{\frac{t}{D}}
+  </me>
+   where <m>D</m> is the doubling time for the population.
+</p>
+<example>
+  <title>Use the Doubling-Time Model to Build and Apply a Function</title>
+  <statement>
+    <p>
+      A sample of bacteria in a petri dish begins with 4 cells. The population doubles every 5 hours. How many bacterial cells will there be after 12 hours?
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>P(12)=4\left(2\right)^{\frac{12}{5}}\approx21</m> bacteria cells.
+    </p>
+  </answer>
+</example>
+<p>
+  We can generalize the half-life and doubling-time models to apply to any multiplier. If a value is multiplied by <m>M</m> every <m>T</m> units of time, we can model the situation with an exponential function of the form <m>P(t)=P_0 \left(M\right)^{\frac{t}{T}}</m>.
+</p>
+<example>
+  <title>Using a Multiplier</title>
+  <statement>
+    <p>
+      A new house was sold for $400,000 in 2011. In 2021 the house was worth $600,000. If home values continue to grow exponentially at the same relative rate, what will the home's value be in 2029? Round to the nearest dollar.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      For simplicty, we will measure the value in thousands of dollars and time in years since 2011. Thus, <m>P_0=400</m>.
+    </p>
+    <p>
+      The multiplier is <m>M=\frac{600}{400}=1.5</m>, and it took <m>T=2021-2011=10</m> years. We will use the model
+      <me>
+        P(t)=600\left(1.5\right)^{\frac{t}{10}}.
+      </me>
+      
+    </p>
+    <p>
+      To find the value in the year 2029, which is time <m>t=2029-2011=18</m>, we evaluate <m>P(18)=600\left(1.5\right)^{\frac{18}{10}}\approx1244.846</m>.
+    </p>
+    <p>
+      Remembering that the value we found is in thousands of dollars, we can conclude that the house will be worth about $1,244,846 in the year 2029.
+    </p>
+    <p>
+      Note that you could also have taken the approach of <xref ref="example-covid" /> and other examples in which we used a model of the form <m>P(t)=P_0 (1+r)^{t}</m>, which required several algebraic steps to first solve for the value of <m>r</m>. Both approaches will work equally well!
+    </p>
+  </solution>
+  
+</example>
+      <assemblage xml:id="assemblage-shortcuts">
+        <title>Summary: Special Cases</title>
         <p>
-         
+          Exponential decay with half-life <m>h</m>:
+          <me>P(t)=P_0 \left(\frac{1}{2}\right)^{\frac{t}{h}}</me>
         </p>
-      </statement>
-    </exercise>
-  </exercises>
+        <p>Exponential growth with doubling time <m>D</m>: 
+          <me>P(t)=P_0 \left(2\right)^{\frac{t}{D}}</me>
+        </p>
+        <p>Generalized shortcut:
+          <me>P(t)=P_0 \left(M\right)^{\frac{t}{T}}</me>
+          The value is multiplied by <m>M</m> every <m>T</m> units of time.
+        </p>
+
+      </assemblage> 
+    
+</subsection>
+
+
 </section>

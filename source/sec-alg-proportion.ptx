@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-problemsolving-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-alg-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Proportional Reasoning</title>
-
+<introduction>
+  <p>
+    
+  </p>
+</introduction>
   <objectives>
     <introduction>
       <p>
@@ -12,12 +16,17 @@
     <ul>
             <li>
         <p>
-          Solve problems that involve percents, rates and/or proportions.
+          Apply conversion factors to change units.
         </p>
       </li>
       <li>
         <p>
-          Solve problems that involve unit conversions.
+          Solve problems involving proportional reasoning.
+        </p>
+      </li>
+      <li>
+        <p>
+          Solve problems involving percentages and proportional reasoning.
         </p>
       </li>
     </ul>
@@ -25,7 +34,7 @@
   
   
   <subsection>
-    <title>Solving Problems with Unit Conversions</title>
+    <title>Unit Conversions</title>
   
     <p>
       Many situations also require unit conversions. Here are some common conversion rates used.
@@ -114,7 +123,7 @@
         </stack>
       </sidebyside>
       <p>
-        Note: Fluid ounces are a capacity measurement for liquids. 1 fluid ounce weighs about 1 ounce for water only.
+        Note: It is unfortunate that our system of measurement uses ounces to measure both volume and weight. For clarity, we will say "fluid ounces" when referring to volume and "ounces" will refer to weight.
       </p>
     </assemblage>
     <p>
@@ -138,9 +147,10 @@
         <p>
           Or we can also do this in one step
           <me>54\,\cancel{\mathrm{ pounds}}\cdot\frac{1\,\cancel{\mathrm{ kilogram}}}{2.2\,\cancel{\mathrm{ pounds}}}\cdot\frac{2\text{ milligrams}}{1\,\cancel{\mathrm{ kilogram}}}\approx 49.1\text{ milligrams}</me>
-        </p>You should give your dog about 49.1 milligrams. Since the tablets are 25 mg each, we will divide 49.1 mg by 25 mg.
+        You should give your dog about 49.1 milligrams. Since the tablets are 25 mg each, we will divide 49.1 mg by 25 mg.
         <me>\frac{49.1\,\cancel{\mathrm{ mg}}}{25\,\cancel{\mathrm{ mg}}}\approx 1.96\text{ tablets}</me>
         Check with your vet to make sure it's within an acceptable range, but it looks like you should give your dog 2 tablets. There are also liquid forms of medication to avoid giving partial tablets.
+        </p>
       </solution>
     </example>
   </subsection>
@@ -179,16 +189,16 @@
       </sidebyside>
       <!-- todo: try to fix the centering in the columns to look better in pdf-->
       <sidebyside widths="30% 18%" margins="0% 30%">
-        <p>
+        
           <image source="images/language_logic_rules/problem_solving/rectangle.png">
             <shortdescription>A rectangle with the width labeled W and the length labeled L.</shortdescription>
           </image>
-        </p>
-        <p>
+        
+        
           <image source="images/language_logic_rules/problem_solving/circle.png">
             <shortdescription>A circle with the radius labeled r.</shortdescription>
           </image>
-        </p>
+        
       </sidebyside>
     </assemblage>
     <assemblage>
@@ -213,16 +223,16 @@
       </sidebyside>
       <!-- todo: try to fix the centering in the columns to look better in pdf-->
       <sidebyside widths="26% 20%" margins="0% 30%">
-        <p>
+        
         <image source="images/language_logic_rules/problem_solving/rectangular_box.png">
             <shortdescription>A rectangular box with the width labeled W, length labeled L, and height labeled H</shortdescription>
         </image>
-        </p>
-        <p>
+        
+        
         <image source="images/language_logic_rules/problem_solving/cylinder.png">
             <shortdescription>A cylinder with the radius labeled r and height labeled H</shortdescription>
             </image>
-          </p>
+         
       </sidebyside>
     </assemblage>
   

@@ -38,17 +38,10 @@
             </ul>
     </objectives>
     
+     
     <introduction>
-        <figure>
-          <caption>Alternative Video Lessons</caption>
-          <video youtubeplaylist="PLsFUxEAXGFKQLLCscP23Tm7kerZ63PKQ0" label="video-normal-model"/>
-        </figure>
-    </introduction>
-    
-    <subsection>
-    <title>Introduction to The Normal Distribution</title>
         <p>
-            There is a pattern or shape that comes up frequently when graphing data called the <alert>Normal distribution</alert>. You might be familiar with it as the <alert>bell curve</alert>. When we take measurements like the lengths of newborn babies or the weights of potato chip bags on an assembly line there are usually more measurements near the mean and fewer as we get further away from the mean on each side. We often see histograms with this shape:
+            There is a pattern or shape that comes up frequently when graphing data called the <alert>Normal Distribution</alert>. You might be familiar with it as the <alert>bell curve</alert>. When we take measurements like the lengths of newborn babies or the weights of potato chip bags on an assembly line there are usually more measurements near the mean and fewer as we get further away from the mean on each side. We often see histograms with this shape:
         </p>
         <sidebyside width="43%">
             <image source="images/statistics/3_6/intro_pic.png">
@@ -58,7 +51,7 @@
         <p>
             Notice how the shape is unimodal and symmetric with larger and smaller values getting less and less common as they get further from the mean. When we take samples from a population we might not get an exact Normal distribution but it is often close. We call this approximately Normal or nearly Normally distributed. The curve drawn over the histogram shows that the data are nearly Normal. Earlier in this chapter we learned about the <alert>mean</alert>, <alert>median</alert> and <alert>mode</alert> as measures of center and the <alert>standard deviation</alert> as a measure of variation or spread. The mean is often written with the greek letter mu, <m>\mu</m>. The standard deviation is usualy represented by the lowercase Greek letter sigma, <m>\sigma</m>.
         </p>
-    </subsection>
+    </introduction>
     
     <subsection>
     <title>Properties of the Normal Distribution</title>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-alg-equations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Equations</title>
+<introduction>
+  <p>
+    In this section, we focus on the algebraic techniques that will be used to solve problems in later chapters. These are the problem-solving techniques without the problems.
+  </p>
+</introduction>
+<objectives>
+  <introduction>
+    <p>
+      Students will be able to:
+    </p>
+    </introduction>
+    
+    <ul>
+      <li>
+        <p>
+          Use algebraic methods to solve linear equations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use algebraic methods to solve quadratic equations.
+        </p>
+      </li>
+    </ul>
+  
+</objectives>
+<subsection xml:id="subsec-solve-linear">
+  <title>Solving Linear Equations</title>
+  <p>
+  In <xref ref="sec-modeling-lines" />, we will use linear growth models to analyze real-life situations. Here, we address just the technical skills involved.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Solve each 
+      </p>
+    </statement>
+    
+    
+  </example>
+  
+</subsection>
+
+
+</section>
