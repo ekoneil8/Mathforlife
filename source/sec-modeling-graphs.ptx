@@ -2,6 +2,7 @@
 
 <section xml:id="sec-modeling-graphs" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Graphs of Growth Models</title>
+  
 <introduction>
     <p>
         In this section, we use graphing technology to create visual representations of data and trends and to solve problems involving growth models.
@@ -35,7 +36,7 @@
 </objectives>
 <subsection xml:id="subsec-modeling-graphs-create">
     <title>Creating Graphs</title>
-    <p>There are several tools available for creating graphs of functions. We will provide instructions for <url href="https://www.desmos.com/calculator" visual="desmos.com">Desmos</url>, which is a free web-based graphing utility. Information about using Desmos with a screen reader and other accessibility tools is found on their <url href="https://www.desmos.com/accessibility" visual="desmos.com/accessibility">accessibility page</url></p>
+    <p>There are several tools available for creating graphs of functions. We will provide instructions for <url href="https://www.desmos.com/calculator" visual="desmos.com">Desmos</url>, which is a free web-based graphing utility. Information about using Desmos with a screen reader and other accessibility tools is found on their <url href="https://www.desmos.com/accessibility" visual="desmos.com/accessibility">accessibility page</url>.</p>
     <p></p>
 <assemblage>
     <title>How to Create and Edit a Graph</title>
@@ -64,10 +65,10 @@
     <title>Graphing with Desmos</title>
     <statement>
         <p>
-            The functions <m>P_1(t)=100+20t</m> and <m>P_2(t)=100(1.02)^{t}</m> model the value <m>P</m> in dollars of two different investments after <m>t</m> years. The subscripts 1 and 2 and only used to distinguish between the two models.
+            The functions <m>P_1(t)=100+20t</m> and <m>P_2(t)=100(1.02)^{t}</m> model the value <m>P</m> in dollars of two different investments after <m>t</m> years. Please do not be confused by the use of subscripts 1 and 2 on the function names; their purpose is simply to distinguish between the two functions.
         </p>
         <p>
-            Create a single graph showing both functions. There are two intersection points: be sure that both are visible in the graph.
+            Create a single graph showing <m>P_1</m> and <m>P_2</m>. There are two intersection points: be sure that both are visible in the graph.
         </p>
     </statement>
     <solution>
@@ -104,7 +105,7 @@
         <em>Solve Equations:</em>  Solutions to equations are represented graphically by intersection points. More precisely, if you are solving an equation of the form <m>f(x)=g(x)</m>, the solutions are the x-coordinates of the points where the graphs of <m>y=f(x)</m> and <m>y=g(x)</m> intersect.
     </p>
     <example>
-        <title>Evaluate and Solve Graphically</title>
+        <title>Fish population</title>
         <statement>
             <p>
                 The population of an invasive fish species in a pond follows the logistic growth function <m>P(t)=\frac{200}{1+25e^{-0.04t}}</m> where <m>P</m> is the number of fish in the pond at time <m>t</m> in months after a few of the fish were accidentally introduced into the ecosystem.
@@ -129,12 +130,12 @@
                 <ol>
                     <li>
                         <p>
-                            To find the population after 10 years, we need to evaluate <m>P(10)</m>. We enter <m>P(t)=\frac{200}{1+25e^{-0.04t}}</m> on an expression line and hit Enter. On the next expression line, or any available expression line, we type <m>P(10)</m> and hit Enter. The value 11.2625288342 appears. Rounding to the nearest whole fish, we conclude that there were about 11 fish in the pond after 10 months.
+                            To find the population after 10 years, we need to evaluate <m>P(10)</m>. (We know that because 10 years is a time, which is a <m>t</m> value; we are replacing <m>t</m> with 10. In Desmos, we enter <m>P(t)=\frac{200}{1+25e^{-0.04t}}</m> on an expression line and hit Enter. On the next expression line, or any available expression line, we type <m>P(10)</m> and hit Enter. The value 11.2625288342 appears. Rounding to the nearest whole fish, we conclude that there were about 11 fish in the pond after 10 months.
                         </p>
                     </li>
                     <li>
                         <p>
-                            To determine how many months it will take the population to reach 100 fish, we will solve the equation <m>P(t)=100</m>. That is found by determining where the graphs of <m>y=P(t)</m> and <m>y=100</m> intersect. We already have the graph of <m>y=P(t)</m> displayed from the previous part of this example. On a new expression line, we input <m>y=100</m> and adjust the viewing rectangle in the graph until we can see where the two graphs intersect. Clicking on the intersection point brings up the coordinates of the point, <m>(80.4719.100)</m>. Recall that we are looking for the time, or <m>t</m> value, which is about <m>80.5</m> months.
+                            To determine how many months it will take the population to reach 100 fish, we will solve the equation <m>P(t)=100</m>. (We know to do this because 100 is a number of fish, which is a <m>P</m> value, so we are replacing the output with 100. That is found by determining where the graphs of <m>y=P(t)</m> and <m>y=100</m> intersect. We already have the graph of <m>y=P(t)</m> displayed from the previous part of this example. On a new expression line, we input <m>y=100</m> and adjust the viewing rectangle in the graph until we can see where the two graphs intersect. Clicking on the intersection point brings up the coordinates of the point, <m>(80.4719.100)</m>. Recall that we are looking for the time, or <m>t</m> value, which is about <m>80.5</m> months.
                         </p>
                     </li>
                 </ol>
@@ -178,11 +179,47 @@
             <p>
                We begin by creating a graph of the function and the line <m>y=0</m>; then we adjust the viewing rectange to show the maximum height and the intercepts. 
             </p>
-            <image source="path (no extension)">
-                <shortdescription>(for accessibility)</shortdescription>
+            <image source="images/graphing-projectile.png">
+                <shortdescription>Graph of y=-16x^2+64x+5, a downward-facing parabola. The coordinates of the vertex or highest point are labeled (2,69) and the coordinates of the x-intercept to the right of the vertex are labeled (4.07660,0).</shortdescription>
             </image>
+            <p>
+                Now we can use the graph to answer the questions.
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            The initial height of the pumpkin is <m>P(0)=5</m> feet above the ground.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            After 3 seconds, the pumpkin is at a height of <m>P(3)=53</m> feet above the ground.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The highest point on the graph corresponds to its maximum. The coordinates of this point are <m>(2,69)</m>. The x-coordinate is the time, so we can say that the pumpkin reaches its maximum height after 2 seconds. The y-coordinate is the height, so we can say that the maximum height is 69 feet. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The time when the pumpkin lands on the ground is the x-coordinate of one of the points where the graph intersects the line <m>y=0</m>, which is the x-axis. This is because the height of the ground is 0 feet. There are two such points, but we may disregard the point with a negative x-value since we are not going backward in time. Therefore, the time when it lands is <m>x=4.07666</m> seconds.
+                        </p>
+                    </li>
+                </ol>
+            </p>
 
         </solution>
+    </example>
+    <example>
+        <title>Home Value</title>
+        <statement>
+            <p>
+                A home was purchased for $350,000 in 2012. If home values in the area have been increasing by 9% per year according to an exponential model, when will the home be worth $1,000,000?
+            </p>
+        </statement>
+        
     </example>
 </subsection>
 </section>
