@@ -29,14 +29,32 @@
   
 </objectives>
 <subsection xml:id="subsec-solve-linear">
-  <title>Solving Linear Equations</title>
+  <title>Linear Equations</title>
   <p>
   In <xref ref="sec-modeling-lines" />, we will use linear growth models to analyze real-life situations. Here, we address just the technical skills involved.
   </p>
+  <p>A <term>linear equation</term> is a special type of equation in which the only power on the variable is 1. It is called linear because its graph forms a straight line.</p>
+<assemblage xml:id="assemblage-">
+  <title>How to Solve a Linear Equation</title>
+  <p>
+    <ol>
+      <li>
+        <p>
+          Simplify the expressions on both sides of the equation, if needed, using the distributive property and/or combining like terms.
+        </p>
+      </li>
+      <li>
+        <p>
+          Add or subtract terms from both sides of the equation to 
+        </p>
+      </li>
+    </ol>
+  </p>
+</assemblage>
   <example>
     <statement>
       <p>
-        Solve each 
+        Solve 
       </p>
     </statement>
     

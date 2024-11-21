@@ -494,7 +494,7 @@
           <md>
           <mrow>\text{Absolute Change} \amp= \text{Ending Amount} - \text{Starting Amount}</mrow>
           <mrow></mrow>
-          <mrow>\text{Relative Change} \amp= \frac{\text{Ending Amount} - \text{Starting Amount}}{\text{Starting Amount}} = \frac{\text{Absolute Change}}{\text{Starting Amount}}</mrow>
+          <mrow>\text{Relative Change} \amp = \frac{\text{Absolute Change}}{\text{Starting Amount}}</mrow>
         </md>
       </p>
     </assemblage>

@@ -4,9 +4,15 @@
   <title>Algebra</title>
 
   <introduction>
+    <figure xml:id="toolbox">
+      <caption>AI-generated image of a wooden toolbox with tools.</caption>
+      <image source="images/Alg-Toolbox.png" width="50%">
+        <shortdescription>Wooden toolbox with tools.</shortdescription>
+      </image>
+    
+      </figure>
     <p> 
-      This chapter covers algebraic tools and problem-solving techniques that are applied in several other chapters. 
-      
+      This chapter covers algebraic tools and problem-solving techniques. We provide these tools with the goal of empowering students to make educated financial decisions and work with numbers efficiently at home and work.
 
     </p>
   </introduction>

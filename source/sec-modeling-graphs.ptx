@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-modeling-graphs" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Graphs of Growth Models</title>
+<introduction>
+    <p>
+        In this section, we use graphing technology to create visual representations of data and trends and to solve problems involving growth models.
+    </p>
+</introduction>
+ 
+<objectives>
+    <introduction>
+        <p>
+            Students will be able to:
+        </p>
+    </introduction>
+        <ul>
+            <li>
+                <p>
+                    Use technology to create graphs that clearly show all key features.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Use graphing technology as a tool to evaluate functions and solve equations in context.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Construct and interpret mathematical models to solve problems in context.
+                </p>
+            </li>
+        </ul>
+    
+</objectives>
+<subsection xml:id="subsec-modeling-graphs-create">
+    <title>Creating Graphs</title>
+    <p>There are several tools available for creating graphs of functions. We will provide instructions for <url href="https://www.desmos.com/calculator" visual="desmos.com">Desmos</url>, which is a free web-based graphing utility. Information about using Desmos with a screen reader and other accessibility tools is found on their <url href="https://www.desmos.com/accessibility" visual="desmos.com/accessibility">accessibility page</url></p>
+    <p></p>
+<assemblage>
+    <title>How to Create and Edit a Graph</title>
+    <p>The following general steps should be used when creating effective graphs:
+    <ol>
+        <li>
+            <p>
+                Enter the equation, expression, or function in the expression list on the left side of the screen.
+            </p>
+        </li>
+        <li>
+            <p>
+                Click on the wrench icon to access the graph settings menu.
+            </p>
+        </li>
+        <li>
+            <p>
+                In the graph settings area, set appropriate bounds on the x-axis and y-axis. It may take some experimentation to obtain a view that shows the key features of the graph over a realistic time interval.
+            </p>
+        </li>
+        <li>
+            <p>
+                In the graph settings area, add descriptive labels for the axes. For example, if the horizontal (x) axis represents time in years, you might use the label "Time (yrs)".
+            </p>
+        </li>
+        <li>
+            <p>
+                Click out of the graph settings area to view your graph.
+            </p>
+        </li>
+        <li>
+            <p>
+                To insert your graph into a document or otherwise share your graph with others, click on the share graph icon that looks like a box with a curved arrow pointing out of it. Then select if you would like to print, export, or embed the graph and follow the on-screen instructions. (To insert the graph as an image in a document, use the "export" option.)
+            </p>
+        </li>
+    </ol>
+    Note that step 2 can also be achieved with a touchscreen or mouse and keyboard. On a touchscreen, use the pinch and spread gestures with your fingers touching the axes. Alternatively, hold down the shift key on the keyboard while clicking and dragging the mouse on the axes.
+</p>
+</assemblage>
+<example>
+    <title>Comparison of Two Models</title>
+    <statement>
+        <p>
+            The functions <m>P_1(t)=100+20t</m> and <m>P_2(t)=100(1.02)^{t}</m> model the value <m>P</m> in dollars of two different investments after <m>t</m> years. The subscripts 1 and 2 and only used to distinguish between the two models.
+        </p>
+        <p>
+            Create a single graph showing both functions. There are two intersection points: be sure that both are visible in the graph.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            First, we enter one equation into the expression line. Hitting enter or clicking in the space directly below the expression line brings up another line where we enter the other equation as seen below. 
+        </p>
+        <p>
+            
+        </p>
+
+    </solution>
+</example>
+    <example>
+        <title>Quadratic Graph</title>
+        <statement>
+            <p>
+                The function <m>h(t)=-16t^{2}+64t+5</m> models the height <m>h</m> in feet of a pumpkin at time <m>t</m> seconds after it is launched from a trebuchet. Use graphing technology to determine the following:
+                <ol>
+                    <li>
+                        <p>
+                            Find the initial height of the pumpkin.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the height of the pumpkin after <m>3</m> seconds.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            After how many seconds does the pumpkin reach its maximum height, and what is the maximum height?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            After how many seconds does the pumpkin land on the ground, which is a height of <m>0</m> feet?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                
+            </p>
+        </solution>
+    </example>
+</subsection>
+</section>
