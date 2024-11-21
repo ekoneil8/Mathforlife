@@ -139,11 +139,14 @@
                     </li>
                 </ol>
             </p>
-            
+            <image source="graphing-fish.png">
+                <shortdescription>Desmos screenshot showing the work done to solve the problem.</shortdescription>
+            </image>
+
         </solution>
     </example>
     <example>
-        <title>Quadratic Graph</title>
+        <title>Projectile Motion</title>
         <statement>
             <p>
                 The function <m>h(t)=-16t^{2}+64t+5</m> models the height <m>h</m> in feet of a pumpkin at time <m>t</m> seconds after it is launched from a trebuchet. Use graphing technology to determine the following:
@@ -173,8 +176,12 @@
         </statement>
         <solution>
             <p>
-                
+               We begin by creating a graph of the function and the line <m>y=0</m>; then we adjust the viewing rectange to show the maximum height and the intercepts. 
             </p>
+            <image source="path (no extension)">
+                <shortdescription>(for accessibility)</shortdescription>
+            </image>
+
         </solution>
     </example>
 </subsection>
