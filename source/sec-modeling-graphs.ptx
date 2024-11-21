@@ -43,32 +43,17 @@
     <ol>
         <li>
             <p>
-                Enter the equation, expression, or function in the expression list on the left side of the screen.
+                Enter the equation, expression, or function in the expression list.
             </p>
         </li>
         <li>
             <p>
-                Click on the wrench icon to access the graph settings menu.
+                Adjust the bounds on the x-axis and y-axis as needed to ensure that the graph shows all features of the function(s) over a realistic time interval.
             </p>
         </li>
         <li>
             <p>
-                In the graph settings area, set appropriate bounds on the x-axis and y-axis. It may take some experimentation to obtain a view that shows the key features of the graph over a realistic time interval.
-            </p>
-        </li>
-        <li>
-            <p>
-                In the graph settings area, add descriptive labels for the axes. For example, if the horizontal (x) axis represents time in years, you might use the label "Time (yrs)".
-            </p>
-        </li>
-        <li>
-            <p>
-                Click out of the graph settings area to view your graph.
-            </p>
-        </li>
-        <li>
-            <p>
-                To insert your graph into a document or otherwise share your graph with others, click on the share graph icon that looks like a box with a curved arrow pointing out of it. Then select if you would like to print, export, or embed the graph and follow the on-screen instructions. (To insert the graph as an image in a document, use the "export" option.)
+                Add descriptive labels for the axes.
             </p>
         </li>
     </ol>
@@ -76,7 +61,7 @@
 </p>
 </assemblage>
 <example>
-    <title>Comparison of Two Models</title>
+    <title>Graphing with Desmos</title>
     <statement>
         <p>
             The functions <m>P_1(t)=100+20t</m> and <m>P_2(t)=100(1.02)^{t}</m> model the value <m>P</m> in dollars of two different investments after <m>t</m> years. The subscripts 1 and 2 and only used to distinguish between the two models.
@@ -86,15 +71,77 @@
         </p>
     </statement>
     <solution>
-        <p>
-            First, we enter one equation into the expression line. Hitting enter or clicking in the space directly below the expression line brings up another line where we enter the other equation as seen below. 
+        <p> <em>Step 1: Enter the functions.</em> In the Desmos graphing calculator, we enter one equation into the expression line. Hitting enter or clicking in the space directly below the expression line brings up another line where we enter the other equation as seen below. </p>
+                        <image source="images/graphing-first-step.png" width="75%"> <shortdescription>Screenshot from Desmos. Both equations are entered, but the graph shows only a portion of one line.</shortdescription></image>
+    
+        <p><em> Step 2: Adjust the bounds on the axes.</em> We click on the wrench icon to access the Graph Settings menu in Desmos. Then, through experimentation, we adjust the intervals for the x- and y-axes until the graph shows both functions and both of the points where they intersect. (This can also be done using pinch and spread gestures on a touchscreen or holding down the Shift key while clicking and dragging on an axis.)
         </p>
         <p>
-            
+            <em> Step 3: Add labels.</em> In the Graph Settings menu, we type labels in the boxes provided. The x-axis label is "Time (yrs)" and the y-axis label is "Value ($)".
+        </p>
+        <p>
+            To use the graph in a document or submit in an assignment, we click on the Export button that looks like a box with a curved arrow pointing out of it. The "Export Image" option allows the graph to be downloaded as a picture file. The resulting graph is shown below.
+        </p>
+        <image source="images/graphing-example.png" width="50%">
+            <shortdescription>Horizontal axis shows values between 0 and 200 and is labeled Time (yrs). Vertical axis shows values between 0 and 4000 and is labeled Value ($). There is a increasing linear function and an increasing exponential function. They intersect at (0,100) and near (180, 3800).</shortdescription>
+        </image>
+        <p>
+            Depending on the intended purpose of the graph, it might also be helpful to include a caption or use words to tell the reader that the straight-line graph represents <m>P_1(t)=100+20t</m> and the curved exponential graph represents <m>P_2(t)=100(1.02)^{t}</m>.
         </p>
 
     </solution>
 </example>
+</subsection>
+<subsection xml:id="subsec-using-graphs">
+    <title>Using Graphs to Solve Problems</title>
+    <p>
+        Graphing technology can be used to evaluate functions and solve equations. 
+    </p>
+    <p>
+        <em>Evaluate a Function:</em>  Once the function has been defined by entering it on an expression line, put your curson in a new expression line and enter your calcuation in function notation. For example, if you have defined <m>P_1(t)=100+20t</m>, you can type <m>P_1(4)</m> and hit Enter to find that value.
+    </p>
+    <p>
+        <em>Solve Equations:</em>  Solutions to equations are represented graphically by intersection points. More precisely, if you are solving an equation of the form <m>f(x)=g(x)</m>, the solutions are the x-coordinates of the points where the graphs of <m>y=f(x)</m> and <m>y=g(x)</m> intersect.
+    </p>
+    <example>
+        <title>Evaluate and Solve Graphically</title>
+        <statement>
+            <p>
+                The population of an invasive fish species in a pond follows the logistic growth function <m>P(t)=\frac{200}{1+25e^{-0.04t}}</m> where <m>P</m> is the number of fish in the pond at time <m>t</m> in months after a few of the fish were accidentally introduced into the ecosystem.
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Find the population after 10 months.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            After how many months will the population reach 100 fish?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            To find the population after 10 years, we need to evaluate <m>P(10)</m>. We enter <m>P(t)=\frac{200}{1+25e^{-0.04t}}</m> on an expression line and hit Enter. On the next expression line, or any available expression line, we type <m>P(10)</m> and hit Enter. The value 11.2625288342 appears. Rounding to the nearest whole fish, we conclude that there were about 11 fish in the pond after 10 months.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            To determine how many months it will take the population to reach 100 fish, we will solve the equation <m>P(t)=100</m>. That is found by determining where the graphs of <m>y=P(t)</m> and <m>y=100</m> intersect. We already have the graph of <m>y=P(t)</m> displayed from the previous part of this example. On a new expression line, we input <m>y=100</m> and adjust the viewing rectangle in the graph until we can see where the two graphs intersect. Clicking on the intersection point brings up the coordinates of the point, <m>(80.4719.100)</m>. Recall that we are looking for the time, or <m>t</m> value, which is about <m>80.5</m> months.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            
+        </solution>
+    </example>
     <example>
         <title>Quadratic Graph</title>
         <statement>
