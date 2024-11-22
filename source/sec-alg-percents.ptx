@@ -653,6 +653,19 @@
   
   <exercises>
   <title>Exercises</title>
+  <exercisegroup>
+    <title>Calculations</title>
+    
+    
+  
+    <introduction>
+      <p>
+        Perform the calculations indicated in each exercise.
+      </p>
+    </introduction>
+  
+  
+
     
   <exercise><!--  #1 -->
     <statement>
@@ -884,11 +897,14 @@
       </p>
     </solution>
   </exercise>
-  
+</exercisegroup>
   <exercisegroup>
+    <title>Applications</title>
+    
+    
     <introduction>
       <p>
-        For this set of questions, calculate the percent and/or part.
+        Solve each problem.
       </p>
     </introduction>
   <exercise><!--  #5 -->
@@ -1020,14 +1036,7 @@
       </p>
     </solution>
   </exercise>
-  </exercisegroup>
-  
-  <exercisegroup>
-    <introduction>
-      <p>
-        For this set of questions, calculate the percent or part and the ending amount.
-      </p>
-    </introduction>
+
   <exercise><!--  #15 -->
     <statement>
     <p>
@@ -1078,14 +1087,7 @@
       </p>
     </solution>
   </exercise>
-  </exercisegroup>
-  
-  <exercisegroup>
-    <introduction>
-      <p>
-        For this set of questions, calculate the absolute change and relative change. Include the direction of the change in words or symbols.
-      </p>
-    </introduction>
+ 
   <exercise><!--  #19 -->
     <statement>
     <p>
@@ -1181,14 +1183,7 @@
     </p>
     </solution>
   </exercise>
-  </exercisegroup>
-  
-  <exercisegroup>
-  <introduction>
-      <p>
-        For this set of questions, describe the relative change. Include the direction of the change in words or symbols.
-      </p>
-    </introduction>
+
   <exercise> <!-- #23 -->
     <statement>
     <p>
@@ -1240,14 +1235,7 @@
     </p>
     </solution>
   </exercise>
-  </exercisegroup>
-  
-  <exercisegroup>
-    <introduction>
-      <p>
-        For this set of questions, calculate the ending amount and the combined relative change.
-      </p>
-    </introduction>
+
   <exercise> <!-- #27 -->
     <statement>
     <p>

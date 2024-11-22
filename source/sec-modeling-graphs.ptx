@@ -2,8 +2,15 @@
 
 <section xml:id="sec-modeling-graphs" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Graphs of Growth Models</title>
-  
+
 <introduction>
+    <figure xml:id="graphing-plant">
+        <caption>AI-generated image of a plant growing according to a linear model.</caption>
+    
+    <image source="images/graphing-plant.png" width="50%">
+        <shortdescription>A row of green plants, each sequentially larger than the next, with coordinate axes and a linear graph superimposed over the tops of the plants.</shortdescription>
+    </image>
+</figure>
     <p>
         In this section, we use graphing technology to create visual representations of data and trends and to solve problems involving growth models.
     </p>
@@ -130,7 +137,7 @@
                 <ol>
                     <li>
                         <p>
-                            To find the population after 10 years, we need to evaluate <m>P(10)</m>. (We know that because 10 years is a time, which is a <m>t</m> value; we are replacing <m>t</m> with 10. In Desmos, we enter <m>P(t)=\frac{200}{1+25e^{-0.04t}}</m> on an expression line and hit Enter. On the next expression line, or any available expression line, we type <m>P(10)</m> and hit Enter. The value 11.2625288342 appears. Rounding to the nearest whole fish, we conclude that there were about 11 fish in the pond after 10 months.
+                            To find the population after 10 months, we need to evaluate <m>P(10)</m>. (We know that because 10 years is a time, which is a <m>t</m> value; we are replacing <m>t</m> with 10. In Desmos, we enter <m>P(t)=\frac{200}{1+25e^{-0.04t}}</m> on an expression line and hit Enter. On the next expression line, or any available expression line, we type <m>P(10)</m> and hit Enter. The value 11.2625288342 appears. Rounding to the nearest whole fish, we conclude that there were about 11 fish in the pond after 10 months.
                         </p>
                     </li>
                     <li>
@@ -219,7 +226,21 @@
                 A home was purchased for $350,000 in 2012. If home values in the area have been increasing by 9% per year according to an exponential model, when will the home be worth $1,000,000?
             </p>
         </statement>
-        
+        <solution>
+            <p>
+                For simplicity, we will measure time <m>t</m> in years since 2012 and the value <m>P(t)</m> will be measured in thousands of dollars. 
+            </p>
+            <p>
+                Using an exponential model of the form <m>P(t)=P_0\left(1+r\right)^{t}</m> with <m>P_0=350</m> and <m>r=0.09</m>, we obtain the function <me>
+                    P(t)=350\left(1.09\right)^{t}
+                </me>.
+                
+            </p>
+            <p>
+                The time when the value reaches $1,000,000 is the solution to the equation <m>P(t)=1000</m>. To find this solution, we will graph <m>y=P(t)</m> and <m>y=1000</m>; then find where the graphs intersect.
+            </p>
+            
+        </solution>
     </example>
 </subsection>
 </section>
