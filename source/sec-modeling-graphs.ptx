@@ -223,7 +223,7 @@
         <title>Home Value</title>
         <statement>
             <p>
-                A home was purchased for $350,000 in 2012. If home values in the area have been increasing by 9% per year according to an exponential model, when will the home be worth $1,000,000?
+                A home was purchased for $350,000 in 2016. If home values in the area have been increasing by 9% per year according to an exponential model, when will the home be worth $1,000,000?
             </p>
         </statement>
         <solution>
@@ -239,8 +239,36 @@
             <p>
                 The time when the value reaches $1,000,000 is the solution to the equation <m>P(t)=1000</m>. To find this solution, we will graph <m>y=P(t)</m> and <m>y=1000</m>; then find where the graphs intersect.
             </p>
-            
+            <image source="images/graphing-home-value.png" width="50%">
+                <shortdescription>Graph of intersection of two curves. The intersection point is labeled (12.18206,1000).</shortdescription>
+            </image>
+            <p>
+                The two functions intersect where <m>\t=12.18206</m> which is the year <m>2016+12=2028</m>. Therefore, the home will be worth $1,000,000 in the year 2028.
+            </p>
         </solution>
     </example>
 </subsection>
+
+<exercises xml:id="exercises-modeling-graphs">
+    <exercise>
+        <statement>
+            <p>
+                Create a graph of <m>P(t)=100e^{-0.07t}</m> for <m>-1\le t \le 10</m>.
+            </p>
+        </statement>
+        <answer>
+            <image source="graphing-hw-1.png">
+                <shortdescription>(for accessibility)</shortdescription>
+            </image>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Create a graph of <m>P(t)=-5t^{2}+30t+7</m>. Your graph should show all key features of the function.
+            </p>
+        </statement>
+    </exercise>
+
+</exercises>
 </section>
