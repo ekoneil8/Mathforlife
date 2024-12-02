@@ -6,7 +6,7 @@
 
   <book xml:id="math-in-society">
     <title>Mathematics in Society</title>
-    <subtitle>A Work in Progress</subtitle>
+    <subtitle>Data, Dollars, and Dynamics</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />

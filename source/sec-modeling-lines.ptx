@@ -36,9 +36,57 @@
   <example>
     <statement>
       <p>
-        
+        Kobi drives an average of 1,050 miles each month. Kobi just purchased a used car with 43,000 miles on the odometer.
+      <ol>
+        <li>
+          <p>
+            Develop a linear model to represent the number of miles on the odometer after <m>t</m> months.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use the model to estimate the mileage after 2 years.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use the model to determine when the mileage will reach 100,000 miles.
+          </p>
+        </li>
+      </ol>
       </p>
     </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Measuring time in months since Kobi purchased the car, the initial value is <m>P_0=43000</m>. The common difference is <m>d=1050</m>. Therefore, we can build the model <m>P(t)=1=43000+1050t</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Two years is the same as <m>t=24</m> months. Substituting <m>t=24</m> into our function model and evaluating yields <m>P(24)=43000+1050(24)=68200</m> miles.
+            </p>
+          </li>
+          <li>
+            <p>
+              To determine when the mileage will reach 100,000 miles, we set the mileage <m>P</m> equal to 100,000 and solve for <m>t</m>.
+              <me>
+                43000+1050t=100000
+              </me>
+              <me>
+                1050t=57000
+              </me>
+              <me>
+                t=\frac{57000}{1050}\approx54
+              </me>
+              The car will have 100,000 miles on the odometer in about 54 months, or about 4.5 years.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
   </example>
 </subsection>
    

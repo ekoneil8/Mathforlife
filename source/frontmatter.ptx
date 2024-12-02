@@ -4,37 +4,59 @@
 <!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
-  <titlepage>
-    <author>
+<bibinfo>
+       <author>
       <personname>Elizabeth O'Neil</personname>
       <department>Department of Mathematics</department>
       <institution>Olympic College</institution>
     </author>
-    <date>
-      <today />
-    </date>
-    </titlepage>
-
-  <bibinfo>
-
     <website>
       <url href="https://pretextbook.org">My Website</url>
     </website>
 
     <copyright>
-      <year>2020<ndash />2023</year>
+      <year>2025</year>
       <holder>Elizabeth O'Neil</holder>
       <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
   </bibinfo>
+
+  <titlepage>
+  <titlepage-items>
+  
+  </titlepage-items>
+
+    </titlepage>
+  
+  
   
   <preface>
+    <title>Note to Students</title>
+    
+    
+   
     <p>
-      Note to students goes here.
+      The focus of this book is "pulling back the curtain". The goal is not to ask you to memorize formulas or procedures, although the authors hope you will remember a few. Rather, the primary goal is to provide insights into how things work: what is going on behind the scenes in credit card finance charges, statistics reported in the newspaper, ranked-choice voting, and many more areas where mathematics arises in our world.
+      </p>
+      <p>
+      You will be asked to use formulas to calculate mortgage payments, for example, and we show how the formulas were developed. These are not calculations that anyone is likely to perform on a handheld calculator, aside from a student in a mathematics class. By pulling back the curtain on how mortgages work, the authors hope to empower students to make educated financial decisions in their lives.
     </p>
+    <p>
+      We hope you will enjoy your last formal course in mathematics and come to appreciate the beauty and usefulness of mathematics in work and life.
+    </p>
+  
    
   </preface>
+<preface>
+  <title>Attributions</title>
+  <p>
+    Attributions go here.
+  </p>
+  
+
+  </preface>
+  
   
 </frontmatter>
 

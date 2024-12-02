@@ -127,10 +127,63 @@
       </p>
     </assemblage>
     <p>
-      Unit conversions use rates so we will be multiplying or dividing. We can use our number sense to determine which operation to use, or we can line up the units to help us. Here we will line up the units to show you how. This is called <term>dimensional analysis</term>. Each conversion factor can be written two ways. For example, since 1 pint is equal to 2 cups, both of these fractions are equal to 1.
+      To convert units, we will use the strategy of multiplying by a "fancy 1". The technical term for this approach is <term>dimensional analysis</term>. For example, since 1 pint is equal to 2 cups, both of these fractions are equal to 1:
       <me>\frac{1\text{ pint}}{2\text{ cups}}=\frac{2\text{ cups}}{1\text{ pint}}=1</me>
-      We can multiply by either one of these by lining up the units we want to cancel out. Because the rate is equal to 1, the value stays equivalent in the new units. Let's look at an example.
+      To convert between pints and cups, we can multiply by one of these fractions, selecting the form that will result in the original units being "divided out", leaving an equivalent value in terms of the new units. For example, suppose we needed to convert <m>5.25</m> cups to pints.
+      </p> 
+      <p> 
+        we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. Because we would like to divide out the cups units from the numerator, we multiply by the conversion factor with the cups in the denominator: <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>.
+      
+      <me>
+        \frac{5.25 \cancel{\text{ cups}}}{1}\cdot \frac {1 \text{ pint}}{2 \cancel{\text { cups}}}=\frac{5.25 \text{ pints}}{2}=2.625 \text{ pints}
+      </me>
+      
+      Because we have only multiplied by 1, the value stays equivalent in the new units. 
     </p>
+    <p>
+      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by 2. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Let's see an example. 
+    </p>
+    <example>
+      <statement>
+        <p>
+          Have you ever wondered how the speedometer on a car works? A car with 15.8-inch radius tires will move <m>2\pi \cdot 15.8=31.6 \pi</m> inches with each revolution. If the wheels are spinning 620 revolutions per minute, how fast is the car moving in miles per hour?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Our goal is to convert 620 revolutions per minute (rpm) to miles per hour. To do this, we will start with the expression <m>\frac{620 \text{ revolutions}}{1 \text { minute}}</m> and apply the following conversions:
+          <ul>
+            <li>
+              <p>
+                Convert revolutions to inches using the fact that each revolution moves the car \<m>31.6\pi</m> inches.
+              </p>
+            </li>
+            <li>
+              <p>
+                Convert inches to feet and then feet to miles.
+              </p>
+            </li>
+            <li>
+              <p>
+                Convert minutes to hours.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <me>
+            \frac{620 \text{ rev}}{1 \text { min}} \cdot \frac {31.6\pi \text {in}}{1 \text{rev}} \cdot \frac{1 \text { ft}}{12 \text { in}}\cdot \frac{1 \text{mi}}{5280 \text{ ft}} \cdot \frac{60 \text{ min}}{1 \text{ hr}}\approx 58 \frac{\text{mi}}{\text{hr}}
+          </me>
+          
+          Note that all of the units divide away exept the miles in the numerator and the hours in the denominator. Therefore, the car is moving 58 miles per hour.
+          </p>
+          <p>The above conversions can be done in any order, as long as we are careful about which units are in the numerator and which are in the denominator.
+        </p>
+        <p>
+          <em>Comment:</em> Most modern cars have electric sensors that measure the rotational speed (rpm) of the wheels and send that information to the car's computer. The computer converts the rotational speed to linear speed in miles per hour. Because the calculation uses an assumed tire size, if a car has the wrong sized tires, its speedometer will display an incorrect speed.
+        </p>
+      </solution>
+    </example>
     <example>
       <statement>
       <p>
@@ -149,92 +202,16 @@
           <me>54\,\cancel{\mathrm{ pounds}}\cdot\frac{1\,\cancel{\mathrm{ kilogram}}}{2.2\,\cancel{\mathrm{ pounds}}}\cdot\frac{2\text{ milligrams}}{1\,\cancel{\mathrm{ kilogram}}}\approx 49.1\text{ milligrams}</me>
         You should give your dog about 49.1 milligrams. Since the tablets are 25 mg each, we will divide 49.1 mg by 25 mg.
         <me>\frac{49.1\,\cancel{\mathrm{ mg}}}{25\,\cancel{\mathrm{ mg}}}\approx 1.96\text{ tablets}</me>
-        Check with your vet to make sure it's within an acceptable range, but it looks like you should give your dog 2 tablets. There are also liquid forms of medication to avoid giving partial tablets.
+        Check with your vet to make sure it's within an acceptable range, but it looks like you should give your dog 2 tablets. There are also liquid forms of medications available.
         </p>
       </solution>
     </example>
   </subsection>
   
-  <subsection>
-    <title>Solving Problems with Geometry</title>
+ <subsection xml:id="subsec-proportion-problemsolving">
+  <title>Solving Problems Involving Proportional Reasoning</title>
   
-    <p>
-      If there are geometric shapes in a problem we may need to look up some formulas. Here are a few of the most common.
-    </p>
-    <assemblage>
-      <title>Perimeter and Area</title>
-      <sidebyside>
-        <stack>
-          <p>
-            <term>Rectangle</term>
-          </p>
-          <p>
-            Perimeter = <m>2L + 2W\text{ units}</m>
-          </p>
-          <p>
-            Area = <m>L\cdot W\text{ units}^2</m>
-          </p>
-        </stack>
-        <stack>
-          <p>
-            <term>Circle</term>
-          </p>
-          <p>
-            Circumference = <m>2\pi r\text{ units}</m>
-          </p>
-          <p>
-            Area = <m>\pi r^2\text{ units}^2</m>
-          </p>
-        </stack>
-      </sidebyside>
-      <!-- todo: try to fix the centering in the columns to look better in pdf-->
-      <sidebyside widths="30% 18%" margins="0% 30%">
-        
-          <image source="images/language_logic_rules/problem_solving/rectangle.png">
-            <shortdescription>A rectangle with the width labeled W and the length labeled L.</shortdescription>
-          </image>
-        
-        
-          <image source="images/language_logic_rules/problem_solving/circle.png">
-            <shortdescription>A circle with the radius labeled r.</shortdescription>
-          </image>
-        
-      </sidebyside>
-    </assemblage>
-    <assemblage>
-      <title>Volume</title>
-      <sidebyside>
-        <stack>
-          <p>
-            <term>Rectangular Box</term>
-          </p>
-          <p>
-            Volume = <m>L\cdot W\cdot H\text{ units}^3</m>
-          </p>
-        </stack>
-        <stack>
-          <p>
-            <term>Cylinder</term>
-          </p>
-          <p>
-            Volume = <m>\pi r^2 H\text{ units}^3</m>
-          </p>
-        </stack>
-      </sidebyside>
-      <!-- todo: try to fix the centering in the columns to look better in pdf-->
-      <sidebyside widths="26% 20%" margins="0% 30%">
-        
-        <image source="images/language_logic_rules/problem_solving/rectangular_box.png">
-            <shortdescription>A rectangular box with the width labeled W, length labeled L, and height labeled H</shortdescription>
-        </image>
-        
-        
-        <image source="images/language_logic_rules/problem_solving/cylinder.png">
-            <shortdescription>A cylinder with the radius labeled r and height labeled H</shortdescription>
-            </image>
-         
-      </sidebyside>
-    </assemblage>
+ 
   
     <example>
       <statement>
@@ -340,18 +317,18 @@
   </subsection>
   
   <exercises>
-    <title>Exercises and Problems</title>
+    <title>Exercises</title>
     <exercise>
       <statement>
         <p>
-          This is a trial exercise.
+          How many yards are in one kilometer?
         </p>
       </statement>
-      <solution>
+      <answer>
         <p>
-          This is the solution.
+          
         </p>
-      </solution>
+      </answer>
     </exercise>
     
   </exercises>

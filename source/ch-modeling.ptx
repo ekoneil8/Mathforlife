@@ -4,11 +4,13 @@
   <title>Mathematical Models</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> 
+      Mathematical modeling is the process of using mathematical tools, such as functions or equations, to represent real-life phenomena. Models help us understand our society and the world around us. 
+    </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-modeling-overview.ptx" />
+  
   <xi:include href="sec-modeling-lines.ptx" />
   <xi:include href="sec-modeling-quadratic.ptx" />
   <xi:include href="./sec-modeling-exponential.ptx" />
