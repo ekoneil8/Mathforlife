@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="math-in-society">
-    <title>Mathematics in Society</title>
-    <subtitle>Data, Dollars, and Dynamics</subtitle>
+    <title>Mathematics in the Real World</title>
+    <subtitle>Data, Dynamics, Dollars, and Decisions</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />

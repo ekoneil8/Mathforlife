@@ -4,7 +4,13 @@
   <title>Proportional Reasoning</title>
 <introduction>
   <p>
-    
+    When cooking rice, the amounts of water and rice should be <em>proportional</em>, meaning that the ratio of the amount of water to the amount of rice should be the same, regardless of how much rice you are cooking. For microwaved rice, that ratio is 3 parts water to 2 parts rice.
+  </p>
+  <p>
+    Proportional reasoning is the practice of using mathematics to solve problems involving ratios and rates, such as calculating the amount of water needed when cooking <m>1 \frac{1}{2}</m> cups of dry rice in the microwave. (You should use <m>2 \frac{1}{4}</m> cups of water.) 
+  </p>
+  <p>
+    In this section, we explore applications of proportional reasoning in such practical situations as cooking, travel, dosage calculations, and home improvement.
   </p>
 </introduction>
   <objectives>
@@ -35,9 +41,66 @@
   
   <subsection>
     <title>Unit Conversions</title>
-  
+  <p>
+      To convert units, we will use the strategy of multiplying by a "fancy 1". The technical term for this approach is <term>dimensional analysis</term>. For example, since 1 pint is equal to 2 cups, both of these fractions are equal to 1:
+      <me>\frac{1\text{ pint}}{2\text{ cups}}=\frac{2\text{ cups}}{1\text{ pint}}=1</me>
+      To convert between pints and cups, we can multiply by one of these fractions, selecting the form that will result in the original units being "divided out", leaving an equivalent value in terms of the new units. For example, suppose we needed to convert <m>5.25</m> cups to pints.
+      </p> 
+      <p> 
+        we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. Because we would like to "divide out" the cups units from the numerator, we multiply by the conversion factor with the cups in the denominator, <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>, as follows:
+      
+      <me>
+        \frac{5.25 \cancel{\text{ cups}}}{1}\cdot \frac {1 \text{ pint}}{2 \cancel{\text { cups}}}=\frac{5.25 \text{ pints}}{2}=2.625 \text{ pints}
+      </me>
+      
+      Because we have just multiplied by 1, the value stays equivalent in the new units. 
+    </p>
     <p>
-      Many situations also require unit conversions. Here are some common conversion rates used.
+      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by 2. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Let's see an example. 
+    </p>
+     <example>
+      <statement>
+        <p>
+          Have you ever wondered how the speedometer on a car works? A car with 15.8-inch radius tires will move <m>2\pi \cdot 15.8=31.6 \pi</m> inches with each revolution. If the wheels are spinning 620 revolutions per minute, how fast is the car moving in miles per hour?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Our goal is to convert 620 revolutions per minute (rpm) to miles per hour. To do this, we will start with the expression <m>\frac{620 \text{ revolutions}}{1 \text { minute}}</m> and apply the following conversions:
+          <ul>
+            <li>
+              <p>
+                Convert revolutions to inches using the fact that each revolution moves the car \<m>31.6\pi</m> inches.
+              </p>
+            </li>
+            <li>
+              <p>
+                Convert inches to feet and then feet to miles. There are 12 inches in 1 foot, and there are 5280 feet in 1 mile.
+              </p>
+            </li>
+            <li>
+              <p>
+                Convert minutes to hours.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <me>
+            \frac{620 \text{ rev}}{1 \text { min}} \cdot \frac {31.6\pi \text {in}}{1 \text{rev}} \cdot \frac{1 \text { ft}}{12 \text { in}}\cdot \frac{1 \text{mi}}{5280 \text{ ft}} \cdot \frac{60 \text{ min}}{1 \text{ hr}}\approx 58 \frac{\text{mi}}{\text{hr}}
+          </me>
+          
+          Note that all of the units divide away exept the miles in the numerator and the hours in the denominator. Therefore, the car is moving 58 miles per hour.
+          </p>
+          <p>The above conversions can be done in any order, as long as we are careful about which units are in the numerator and which are in the denominator.
+        </p>
+        <p>
+          <em>Comment:</em> Most modern cars have electric sensors that measure the rotational speed (rpm) of the wheels and send that information to the car's computer. The computer converts the rotational speed to linear speed in miles per hour. Because the calculation uses an assumed tire size, if a car has the wrong sized tires, its speedometer will display an incorrect speed.
+        </p>
+      </solution>
+    </example>
+    <p>
+      Below are some common conversion rates.
     </p>
     <assemblage>
       <title>Unit Conversions for Length</title>
@@ -90,7 +153,7 @@
         </stack>
       </sidebyside>
           <p>
-            1 kilogram (kg) <m>\approx</m> 2.2 pounds (lbs) in Earth's gravity
+            1 kilogram (kg) <m>\approx</m> 2.2 pounds (lbs) on Earth's surface
           </p>
     </assemblage>
     <assemblage>
@@ -126,64 +189,8 @@
         Note: It is unfortunate that our system of measurement uses ounces to measure both volume and weight. For clarity, we will say "fluid ounces" when referring to volume and "ounces" will refer to weight.
       </p>
     </assemblage>
-    <p>
-      To convert units, we will use the strategy of multiplying by a "fancy 1". The technical term for this approach is <term>dimensional analysis</term>. For example, since 1 pint is equal to 2 cups, both of these fractions are equal to 1:
-      <me>\frac{1\text{ pint}}{2\text{ cups}}=\frac{2\text{ cups}}{1\text{ pint}}=1</me>
-      To convert between pints and cups, we can multiply by one of these fractions, selecting the form that will result in the original units being "divided out", leaving an equivalent value in terms of the new units. For example, suppose we needed to convert <m>5.25</m> cups to pints.
-      </p> 
-      <p> 
-        we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. Because we would like to divide out the cups units from the numerator, we multiply by the conversion factor with the cups in the denominator: <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>.
-      
-      <me>
-        \frac{5.25 \cancel{\text{ cups}}}{1}\cdot \frac {1 \text{ pint}}{2 \cancel{\text { cups}}}=\frac{5.25 \text{ pints}}{2}=2.625 \text{ pints}
-      </me>
-      
-      Because we have only multiplied by 1, the value stays equivalent in the new units. 
-    </p>
-    <p>
-      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by 2. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Let's see an example. 
-    </p>
-    <example>
-      <statement>
-        <p>
-          Have you ever wondered how the speedometer on a car works? A car with 15.8-inch radius tires will move <m>2\pi \cdot 15.8=31.6 \pi</m> inches with each revolution. If the wheels are spinning 620 revolutions per minute, how fast is the car moving in miles per hour?
-        </p>
-      </statement>
-      <solution>
-        <p>
-          Our goal is to convert 620 revolutions per minute (rpm) to miles per hour. To do this, we will start with the expression <m>\frac{620 \text{ revolutions}}{1 \text { minute}}</m> and apply the following conversions:
-          <ul>
-            <li>
-              <p>
-                Convert revolutions to inches using the fact that each revolution moves the car \<m>31.6\pi</m> inches.
-              </p>
-            </li>
-            <li>
-              <p>
-                Convert inches to feet and then feet to miles.
-              </p>
-            </li>
-            <li>
-              <p>
-                Convert minutes to hours.
-              </p>
-            </li>
-          </ul>
-        </p>
-        <p>
-          <me>
-            \frac{620 \text{ rev}}{1 \text { min}} \cdot \frac {31.6\pi \text {in}}{1 \text{rev}} \cdot \frac{1 \text { ft}}{12 \text { in}}\cdot \frac{1 \text{mi}}{5280 \text{ ft}} \cdot \frac{60 \text{ min}}{1 \text{ hr}}\approx 58 \frac{\text{mi}}{\text{hr}}
-          </me>
-          
-          Note that all of the units divide away exept the miles in the numerator and the hours in the denominator. Therefore, the car is moving 58 miles per hour.
-          </p>
-          <p>The above conversions can be done in any order, as long as we are careful about which units are in the numerator and which are in the denominator.
-        </p>
-        <p>
-          <em>Comment:</em> Most modern cars have electric sensors that measure the rotational speed (rpm) of the wheels and send that information to the car's computer. The computer converts the rotational speed to linear speed in miles per hour. Because the calculation uses an assumed tire size, if a car has the wrong sized tires, its speedometer will display an incorrect speed.
-        </p>
-      </solution>
-    </example>
+    
+   
     <example>
       <statement>
       <p>
