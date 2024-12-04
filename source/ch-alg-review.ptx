@@ -20,6 +20,7 @@
   <!-- include sections -->
   <xi:include href="sec-alg-percents.ptx" />
   <xi:include href="sec-alg-proportion.ptx" />
+  <xi:include href="sec-alg-dosage.ptx" />
   <xi:include href="sec-alg-equations.ptx" />
   
 </chapter>

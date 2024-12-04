@@ -4,6 +4,7 @@
   <targets>
     <target name="web" format="html" />
     <target name="print" format="pdf" />
+    <target name="latex" format="latex" />
   </targets>
 </project>
 
@@ -20,6 +21,16 @@
         xsl="xsl"
         asy-method="server"
      >
+        <target
+            name="print"
+            format="pdf"
+            source="main.ptx"
+            publication="publication.ptx"
+            output-dir="print"
+            output-filename="mybook.pdf"
+            latex-engine="pdflatex"
+            deploy-dir="pdf"
+          />
        <targets>
           <target
             name="web"
@@ -45,16 +56,7 @@
             format="html"
             platform="runestone"
           />
-          <target
-            name="print"
-            format="pdf"
-            source="main.ptx"
-            publication="publication.ptx"
-            output-dir="print"
-            output-filename="mybook.pdf"
-            latex-engine="pdflatex"
-            deploy-dir="pdf"
-          />
+
           <target
             name="latex"
             format="latex"
