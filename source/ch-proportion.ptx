@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Proportional Reasoning</title>
+
+  <introduction>
+    <figure xml:id="toolbox">
+      <caption>AI-generated image of a wooden toolbox with tools.</caption>
+      <image source="images/Alg-Toolbox.png" width="50%">
+        <shortdescription>Wooden toolbox with tools.</shortdescription>
+      </image>
+    
+      </figure>
+    <p> 
+      
+
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-proportion-percents.ptx" />
+  <xi:include href="sec-proportion-rate-ratio.ptx" />
+  <xi:include href="sec-proportion-dosage.ptx" />
+  
+  
+</chapter>

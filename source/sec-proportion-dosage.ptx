@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-proportion-dosage" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Focus on Dosage Calculations</title>
+  <introduction>
+        <figure xml:id="alg-dosage-calc">
+            <caption>AI-generated image of assorted medications.</caption>
+            <image source="images/alg-dosage-calc.png" width="50%">
+                <shortdescription>Assorted medications</shortdescription>
+            </image>
+        </figure>
+ 
+ <p>
+   Nurses, pharmacists, and other healthcare providers must be proficient in calculating dosages of medications to ensure that patients receive a safe but effective dose. In this section, we address the proportional reasoning involved in these calculations.
+ </p>
+    </introduction>
+ <objectives>
+    <introduction>
+        <p>
+            Students will be able to:
+        </p>
+    </introduction>
+        <ul>
+            <li>
+                <p>
+                    Calculate dosages of medications.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Determine if dosages meet safety guidelines.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+
+<subsection xml:id="subsubsec-dosages">
+    <title>Calculating Dosages</title>
+    <p>
+    In calculating dosages, we will use the approach of multiplying by a conversion factor, or a "fancy 1".
+    </p>
+         <example>
+        <statement>
+            <p>
+                The provider ordered 8,000 units of heparin. The vial is labeled 10,000 units/ml. What volume will you administer?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                We need to convert 8,000 units into mililiters to determine the volume of medication to be administered to the patient. Our conversion factor is
+                <me>
+                    \frac{10000\text{ units}}{1\text{ ml}}=\frac{1\text{ ml}}{10000\text{ units}}=1
+                </me>
+                We will use the form with units in the denominator so that the units divide out as follows:
+                <me>
+                    \frac{8000\cancel{\text{ units}}}{1}\cdot\frac{1\text{ ml}}{10000\cancel{\text{ units}}}=0.8\text{ ml}
+                </me>
+                Therefore, 0.8 ml of heparin should be administered to the patient.
+            </p>
+        </solution>
+     </example>
+     <p>
+        Many prescriptions use latin abbreviations to indicate how often the medication should be administered. Some of the more common abbreviations are listed below.
+     </p>
+    <assemblage xml:id="assemblage-medical-terminology">
+        <title>Dosage Abbreviations</title>
+        <p>
+            <dl width="narrow">
+            <li>
+                <title>bid</title>
+                
+                
+                <p>
+                    Twice per day (Latin: bis in die)
+                </p>
+            </li>
+            <li>
+                <title>tid</title>
+                <p>
+                  Three times per day (Latin: ter in die)  
+                </p>
+            </li>
+            <li>
+                <title>qid</title>
+                <p>
+                    Four times per day (Latin: quarter in die)
+                </p>
+            </li>
+            <li>
+                <title>qd</title>
+                <p>
+                    Every day (Latin: quaqua die); may also be written as od for once daily
+                </p>
+            </li>
+            <li>
+                <title>q3h</title>
+                <p>
+                    Every three hours (Latin: quaqua 3 hora); can generalize to any number of hours
+                </p>
+            </li>
+            </dl>
+      </p>
+    </assemblage>
+
+<p>
+    Additionally, dosage calculations may require converting units. Some of the more commonly used conversions are listed below.
+</p>
+<assemblage xml:id="assemblage-dosage-conversions">
+    <title>Common Unit Conversions</title>
+    <p>
+        <me>
+            1\text{ kilogram (kg)}\approx2.2\text{ pounds (lb)}
+        </me>
+        <me>
+            1 \text{ gram (g)}=1\,000\text{ miligrams (mg)}=1\,000\,000\text{ micrograms (mcg)}
+        </me>
+        <me>
+            1\text{ mg}=1\,000\text{ mcg}
+        </me>
+        <me>
+            1\text{ Liter (L)}=1\,000\text{ mililiters (ml)}
+        </me>
+        
+        
+    </p>
+    <p>
+        Note: in the international system of units, micrograms are denoted as <m>\mu\text{g}</m>. To avoid potentially disastrous results that might arise from confusing <m>\mu\text{g}</m>> with mg, the medical community uses the abbreviation mcg.
+    </p>
+</assemblage>
+<example>
+    <statement>
+        <p>
+            The provider orders a maintenance dose of oral aminophylline, 3 mg/kg q6h.  The client weighs 110 lbs.  How many mg should the nurse administer to the client in a 24-hour period? 
+        </p>
+    </statement>
+    <solution>
+        <p>
+            First, we will find the client's weight in kg:
+            <me>
+                \frac{110\cancel{ lbs}}{1}\cdot \frac{1\text{ kg}}{2.2\cancel\text{ lb}}=50\text{ kg}
+            </me>
+            </p>
+        <p>            
+           Next, we determine the amount of aminophylline administered in each dose:
+           <me>
+            \frac{3\text{ mg}}{1\cancel{\text{ kg}}}\cdot\frac{50\cancel{\text{ kg}}}{1}=150\text{ mg}
+           </me>
+        </p>
+        <p>Since the dose is given every 6 hours, there will be <m>\frac{24}{6}=4</m> doses in each 24-hour period. This amounts to <m>4\cdot150=600\text{ mg}</m> each day.
+        </p>
+    </solution>
+</example>
+<example>
+    <statement>
+        <p>
+            
+        </p>
+    </statement>
+</example>
+
+</subsection>
+
+    
+
+</section>
