@@ -17,7 +17,7 @@
     Proportional reasoning is the practice of using mathematics to solve problems involving ratios and rates, such as determining the amount of water to add to <m>1 \frac{1}{2}</m> cups of rice. (You should use <m>2 \frac{1}{4}</m> cups of water.) 
   </p>
   <p>
-    In this section, we explore applications of proportional reasoning in such practical situations as cooking, travel, dosage calculations, and home improvement.
+    In this section, we will explore applications of proportional reasoning in such practical situations as cooking, travel, dosage calculations, and home improvement.
   </p>
 </introduction>
   <objectives>
@@ -34,12 +34,7 @@
       </li>
       <li>
         <p>
-          Solve problems involving proportional reasoning.
-        </p>
-      </li>
-      <li>
-        <p>
-          Solve problems involving percentages and proportional reasoning.
+          Solve problems involving rates and ratios.
         </p>
       </li>
     </ul>
@@ -51,7 +46,10 @@
   <p>
       To convert units, we will use the strategy of multiplying by a "fancy 1". The technical term for this approach is <term>dimensional analysis</term>. For example, since 1 pint is equal to 2 cups, both of these fractions are equal to 1:
       <me>\frac{1\text{ pint}}{2\text{ cups}}=\frac{2\text{ cups}}{1\text{ pint}}=1</me>
-      To convert between pints and cups, we can multiply by one of these fractions, selecting the form that will result in the original units being "divided out", leaving an equivalent value in terms of the new units. For example, suppose we needed to convert <m>5.25</m> cups to pints.
+     The fractions <m>\frac{1\text{ pint}}{2\text{ cups}}</m> and <m>\frac{2\text{ cups}}{1\text{ pint}}</m> are called <term>conversion factors</term> because they are factors (multipliers) used to convert between units.
+     </p>
+     <p>
+      To convert between pints and cups, we can multiply by the conversion factor that will result in the original units being "divided out", leaving an equivalent value in terms of the new units. For example, suppose we needed to convert <m>5.25</m> cups to pints.
       </p> 
       <p> 
         we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. Because we would like to "divide out" the cups units from the numerator, we multiply by the conversion factor with the cups in the denominator, <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>, as follows:
@@ -63,8 +61,51 @@
       Because we have just multiplied by 1, the value stays equivalent in the new units. 
     </p>
     <p>
-      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by 2. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Let's see an example. 
+      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by 2. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Following are some more involved examples. 
     </p>
+    <example>
+      <statement>
+        <p>
+          Convert 20 miles per hour to feet per minute.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are 5280 feet in 1 mile and there are 60 minutes in 1 hour. (For your reference, a list of unit conversions can be found at the end of this section.)
+        </p>
+        <p>
+          We start by writing 20 miles per hour as a fraction:  <m>\frac{20\text{ mi}}{1\text{ hr}}</m>. 
+        </p>
+        <p>
+          To divide out the miles in the numerator, we will use a conversion factor with miles in the denominator; the numerator will be 5280 feet.
+        </p>
+        <p>
+          <me>
+            \frac{20\cancel{\text{ mi}}}{1\text{ hr}}\cdot\frac{5280\text{ ft}}{1\cancel{\text{ mi}}}=\frac{105\,600\text{ft}}{1\text{hr}}
+          </me>
+          
+        </p>
+        <p>
+           To divide out the hour in the denominator, we will use a conversion factor with hours in the numerator; the denominator will be 60 minutes.
+        </p>
+        <p>
+          <me>
+            \frac{105\,600\text{ ft}}{1\cancel{\text{ hr}}}\cdot\frac{1\cancel{text{ hr}}}{60\text{ min}}=1760\text{ ft/min}
+          </me>
+          
+        </p>
+        <p>
+          Therefore, a vehicle moving 20 miles per hour travels 1,760 feet each minute.
+        </p>
+        <p>
+          Note that we could have completed both conversions in one step as follows:
+          <me>
+            \frac{20\cancel{\text{ mi}}}{1\cancel{\text{ hr}}}\cdot\frac{5280\text{ ft}}{1\cancel{\text{ mi}}}\cdot\frac{1\cancel{text{ hr}}}{60\text{ min}}=1760\text{ ft/min}
+          </me>
+          
+        </p>
+      </solution>
+    </example>
      <example>
       <statement>
         <p>
@@ -198,34 +239,13 @@
     </assemblage>
     </subsection>
  <subsection xml:id="subsec-proportion-problemsolving">
-  <title>Solving Problems Involving Proportional Reasoning</title>
+  <title>Solving Problems Involving Rates and Ratios</title>
     <p>
       There are many real-life problems in which proportional reasoning can be applied. Some examples from various contexts follow.
     </p>
     
    
-    <example>
-      <statement>
-      <p>
-        Your dog was stung by a bee and your veterinarian recommended you give them Benedryl. The dosage is 2 milligrams per kilogram of body weight and you want to double check the dose. Your dog weighs 54 pounds and the tablets are 25 mg each. How many tablets should you give your dog?
-      </p>
-      </statement>
-      <solution>
-        <p>
-          First we will convert the pounds to kilograms, and then we will apply the dosage rate.
-          <me>\frac{54\cancel{\term{ pounds}}{1}\cdot\frac{1\text{ kilogram}}{2.2\,\cancel{\mathrm{ pounds}}}\approx 24.55\text{ kilograms}</me>
-          Then we multiply that by the dosage, setting up the kilograms to cancel.
-          <me>24.55\,\cancel{\mathrm{ kilograms}}\cdot\frac{2\text{ milligrams}}{1\,\cancel{\mathrm{ kilogram}}}\approx 49.1\text{ milligrams}</me>
-        </p>
-        <p>
-          Or we can also do this in one step
-          <me>54\,\cancel{\mathrm{ pounds}}\cdot\frac{1\,\cancel{\mathrm{ kilogram}}}{2.2\,\cancel{\mathrm{ pounds}}}\cdot\frac{2\text{ milligrams}}{1\,\cancel{\mathrm{ kilogram}}}\approx 49.1\text{ milligrams}</me>
-        You should give your dog about 49.1 milligrams. Since the tablets are 25 mg each, we will divide 49.1 mg by 25 mg.
-        <me>\frac{49.1\,\cancel{\mathrm{ mg}}}{25\,\cancel{\mathrm{ mg}}}\approx 1.96\text{ tablets}</me>
-        Check with your vet to make sure it's within an acceptable range, but it looks like you should give your dog 2 tablets. There are also liquid forms of medications available.
-        </p>
-      </solution>
-    </example>
+
   
     <example>
       <statement>

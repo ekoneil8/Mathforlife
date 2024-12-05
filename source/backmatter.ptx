@@ -6,6 +6,7 @@
 <!-- solutions in the next. Then there is an appendix -->
 <!-- with all notation generated, and finally the index. -->
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
+
   <title>Appendix</title>
   <solutions divisional="solution" admit="odd">
     <title>Answers to Odd-Numbered Exercises</title>
@@ -26,6 +27,7 @@
 </appendix>
   <appendix>
   <title>Review: Linear Equations</title>
+
   
    <p>A <term>linear equation</term> is a special type of equation in which the only power on the variable is 1. It is called linear because its graph forms a straight line.</p>
 <assemblage xml:id="assemblage-solve-linear">
