@@ -4,15 +4,15 @@
   <title>Proportional Reasoning</title>
 
   <introduction>
-    <figure xml:id="toolbox">
-      <caption>AI-generated image of a wooden toolbox with tools.</caption>
-      <image source="images/Alg-Toolbox.png" width="50%">
-        <shortdescription>Wooden toolbox with tools.</shortdescription>
+    <figure xml:id="proportional-trees">
+      <caption>AI-generated image of trees with proportional dimensions.</caption>
+      <image source="images/proportional-trees.png" width="50%">
+        <shortdescription>Four trees of different sizes, all proportional.</shortdescription>
       </image>
     
       </figure>
     <p> 
-      
+      Proportional reasoning is one of the most commonly-used mathematical tools. It is used in art and design for scale drawings and perspective, in everyday life for cooking and driving, and much more.
 
     </p>
   </introduction>

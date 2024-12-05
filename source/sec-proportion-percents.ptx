@@ -278,10 +278,10 @@
   <assemblage>
         <title>Calculating Percents</title>
         <p>
-          <me>\text{Percent} = \frac{\text{part}}{\text{whole}}</me>
+          <me>\text{Percent in decimal form} = \frac{\text{part}}{\text{whole}}</me>
         </p>
         <p>
-          <me>\text{Part} = \text{percent} \cdot \text{whole}</me>
+          <me>\text{Part} = \text{(percent in decimal form)} \cdot \text{whole}</me>
         </p>
         <!-- <p>
           Whole = percent <m>\cdot</m> part

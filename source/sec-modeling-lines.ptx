@@ -3,12 +3,20 @@
 <section xml:id="sec-modeling-lines" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Linear Growth</title>
 <introduction>
+<figure xml:id="graphing-plant">
+        <caption>AI-generated image of a plant growing according to a linear model.</caption>
+    
+    <image source="images/graphing-plant.png" width="50%">
+        <shortdescription>A row of green plants, each sequentially larger than the next, with coordinate axes and a linear graph superimposed over the tops of the plants.</shortdescription>
+    </image>
+</figure>
  <p>
-  
+  Linear growth occurs when quantities increase or decrease at a constant rate over time, which is common in real-life scenarios like budgeting, population changes, and transportation. Understanding linear growth helps us make predictions, solve problems, and analyze trends in fields like science, economics, and everyday decision-making.
  </p>
 </introduction>
 <objectives>
   <introduction>
+  
     <p>
       Students will be able to:
     </p>

@@ -141,16 +141,7 @@
         exercise-readingquestion="no"
       />-->
 
-    <!-- Specify the style of the html by giving names to      -->
-    <!-- override defaults.  Ex: to use "style_oscarlevin.css" -->
-    <!-- put <css style="oscarlevin"/>                         -->
-    <!-- See also                                              -->
-    <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
-      <!-- <css
-          style="oscarlevin"
-          colors="gold_red"
 
-      /> -->
 
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
@@ -161,7 +152,7 @@
       <!--<toc focused="yes" preexpanded-levels="1" />-->
 
     <!-- Navigation options: linear or tree, and whether there is an "up" button -->
-      <!--<navigation logic="tree" upbutton="no" />-->
+      <!--<navigation logic="tree" upbutton="yes" />-->
 
     <!-- xref options: control whether cross-references are knowls or links -->
       <!--<cross-references knowled="cross-page" />-->

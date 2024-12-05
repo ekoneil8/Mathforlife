@@ -4,13 +4,7 @@
   <title>Graphs of Growth Models</title>
 
 <introduction>
-    <figure xml:id="graphing-plant">
-        <caption>AI-generated image of a plant growing according to a linear model.</caption>
     
-    <image source="images/graphing-plant.png" width="50%">
-        <shortdescription>A row of green plants, each sequentially larger than the next, with coordinate axes and a linear graph superimposed over the tops of the plants.</shortdescription>
-    </image>
-</figure>
     <p>
         In this section, we use graphing technology to create visual representations of data and trends and to solve problems involving growth models.
     </p>
@@ -82,13 +76,13 @@
         <p> <em>Step 1: Enter the functions.</em> In the Desmos graphing calculator, we enter one equation into the expression line. Hitting enter or clicking in the space directly below the expression line brings up another line where we enter the other equation as seen below. </p>
                         <image source="images/graphing-first-step.png" width="75%"> <shortdescription>Screenshot from Desmos. Both equations are entered, but the graph shows only a portion of one line.</shortdescription></image>
     
-        <p><em> Step 2: Adjust the bounds on the axes.</em> We click on the wrench icon to access the Graph Settings menu in Desmos. Then, through experimentation, we adjust the intervals for the x- and y-axes until the graph shows both functions and both of the points where they intersect. (This can also be done using pinch and spread gestures on a touchscreen or holding down the Shift key while clicking and dragging on an axis.)
+        <p><em> Step 2: Adjust the bounds on the axes.</em> We click on the wrench icon <icon name="wrench"/> to access the Graph Settings menu in Desmos. Then, through experimentation, we adjust the intervals for the x- and y-axes until the graph shows both functions and both of the points where they intersect. (This can also be done using pinch and spread gestures on a touchscreen or holding down the Shift key while clicking and dragging on an axis.)
         </p>
         <p>
             <em> Step 3: Add labels.</em> In the Graph Settings menu, we type labels in the boxes provided. The x-axis label is "Time (yrs)" and the y-axis label is "Value ($)".
         </p>
         <p>
-            To use the graph in a document or submit in an assignment, we click on the Export button that looks like a box with a curved arrow pointing out of it. The "Export Image" option allows the graph to be downloaded as a picture file. The resulting graph is shown below.
+            To use the graph in a document or submit in an assignment, we click on the export icon <icon name="export"/> that looks like a box with a curved arrow pointing out of it. The "Export Image" option allows the graph to be downloaded as a picture file. The resulting graph is shown below.
         </p>
         <image source="images/graphing-example.png" width="50%">
             <shortdescription>Horizontal axis shows values between 0 and 200 and is labeled Time (yrs). Vertical axis shows values between 0 and 4000 and is labeled Value ($). There is a increasing linear function and an increasing exponential function. They intersect at (0,100) and near (180, 3800).</shortdescription>
