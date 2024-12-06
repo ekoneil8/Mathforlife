@@ -2,6 +2,17 @@
 
 <section xml:id="sec-proportion-percents" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Percents</title>
+  <introduction>
+        <figure xml:id="100-percent">
+      <caption>AI-generated image of 100%.</caption>
+      <image source="images/100-percent.png" width="50%">
+        <shortdescription>The number 100 formed from percent symbols.</shortdescription>
+      </image>
+    </figure>
+    <p>
+      Suppose an administrator wants to compare the performance of two class sections. In one section, 23 out of 32 students passed; in the other, 18 out of 25 students passed. One way to compare their performance is by converting the fractions <m>\frac{23}{32}</m> and <m>\frac{18}{25}</m> to equivalent fractions with a common denominator. However, a more practical approach is to calculate and compare the percentage of students who passed each class. Using methods from this section, we find that 71.875% of the students in the first class passed, while 72% of the students in the second class passed. This shows that the second class performed slightly better than the first.
+    </p>
+  </introduction>
   <objectives>
     <introduction>
       <p>
@@ -35,13 +46,8 @@
 
   <subsection>
     <title>Percents</title>
-      <p>
-        If you went shopping and one shirt was $20 off and another shirt was $30 off it might be hard to tell which is the
-         better value. What if they were 20% off and 30% off? Percentages can make quantities easier to compare.
-      </p>
-      <p>
-        Percent, denoted by %, means “per 100,” or “parts per hundred.” In Spanish it's literally por ciento which means
-         for one hundred. When we write 30% off, that means you save 30 out of every 100 dollars. A $100 item would be $30 off, a $200 item would be $60 off, and so on. We can write this 
+           <p>
+        Percent, denoted by %, means “per 100,” or “parts per hundred.” The word percent comes from the Latin phrase <foreign>per centum</foreign> which means of a hundred. When we write 30% off, that means you save 30 out of every 100 dollars. A $100 item would be $30 off, a $200 item would be $60 off, and so on. We can write this 
          percentage as the fraction <m>\frac{30}{100}</m>. When we divide 30 by 100, we get
         <me>\frac{30}{100}=0.30</me>
         We can also say you would save 30 cents out of every dollar. Many equivalent fractions can be written that equal 30%. 
@@ -49,6 +55,7 @@
         <me>\frac{60}{200}=\frac{15}{50}=\frac{30}{100}=0.30</me>
       </p>
       <example>
+      <statement>
         <p>
           As an example, let's compare two jackets on sale and add some prices:
         </p>
@@ -87,8 +94,8 @@
           <p>
             What is the sale price and sale percentage for each jacket? Which is the better buy?
           </p>
-          <sidebyside widths="40% 40%" valign="top">
-            <stack>
+          </statement>
+          <solution>
               <p>
                 <em>Jacket 1:</em>
               </p>
@@ -105,8 +112,7 @@
             <p>
               This jacket is 25% off and the sale price is $60.
             </p>
-            </stack>
-            <stack>
+            
             <p>
               <em>Jacket 2:</em>
             </p>
@@ -124,13 +130,13 @@
             <p>
               This jacket is 30% off and the sale price is $70.
             </p>
-            </stack>
-          </sidebyside>
+            
         <p>
           Which do you think is the better deal? You would save more with jacket 2, but jacket 1 is cheaper. If the jackets are 
           similar in quality and desirability, jacket 1 would be a good choice. If jacket 2 is warmer, looks better on you, or offers better 
           rain protection, you might consider whether it is worth spending an additional $10 to have a better jacket.
         </p>
+        </solution>
       </example>
     </subsection>
     <subsection>
@@ -143,19 +149,7 @@
         To go the other way, if we have <m>0.10</m>, we can multiply it by 100% or move the decimal two places to the right and add the % symbol.
         <me>0.10 = 0.10(100\%)=10\%</me>
       </p>
-      <assemblage xml:id="percents-caution">
-        <title>Caution</title>
         
-          <p>
-            Be careful with fractions and decimals! Banks sometimes use fractions when expressing interest rates of loans. For example, <m>6\frac{3}{4}\%</m> is the same as <m>6.75\%</m> because <m>3\div4=0.75</m>. We can convert to decimal form by moving the decimal two places to the left to obtain <m>0.0675</m>.
-          </p>
-          <p>
-            Be careful with small percentages! For example, <m>0.5\%</m> expressed in decimal form is <m>0.005</m>. The decimal starts out to the left of the 5, and when we shift the decimal two places to the left we must fill in with two additional zeros.
-          </p>
-        
-        </assemblage>
-    
-  
     <example>
       <statement>
       <p>
@@ -267,6 +261,17 @@
         </p>
       </solution>
     </example>
+    <assemblage xml:id="percents-caution">
+        <title>Watch for Common Errors</title>
+        
+          <p>
+            <em>Be careful with fractions and decimals. </em> Banks sometimes use fractions when expressing interest rates of loans. For example, <m>6\frac{3}{4}\%</m> is the same as <m>6.75\%</m> because <m>3\div4=0.75</m>. We can convert to decimal form by moving the decimal two places to the left to obtain <m>0.0675</m>.
+          </p>
+          <p>
+            <em>Be careful with small percentages. </em> For example, <m>0.5\%</m> expressed in decimal form is <m>0.005</m>. The decimal starts out to the left of the 5, and when we shift the decimal two places to the left we must fill in with two additional zeros.
+          </p>
+        
+        </assemblage>
   </subsection>
   
   <subsection>
