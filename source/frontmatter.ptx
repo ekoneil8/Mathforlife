@@ -36,31 +36,52 @@
   <p>
     This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org.</url>
   </p>
-  <p>
-    <xref ref="sec-proportion-percents" />, <xref ref="ch-personal-finance" /> excluding <xref ref="sec-finance-credit-cards" />, <xref ref="ch-probability" /> excluding <xref ref="sec-probability-combinatorics" />, <xref ref="ch-statistics" />, and <xref ref="ch-democracy" /> are derivative of <url href="https://pccmathsac.github.io/MathInSocietyPCC/root-1-2.html" visual="https://pccmathsac.github.io/MathInSocietyPCC/frontmatter-2.html">“Math In Society, 2nd Edition: Tools for decision making”</url> by Lee et al., Portland Community College Math Department, licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>. All derivative content was edited 
-  </p>
+    
   <p>
     <ul>
       <li>
         <p>
-          most sections in 
+          <xref ref="sec-proportion-percents" />, <xref ref="ch-personal-finance" /> excluding <xref ref="sec-finance-credit-cards" />, <xref ref="ch-probability" /> excluding <xref ref="sec-probability-combinatorics" />, <xref ref="ch-statistics" />, and  are adapted from <url href="https://pccmathsac.github.io/MathInSocietyPCC/root-1-2.html" visual="https://pccmathsac.github.io/MathInSocietyPCC/frontmatter-2.html">“Math In Society, 2nd Edition: Tools for decision making”</url> by Lee et al., Portland Community College Math Department, licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
         </p>
       </li>
-      <li>testing accented e: &#233;</li>
+      <li>
+        <p>
+          Examples and exercises in <xref ref="sec-proportion-dosage" /> are adapted with permission from course materials developed by Jennifer Ingalls, Nursing Faculty at Olympic College.
+        </p>
+      </li>
+      <li>
+        <p>
+          <xref ref="sec-democracy-apportionment" /> was adapted from <url href="https://www.opentextbookstore.com/mathinsociety/current2.php?chapter=Apportionment.pdf" visual="www.opentextbookstore.com/mathinsociety/current2.php?chapter=Apportionment.pdf">"Math in Society: Apportionment"</url> by Mike Kenyon and David Lippman, licensed under  licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
+        </p>
+      </li>
+      <li>
+        <p>
+            <xref ref="congress" /> <url href="https://commons.wikimedia.org/wiki/File:Home_of_the_US_Congress.jpg">"Home of the US Capitol"</url> by Jessica Rodriguez Rivas is licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
+        </p>
+      </li>
+      <li>
+        <p>
+           Spreadsheet screenshots use Microsoft Excel under fair use.
+        </p>
+      </li>
+      <li>
+        <p>
+          Graphs were created in <url href="desmos.com" visual="desmos.com">DESMOS</url> and are displayed in accordance with the <url href="https://www.desmos.com/terms" visual="desmos.com/terms">terms of use</url>.
+        </p>
+      </li>
+        
     </ul>
     
   </p>
-  <p>
-    Examples and exercises in <xref ref="sec-proportion-dosage" /> were written by Jennifer Ingalls, Nursing Faculty at Olympic College.
-  </p>
+  
   <p>
     All other content is original to Elizabeth O'Neil.
   </p>
   <p>
-    Spreadsheet screenshots use Microsoft Excel under fair use.
+    
   </p>
   <p>
-    Images of graphs use <url href="desmos.com" visual="desmos.com">DESMOS</url> in concordance with the <url href="https://www.desmos.com/terms" visual="desmos.com/terms">terms of use</url>.
+    
   </p>
 
   </preface>
@@ -70,7 +91,7 @@
     
    
     <p>
-      This book focuses on "pulling back the curtain" to reveal the underlying concepts behind everyday mathematics. The goal isn’t to have you memorize formulas or procedures—though you may find a few worth remembering—but to provide insights into how things work. From credit card finance charges to statistics in the news and ranked-choice voting, this book explores the mathematics shaping our world.
+      This book focuses on "pulling back the curtain" to reveal the underlying concepts behind everyday mathematics. The goal isn’t to have you memorize formulas or procedures<mdash/>though you may find a few worth remembering<mdash/>but to provide insights into how things work. From credit card finance charges to statistics in the news and ranked-choice voting, this book explores the mathematics shaping our world.
       </p>
     
   
