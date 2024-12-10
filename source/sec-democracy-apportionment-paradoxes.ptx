@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-democracy-apportionment-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Apportionment Paradoxes and Problems</title>
+
+  <p> Text of section. </p>
+<objectives>
+<introduction>
+    <p>
+        Students will be able to:
+    </p>
+</introduction>
+    <ul>
+    		<li>
+				<p>
+					Determine whether an apportionment satisfies the quota rule.
+				</p>
+			</li>
+			<li>
+				<p>
+					Determine whether an apportionment paradox has occurred.
+				</p>
+			</li>
+	</ul>
+</objectives>
+
+</section>

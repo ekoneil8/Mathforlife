@@ -13,7 +13,7 @@
 	Apportionment is the problem of dividing up a fixed number of things among groups of different sizes.  In politics, this takes the form of allocating a limited number of representatives to constituent groups.  This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed.  States also face this apportionment problem in defining how to draw districts for state representatives. 
   </p>
   <p>
-	In this section, we apply four apportionment methods in social, economic, and political contexts, and assess the fairness of the results.
+	In this section, we apply four apportionment methods in social, economic, and political contexts, and compare the results.
 </p>
 </introduction>
    <objectives>
@@ -35,12 +35,7 @@
 			</li>
 			<li>
 				<p>
-					Determine whether an apportionment satisfies the quota rule.
-				</p>
-			</li>
-			<li>
-				<p>
-					Determine whether an apportionment paradox has occurred.
+					Compare and contrast results of the four methods.
 				</p>
 			</li>
 		</ul>
@@ -217,40 +212,36 @@
 			<p>
 				The decimal portion for New Castle's quota is .63708, Sussex's is .831322, and Kent's is .531599. The two largest are New Castle and Sussex, so the two remaining representatives will be apportioned to these counties.
 			</p>
-			<tabular row-headers="yes">
+			<tabular row-headers="yes" halign="center">
 				<row header="yes" bottom="minor">
 					<cell>County</cell>
 					<cell>Population</cell>
 					<cell>Quota</cell>
 					<cell>Lower Quota</cell>
-					<cell>Additional Representatives</cell>
 					<cell>Final Apportionment</cell>
 				</row>
 				<row>
-					<cell>New Castle</cell>
+					<cell>New Castle*</cell>
 					<cell>570,719</cell>
 					<cell>23.63708</cell>
 					<cell>23</cell>
-					<cell>1</cell>
 					<cell>24</cell>
 				</row>
 				<row>
-					<cell>Sussex</cell>
+					<cell>Sussex*</cell>
 					<cell>237,378</cell>
 					<cell>9.831322</cell>
 					<cell>9</cell>
-					<cell>1</cell>
 					<cell>10</cell>
 				</row>
-				<row>
+				<row bottom="minor">
 					<cell>Kent</cell>
 					<cell>181,851</cell>
 					<cell>7.531599</cell>
 					<cell>7</cell>
-					<cell>0</cell>
 					<cell>7</cell>
 				</row>
-				<row top="minor">
+				<row>
 					<cell>Total</cell>
 					<cell>989,948</cell>
 					<cell>41</cell>
@@ -339,7 +330,7 @@
 					
 					<cell>6</cell>
 				</row>
-				<row>
+				<row bottom="minor">
 					<cell>Bristol</cell>
 					<cell>50,793</cell>
 					<cell>3.4714</cell>
@@ -347,7 +338,7 @@
 					
 					<cell>3</cell>
 				</row>
-				<row top="minor">
+				<row>
 					<cell>Total</cell>
 					<cell>1,097,379</cell>
 					<cell>75</cell>
@@ -357,11 +348,13 @@
 				</row>
 			</tabular>
 			<p>
-				Note that there were three additional representatives 
+				Note that there were three additional representatives which were assigned to Kent, Washington, and Newport counties.
 			</p>
 		</solution>
 	</example>
-
+<p>
+	
+</p>
 </subsection>
 
 </section>
