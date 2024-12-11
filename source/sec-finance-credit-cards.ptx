@@ -160,7 +160,17 @@
           Therefore, the ending balance is $386.
         </p>
         <p>
-          To find the average daily balance, we first find the balance at the end of each day. Then we find the average of the daily balances. It can be helpful to write the balances in a calendar.
+          To find the average daily balance, we first find the balance at the end of each day. Then we find the average of the daily balances. It can be helpful to write the balances in a calendar or grid.
+        </p>
+        <image source="images/credit-card-daily-balance-calendar.png">
+          <shortdescription>Jan 23-26: $1234, Jan 27-29: $1548, Jan 30-Feb 3: $548, Feb 4-11: $356, Feb 12-13: $386, Feb 14-22: $506</shortdescription>
+        </image>
+        <p>
+          Now we can find the average of the balances in each day of the cycle. We will use multiplication for the repeated addition, and we note that there are 31 days in the billing cycle.
+          <me>
+            \frac{1234\cdot4+1548\cdot3+548\cdot5+356\cdot5+385\cdot2+506\cdot9 }{31}\approx$620.13
+          </me>
+          
         </p>
       </solution>
     </example>
