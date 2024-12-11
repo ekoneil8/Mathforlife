@@ -16,17 +16,22 @@
       <ul>
         <li>
           <p>
-            Find rates and fees in the "fine print" of credit card agreements.
+            Identify rates and fees in the "fine print" of credit card agreements.
           </p>
         </li>
         <li>
           <p>
-            Calculate credit card finance charges using the ending balance method and the average daily balance method.
+            Calculate average daily balance.
           </p>
         </li>
         <li>
           <p>
-            Something about making good decisions or recommendations about which credit card a consumer should select based on the terms and the individual's buying habits and level of self control.
+            Calculate credit card finance charges.
+          </p>
+        </li>
+        <li>
+          <p>
+           Analyze credit card terms to identify the best options for different types of consumers.
           </p>
         </li>
       </ul>
@@ -55,7 +60,140 @@
         types of loans, so borrowers can find themselves amassing a large amount of debt quite quickly. 
       </p>
     </subsection> 
-      
+  <subsection xml:id="subsec-creditcard-balance">
+    <title>Credit Card Balances</title>
+    <p>
+      The balance in an account typically means the amount of money currently held in that account, whether it is a debt or an investment. With credit cards, the amount owed changes frequently and fees are accrued over time but applied once. As such, there are several different types of balance:
+    </p>
+  <assemblage xml:id="assemblage-balance-types">
+    <title>Types of Balances</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <term>Previous Balance:</term> the amount of debt carried over from the previous month.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Ending Balance:</term> the amount owed at the end of a billing cycle before finance charges or other fees have been applied.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Statement Balance or New Balance:</term> the total amount shown on the billing statement. It is the sum of the ending balance and any finance charges or fees that are applied at the end of the billing cycle.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Current Balance:</term> the total balance at a given time. The current balance incorporates any unpaid debt carried over from the previous billing cycle and any activity (purchases, payments, etc.) that have been posted to the account.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Payoff Balance:</term> the total amount a consumer would have to pay to close out the account. It is the sum of the current balance and any prorated finance charges that have accumulated but not yet been applied. (A prorated finance charge is also called residual interest.)
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Average Daily Balance:</term> the average of the current balances on each day of a billing cycle.
+          </p>
+        </li>
+      </ul>
+         The term <term>balance</term> typically refers to either the statement balance or the current balance, depending on the context.
+    </p>
+   <p>
+    Most credit card accounts use the average daily balance to calculate finance charges, although some use the ending balance.
+   </p>
+  </assemblage>
+  <p>
+    
+  </p>
+    <example xml:id="ex-credit-card-balance">
+      <statement>
+        <p>
+          A credit card billing period runs from January 23 to February 22. The previous balance is $1,234 and the transactions are listed below.
+        </p>
+        <tabular row-headers="yes" halign="center">
+          <row header="yes">
+            <cell>Date</cell>
+            <cell>Description</cell>
+            <cell>Charge/Credit</cell>
+            
+          </row>
+          <row>
+            <cell>Jan 27</cell>
+            <cell>Mathematical Hardware</cell>
+            <cell>$314</cell>
+          </row>
+          <row>
+            <cell>Jan 30</cell>
+            <cell>Payment<mdash/>Thank You</cell>
+            <cell>$1,000 (cr)</cell>
+          </row>
+          <row>
+            <cell>Feb 4</cell>
+            <cell>Not Great Clothing (Returns)</cell>
+            <cell>$192 (cr)</cell>
+          </row>
+          <row>
+            <cell>Feb 12</cell>
+            <cell>Yummy Chocolate</cell>
+            <cell>$30</cell>
+          </row>
+          <row>
+            <cell>Feb 14</cell>
+            <cell>Fancy Restaurant</cell>
+            <cell>$120</cell>
+          </row>
+        </tabular>
+        <p>
+          Find the ending balance and find the average daily balance.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To find the ending balance, starting with the previous balance, we add the charges and subtract the credits.
+          <me>
+            1234+314-1000-192+30+120=386
+          </me>
+          Therefore, the ending balance is $386.
+        </p>
+        <p>
+          To find the average daily balance, we first find the balance at the end of each day. Then we find the average of the daily balances. It can be helpful to write the balances in a calendar.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+<subsection xml:id="subsec-finance-charge">
+  <title>Finance Charges</title>
+<p>
+  Finance charges typically include the interest on either the ending balance or the average daily balance for the month. They can be calculated using the simple interest formula, <m>I=Prt</m>, where <m>I</m> is the interest or finance charge, <m>r</m> is the annual interest rate (APR), and <m>t</m> is the length of time in years for the billing cycle.
+</p>
+<p>
+  Some credit card accounts consider the each month to be <m>\frac{1}{12}</m> of a year, and so they use <m>t=\frac{1}{12}</m> for finance charge calculations. However, it is more common to use the exact number of days. For example, if there are 31 days in a particular billing cycle, then they will use <m>t=\frac{31}{365}</m> for that month.
+</p>
+<example>
+  <statement>
+    <p>
+      In <xref ref="ex-credit-card-balance" />, 
+    </p>
+  </statement>
+</example>
+
+  <assemblage xml:id="assemblage-residual-interest">
+    <title>Residual Interest Alert</title>
+    <p>
+    After a consumer fails to pay the entire statement balance on a credit card and a finance charge has been applied, many credit card accounts transition to accumulating interest charges on a daily basis. This type of finance charge is called <term>residual interest</term> or <term>trailing interest</term>.
+    </p>
+    <p>
+      At the end of each day, interest is calculated on the current balance using the <m>I=Prt</m> formula with <m>t=\frac{1}{365}</m> (or <m>t=\frac{1}{366}</m> on a leap year) and applied to the account.
+    </p>
+    <p>
+      Residual interest calculations are addressed in <xref ref="sec-finance-compound-interest" />
+    </p>
+  </assemblage>
+   </subsection>   
    <subsection> 
   <title>Credit Card Agreements: Reading the Fine Print</title>
   <p>
@@ -63,11 +201,13 @@
   </p>
   
     <figure xml:id="Credit_card_rates_table">
-      <caption>Sample excerpt from a credit card account agreement. A screenreader accessible version is found <url href="external/Sample-Credit-Card-Fine-Print-Accessible.docx">here</url></caption>
+      <caption>Sample excerpt from a credit card account agreement. A <url href="external/Sample-Credit-Card-Fine-Print-Accessible.docx">screenreader accessible version</url> is available.</caption>
     
-    <image source="images/Credit_card_rates_table.png"><shortdescription> Use the link in the caption for an accessible version.</shortdescription></image>
+    <image source="images/Credit_card_rates_table.png"><shortdescription> Use the link in the caption for a screenreader accessible version of the table in a Microsoft Word document.</shortdescription></image>
     
   </figure>
-  
+<p>
+  The For consumers who routinely pay the whole statement balance each month, the APR is of little importance.
+</p>
 </subsection>
 </section>

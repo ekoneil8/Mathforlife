@@ -2,26 +2,64 @@
 
 <section xml:id="sec-democracy-apportionment-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Apportionment Paradoxes and Problems</title>
-
-  <p> Text of section. </p>
-<objectives>
 <introduction>
-    <p>
-        Students will be able to:
-    </p>
+  <p>
+    
+  </p>
+
+  <figure xml:id="impossible-cube">
+	<caption>Paradoxical cube</caption>
+	<image source="images/impossible-cube.png" width="50%">
+		<shortdescription>Cube with an optical illusion which makes it appear that two diametrically opposed vertices both are in front, which is impossible.</shortdescription>
+	</image>
+</figure>
 </introduction>
-    <ul>
-    		<li>
-				<p>
-					Determine whether an apportionment satisfies the quota rule.
-				</p>
-			</li>
-			<li>
-				<p>
-					Determine whether an apportionment paradox has occurred.
-				</p>
-			</li>
-	</ul>
+<objectives>
+  <introduction>
+    <p>
+      
+    </p>
+  </introduction>
+  <ul>
+    <li>
+      <p>
+        Identify violations of the quota rule.
+      </p>
+    </li>
+    <li>
+      <p>
+        Identify apportionment paradoxes.
+      </p>
+    </li>
+    <li>
+      <p>
+        Compare and contrast the apportionment methods in relation to the quota rule and apportionment paradoxes.
+      </p>
+    </li>
+  </ul>
 </objectives>
 
+
+<subsection xml:id="subsec-apportionmentprob-quota-rule">
+  <title>The Quota Rule</title>
+  <assemblage xml:id="assemblage-quota-rule">
+    <title>The Quota Rule</title>
+    <p>
+      The number of representatives for each state should be within 1 (one) of its quota.
+    </p>
+    <p>
+      <em>Example:</em> If a state's quota is 3.429, that state should have either 3 or 4 representatives.
+    </p>
+  </assemblage>
+</subsection>
+<subsection xml:id="subsec-apportionmentprob-paradoxes">
+  <title>Paradoxes</title>
+  <example>
+    <statement>
+      <p>
+        
+      </p>
+    </statement>
+  </example>
+</subsection>
 </section>
