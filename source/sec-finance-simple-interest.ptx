@@ -30,6 +30,267 @@
     </ul>
   </objectives>
   
-  <p> </p>
+  <subsection>
+	<title>Simple Interest</title>
+    <p>
+        Interest is the term used for the fee charged to borrow money in a loan or the return on a savings account or other investment. Simple interest is calculated as a percentage of the starting amount of the loan or investment.
+    </p>
+    <p>
+        For example, suppose a college student borrowed $2,000 from their sibling to pay for tuition. They will pay it back after one year with 3% interest. The amount of interest charged will be 3% of $2,000, or <m>0.03\cdot2\,000=$60</m>. At the end of the year, the student should pay their sibling the $2,000 borrowed plus $60 in interest.
+    </p>
+    <p>
+        Interest rates are most-commonly given as annual rates. So, if this student were to repay the money after 3 years, they would owe <m>3\cdot60=$180</m> in interest. If they were to repay the money after 6 months, which is half of a year, they would owe <m>\frac{1}{2}\cdot60=$30</m> in interest.
+    </p>
+    <p>
+        We can generalize to obtain the simple interest formula:
+    </p>
+   
+    <assemblage xml:id="assemblage-simple-interest">
+        <title>Simple Interest Formula</title>
+        <p>
+            <me>
+                I=Prt
+            </me>
+            where
+            <dl width="narrow">
+				<li>
+					<title><m>I</m></title>
+					<p>
+						is the <term>interest</term>, which is a dollar amount
+					</p>
+				</li>
+				<li>
+					<title><m>P</m></title>
+					<p>
+						is the <term>principal</term>, or starting amount in dollars, also called <term>present value</term>, and
+					</p>
+				</li>
+				<li>
+					<title><m>r</m></title>
+					<p>
+						is the annual (yearly) interest <term>rate</term>, which is a percentage expressed in decimal form
+					</p>
+				</li>
+                <li>
+                    <title>t</title>
+                    <p>
+                        is the <term>time</term> in years
+                    </p>
+                </li>
+			</dl>
+            If the amount of time is given in days, weeks, or months, remember to convert to years before using the formula.
+        </p>
+    </assemblage>
+    <example>
+        <statement>
+            <p>
+                Francesca invested $10,000 in a one-month certificate of deposit account with an annual interest rate of 7%. How much interest will Francesca earn? What will the value of the account be at maturity?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                First, we convert 1 month to years to find <m>t=\frac{1}{12}</m>.
+            </p>
+            <p>
+                Now we can use the simple interest formula with<m>P=10\,000</m>, <m>r=0.07</m>, and <m>t=\frac{1}{12}</m>, rounding to the nearest cent.
+            </p>
+            <p>
+                <md>
+                    <mrow> I\amp =Prt </mrow>
+                    <mrow> I\amp =(10\,000)(0.07)\left(\frac{1}{12}\right) </mrow>
+                    <mrow> I\amp \approx58.33 </mrow>
+                </md>
+            </p>
+			<p>
+                Therefore, Francesca will earn $58.33 in interest, and the value of the account at maturity will be <m>10\,000+58.33=$10\,058.33</m>.
+            </p>
+		</solution>
+    </example>
+	
+	<p>
+        We use the term <term>future value</term> to refer to the total value of an account at maturity or the total amount repaid at the end of a simple interest loan. It is the sum of the principal (or present value) and the interest. We typically denote it with the variable <m>A</m> for amount.
+    </p>
+    <assemblage xml:id="assemblage-simple-interest-future-value">
+        <title>Simple Interest Future Value</title>
+        <p>Future value <m>A</m> can be found using any of these equivalent formulas:
+        <md>
+            <mrow>A \amp =P+I </mrow>
+            <mrow>A \amp =P+Prt </mrow>
+            <mrow>A \amp =P(1+rt) </mrow>
+        </md>
+            
+         where <m>I</m> is the interest amount, <m>P</m> is the principal or present value, <m>r</m> is the interest rate in decimal form, and <m>t</m> is the time in years.
+        </p>
+        
+    </assemblage>
+	<example>
+		<statement>
+			<p>
+				Find the future value of $817 invested at 4.625% simple interest for 8 years.
+			</p>
+		</statement>
+		
+		<solution>
+			<title>Using <m>A=P+I</m></title>
+			<p>
+				To apply the formula <m> A=P+I </m>, we must first calculate the interest <m>I</m> using the principal <m>P=$817</m>, interest rate <m>r=0.04625</m>, and time <m>t=8</m>.
+				<md>
+					<mrow> I\amp=Prt </mrow>
+					<mrow> I\amp =817(0.04625)(8) </mrow>
+					<mrow> I\amp\approx302.29 </mrow>
+				</md>
+			</p>
+			<p>
+				Now we add the principal and interest to find the future value.
+				<md>
+					<mrow> A\amp=P+I </mrow>
+					<mrow> A\amp=817+302.29 </mrow>
+					<mrow>A \amp=1\,119.29 </mrow>
+				</md>
+			</p>
+			<p>
+				Therefore, the future value is $1,119.29.
+			</p>
+		</solution>
+		<solution>
+			<title>Using <m>A=P+Prt</m></title>
+			<p>	
+				The principal is <m>P=$817</m>, the interest rate <m>r=0.04625</m>, and the time <m>t=8</m>.
+			</p>
+			<p>
+				Substituting these values into the formula, we obtain the future value in one step.
+				<md>
+					<mrow> A\amp=P+Prt </mrow>
+					<mrow> A\amp=817+817(0.04625)(8) </mrow>
+					<mrow> A\amp\approx1\,119.29 </mrow>
+				</md>
+			</p>
+			<p>
+				Therefore, the future value is $1,119.29.
+			</p>
+		</solution>
+		<solution>
+			<title>Using <m>A=P(1+rt)</m></title>
+			<p>	
+				The principal is <m>P=$817</m>, the interest rate <m>r=0.04625</m>, and the time <m>t=8</m>.
+			</p>
+			<p>
+				Substituting these values into the formula, we obtain the future value in one step.
+				<md>
+					<mrow> A\amp=P(1+rt) </mrow>
+					<mrow> A\amp=817\left(1+(0.04625)(8)\right) </mrow>
+					<mrow> A\amp\approx1\,119.29 </mrow>
+				</md>
+			</p>
+			<p>
+				Therefore, the future value is $1,119.29.
+			</p>
+		</solution>
+		
+	</example>
+	<p>
+		<em>Which simple interest future value formula should I use?</em> For the most part, you may use any of the three formulas. However, there are some situations where you can make your work easier by selecting the appropriate formula: 
+	</p>
+	<p>
+		<ul>
+			<li>
+				<p>
+					Use <m>A=P+I</m> if you do not know the interest rate or the time.
+				</p>
+			</li>
+			<li>
+				<p>
+					Use <m>A=P+Prt</m> if you are solving for the interest rate or the time.
+				</p>
+			</li>
+			<li>
+				<p>
+					Use <m>A=P(1+rt)</m> if you are solving for the present value. This formula will be used to derive the compound interest formula in <xref ref="sec-finance-compound-interest" />.
+				</p>
+			</li>
+		</ul>
+	</p>
+	<example>
+		<statement>
+			<p>
+				
+			</p>
+		</statement>
+	</example>
+  </subsection>
+<subsection>
+	<title>APR – Annual Percentage Rate</title>
+	<p>
+		Interest rates are usually stated as an annual percentage rate (APR) – the total interest that will be paid in the year. If not stated otherwise, assume that the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of time periods.
+	</p>
+	<p>
+		Note: The Federal Truth in Lending Act requires that every consumer be given the true APR which includes the interest and any fees included.
+	</p>
+	<p>
+		For example, a 6% APR paid monthly, would be divided by 12, because you would get one twelfth of the rate per month, which is half a percent per month.
+	</p>
+
+	<p>
+		<me>\frac{0.06}{12}=0.005</me>
+	</p>
+	
+	<p>
+		A 4% annual rate paid quarterly, would be divided by 4 to get 1% per quarter.
+	</p>
+	
+	<p>
+		<me>\frac{0.04}{4}=0.01</me>
+	</p>
+
+	<p>
+		Here is an example of a semi-annual rate.
+	</p>
+	<example>
+		<statement>
+		<p>
+			Suppose you buy a $1,000 federal bond with a 4% annual simple interest rate, paid semi-annually, with a maturity in 4 years. How much interest will you earn? What will be the future value of the bond?
+		</p>
+		</statement>
+		<solution>
+		<p>
+			<m>P = \$1000</m>, the principal
+		</p>
+		<p>
+			<m>r=\frac{0.04}{2}=0.02</m>, interest is being paid semi-annually (twice a year), so the 4% interest will be divided into two 2% payments.
+		</p>
+		<p>
+			<m>t = 8</m>, 4 years compounded twice a year gives <m>t=4\cdot 2=8</m> half-years
+		</p>
+		<p>
+			<md>
+				<mrow>I\amp=PRT</mrow>
+				<mrow>\amp=\$1000(0.02)(8)</mrow>
+				<mrow>\amp=\$160</mrow>
+			</md>
+		</p>
+		<p>
+			You will earn $160 in interest over the four years. The future value of the loan is
+		</p>
+		<p>
+			<md alignment="align">
+				<mrow>A\amp=P+I</mrow>
+				<mrow>\amp=\$1000+\$160</mrow>
+				<mrow>\amp=\$1{,}160</mrow>
+			</md>
+		</p>
+
+		<p>
+			We could also use a spreadsheet to do this calculation and enter:
+		</p>
+		<p>
+			<cd>=1000+1000*(0.04/2)*(4*2)</cd>
+		</p>
+		<p>
+			which also gives $1,160. The future value of the bond is $1,160. Remember that spreadsheets don't interpret parentheses as multiplication. We need the asterisks as well as the parentheses.
+		</p>
+	</solution>
+	</example>
+</subsection>
+
 
 </section>

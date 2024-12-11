@@ -40,7 +40,7 @@
     <subsection>
       <title>What is a Credit Card?</title>
       <p>
-        Credit cards are a form of revolving debt. With most loans, such as mortgages or car loans, the money is borrowed all at 
+        A credit cards is a form of revolving debt. With most loans, such as mortgages or car loans, the money is borrowed all at 
         once and paid back with interest over time. With credit cards, borrowers use the card to make purchases, and they pay back 
         some or all of the amount borrowed each month, and this cycle of borrowing and making payments continues until the account 
         is closed. 
@@ -103,7 +103,7 @@
          The term <term>balance</term> typically refers to either the statement balance or the current balance, depending on the context.
     </p>
    <p>
-    Most credit card accounts use the average daily balance to calculate finance charges, although some use the ending balance.
+    Most credit card accounts use the average daily balance to calculate finance charges, although some use the ending balance and others calculate and apply interest daily.
    </p>
   </assemblage>
   <p>
@@ -162,15 +162,17 @@
         <p>
           To find the average daily balance, we first find the balance at the end of each day. Then we find the average of the daily balances. It can be helpful to write the balances in a calendar or grid.
         </p>
-        <image source="images/credit-card-daily-balance-calendar.png">
+        <image source="images/credit-card-daily-bal-calendar.png">
           <shortdescription>Jan 23-26: $1234, Jan 27-29: $1548, Jan 30-Feb 3: $548, Feb 4-11: $356, Feb 12-13: $386, Feb 14-22: $506</shortdescription>
         </image>
         <p>
           Now we can find the average of the balances in each day of the cycle. We will use multiplication for the repeated addition, and we note that there are 31 days in the billing cycle.
           <me>
-            \frac{1234\cdot4+1548\cdot3+548\cdot5+356\cdot5+385\cdot2+506\cdot9 }{31}\approx$620.13
+            \frac{1234\cdot4+1548\cdot3+548\cdot5+356\cdot7+385\cdot2+506\cdot9 }{31}\approx$649.55
           </me>
-          
+        </p>
+        <p>
+          Alternatively, a spreadsheet can be used.
         </p>
       </solution>
     </example>
@@ -194,7 +196,7 @@
   <assemblage xml:id="assemblage-residual-interest">
     <title>Residual Interest Alert</title>
     <p>
-    After a consumer fails to pay the entire statement balance on a credit card and a finance charge has been applied, many credit card accounts transition to accumulating interest charges on a daily basis. This type of finance charge is called <term>residual interest</term> or <term>trailing interest</term>.
+    After a consumer fails to pay the entire statement balance on a credit card and a finance charge has been applied, many credit card accounts transition to accumulating interest charges on a daily basis. This type of finance charge is called <term>residual interest</term> or <term>trailing interest</term>. Some credit card accounts use this method exclusively to calculate finance charges.
     </p>
     <p>
       At the end of each day, interest is calculated on the current balance using the <m>I=Prt</m> formula with <m>t=\frac{1}{365}</m> (or <m>t=\frac{1}{366}</m> on a leap year) and applied to the account.
