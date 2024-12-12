@@ -41,6 +41,97 @@
 </objectives>
 <subsection xml:id="subsec-linear-model">
   <title>Linear Growth Models</title>
+  <p>
+    A linear growth model is an equation used to represent something that changes by the same amount in each unit of time. We use the term growth even in situations where a quantity is <em>decreasing</em> by the same amount in each unit of time. (It is growing by a negative amount.) below are some situations where linear growth occurs:
+  </p>
+  <p>
+       <ul>
+        <li>
+          <p>
+            A tree is 4 feet tall when it is planted, and it grows 2 feet each year.
+          </p>
+        </li>
+        <li>
+          <p>
+            The value of a car is $38,000 when new, and the value decreases by $2,000 each year.
+          </p>
+        </li>
+        <li>
+          <p>
+            The total cost to repair a dishwasher is $100 plus $80 for each hour of labor.
+          </p>
+        </li>
+        <li>
+          <p>
+            The population of a small town is 4,070 people in the year 2025, and it is increasing by 5 people per year.
+          </p>
+        </li>
+      </ul>
+      </p>
+<p>
+  Consider the tree that starts out 4 feet tall and grows 2 feet each year. After 1 year, it will be 6 feet tall, after 2 years it will be 8 feet tall, after 3 years it will be 10 feet tall, and so on. To find the height after 20 years, we would start with the initial height of 4 feet and add 2 feet 20 times. Mathematically, this is <m>4+2(20)=84</m>.
+</p>
+<p>
+  We can generalize to obtain a formula for the height of the tree after <m>t</m> years:
+  <me>
+    H(t)=4+2t
+  </me>
+</p>
+<p>
+  Recall from algebra classes that <m>H(t)</m> is function notation, not multiplication. We read it as "<m>H</m> of <m>t</m>".
+</p>
+<p>
+  Using a similar approach we can find that the value of the car that starts out at $38,000 and loses $2,000 in value each year can be modeled with the formula
+  <me>
+    V(t)=38\,000-2\,000t
+  </me>
+  
+</p>
+<assemblage xml:id="assemblage-linear-growth">
+  <title>Linear Growth Model</title>
+  <p>
+    Linear growth can be modeled with functions of the form
+    <me>
+      P(t)=P_0+Dt
+    </me>
+    where
+    <dl>
+      <li>
+        <title><m>P(t)</m></title>
+        <p>
+          is the amount at time <m>t</m>
+        </p>
+      </li>
+      <li>
+        <title><m>P_0</m></title>
+        <p>
+          is the initial amount
+        </p>
+      </li>
+      <li>
+        <title><m>D</m></title>
+        <p>
+          is the common difference, which is the amount of growth in each unit of time
+        </p>
+      </li>
+      <li>
+        <title>t</title>
+        <p>
+          is the amount of time
+        </p>
+      </li>
+    </dl>
+    Note that <m>D</m> can be negative.
+  </p>
+</assemblage>
+  <example>
+    <statement>
+      <p>
+        Identify whether each scenario is an example of linear growth. If it is linear growth, find the initial value, the common difference, and the equation.
+      </p>
+ 
+    </statement>
+  </example>
   <example>
     <statement>
       <p>
@@ -96,6 +187,7 @@
       </p>
     </solution>
   </example>
+  
 </subsection>
    
 </section>
