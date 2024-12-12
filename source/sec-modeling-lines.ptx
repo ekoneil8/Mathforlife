@@ -73,6 +73,39 @@
   Consider the tree that starts out 4 feet tall and grows 2 feet each year. After 1 year, it will be 6 feet tall, after 2 years it will be 8 feet tall, after 3 years it will be 10 feet tall, and so on. To find the height after 20 years, we would start with the initial height of 4 feet and add 2 feet 20 times. Mathematically, this is <m>4+2(20)=84</m>.
   </p>
   <p>
+    We can demonstrate the growth pattern in a table and a graph. 
+  </p>
+  <table>
+    <title>Tree Height</title>
+    <tabular row-headers="yes">
+      <row header="yes">
+        <cell>Time (yrs)</cell>
+        <cell>Height (ft)</cell>
+      </row>
+      <row>
+        <cell>0</cell>
+        <cell>4</cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>6</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>8</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>10</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>12</cell>
+      </row>
+    </tabular>
+  </table>
+  
+  <p>
   We can generalize to obtain a formula for the height of the tree after <m>t</m> years:
   <me>
     H(t)=4+2t
@@ -81,6 +114,10 @@
 <p>
   Recall from algebra classes that <m>H(t)</m> is function notation, not multiplication. We read it as "<m>H</m> of <m>t</m>".
 </p>
+<p>
+  Graphing the function <m>H(t)=4+2t</m>
+</p>
+
 <p>
   Using a similar approach we can write linear functions to model the remaining examples.
 </p>
@@ -106,6 +143,7 @@
         </li>
       </ul>
     </p>
+
   
 <assemblage xml:id="assemblage-linear-growth">
   <title>Linear Growth Model</title>
@@ -119,25 +157,25 @@
       <li>
         <title><m>P(t)</m></title>
         <p>
-          is the amount at time <m>t</m>
+          is the amount at time <m>t</m>,
         </p>
       </li>
       <li>
         <title><m>P_0</m></title>
         <p>
-          is the initial amount
+          is the initial amount,
         </p>
       </li>
       <li>
         <title><m>D</m></title>
         <p>
-          is the common <em>difference</em>, which is the amount of growth in each unit of time
+          is the common <em>difference</em>, which is the amount of growth in each unit of time, and
         </p>
       </li>
       <li>
         <title>t</title>
         <p>
-          is the amount of time
+          is the amount of time.
         </p>
       </li>
     </dl>
@@ -145,7 +183,7 @@
   </p>
 </assemblage>
 <p>
-  
+  <em>Is the linear growth model the same as <m>y=mx+b</m> from algebra classes?</em> Yes, it is! 
 </p>
   <example>
     <statement>
