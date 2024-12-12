@@ -39,6 +39,7 @@
     </li>
   </ul>
 </objectives>
+
 <subsection xml:id="subsec-linear-model">
   <title>Linear Growth Models</title>
   <p>
@@ -68,10 +69,10 @@
         </li>
       </ul>
       </p>
-<p>
+  <p>
   Consider the tree that starts out 4 feet tall and grows 2 feet each year. After 1 year, it will be 6 feet tall, after 2 years it will be 8 feet tall, after 3 years it will be 10 feet tall, and so on. To find the height after 20 years, we would start with the initial height of 4 feet and add 2 feet 20 times. Mathematically, this is <m>4+2(20)=84</m>.
-</p>
-<p>
+  </p>
+  <p>
   We can generalize to obtain a formula for the height of the tree after <m>t</m> years:
   <me>
     H(t)=4+2t
@@ -82,7 +83,7 @@
 </p>
 <p>
   Using a similar approach we can write linear functions to model the remaining examples.
-  </p>
+</p>
     <p>
       <ul>
         <li>
@@ -106,8 +107,6 @@
       </ul>
     </p>
   
-  
-</p>
 <assemblage xml:id="assemblage-linear-growth">
   <title>Linear Growth Model</title>
   <p>
@@ -132,7 +131,7 @@
       <li>
         <title><m>D</m></title>
         <p>
-          is the common difference, which is the amount of growth in each unit of time
+          is the common <em>difference</em>, which is the amount of growth in each unit of time
         </p>
       </li>
       <li>
@@ -145,6 +144,9 @@
     Note that <m>D</m> can be negative.
   </p>
 </assemblage>
+<p>
+  
+</p>
   <example>
     <statement>
       <p>
