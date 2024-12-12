@@ -3,16 +3,7 @@
 <project ptx-version="2">
   <targets>
     <target name="web" format="html" />
-    <target
-            name="print"
-            format="pdf"
-            source="main.ptx"
-            publication="publication.ptx"
-            output-dir="print"
-            output-filename="mybook.pdf"
-            latex-engine="pdflatex"
-            deploy-dir="pdf"
-          />
+    <target name="print" format="pdf" />
     
   </targets>
 </project>

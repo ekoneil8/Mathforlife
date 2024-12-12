@@ -52,7 +52,7 @@
       To convert between pints and cups, we can multiply by the conversion factor that will result in the original units being "divided out", leaving an equivalent value in terms of the new units. For example, suppose we needed to convert <m>5.25</m> cups to pints.
       </p> 
       <p> 
-        we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. Because we would like to "divide out" the cups units from the numerator, we multiply by the conversion factor with the cups in the denominator, <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>, as follows:
+        we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. Because we would like to "divide out" the cups units from the numerator, we multiply by the conversion factor that has cups in the denominator, <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>, as follows:
       
       <me>
         \frac{5.25 \cancel{\text{ cups}}}{1}\cdot \frac {1 \text{ pint}}{2 \cancel{\text { cups}}}=\frac{5.25 \text{ pints}}{2}=2.625 \text{ pints}
@@ -81,7 +81,7 @@
         </p>
         <p>
           <me>
-            \frac{20\cancel{\text{ mi}}}{1\text{ hr}}\cdot\frac{5280\text{ ft}}{1\cancel{\text{ mi}}}=\frac{105\,600\text{ft}}{1\text{hr}}
+            \frac{20\cancel{\text{ mi}}}{1 \text{ hr}}\cdot\frac{5280\text{ ft}}{1\cancel{\text{ mi}}}=\frac{105\,600\text{ft}}{1\text{hr}}
           </me>
           
         </p>
@@ -90,7 +90,7 @@
         </p>
         <p>
           <me>
-            \frac{105\,600\text{ ft}}{1\cancel{\text{ hr}}}\cdot\frac{1\cancel{text{ hr}}}{60\text{ min}}=1760\text{ ft/min}
+            \frac{105\,600\text{ ft}}{1\cancel{ \text{ hr}}}\cdot\frac{1\cancel{\text{ hr}}}{60\text{ min}}=1760\text{ ft/min}
           </me>
           
         </p>
@@ -100,7 +100,7 @@
         <p>
           Note that we could have completed both conversions in one step as follows:
           <me>
-            \frac{20\cancel{\text{ mi}}}{1\cancel{\text{ hr}}}\cdot\frac{5280\text{ ft}}{1\cancel{\text{ mi}}}\cdot\frac{1\cancel{text{ hr}}}{60\text{ min}}=1760\text{ ft/min}
+            \frac{20\cancel{\text{ mi}}}{1\cancel{\text{ hr}}}\cdot\frac{5280\text{ ft}}{1\cancel{\text{ mi}}}\cdot\frac{1\cancel{\text{ hr}}}{60\text{ min}}=1760\text{ ft/min}
           </me>
           
         </p>
