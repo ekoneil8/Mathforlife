@@ -76,8 +76,8 @@
     We can demonstrate the growth pattern with a table and a graph. 
   </p>
   <table>
-    <title>Tree Height</title>
-    <tabular row-headers="yes">
+    <title>Tree growth over time</title>
+    <tabular row-headers="no" halign="center">
       <row header="yes">
         <cell>Time (yrs)</cell>
         <cell>Height (ft)</cell>
@@ -112,13 +112,13 @@
       </row>
     </tabular>
   </table>
-  <p>
-    By convention, we put time on the horizontal axis and plot the points. 
+    <p>
+    By convention, we put time on the horizontal axis when dealing with growth models. Plotting the points in the table above results in the following graph. 
   </p>
   <figure xml:id="linear-growth-points">
     <caption>Linear growth pattern</caption>
-    <image source="images/modeling-linear-pts.png">
-      <shortdescription>Graph of points in tree height table</shortdescription>
+    <image source="images/modeling-linear-pts.png" width="50%">
+      <shortdescription>Graph showing points in the tree growth over time table</shortdescription>
     </image>
   </figure>
 
@@ -135,11 +135,17 @@
   </me>
 </p>
 <p>
-  Recall from algebra classes that <m>H(t)</m> is function notation, not multiplication. We read it as "<m>H</m> of <m>t</m>".
+  Recall from algebra classes that <m>H(t)</m> indicates function notation, not multiplication. We read it as "<m>H</m> of <m>t</m>".
 </p>
 <p>
   As expected, the graph of <m>H(t)=4+2t</m> is a straight line.
 </p>
+<figure xml:id="linear-tree-function">
+  <caption>Graph of <m>H(t)=4+2t</m>.</caption>
+  <image source="images/modeling-linear-tree.png" width="50%">
+    <shortdescription>Graph of H(t)=4+2t for t between 0 and 7.</shortdescription>
+  </image>
+</figure>
 
 <p>
   Using a similar approach we can write linear functions to model the remaining examples.

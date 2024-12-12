@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-probability-fundamentals" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fundamentals of Probability</title>
+
+<introduction>
+  <p>
+    The probability of a specified event is the chance or likelihood that it will occur.  There are several ways of viewing probability.  One would be experimental in nature, where we repeatedly conduct an experiment.  Suppose we flipped a coin over and over and over again and it came up heads about half of the time; we would expect that in the future whenever we flipped the coin it would turn up heads about half of the time.  When a weather reporter says “there is a 10% chance of rain tomorrow,” she is basing that on prior evidence; that out of all days with similar weather patterns, it has rained on 1 out of 10 of those days.
+  </p>
+  </introduction>
+ <subsection xml:id="subsec-probability-terminology">
+  <title>Terminology</title>
+  <p>
+    We will start by defining some important terminology.
+  </p>
+  <assemblage xml:id="assemblage-probability-terminology">
+    <title>Terminology</title>
+    <p>
+      <dl>
+        <li>
+          <title>Experiment</title>
+          <p>
+            An <term>experiment</term> is a repeatable procedure or test being done. Common examples are flipping a coin, rolling a pair of dice, drawing a playing card from a deck, or taking a COVID test.
+          </p>
+        </li>
+        <li>
+          <title>Outcome</title>
+          <p>
+            An <term>outcome</term> is one possible result of an experiment. When drawing a playing card from a deck, one possible outcome is drawing the Queen of Spades. Another outcome is drawing the Two of Diamonds.
+          </p>
+        </li>
+        <li>
+          <title>Event</title>
+          <p>
+            An <term>event</term> is any particular outcome or set of outcomes. When rolling a pair of dice, one event could be rolling a total of seven. There are several different outcomes that result in a total of seven, and collectively, these make up the event.
+          </p>
+        </li>
+        <li>
+          <title>Sample Space</title>
+          <p>
+            The <term>sample space</term> of an experiment is the set of all possible outcomes. When flipping a coin, the sample space consists of the two possible outcomes: Heads and Tails. We would write that as <m>S=\lbrace H,T \rbrace</m>.
+          </p>
+        </li>
+        <li>
+          <title>Probability</title>
+          <p>
+            The <term>probability</term> of an event is the likelihood that it will occur, usually expressed as a fraction, decimal, or percentage. When flipping a coin, the probability of flipping heads is 50%.
+          </p>
+        </li>
+      </dl>
+      </p>
+    </assemblage>
+  <p>
+    Consider the experiment of flipping a coin three times. We can denote, for example, the outcome of getting heads on the first flip, tails on the second flip, and tails on the third flip as <m>HTT</m>. Using this notation, the sample space can be written as follows:
+  <me>
+    \lbrace HHH{,}\, HHT{,}\, HTH{,}\, THH{,}\,HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace.
+  </me>
+  
+  </p>
+  <p>
+    The event <m>E</m> of rolling at least two tails is <m>E=\lbrace HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace</m>.
+  </p>
+  <p>
+    There are four outcomes in which we get at least two tails out of the total of eight possible outcomes. Assuming it is a fair coin, meaning that all of the outcomes are equally likely, then the probability of the event <m>E</m> is
+    <me>
+      P(E)=\frac{4}{8}=\frac{1}{2}.
+    </me>
+  </p>
+<example>
+  <statement>
+    <p>
+      Suppose we are rolling a single standard six-sided die. Indentify each of the following as an experiment, outcome, event, or sample space.
+    <ol>
+      <li>
+        <p>
+          Rolling the die.
+        </p>
+      </li>
+      <li>
+        <p>
+          
+        </p>
+      </li>
+    </ol>
+    </p>
+    
+  </statement>
+</example>
+
+<assemblage xml:id="assemblage-basic-probability">
+  <title>Basic Probability</title>
+  <p>
+    If all outcomes are equally likely, the probability that event <m>E</m> occurs can be calculated as follows.
+    <me>
+      P(E)=\frac{\text{Number of outcomes corresponding to E}}{Number of outcomes in the Sample Space}
+    </me>
+    
+  </p>
+</assemblage>
+ </subsection>
+
+</section>

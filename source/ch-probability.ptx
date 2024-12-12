@@ -8,6 +8,7 @@
   </introduction>
 
   <!-- include sections -->
+  <xi:include href="sec-probability-fundamentals.ptx" />
   <xi:include href="sec-probability-tables.ptx" />
   <xi:include href="sec-probability-theoretical-probability.ptx" />
   <xi:include href="sec-probability-expected-value.ptx" />

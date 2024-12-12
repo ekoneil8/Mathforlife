@@ -11,7 +11,7 @@
   
 </figure>
   <p>
-    When cooking rice, the amounts of water and rice should be <em>proportional</em>, meaning that the ratio of the amount of water to the amount of rice should be the same, regardless of how much rice you are cooking. For microwaved rice, that ratio is 3 parts water to 2 parts rice.
+    When cooking rice, the amounts of water and rice should be <em>proportional</em>, meaning that the ratio of the amount of water to the amount of rice should be the same, regardless of how much rice you are cooking. For microwaved rice, that ratio is three parts water to two parts rice.
   </p>
   <p>
     Proportional reasoning is the practice of using mathematics to solve problems involving ratios and rates, such as determining the amount of water to add to <m>1 \frac{1}{2}</m> cups of rice. (You should use <m>2 \frac{1}{4}</m> cups of water.) 
@@ -27,7 +27,12 @@
       </p>
     </introduction>
     <ul>
-            <li>
+      <li>
+        <p>
+          Find and interpret unit rates.
+        </p>
+      </li>
+      <li>
         <p>
           Apply conversion factors to change units.
         </p>
@@ -39,12 +44,102 @@
       </li>
     </ul>
   </objectives>
-  
+  <subsection xml:id="subsec-unit-rate">
+    <title>Unit Rates</title>
+    <p>
+      Imagine that you are at the grocery store comparing the prices for two brands of pasta sauce. One costs $3.50 for one jar while the other is on sale at $11.50 for three jars.
+    </p>
+    <p>
+      One way to approach the problem is to compare the price per jar or <term>unit rate</term> of each brand. (In this particular scenario, we might use the term unit price to be more specific.) The unit rate for the first brand is $3.50 per jar. To find the unit rate for the second jar, we divide:
+    <me>
+      11.50\obelus*3\approx 3.83.
+    </me>
+    Since the unit price of the first brand is lower, we find that it is the better deal.
+    </p>
+
+    <assemblage xml:id="assemblage-rate-and-unit-rate">
+      <title>Rate and Unit Rate</title>
+      <p>
+        <dl>
+          <li>
+            <title>Rate</title>
+            <p>
+              A <term>rate</term> is the ratio of two quantities with <em>different</em> units such as 40 miles to 2 hours or <m>\frac{40\text{ miles}}{2\text{ hours}}</m>.
+            </p>
+          </li>
+          <li>
+            <title>Unit Rate</title>
+            <p>
+              A <term>unit rate</term>  is a rate in which the denominator is implied to be one such as 20 miles per hour.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </assemblage>
+    <example>
+      <statement>
+        <p>
+          The 2020 Census <fn>US Census Bureau, "QuickFacts: Kitsap County, Washington, <url href="https://www.census.gov/quickfacts/fact/table/kitsapcountywashington/PST045223" visual="https://www.census.gov/quickfacts/fact/table/kitsapcountywashington/PST045223">www.census.gov/quickfacts/fact/table/kitsapcountywashington/PST045223</url></fn> reports that Kitsap County, Washington, has a population of 275,612 people and covers 395.1 square miles of land. Find the population density as a unit rate of people per square mile.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \frac{275\,612}{395.1}\approx697.6\text{ people per square mile}
+          </me>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          A rockclimber burns 16 calories per minute. How long will it take them to burn 200 calories?
+        </p>
+      </statement>
+      <solution>
+        <title>Using a proportion</title>
+               
+        <p>
+        We first express the unit rate of 16 calories per minute as a fraction: <m>\frac{16 \text{ calories}}{1\text{ minute}}</m>. 
+        </p>
+        <p>
+          The rate of calories to minutes when they burn 200 calories can be expressed as a fraction using the variable <m>x</m> to represent the number of minutes: <m>\frac{200\text{ calories}}{x\text{ minutes}}</m>.
+        </p>
+        <p>
+          The two rates must be equal, so we set up and solve an equation. (This is a special type of equation called a proportion.)
+          <md>
+            <mrow>\frac{16}{1} \amp=\frac{200}{x} </mrow>
+            <mrow> 16x\amp=1\cdot200 </mrow>
+            <mrow> x\amp=\frac{200}{16} </mrow>
+            <mrow> x\amp=12.5 </mrow>
+          </md>
+        </p>
+        <p>
+          Therefore, it will take the climber 12.5 minutes to burn 200 calories.
+        </p>
+      </solution>
+      <solution>
+        <title>Using "Rate <times/> Time = Amount"</title>
+             
+        <p>
+          The "burn rate" in calories per minute times the number of minutes will equal the total number of calories burned. Using the variable <m>x</m> to represent the number of minutes, we can set up and solve an equation.
+        <md>
+          <mrow> 16x\amp=200 </mrow>
+          <mrow> x\amp=\frac{200}{16} </mrow>
+            <mrow> x\amp=12.5 </mrow>
+        </md>
+        </p>
+        <p>
+          Therefore, it will take the climber 12.5 minutes to burn 200 calories.
+        </p>
+      </solution>
+    </example>
+  </subsection>
   
   <subsection>
     <title>Unit Conversions</title>
   <p>
-      To convert units, we will use the strategy of multiplying by a "fancy 1". The technical term for this approach is <term>dimensional analysis</term>. For example, since 1 pint is equal to 2 cups, both of these fractions are equal to 1:
+      To convert units, we will use the strategy of multiplying by a "fancy one". The technical term for this approach is <term>dimensional analysis</term>. For example, since one pint is equal to two cups, both of these fractions are equal to one:
       <me>\frac{1\text{ pint}}{2\text{ cups}}=\frac{2\text{ cups}}{1\text{ pint}}=1</me>
      The fractions <m>\frac{1\text{ pint}}{2\text{ cups}}</m> and <m>\frac{2\text{ cups}}{1\text{ pint}}</m> are called <term>conversion factors</term> because they are factors (multipliers) used to convert between units.
      </p>
@@ -52,16 +147,20 @@
       To convert between pints and cups, we can multiply by the conversion factor that will result in the original units being "divided out", leaving an equivalent value in terms of the new units. For example, suppose we needed to convert <m>5.25</m> cups to pints.
       </p> 
       <p> 
-        we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. Because we would like to "divide out" the cups units from the numerator, we multiply by the conversion factor that has cups in the denominator, <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>, as follows:
+        we start by writing <m>5.25</m> cups as a fraction: <m>\frac{5.25 \text{ cups}}{1}</m>. 
+      </p>
+        
+      <p>
+        Because we would like to "divide out" the cups units from the numerator, we multiply by the conversion factor that has cups in the denominator, <m>\frac{1 \text{ pint}}{2 \text{ cups}}</m>, as follows:
       
       <me>
         \frac{5.25 \cancel{\text{ cups}}}{1}\cdot \frac {1 \text{ pint}}{2 \cancel{\text { cups}}}=\frac{5.25 \text{ pints}}{2}=2.625 \text{ pints}
       </me>
       
-      Because we have just multiplied by 1, the value stays equivalent in the new units. 
+      Because we have just multiplied by one, the value stays equivalent in the new units. 
     </p>
     <p>
-      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by 2. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Following are some more involved examples. 
+      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by two. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Following are some more involved examples. 
     </p>
     <example>
       <statement>
@@ -70,8 +169,11 @@
         </p>
       </statement>
       <solution>
+        <title>Step-by-step approach</title>
+        
+        
         <p>
-          There are 5280 feet in 1 mile and there are 60 minutes in 1 hour. (For your reference, a list of unit conversions can be found at the end of this section.)
+          There are 5280 feet in one mile and there are 60 minutes in one hour.
         </p>
         <p>
           We start by writing 20 miles per hour as a fraction:  <m>\frac{20\text{ mi}}{1\text{ hr}}</m>. 
@@ -97,16 +199,72 @@
         <p>
           Therefore, a vehicle moving 20 miles per hour travels 1,760 feet each minute.
         </p>
+        </solution>
+        <solution>
+        <title>All-at-once approach</title>
+        
+                
         <p>
-          Note that we could have completed both conversions in one step as follows:
+          Note that we can complete both conversions in one step as follows:
           <me>
             \frac{20\cancel{\text{ mi}}}{1\cancel{\text{ hr}}}\cdot\frac{5280\text{ ft}}{1\cancel{\text{ mi}}}\cdot\frac{1\cancel{\text{ hr}}}{60\text{ min}}=1760\text{ ft/min}
           </me>
-          
+          </p>
+          <p>
+          Therefore, a vehicle moving 20 miles per hour travels 1,760 feet each minute.
         </p>
+        
       </solution>
     </example>
-     <example>
+     
+   
+    </subsection>
+ <subsection xml:id="subsec-proportion-problemsolving">
+  <title>Proportional Reasoning with Rates and Ratios</title>
+    <p>
+      There are many real-life problems in which proportional reasoning can be applied. Some examples from various contexts follow.
+    </p>
+      <example>
+      <statement>
+        <p>
+          You are making many pizzas for a large party. Your favorite recipe makes 20 ounces of dough, which is the right amount for two 12-inch diameter pizzas. You plan to make six 16-inch pizzas for the party. By what factor should you multiply or scale the recipe, and how many ounces of dough will that make?
+        </p>
+      </statement>
+      <solution>
+       <p>
+        Assume that the thickness of a 16-inch pizza is the same as the thickness of a 12-inch pizza. You can compare the total area of pizza made from one recipe with the total area of pizza you plan to make for the party. 
+        </p>
+        <p>
+        The formula for the area of a circle of radius <m>r</m> is <m>A=\pi r^{2}</m>. Recall that the radius of a circle is half of its diameter, so the original recipe makes two 6-inch radius pizzas and you want to make six 8-inch radius pizzas. Those areas are as follows:
+        </p>
+         <p>
+            <em>Original Recipe:</em> Two pies of radius 6 inches
+          </p>
+          <p>
+            <me>
+              A=\pi (6)^{2}\cdot2=72 \pi \text{ square inches}
+            </me>
+          </p>
+          <p>
+            <em>For Party:</em> Six pies of radius 8 inches
+            <me>
+              A=\pi (8)^{2}\cdot 6=384 \pi \text{ square inches}
+            </me>
+            
+          </p>
+        <p>
+          The ratio of the area of pizza needed for the party to the area of pizza made by one recipe is <m>\frac{384\pi}{72\pi}=\frac{16}{3}\approx 5.33</m>
+        </p>
+        <p>
+          When we make the dough, we will multiply the amount of each ingredient by <m>\frac{16}{3}</m>, which is the factor you should use to scale up the recipe.
+        </p>
+        <p>
+          The resulting amount of dough should be <m>20\cdot\frac{16}{3}\approx106.67</m> ounces. For context, that is 6.67 pounds of dough. You will need a very large bowl!
+        </p>
+
+      </solution>
+    </example>
+`<example>
       <statement>
         <p>
           Have you ever wondered how the speedometer on a car works? A car with 15.8-inch radius tires will move <m>2\pi \cdot 15.8=31.6 \pi</m> inches with each revolution. If the wheels are spinning 620 revolutions per minute, how fast is the car moving in miles per hour?
@@ -123,7 +281,7 @@
             </li>
             <li>
               <p>
-                Convert inches to feet and then feet to miles. There are 12 inches in 1 foot, and there are 5280 feet in 1 mile.
+                Convert inches to feet and then feet to miles. There are 12 inches in one foot, and there are 5280 feet in one mile.
               </p>
             </li>
             <li>
@@ -147,159 +305,6 @@
         </p>
       </solution>
     </example>
-    <p>
-      Below are some common conversion rates.
-    </p>
-    <assemblage>
-      <title>Unit Conversions for Length</title>
-      <sidebyside>
-        <stack>
-          <p>
-            1 foot (ft) = 12 inches (in)
-          </p>
-          <p>
-            1 mile (mi) = 5,280 feet (ft)
-          </p>
-          <p>
-            1000 millimeters (mm) = 1 meter (m)
-          </p>
-          <p>
-            1000 meters (m) = 1 kilometer (km)
-          </p>
-        </stack>
-        <stack>
-          <p>
-            1 yard (yd) = 3 feet (ft)
-          </p>
-          <p>
-            2.54 centimeters (cm) = 1 inch (in)
-          </p>
-          <p>
-            100 centimeters (cm) = 1 meter (m)
-          </p>
-        </stack>
-      </sidebyside>
-    </assemblage>
-    <assemblage>
-      <title>Unit Conversions for Weight and Mass</title>
-      <sidebyside>
-        <stack>
-          <p>
-            1 pound (lb) = 16 ounces (oz)
-          </p>
-          <p>
-            1000 millgrams (mg) = 1 gram (g)
-          </p>
-        </stack>
-        <stack>
-          <p>
-            1 US ton = 2000 pounds (lbs)
-          </p>
-          <p>
-            1000 grams (g) = 1 kilogram (kg)
-          </p>
-        </stack>
-      </sidebyside>
-          <p>
-            1 kilogram (kg) <m>\approx</m> 2.2 pounds (lbs) on Earth's surface
-          </p>
-    </assemblage>
-    <assemblage>
-      <title>Unit Conversions for Volume and Capacity</title>
-      <sidebyside>
-        <stack>
-          <p>
-            1 gallon (gal) = 4 quarts (qt)
-          </p>
-          <p>
-            1 quart (qt) = 2 pints (pt)
-          </p>
-          <p>
-            1 pint (pt) = 2 cups (c)
-          </p>
-          <p>
-            1000 milliliters (ml) = 1 liter (L)
-          </p>
-        </stack>
-        <stack>
-          <p>
-            1 cup (c) = 8 fluid ounces (fl oz)
-          </p>
-          <p>
-            1 cup (c) = 16 Tablespoons (T)
-          </p>
-          <p>
-            1 Tablespoon (T) = 3 Teaspoons (t)
-          </p>
-        </stack>
-      </sidebyside>
-      <p>
-        Note: It is unfortunate that our system of measurement uses ounces to measure both volume and weight. For clarity, we will say "fluid ounces" when referring to volume and "ounces" will refer to weight.
-      </p>
-    </assemblage>
-    </subsection>
- <subsection xml:id="subsec-proportion-problemsolving">
-  <title>Solving Problems Involving Rates and Ratios</title>
-    <p>
-      There are many real-life problems in which proportional reasoning can be applied. Some examples from various contexts follow.
-    </p>
-    
-   
-
-  
-    <example>
-      <statement>
-        <p>
-          You are making many pizzas for a large party. Your favorite recipe makes 20 ounces of dough, which is the right amount for two 12-inch diameter pizzas. You plan to make six 16-inch pizzas for the party. By what factor should you multiply or scale the recipe, and how many ounces of dough will that make?
-        </p>
-      </statement>
-      <solution>
-       <p>
-        Assume that the thickness of a 16-inch pizza is the same as the thickness of a 12-inch pizza. You can compare the total area of pizza made from one recipe with the total area of pizza you plan to make for the party. 
-        </p>
-        <p>
-        The formula for the area of a circle of radius <m>r</m> is <m>A=\pi r^{2}</m>. Recall that the radius of a circle is half of its diameter, so the original recipe makes two 6-inch radius pizzas and you want to make six 8-inch radius pizzas. Those areas are as follows:
-        </p>
-        <sidebyside>
-          <stack>
-          <p>
-            Original Recipe: Two pies of radius 6 inches
-          </p>
-          <p>
-            <me>
-              A=\pi (6)^{2}\cdot2=72 \pi \text{ square inches}
-            </me>
-          </p>
-          </stack>
-          <stack>
-          <p>
-            For Party: Six pies of radius 8 inches
-            <me>
-              A=\pi (8)^{2}\cdot 6=384 \pi \text{ square inches}
-            </me>
-            
-          </p>
-          </stack>
-        </sidebyside>
-        <p>
-          The ratio of the area of pizza needed for the party to the area of pizza made by one recipe is <m>\frac{384\pi}{72\pi}=\frac{16}{3}\approx 5.33</m>
-        </p>
-        <p>
-          When we make the dough, we will multiply the amount of each ingredient by <m>\frac{16}{3}</m>, which is the factor you should use to scale up the recipe.
-        </p>
-        <p>
-          The resulting amount of dough should be <m>20\cdot\frac{16}{3}\approx106.67</m> ounces. For context, that is 6.67 pounds of dough. You will need a very large bowl!
-        </p>
-
-      </solution>
-    </example>
-    <example>
-      <statement>
-        <p>
-          
-        </p>
-      </statement>
-    </example>
   </subsection>
    
   <exercises>
@@ -316,7 +321,289 @@
         </p>
       </answer>
     </exercise>
-    
+    <exercise><!--  #5 -->
+	<statement>
+	<p>
+		Find the unit rate for each size and determine which is more cost effective? A 9.6-ounce cannister of coffee for $5.42 or a 40.3-ounce cannister of coffee for $14.87.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			The 9.6-ounce container is $0.565 per ounce and the 40.3-ounce canister is $0.369 per ounce. The larger container is a better value.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #6 -->
+	<statement>
+	<p>
+		Find the unit rate for each brand. Which is more cost effective? A 16-ounce jar of peanut butter for $4.88 or a A 28-ounce jar of peanut butter for $6.97.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			The 16-ounce jar is $0.305 per ounce and the 28-ounce jar is $0.249 per ounce. The larger container is a better value.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #7 -->
+	<statement>
+	<p>
+		The population of the U.S. is about 309,975,000 people, covering a land area of 3,717,000 square miles. The population of India is about 1,184,639,000 people, covering a land area of 1,269,000 square miles. Compare the population densities of the two countries.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			The population density of the US is about 83.4 people per square mile. The population density of India is about 93.4 people per square mile.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #8 -->
+	<statement>
+	<p>
+		The GDP (Gross Domestic Product) of China was $5,739 billion in 2010, and the GDP of Sweden was $435 billion. The population of China is about 1,347 million, while the population of Sweden is about 9.5 million. Compare the GDP per capita of the two countries.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			The GDP of China was about $4,261 per person. The GDP of Sweden was about $45,789 per person.
+		</p>
+	</solution>
+</exercise>
+
+<exercisegroup>
+	<introduction>
+		<p>
+			For this set of questions, determine whether the quantities are proportional to each other.
+		</p>
+	</introduction>
+<exercise><!--  #9 -->
+	<statement>
+	<p>
+		One brand of printer can print 45 pages in 5 minutes, and another can print 96 pages in 8 minutes.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			No, the second printer prints more pages per minute.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #10 -->
+	<statement>
+	<p>
+		A backpacker hikes 11 miles in 2 days and then 16.5 miles in the next 3 days.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			Yes, these are the same rate.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #11 -->
+	<statement>
+	<p>
+		You read 56 pages in 2 hours and then 140 pages in 5 hours.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			Yes, these rates are the same.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #12 -->
+	<statement>
+	<p>
+		A runner runs a 50 m race in 6.8 sec and a 400 m race in 50.5 seconds.
+	</p>
+	</statement>
+	<solution>
+		<p>
+			No, the 50 m rate is a faster rate.
+		</p>
+	</solution>
+</exercise>
+</exercisegroup>
+
+
+<exercisegroup> <!-- #13-22 -->
+	<introduction>
+		<p>
+			Solve these proportion problems.
+		</p>
+	</introduction>
+
+<exercise><!--  #13 -->
+	<statement>
+	<p>
+		A crepe recipe calls for 2 eggs, 1 cup of flour, and 1 cup of milk. How much flour would you need if you use 5 eggs?
+	</p>
+	</statement>
+	<solution>
+		<p>
+			You would need 2 and a half cups of flour.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #14 -->
+	<statement>
+	<p>
+		A smoothie recipe uses one and a half cups of yogurt, a banana, and other ingredients to make 4 cups. How many cups of yogurt are needed for 6 cups of smoothies?
+	</p>
+	</statement>
+	<solution>
+		<p>
+			You would need 2 and a quarter cups of yogurt.
+		</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #15 -->
+	<statement>
+	<p>
+		An 8-ft length of 4-inch-wide crown molding costs $14. How much will it cost to buy 40 feet of crown molding?
+	</p>
+	</statement>
+	<solution>
+		<p>
+			40 feet of crown molding would cost $70.
+		</p>
+	</solution>
+</exercise>
+
+<exercise> <!-- #16 -->
+	<statement>
+	<p>
+		If a car travels 160 miles in 3 hours, how long will it take to travel 250 miles at the same speed?
+	</p>
+	</statement>
+	<solution>
+	<p>
+		It will take about 4.7.
+	</p>
+	</solution>
+</exercise>
+
+<exercise><!--  #17 -->
+	<statement>
+	<p>
+		Four 3-megawatt wind turbines can supply enough electricity to power 3,000 homes. How many turbines would be required to power 55,000 homes?
+	</p>
+	</statement>
+	<solution>
+		<p>
+			You would need at least 73.3 or 74 3-megawatt wind turbines.
+		</p>
+	</solution>
+</exercise>
+
+<exercise>
+	<statement>
+	<p>
+		A highway had a landslide, where 3,000 cubic yards of material fell on the road, requiring 200 dump truck loads to clear. On another highway, a slide left 40,000 cubic yards on the road. How many dump truck loads would be needed to clear this slide?
+	</p>
+	</statement>
+	<solution>
+		<p>
+			It would take at least 2666.67 or 2667 dump truck loads.
+		</p>
+	</solution>
+</exercise>
+
+<exercise>
+	<statement>
+	<p>
+		If your working on a farm and 4 packets of seeds are enough for 25 square meters, how many packets are needed for 60 square meters?
+	</p>
+	</statement>
+	<solution>
+		<p>
+			You would need 9.6 or 10 packets of seeds.
+		</p>
+	</solution>
+</exercise>
+<exercise>
+	<statement>
+	<p>
+		Two bundles of shingles cover 50 square feet. How many bundles are needed to cover a roof of 660 square feet?
+	</p>
+	</statement>
+	<solution>
+		<p>
+			You would need 26.4 or 27 bundles of shingles.
+		</p>
+	</solution>
+</exercise>
+
+<exercise>
+	<statement>
+	<p>
+		If one US dollar is equivalent to 0.91 euros(EUR), how many dollars will you get back for 170 EUR?
+	</p>
+	</statement>
+	<solution>
+	<p>
+		You would get about $186.81.
+	</p>
+	</solution>
+</exercise>
+
+<exercise> 
+	<statement>
+	<p>
+		If one US dollar is equivalent to 17.13 Mexican Pesos (MXN), how many dollars will you get back for 2,000 MXN?
+	</p>
+	</statement>
+	<solution>
+	<p>
+		You would get about $116.75.
+	</p>
+	</solution>
+</exercise>
+
+</exercisegroup>
+
+<exercisegroup>
+<introduction>
+		<p>
+			For each situation determine how to compensate and keep the quantities proportional.
+		</p>
+	</introduction>
+<exercise> 
+	<statement>
+	<p>
+		Your chocolate milk mix says to use 4 scoops of mix for 2 cups of milk. After pouring in the milk, you start adding the mix, but get distracted and accidentally put in 5 scoops of mix. How can you adjust the milk?
+	</p>
+	</statement>
+	<solution>
+	<p>
+		For 5 scoops of mix you need 2.5 cups of milk. If there is no room in the cup pour it into a larger bowl and mix.
+	</p>
+	</solution>
+</exercise>
+
+<exercise> 
+	<statement>
+	<p>
+		A recipe for sabayon calls for 2 egg yolks, 3 tablespoons of sugar, and ¼ cup of white wine. After cracking the eggs, you start measuring the sugar, but accidentally put in 4 tablespoons of sugar. How can you compensate?
+	</p>
+	</statement>
+	<solution>
+	<p>
+		We need to get up to 3 egg yolks which is 1.5 times the recipe, so use 4 and a half tablespoons of sugar total and one quarter plus one eighth cup of white wine. Doubling the whole thing would also work.
+	</p>
+	</solution>
+</exercise>
+</exercisegroup>
+
   </exercises>
 
   

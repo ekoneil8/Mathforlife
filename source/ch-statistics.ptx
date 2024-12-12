@@ -8,6 +8,7 @@
   </introduction>
 
   <!-- include sections -->
+  <xi:include href="sec-statistics-process.ptx" />
   <xi:include href="sec-statistics-describing-data.ptx" />
   <xi:include href="sec-statistics-measures-of-center.ptx" />
   <xi:include href="sec-statistics-measures-of-variation.ptx" />

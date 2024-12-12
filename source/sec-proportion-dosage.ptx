@@ -47,11 +47,16 @@
         </statement>
         <solution>
             <p>
-                We need to convert 8,000 units into mililiters to determine the volume of medication to be administered to the patient. Our conversion factor is
+                We need to convert 8,000 units into mililiters to determine the volume of medication to be administered to the patient. Since <m>10\,000\text{ units}=1\text{ ml}</m>, we have two conversion factors to choose from:
                 <me>
-                    \frac{10000\text{ units}}{1\text{ ml}}=\frac{1\text{ ml}}{10000\text{ units}}=1
+                    \frac{10000\text{ units}}{1\text{ ml}}
                 </me>
-                We will use the form with units in the denominator so that the units divide out as follows:
+                or
+                <me>
+                    \frac{1\text{ ml}}{10000\text{ units}}.
+                </me>
+                
+                Starting with <m>\frac{8\,000\text{ units}}{1}</m>, we multiply by the conversion factor that has "units" in the denominator to ensure that the "units" divide out.
                 <me>
                     \frac{8000\cancel{\text{ units}}}{1}\cdot\frac{1\text{ ml}}{10000\cancel{\text{ units}}}=0.8\text{ ml}
                 </me>
