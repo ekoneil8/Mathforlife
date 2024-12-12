@@ -42,7 +42,7 @@
 <subsection xml:id="subsec-linear-model">
   <title>Linear Growth Models</title>
   <p>
-    A linear growth model is an equation used to represent something that changes by the same amount in each unit of time. We use the term growth even in situations where a quantity is <em>decreasing</em> by the same amount in each unit of time. (It is growing by a negative amount.) below are some situations where linear growth occurs:
+    A linear growth model is an equation used to represent something that changes by the same amount in each unit of time. We use the term growth even in situations where a quantity is <em>decreasing</em> by the same amount in each unit of time. (It is growing by a negative amount.) Following are some examples of linear growth:
   </p>
   <p>
        <ul>
@@ -81,10 +81,31 @@
   Recall from algebra classes that <m>H(t)</m> is function notation, not multiplication. We read it as "<m>H</m> of <m>t</m>".
 </p>
 <p>
-  Using a similar approach we can find that the value of the car that starts out at $38,000 and loses $2,000 in value each year can be modeled with the formula
-  <me>
+  Using a similar approach we can write linear functions to model the remaining examples.
+  </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            The value of the car that starts out at $38,000 and loses $2,000 in value each year can be modeled with the function
+  <m>
     V(t)=38\,000-2\,000t
-  </me>
+  </m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The $100 plus $80 per hour cost to repair the dishwasher can be modeled with the function <m>C(t)=100+80t</m> where <m>t</m> is measured in hours.
+          </p>
+        </li>
+        <li>
+          <p>
+            The population of the town that starts at 4,070 and grows by 5 people per year since the year 2025 can be modeled with the function <m>P(t)=4\,070+5t</m> where <m>t</m> is the number of years since 2025.
+          </p>
+        </li>
+      </ul>
+    </p>
+  
   
 </p>
 <assemblage xml:id="assemblage-linear-growth">
