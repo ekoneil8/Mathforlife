@@ -70,10 +70,10 @@
       </ul>
       </p>
   <p>
-  Consider the tree that starts out 4 feet tall and grows 2 feet each year. After 1 year, it will be 6 feet tall, after 2 years it will be 8 feet tall, after 3 years it will be 10 feet tall, and so on. To find the height after 20 years, we would start with the initial height of 4 feet and add 2 feet 20 times. Mathematically, this is <m>4+2(20)=84</m>.
+  Consider the tree that starts out 4 feet tall and grows 2 feet each year. After 1 year, it will be 6 feet tall, after 2 years it will be 8 feet tall, after 3 years it will be 10 feet tall, and so on. 
   </p>
   <p>
-    We can demonstrate the growth pattern in a table and a graph. 
+    We can demonstrate the growth pattern with a table and a graph. 
   </p>
   <table>
     <title>Tree Height</title>
@@ -102,20 +102,43 @@
         <cell>4</cell>
         <cell>12</cell>
       </row>
+      <row>
+        <cell>5</cell>
+        <cell>14</cell>
+      </row>
+      <row>
+        <cell>6</cell>
+        <cell>16</cell>
+      </row>
     </tabular>
   </table>
-  
   <p>
-  We can generalize to obtain a formula for the height of the tree after <m>t</m> years:
+    By convention, we put time on the horizontal axis and plot the points. 
+  </p>
+  <figure xml:id="linear-growth-points">
+    <caption>Linear growth pattern</caption>
+    <image source="images/modeling-linear-pts.png">
+      <shortdescription>Graph of points in tree height table</shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    Note that if we connect the data points, the result would be a straight <em>line</em>, which is why we call this type of trend <term>linear growth</term>.
+  </p>
+  <p>
+    Imagine that we wanted to predict the height of the tree after 20 years. We would start with the initial height of 4 feet and add 2 feet 20 times. Mathematically, this is <m>4+2(20)=84</m>.
+  </p>
+  <p>
+  Generalizing, we can obtain a formula for the height of the tree after <m>t</m> years:
   <me>
-    H(t)=4+2t
+    H(t)=4+2t.
   </me>
 </p>
 <p>
   Recall from algebra classes that <m>H(t)</m> is function notation, not multiplication. We read it as "<m>H</m> of <m>t</m>".
 </p>
 <p>
-  Graphing the function <m>H(t)=4+2t</m>
+  As expected, the graph of <m>H(t)=4+2t</m> is a straight line.
 </p>
 
 <p>
