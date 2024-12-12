@@ -8,8 +8,8 @@
     The probability of a specified event is the chance or likelihood that it will occur.  There are several ways of viewing probability.  One would be experimental in nature, where we repeatedly conduct an experiment.  Suppose we flipped a coin over and over and over again and it came up heads about half of the time; we would expect that in the future whenever we flipped the coin it would turn up heads about half of the time.  When a weather reporter says “there is a 10% chance of rain tomorrow,” she is basing that on prior evidence; that out of all days with similar weather patterns, it has rained on 1 out of 10 of those days.
   </p>
   </introduction>
- <subsection xml:id="subsec-probability-terminology">
-  <title>Terminology</title>
+ <subsection xml:id="subsec-basic-probability">
+  <title>Basic Probability</title>
   <p>
     We will start by defining some important terminology.
   </p>
@@ -32,7 +32,7 @@
         <li>
           <title>Event</title>
           <p>
-            An <term>event</term> is any particular outcome or set of outcomes. When rolling a pair of dice, one event could be rolling a total of seven. There are several different outcomes that result in a total of seven, and collectively, these make up the event.
+            An <term>event</term> is a particular outcome or set of outcomes. When rolling a pair of dice, one event is rolling "doubles", meaning that the same value is shown on both dice. (There are six different outcomes that make up this event.) Another event could be rolling a total of two.
           </p>
         </li>
         <li>
@@ -53,7 +53,7 @@
   <p>
     Consider the experiment of flipping a coin three times. We can denote, for example, the outcome of getting heads on the first flip, tails on the second flip, and tails on the third flip as <m>HTT</m>. Using this notation, the sample space can be written as follows:
   <me>
-    \lbrace HHH{,}\, HHT{,}\, HTH{,}\, THH{,}\,HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace.
+    S=\lbrace HHH{,}\, HHT{,}\, HTH{,}\, THH{,}\,HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace.
   </me>
   
   </p>
@@ -69,22 +69,44 @@
 <example>
   <statement>
     <p>
-      Suppose we are rolling a single standard six-sided die. Indentify each of the following as an experiment, outcome, event, or sample space.
+      Consider the experiment: rolling a single standard six-sided die.
     <ol>
       <li>
         <p>
-          Rolling the die.
+          What is the sample space, and how many outcomes are in the sample space?
         </p>
       </li>
       <li>
         <p>
-          
+          What outcomes are in the event "rolling a prime number", and how many outcomes are in that event?
+        </p>
+      </li>
+      <li>
+        <p>
+          What is the probability of the event "rolling a prime number"?
         </p>
       </li>
     </ol>
     </p>
     
   </statement>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p>
+            The sample space is <me>S=\lbrace1{,}2{,}3{,}4{,}5{,}6\rbrace.</me>
+            There are six outcomes in the sample space.
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
 </example>
 
 <assemblage xml:id="assemblage-basic-probability">
