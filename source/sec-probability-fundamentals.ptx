@@ -4,10 +4,51 @@
   <title>Fundamentals of Probability</title>
 
 <introduction>
+<figure xml:id="dice">
+  <caption>Dice used in gambling</caption>
+  <image source="images/dice">
+    <shortdescription>Two dice on a green craps table</shortdescription>
+  </image>
+</figure>
   <p>
     The probability of a specified event is the chance or likelihood that it will occur.  There are several ways of viewing probability.  One would be experimental in nature, where we repeatedly conduct an experiment.  Suppose we flipped a coin over and over and over again and it came up heads about half of the time; we would expect that in the future whenever we flipped the coin it would turn up heads about half of the time.  When a weather reporter says “there is a 10% chance of rain tomorrow,” she is basing that on prior evidence; that out of all days with similar weather patterns, it has rained on 1 out of 10 of those days.
   </p>
   </introduction>
+  <objectives>
+    <introduction>
+      <p>
+        Studends will be able to
+      </p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Identify outcomes, events, and the sample space for an experiment.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate basic probability.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate the probability of the complement of an event.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate probabilities involving "and" and "or".
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret probability in context.
+        </p>
+      </li>
+    </ul>
+  </objectives>
+  
  <subsection xml:id="subsec-basic-probability">
   <title>Basic Probability</title>
   <p>
@@ -61,7 +102,7 @@
     The event <m>E</m> of rolling at least two tails is <m>E=\lbrace HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace</m>.
   </p>
   <p>
-    There are four outcomes in which we get at least two tails out of the total of eight possible outcomes. Assuming it is a fair coin, meaning that all of the outcomes are equally likely, then the probability of the event <m>E</m> is
+    There are four outcomes in which we get at least two tails out of the total of eight possible outcomes. Assuming it is a fair coin, meaning that all of the outcomes are equally likely, then the probability of the event <m>E</m>, which we write using function notation <m>P(E)</m> is:
     <me>
       P(E)=\frac{4}{8}=\frac{1}{2}.
     </me>
@@ -78,7 +119,7 @@
       </li>
       <li>
         <p>
-          What outcomes are in the event "rolling a prime number", and how many outcomes are in that event?
+          What outcomes are in the event "rolling a three", and how many outcomes are in that event?
         </p>
       </li>
       <li>
@@ -101,6 +142,16 @@
         </li>
         <li>
           <p>
+            The event "rolling a three" is <me>E=\lbrace3\rbrace.</me>
+            There is just one outcome in event <m>E</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The probability of rolling a three is
+            <me>
+              P(E)=\frac{1}{6}.
+            </me>
             
           </p>
         </li>
@@ -108,7 +159,9 @@
     </p>
   </solution>
 </example>
-
+<p>
+  To summarize, when all outcomes are equally likely, probability can be calculated as the number of ways what you are looking for occurs divided by the total number of things that can occur. A more formal definition follows.
+</p>
 <assemblage xml:id="assemblage-basic-probability">
   <title>Basic Probability</title>
   <p>
@@ -119,6 +172,95 @@
     
   </p>
 </assemblage>
+<example>
+  <statement>
+    <p>
+      Let's say you have a bag with 20 cherries, 14 sweet and 6 sour. If you pick a cherry at random, what is the probability that it will be sweet?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Because we are picking a cherry  at random, we may assume that all outcomes (cherries) are equally likely, so we may use the basic probability formula. 
+    </p>
+    <p>
+      It isn't necessary to write sets for the sample space and the event because we already know how many items are in each, although writing the sets would not be a problem.
+    </p>
+    <p>
+      The probability of picking a sweet cherry is
+      <me>
+        P(sweet)=\frac{\text{number of sweet cherries}}{\text{total number of cherries}}=\frac{14}{20}
+      </me>
+      
+    </p>
+    <p>
+      We can simplify to <m>\frac{7}{10}</m>. It would also be correct to express the probability as 0.7 or 70%.
+    </p>
+  </solution>
+</example>
+<p>
+ While probability theory has far-reaching applications in medicine, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. Information about standard 52-card decks and 5-sided dice follows.
+</p>
+<assemblage xml:id="assemblage-Cards">
+  <title>Cards</title>
+  <p>
+    A standard deck of 52 playing cards consists of four suits (hearts, spades, diamonds and clubs). Spades and clubs are black while hearts and diamonds are red. 
+    </p>
+    <p>Each suit contains 13 cards, each of a different rank: 
+    <ul>
+      <li>
+        <p>
+          An Ace (A),which may be considered a low card, a high card, or both, depending on the game,
+        </p>
+      </li>
+      <li>
+        <p>
+          One each of cards numbered 2 through 10,
+        </p>
+      </li>
+      <li>
+        <p>
+          A Jack (J),
+        </p>
+      </li>
+      <li>
+        <p>
+          A Queen (Q), and
+        </p>
+      </li>
+      <li>
+        <p>
+          A King (K).
+        </p>
+      </li>
+    </ul>
+   </p>
+   <p>
+    Jacks, queens, and kings are considered <term>face cards</term>, and jacks, queens, kings, and aces are considered <term>picture cards</term>.
+   </p>
+</assemblage>
+<assemblage xml:id="assemblage-dice">
+  <title>Dice</title>
+  
+  <p>
+    Many games use two dice, each with six sides. Each side has a different number of dots: one through six.
+  </p>
+  <p>
+    The sample space for rolling two dice is shown in the grid below. In each ordered pair, the first component represents the number of dots shown on the first die and the second component represents the number of dots shown on the second die. 
+  </p>
+  <image source="path (no extension)">
+    <shortdescription>Dice outcomes listed in rows: (1,1) through (1,6), (2,1) through (2,6), and so on.</shortdescription>
+  </image>
+  <p>
+    Note that the singular of dice is <em>die</em>. So, we can have one die as opposed to two or more dice.
+  </p>
+</assemblage>
+<example>
+  <statement>
+    <p>
+      Find the probability of getting an Ace when drawing a single card from a standard 52-card deck.
+    </p>
+  </statement>
+</example>
  </subsection>
 
 </section>
