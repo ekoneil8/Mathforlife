@@ -6,12 +6,12 @@
 <introduction>
 <figure xml:id="dice">
   <caption>Dice used in gambling</caption>
-  <image source="images/dice">
+  <image source="images/dice.jpg" width="50%">
     <shortdescription>Two dice on a green craps table</shortdescription>
   </image>
 </figure>
   <p>
-    The probability of a specified event is the chance or likelihood that it will occur.  There are several ways of viewing probability.  One would be experimental in nature, where we repeatedly conduct an experiment.  Suppose we flipped a coin over and over and over again and it came up heads about half of the time; we would expect that in the future whenever we flipped the coin it would turn up heads about half of the time.  When a weather reporter says “there is a 10% chance of rain tomorrow,” she is basing that on prior evidence; that out of all days with similar weather patterns, it has rained on 1 out of 10 of those days.
+    Probability is the chance or likelihood that something will occur. 
   </p>
   </introduction>
   <objectives>
@@ -41,11 +41,7 @@
           Calculate probabilities involving "and" and "or".
         </p>
       </li>
-      <li>
-        <p>
-          Interpret probability in context.
-        </p>
-      </li>
+     
     </ul>
   </objectives>
   
@@ -110,7 +106,7 @@
 <example>
   <statement>
     <p>
-      Consider the experiment: rolling a single standard six-sided die.
+      Consider the experiment: rolling a single standard six-sided die. (Die the singular of dice, so we can have one die or two or more dice.)
     <ol>
       <li>
         <p>
@@ -167,28 +163,38 @@
   <p>
     If all outcomes are equally likely, the probability that event <m>E</m> occurs can be calculated as follows.
     <me>
-      P(E)=\frac{\text{Number of outcomes corresponding to E}}{Number of outcomes in the Sample Space}
+      P(E)=\frac{\text{Number of outcomes corresponding to E}}{\text{Number of outcomes in the sample space}}
     </me>
     
+  </p>
+  <p>
+    If an event is impossible, its probability is zero, and if an event is guaranteed, its probability is one or 100%. All other events have probabilities between zero and one:
+    <me>
+      0\le P(E) \le 1.
+    </me>
+    
+  </p>
+  <p>
+    If you obtain a probability that is negative or greater than one, check your work<mdash/>there is a mistake somewhere.
   </p>
 </assemblage>
 <example>
   <statement>
     <p>
-      Let's say you have a bag with 20 cherries, 14 sweet and 6 sour. If you pick a cherry at random, what is the probability that it will be sweet?
+      Let's say you have a bag with 40 truffles, 28 dark chocolate and 14 milk chocolate. If you pick a truffle at random, what is the probability that it will be dark chocolate?
     </p>
   </statement>
   <solution>
     <p>
-      Because we are picking a cherry  at random, we may assume that all outcomes (cherries) are equally likely, so we may use the basic probability formula. 
+      Because we are picking a cherry  at random, we may assume that all outcomes (truffles) are equally likely, so we may use the basic probability formula. 
     </p>
     <p>
       It isn't necessary to write sets for the sample space and the event because we already know how many items are in each, although writing the sets would not be a problem.
     </p>
     <p>
-      The probability of picking a sweet cherry is
+      The probability of picking a dark chocolate truffle is
       <me>
-        P(sweet)=\frac{\text{number of sweet cherries}}{\text{total number of cherries}}=\frac{14}{20}
+        P(\text{dark chocolate})=\frac{\text{number of dark chocolate truffles}}{\text{total number of truffles}}=\frac{28}{40}
       </me>
       
     </p>
@@ -198,12 +204,12 @@
   </solution>
 </example>
 <p>
- While probability theory has far-reaching applications in medicine, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. Information about standard 52-card decks and 5-sided dice follows.
+ While probability theory has far-reaching applications in such fields as medicine, business, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. In particular, we will take many examples from games involving cards and dice.
 </p>
-<assemblage xml:id="assemblage-Cards">
+<assemblage xml:id="assemblage-cards">
   <title>Cards</title>
   <p>
-    A standard deck of 52 playing cards consists of four suits (hearts, spades, diamonds and clubs). Spades and clubs are black while hearts and diamonds are red. 
+    A standard American deck of playing cards consists of four suits (hearts, spades, diamonds and clubs). Spades and clubs are black; hearts and diamonds are red. 
     </p>
     <p>Each suit contains 13 cards, each of a different rank: 
     <ul>
@@ -214,7 +220,7 @@
       </li>
       <li>
         <p>
-          One each of cards numbered 2 through 10,
+          One each of cards numbered two through ten,
         </p>
       </li>
       <li>
@@ -237,30 +243,655 @@
    <p>
     Jacks, queens, and kings are considered <term>face cards</term>, and jacks, queens, kings, and aces are considered <term>picture cards</term>.
    </p>
+   <p>
+    There are a total of 52 cards in the <em>standard</em> deck.
+   </p>
+   <p>
+    Some games make use of two extra cards, called <term>jokers</term>, which may be considered <term>wild cards</term>.
+   </p>
 </assemblage>
+<example>
+  <statement>
+    <p>
+      Find the probability of getting an ace when drawing a single card from a standard 52-card deck.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There is one ace in each of the four suits, so there are four aces in the deck out of the 52 total cards. Therefore, the probability of drawing an ace is 
+      <me>
+        P(Ace)=\frac{4}{52}=\frac{1}{13}
+      </me>
+      
+    </p>
+  </solution>
+</example>
+<example>
+  <statement>
+    <p>
+      Find the probability of getting a black face card when drawing a single card from a standard deck.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are three face cards of each suit, and two of the suits are black. So, there are six black face cards, and the probability of drawing one of them is
+    <me>
+      P(\text{black face card})=\frac{6}{52}=\frac{3}{26}
+    </me>
+    or approximately 11.54%.
+    </p>
+  </solution>
+</example>
 <assemblage xml:id="assemblage-dice">
   <title>Dice</title>
   
   <p>
-    Many games use two dice, each with six sides. Each side has a different number of dots: one through six.
+    Many board games use two dice, each with six sides. Each side has a different number of dots: one through six. 
   </p>
   <p>
-    The sample space for rolling two dice is shown in the grid below. In each ordered pair, the first component represents the number of dots shown on the first die and the second component represents the number of dots shown on the second die. 
+    The sample space for the 36 possible outcomes of rolling two dice is shown in the grid below. In each ordered pair, the first component represents the number of dots shown on the first die and the second component represents the number of dots shown on the second die. 
   </p>
-  <image source="path (no extension)">
+  <image source="images/dice-sample-space.png" width="50%">
     <shortdescription>Dice outcomes listed in rows: (1,1) through (1,6), (2,1) through (2,6), and so on.</shortdescription>
   </image>
+   
+</assemblage>
+<example>
+  <statement>
+    <p>
+      When rolling two dice, if both show the same number it is called "doubles". What is the probability of rolling doubles?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are six ways to roll doubles, <m>(1,1)</m> through <m>(6,6)</m>, out of the total of 36 possible outcomes. The probability is 
+      <me>
+        P\left(\text{doubles}\right)=\frac{6}{36}=\frac{1}{6}
+      </me>
+      
+    </p>
+  </solution>
+</example>
+<example>
+  <statement>
+    <p>
+      What is the probability of getting a sum greater than eight when rolling two dice?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are four ways to obtain a sum of nine: <m>(6{,}3)</m>, <m>(5{,}4)</m>, <m>(4{,}5)</m>, and <m>(3{,}6)</m>.
+    </p>
+    <p>
+      There are three ways to obtain a sum of ten: <m>(6{,}4)</m>, <m>(5{,}5)</m>, and <m>(4{,}6)</m>.
+    </p>
+    <p>
+      There are two ways to obtain a sum of eleven: <m>(6{,}5)</m> and <m>(5{,}6)</m>.
+    </p>
+    <p>
+      There is one way to obtain a sum of twelve, which is the greatest possible sum: <m>(6{,}6)</m>.
+    </p>
+    <p>
+      (Did you notice that entries with the same sum are aligned along diagonals of the sample space grid?)
+    </p>
+    <p>
+      All together, there are 10 ways to obtain a sum greater than eight. Therefore, the probability of rolling a sum greater than eight is
+      <me>
+        P(\text{sum}\gt 8)=\frac{10}{36}=\frac{5}{18}
+      </me>
+      or about 27.78%.
+    </p>
+
+  </solution>
+</example>
+
+ </subsection>
+<subsection xml:id="subsec-probability-or">
+  <title>Probability of "And" and "Or" Events</title>
   <p>
-    Note that the singular of dice is <em>die</em>. So, we can have one die as opposed to two or more dice.
+    In mathematics, we use the words "and" and "or" in a very particular way.
+  </p>
+<assemblage xml:id="assemblage-probability-and-event">
+  <title>"And"</title>
+  <p>
+    
+    Let <m>A</m> and <m>B</m> be two events. Then the event "<m>A</m> and <m>B</m>" is written <m>A\cap B</m>. 
+  </p>
+  <p>
+    It is the <em>intersection</em> (or overlap) of <m>A</m> and <m>B</m>, meaning both must be true.
+  </p>
+  
+</assemblage>
+<p>
+  For example when rolling a single die, suppose <m>A=\lbrace2{,}3{,}5 \rbrace</m> is the event of rolling a prime number and <m>B=\lbrace 1{,}3{,}5 \rbrace</m> is the event of rolling an odd. Then 
+  <me>A\cap B = \lbrace 3{,}5 \rbrace</me>
+  is the event of rolling a number that is both prime and odd.
+   </p>
+<assemblage xml:id="assemblage-probability-or-event">
+  <title>Or</title>
+    <p>
+     Let <m>A</m> and <m>B</m> be two events. Then the event "<m>A</m> or <m>B</m>" is written <m>A\cup B</m>. 
+    </p>
+    <p>
+      It is the <em>union</em> (or compilation) of <m>A</m> and <m>B</m>, meaning either <m>A</m> or <m>B</m> or both must be true.
+    </p>
+</assemblage>
+<p>
+ If <m>A=\lbrace2{,}3{,}5 \rbrace</m> is the event of rolling a prime number and <m>B=\lbrace 1{,}3{,}5 \rbrace</m> is the event of rolling an odd, then 
+  <me>A\cup B = \lbrace 1{,} 2 {,} 3{,}5 \rbrace</me>
+  is the event of rolling a number that is either prime or odd (or both).      
+  </p>
+  <example>
+    <statement>
+      <p>
+        In the experiment of drawing a single card from a standard deck, event <m>A</m> is "drawing a seven" and event <m>B</m> is "drawing a heart". How many elements are in the events <m>A \cap B</m> and <m>A \cup B</m>?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Event <m>A\ cap B</m> consists of the sevens that are also hearts. There is only one seven of hearts, so there is one element in <m>A\capB</m>.
+      </p>
+      <p>
+        Event <m>A \cup B</m> consists of all the sevens and all the hearts. There are four sevens and 13 hearts, but we need to be careful not to count the seven of hearts twice. 
+      </p>
+      <p>
+        We can say that there are four sevens, which includes the seven of hearts, and 12 additional hearts for a total of 16 elements in event <m> \cup B</m>.
+      </p>
+    </solution>
+  </example>
+<p>
+  To find the total number of cards that are sevens or hearts, we added the number of sevens plus the number of hearts that are not sevens. Another way to think about this is adding the number of sevens plus the number of hearts and subtracting the intersection which is one card: the seven of hearts. That would give us 
+  <me>
+    4+13-1=16
+  </me>
+  cards. In general, the number of outcomes in event <m>A \cup B</m> is equal to the number of outcomes in <m>A</m> plus the number of outcomes in <m>B</m> minus the number of outcomes in <m>A \cap B</m>.
+</p>
+<p>
+  we can generalize this approach to write a formula for the probability of an "or" event.
+</p>
+<assemblage xml:id="assemblage-probability-or">
+  <title>Probability of A or B</title>
+  <p>
+    We have two equivalent methods to calculate the probability of an "or" event:
+    <me>
+      P(A \cup B)=\frac{\text{Number of outcomes corresponding to }A \cup B}{\text{Number of outcomes in the sample space}}
+    </me>
+    <me>
+      P(A \cup B)=P(A)+P(B)-P(A \cap B)
+    </me>
+    
   </p>
 </assemblage>
 <example>
   <statement>
     <p>
-      Find the probability of getting an Ace when drawing a single card from a standard 52-card deck.
+      An outreach program for STEM majors a college is open to female students and first-generation students, which are students who are the first in their families to go to college. If 53% of the students at the college are female, 38% of the students are first-generation, and 17% are female first-generation students, what percentage of students are eligible for the program?
     </p>
   </statement>
+  <solution>
+    <p>
+      Let <m>A</m> be the event that a student is female and let <m>B</m> be the event that a student is a first-generation student.
+    </p>
+    <p>
+      We are given that <m>P(A)=0.53</m>, <m>P(B)=0.38</m>, and <m>P(A \cap B)=0.17</m>
+    </p>
+    <p>
+      We are looking for the percentage of students who are female or first-generation, or <m>P(A \cup B)</m>, which we can find using the formula. 
+      <md>
+        <mrow>P(A\cup B) \amp=P(A)+P(B)-P( A\cap B) </mrow>
+        <mrow>P(A \cup B) \amp=0.53+0.38-0.17 </mrow>
+        <mrow>P(A \cup B) \amp=0.74 </mrow>
+      </md>
+      Therefore, 74% of students are eligible for the program.
+    </p>
+  </solution>
 </example>
- </subsection>
-
+</subsection>
+<subsection xml:id="subsec-complementary-events">
+  <title>Complementary Events</title>
+  <p>
+    In the previous example, we found that 74% of students at a particular college are eligible for an outreach program. We could quickly determine the percentage of students who are not eligible by subtracting from 100% to find that 36% are not eligible.
+  </p>
+  <p>
+  The two events, "being eligible for the program" and "not being eligible for the program", are <term>complementary</term>, meaning that together they <em>complete</em> the full list or full <em>complement</em> of possible outcomes. For two events to be complementary, it is also necessary that they cannot occur at the same time.
+  </p>
+  <p>
+    We will see situations later in this chapter where it is significantly easier to calculate the probability that something <em>doesn't</em> happen than the probability that it does. We will use the strategy of first finding the probability that the event doesn't happen and then subtracting from one or 100%.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Find the probability of getting a sum of less than 11 when rolling two dice.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Looking at the table in <xref ref="assemblage-dice"/>, we see that there are three ways to obtain a sum of 11 or higher, which is the complement of the event we are interested in. This means that there must be <m>36-3=33</m> ways to obtain a sum less than 11.
+      </p>
+      <p>
+        Therefore
+        <me>
+          P(\text{sum}\lt 11)=\frac{33}{36}=\frac{11}{12}.
+        </me>
+        
+      </p>
+      <p>
+        Note that this computation is equivalent to
+        <me>
+          P(\text{sum}\lt 11)=1-\frac{3}{36}
+        </me>
+        because <m>1=\frac{36}{36}</m>.
+      </p>
+    </solution>
+  </example>
+  <assemblage xml:id="assemblage-complementary-events">
+    <title>Complementary Events</title>
+    <p>
+      The <term>commplement</term> of event <m>E</m>, written <m>\overline{E}</m> is the event that <m>E</m> does not happen.
+    </p>
+    <p>
+      We read <m>\overline{E}</m> as "<m>E</m> bar" or "not <m>E</m>".
+    </p>
+    <p>
+      <me>
+        P(\overline{E})=\frac{\text{Number of outcomes that do not correspond to }E}{\text{Number of outcomes in the sample space}}
+      </me>
+      
+    
+      or
+      <me>
+        P(\overline{E})=1-P(E)
+      </me>
+      
+    </p>
+    <p>
+      <me>
+        P(E)=1-P(\overline{E})
+      </me>
+      
+    </p>
+  </assemblage>
+  <example>
+    <statement>
+      <p>
+        If you draw a card at random from a standard deck, what is the probability that it is not a diamond?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The probability that the card <em>is</em> a diamond is <m>\frac{13}{52}=0.25</m>.
+      </p>
+      <p>
+        Thus the probability that the card <em>is not</em> a diamond is <m>1-0.25=0.75</m>.
+      </p>
+    </solution>
+  </example>
+</subsection>
+<exercises>
+<exercise><!-- 1-->
+  <statement>
+    <p>
+      Find the probability of rolling a one or a six when a six-sided die is rolled.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <m>\frac{1}{3}</m>
+    </p>
+  </solution>
+</exercise>
+<exercise><!-- 2-->
+  <statement>
+    <p>
+      Find the probability of getting a number less than five when a six-sided die is rolled.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <m>\frac{2}{3}</m>
+    </p>
+  </solution>
+</exercise><!-- 3-->
+  <exercise>
+    <statement>
+      <p>
+        Find the probability of getting a sum less than five when a pair of standard dice are rolled.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        \frac{1}{6}
+      </p>
+    </solution>
+  </exercise>
+  <exercise><!-- 4-->
+    <statement>
+      <p>
+        A laundry bag contains eight brown socks and six black socks. A single sock is drawn from the bag at random. Find the probability that it is brown.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        \frac{4}{7}
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        In an experiment, a coin is flipped and a standard die is rolled. Write the sample space.
+      </p>
+    </statement>
+    <solution>
+      <p>For notation, we will write, for example, <m>H1</m> for the outcome of heads on the coin and a one on the die.
+        <m>\lbrace H1{,}H2{,}H3{,}H4{,}H5{,}H6{,}T1{,}T2{,}T3{,}T4{,}T5{,}T6{,} \rbrace</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        In the casino game roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A single card is drawn from a standard deck. Find the probability of each event.
+        <ol>
+          <li>
+            <p>
+              The card is a face card.
+            </p>
+          </li>
+          <li>
+            <p>
+              The card is a heart.
+            </p>
+          </li>
+          <li>
+            <p>
+              The card is both a face card and a heart.
+            </p>
+          </li>
+          <li>
+            <p>
+              The card is a face card or a heart.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\frac{3}{13}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{4}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{3}{52}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{16}{52}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A pair of standard dice are rolled. Find the probability of each event.
+        <ol>
+          <li>
+            <p>
+              The sum is less than five.
+            </p>
+          </li>
+          <li>
+            <p>
+              The sum is a prime number.
+            </p>
+          </li>
+          <li>
+            <p>
+              The sum is a prime number less than five.
+            </p>
+          </li>
+          <li>
+            <p>
+              The sum is less than five or a prime number.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\frac{1}{6}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{5}{12}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{12}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{2}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Let <m>A=\lbrace a{,}b{,}d{,}f{,}h{,}k{,}y{,}z\rbrace</m> and <m>B=\lbrace b{,}c{,}d{,}w{,}z \rbrace</m>. Find each event.
+        <ol>
+          <li>
+            <p>
+              <m>A\cup B</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A \cap B</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\lbrace a{,}b{,}c{,}d{,}f{,}h{,}k{,}w{,}y{,}z \rbrace</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\lbrace b{,}d{,}z \rbrace</m>
+            </p>
+          </li>
+        </ol>
+        
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        There are 26 letters in the alphabet, and five of them are vowels. If you draw a letter at random, what is the probability that it is <em>not</em> a vowel?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>\frac{21}{26}</m>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        In a study of brand recognition, 751 consumers reported that they had heard of WalMart, and 14 reported that they had not heard of WalMart. Find the probability that a randomly selected consumer does not recognize WalMart.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        7.8%
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A review of athletic participation rates at a high school reveals that 26% of athletes are on a soccer team, 18% of athletes are on a swim team, and 6% are on both a soccer team and a swim team.
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              What is the probability that an athlete selected at random is on a soccer or swim team?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that an athlete selected at random is on neither a soccer team nor a swim team? (Use your answer to the previous part.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              38%
+            </p>
+          </li>
+          <li>
+            <p>
+              62%
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The results of a Pew Research Center survey of pet owners<fn>Brown, A. (2023, July 7). About half of U.S. pet owners say their pets are as much a part of their family as a human member. Pew Research Center. https://www.pewresearch.org/short-reads/2023/07/07/about-half-us-of-pet-owners-say-their-pets-are-as-much-a-part-of-their-family-as-a-human-member/ </fn>  are shown in the table. 
+      </p>
+        <table>
+          <title>Pet Ownership</title>
+          <tabular>
+            <row header="yes" halign="center">
+              <cell>Response</cell>
+              <cell>Percentage</cell>
+            </row>
+            <row>
+              <cell>Just Dogs</cell>
+              <cell>49%</cell>
+            </row>
+            <row>
+              <cell>Just Cats</cell>
+              <cell>23%</cell>
+            </row>
+            <row>
+              <cell>Both Dogs and Cats</cell>
+              <cell>24%</cell>
+            </row>
+          </tabular>
+        </table>
+      <p>
+        If a pet owner is selected at random, what is the probability that they have neither a cat nor a dog?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        4%
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        If<m>A</m> and <m>B</m> are events such that <m>P(A)=0.75</m>, <m>P(B)=0.8</m>, and <m>P(A\cap B)=0.65</m>, find each probability.
+        <ol>
+          <li>
+            <p>
+              <m>P(A\cup B)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>P(\overline{A})</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>P(\overline{A\cap B})</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>P(\overline{A\cup B})</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>0.9</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>0.25</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>0.35</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              0.1
+            </p>
+          </li>
+        </ol>        
+      </p>
+    </solution>
+  </exercise>
+</exercises>
 </section>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-probability-tables" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Contingency Tables</title>
+    <title>Contingency Tables and Conditional Probability</title>
 
     <objectives>
         <introduction>
@@ -12,32 +12,17 @@
         <ul>
             <li>
                 <p>
-                    Relate Venn diagrams and contingency tables
+                    Calculate percentages and probabilities using a contingency table.
                 </p>
             </li>
             <li>
                 <p>
-                    Calculate percentages from a contingency table
+                    Calculate conditional probability.
                 </p>
             </li>
             <li>
                 <p>
-                    Calculate <q>and</q> empirical probabilities
-                </p>
-            </li>
-            <li>
-                <p>
-                    Calculate <q>or</q> empirical probabilities
-                </p>
-            </li>
-            <li>
-                <p>
-                    Calculate conditional probabilities
-                </p>
-            </li>
-            <li>
-                <p>
-                    Determine whether two characteristics are independent
+                    Determine whether two events are independent.
                 </p>
             </li>
         </ul>
