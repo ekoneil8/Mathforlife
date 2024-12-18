@@ -17,7 +17,7 @@
     Proportional reasoning is the practice of using mathematics to solve problems involving ratios and rates, such as determining the amount of water to add to <m>1 \frac{1}{2}</m> cups of rice. (You should use <m>2 \frac{1}{4}</m> cups of water.) 
   </p>
   <p>
-    In this section, we will explore applications of proportional reasoning in such practical situations as cooking, travel, dosage calculations, and home improvement.
+    In this section, we will explore applications of proportional reasoning in such practical situations as cooking, travel, and home improvement.
   </p>
 </introduction>
   <objectives>
@@ -52,7 +52,7 @@
     <p>
       One way to approach the problem is to compare the price per jar or <term>unit rate</term> of each brand. (In this particular scenario, we might use the term unit price to be more specific.) The unit rate for the first brand is $3.50 per jar. To find the unit rate for the second jar, we divide:
     <me>
-      11.50\obelus*3\approx 3.83.
+      11.50\div 3\approx 3.83.
     </me>
     Since the unit price of the first brand is lower, we find that it is the better deal.
     </p>
@@ -73,9 +73,16 @@
               A <term>unit rate</term>  is a rate in which the denominator is implied to be one such as 20 miles per hour.
             </p>
           </li>
+          <li>
+            <title>Unit Price</title>
+            <p>
+              A <term>unit price</term> is a unit rate that communicates the cost per unit such as $0.4608 per ounce for a bag of chips.
+            </p>
+          </li>
         </dl>
       </p>
     </assemblage>
+    
     <example>
       <statement>
         <p>
@@ -87,6 +94,70 @@
           <me>
             \frac{275\,612}{395.1}\approx697.6\text{ people per square mile}
           </me>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          One brand of eggnog costs $6.99 for 59 fluid ounces, and another brand costs $3.99 for one quart. (There are 32 ounces in one quart.) Calculate the unit prices to determine the better deal.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For each brand, will divide the price by the volume in ounces to determine the unit price in dollars per ounce.
+        </p>
+        <p>
+          First brand:
+          <me>
+            6.99\div 59\approx 0.1185.
+          </me>
+          The unit price is $0.1185 per ounce.
+        </p>
+        <p>
+          Second brand:
+          <me>
+            3.99\div 32\approx 0.1247.
+          </me>
+          The unit price is $0.1247 per ounce.
+        </p>
+        <p>
+          Therefore, the first brand is a better deal. (Larger volume containers tend to be cheaper, but not always!)
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          At one store, bananas are $0.63 per pound. At another store, bananas cost $0.19 each. At what weight per banana is the first store's price better, and at what weight is the second store's price better?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We are given two unit prices, but the units are different.
+        </p>
+        <p>
+          We are looking for the weight per banana, so let's call that <m>w</m>.
+        </p>
+        <p>
+          At the first store, one banana will cost <m>0.63w</m>. 
+        </p>
+        <p>
+          Recall that the second store charges $0.19 for one banana. Therefore, the first store's price is better when <me>0.63w \lt 0.19.</me>
+        </p>
+        <p>
+          Dividing both sides of the equation by 0.63 and rounding to four decimal places, we obtain
+            <me>
+              w \lt 0.3016.
+            </me>
+            
+         
+        </p>
+        <p>
+          This means that the first store's price is better if a banana weighs less than 0.3016 pounds.
+        </p>
+        <p>
+          Similarly, the second store's price is better if a banana weighs more than 0.3016 pounds.
         </p>
       </solution>
     </example>
@@ -159,8 +230,8 @@
       
       Because we have just multiplied by one, the value stays equivalent in the new units. 
     </p>
-    <p>
-      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by two. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Following are some more involved examples. 
+        <p>
+      The reader may point out correctly that converting between pints and cups is done more quicky by just multiplying and dividing by two. However, when multiple conversions must be done in sequence and there are units in both the numerator and denominator of an expression, conversion factors simplify the process. Following are some more involved examples. A list of common unit conversions is found at the end of this section in <xref ref="subsec-proportion-common-conversions"/>.
     </p>
     <example>
       <statement>
@@ -216,8 +287,28 @@
         
       </solution>
     </example>
-     
-   
+    <example>
+      <statement>
+        <p>
+          A recipe calls for 3 tablespoons of sugar. A home chef is quadrupling the recipe. How much sugar will they need in cups?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          They will need <m>3\cdot 4 =12</m> tablespoons of sugar.
+        </p>
+        <p>
+          We make use of the conversions that there are two tablespoons in an ounce and eight ounces in a cup.
+          <me>
+            \frac{12\cancel{\text{ tablespoons}}}{1}\cdot \frac{1 \cancel{\text{ ounce}}}{2 \cancel{\text{ tablespoons}}}\cdot\frac{1 \text{ cup}}{8 \cancel{ \text{ ounces}}}=\frac{3}{4}\text{ cups}
+          </me>
+          
+        </p>
+        <p>
+          The home chef should use \frac{3}{4} of a cup of sugar.
+        </p>
+      </solution>
+    </example>  
     </subsection>
  <subsection xml:id="subsec-proportion-problemsolving">
   <title>Proportional Reasoning with Rates and Ratios</title>
@@ -264,7 +355,7 @@
 
       </solution>
     </example>
-`<example>
+    <example>
       <statement>
         <p>
           Have you ever wondered how the speedometer on a car works? A car with 15.8-inch radius tires will move <m>2\pi \cdot 15.8=31.6 \pi</m> inches with each revolution. If the wheels are spinning 620 revolutions per minute, how fast is the car moving in miles per hour?
@@ -305,23 +396,135 @@
         </p>
       </solution>
     </example>
-  </subsection>
-   
-  <exercises>
-    <title>Exercises</title>
-    <exercise>
+    <example>
       <statement>
         <p>
-          How many yards are in one kilometer?
+          A one-gallon can of paint covers about 350 square feet. A room with nine-foot ceilings is 16 feet long and 14 feet wide. The room has two windows, each 36 inches wide and 52 inches high, and it has one door that is 30 inches wide and 80 inches tall.
+        </p>
+        <p>
+          The homeowner wishes to paint the walls of the room, excluding the windows and doors. How many cans of paint should the homeowner purchase?
         </p>
       </statement>
-      <answer>
+      <solution>
         <p>
+          The room has two walls that are 16 feet long and nine feet high, and it has two walls that are 14 feet long and nine feet high. The resulting total area of walls is
+          <me>
+            2(16\cdot9)+2(14\cdot9)=540 \text{ square feet.}
+          </me>
           
         </p>
-      </answer>
-    </exercise>
-    <exercise><!--  #5 -->
+        <p>
+          Now we will find the areas of the windows and door. Note that the units are converted from inches to feet.
+        </p>
+        <p>
+          Windows:
+          <md>
+            <mrow> \text{Area}\amp=\text{Width}\cdot\text{Height} </mrow>
+            <mrow>A \amp=\left( \frac{30 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}}\right)\cdot \left(\frac{80 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}} \right) </mrow>
+            <mrow>A \amp= 13 </mrow>
+          </md>
+          The area of each window is 13 square feet.
+        </p>
+        <p>
+          Door:
+          <md>
+            <mrow> \text{Area}\amp=\text{Width}\cdot\text{Height} </mrow>
+            <mrow>A \amp=\left( \frac{36 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}}\right)\cdot \left(\frac{52 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}} \right) </mrow>
+            <mrow>A \amp \approx 16.67 </mrow>
+          </md>
+          The area of the door is about 16.67 square feet.
+        </p>
+        <p>
+          Now we subtract to find the resulting area that will be painted:
+          <me>
+            540-2(13)-16.67=497.33
+          </me>
+          The homeowner has about 497.33 square feet of wall space that need to be painted.
+        </p>
+        <p>
+          Since each can covers about 350 square feet, the homeowner can expect to use <m>497.33\div350\approx1.42</m> cans.
+        </p>
+        <p>
+          They should purchase two cans of paint.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+   <subsection xml:id="subsec-proportion-common-conversions">
+    <title>Common Unit Conversions</title>
+    <assemblage xml:id="assemblage-length-distance">
+      <title>Units of Length</title>
+      <p>
+        <md>
+          <mrow>1\text{ foot} \amp=12\text{ inches} </mrow>
+          <mrow>1\text{ yard} \amp=3\text{ feet} </mrow>
+          <mrow>1\text{ mile} \amp=5\, 280\text{ feet} </mrow>
+        </md>
+      </p>
+      <p>
+        <md>
+          <mrow>1\text{ meter} \amp=100\text{ centimeters} </mrow>
+          <mrow>1\text {meter} \amp=1\, 000\text{ milimeters} </mrow>
+          <mrow>1\text{ kilometer} \amp=1\, 000\text{ meters} </mrow>
+        </md>
+      </p>
+      <p>
+        <md>
+          <mrow>1\text{ inch} \amp=2.54\text{ centimeters} </mrow>
+          <mrow>1\text{ meter} \amp\approx 3.3 \text{ feet} </mrow>
+          <mrow>1\text{ mile} \amp \approx 1.61 \text {kilometers} </mrow>
+        </md>
+      </p>
+    </assemblage>
+    <assemblage xml:id="assemblage-volume">
+      <title>Units of Volume</title>
+      <p>
+        <md>
+          <mrow>1 \text{ tablespoon} \amp=3 \text{ teaspoons} </mrow>
+          <mrow>1 \text{ ounce} \amp=2 \text{ tablespoons} </mrow>
+          <mrow>1\text{ cup} \amp=8\text{ fluid ounces} </mrow>
+          <mrow>1\text{ pint} \amp=2\text{ cups} </mrow>
+          <mrow>1 \text{ quart} \amp= 2\text{ pints} </mrow>
+          <mrow>1 \text{ gallon} \amp=4 \text{ quarts} </mrow>
+        </md>
+      </p>
+      <p>
+        <md>
+          <mrow>1\text{ Liter} \amp=1\, 000 \text{ milliliters} </mrow>
+          <mrow>1\text{ Liter} \amp\approx 1.057 \text{ quarts} </mrow>
+        </md>
+      </p>
+      <p>
+        Note that milliliters and cubic centimeters are the same unit and can be used interchangeably.
+      </p>
+    </assemblage>
+    <assemblage xml:id="assemblage-weights">
+      <title>Units of Weight and Mass</title>
+
+      <p>
+        <md>
+          <mrow>1 \text{ gram} \amp=1\, 000 \text{ milligrams} </mrow>
+          <mrow>1\text{ kilogram} \amp= 1\, 000 \text{ grams} </mrow>
+        </md>
+      </p>
+            <p>
+        <md>
+          <mrow>1 \text{ pound} \amp= 16 \text{ ounces} </mrow>
+          <mrow>1 \text{ kilogram} \amp \approx 2.2\text{ pounds} </mrow>
+        </md>
+      </p>
+      <p>
+        The conversion between kilograms, which is a mass, and pounds, which is a weight, is valid for locations on the surface of the Earth. If you were to go to Mars, your mass (how big you are) would remain the same but your weight (how much force you exert on a scale due to gravity) would be reduced due to the weaker gravitational pull.
+      </p>
+      <p>
+        Since we live on the surface of the Earth, it is generally safe to convert between kilograms and pounds without worrying about the physics of mass and weight.
+      </p>
+    </assemblage>
+   </subsection>
+  <exercises>
+    <title>Exercises</title>
+    
+    <exercise>
 	<statement>
 	<p>
 		Find the unit rate for each size and determine which is more cost effective? A 9.6-ounce cannister of coffee for $5.42 or a 40.3-ounce cannister of coffee for $14.87.
@@ -372,73 +575,93 @@
 		</p>
 	</solution>
 </exercise>
-
-<exercisegroup>
-	<introduction>
-		<p>
-			For this set of questions, determine whether the quantities are proportional to each other.
-		</p>
-	</introduction>
-<exercise><!--  #9 -->
-	<statement>
-	<p>
-		One brand of printer can print 45 pages in 5 minutes, and another can print 96 pages in 8 minutes.
-	</p>
-	</statement>
-	<solution>
-		<p>
-			No, the second printer prints more pages per minute.
-		</p>
-	</solution>
+<exercise>
+  <statement>
+    <p>
+      Determine whether the implied rates and ratios are equivalent.
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            One brand of printer can print 45 pages in 5 minutes, and another can print 96 pages in 8 minutes.
+          </p>
+        </li>
+        <li>
+          <p>
+            A backpacker hikes 11 miles in 2 days and then 16.5 miles in the next 3 days.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p>
+            No, the second printer prints more pages per minute.
+          </p>
+        </li>
+        <li>
+          <p>
+            Yes, these are the same rate.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+<exercise>
+  <statement>
+    <p>
+      Determine whether the implied rates and ratios are equivalent.
+      <ol>
+        <li>
+          <p>
+            You read 56 pages in 2 hours and then 140 pages in 5 hours.
+          </p>
+        </li>
+        <li>
+          <p>
+            A runner runs a 50 m race in 6.8 sec and a 400 m race in 50.5 seconds.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p>
+            Yes, these rates are the same.
+          </p>
+        </li>
+        <li>
+          <p>
+            No, the 50 m rate is a faster rate.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
 </exercise>
 
-<exercise><!--  #10 -->
-	<statement>
-	<p>
-		A backpacker hikes 11 miles in 2 days and then 16.5 miles in the next 3 days.
-	</p>
-	</statement>
-	<solution>
-		<p>
-			Yes, these are the same rate.
-		</p>
-	</solution>
-</exercise>
+<exercise>
+      <statement>
+        <p>
+          How many yards are in one kilometer?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          1,100 yards
+        </p>
+      </solution>
+    </exercise>
+   
 
-<exercise><!--  #11 -->
-	<statement>
-	<p>
-		You read 56 pages in 2 hours and then 140 pages in 5 hours.
-	</p>
-	</statement>
-	<solution>
-		<p>
-			Yes, these rates are the same.
-		</p>
-	</solution>
-</exercise>
-
-<exercise><!--  #12 -->
-	<statement>
-	<p>
-		A runner runs a 50 m race in 6.8 sec and a 400 m race in 50.5 seconds.
-	</p>
-	</statement>
-	<solution>
-		<p>
-			No, the 50 m rate is a faster rate.
-		</p>
-	</solution>
-</exercise>
-</exercisegroup>
-
-
-<exercisegroup> <!-- #13-22 -->
-	<introduction>
-		<p>
-			Solve these proportion problems.
-		</p>
-	</introduction>
 
 <exercise><!--  #13 -->
 	<statement>
@@ -521,12 +744,12 @@
 <exercise>
 	<statement>
 	<p>
-		If your working on a farm and 4 packets of seeds are enough for 25 square meters, how many packets are needed for 60 square meters?
+		If four packets of lettuce seeds are enough to plant 25 square meters, how many packets should be purchased to plant 60 square meters?
 	</p>
 	</statement>
 	<solution>
 		<p>
-			You would need 9.6 or 10 packets of seeds.
+			9.6 packets of seeds are needed, 10 packets should be purchased.
 		</p>
 	</solution>
 </exercise>
@@ -569,18 +792,11 @@
 	</solution>
 </exercise>
 
-</exercisegroup>
 
-<exercisegroup>
-<introduction>
-		<p>
-			For each situation determine how to compensate and keep the quantities proportional.
-		</p>
-	</introduction>
 <exercise> 
 	<statement>
 	<p>
-		Your chocolate milk mix says to use 4 scoops of mix for 2 cups of milk. After pouring in the milk, you start adding the mix, but get distracted and accidentally put in 5 scoops of mix. How can you adjust the milk?
+		Your chocolate milk mix says to use 4 scoops of mix for 2 cups of milk. After pouring in the milk, you start adding the mix, but get distracted and accidentally put in 5 scoops of mix. How much more milk should you add?
 	</p>
 	</statement>
 	<solution>
@@ -590,19 +806,8 @@
 	</solution>
 </exercise>
 
-<exercise> 
-	<statement>
-	<p>
-		A recipe for sabayon calls for 2 egg yolks, 3 tablespoons of sugar, and ¼ cup of white wine. After cracking the eggs, you start measuring the sugar, but accidentally put in 4 tablespoons of sugar. How can you compensate?
-	</p>
-	</statement>
-	<solution>
-	<p>
-		We need to get up to 3 egg yolks which is 1.5 times the recipe, so use 4 and a half tablespoons of sugar total and one quarter plus one eighth cup of white wine. Doubling the whole thing would also work.
-	</p>
-	</solution>
-</exercise>
-</exercisegroup>
+
+
 
   </exercises>
 

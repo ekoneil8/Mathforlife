@@ -528,7 +528,7 @@
   </example>
 </subsection>
 <exercises>
-<exercise><!-- 1-->
+<exercise>
   <statement>
     <p>
       Find the probability of rolling a one or a six when a six-sided die is rolled.
@@ -540,7 +540,7 @@
     </p>
   </solution>
 </exercise>
-<exercise><!-- 2-->
+<exercise>
   <statement>
     <p>
       Find the probability of getting a number less than five when a six-sided die is rolled.
@@ -551,7 +551,7 @@
       <m>\frac{2}{3}</m>
     </p>
   </solution>
-</exercise><!-- 3-->
+</exercise>
   <exercise>
     <statement>
       <p>
@@ -560,11 +560,11 @@
     </statement>
     <solution>
       <p>
-        \frac{1}{6}
+        <m>\frac{1}{6}</m>
       </p>
     </solution>
   </exercise>
-  <exercise><!-- 4-->
+  <exercise>
     <statement>
       <p>
         A laundry bag contains eight brown socks and six black socks. A single sock is drawn from the bag at random. Find the probability that it is brown.
@@ -583,17 +583,111 @@
       </p>
     </statement>
     <solution>
-      <p>For notation, we will write, for example, <m>H1</m> for the outcome of heads on the coin and a one on the die.
-        <m>\lbrace H1{,}H2{,}H3{,}H4{,}H5{,}H6{,}T1{,}T2{,}T3{,}T4{,}T5{,}T6{,} \rbrace</m>
+      <p>Using the notation of <m>H1</m> for the outcome of heads on the coin and a one on the die, the sample space is:
+        <me>\lbrace H1{,}H2{,}H3{,}H4{,}H5{,}H6{,}T1{,}T2{,}T3{,}T4{,}T5{,}T6{,} \rbrace</me>
       </p>
     </solution>
   </exercise>
   <exercise>
     <statement>
       <p>
-        In the casino game roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops.
+        Consider an experiment where four coins are flipped.
+        <ol>
+          <li>
+            <p>
+              List the outcomes in the sample space. (There should be 16 outcomes.)
+            </p>
+          </li>
+          <li>
+            <p>
+              List the outcomes in the event that at least two coins show tails.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the probability that at least two coins show tails.
+            </p>
+          </li>
+          
+        </ol>
       </p>
     </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+        <m>\lbrace HHHH{,}HHHT{,}HHTH{,}HHTT{,}HTHH{,}HTHT{,}HTTH{,}HTTT{,}THHH{,}THHT{,}THTH{,}THTT{,}TTHH{,}TTHT{,}TTTH{,}TTTT \rbrace</m>
+          </li>
+          <li>
+            <p>
+              <m>\lbrace HHTT{,}HTHT{,}HTTH{,}HTTT{,}THHT{,}THTH{,}THTT{,}TTHH{,}TTHT{,}TTTH{,}TTTT \rbrace</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{11}{16}=0.6875</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      
+      <p>
+        In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops. The wheel contains numbers 0, 00, and 1-36. Both 0 and 00 are green, half of the number 1-36 are red and the other half are black. Assuming that all outcomes are equally likely, find the probability of each outcome.
+      <ol>
+        <li>
+          <p>
+            The ball lands on a red number.
+          </p>
+        </li>
+        <li>
+          <p>
+            The ball lands on a green number.
+          </p>
+        </li>
+        <li>
+          <p>
+            The ball lands on the 14.
+          </p>
+        </li>
+        <li>
+          <p>
+            The ball lands on 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, or 24.
+          </p>
+        </li>
+      </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\frac{9}{19}\approx0.4737</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{19}\approx0.0526</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{38}\approx0.0263</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{6}{19}\approx0.3158</m>
+            </p>
+          </li>
+        </ol>
+        
+      </p>
+    </solution>
   </exercise>
   <exercise>
     <statement>

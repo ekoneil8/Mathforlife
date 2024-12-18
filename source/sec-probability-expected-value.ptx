@@ -211,6 +211,27 @@
         <p>
             Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. That is fine so long as you enjoy playing the game and think it is worth the cost, but it would be wrong to expect to come out ahead.
         </p>
+        <example>
+            <statement>
+                <figure xml:id="roulette">
+        <caption>19th century roulette wheel</caption>
+        <image source="images/roulette-wheel.jpg" width="50%">
+          <shortdescription>Wooden roulette wheel with alternately red and black numbers 1 through 36 and green numbers 0, and 00.</shortdescription>
+        </image>
+      </figure>
+                <p>
+                    
+                    In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops.
+                    <ol>
+                        <li>
+                            <p>
+                                
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </example>
         <p>
             Expected value is not only used to determine the average amount won and lost at casinos and carnivals, it also has applications in business and insurance, just to name a few. Let's look at a couple of those applications.
         </p>

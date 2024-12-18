@@ -103,6 +103,12 @@
                     Every three hours (Latin: quaqua 3 hora); can generalize to any number of hours
                 </p>
             </li>
+            <li>
+                <title>gtt or gtts</title>
+                <p>
+                    Drops (Latin: gutta); typically drips of fluid administered intravenously (IV drip)
+                </p>
+            </li>
             </dl>
       </p>
     </assemblage>
@@ -129,7 +135,7 @@
         
     </p>
     <p>
-        Note: in the international system of units, micrograms are denoted as <m>\mu\text{g}</m>. To avoid potentially disastrous results that might arise from confusing <m>\mu\text{g}</m>> with mg, the medical community uses the abbreviation mcg.
+        Note: in the international system of units, micrograms are denoted as <m>\mu\text{g}</m>. To avoid potentially disastrous results that might arise from confusing <m>\mu\text{g}</m>> with mg, the medical community uses the abbreviation mcg for micrograms.
     </p>
 </assemblage>
 <example>
@@ -158,13 +164,237 @@
 <example>
     <statement>
         <p>
+            The physician ordered Norpace, 0.6 grams by mouth daily divided in four doses. 
+            <ol>
+                <li>
+                    <p>
+                        Norpace is available in 150 mg capsules. How many capsules are needed in each dose?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The safety guidelines for Norpace state that the safe effective dose is 6-15 mg/kg/day. The patient weighs 99 lbs. Is the prescribed dose safe?
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        First, we convert 0.6 grams to miligrams:
+                        <me>\frac{0.6\cancel{\text{ g}}}{1}\cdot\frac{1000\text{ mg}}{1\cancel{\text{ g}}}=600\text{ mg}.</me>
+                    </p>
+                    <p>
+                        We divide to determine the size of each dose: <m>600\obelus4=150\text{ mg}</m>.
+                    </p>
+                    <p>
+                        Since each capsule contains 150 mg, we should administer 1 capsule for each dose.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To determine if this dose is within safety guidelines, we must first convert 99 pounds to kilograms:
+                        <me>
+                          \frac{99\cancel{\text{ lb}}}{1}\cdot\frac{1\text{ kg}}{2.2\cancel{\text{ lb}}}=45\text{ kg}
+                        </me>
+                    </p>
+                    <p>
+                        From the previous part, we know that the daily dose is 600 mg. We divide to determine how many miligrams per kilogram this works out to be administered each day:
+                        <m>
+                            600\obelus 45 \approx 13.3\text{ mg/kg/day}
+                        </m>.
+                    </p>
+                    <p>
+                        Since 13.3 is between 6 and 15, we can confirm that this is a safe dose.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+<p>
+    Some intravenously-administered medications are given as an <term>infusion</term>, meaning the IV line is controlled to administer a set number of drops per minute. It is important to administer infusions at the correct rate for the given medication and patient. 
+</p>
+<p>
+    IV tubing administration sets come in various sizes, and the size is measured by the drip factor, also called the drop factor. For example, if a tubing set has a drip factor of 12 gtts/mL, then there are 12 drops in each milliliter. 
+</p>
+<p>
+    While the size of each drop is fixed, the nurse can set how many drops of fluid are released each minute. A typical infusion dosage calculation will involve converting mL/min to gtts/min as follows.
+</p>
+<example>
+    <statement>
+        <p>
+            A medication has been prepared in an IV bag. The patient needs 100 milliliters to be infused over 30 minutes. If the tubing drop factor is 20 gtts/mL, how many gtts/min should be administered? Round to the nearest whole number.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            The fluid must be infused at a rate of 100 mL per 30 min, or <m>\frac{100}{30}</m> mL/min.
+        </p>
+        <p>
+            We use the drop factor to convert to gtts/min:
+            <me>
+                \frac{100\cancel{\text{ mL}}}{30\text{ min}}\cdot \frac{20\text{ gtts}}{1 \cancel{\text{ mL}}}\approx 67
+            </me>
+             The IV should be set to administer 67 gtts/min.
+        </p>
+    </solution>
+</example>
+<example>
+    <statement>
+        <p>
             
         </p>
     </statement>
 </example>
 
 </subsection>
-
+<exercises>
+    <exercise>
+        <statement>
+            <p>
+                A nurse is preparing to 1 g of cefadroxil. The medication is supplied in 500 mg tablets. How many tablets should the nurse administer?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                2 tablets
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement><p>An adult client with renal cancer, weighing 95 kg, is to receive vincristing 25 mcg/kg/day. What is the daily dosage in mg?</p> </statement>
+        <solution>
+            <p>
+                2.375 mg
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                The physician orders acetaminophen 15 mg/kg q4h or less frequently as needed for an infant's pain. The drug is supplied with 160 mg per 5 ml. The infant weighs 12 pounds. What volume of medication, in ml, should be administered in each dose?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                2.56 ml
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                A pediatric patient weighing 33 lbs is receiving intravenous antibiotics for otitis media (ear infection). The drug guide states that a safe dose for this medication is 15-30 mg/kg/day in three divided doses. The provider has ordered 205 mg tid. 
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Is this a safe dose?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            What are the safe doses parameters? In other words, what are the lowest and highest doses that should be administered?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            This is not a safe dose. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            75-150 mg tid
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                A patient is receiving a 0.9% saline solution, which is salt (sodium chloride) dissolved in water at a rate of 0.9 grams per 100 milliliters. The solution is administered via IV at a rate of 125 ml/hr. How many milligrams of salt has the patient received after five hours?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                5,625 mg
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                The physician ordered Nitroprusside 2.7 mcg/kg/min. The patient weighs 136 pounds. Available is 250 mg of Nitroprusside dissolved in 500 mL of a solution of dextrose and water (D5W). The medication will be administered via an infusion pump programmed by the nurse. How many mL per hour should the pump be programmed to give the patient? Round to the nearest whole number.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                About 20 mL/hr
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                The physician ordered Dopamine: 4.5 mcg/kg/min. The patient weighs 78.2 kilograms. Available is 400 mg of Dopammine dissolved in 500 mL of D5W. How many mL/hr should the nurse program the infusion pump to administer? Round to the nearest whole number.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                26 mL/hr
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+    <statement>
+        <p>
+           The physician ordered 17 mg/kg/day of Carbamazepine to be divided into two daily doses. The patient weighs 29.4 kilograms. On hand are 100-mg tablets. How many tablets should be administered in each dose? Round to the nearest tenth. 
+        </p>
+    </statement>
+    <solution>
+        <p>
+            2.5 tablets per dose
+        </p>
+    </solution>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                50 mL of Albumin 5% needs to be administered intravenously over 15 minutes. The tubing drop factor is 10 gtts/mL, meaning that there are 10 drops in each milliliter of fluid. How many gtts/minute, or drops per minute, should be administered?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                33 gtts/min
+            </p>
+        </solution>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                A medication is being administered at a rate of 48 gtts/min, and the tubing drop factor is 60 gtts/mL. How fast in mL/hr is the medication being infused?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                48 mL/hr
+            </p>
+        </solution>
+    </exercise>
+</exercises>
     
 
 </section>

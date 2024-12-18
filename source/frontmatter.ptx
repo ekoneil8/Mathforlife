@@ -17,7 +17,7 @@
     <copyright>
       <year>2025</year>
       <holder>Elizabeth O'Neil</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
   </bibinfo>
@@ -38,23 +38,18 @@
 <preface>
   <title>Attributions</title>
   <p>
-    This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org.</url>
+    This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/"> CreativeCommons.org.</url>
   </p>
     
   <p>
     <ul>
       <li>
         <p>
-          The following are adapted from <url href="https://pccmathsac.github.io/MathInSocietyPCC/root-1-2.html" visual="https://pccmathsac.github.io/MathInSocietyPCC/frontmatter-2.html">“Math In Society, 2nd Edition: Tools for decision making”</url> by Lee et al., Portland Community College Math Department, licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
+          The following are adapted from <url href="https://pccmathsac.github.io/MathInSocietyPCC/root-1-2.html">“Math In Society, 2nd Edition: Tools for decision making”</url> by Lee et al., Portland Community College Math Department, licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
           <ul>
             <li>
               <p>
-                 <xref ref="sec-proportion-percents" /> <url href="https://www.flickr.com/photos/alexcreative/4564849904">Dice on a craps table</url> by <url href="https://www.flickr.com/photos/alexcreative/">alxhe</url>is licensed under <url href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</url>
-              </p>
-            </li>
-            <li>
-              <p>
-                Exercises in <xref ref="sec-proportion-rate-ratio" />
+                 <xref ref="sec-proportion-percents" />         
               </p>
             </li>
             <li>
@@ -98,25 +93,25 @@
       </li>
       <li>
         <p>
+          <xref ref="sec-democracy-apportionment" /> is adapted from <url href="https://www.opentextbookstore.com/mathinsociety/current2.php?chapter=Apportionment.pdf">"Math in Society: Apportionment"</url> by Mike Kenyon and David Lippman, licensed under  licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
+        </p>
+      </li>
+      <li>
+        <p>
           Examples and exercises in <xref ref="sec-proportion-dosage" /> are adapted with permission from course materials developed by Jennifer Ingalls, Nursing Faculty at Olympic College.
         </p>
       </li>
-      <li>
-        
-      </li>
+
       <li>
         <p>
-          <xref ref="dice" /> 
+          <xref ref="dice" /> <url href="https://www.flickr.com/photos/alexcreative/4564849904">Dice on a craps table</url> by <url href="https://www.flickr.com/photos/alexcreative/">alxhe</url>is licensed under <url href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</url>
+
         </p>
       </li>
+
       <li>
         <p>
-          <xref ref="sec-democracy-apportionment" /> is adapted from <url href="https://www.opentextbookstore.com/mathinsociety/current2.php?chapter=Apportionment.pdf" visual="www.opentextbookstore.com/mathinsociety/current2.php?chapter=Apportionment.pdf">"Math in Society: Apportionment"</url> by Mike Kenyon and David Lippman, licensed under  licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
-        </p>
-      </li>
-      <li>
-        <p>
-            <xref ref="congress" /> <url href="https://commons.wikimedia.org/wiki/File:Home_of_the_US_Congress.jpg">"Home of the US Capitol"</url> by Jessica Rodriguez Rivas is licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
+            <xref ref="congress" /> <url href="https://commons.wikimedia.org/wiki/File:Home_of_the_US_Congress.jpg">"Home of the US Capitol"</url> by Jessica Rodriguez Rivas is licensed under <url href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
         </p>
       </li>
       <li>
@@ -126,17 +121,22 @@
       </li>
       <li>
         <p>
+          <xref ref="roulette" /> <url href="https://www.flickr.com/photos/adavey/51645249090">"19th Century Roulette Wheel"</url> by <url href="https://www.flickr.com/photos/adavey/">A.Davey</url> is licensed under <url href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC-BY-NC-ND 2.0</url>.
+        </p>
+      </li>
+      <li>
+        <p>
            Screenshots of spreadsheets use Microsoft Excel under fair use.
         </p>
       </li>
       <li>
         <p>
-          Graphs were created in <url href="desmos.com" visual="desmos.com">DESMOS</url> and used accordance with the <url href="https://www.desmos.com/terms" visual="desmos.com/terms">terms of use</url>.
+          Graphs were created in <url href="desmos.com">DESMOS</url> and used accordance with the <url href="https://www.desmos.com/terms">terms of use</url>.
         </p>
       </li>
       <li>
         <p>
-          Some exercises are adapted from publicly-available questions on <url href="https://www.wamap.org/" visual="www.wamap.org">WAMAP</url> and used in accordance with the <url href="https://www.wamap.org/wamap/termsofuse.php" visual="www.wamap.org/wamap/termsofuse.php">terms of use</url>.
+          Some exercises are adapted from publicly-available questions on <url href="https://www.wamap.org/">WAMAP</url> and used in accordance with the <url href="https://www.wamap.org/wamap/termsofuse.php">terms of use</url>.
         </p>
       </li>
         
