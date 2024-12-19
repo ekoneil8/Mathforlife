@@ -148,7 +148,7 @@
         <p>
             First, we will find the client's weight in kg:
             <me>
-                \frac{110\cancel{ lbs}}{1}\cdot \frac{1\text{ kg}}{2.2\cancel\text{ lb}}=50\text{ kg}
+                \frac{110\cancel{\text{ lbs}}}{1}\cdot \frac{1\text{ kg}}{2.2\cancel{\text{ lb}}}=50\text{ kg}
             </me>
             </p>
         <p>            
@@ -188,7 +188,7 @@
                         <me>\frac{0.6\cancel{\text{ g}}}{1}\cdot\frac{1000\text{ mg}}{1\cancel{\text{ g}}}=600\text{ mg}.</me>
                     </p>
                     <p>
-                        We divide to determine the size of each dose: <m>600\obelus4=150\text{ mg}</m>.
+                        We divide to determine the size of each dose: <m>600\div 4=150\text{ mg}</m>.
                     </p>
                     <p>
                         Since each capsule contains 150 mg, we should administer 1 capsule for each dose.
@@ -204,7 +204,7 @@
                     <p>
                         From the previous part, we know that the daily dose is 600 mg. We divide to determine how many miligrams per kilogram this works out to be administered each day:
                         <m>
-                            600\obelus 45 \approx 13.3\text{ mg/kg/day}
+                            600\div 45 \approx 13.3\text{ mg/kg/day}
                         </m>.
                     </p>
                     <p>
@@ -215,6 +215,12 @@
         </p>
     </solution>
 </example>
+<figure xml:id="iv-bag">
+    <caption>Person monitoring an IV</caption>
+    <image source="images/IV-bag.jpg" width="50%">
+        <shortdescription>Someone wearing scrubs holds an IV bag; we see only their arm</shortdescription>
+    </image>
+</figure>
 <p>
     Some intravenously-administered medications are given as an <term>infusion</term>, meaning the IV line is controlled to administer a set number of drops per minute. It is important to administer infusions at the correct rate for the given medication and patient. 
 </p>
@@ -237,18 +243,11 @@
         <p>
             We use the drop factor to convert to gtts/min:
             <me>
-                \frac{100\cancel{\text{ mL}}}{30\text{ min}}\cdot \frac{20\text{ gtts}}{1 \cancel{\text{ mL}}}\approx 67
+                \frac{100\cancel{\text{ mL}}}{30\text{ min}}\cdot \frac{20\text{ gtts}}{1 \cancel{\text{ mL}}}\approx 67 \text{ gtts/min}
             </me>
              The IV should be set to administer 67 gtts/min.
         </p>
     </solution>
-</example>
-<example>
-    <statement>
-        <p>
-            
-        </p>
-    </statement>
 </example>
 
 </subsection>

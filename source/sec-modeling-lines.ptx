@@ -148,7 +148,7 @@
 </figure>
 
 <p>
-  Using a similar approach we can write linear functions to model the remaining examples.
+  Using a similar approach we can write linear functions to model the remaining examples mentioned above:
 </p>
     <p>
       <ul>
@@ -212,15 +212,81 @@
   </p>
 </assemblage>
 <p>
-  <em>Is the linear growth model the same as <m>y=mx+b</m> from algebra classes?</em> Yes, it is! 
+  <em>Is the linear growth model the same as <m>y=mx+b</m> from algebra classes?</em> Yes, it is! It isn't a problem to use a model of the form <m>y=mx+b</m> for all applications of linear growth. However, many students prefer the form above because it makes the meanings of the variables and constants clear.
+</p>
+<p>
+  The general linear growth model equation above uses the variable <m>P</m> because population models are one of the more common applications. However, any variable may be used.
+</p>
+<p>
+  The constant <m>P_0</m> can be read "P sub zero", "P zero", or "P naught", and it represents the population or value at time zero.
+</p>
+
+<p>
+  Recall that linear growth occurs when a value changes by the same amount in each unit of time, and growth can be either positive or negative depending on whether the value is increasing or decreasing.
 </p>
   <example>
     <statement>
       <p>
         Identify whether each scenario is an example of linear growth. If it is linear growth, find the initial value, the common difference, and the equation.
+        <ol>
+          <li>
+            <p>
+              A projectile starts at ground level. It reaches its maximum height of 40 feet after two seconds and lands after four seconds.
+            </p>
+          </li>
+          <li>
+            <p>
+              A child starts getting a weekly $3 allowance in first grade. Their allowance increases by $2 each year.
+            </p>
+          </li>
+          <li>
+            <p>
+              A child starts getting a weekly $3 allowance in first grade. Their allowance increases by 20% each year.
+            </p>
+          </li>
+          <li>
+            <p>
+              For tax and planning purposes, a business estimates that a tractor purchased for $28,000 will be worth $0 after seven years of use. It depreciates by the same amount each year.
+            </p>
+          </li>
+        </ol>
       </p>
  
     </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              This is not linear because the rate of change switches from positive to negative. 
+            </p>
+          </li>
+          <li>
+            <p>
+              This is linear because the allowance increases by the same amount each year. The initial value is <m>A_0=3</m>, the common difference is <m>D=2</m>, and the equation is 
+              <me>
+                A(t)=3+2t
+              </me>
+              where<m>A</m> is the weekly allowance and <m>t</m> is time in years since the child was in first grade.
+            </p>
+          </li>
+          <li>
+            <p>
+              This is not linear because the amount of increase is not the same in each unit of time. As the allowance grows, it will be increased by 20% of a larger and larger number, so the yearly raise will be a larger amount each year.
+            </p>
+          </li>
+          <li>
+            <p>
+              This is linear because the value depreciates by the same amount each year. The initial value is <m>V_0=28\,000</m>, the common difference <m>D=-\frac{28\,000}{7}=-4\,000</m>, and the equation is 
+              <me>
+                V(t)=28\,000=4\,000t
+              </me>
+              where <m>V</m> is the value in dollars after <m>t</m> years.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
   </example>
   <example>
     <statement>
@@ -246,11 +312,14 @@
       </p>
     </statement>
     <solution>
+      <title>Algebraic Approach</title>
+      
+      
       <p>
         <ol>
           <li>
             <p>
-              Measuring time in months since Kobi purchased the car, the initial value is <m>P_0=43000</m>. The common difference is <m>d=1050</m>. Therefore, we can build the model <m>P(t)=1=43000+1050t</m>.
+              Measuring time in months since Kobi purchased the car, the initial value is <m>P_0=43000</m>. The common difference is <m>d=1050</m>. Therefore, we can build the model <m>P(t)=43000+1050t</m>.
             </p>
           </li>
           <li>
@@ -275,8 +344,22 @@
           </li>
         </ol>
       </p>
+      
     </solution>
-  </example>
+    <solution>
+      <title>Graphical Approach</title>
+          
+      <p>
+        We can use graphing technology, such as <url href="www.desmos.com/calculator">desmos</url> to solve the problem. Using the method demonstrated in <xref ref="graphing"/>, we obtain the following graph.
+      </p>
+      <image source="path ">
+        <shortdescription></shortdescription>
+      </image>
+      <p>
+        
+      </p>
+    </solution>
+    </example>
   
 </subsection>
    

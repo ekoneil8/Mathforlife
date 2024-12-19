@@ -15,7 +15,6 @@
   <xi:include href="sec-modeling-quadratic.ptx" />
   <xi:include href="./sec-modeling-exponential.ptx" />
   <xi:include href="./sec-modeling-logistic.ptx" />
-  <xi:include href="./sec-modeling-graphs.ptx" />
   <xi:include href="./sec-modeling-logarithms.ptx" />
     
 </chapter>
