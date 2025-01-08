@@ -352,7 +352,7 @@
       <p>
         We can use graphing technology, such as <url href="www.desmos.com/calculator">desmos</url> to solve the problem. Using the method demonstrated in <xref ref="graphing"/>, we obtain the following graph.
       </p>
-      <image source="images/mileage-graph.png">
+      <image source="images/mileage-graph.png" width="50%">
         <shortdescription>Graph of an increasing linear function and a horizontal line. The point (24,68200) is labeled on the linear function, and the point (54.28571,100000) is labeled at the intersection of the two lines.</shortdescription>
       </image>
       <p>
@@ -362,5 +362,111 @@
     </example>
   
 </subsection>
+<exercises>
+<exercise>
+  <statement>
+    <p>
+      A plumber charges a service fee of $120 plus $90 per hour. Create a linear model for the total cost for <m>t</m> hours of plumbing work.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <m>C(t)=120+90t</m>
+    </p>
+  </solution>
+</exercise>
+<exercise>
+  <statement>
+    <p>
+      A middle schooler borrowed $300 from their parents to buy a Nintendo Switch gaming console. They will pay it off by doing extra work around their house for $10 per hour.
+      <ol>
+        <li>
+          <p>
+            Write a function to model the amount they will owe after working <m>h</m> hours.
+          </p>
+        </li>
+        <li>
+          <p>
+            The middle schooler will work 15 hours per week. Write a function to model the amount they will owe after <m>w</m> weeks.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <m>D(h)=300-10h</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>D(w)=300-150w</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+  <exercise>
+    <statement>
+      <p>
+        An excavation company purchased a bulldozer for $49,000. For tax and insurance purposes, they report that the value will depreciate linearly over 10 years, meaning that in 10 years the bulldozer will be valued at $0.
+      <ol>
+        <li>
+          <p>
+            Find a model for the value of the bulldozer after <m>t</m> years.
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the value after two years?
+          </p>
+        </li>
+        <li>
+          <p>
+            After how many years will the value have dropped to $14,700?
+          </p>
+        </li>
+      </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>V(t)=49000-490t</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>V(2)=$39\,200</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              After 7 years
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A health and beauty spa purchased a $29,000 laser machine to treat acne, wrinkle, and other blemishes. If the machine will be depreciated over 8 years, when will it be valued at $20,000? Round to the nearest tenth of a year.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        After about 2.5 years
+      </p>
+    </solution>
+  </exercise>
+</exercises>
    
 </section>
