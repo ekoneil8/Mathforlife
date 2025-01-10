@@ -198,7 +198,7 @@
       <li>
         <title><m>D</m></title>
         <p>
-          is the common <em>difference</em>, which is the amount of growth in each unit of time, and
+          is the <em>common difference</em> or <em>growth rate</em>, which is the amount of growth in each unit of time, and
         </p>
       </li>
       <li>
@@ -227,66 +227,60 @@
   <example>
     <statement>
       <p>
-        Identify whether each scenario is an example of linear growth. If it is linear growth, find the initial value, the common difference, and the equation.
+        Identify whether each scenario is an example of linear growth. If it is linear growth, find the initial value, the common difference or growth rate, and the equation.
         <ol>
           <li>
             <p>
               A projectile starts at ground level. It reaches its maximum height of 40 feet after two seconds and lands after four seconds.
             </p>
+            <solution>
+              <p>
+              This is not linear because the height increases and then decreases. Therefore, it cannot have a constant rate of change. 
+            </p>
+            </solution>
           </li>
           <li>
             <p>
-              A child starts getting a weekly $3 allowance in first grade. Their allowance increases by $2 each year.
+              The population of a small town is 1,042 people in the year 2015, and the population grows by 19 people per year.
             </p>
+            <solution>
+              <p>
+                The growth rate is a constant 19 people per year, so this is linear growth. If we let <m>t=0</m> be the year 2015, then the initial value is <m>P_0=1\,042</m> and the growth rate is 19 people per year. 
+              </p>
+              <p>
+                The equation is <m>P(t)=1042+19t</m>.
+              </p>
+            </solution>
           </li>
           <li>
             <p>
-              A child starts getting a weekly $3 allowance in first grade. Their allowance increases by 20% each year.
+              The population of a small town is 1,042 people in the year 2015, and the population grows by 2.9% per year.
             </p>
+            <solution>
+              <p>
+                The first year, the population grows by 2.9% of 1042, which is about 30 people or a new population of 1072 people. The second year, the population grows by 2.9% of 1072, which is about 31 people. The amount of growth is not the same, so this is not linear growth. (It is exponential growth.)
+              </p>
+            </solution>
           </li>
           <li>
             <p>
               For tax and planning purposes, a business estimates that a tractor purchased for $28,000 will be worth $0 after seven years of use. It depreciates by the same amount each year.
             </p>
+            <solution>
+              <p>
+                This is linear because the value depreciates by the same amount each year. The initial value is <m>V_0=28\,000</m> dollars. The common difference <m>D=-\frac{28\,000}{7}=-4\,000</m> dollars each year. The resulting equation is 
+              <me>
+                V(t)=28\,000=4\,000t
+              </me>
+              where <m>V</m> is the value in dollars after <m>t</m> years.
+              </p>
+            </solution>
           </li>
         </ol>
       </p>
  
     </statement>
-    <solution>
-      <p>
-        <ol>
-          <li>
-            <p>
-              This is not linear because the rate of change switches from positive to negative. 
-            </p>
-          </li>
-          <li>
-            <p>
-              This is linear because the allowance increases by the same amount each year. The initial value is <m>A_0=3</m>, the common difference is <m>D=2</m>, and the equation is 
-              <me>
-                A(t)=3+2t
-              </me>
-              where<m>A</m> is the weekly allowance and <m>t</m> is time in years since the child was in first grade.
-            </p>
-          </li>
-          <li>
-            <p>
-              This is not linear because the amount of increase is not the same in each unit of time. As the allowance grows, it will be increased by 20% of a larger and larger number, so the yearly raise will be a larger amount each year.
-            </p>
-          </li>
-          <li>
-            <p>
-              This is linear because the value depreciates by the same amount each year. The initial value is <m>V_0=28\,000</m>, the common difference <m>D=-\frac{28\,000}{7}=-4\,000</m>, and the equation is 
-              <me>
-                V(t)=28\,000=4\,000t
-              </me>
-              where <m>V</m> is the value in dollars after <m>t</m> years.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </solution>
+    
   </example>
   <example>
     <statement>
@@ -466,6 +460,20 @@
         After about 2.5 years
       </p>
     </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        In 2018, a school population was 1,354. By 2021 the school had growth to 1,873 students.
+        <ol>
+          <li>
+            <p>
+              Assuming the population grows according to a linear model, what is the annual growth rate?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
   </exercise>
 </exercises>
    
