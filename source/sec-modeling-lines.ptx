@@ -231,17 +231,17 @@
         <ol>
           <li>
             <p>
-              A projectile starts at ground level. It reaches its maximum height of 40 feet after two seconds and lands after four seconds.
+              A projectile starts at ground level. It reaches its maximum height of 40 feet after two seconds and lands after four seconds. Is the height of the projectile a linear function of time?
             </p>
             <solution>
               <p>
-              This is not linear because the height increases and then decreases. Therefore, it cannot have a constant rate of change. 
+              The height increases and then decreases. Therefore, it does not have a constant rate of change, and it is not linear. (It is quadratic)
             </p>
             </solution>
           </li>
           <li>
             <p>
-              The population of a small town is 1,042 people in the year 2015, and the population grows by 19 people per year.
+              The population of a small town is 1,042 people in the year 2015, and the population grows by 19 people per year. Is the population a linear function of time?
             </p>
             <solution>
               <p>
@@ -254,7 +254,7 @@
           </li>
           <li>
             <p>
-              The population of a small town is 1,042 people in the year 2015, and the population grows by 2.9% per year.
+              The population of a small town is 1,042 people in the year 2015, and the population grows by 2.9% per year. Is the population a linear function of time?
             </p>
             <solution>
               <p>
@@ -264,15 +264,31 @@
           </li>
           <li>
             <p>
-              For tax and planning purposes, a business estimates that a tractor purchased for $28,000 will be worth $0 after seven years of use. It depreciates by the same amount each year.
+              For tax and planning purposes, a business estimates that a tractor purchased for $28,000 will be worth $0 after seven years of use. It depreciates by the same amount each year. Is the reported value of the tractor a linear function of time?
             </p>
             <solution>
               <p>
                 This is linear because the value depreciates by the same amount each year. The initial value is <m>V_0=28\,000</m> dollars. The common difference <m>D=-\frac{28\,000}{7}=-4\,000</m> dollars each year. The resulting equation is 
               <me>
-                V(t)=28\,000=4\,000t
+                V(t)=28\,000-4\,000t
               </me>
               where <m>V</m> is the value in dollars after <m>t</m> years.
+              </p>
+            </solution>
+          </li>
+          <li>
+            <p>
+              The population of Poulsbo, Washington, was about 9,300 people in 2010, about 12,000 people in 2020, and about 12,200 people in 2024. Is the population of Poulsbo a linear function of time?
+            </p>
+            <solution>
+              <p>
+                To determine if this is linear growth, we will determine the growth rates from 2010 to 2020 and from 2020 to 2024 to see if they are the same.
+                </p>
+                <p>
+                  From 2010 to 2020, the population grew by <m>12\,000-9\,300=2700</m> people in 10 years, which is a growth rate of <m>2700/10=270</m> people per year.
+              </p>
+              <p>
+                From 2020 to 2024, the population grew by 200 people in four years, which is a growth rate of <m>200/4=50</m> people per year. Since the growth rates are not approximately equal, the population of Poulsbo is not growing linearly.
               </p>
             </solution>
           </li>
@@ -291,37 +307,36 @@
           <p>
             Develop a linear model to represent the number of miles on the odometer after <m>t</m> months.
           </p>
+          <solution>
+            <p>
+              
+              Measuring time in months since Kobi purchased the car, the initial value is <m>P_0=43000</m>. The common difference is <m>d=1050</m> miles per month. Therefore, we can build the model <m>P(t)=43000+1050t</m> where <m>t</m> is measured in months and <m>P</m> is the number of miles on the odometer.
+            
+            </p>
+          </solution>
         </li>
         <li>
           <p>
             Use the model to estimate the mileage after 2 years.
           </p>
+          <solution>
+            
+           <p>
+              Two years is the same as <m>t=24</m> months. Substituting <m>t=24</m> into our function model and evaluating yields <m>P(24)=43000+1050(24)=68200</m> miles.
+            
+            </p>
+          </solution>
         </li>
         <li>
           <p>
             Use the model to determine when the mileage will reach 100,000 miles.
           </p>
-        </li>
-      </ol>
-      </p>
-    </statement>
-    <solution>
+           <solution>
       <title>Algebraic Approach</title>
       
       
-      <p>
-        <ol>
-          <li>
-            <p>
-              Measuring time in months since Kobi purchased the car, the initial value is <m>P_0=43000</m>. The common difference is <m>d=1050</m>. Therefore, we can build the model <m>P(t)=43000+1050t</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Two years is the same as <m>t=24</m> months. Substituting <m>t=24</m> into our function model and evaluating yields <m>P(24)=43000+1050(24)=68200</m> miles.
-            </p>
-          </li>
-          <li>
+      
+        
             <p>
               To determine when the mileage will reach 100,000 miles, we set the mileage <m>P</m> equal to 100,000 and solve for <m>t</m>.
               <me>
@@ -335,9 +350,8 @@
               </me>
               The car will have 100,000 miles on the odometer in about 54 months, or about 4.5 years.
             </p>
-          </li>
-        </ol>
-      </p>
+          
+      
       
     </solution>
     <solution>
@@ -350,9 +364,15 @@
         <shortdescription>Graph of an increasing linear function and a horizontal line. The point (24,68200) is labeled on the linear function, and the point (54.28571,100000) is labeled at the intersection of the two lines.</shortdescription>
       </image>
       <p>
-        We can read from the graph that after 24 months, the mileage will be 68,200. 
+        The mileage reaches 100,000 miles at <m>t=54.28571</m>, which is about 54 months.
       </p>
     </solution>
+        </li>
+      </ol>
+      </p>
+    </statement>
+   
+    
     </example>
   
 </subsection>
