@@ -235,7 +235,7 @@
             </p>
             <solution>
               <p>
-              The height increases and then decreases. Therefore, it does not have a constant rate of change, and it is not linear. (It is quadratic)
+              The height increases and then decreases. Therefore, it does not have a constant rate of change, and it is not linear. (It is quadratic.)
             </p>
             </solution>
           </li>
@@ -310,7 +310,7 @@
           <solution>
             <p>
               
-              Measuring time in months since Kobi purchased the car, the initial value is <m>P_0=43000</m>. The common difference is <m>d=1050</m> miles per month. Therefore, we can build the model <m>P(t)=43000+1050t</m> where <m>t</m> is measured in months and <m>P</m> is the number of miles on the odometer.
+              Measuring time in months since Kobi purchased the car, the initial value is <m>P_0=43000</m>. The common difference is <m>d=1050</m> miles per month. Therefore, we can build the model <me>P(t)=43000+1050t</me> where <m>t</m> is measured in months and <m>P</m> is the number of miles on the odometer.
             
             </p>
           </solution>

@@ -1,8 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-modeling-logistic" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Logistic Growth</title>
+  <title>Natural Growth and Logistic Growth</title>
 
   <p> </p>
-
+    <objectives>
+      <introduction>
+        <p>
+          Students will be able to:
+        </p>
+      </introduction>
+    </objectives>
+    
+<subsection xml:id="subsec-logistic-natural-growth">
+  <title>Natural Growth</title>
+  <p>
+  Consider a frog population that starts with 100 frogs and doubles each year, which is an annual increase of 100%. Is that the same as a population that increases by 50% every six months? Is that the same as a population that increases by 25% every three months? Let's explore:
+  </p>
+  <p>
+    Considering the 
+  </p>
+  <table>
+    <title>Population after One Year</title>
+    <tabular>
+      <row>
+        <cell>Model</cell>
+        <cell>Population after 3 Months</cell>
+        <cell>Population after 6 Months</cell>
+        <cell>Population after 9 Months</cell>
+        <cell>Population after 1 Year</cell>
+      </row>
+      <row>
+        <cell>Increases by 25% every 3 Months</cell>
+        <cell><m>100(1+0.25)=125</m></cell>
+        <cell><m>125(1+0.25)=156.25</m></cell>
+        <cell><m>156.25(1+0.025)=195.3125</m></cell>
+        <cell><m>195.3125(1+0.25)=244.14063</m></cell>
+      </row>
+      <row>
+        <cell>Increase by 50% every 6 Months</cell>
+        <cell>-</cell>
+        <cell><m>100(1+0.50)=150</m></cell>
+        <cell>-</cell>
+        <cell><m>150(1+0.50)=225</m></cell>
+      </row>
+      <row>
+        <cell>Increases 100% Each Year</cell>
+        <cell>-</cell>
+        <cell>-</cell>
+        <cell>-</cell>
+        <cell><m>100(1+1)=200</m></cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    Because of 
+  </p>
+  <assemblage xml:id="assemblage-logistic-natural-growth">
+    <title>The Natural Growth Model</title>
+    <p>
+      The Natural Growth Model is 
+      <me>
+        P(t)=P_0 e^{kt}
+      </me>
+      where <m>P_0</m> is the initial amount, <m>k</m> is the instantaneous growth rate, and <m>t</m> is time.
+    </p>
+  </assemblage>
+</subsection>
 </section>

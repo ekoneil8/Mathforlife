@@ -452,7 +452,7 @@
     The function <m>P(t)=7(1.1798)^{t}</m> closely models the number of cases very early in the pandemic, but the model appears to break down after about <m>t=15</m> which is March 25 when the number of cases appears to start leveling off. This could be related to the "Stay Home, Stay Healthy" executive order announced on March 23, 2020, which banned social gatherings and closed all but essential businesses to in-person work. 
   </p> 
   <p>
-    In practice, all exponential models break down eventually. It is not feasible for something to keep growing forever. Populations will run out of space or resources, and viruses will run out of individuals to infect. Exponential decay models break down when, for example, there is less than one atom remaining of a radioactive element. 
+    In practice, all exponential models break down eventually. It is not feasible for something to keep growing forever. Populations will run out of space or resources, and conditions will change. 
   </p>
   <p>
     Like linear models, exponential models are useful tools for short-term predictions but should be used with caution for long-term predictions.
@@ -585,14 +585,26 @@
         <p>Exponential growth with doubling time <m>D</m>: 
           <me>P(t)=P_0 \left(2\right)^{\frac{t}{D}}</me>
         </p>
-        <p>Generalized shortcut:
-          <me>P(t)=P_0 \left(M\right)^{\frac{t}{T}}</me>
-          The value is multiplied by <m>M</m> every <m>T</m> units of time.
+        <p>Generalized shortcuts:
         </p>
-
+        <p>
+          <me>P(t)=P_0 \left(M\right)^{\frac{t}{T}}</me>
+          <me>P(t)=P_0 \left(1+r\right)^{\frac{t}{T}}</me>
+          The value is multiplied by <m>M</m> or increased by <m>100r\%</m> every <m>T</m> units of time.
+        </p>
+       
       </assemblage> 
     
 </subsection>
 
+<exercises>
+  <exercise>
+    <statement>
+      <p>
+        
+      </p>
+    </statement>
+  </exercise>
+</exercises>
 
 </section>
