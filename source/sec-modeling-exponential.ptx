@@ -185,7 +185,7 @@
     200 is the initial or starting duck population. Recall from <xref ref="sec-modeling-lines"/> that we use <m>P_0</m> to represent the initial value.
   </p>
   <p>
-    We found the value 1.1 by adding 1 and 0.10, which is the 10% exponential growth rate. (We can also think of 1.1=1.10 as meaning that after each month there are 110% as many ducks as there were in the previous month.) We will use the variable <m>r</m> to represent the exponential growth rate. So we have <m>1.1=1+0.10=1+r</m>.
+    We found the value 1.1 by adding 1 and 0.10, which represents the 10% exponential growth rate. We can also think of 1.1=1.10 as meaning that after each month there are 110% as many ducks as there were in the previous month. We will use the variable <m>r</m> to represent the exponential growth rate. So we have <m>1.1=1+0.10=1+r</m>.
   </p>
   <p>
    We will continue to use the variable <m>t</m> to represent time using units that are appropriate to the situation, such as years, months, days, etc.
@@ -468,7 +468,7 @@
     
       
       <p>
-        In <xref ref="exp-decay" />, we had <m>1+r=\sqrt[12]{\frac{1}{2}}</m>. Using this exact value, we can write the function as
+        In <xref ref="exp-decay" />, we found that <m>1+r=\sqrt[12]{\frac{1}{2}}</m>. Using this exact value, we can write the function as
       </p>
 <p>
   <me>
@@ -491,7 +491,7 @@
   
 </p>
 <p>
-  Using the special model for tritium in the form <m>P(t)=40\left(\frac{1}{2}\right)^{\frac{t}{12}}</m>, we can see both the initial value and the half-life of 12 years in the function!
+  The model <m>P(t)=40\left(\frac{1}{2}\right)^{\frac{t}{12}}</m> shows both the initial value and the half-life of 12 years in the function!
 </p>
 <p>
   In general, we can model exponential decay with the formula <m>P(t)=P_0 \left(\frac{1}{2}\right)^{\frac{t}{h}}</m> where <m>P_0</m> is the initial amount and <m>h</m> is the half-life.
