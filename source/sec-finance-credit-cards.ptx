@@ -199,9 +199,6 @@
     After a consumer fails to pay the entire statement balance on a credit card and a finance charge has been applied, many credit card accounts transition to accumulating interest charges on a daily basis. This type of finance charge is called <term>residual interest</term> or <term>trailing interest</term>. Some credit card accounts use this method exclusively to calculate finance charges.
     </p>
     <p>
-      At the end of each day, interest is calculated on the current balance using the <m>I=Prt</m> formula with <m>t=\frac{1}{365}</m> (or <m>t=\frac{1}{366}</m> on a leap year) and applied to the account.
-    </p>
-    <p>
       Residual interest calculations are addressed in <xref ref="sec-finance-compound-interest" />
     </p>
   </assemblage>

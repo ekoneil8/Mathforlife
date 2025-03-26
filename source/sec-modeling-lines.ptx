@@ -377,8 +377,103 @@
 <subsection xml:id="subsec-linear-model-bad">
   <title>When Good Models Go Bad</title>
 <p>
-  At the beginning of this section, we considered the example of a tree that grows two feet per year from an initial height of four feet. 
+  When using any mathematical model, it is important to consider how long the model will be valid. At the beginning of this section, we discussed the example of a tree that grows two feet per year from an initial height of four feet. Is it reasonable to think that the tree will grow about two feet each year forever? Is it reasonable to think that it was growing by two feet per year before it was planted at time <m>t=0</m>? Probably not. It is likely that the tree will grow by two feet per year for several years, perhaps five to ten or even twenty years, before the rate of growth slows down. If the tree is left to live a natural lifesapn, eventually it will stop growing, die, and decompose. The model <m>H(t)=4+2t</m> may be useful for a limited interval of time, such as five to ten years before its validity breaks down.
 </p>  
+<p>
+  How far into the future will a linear model serve as a valid predictor? Engineers and statisticians use error analysis methods involving calculus to find approximate answers to this question. In this book, we will use knowledge of the examples at hand to estimate realistic bounds.
+</p>
+<example>
+  <statement>
+    <p>
+      An espresso machine for a coffee stand is purchased for $15,000. For tax and planning purposes, the owner reports that the machine will depreciate linearly over ten years. Find a model to represent the reported value after <m>t</m> years and estimate the interval over which the model will be valid.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The starting value of the machine is <m>V_0=15000</m>. The rate of change is 
+      <me>
+        \frac{0-15000}{10-0}=-1500.
+      </me>
+      Therefore, we can use the model <m>V(t)=15000-1500t</m> where <m>t</m> is the number of years since the espresso machine was purchased and <m>V</m> is the reported value in dollars.
+    </p>
+    <p>
+      It does not make sense to consider the value of the machine before it was purchased or after its value has dropped to $0. Therefore, this model should be valid for values of <m>t</m> between <m>t=0</m> and <m>t=10</m>. This is only an estimate because the machine could break earlier or changing economic conditions could raise or lower the reported value.
+      
+    </p>
+  </solution>
+</example>
+<example>
+  <statement>
+    <p>
+      The price of a one-term subscription to an online mathematics homework system was $100 in 2019. The price has been increasing linearly, and the same subscription cost $142 in 2025. 
+      <ol>
+        <li>
+          <p>
+            Find a model to represent the price <m>P</m> of the subscription <m>t</m> years after the year 2019.
+          </p>
+        </li>
+        <li>
+          <p>
+            Based on the situation, over which of following intervals for <m>t</m> would you anticipate that this model will be valid?
+          </p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>t=0</m> to <m>t=1</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>t=-5</m> to <m>t=15</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>t=-100</m> to <m>t=100</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>t\gt0</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+      
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+    
+      <ol>
+        <li>
+          <p>
+            The starting value is given to be $100. 
+         </p>
+         <p>
+        Before finding the rate of change, we note that the year 2025 is <m>t=6</m>, so our two ordered pairs are <m>(0,100)</m> and <m>(6,142)</m>. Now we can find that the rate of change is 
+        <m>
+       \frac{142-100}{6-0}=7
+      </m>
+        dollars per year.      
+    </p>
+    <p>
+      Therefore, the model is <m>P(t)=100+7t</m>. 
+    
+          </p>
+        </li>
+        <li>
+          <p>
+            There is no one correct interval on which this model will be valid. However, the interval <m>t=-5</m> to <m>t=15</m> is most reasonable because it contains the years 2019, which is <m>t=0</m>, and 2025, which is <m>t=6</m>, but not too much more.
+          </p>
+        </li>
+      </ol>
+      </p>
+      </solution>
+</example>
 </subsection>
 <exercises>
 <exercise>
