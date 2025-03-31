@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential Decay.</span>
+</h4>
+<div class="para">Hydrogen-3, also known as tritium, is a radioactive isotope of hydrogen and a byproduct of nuclear energy production. It decays exponentially with a half-life of 12 years, meaning that after 12 years, the amount of tritium in a sample is reduced by half. (The decayed tritium doesn’t just disappear; it is converted to helium, releasing an electron and a small amount of radiation in the process.) If there are 40 grams of tritium now, how much will be left in 6 years? Round the growth rate to six decimal places.</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">First we will build a model of the form <span class="process-math">\(P(t)=P_0(1+r)^{t}\)</span> where time is measured in years and the <span class="process-math">\(P\)</span> is measured in grams. We are given that <span class="process-math">\(P_0=40\text{.}\)</span>
+</div>
+<div class="para logical">
+<div class="para">Since the half-life of tritium is 12 years, we know that after 12 years, we will be left with half of our 40-gram starting amount.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(12)=40(1+r)^{12}=20
+\end{equation*}
+</div>
+<div class="para">We can solve this equation for <span class="process-math">\(r\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+40(1+r)^{12}=20
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(1+r)^{12}=\frac{1}{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sqrt[12]{(1+r)^{12}}=\sqrt[12]{\frac{1}{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+r=\sqrt[12]{\frac{1}{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r=\sqrt[12]{\frac{1}{2}}-1\approx-0.056126
+\end{equation*}
+</div>
+<div class="para">The growth rate is negative because the amount of tritium is decreasing.</div>
+</div>
+<div class="para">The resulting model is <span class="process-math">\(P(t)=40(1+(-0.56126))^{t}\text{,}\)</span> which can be simplified to <span class="process-math">\(P(t)=40(0.943874)^{t}\text{.}\)</span>
+</div>
+<div class="para logical">
+<div class="para">We are looking for the amount remaining after 6 hours.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(6)=40(0.943874)^{6}\approx28
+\end{equation*}
+</div>
+<div class="para">Therefore, there are 28g of tritium remaining after 6 hours.</div>
+</div>
+<div class="para">
+<em class="emphasis">Comment:</em> It would be very tempting to observe that 6 hours is half of a half-life. If 20 grams of tritium decay in 12 hours, why don’t 10 grams of tritium decay in 6 hours, leaving 30 grams? This type of proportional reasoning only works with linear models where the value changes by the same amount in each unit of time. With exponential decay, the rate of change is a percentage of the amount of substance remaining at each point in time. So the rate of change is not constant.</div>
+</div></details></div></article><span class="incontext"><a class="internal" href="sec-modeling-exponential.html#exp-decay">in-context</a></span>
+</body>
+</html>

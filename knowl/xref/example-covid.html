@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Spread of Disease.</span>
+</h4>
+<div class="para">In the early days of an epidemic or pandemic, disease spreads according to an exponential model. On March 13, 2020, Kitsap County, Washington, had a total of seven confirmed positive COVID-19 cases. By March 22 of that year, there were 31. If the disease continued to spread at the same exponential rate, how many cases would have accumulated by March 27? How many by April 27? (Round the growth rate to four decimal places.)</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Let’s start by writing down what we know and what we need to find:</div>
+<div class="para logical"><ul class="disc" id="example-covid-3-2-1">
+<li><div class="para">We are told that this is exponential growth, so we will use the formula <span class="process-math">\(P(t)=P_0(1+r)^{t}\)</span> where <span class="process-math">\(P(t)\)</span> is the total of accumulated positive cases at time <span class="process-math">\(t\text{.}\)</span>
+</div></li>
+<li><div class="para">The initial value is <span class="process-math">\(P_0=7\)</span> where <span class="process-math">\(t=0\)</span> corresponds to March 13, 2020.</div></li>
+<li><div class="para">On March 22, there were 31 total cases. Measuring time in days, March 22 is day <span class="process-math">\(t=22-13=9\text{.}\)</span> Then we can translate the number of cases on March 22 into mathematical notation as <span class="process-math">\(P(9)=31\text{.}\)</span>
+</div></li>
+<li><div class="para">We do not know the growth rate <span class="process-math">\(r\text{,}\)</span> but we can set up an equation using the above information to find it.</div></li>
+<li><div class="para">Once we finish building our function, we can use the function to find the predicted total number of positive COVID tests on March 27 and April 13 of 2020.</div></li>
+</ul></div>
+<div class="para logical">
+<div class="para">To find the value of the growth rate, <span class="process-math">\(r\text{,}\)</span> we will plug in the values of <span class="process-math">\(P_0\)</span> and <span class="process-math">\(P(9)\)</span> and solve the resulting equation as follows:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t)=P_0\left(1+r\right)^{t}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(9)=7(1+r)^{9}=31
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(1+r\right)^{9}=\frac{31}{7}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sqrt[9]{\left(1+r\right)^{9}}=\sqrt[9]{\frac{31}{7}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+r=\sqrt[9]{\frac{31}{7}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r=\sqrt[9]{\frac{31}{7}}-1\approx0.1798
+\end{equation*}
+</div>
+<div class="para">The growth rate was about 17.98% per day.</div>
+</div>
+<div class="para">To calculate the ninth root on a calculator, you can use the nth root button which is likely to look like <span class="process-math">\(\sqrt[n]{}\text{.}\)</span> The keyboard shortcut in the DESMOS calculator is <em class="emphasis">nthroot</em>.</div>
+<div class="para logical">
+<div class="para">Now we can assemble the function:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t)=7\left(1+0.1798\right)^{t}.
+\end{equation*}
+</div>
+<div class="para">We can simplify to <span class="process-math">\(P(t)=7\left(1.1798\right)^{t}\text{.}\)</span>
+</div>
+</div>
+<div class="para">Finally, we can use this function to answer the questions.</div>
+<div class="para">March 27 is day <span class="process-math">\(t=27-13=14\text{.}\)</span> TO find the number of cases on day 14, we evaluate <span class="process-math">\(P(14)=7(1.1798)^{14}\approx71\)</span> cases. (In reality, there were 70 cases on this date, so the prediction is very close!)</div>
+<div class="para">April 13 is exactly one month after March 13. Since there are 31 days in march, this is day <span class="process-math">\(t=31\text{.}\)</span> To find the number of cases accumulated on this day, we evaluate <span class="process-math">\(P(31)=7(1.1798)^{31}\approx1178\)</span> cases.(In reality, there were only 135 cases on this date. We may infer that the infection had already stopped spreading at an exponential rate.)</div>
+<div class="para">$0</div>
+</div></details></div></article><span class="incontext"><a class="internal" href="sec-modeling-exponential.html#example-covid">in-context</a></span>
+</body>
+</html>
