@@ -565,10 +565,10 @@
       
     </p>
     <p>
-      To find the value in the year 2029, which is time <m>t=2029-2011=18</m>, we evaluate <m>P(18)=600\left(1.5\right)^{\frac{18}{10}}\approx1244.846</m>.
+      To find the value of the house in the year 2029, which is time <m>t=2029-2011=18</m>, we evaluate <m>P(18)=600\left(1.5\right)^{\frac{18}{10}}\approx1244.846</m>.
     </p>
     <p>
-      Remembering that the value we found is in thousands of dollars, we can conclude that the house will be worth about $1,244,846 in the year 2029.
+      Remembering that the value we found is in thousands of dollars, we conclude that the house will be worth about $1,244,846 in the year 2029.
     </p>
     <p>
       Note that you could also have taken the approach of <xref ref="example-covid" /> and other examples in which we used a model of the form <m>P(t)=P_0 (1+r)^{t}</m>, which required several algebraic steps to first solve for the value of <m>r</m>. Both approaches will work equally well!
