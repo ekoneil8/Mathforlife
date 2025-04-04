@@ -4,13 +4,8 @@
   <title>Democracy</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Coming soon. </p>
   </introduction>
 
-  <!-- include sections -->
-  <xi:include href="sec-democracy-voting.ptx" />
-  <xi:include href="sec-democracy-apportionment.ptx" />
-  <xi:include href="sec-democracy-apportionment-paradoxes.ptx" />
-  <xi:include href="sec-democracy-electoral-college.ptx" />
   
 </chapter>

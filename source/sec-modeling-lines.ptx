@@ -70,6 +70,9 @@
       </ul>
       </p>
   <p>
+    In each example, the value changes by the same amount in each unit of time: 2 feet each year, $2,000 each year, $80 each hour, and 5 people each year.
+  </p>
+  <p>
   Consider the tree that starts out 4 feet tall and grows 2 feet each year. After 1 year, it will be 6 feet tall, after 2 years it will be 8 feet tall, after 3 years it will be 10 feet tall, and so on. 
   </p>
   <p>
@@ -212,10 +215,10 @@
   </p>
 </assemblage>
 <p>
-  <em>Is the linear growth model the same as <m>y=mx+b</m> from algebra classes?</em> Yes, it is! It isn't a problem to use a model of the form <m>y=mx+b</m> for all applications of linear growth. However, many students prefer the form above because it makes the meanings of the variables and constants clear.
+  <em>Is the linear growth model equivalent to the slope-intercept form of a line <m>y=mx+b</m> from middle school and high school algebra classes?</em> Yes, it is!
 </p>
 <p>
-  The general linear growth model equation above uses the variable <m>P</m> because population models are one of the more common applications. However, any variable may be used.
+  The general linear growth model equation above uses the letter <m>P</m> because population models are one of the more common applications.
 </p>
 <p>
   The constant <m>P_0</m> can be read "P sub zero", "P zero", or "P naught", and it represents the population or value at time zero. When viewing the graph, the point where line intersects the vertical or y-axis is called the y-intercept. Its coordinates are <m>(0,P_0)</m>.
