@@ -6,7 +6,7 @@
 
   <book xml:id="math-in-society">
     <title>Mathematics in the Real World</title>
-    <subtitle>Data, Dynamics, Dollars, and Decisions</subtitle>
+    <subtitle>Data, Dynamics, Dollars, and Decisions, [Alpha Test Edition]</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
