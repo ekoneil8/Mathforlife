@@ -17,53 +17,113 @@
   <p>
   Consider a frog population that starts with 100 frogs and doubles each year, which is an annual increase of 100%. Is that the same as a population that increases by 50% every six months? Is that the same as a population that increases by 25% every three months? Let's explore:
   </p>
-  <p>
-    Considering the 
-  </p>
+  
   <table>
     <title>Population after One Year</title>
-    <tabular>
-      <row>
+    <tabular halign="center">
+      <row header="yes" bottom="minor">
         <cell>Model</cell>
-        <cell>Population after 3 Months</cell>
-        <cell>Population after 6 Months</cell>
-        <cell>Population after 9 Months</cell>
+        <cell>Number of Increases in 1 Year</cell>
         <cell>Population after 1 Year</cell>
       </row>
       <row>
-        <cell>Increases by 25% every 3 Months</cell>
-        <cell><m>100(1+0.25)=125</m></cell>
-        <cell><m>125(1+0.25)=156.25</m></cell>
-        <cell><m>156.25(1+0.025)=195.3125</m></cell>
-        <cell><m>195.3125(1+0.25)=244.14063</m></cell>
+        <cell>Increase 100% Each Year</cell>
+        <cell><m>1</m></cell>
+        <cell><m>100(1+1)^{1}=200</m></cell>
       </row>
       <row>
-        <cell>Increase by 50% every 6 Months</cell>
-        <cell>-</cell>
-        <cell><m>100(1+0.50)=150</m></cell>
-        <cell>-</cell>
-        <cell><m>150(1+0.50)=225</m></cell>
+        <cell>Increase 50% every 6 Months</cell>
+        <cell><m>2</m></cell>
+        <cell><m>100(1+0.50)^{2}=225</m></cell>
       </row>
       <row>
-        <cell>Increases 100% Each Year</cell>
-        <cell>-</cell>
-        <cell>-</cell>
-        <cell>-</cell>
-        <cell><m>100(1+1)=200</m></cell>
+        <cell>Increase by 25% every 3 Months</cell>
+        <cell><m>4</m></cell>
+        <cell><m>100(1+0.25)^{4}=244.14063</m></cell>
       </row>
+
     </tabular>
   </table>
   <p>
-    Because of 
+    The results are not the same! The more times we apply the increases, the larger the population grows in one year. This is happening even when the growth rate is scaled down proportionally. 
   </p>
+<p>
+  Let's generalize. If the frog population increases <m>k</m> times per year by <m>\frac{100}{k}\%</m>, then after one year the population will be <m>100\left( 1+\frac{1}{k} \right)^{k}</m>. If the value of <m>k</m> approaches infinity, meaning that the increases are applied continuously rather than at distinct points in time, the results approach about <m>272</m> frogs as seen in the table below.
+</p>
+<table>
+  <title>Population after 1 Year as k Increases</title>
+  <tabular halign="center">
+    <row header="yes" bottom="minor">
+      <cell><m>k</m></cell>
+      <cell><m>100\left( 1+\frac{1}{k} \right) ^{k}</m></cell>
+    </row>
+    <row>
+      <cell>1</cell>
+      <cell>200</cell>
+    </row>
+    <row>
+      <cell>12</cell>
+      <cell>261.3053</cell>
+    </row>
+    <row>
+      <cell>365</cell>
+      <cell>271.45675</cell>
+    </row>
+    <row>
+      <cell>1\,000\,000</cell>
+      <cell>271.82805</cell>
+    </row>
+  </tabular>
+</table>
+<p>
+  The number <m>e</m> is a mathematical constant approximately equal to <m>2.71828</m>. Like the number <m>\pi</m>, it is irrational and also arises frequently in mathematics. The frog population is, in fact, approaching <m>100e</m>. 
+</p>
+<p>
+  We can use the number <m>e</m> to develop a model for exponential growth in which the growth rate is applied <em>continuously</em>. This is called the <em>Natural Growth Model</em> because it arises frequently in the natural world when modeling population growth and exponential decay.
+</p>
+
   <assemblage xml:id="assemblage-logistic-natural-growth">
     <title>The Natural Growth Model</title>
     <p>
       The Natural Growth Model is 
       <me>
-        P(t)=P_0 e^{kt}
+        P(t)=P_0 e^{rt}
       </me>
-      where <m>P_0</m> is the initial amount, <m>k</m> is the instantaneous growth rate, and <m>t</m> is time.
+      where <m>P_0</m> is the initial amount, <m>r</m> is the instantaneous or continuous growth rate expressed in decimal form, and <m>t</m> is time.
+    </p>
+  </assemblage>
+  <example>
+    <statement>
+      <p>
+        An elk herd begins with 27 animals and grows at a continuous rate of <m>4\%</m> per year. Write a function to model the population. Then find the population after three years.
+      </p>
+      <p>
+        Because this is a <em>continuous</em> growth rate, we should use the natural growth model with <m>P_0=27</m> and <m>r=0.04</m>. Therefore, the model is:
+        <me>
+          P(t)=27e^{0.04t}
+        </me>
+        
+      </p>
+      <p>
+        To find the population after 3 years, we evaluate <m>P(3)</m> on a calculator. The result is  
+        <me>
+          P(3)=27e^{0.04(3)}\approx 30.
+        </me>
+        Therefore, there will be about 30 elk after three years.
+        </p> 
+        <p>
+        Note: your calculator should have an <m>e</m> button! You should never need to type in a decimal approximation for <m>e</m>.
+      </p>
+    </statement>
+  </example>
+  <assemblage xml:id="assemblage-natural-growth-caution">
+    <title>Caution!</title>
+    <p>
+      Be careful not to confuse yearly growth rates with continuous growth rates. 
+      </p>
+      <p>
+        
+      A population that growth by <m>10\%</m> each year is different from a population that has a continuous growth rate of <m>10\%</m> per year. Because the continuous growth rate is, effectively, broken down into infinitely many shorter time spans with the growth compounding, the resulting increase will end up being greater than just <m>10\%</m>. 
     </p>
   </assemblage>
 </subsection>
