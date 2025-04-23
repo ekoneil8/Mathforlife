@@ -1285,7 +1285,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "Natural Growth and Logistic Growth",
-  "body": " Natural Growth and Logistic Growth      Students will be able to:     Natural Growth  Consider a frog population that starts with 100 frogs and doubles each year, which is an annual increase of 100%. Is that the same as a population that increases by 50% every six months? Is that the same as a population that increases by 25% every three months? Let's explore:  Considering the   Population after One Year    Model  Population after 3 Months  Population after 6 Months  Population after 9 Months  Population after 1 Year    Increases by 25% every 3 Months        Increase by 50% every 6 Months  -   -     Increases 100% Each Year  -  -  -      Because of   The Natural Growth Model  The Natural Growth Model is where is the initial amount, is the instantaneous growth rate, and is time.    "
+  "body": " Natural Growth and Logistic Growth      Students will be able to:     Natural Growth  Consider a frog population that starts with 100 frogs and doubles each year, which is an annual increase of 100%. Is that the same as a population that increases by 50% every six months? Is that the same as a population that increases by 25% every three months? Let's explore:   Population after One Year    Model  Number of Increases in 1 Year  Population after 1 Year    Increase 100% Each Year      Increase 50% every 6 Months      Increase by 25% every 3 Months       The results are not the same! The more times we apply the increases, the larger the population grows in one year. This is happening even when the growth rate is scaled down proportionally.  Let's generalize. If the frog population increases times per year by , then after one year the population will be . If the value of approaches infinity, meaning that the increases are applied continuously rather than at distinct points in time, the results approach about frogs as seen in the table below.   Population after 1 Year as k Increases        1  200    12  261.3053    365  271.45675    1\\,000\\,000  271.82805     The number is a mathematical constant approximately equal to . Like the number , it is irrational and also arises frequently in mathematics. The frog population is, in fact, approaching .  We can use the number to develop a model for exponential growth in which the growth rate is applied continuously . This is called the Natural Growth Model because it arises frequently in the natural world when modeling population growth and exponential decay.   The Natural Growth Model  The Natural Growth Model is where is the initial amount, is the instantaneous or continuous growth rate expressed in decimal form, and is time.     An elk herd begins with 27 animals and grows at a continuous rate of per year. Write a function to model the population. Then find the population after three years.  Because this is a continuous growth rate, we should use the natural growth model with and . Therefore, the model is:   To find the population after 3 years, we evaluate on a calculator. The result is Therefore, there will be about 30 elk after three years.  Note: your calculator should have an button! You should never need to type in a decimal approximation for .     Caution!  Be careful not to confuse yearly growth rates with continuous growth rates.  A population that growth by each year is different from a population that has a continuous growth rate of per year. Because the continuous growth rate is, effectively, broken down into infinitely many shorter time spans with the growth compounding, the resulting increase will end up being greater than just .    "
 },
 {
   "id": "sec-modeling-logistic-3",
@@ -1297,13 +1297,31 @@ var ptx_lunr_docs = [
   "body": "  Students will be able to:   "
 },
 {
-  "id": "subsec-logistic-natural-growth-4",
+  "id": "subsec-logistic-natural-growth-3",
   "level": "2",
-  "url": "sec-modeling-logistic.html#subsec-logistic-natural-growth-4",
+  "url": "sec-modeling-logistic.html#subsec-logistic-natural-growth-3",
   "type": "Table",
   "number": "2.5.1",
   "title": "Population after One Year",
-  "body": " Population after One Year    Model  Population after 3 Months  Population after 6 Months  Population after 9 Months  Population after 1 Year    Increases by 25% every 3 Months        Increase by 50% every 6 Months  -   -     Increases 100% Each Year  -  -  -     "
+  "body": " Population after One Year    Model  Number of Increases in 1 Year  Population after 1 Year    Increase 100% Each Year      Increase 50% every 6 Months      Increase by 25% every 3 Months      "
+},
+{
+  "id": "subsec-logistic-natural-growth-6",
+  "level": "2",
+  "url": "sec-modeling-logistic.html#subsec-logistic-natural-growth-6",
+  "type": "Table",
+  "number": "2.5.2",
+  "title": "Population after 1 Year as k Increases",
+  "body": " Population after 1 Year as k Increases        1  200    12  261.3053    365  271.45675    1\\,000\\,000  271.82805    "
+},
+{
+  "id": "subsec-logistic-natural-growth-10",
+  "level": "2",
+  "url": "sec-modeling-logistic.html#subsec-logistic-natural-growth-10",
+  "type": "Example",
+  "number": "2.5.3",
+  "title": "",
+  "body": "  An elk herd begins with 27 animals and grows at a continuous rate of per year. Write a function to model the population. Then find the population after three years.  Because this is a continuous growth rate, we should use the natural growth model with and . Therefore, the model is:   To find the population after 3 years, we evaluate on a calculator. The result is Therefore, there will be about 30 elk after three years.  Note: your calculator should have an button! You should never need to type in a decimal approximation for .   "
 },
 {
   "id": "sec-finance-spreadsheets",
