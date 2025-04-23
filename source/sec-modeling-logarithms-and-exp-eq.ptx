@@ -3,6 +3,26 @@
 <section xml:id="sec-modeling-logarithms-and-exp-eq" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Logarithms</title>
 
-  <p> </p>
+  <p>You have seen several functions in mathematics that are primarily used to "undo" other functions. For example, the opposite of squaring is taking the square root, and the opposite of cubing is taking the cube root. But what is the opposite of an expnential function in which there is a variable in the exponent?</p>
+  <md>
+    <mrow> x^{2}=5\amp \Leftrightarrow x=\pm\sqrt{5}</mrow>
+    <mrow> x^{7}=5\amp \Leftrightarrow x=\pm\sqrt[7]{5}</mrow>
+    <mrow> 10^{x}=5\amp  \Leftrightarrow x=???</mrow>
+  </md>
+ <p>This is where logarithms come in!
+</p>
+  
+  
+<subsection xml:id="logs-common-log">
+<title>The Common Logarithm</title>
 
+<p>The common logarithm, written <m>log(x)</m>, answers the question, "what power do you raise 10 to in order to get <m>x</m>?"
+</p>
+<p>
+  <m>\log (100) =2</m> because <m>10^{2}=100</m>.
+</p>
+<p>
+  <m>\log (1\,000\,000)=6</m> because <m>10^{6}=1\,000\,000</m>.
+</p>
+</subsection>
 </section>
