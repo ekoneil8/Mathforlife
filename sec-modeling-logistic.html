@@ -1210,7 +1210,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-modeling-exponential.html#sec-modeling-exponential-6" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-modeling-logarithms-and-exp-eq.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Logarithms</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-modeling-logarithms-and-exp-eq.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Logarithms and Exponential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-modeling-logarithms-and-exp-eq.html#logs-common-log" class="internal"><span class="codenumber">2.4.1</span> <span class="title">The Common Logarithm</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-modeling-logistic.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Natural Growth and Logistic Growth</span></a></div>
 <ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-modeling-logistic.html#subsec-logistic-natural-growth" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Natural Growth</span></a></div></li></ul>
@@ -1506,20 +1509,20 @@ eBookConfig.enable_chatcodes =  false;
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(100\left( 1+\frac{1}{k} \right) ^{k}\)</span></th>
 </tr>
 <tr>
-<td class="c m b0 r0 l0 t0 lines">1</td>
-<td class="c m b0 r0 l0 t0 lines">200</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(200\)</span></td>
 </tr>
 <tr>
-<td class="c m b0 r0 l0 t0 lines">12</td>
-<td class="c m b0 r0 l0 t0 lines">261.3053</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(12\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(261.3053\)</span></td>
 </tr>
 <tr>
-<td class="c m b0 r0 l0 t0 lines">365</td>
-<td class="c m b0 r0 l0 t0 lines">271.45675</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(365\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(271.45675\)</span></td>
 </tr>
 <tr>
-<td class="c m b0 r0 l0 t0 lines">1\,000\,000</td>
-<td class="c m b0 r0 l0 t0 lines">271.82805</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\,000\,000\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(271.82805\)</span></td>
 </tr>
 </table></div></figure><div class="para" id="subsec-logistic-natural-growth-7">The number <span class="process-math">\(e\)</span> is a mathematical constant approximately equal to <span class="process-math">\(2.71828\text{.}\)</span> Like the number <span class="process-math">\(\pi\text{,}\)</span> it is irrational and also arises frequently in mathematics. The frog population is, in fact, approaching <span class="process-math">\(100e\text{.}\)</span>
 </div>
@@ -1529,15 +1532,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">The Natural Growth Model is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(t)=P_0 e^{rt}
+P(t)=P_0 e^{kt}
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(P_0\)</span> is the initial amount, <span class="process-math">\(r\)</span> is the instantaneous or continuous growth rate expressed in decimal form, and <span class="process-math">\(t\)</span> is time.</div>
+<div class="para">where <span class="process-math">\(P_0\)</span> is the initial amount, <span class="process-math">\(k\)</span> is the instantaneous or continuous growth rate expressed in decimal form, and <span class="process-math">\(t\)</span> is time.</div>
 </div></article><article class="example example-like" id="subsec-logistic-natural-growth-10"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-logistic-natural-growth-10-1-1">An elk herd begins with 27 animals and grows at a continuous rate of <span class="process-math">\(4\%\)</span> per year. Write a function to model the population. Then find the population after three years.</div> <div class="para logical" id="subsec-logistic-natural-growth-10-1-2">
-<div class="para">Because this is a <em class="emphasis">continuous</em> growth rate, we should use the natural growth model with <span class="process-math">\(P_0=27\)</span> and <span class="process-math">\(r=0.04\text{.}\)</span> Therefore, the model is:</div>
+<div class="para">Because this is a <em class="emphasis">continuous</em> growth rate, we should use the natural growth model with <span class="process-math">\(P_0=27\)</span> and <span class="process-math">\(k=0.04\text{.}\)</span> Therefore, the model is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(t)=27e^{0.04t}
@@ -1554,8 +1557,7 @@ P(3)=27e^{0.04(3)}\approx 30.
 </div> <div class="para" id="subsec-logistic-natural-growth-10-1-4">Note: your calculator should have an <span class="process-math">\(e\)</span> button! You should never need to type in a decimal approximation for <span class="process-math">\(e\text{.}\)</span>
 </div></article><article class="assemblage assemblage-like" id="assemblage-natural-growth-caution"><h4 class="heading"><span class="title">Caution!</span></h4>
 <div class="para" id="assemblage-natural-growth-caution-2">Be careful not to confuse yearly growth rates with continuous growth rates.</div>
-<div class="para" id="assemblage-natural-growth-caution-3">A population that growth by <span class="process-math">\(10\%\)</span> each year is different from a population that has a continuous growth rate of <span class="process-math">\(10\%\)</span> per year. Because the continuous growth rate is, effectively, broken down into infinitely many shorter time spans with the growth compounding, the resulting increase will end up being greater than just <span class="process-math">\(10\%\text{.}\)</span>
-</div></article></section></section></div>
+<div class="para" id="assemblage-natural-growth-caution-3">For example, a population with a <em class="emphasis">continuous</em> growth rate of <span class="process-math">\(20\%\)</span> per year will end up increasing by about <span class="process-math">\(22\%\)</span> from one year to the next. This is because the growth is, effectively, broken down into infinitely many shorter time spans and the growth compounds.</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-modeling-logarithms-and-exp-eq.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-personal-finance.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
