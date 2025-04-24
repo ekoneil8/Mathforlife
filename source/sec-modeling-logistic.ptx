@@ -58,20 +58,20 @@
       <cell><m>100\left( 1+\frac{1}{k} \right) ^{k}</m></cell>
     </row>
     <row>
-      <cell>1</cell>
-      <cell>200</cell>
+      <cell><m>1</m></cell>
+      <cell><m>200</m></cell>
     </row>
     <row>
-      <cell>12</cell>
-      <cell>261.3053</cell>
+      <cell><m>12</m></cell>
+      <cell><m>261.3053</m></cell>
     </row>
     <row>
-      <cell>365</cell>
-      <cell>271.45675</cell>
+      <cell><m>365</m></cell>
+      <cell><m>271.45675</m></cell>
     </row>
     <row>
-      <cell>1\,000\,000</cell>
-      <cell>271.82805</cell>
+      <cell><m>1\,000\,000</m></cell>
+      <cell><m>271.82805</m></cell>
     </row>
   </tabular>
 </table>
@@ -87,9 +87,9 @@
     <p>
       The Natural Growth Model is 
       <me>
-        P(t)=P_0 e^{rt}
+        P(t)=P_0 e^{kt}
       </me>
-      where <m>P_0</m> is the initial amount, <m>r</m> is the instantaneous or continuous growth rate expressed in decimal form, and <m>t</m> is time.
+      where <m>P_0</m> is the initial amount, <m>k</m> is the instantaneous or continuous growth rate expressed in decimal form, and <m>t</m> is time.
     </p>
   </assemblage>
   <example>
@@ -98,7 +98,7 @@
         An elk herd begins with 27 animals and grows at a continuous rate of <m>4\%</m> per year. Write a function to model the population. Then find the population after three years.
       </p>
       <p>
-        Because this is a <em>continuous</em> growth rate, we should use the natural growth model with <m>P_0=27</m> and <m>r=0.04</m>. Therefore, the model is:
+        Because this is a <em>continuous</em> growth rate, we should use the natural growth model with <m>P_0=27</m> and <m>k=0.04</m>. Therefore, the model is:
         <me>
           P(t)=27e^{0.04t}
         </me>
@@ -122,8 +122,8 @@
       Be careful not to confuse yearly growth rates with continuous growth rates. 
       </p>
       <p>
-        
-      A population that growth by <m>10\%</m> each year is different from a population that has a continuous growth rate of <m>10\%</m> per year. Because the continuous growth rate is, effectively, broken down into infinitely many shorter time spans with the growth compounding, the resulting increase will end up being greater than just <m>10\%</m>. 
+      
+      For example, a population with a <em>continuous</em> growth rate of <m>20\%</m> per year will end up increasing by about <m>22\%</m> from one year to the next. This is because the growth is, effectively, broken down into infinitely many shorter time spans and the growth compounds. 
     </p>
   </assemblage>
 </subsection>
