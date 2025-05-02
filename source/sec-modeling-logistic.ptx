@@ -3,14 +3,7 @@
 <section xml:id="sec-modeling-logistic" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Natural Growth and Logistic Growth</title>
 
-  <p> </p>
-    <objectives>
-      <introduction>
-        <p>
-          Students will be able to:
-        </p>
-      </introduction>
-    </objectives>
+
     
 <subsection xml:id="subsec-logistic-natural-growth">
   <title>Natural Growth</title>
@@ -48,14 +41,14 @@
     The results are not the same! The more times we apply the increases, the larger the population grows in one year. This is happening even when the growth rate is scaled down proportionally. 
   </p>
 <p>
-  Let's generalize. If the frog population increases <m>k</m> times per year by <m>\frac{100}{k}\%</m>, then after one year the population will be <m>100\left( 1+\frac{1}{k} \right)^{k}</m>. If the value of <m>k</m> approaches infinity, meaning that the increases are applied continuously rather than at distinct points in time, the results approach about <m>272</m> frogs as seen in the table below.
+  Let's generalize. If the frog population increases <m>n</m> times per year by <m>\frac{100}{n}\%</m>, then after one year the population will be <m>100\left( 1+\frac{1}{n} \right)^{n}</m>. If the value of <m>n</m> approaches infinity, meaning that the increases are applied continuously rather than at distinct points in time, the results approach about <m>272</m> frogs as seen in the table below.
 </p>
 <table>
-  <title>Population after 1 Year as k Increases</title>
+  <title>Population after 1 Year as n Increases</title>
   <tabular halign="center">
     <row header="yes" bottom="minor">
-      <cell><m>k</m></cell>
-      <cell><m>100\left( 1+\frac{1}{k} \right) ^{k}</m></cell>
+      <cell><m>n</m></cell>
+      <cell><m>100\left( 1+\frac{1}{n} \right) ^{n}</m></cell>
     </row>
     <row>
       <cell><m>1</m></cell>

@@ -26,7 +26,7 @@
         </li>
         <li>
           <p>
-            Calculate credit card finance charges.
+            Calculate credit card finance charges using the average daily balance method and the daily balance method.
           </p>
         </li>
         <li>
@@ -37,7 +37,7 @@
       </ul>
     </objectives>
   
-    <subsection>
+    <subsection xml:id="subsec-finance-credit-cards-whatis" xmlns:xi="http://www.w3.org/2001/XInclude">
       <title>What is a Credit Card?</title>
       <p>
         A credit cards is a form of revolving debt. With most loans, such as mortgages or car loans, the money is borrowed all at 
@@ -60,8 +60,8 @@
         types of loans, so borrowers can find themselves amassing a large amount of debt quite quickly. 
       </p>
     </subsection> 
-  <subsection xml:id="subsec-creditcard-balance">
-    <title>Credit Card Balances</title>
+  <subsection xml:id="subsec-finance-creditcard-balance"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Credit Card Balances and Finance Charges</title>
     <p>
       The balance in an account typically means the amount of money currently held in that account, whether it is a debt or an investment. With credit cards, the amount owed changes frequently and fees are accrued over time but applied once. As such, there are several different types of balance:
     </p>
@@ -86,7 +86,7 @@
         </li>
         <li>
           <p>
-            <term>Current Balance:</term> the total balance at a given time. The current balance incorporates any unpaid debt carried over from the previous billing cycle and any activity (purchases, payments, etc.) that have been posted to the account.
+            <term>Daily Balance or Current Balance:</term> the total balance at a given time. The current balance incorporates any unpaid debt carried over from the previous billing cycle and any activity (purchases, payments, etc.) that have been posted to the account.
           </p>
         </li>
         <li>
@@ -100,16 +100,14 @@
           </p>
         </li>
       </ul>
-         The term <term>balance</term> typically refers to either the statement balance or the current balance, depending on the context.
-    </p>
-   <p>
-    Most credit card accounts use the average daily balance to calculate finance charges, although some use the ending balance and others calculate and apply interest daily.
-   </p>
+    </p> 
+   
   </assemblage>
-  <p>
-    
-  </p>
-    <example xml:id="ex-credit-card-balance">
+    <p>
+      A <em>finance charge</em> is the interest charged on the amount owed. It is calculated as the simple interest on the balance on the account. However, there are several ways this can be done. Most credit card accounts use either the daily balance and apply finance charges daily or they use the average daily balance and apply finance charges monthly. Each credit card agreement will indicate which method is used.
+     </p>
+  
+    <example xml:id="ex-credit-card-adb">
       <statement>
         <p>
           A credit card billing period runs from January 23 to February 22. The previous balance is $1,234 and the transactions are listed below.
@@ -148,19 +146,19 @@
           </row>
         </tabular>
         <p>
-          Find the ending balance and find the average daily balance.
+          Suppose this credit card uses the average daily balance method and charges an annual interest rate of 19.9%. Find the ending balance, the average daily balance, the finance charge, and the total balance after the finance charge is applied. For calculating the finance charge, this account measures time in days.
         </p>
       </statement>
       <solution>
         <p>
-          To find the ending balance, starting with the previous balance, we add the charges and subtract the credits.
+          To find the <em>ending balance</em>, starting with the previous balance, we add the charges and subtract the credits.
           <me>
             1234+314-1000-192+30+120=386
           </me>
           Therefore, the ending balance is $386.
         </p>
         <p>
-          To find the average daily balance, we first find the balance at the end of each day. Then we find the average of the daily balances. It can be helpful to write the balances in a calendar or grid.
+          To find the <em>average daily balance</em>, we first find the balance at the end of each day. Then we find the average of the daily balances. It can be helpful to write the balances in a calendar or grid.
         </p>
         <image source="images/credit-card-daily-bal-calendar.png">
           <shortdescription>Jan 23-26: $1234, Jan 27-29: $1548, Jan 30-Feb 3: $548, Feb 4-11: $356, Feb 12-13: $386, Feb 14-22: $506</shortdescription>
@@ -174,24 +172,14 @@
         <p>
           Alternatively, a spreadsheet can be used.
         </p>
+        <p>
+          The <em>finance charge</em> is 31 days simple interest on the average daily balance at 19.9%.
+        </p>
       </solution>
     </example>
   </subsection>
-<subsection xml:id="subsec-finance-charge">
-  <title>Finance Charges</title>
-<p>
-  Finance charges typically include the interest on either the ending balance or the average daily balance for the month. They can be calculated using the simple interest formula, <m>I=Prt</m>, where <m>I</m> is the interest or finance charge, <m>r</m> is the annual interest rate (APR), and <m>t</m> is the length of time in years for the billing cycle.
-</p>
-<p>
-  Some credit card accounts consider the each month to be <m>\frac{1}{12}</m> of a year, and so they use <m>t=\frac{1}{12}</m> for finance charge calculations. However, it is more common to use the exact number of days. For example, if there are 31 days in a particular billing cycle, then they will use <m>t=\frac{31}{365}</m> for that month.
-</p>
-<example>
-  <statement>
-    <p>
-      In <xref ref="ex-credit-card-balance" />, 
-    </p>
-  </statement>
-</example>
+
+
 
   <assemblage xml:id="assemblage-residual-interest">
     <title>Residual Interest Alert</title>
@@ -202,8 +190,9 @@
       Residual interest calculations are addressed in <xref ref="sec-finance-compound-interest" />
     </p>
   </assemblage>
-   </subsection>   
-   <subsection> 
+
+  
+   <subsection xml:id="finance-credit-fine-print"  xmlns:xi="http://www.w3.org/2001/XInclude"> 
   <title>Credit Card Agreements: Reading the Fine Print</title>
   <p>
     A credit card agreement describes the policies and rates which apply to the account. It should contain a table summarizing the interest rates and fees. An example is provided below.

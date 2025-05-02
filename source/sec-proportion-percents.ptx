@@ -154,7 +154,7 @@
       <statement>
       <p>
         Change each percent to decimal form.
-      <ol marker="a">
+      <ol>
         <li>
           <p>
             65%
@@ -180,7 +180,7 @@
     </statement>
       <solution>
         <p>
-        <ol marker="a">
+        <ol>
           <li>
             <p>
               <m>65\%=\frac{65}{100}=0.65</m>. Notice this is the same as moving the decimal to the left two places.
@@ -210,7 +210,7 @@
       <statement>
       <p>
         Change each fraction or decimal into percent form.
-      <ol marker="a">
+      <ol>
         <li>
           <p>
             <m>\frac{4}{5}</m>
@@ -236,7 +236,7 @@
     </statement>
       <solution>
         <p>
-        <ol marker="a">
+        <ol>
           <li>
             <p>
               First we divide <m>\frac{4}{5}</m> to get <m>0.80</m> and then multiply by 100%. <m>0.80(100\%) = 80\%</m>.
@@ -319,7 +319,7 @@
       <statement>
       <p>
         First estimate which quantity is the larger percentage. Then calculate both percentages.
-      <ol marker="a">
+      <ol>
         <li>
           <p>
             A quiz score of 8 out of 10 or 11 out of 15.
@@ -335,7 +335,7 @@
     </statement>
       <solution>
         <p>
-        <ol marker="a">
+        <ol>
           <li>
             <p>
               We are estimating that 8 out of 10 seems larger compared to 11 out of 15 because missing 2 out of 10 seems like less than 4 out of 15.
@@ -403,7 +403,7 @@
       <statement>
       <p>
         Find each part described and the total or ending amount.
-      <ol marker="a">
+      <ol>
         <li>
           <p>
             A smartphone's battery life of 12 hours lost 20% after a year of use. Find the amount it decreased by and the current battery life.
@@ -419,7 +419,7 @@
     </statement>
       <solution>
         <p>
-        <ol marker="a">
+        <ol>
           <li>
             <p>
               First we will find 20% of 12 hours by multiplying by the decimal form of the percent:
@@ -443,7 +443,7 @@
       <solution>
         <p>
           There is an optional shorter way to go about this type of problem if you are interested.
-        <ol marker="a">
+        <ol>
           <li>
             If we look at a 20% decrease as the battery retaining 80% of its life (100-20=80)%, we can calculate the new battery life directly using the decimal form
             <md>
@@ -678,7 +678,7 @@
       Convert each percent into decimal form.
     </p>
     <p>
-      <ol marker="a">
+      <ol marker="a.">
         <li>
           <p>
             15.6%
@@ -735,7 +735,7 @@
     <p>Convert each percent into decimal form.
     </p>
     <p>
-      <ol marker="a">
+      <ol marker="a.">
         <li>
           <p>
             1.25%
@@ -793,7 +793,7 @@
       Change each fraction or decimal into percentage form.
     </p>
     <p>
-      <ol marker="a">
+      <ol marker="a.">
         <li>
           <p>
             0.89
@@ -851,7 +851,7 @@
       Change each fraction or decimal into percentage form.
     </p>
     <p>
-      <ol marker="a">
+      <ol marker="a.">
         <li>
           <p>
             0.029
