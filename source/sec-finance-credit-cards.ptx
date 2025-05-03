@@ -36,7 +36,23 @@
         </li>
       </ul>
     </objectives>
-  
+    <subsection xml:id="finance-credit-fine-print"  xmlns:xi="http://www.w3.org/2001/XInclude"> 
+      <title>Credit Card Agreements: Reading the Fine Print</title>
+      <p>
+        A credit card agreement describes the policies and rates which apply to the account. It should contain a table summarizing the interest rates and fees. An example is provided below.
+      </p>
+      
+        <figure xml:id="Credit_card_rates_table">
+          <caption>Sample excerpt from a credit card account agreement. A <url href="external/Sample-Credit-Card-Fine-Print-Accessible.docx">screenreader accessible version</url> is available.</caption>
+        
+        <image source="images/Credit_card_rates_table.png"><shortdescription> Use the link in the caption for a screenreader accessible version of the table in a Microsoft Word document.</shortdescription></image>
+        
+      </figure>
+    <p>
+      The For consumers who routinely pay the whole statement balance each month, the APR is of little importance.
+    </p>
+    </subsection>
+
     <subsection xml:id="subsec-finance-credit-cards-whatis" xmlns:xi="http://www.w3.org/2001/XInclude">
       <title>What is a Credit Card?</title>
       <p>
@@ -104,10 +120,13 @@
    
   </assemblage>
     <p>
-      A <em>finance charge</em> is the interest charged on the amount owed. It is calculated as the simple interest on the balance on the account. However, there are several ways this can be done. Most credit card accounts use either the daily balance and apply finance charges daily or they use the average daily balance and apply finance charges monthly. Each credit card agreement will indicate which method is used.
+      A <em>finance charge</em> is the interest charged on the amount owed. It is calculated as the simple interest on the balance on the account. However, there are several ways this can be done. Most credit card accounts use either the average daily balance and apply finance charges monthly or they use the the daily balance and apply finance charges daily. Each credit card agreement will indicate which method is used.
      </p>
   
     <example xml:id="ex-credit-card-adb">
+      <title>Average Daily Balance Method With Time Measured in Days</title>
+      
+      
       <statement>
         <p>
           A credit card billing period runs from January 23 to February 22. The previous balance is $1,234 and the transactions are listed below.
@@ -146,10 +165,8 @@
           </row>
         </tabular>
         <p>
-          Suppose this credit card uses the average daily balance method and charges an annual interest rate of 19.9%. Find the ending balance, the average daily balance, the finance charge, and the total balance after the finance charge is applied. For calculating the finance charge, this account measures time in days.
+          Suppose this credit card uses the average daily balance method and charges an annual interest rate of 19.6%. We will find the ending balance, the average daily balance, the finance charge, and the total balance after the finance charge is applied. For calculating the finance charge, this account measures time in days.
         </p>
-      </statement>
-      <solution>
         <p>
           To find the <em>ending balance</em>, starting with the previous balance, we add the charges and subtract the credits.
           <me>
@@ -173,39 +190,55 @@
           Alternatively, a spreadsheet can be used.
         </p>
         <p>
-          The <em>finance charge</em> is 31 days simple interest on the average daily balance at 19.9%.
+          The <em>finance charge</em> is 31 days simple interest on the average daily balance at 19.6%.
+          <md>
+            <mrow>I \amp= Prt </mrow>
+            <mrow> I\amp=649.55(0.196)\left(\frac{31}{365}\right) </mrow>
+            <mrow>I \amp\approx 10.81 </mrow>
+          </md>
+          Therefore, the finance charge will be $10.98.
         </p>
-      </solution>
+        <p>
+          Alternatively, the annual percentage rate (APR) of 19.6% can be converted to a daily rate of <m>\frac{19.6\%}{365}</m> and multiplied by the number of days. The resulting finance charge calculation results in the same value: 
+          <md>
+            <mrow> I\amp =P\left(\text{Daily Rate}\right)\left(\text{Number of days}\right)</mrow>
+            <mrow>I \amp= 649.55\left(\frac{0.196}{365}\right)\left(31\right)</mrow>
+            <mrow>I \amp\approx 10.81 </mrow>
+          </md>
+  
+          
+        </p>
+        <p>
+          To find the total amount owed, we add the ending balance and the finance charge to obtain <m>386+10.81=$396.81</m>.
+        </p>
+      </statement>
     </example>
   </subsection>
 
-
-
-  <assemblage xml:id="assemblage-residual-interest">
-    <title>Residual Interest Alert</title>
-    <p>
-    After a consumer fails to pay the entire statement balance on a credit card and a finance charge has been applied, many credit card accounts transition to accumulating interest charges on a daily basis. This type of finance charge is called <term>residual interest</term> or <term>trailing interest</term>. Some credit card accounts use this method exclusively to calculate finance charges.
-    </p>
-    <p>
-      Residual interest calculations are addressed in <xref ref="sec-finance-compound-interest" />
-    </p>
-  </assemblage>
-
-  
-   <subsection xml:id="finance-credit-fine-print"  xmlns:xi="http://www.w3.org/2001/XInclude"> 
-  <title>Credit Card Agreements: Reading the Fine Print</title>
-  <p>
-    A credit card agreement describes the policies and rates which apply to the account. It should contain a table summarizing the interest rates and fees. An example is provided below.
-  </p>
-  
-    <figure xml:id="Credit_card_rates_table">
-      <caption>Sample excerpt from a credit card account agreement. A <url href="external/Sample-Credit-Card-Fine-Print-Accessible.docx">screenreader accessible version</url> is available.</caption>
-    
-    <image source="images/Credit_card_rates_table.png"><shortdescription> Use the link in the caption for a screenreader accessible version of the table in a Microsoft Word document.</shortdescription></image>
-    
-  </figure>
-<p>
-  The For consumers who routinely pay the whole statement balance each month, the APR is of little importance.
-</p>
-</subsection>
+<exercises xml:id="exercises-finance-creditcards">
+  <exercise>
+    <statement>
+      <p>
+        In general, how can credit-card users avoid finance charges?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Credit card users can avoid finance charges by routinely paying their entire balance by the due date. 
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        What are the two most commonly used methods of calculating balances that will be used for finance charges?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The two most common methods are the daily balance method and the average daily balance method.
+      </p>
+    </solution>
+  </exercise>
+</exercises>  
 </section>
