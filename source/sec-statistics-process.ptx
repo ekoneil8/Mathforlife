@@ -28,7 +28,7 @@
 			</li>
 			<li>
 				<p>
-					Distinguish between experimental and observational studies
+					Distinguish between experimental, quasi-experimental, and observational studies
 				</p>
 			</li>
 			<li>
@@ -393,12 +393,15 @@
 	<p>
 		So far, we have primarily discussed surveys and polls, which are types of <alert>observational studies</alert> – studies based on observations or measurements. These observations may be solicited, like in a survey or poll. Or, they may be unsolicited, such as studying the percentage of cars that turn right at a red light even when there is a <q>no turn on red</q> sign.
 	</p>
+	<p>
+		As a general rule, there is no impactful change or intervention involved in an observational study. So a study that compares the pass rates of all the sections of Math in Society at a given college for three quarters is observational. However, a study that compares the pass rates of all sections of Math in Society before and after switching to a new textbook would not be observational because it is testing for differences that might be due to the intervention of using a different book. (It would be quasi-experimental, which is described later in this section.)
+	</p>
 </subsection>
 
 <subsection>
 	<title>Experiments</title>
 	<p>
-		In contrast, it is common to use <alert>experiments</alert> when exploring how subjects react to an outside influence. In an experiment, some kind of <alert>treatment</alert> is applied to the subjects and the results are measured and recorded. When conducting experiments, it is essential to isolate the treatment being tested. Here are some examples of treatments.
+		In contrast, it is common to use <alert>experiments</alert> when exploring how subjects react to an outside influence. In an experiment, some kind of <alert>treatment</alert> is applied to the subjects and the results are measured and recorded. When conducting experiments, it is essential to isolate the treatment being tested, meaning that there must be both a treatment group that receives the treatment and a control group that does not recieve the treatment so that the results can be compared. Assignment to the treatment group and the control group must be random. Here are some examples of treatments.
 	</p>
 	<example>
 		<p>
@@ -429,6 +432,31 @@
 			</ol>
 		</p>
 	</example>
+</subsection>
+<subsection>
+	<title>Quasi-Experiments</title>
+	<p>
+		A <alert>quasi-experiment</alert> is a study intended to assess the effects of a treatment or intervention but does not have random assignment to the treatment and control groups. There are three main types of quasi-experimental studies:
+		<ul>
+			<li>
+				<p>
+					<alert>Pre-post intervention study:</alert> data are gathered before and after an intervention is applied. This is commonly used in medicine and education. For example, a psychologist may ask patients to assess their sense of self-worth before and after undergoing talk therapy. A form of pre-post intervention study design in which data is gathered multiple times before and after the intervention is often referred to as <em>interrupted time series</em> design.
+				</p>
+			</li>
+			<li>
+				<p>
+					<alert>Nonequivalent groups:</alert> a treatment or intervention is applied to a control group that is not randomly selected or may have additional differences beyond the intervention being studied. For example, a college that offers four sections of a class may assign a teaching assistant to two of the sections to determine if students learn better with a teaching assistant in the class. Since students were not randomly assigned to the class, they may not be representative of the same student populations. Further, if the sections have different instructors with different teaching styles, there will be additional differences in the experinces for the students. 
+				</p>
+			</li>
+			<li>
+				<p>
+					<alert>Natural experiment:</alert> a natural experiment occurs when a researcher studies the impacts of an intervention that was not made or done by the researcher. For example, if a state enacts new stricter gun laws, researchers can study violent crime rates before and after the laws are enacted. They also might compare these rates with those of other states that did not enact similar laws.
+				</p>
+			</li>
+		</ul>
+			
+		
+	</p>
 </subsection>
 
 <subsection>
