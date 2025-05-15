@@ -215,7 +215,7 @@
             Imagine the data values on a see-saw or balance scale. The mean is the value at the tip of the triangle that keeps the data in balance, like in the picture below.
         </p>
         <sidebyside width="60%">
-            <image source="images/statistics/3_3/mean3.png">
+            <image source="images/mean3.png">
             <shortdescription>A drawing of a see-saw with rectangles to indicate the data values. Most of the data values are to the left of the fulcrum; the two values to the right are spread out which causes the data to be balanced.</shortdescription>
             </image>
         </sidebyside>
@@ -224,7 +224,7 @@
             If we graph our household data, the $5 million value is so far out to the right that the mean has to adjust to keep things in balance.
         </p>
         <sidebyside width="60%">
-            <image source="images/statistics/3_3/mean4.png">
+            <image source="images/mean4.png">
             <shortdescription>With the outlier data value added, the see-saw is extended with that value far to the right. Now all of the original data values are to the left of the fulcrum.</shortdescription>
             </image>
         </sidebyside>
@@ -352,7 +352,7 @@
                 <cd>=MEDIAN(A1:AK)</cd>
             </p>
             <sidebyside width="50%">
-                <image source="images/statistics/3_3/median1.png">
+                <image source="images/median1.png">
                 <shortdescription>A screenshot of Excel showing the =MEDIAN formula typed in with the cell references. The data is in row 1</shortdescription>
                 </image>
             </sidebyside>
@@ -405,7 +405,7 @@
         </p>
         
         <sidebyside width="50%">
-            <image source="images/statistics/3_3/median2.png">
+            <image source="images/median2.png">
             <shortdescription>A screenshot of Excel showing the =MEDIAN formula with all the data values typed in.</shortdescription>
             </image>
         </sidebyside>
@@ -436,7 +436,7 @@
             </p>
             <figure>
                 <caption>Mean <m>=\$67,160</m>, Median <m>=\$53,500</m>, Mean <m>\gt</m> Median</caption>
-                <image width="50%" source="images/statistics/3_3/mean_vs_median1.png">
+                <image width="50%" source="images/mean_vs_median1.png">
                 <shortdescription>A screenshot of GeoGebra showing the histogram is skewed to the right. The statistics output shows the mean is $67,160 and the Median is $53,500.</shortdescription>
                 </image>
             </figure>
@@ -452,7 +452,7 @@
     
             <figure>
                 <caption>Mean <m>=81.7</m> points, Median <m>=87.5</m> points, Mean <m>\lt</m> Median</caption>
-                <image width="50%" source="images/statistics/3_3/mean_vs_median2.png">
+                <image width="50%" source="images/mean_vs_median2.png">
                 <shortdescription>A screenshot of GeoGebra showing the histogram is skewed to the left. The statistics output shows the mean is 81.7 points and the Median is 87.5 points.</shortdescription>
                 </image>
             </figure>
@@ -467,7 +467,7 @@
             </p>
             <figure>
                 <caption>Mean <m>=62.6</m> inches, Median <m>=62</m> inches Mean <m>\approx</m> Median</caption>
-                <image width="50%" source="images/statistics/3_3/mean_vs_median3.png">
+                <image width="50%" source="images/mean_vs_median3.png">
                 <shortdescription>A screenshot of GeoGebra showing the histogram is approximately symmetric. The statistics output shows the mean is 62.6 inches and the Median is 62 inches.</shortdescription>
                 </image>
             </figure>
@@ -1499,18 +1499,18 @@
                     <li>
                         <figure>
                         <caption>Histogram for Average Number of Pieces Correctly Remembered by Non-players</caption>
-                        <image width="50%" source="images/statistics/3_3/solution_chess_nonplayer.png"></image>
+                        <image width="50%" source="images/solution_chess_nonplayer.png"></image>
                         </figure>
     
                         <figure>
                         <caption>Histogram for Average Number of Pieces Correctly Remembered by Beginners</caption>
-                        <image width="50%" source="images/statistics/3_3/solution_chess_beginner.png">
+                        <image width="50%" source="images/solution_chess_beginner.png">
                         </image>
                         </figure>
     
                         <figure>
                         <caption>Histogram for Average Number of Pieces Correctly Remembered by Tournament Players</caption>
-                        <image width="50%" source="images/statistics/3_3/solution_chess_tourney_player.png">
+                        <image width="50%" source="images/solution_chess_tourney_player.png">
                         </image>
                         </figure>
                     </li>
@@ -1795,24 +1795,24 @@
                     <li>
                         <figure>
                         <caption>Histogram for Smile-Leniency of False Smiles</caption>
-                        <image width="50%" source="images/statistics/3_3/solution_false_smile.png"></image>
+                        <image width="50%" source="images/solution_false_smile.png"></image>
                         </figure>
     
                         <figure>
                         <caption>Histogram for Smile-Leniency of Felt Smiless</caption>
-                        <image width="50%" source="images/statistics/3_3/solution_felt_smile.png">
+                        <image width="50%" source="images/solution_felt_smile.png">
                         </image>
                         </figure>
     
                         <figure>
                         <caption>Histogram for Smile-Leniency of Miserable Smiles</caption>
-                        <image width="50%" source="images/statistics/3_3/solution_miserable_smile.png">
+                        <image width="50%" source="images/solution_miserable_smile.png">
                         </image>
                         </figure>
     
                         <figure>
                         <caption>Histogram for Smile-Leniency of Neutral Control Group</caption>
-                        <image width="50%" source="images/statistics/3_3/solution_control_smile.png">
+                        <image width="50%" source="images/solution_control_smile.png">
                         </image>
                         </figure>
                     </li>
@@ -2034,7 +2034,7 @@
             At the end of the term, 400 students take a final exam, and their scores (as percentages) are plotted in a histogram.<fn>Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<url href="https://www.openintro.org/stat/textbook.php?stat_book=aps" visual="openintro.org/stat/textbook.php?stat_book=aps"/>)</fn>
         </p>
         <sidebyside width="50%">
-            <image source="images/statistics/3_3/400_exams.png">
+            <image source="images/400_exams.png">
                 <shortdescription>The bars gradually increase going to the right with the tallest bars near the right side of the graph, then they decrease sharply.</shortdescription>
             </image>
         </sidebyside>
@@ -2077,7 +2077,7 @@
             The following graph shows the distribution of yearly incomes of 40 patrons at a college coffee shop.<fn>Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<url href="https://www.openintro.org/stat/textbook.php?stat_book=aps" visual="openintro.org/stat/textbook.php?stat_book=aps"/>)</fn>
         </p>
         <sidebyside width="50%">
-            <image source="images/statistics/3_3/40_coffee.png">
+            <image source="images/40_coffee.png">
                 <shortdescription>The bars on the histogram increase gradually with the tallest bars in the center, then decrease gradually.</shortdescription>
             </image>
         </sidebyside>
