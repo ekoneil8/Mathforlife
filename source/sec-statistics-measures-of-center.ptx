@@ -99,7 +99,7 @@
             </p>
             
             <sidebyside width="50%">
-                <image source="images/statistics/3_3/mean1.png">
+                <image source="images/mean1.png">
                 <shortdescription>A screenshot of Excel showing the =AVERAGE formula typed in with the values.</shortdescription>
                 </image>
             </sidebyside>
@@ -114,7 +114,7 @@
                 <cd>=AVERAGE(A1:A5)</cd>
             </p>
             <sidebyside width="50%">
-                <image source="images/statistics/3_3/mean2.png">
+                <image source="images/mean2.png">
                 <shortdescription>A screenshot of Excel showing the =AVERAGE formula typed in with the cell references. The data is in column A</shortdescription>
                 </image>
             </sidebyside>
