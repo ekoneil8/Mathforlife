@@ -2,6 +2,7 @@
 
 <section xml:id="sec-statistics-measures-of-center" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Summary Statistics: Measures of Center</title>
+    <introduction>
         <p>
             In addition to graphical and verbal descriptions, we can use numbers to summarize quantitative distributions. We want to know what an <q>average</q> value is (where the data is centered), and how spread out the values are. Together, the center and spread provide important information which can be used to estimate our population parameters. In this section we will discuss the measures of center and in the next section we will discuss the measures of spread.
         </p>
@@ -43,6 +44,18 @@
         <p>
             In the previous section, we saw that the modes are related to the peaks where similar values are grouped. The mode is the value with the highest frequency (A mode is the value where a peak occurs. One additional way to calculate the mode(s) is to take the midpoint of each peak in the histogram.)
         </p>
+        <example>
+            <statement>
+                <p>
+                    The first ten ratings (from 1 to five stars) on a blender available at an online store are as follows: 5, 4, 5, 5, 3, 1, 1, 2, 5, 5. Find and interpret the mode.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The rating 1 occurs twice, 2 occurs once, 3 occurs once, 4 occurs once, and 5 occurs five times. Since 5 occurs the most times, <em>the mode is 5</em>. This means that the most common rating is 5 stars.
+                </p>
+            </solution>
+        </example>
     </subsection>
     
     <subsection>
