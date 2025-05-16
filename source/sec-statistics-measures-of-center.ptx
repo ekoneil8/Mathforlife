@@ -2,7 +2,10 @@
 
 <section xml:id="sec-statistics-measures-of-center" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Summary Statistics: Measures of Center</title>
-
+        <p>
+            In addition to graphical and verbal descriptions, we can use numbers to summarize quantitative distributions. We want to know what an <q>average</q> value is (where the data is centered), and how spread out the values are. Together, the center and spread provide important information which can be used to estimate our population parameters. In this section we will discuss the measures of center and in the next section we will discuss the measures of spread.
+        </p>
+    </introduction>
     <objectives>
         <introduction>
             <p>
@@ -12,30 +15,22 @@
             <ul>
                 <li>
                     <p>
-                        Calculate and describe the measures of center: mean and median
+                        Calculate the mean, median, and mode of data organized in lists and frequency tables.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Analyze the relationship of the mean and median to the shape of the data
+                        Analyze the relationship of the mean and median to the shape of the data.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Interpret mean, median, and mode in context.
                     </p>
                 </li>
             </ul>
     </objectives>
-    
-    <introduction>
-       <p>
-        Introduction text goes here.
-       </p>
-    </introduction>
-    
-    <subsection>
-    <title>Calculating Summary Statistics</title>
-        <p>
-            In addition to graphical and verbal descriptions, we can use numbers to summarize quantitative distributions. We want to know what an <q>average</q> value is (where the data is centered), and how spread out the values are. Together, the center and spread provide important information which can be used to estimate our population parameters. In this section we will discuss the measures of center and in the next section we will discuss the measures of spread.
-        </p>
-    </subsection>
-    
+        
     <subsection>
     <title>Measures of Center</title>
         <p>
@@ -178,7 +173,7 @@
                 </md>
             </p>
             <p>
-                We could calculate this more easily by noticing that adding 15 to itself six times is the same as <m>(15)(6)=90</m>. Using this simplification, we get
+                We can calculate this more easily by noticing that adding 15 to itself six times is the same as <m>(15)(6)=90</m>. Using this simplification, we get
             </p>
             <p>
                 <md>
