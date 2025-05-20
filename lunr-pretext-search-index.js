@@ -1618,16 +1618,250 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Compound Interest",
-  "body": " Compound Interest     About Rounding  When completing the table above, we rounded each interest amount to the nearest cent and used the rounded value in subsequent calculations. This is how banking institutions calculate and apply or charge interest.  In this section, we will develop and use a formula to calculate future value in one step without making a table. Using this formula bypasses the intermediate rounding steps and can result in values that may be slightly different from the correct value. Don't worry: the results typically are off by a few cents at most, so using the formula provides a highly efficient way to make long-term predictions.  Since banks use mathematical formulas to calculate loan payments, these small differences affect us in \"real life\", too! If you or someone you know is paying off a loan, the bank may have adjusted the payment size by a few cents to account for rounding.   "
+  "body": " Compound Interest     Introduction to Compound Interest  In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest. This reinvestment of interest is called compounding . We will develop the mathematical formula for compound interest and then show the equivalent spreadsheet function.  Suppose that we deposit $1000 in a bank account offering 3% interest, compounded monthly. How will our money grow?  The 3% interest is an annual percentage rate (APR) – the total interest to be paid during the year. Since interest is being paid monthly, each month, we will earn per month.  In the first month,     In the first month, we will earn $2.50 in interest, raising our account balance to $1002.50.  In the second month,     Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original $1000 we deposited, but we also earned interest on the $2.50 of interest we earned the first month. This is the key advantage that compounding gives us.  Calculating out a few more months in a table or a spreadsheet we have:    Month  Starting balance  Interest earned  Ending Balance    1  1000.00  2.50  1002.50    2  1002.50  2.51  1005.01    3  1005.01  2.51  1007.52    4  1007.52  2.52  1010.04    5  1010.04  2.53  1012.57    6  1012.57  2.53  1015.10    7  1015.10  2.54  1017.64    8  1017.64  2.54  1020.18    9  1020.18  2.55  1022.73    10  1022.73  2.56  1025.29    11  1025.29  2.56  1027.85    12  1027.85  2.56  1030.42     About Rounding  When completing the table above, we rounded each interest amount to the nearest cent and used the rounded value in subsequent calculations. This is how banking institutions calculate and apply or charge interest.  Next in this section, we will develop and use a formula to calculate future value in one step without making a table. Using this formula bypasses the intermediate rounding steps and can result in values that may be slightly different from the correct value. Don't worry: the results typically are off by a few cents at most, so using the formula provides a highly efficient way to make long-term predictions.  Since banks use mathematical formulas to calculate loan payments, these small differences affect us in \"real life\", too! If you or someone you know is paying off a loan, the bank may have adjusted the payment size by a few cents to account for rounding.   To find an equation to calculate future balances more efficiently, we will go through a few months to see the pattern:  Initial Amount:               Observing a pattern, we could conclude     If we wanted to calculate the balance after 15 years, we observe that 15 years is equal to months. This results in   Notice that the $1000 in the equation was P, the starting amount. We found 1.0025 by adding one to the interest rate divided by 12, since we were compounding 12 times per year. This approach is generalized to the formula that follows.   Compound Interest        A  is the future value balance in the account after years    P  is the principal or present value    r  is the annual interest rate in decimal form    n  is the number of compounding periods in one year    t  is the number of years     Note that the exponent is equal to the total number of periods.   If the compounding is done annually (once a year), .  If the compounding is done quarterly, .  If the compounding is done monthly, .  If the compounding is done weekly, .  If the compounding is done daily, .  The most important thing to remember about using this formula is that it assumes that we put money in the account once and let it sit there earning interest.    Applications of the Compound Interest Formula   Finding a Future Value   A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?   , the initial deposit   , 6% annual rate   , 12 months in 1 year   , since we're looking for how much we'll have after 20 years     Therefore, we will end up with approximately $9,930.61 after 20 years.    The calculation in the example above also can be done using the future value formula on a spreadsheet. The format is as follows: =FV(rate per period, number of periods, payment amount, present value) where the rate per period is , the number of periods is , and the present value is the principal . In this section, we only deal with one-time investments, so the payment amount will be $0.  In the exercise, we would type =FV(0.06\/12, 12*20, 0, 3000)   and get a result of $9,930.61, rounded to the nearest cent.    Comparing Simple and Compound Interest  Let us compare the amount of money earned from compounding in the previous example against the amount you would earn from simple interest. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. You may recognize this as the difference between linear growth and exponential growth.      Year  Simple Interest ($15 per month)  Compound Interest (6% compounded monthly or 0.5% each month    0  $3,000  $3,000    5  $3,900  $4,046.55    10  $4,800  $5,458.19    15  $5,700  $7,362.28    20  $6,600  $9,930.61    25  $7,500  $13,394.91    30  $8,400  $18,067.73    35  $9,300  $24,370.65     A coordinate graph with years on the x-axis and account balance on the y-axis. The simple interest increases in a straight line; the compound interest curves up faster because it is an exponential function.      Finding the Principal, or Present Value  When we know the amount of money we want to have in the future, we can use the formula that is solved for P . It requires a little algebra to divide both sides of the formula by the quantity that was multiplied by P . There is also a spreadsheet formula which we will introduce now, and then do an example using both methods.    The Present Value Spreadsheet Formula  The present value spreadsheet formula will calculate how much you need to deposit in the present to get a specified future value.   Present Value Spreadsheet Formula   =PV(rate per period, number of periods, payment amount, future value)      rate per period  is the interest rate per compounding period,     number of periods  is the total number of periods,     payment amount  is the amount of regular payments. If none, enter     future value  is the amount desired in the future,         You know that you will need $40,000 for your child's education in 18 years. If your account earns 4% APR compounded quarterly, how much would you need to deposit now to reach your goal?    We are looking for what we need to deposit now so we will use the present value formula. We type the formula and inputs the same way we used the future value formula.   =PV(rate per period, number of periods, payment amount, future value)    =PV(0.04\/4, 4*18, 0, 40000)   which gives a value of $19,539.84. You would need to deposit $19,539.84 now and keep the same interest rate to have $40,000 in 18 years.    An image of the spreadsheet showing the formula used and the result.    Note that we cannot enter commas in numbers in a spreadsheet. Commas are used to separate the input values, so we would not get the same answer if we put in $40,000 for an input.  To use the mathematical formula, we use the one that is solved for P .   , 4% APR   , 4 quarters in 1 year   , since we know the balance in 18 years   , the amount we have in 18 years  In this case, we're going to have to set up the equation, and solve for P.     You would need to deposit $19,539.84 now to have $40,000 in 18 years.      Continuously Compounded Interest  In many bank accounts your interest is compounded continuously, or at each moment in time. The number of times per year, n, is infinite. As n approaches infinity the compound interest formula changes to the continuously compounded interest formula.   Continuously Compounded Interest        A  is the future value or desired balance in the account    P  is the principal or present value    r  is the annual interest rate in decimal form    t  is the number of years    e  is an irrational number that is approximately 2.718281828… Find on your calculator to use this formula     To calculate this on a spreadsheet we use the =EXP function. The spreadsheet formulas are   =Principal*EXP(r*t) or =A\/EXP(r*t)      You deposit $4000 in an account that earns 2.75% APR compounded continuously. How much will you have after 7 years? How much interest did you earn? What percentage of the final balance is interest?      To use a spreadsheet, we look at the formula solved for A, the future value. We enter   =4000*EXP(0.0275*7)   and get a result of $4,849.11.    An image of the spreadsheet showing the formula used and the result.    To use the formula, we have:      , amount invested   , interest rate   , number of years     After 7 years your account would be worth $4,849.11. Next, we will calculate the amount of interest earned and the percentage.      Finding the Amount of Interest Earned and the Percentage  In the previous example we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $4,849.11. Now to figure out how much of that was interest, we need to subtract the amount initially deposited.   Continued: To find the total amount of interest earned, we subtract the principal from the total balance.     The spreadsheet calculation is   =4849.11-4000   which gives a result of $849.11. You would earn $849.11 in interest.  To find the percentage that is interest, divide the amount of interest by the total amount.     The spreadsheet calculation is the same:   =849.11\/4849.11   which is 0.1751 or 17.5%. This tells us that after 7 years, 17.5% of the account was earned as interest.     Effective Rate  If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it's hard to know which account will give the better result. There is a spreadsheet formula called =EFFECT which will allow us to compare accounts. This is also sometimes called the annual percentage yield, or APY.   Effective Rate Formula   =EFFECT(stated rate, number of compounding periods)      stated rate  is the interest rate given (APR)    number of compounding periods  is the number of times the account is compounded per year,         You are comparing an account that pays 5.25% APR compounded monthly, with an account that pays 5% APR compounded daily. Which account will earn you more interest?    It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.  For the 5.25% APR account compounded monthly:     =EFFECT(0.0525,12)   which gives 0.05378 or 5.38%    An image of the spreadsheet showing the formula used and the result.    For the 5% APR account compounded daily:     =EFFECT(0.05,365)   which gives 0.05127 or 5.13%    An image of the spreadsheet showing the formula used and the result.    Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.      Find the effective rates to compare an account that earns 6% APR compounded quarterly with an account that earns 5.975% APR compounded daily. Which one would you choose?    Using the effective rate formula for each, we have:  For the 6% APR account compounded quarterly:     =EFFECT(0.06,4)   which gives 0.06136 or 6.14%    An image of the spreadsheet showing the formula used and the result.    For the 5.975% APR account compounded daily:     =EFFECT(0.05975,365)   which gives 0.06157 or 6.16%    An image of the spreadsheet showing the formula used and the result.    The account that was compounded more often has a slightly higher rate in this case.      Exercises   A friend lends you $200 for a week, which you agree to repay with 5% one-time interest. How much will you have to repay?      You will have to repay $210.    You loan your friend $100. They agree to pay an annual interest rate of 3%, simple interest. Six months later they repay that loan.   How much did they pay you?    How much was interest?                    They paid $101.50 total, $1.50 was interest.    Consider a simple interest loan of $200 with an annual interest rate of 6%. If that loan is paid off 1 year and 3 months later, how much was repaid?      $215 was repaid.    You deposit $1,000 in an account that earns simple interest. The annual interest rate is 2.5%.     How much interest will you earn in 5 years?    How much will you have in the account in 5 years?                  The interest earned was $125. This brings the account balance to $1,125.    Consider an investment of $20000 with an annual interest rate of 5%.   If that investment is earning simple interest, how much will the investment be worth in 10 years?    If that investment is getting annually compounding interest, how much will the investment be worth in 10 years?                    The simple interest account would be worth $30,000 and the account that was compounding would be worth $32,577.89 in ten years.    Nico invests $4,500 into an account that has an annual interest rate of 8.5%. The interest is compounding monthly. Twenty years later what is the account balance?      The account balance is $24,485.59 in 20 years.  Or, =FV(0.085\/12,12*20,0,4500)     How much will $1,000 deposited in an account earning 7% APR compounded weekly be worth in 20 years?      The account balance is $4,051.38 in 20 years.  Or, =FV(0.07\/52,52*20,0,1000)     Suppose you obtain a $3,000 Certificate of Deposit (CD) with a 3% APR, paid quarterly, with maturity in 5 years.     What is the future value of the CD in 5 years?    How much interest will you earn?    What percent of the balance is interest?            The future value is $3,483.55.  Or, =FV(0.03\/4,4*5,0,3000)        The interest earned is $483.54.       13.88% of the balance is interest.       You deposit $300 in an account earning 5% APR compounded annually. How much will you have in the account in 10 years?     How much will you have in the account in 10 years?    How much interest will you earn?    What percent of the balance is interest?            There will be $488.67 in the account in 10 years.  Or, =FV(0.05\/1,1*10,0,300)        $188.67 of the balance will be interest.       The interest makes up 38.61% of the balance.       You deposit $2,000 in an account earning 3% APR compounded monthly.     How much will you have in the account in 20 years?    How much interest will you earn?    What percent of the balance is interest?    What percent of the balance is the principal?            The account will have $3,641.51 in 20 years  Or, =FV(0.03\/12,12*20,0,2000)        The interest will be $1,641.51.       The interest is 45.08% of the balance.       The principal is 54.92% of the balance.       You deposit $10,000 in an account earning 4% APR compounded weekly.     How much will you have in the account in 25 years?    How much interest will you earn?    What percent of the balance is interest?    What percent of the balance is the principal?            The balance is $27,172.37.  Or, =FV(0.04\/52,52*25,0,10000)        The interest is $17,172.37.       The percent that is interest is 63.2%.       The percentage that is the principal is 36.2%.       How much would you need to deposit in an account now in order to have $6,000 in the account in 8 years? Assume the account earns 6% APR compounded monthly.      The principal required would be $3,717.14  Or, =PV(0.06\/12,12*8,0,6000)     How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% APR compounded quarterly.      The principal required would be $16,394.79  Or, =PV(0.05\/4,4*4,0,20000)     Breylan invests $1,200 in an account that earns 4.6% APR compounded quarterly and Angad invests the same amount in an account that earns 4.55% APR compounded weekly.     What will their balances be after 15 years?    What will their balances be after 30 years?    What is the effective rate for each account?            Or, =FV(0.046\/52,15*52,0,1200)      Or, =FV(0.0455\/52,15*52,0,1200)   Breylan has an account balance of $2,391.73 and Angad has a balance of $2,373.87       Or, =FV(0.046,52,30*52,0,1200)      Or, =FV(0.0455\/52,30*52,0,1200)   Breylan has an account balance of $4,766.97 and Angad has a balance of $4,696.06    Breylan =EFFECT(0.046,52) , which gives 4.71%  Angad =EFFECT(0.0455,52) , which gives 4.65%  Breylan has an effective rate of 4.71% and Angad has an effective rate of 4.65%.       Bill invests $6,700 in a savings account that compounds interest monthly at 3.75% APR. Ted invests $6,500 in a savings account that compound interest annually at 3.8% APR.     Find the effective rate for each account.    Who will have the higher accumulated balance after 5 years?         Bill =EFFECT(0.0375,12)  and Ted =EFFECT(0.038,1) =3.8%. Bill has an effective rate of 3.82% and Ted has a rate of 3.8%.       Or, =FV(0.0375\/12,5*12,0,6700)      Or, =FV(0.038,5,0,6500)   The account balances are $8,079.38 and $7,832.49. So, Bill's balance is higher.       Bassel is comparing two accounts where one pays 3.45% APR quarterly and the second pays 3.4% APR daily.     What is the effect rate for each?    If he has $5,000 to deposit how much will the balance be in 10 years?          =EFFECT(0.0345,4) = 3.49% and =EFFECT(0.034,365) = 3.46%. The effective rates are 3.49% and 3.46%.       Or, =FV(0.0345\/4,10*4,0,5000)      Or, =FV(0.034\/365,10*365,0,5000)   The account balances are $7,049.51 and $7,024.63.       You deposit $2,500 into an account earning 4% APR compounded continuously.     How much will you have in the account in 10 years?    How much total interest will you earn?    What percent of the balance is interest?            Or, 2500*EXP(0.04*10)   The account balance is $3,729.56.       The interest earned is $1,229.56.       32.97% of the balance is interest.       You deposit $1,000 into an account earning 5.75% APR compounded continuously.     How much will you have in the account in 15 years?    How much total interest will you earn?    What percent of the balance is interest?            Or, =1000*EXP(0.0575*15)   The account balance is $2,369.08       The interest earned is $1,368.08       The interest is 57.77% of the account balance.       You deposit $5,000 in an account earning 4.5% APR compounded continuously.     How much will you have in the account in 5 years?    How much total interest will you earn?    What percent of the balance is interest?            Or, =5000*EXP(0.045*5)   The account balance is $6,261.61.       The interest earned is $1,261.61       The interest is 20.15% of the balance.       You deposit $10,000 in an account that earns 5.5% APR compounded continuously and your friend deposits $10,000 in an account that earns 5.5% APR compounded annually.     How much more will you have in the account in 10 years?    How much more interest did you earn in the 10 years?            Or, =10000*EXP(0.055*10)      Or, =FV(0.055,10,0,10000)   Your balance is $17,332.53 and your friend's balance is $17,081.44.    The difference is:   You have $251.09 more than your friend.       "
 },
 {
-  "id": "sec-finance-compound-interest-3",
+  "id": "sec-finance-compound-interest-3-13",
   "level": "2",
-  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-3",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-3-13",
   "type": "Note",
   "number": "3.4.1",
   "title": "About Rounding.",
-  "body": " About Rounding  When completing the table above, we rounded each interest amount to the nearest cent and used the rounded value in subsequent calculations. This is how banking institutions calculate and apply or charge interest.  In this section, we will develop and use a formula to calculate future value in one step without making a table. Using this formula bypasses the intermediate rounding steps and can result in values that may be slightly different from the correct value. Don't worry: the results typically are off by a few cents at most, so using the formula provides a highly efficient way to make long-term predictions.  Since banks use mathematical formulas to calculate loan payments, these small differences affect us in \"real life\", too! If you or someone you know is paying off a loan, the bank may have adjusted the payment size by a few cents to account for rounding.  "
+  "body": " About Rounding  When completing the table above, we rounded each interest amount to the nearest cent and used the rounded value in subsequent calculations. This is how banking institutions calculate and apply or charge interest.  Next in this section, we will develop and use a formula to calculate future value in one step without making a table. Using this formula bypasses the intermediate rounding steps and can result in values that may be slightly different from the correct value. Don't worry: the results typically are off by a few cents at most, so using the formula provides a highly efficient way to make long-term predictions.  Since banks use mathematical formulas to calculate loan payments, these small differences affect us in \"real life\", too! If you or someone you know is paying off a loan, the bank may have adjusted the payment size by a few cents to account for rounding.  "
+},
+{
+  "id": "sec-finance-compound-interest-4-2",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-4-2",
+  "type": "Example",
+  "number": "3.4.2",
+  "title": "Finding a Future Value.",
+  "body": " Finding a Future Value   A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?   , the initial deposit   , 6% annual rate   , 12 months in 1 year   , since we're looking for how much we'll have after 20 years     Therefore, we will end up with approximately $9,930.61 after 20 years.   "
+},
+{
+  "id": "sec-finance-compound-interest-7-4",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-7-4",
+  "type": "Example",
+  "number": "3.4.3",
+  "title": "",
+  "body": "  You know that you will need $40,000 for your child's education in 18 years. If your account earns 4% APR compounded quarterly, how much would you need to deposit now to reach your goal?    We are looking for what we need to deposit now so we will use the present value formula. We type the formula and inputs the same way we used the future value formula.   =PV(rate per period, number of periods, payment amount, future value)    =PV(0.04\/4, 4*18, 0, 40000)   which gives a value of $19,539.84. You would need to deposit $19,539.84 now and keep the same interest rate to have $40,000 in 18 years.    An image of the spreadsheet showing the formula used and the result.    Note that we cannot enter commas in numbers in a spreadsheet. Commas are used to separate the input values, so we would not get the same answer if we put in $40,000 for an input.  To use the mathematical formula, we use the one that is solved for P .   , 4% APR   , 4 quarters in 1 year   , since we know the balance in 18 years   , the amount we have in 18 years  In this case, we're going to have to set up the equation, and solve for P.     You would need to deposit $19,539.84 now to have $40,000 in 18 years.   "
+},
+{
+  "id": "sec-finance-compound-interest-8-4",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-8-4",
+  "type": "Example",
+  "number": "3.4.4",
+  "title": "",
+  "body": "  You deposit $4000 in an account that earns 2.75% APR compounded continuously. How much will you have after 7 years? How much interest did you earn? What percentage of the final balance is interest?      To use a spreadsheet, we look at the formula solved for A, the future value. We enter   =4000*EXP(0.0275*7)   and get a result of $4,849.11.    An image of the spreadsheet showing the formula used and the result.    To use the formula, we have:      , amount invested   , interest rate   , number of years     After 7 years your account would be worth $4,849.11. Next, we will calculate the amount of interest earned and the percentage.   "
+},
+{
+  "id": "sec-finance-compound-interest-9-3",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-9-3",
+  "type": "Example",
+  "number": "3.4.5",
+  "title": "",
+  "body": " Continued: To find the total amount of interest earned, we subtract the principal from the total balance.     The spreadsheet calculation is   =4849.11-4000   which gives a result of $849.11. You would earn $849.11 in interest.  To find the percentage that is interest, divide the amount of interest by the total amount.     The spreadsheet calculation is the same:   =849.11\/4849.11   which is 0.1751 or 17.5%. This tells us that after 7 years, 17.5% of the account was earned as interest.  "
+},
+{
+  "id": "sec-finance-compound-interest-10-4",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-10-4",
+  "type": "Example",
+  "number": "3.4.6",
+  "title": "",
+  "body": "  You are comparing an account that pays 5.25% APR compounded monthly, with an account that pays 5% APR compounded daily. Which account will earn you more interest?    It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.  For the 5.25% APR account compounded monthly:     =EFFECT(0.0525,12)   which gives 0.05378 or 5.38%    An image of the spreadsheet showing the formula used and the result.    For the 5% APR account compounded daily:     =EFFECT(0.05,365)   which gives 0.05127 or 5.13%    An image of the spreadsheet showing the formula used and the result.    Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.   "
+},
+{
+  "id": "sec-finance-compound-interest-10-5",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-10-5",
+  "type": "Example",
+  "number": "3.4.7",
+  "title": "",
+  "body": "  Find the effective rates to compare an account that earns 6% APR compounded quarterly with an account that earns 5.975% APR compounded daily. Which one would you choose?    Using the effective rate formula for each, we have:  For the 6% APR account compounded quarterly:     =EFFECT(0.06,4)   which gives 0.06136 or 6.14%    An image of the spreadsheet showing the formula used and the result.    For the 5.975% APR account compounded daily:     =EFFECT(0.05975,365)   which gives 0.06157 or 6.16%    An image of the spreadsheet showing the formula used and the result.    The account that was compounded more often has a slightly higher rate in this case.   "
+},
+{
+  "id": "sec-finance-compound-interest-11-2",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-2",
+  "type": "Exercise",
+  "number": "3.4.9.1",
+  "title": "",
+  "body": " A friend lends you $200 for a week, which you agree to repay with 5% one-time interest. How much will you have to repay?      You will have to repay $210.  "
+},
+{
+  "id": "sec-finance-compound-interest-11-3",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-3",
+  "type": "Exercise",
+  "number": "3.4.9.2",
+  "title": "",
+  "body": " You loan your friend $100. They agree to pay an annual interest rate of 3%, simple interest. Six months later they repay that loan.   How much did they pay you?    How much was interest?                    They paid $101.50 total, $1.50 was interest.  "
+},
+{
+  "id": "sec-finance-compound-interest-11-4",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-4",
+  "type": "Exercise",
+  "number": "3.4.9.3",
+  "title": "",
+  "body": " Consider a simple interest loan of $200 with an annual interest rate of 6%. If that loan is paid off 1 year and 3 months later, how much was repaid?      $215 was repaid.  "
+},
+{
+  "id": "sec-finance-compound-interest-11-5",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-5",
+  "type": "Exercise",
+  "number": "3.4.9.4",
+  "title": "",
+  "body": " You deposit $1,000 in an account that earns simple interest. The annual interest rate is 2.5%.     How much interest will you earn in 5 years?    How much will you have in the account in 5 years?                  The interest earned was $125. This brings the account balance to $1,125.  "
+},
+{
+  "id": "sec-finance-compound-interest-11-6",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-6",
+  "type": "Exercise",
+  "number": "3.4.9.5",
+  "title": "",
+  "body": " Consider an investment of $20000 with an annual interest rate of 5%.   If that investment is earning simple interest, how much will the investment be worth in 10 years?    If that investment is getting annually compounding interest, how much will the investment be worth in 10 years?                    The simple interest account would be worth $30,000 and the account that was compounding would be worth $32,577.89 in ten years.  "
+},
+{
+  "id": "sec-finance-compound-interest-11-7",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-7",
+  "type": "Exercise",
+  "number": "3.4.9.6",
+  "title": "",
+  "body": " Nico invests $4,500 into an account that has an annual interest rate of 8.5%. The interest is compounding monthly. Twenty years later what is the account balance?      The account balance is $24,485.59 in 20 years.  Or, =FV(0.085\/12,12*20,0,4500)   "
+},
+{
+  "id": "sec-finance-compound-interest-11-8",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-8",
+  "type": "Exercise",
+  "number": "3.4.9.7",
+  "title": "",
+  "body": " How much will $1,000 deposited in an account earning 7% APR compounded weekly be worth in 20 years?      The account balance is $4,051.38 in 20 years.  Or, =FV(0.07\/52,52*20,0,1000)   "
+},
+{
+  "id": "sec-finance-compound-interest-11-9",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-9",
+  "type": "Exercise",
+  "number": "3.4.9.8",
+  "title": "",
+  "body": " Suppose you obtain a $3,000 Certificate of Deposit (CD) with a 3% APR, paid quarterly, with maturity in 5 years.     What is the future value of the CD in 5 years?    How much interest will you earn?    What percent of the balance is interest?            The future value is $3,483.55.  Or, =FV(0.03\/4,4*5,0,3000)        The interest earned is $483.54.       13.88% of the balance is interest.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-10",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-10",
+  "type": "Exercise",
+  "number": "3.4.9.9",
+  "title": "",
+  "body": " You deposit $300 in an account earning 5% APR compounded annually. How much will you have in the account in 10 years?     How much will you have in the account in 10 years?    How much interest will you earn?    What percent of the balance is interest?            There will be $488.67 in the account in 10 years.  Or, =FV(0.05\/1,1*10,0,300)        $188.67 of the balance will be interest.       The interest makes up 38.61% of the balance.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-11",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-11",
+  "type": "Exercise",
+  "number": "3.4.9.10",
+  "title": "",
+  "body": " You deposit $2,000 in an account earning 3% APR compounded monthly.     How much will you have in the account in 20 years?    How much interest will you earn?    What percent of the balance is interest?    What percent of the balance is the principal?            The account will have $3,641.51 in 20 years  Or, =FV(0.03\/12,12*20,0,2000)        The interest will be $1,641.51.       The interest is 45.08% of the balance.       The principal is 54.92% of the balance.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-12",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-12",
+  "type": "Exercise",
+  "number": "3.4.9.11",
+  "title": "",
+  "body": " You deposit $10,000 in an account earning 4% APR compounded weekly.     How much will you have in the account in 25 years?    How much interest will you earn?    What percent of the balance is interest?    What percent of the balance is the principal?            The balance is $27,172.37.  Or, =FV(0.04\/52,52*25,0,10000)        The interest is $17,172.37.       The percent that is interest is 63.2%.       The percentage that is the principal is 36.2%.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-13",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-13",
+  "type": "Exercise",
+  "number": "3.4.9.12",
+  "title": "",
+  "body": " How much would you need to deposit in an account now in order to have $6,000 in the account in 8 years? Assume the account earns 6% APR compounded monthly.      The principal required would be $3,717.14  Or, =PV(0.06\/12,12*8,0,6000)   "
+},
+{
+  "id": "sec-finance-compound-interest-11-14",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-14",
+  "type": "Exercise",
+  "number": "3.4.9.13",
+  "title": "",
+  "body": " How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% APR compounded quarterly.      The principal required would be $16,394.79  Or, =PV(0.05\/4,4*4,0,20000)   "
+},
+{
+  "id": "sec-finance-compound-interest-11-15",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-15",
+  "type": "Exercise",
+  "number": "3.4.9.14",
+  "title": "",
+  "body": " Breylan invests $1,200 in an account that earns 4.6% APR compounded quarterly and Angad invests the same amount in an account that earns 4.55% APR compounded weekly.     What will their balances be after 15 years?    What will their balances be after 30 years?    What is the effective rate for each account?            Or, =FV(0.046\/52,15*52,0,1200)      Or, =FV(0.0455\/52,15*52,0,1200)   Breylan has an account balance of $2,391.73 and Angad has a balance of $2,373.87       Or, =FV(0.046,52,30*52,0,1200)      Or, =FV(0.0455\/52,30*52,0,1200)   Breylan has an account balance of $4,766.97 and Angad has a balance of $4,696.06    Breylan =EFFECT(0.046,52) , which gives 4.71%  Angad =EFFECT(0.0455,52) , which gives 4.65%  Breylan has an effective rate of 4.71% and Angad has an effective rate of 4.65%.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-16",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-16",
+  "type": "Exercise",
+  "number": "3.4.9.15",
+  "title": "",
+  "body": " Bill invests $6,700 in a savings account that compounds interest monthly at 3.75% APR. Ted invests $6,500 in a savings account that compound interest annually at 3.8% APR.     Find the effective rate for each account.    Who will have the higher accumulated balance after 5 years?         Bill =EFFECT(0.0375,12)  and Ted =EFFECT(0.038,1) =3.8%. Bill has an effective rate of 3.82% and Ted has a rate of 3.8%.       Or, =FV(0.0375\/12,5*12,0,6700)      Or, =FV(0.038,5,0,6500)   The account balances are $8,079.38 and $7,832.49. So, Bill's balance is higher.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-17",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-17",
+  "type": "Exercise",
+  "number": "3.4.9.16",
+  "title": "",
+  "body": " Bassel is comparing two accounts where one pays 3.45% APR quarterly and the second pays 3.4% APR daily.     What is the effect rate for each?    If he has $5,000 to deposit how much will the balance be in 10 years?          =EFFECT(0.0345,4) = 3.49% and =EFFECT(0.034,365) = 3.46%. The effective rates are 3.49% and 3.46%.       Or, =FV(0.0345\/4,10*4,0,5000)      Or, =FV(0.034\/365,10*365,0,5000)   The account balances are $7,049.51 and $7,024.63.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-18",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-18",
+  "type": "Exercise",
+  "number": "3.4.9.17",
+  "title": "",
+  "body": " You deposit $2,500 into an account earning 4% APR compounded continuously.     How much will you have in the account in 10 years?    How much total interest will you earn?    What percent of the balance is interest?            Or, 2500*EXP(0.04*10)   The account balance is $3,729.56.       The interest earned is $1,229.56.       32.97% of the balance is interest.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-19",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-19",
+  "type": "Exercise",
+  "number": "3.4.9.18",
+  "title": "",
+  "body": " You deposit $1,000 into an account earning 5.75% APR compounded continuously.     How much will you have in the account in 15 years?    How much total interest will you earn?    What percent of the balance is interest?            Or, =1000*EXP(0.0575*15)   The account balance is $2,369.08       The interest earned is $1,368.08       The interest is 57.77% of the account balance.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-20",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-20",
+  "type": "Exercise",
+  "number": "3.4.9.19",
+  "title": "",
+  "body": " You deposit $5,000 in an account earning 4.5% APR compounded continuously.     How much will you have in the account in 5 years?    How much total interest will you earn?    What percent of the balance is interest?            Or, =5000*EXP(0.045*5)   The account balance is $6,261.61.       The interest earned is $1,261.61       The interest is 20.15% of the balance.     "
+},
+{
+  "id": "sec-finance-compound-interest-11-21",
+  "level": "2",
+  "url": "sec-finance-compound-interest.html#sec-finance-compound-interest-11-21",
+  "type": "Exercise",
+  "number": "3.4.9.20",
+  "title": "",
+  "body": " You deposit $10,000 in an account that earns 5.5% APR compounded continuously and your friend deposits $10,000 in an account that earns 5.5% APR compounded annually.     How much more will you have in the account in 10 years?    How much more interest did you earn in the 10 years?            Or, =10000*EXP(0.055*10)      Or, =FV(0.055,10,0,10000)   Your balance is $17,332.53 and your friend's balance is $17,081.44.    The difference is:   You have $251.09 more than your friend.     "
 },
 {
   "id": "sec-statistics-process",
