@@ -158,10 +158,24 @@
 <example>
   <statement>
     <p>
-      Consider
+      Consider a game involving the spinner below.
+    </p>
+    <image source="images/Spinner.png">
+      <shortdescription>Spinner with thirty percent dark blue, twenty percent light blue, ten percent green, and forty percent orange</shortdescription>
+    </image>
+    <p>
+      Find the probability of spinning dark blue or green.
     </p>
   </statement>
+  <solution>
+    <p>
+      <m>30\%+10\%=40\%</m>
+    </p>
+  </solution>
 </example>
+<p>
+  Did you notice the difference between the coin and dice examples and the spinner example? Because the sizes of each color wedge in the spinner are different, they have different probabilities. However, provided the coins and dice are fair, there is an equally likely chance of each outcome. On average, we should flip heads half the time and tails the other half. When rolling a single die, we should roll each number approximately one sixth of the time. 
+</p>
 <p>
   When all outcomes are equally likely, probability can be calculated as the number of ways what you are looking for occurs divided by the total number of things that can occur. A more formal definition follows.
 </p>
