@@ -837,12 +837,12 @@ eBookConfig.enable_chatcodes =  false;
 #sec-statistics-normal-distribution-10-7-5-2-1-1 { counter-set: sec-statistics-normal-distribution-10-7-5-2-1-1 0; }
 #sec-statistics-normal-distribution-10-7-5-2-1-1 > li::marker { content: ""counter(sec-statistics-normal-distribution-10-7-5-2-1-1,lower-alpha)"."; }
 #sec-statistics-normal-distribution-10-7-5-2-1-1 > li { counter-increment: sec-statistics-normal-distribution-10-7-5-2-1-1; }
-#subsec-basic-probability-7-1-1-1 { counter-set: subsec-basic-probability-7-1-1-1 0; }
-#subsec-basic-probability-7-1-1-1 > li::marker { content: ""counter(subsec-basic-probability-7-1-1-1,decimal)"."; }
-#subsec-basic-probability-7-1-1-1 > li { counter-increment: subsec-basic-probability-7-1-1-1; }
-#subsec-basic-probability-7-2-1-1 { counter-set: subsec-basic-probability-7-2-1-1 0; }
-#subsec-basic-probability-7-2-1-1 > li::marker { content: ""counter(subsec-basic-probability-7-2-1-1,decimal)"."; }
-#subsec-basic-probability-7-2-1-1 > li { counter-increment: subsec-basic-probability-7-2-1-1; }
+#subsec-basic-probability-8-1-1-1 { counter-set: subsec-basic-probability-8-1-1-1 0; }
+#subsec-basic-probability-8-1-1-1 > li::marker { content: ""counter(subsec-basic-probability-8-1-1-1,decimal)"."; }
+#subsec-basic-probability-8-1-1-1 > li { counter-increment: subsec-basic-probability-8-1-1-1; }
+#subsec-basic-probability-8-2-1-1 { counter-set: subsec-basic-probability-8-2-1-1 0; }
+#subsec-basic-probability-8-2-1-1 > li::marker { content: ""counter(subsec-basic-probability-8-2-1-1,decimal)"."; }
+#subsec-basic-probability-8-2-1-1 > li { counter-increment: subsec-basic-probability-8-2-1-1; }
 #sec-probability-fundamentals-7-6-1-1-1 { counter-set: sec-probability-fundamentals-7-6-1-1-1 0; }
 #sec-probability-fundamentals-7-6-1-1-1 > li::marker { content: "("counter(sec-probability-fundamentals-7-6-1-1-1,lower-alpha)")"; }
 #sec-probability-fundamentals-7-6-1-1-1 > li { counter-increment: sec-probability-fundamentals-7-6-1-1-1; }
@@ -1492,7 +1492,8 @@ eBookConfig.enable_chatcodes =  false;
 </div></dd>
 <dt id="assemblage-probability-terminology-2-1-5">Probability</dt>
 <dd><div class="para" id="assemblage-probability-terminology-2-1-5-2">The <dfn class="terminology">probability</dfn> of an event is the likelihood that it will occur, usually expressed as a fraction, decimal, or percentage. When flipping a coin, the probability of flipping heads is 50%.</div></dd>
-</dl></div></article><div class="para logical" id="subsec-basic-probability-4">
+</dl></div></article><div class="para" id="subsec-basic-probability-4">While probability theory has far-reaching applications in such fields as medicine, business, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. In particular, we will take many examples from games involving cards, spinners, and dice.</div>
+<div class="para logical" id="subsec-basic-probability-5">
 <div class="para">Consider the experiment of flipping a coin three times. We can denote, for example, the outcome of getting heads on the first flip, tails on the second flip, and tails on the third flip as <span class="process-math">\(HTT\text{.}\)</span> Using this notation, the sample space can be written as follows:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1500,9 +1501,9 @@ S=\lbrace HHH{,}\, HHT{,}\, HTH{,}\, THH{,}\,HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace.
 \end{equation*}
 </div>
 </div>
-<div class="para" id="subsec-basic-probability-5">The event <span class="process-math">\(E\)</span> of rolling at least two tails is <span class="process-math">\(E=\lbrace HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace\text{.}\)</span>
+<div class="para" id="subsec-basic-probability-6">The event <span class="process-math">\(E\)</span> of rolling at least two tails is <span class="process-math">\(E=\lbrace HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace\text{.}\)</span>
 </div>
-<div class="para logical" id="subsec-basic-probability-6">
+<div class="para logical" id="subsec-basic-probability-7">
 <div class="para">There are four outcomes in which we get at least two tails out of the total of eight possible outcomes. Assuming it is a fair coin, meaning that all of the outcomes are equally likely, then the probability of the event <span class="process-math">\(E\text{,}\)</span> which we write using function notation <span class="process-math">\(P(E)\)</span> is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1510,19 +1511,19 @@ P(E)=\frac{4}{8}=\frac{1}{2}.
 \end{equation*}
 </div>
 </div>
-<article class="example example-like" id="subsec-basic-probability-7"><h4 class="heading">
+<article class="example example-like" id="subsec-basic-probability-8"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="subsec-basic-probability-7-1-1">
+<div class="para logical" id="subsec-basic-probability-8-1-1">
 <div class="para">Consider the experiment: rolling a single standard six-sided die. (Die the singular of dice, so we can have one die or two or more dice.)</div>
-<ol class="decimal" id="subsec-basic-probability-7-1-1-1">
-<li id="subsec-basic-probability-7-1-1-1-1"><div class="para" id="subsec-basic-probability-7-1-1-1-1-1">What is the sample space, and how many outcomes are in the sample space?</div></li>
-<li id="subsec-basic-probability-7-1-1-1-2"><div class="para" id="subsec-basic-probability-7-1-1-1-2-1">What outcomes are in the event "rolling a three", and how many outcomes are in that event?</div></li>
-<li id="subsec-basic-probability-7-1-1-1-3"><div class="para" id="subsec-basic-probability-7-1-1-1-3-1">What is the probability of the event "rolling a prime number"?</div></li>
+<ol class="decimal" id="subsec-basic-probability-8-1-1-1">
+<li id="subsec-basic-probability-8-1-1-1-1"><div class="para" id="subsec-basic-probability-8-1-1-1-1-1">What is the sample space, and how many outcomes are in the sample space?</div></li>
+<li id="subsec-basic-probability-8-1-1-1-2"><div class="para" id="subsec-basic-probability-8-1-1-1-2-1">What outcomes are in the event "rolling a three", and how many outcomes are in that event?</div></li>
+<li id="subsec-basic-probability-8-1-1-1-3"><div class="para" id="subsec-basic-probability-8-1-1-1-3-1">What is the probability of the event "rolling a prime number"?</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="subsec-basic-probability-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-basic-probability-7-2-1"><ol class="decimal" id="subsec-basic-probability-7-2-1-1">
-<li id="subsec-basic-probability-7-2-1-1-1"><div class="para logical" id="subsec-basic-probability-7-2-1-1-1-1">
+<div class="solutions"><details id="subsec-basic-probability-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-basic-probability-8-2-1"><ol class="decimal" id="subsec-basic-probability-8-2-1-1">
+<li id="subsec-basic-probability-8-2-1-1-1"><div class="para logical" id="subsec-basic-probability-8-2-1-1-1-1">
 <div class="para">The sample space is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1531,7 +1532,7 @@ S=\lbrace1{,}2{,}3{,}4{,}5{,}6\rbrace.
 </div>
 <div class="para">There are six outcomes in the sample space.</div>
 </div></li>
-<li id="subsec-basic-probability-7-2-1-1-2"><div class="para logical" id="subsec-basic-probability-7-2-1-1-2-1">
+<li id="subsec-basic-probability-8-2-1-1-2"><div class="para logical" id="subsec-basic-probability-8-2-1-1-2-1">
 <div class="para">The event "rolling a three" is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1541,7 +1542,7 @@ E=\lbrace3\rbrace.
 <div class="para">There is just one outcome in event <span class="process-math">\(E\text{.}\)</span>
 </div>
 </div></li>
-<li id="subsec-basic-probability-7-2-1-1-3"><div class="para logical" id="subsec-basic-probability-7-2-1-1-3-1">
+<li id="subsec-basic-probability-8-2-1-1-3"><div class="para logical" id="subsec-basic-probability-8-2-1-1-3-1">
 <div class="para">The probability of rolling a three is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1549,12 +1550,12 @@ P(E)=\frac{1}{6}.
 \end{equation*}
 </div>
 </div></li>
-</ol></div></div></details></div></article><article class="example example-like" id="subsec-basic-probability-8"><h4 class="heading">
+</ol></div></div></details></div></article><article class="example example-like" id="subsec-basic-probability-9"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-basic-probability-8-1-1">Consider a game involving the spinner below.</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Spinner.png" class="contained" alt="Spinner with thirty percent dark blue, twenty percent light blue, ten percent green, and forty percent orange"></div> <div class="para" id="subsec-basic-probability-8-1-3">Find the probability of spinning dark blue or green.</div>
-<div class="solutions"><details id="subsec-basic-probability-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-basic-probability-8-2-1"><span class="process-math">\(30\%+10\%=40\%\)</span></div></div></details></div></article><div class="para" id="subsec-basic-probability-9">Did you notice the difference between the coin and dice examples and the spinner example? Because the sizes of each color wedge in the spinner are different, they have different probabilities. However, provided the coins and dice are fair, there is an equally likely chance of each outcome. On average, we should flip heads half the time and tails the other half. When rolling a single die, we should roll each number approximately one sixth of the time.</div>
-<div class="para" id="subsec-basic-probability-10">When all outcomes are equally likely, probability can be calculated as the number of ways what you are looking for occurs divided by the total number of things that can occur. A more formal definition follows.</div>
+<div class="para" id="subsec-basic-probability-9-1-1">Consider a game involving the spinner below.</div> <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/Spinner.png" class="contained" alt="Spinner with thirty percent dark blue, twenty percent light blue, ten percent green, and forty percent orange"></div> <div class="para" id="subsec-basic-probability-9-1-3">Find the probability of spinning dark blue or green.</div>
+<div class="solutions"><details id="subsec-basic-probability-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-basic-probability-9-2-1"><span class="process-math">\(30\%+10\%=40\%\)</span></div></div></details></div></article><div class="para" id="subsec-basic-probability-10">Did you notice the difference between the coin and dice examples and the spinner example? Because the sizes of each color wedge in the spinner are different, they have different probabilities. However, provided the coins and dice are fair, there is an equally likely chance of each outcome. On average, we should flip heads half the time and tails the other half. When rolling a single die, we should roll each number approximately one sixth of the time.</div>
+<div class="para" id="subsec-basic-probability-11">When all outcomes are equally likely, probability can be calculated as the number of ways what you are looking for occurs divided by the total number of things that can occur. A more formal definition follows.</div>
 <article class="assemblage assemblage-like" id="assemblage-equally-likely-probability"><h4 class="heading"><span class="title">Probability Involving Equally-likely Outcomes.</span></h4>
 <div class="para logical" id="assemblage-equally-likely-probability-2">
 <div class="para">If all outcomes are equally likely, the probability that event <span class="process-math">\(E\)</span> occurs is equal to the proportion of outcomes in the sample space corresponding to event <span class="process-math">\(E\text{.}\)</span>
@@ -1564,14 +1565,14 @@ P(E)=\frac{1}{6}.
 P(E)=\frac{\text{Number of outcomes corresponding to E}}{\text{Number of outcomes in the sample space}}
 \end{equation*}
 </div>
-</div></article><article class="example example-like" id="subsec-basic-probability-12"><h4 class="heading">
+</div></article><article class="example example-like" id="subsec-basic-probability-13"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-basic-probability-12-1-1">Let’s say you have a bag with 40 truffles, 28 dark chocolate and 14 milk chocolate. If you pick a truffle at random, what is the probability that it will be dark chocolate?</div>
-<div class="solutions"><details id="subsec-basic-probability-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="subsec-basic-probability-12-2-1">Because we are picking a cherry  at random, we may assume that all outcomes (truffles) are equally likely, so we may use the basic probability formula.</div>
-<div class="para" id="subsec-basic-probability-12-2-2">It isn’t necessary to write sets for the sample space and the event because we already know how many items are in each, although writing the sets would not be a problem.</div>
-<div class="para logical" id="subsec-basic-probability-12-2-3">
+<div class="para" id="subsec-basic-probability-13-1-1">Let’s say you have a bag with 40 truffles, 28 dark chocolate and 14 milk chocolate. If you pick a truffle at random, what is the probability that it will be dark chocolate?</div>
+<div class="solutions"><details id="subsec-basic-probability-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-basic-probability-13-2-1">Because we are picking a cherry  at random, we may assume that all outcomes (truffles) are equally likely, so we may use the basic probability formula.</div>
+<div class="para" id="subsec-basic-probability-13-2-2">It isn’t necessary to write sets for the sample space and the event because we already know how many items are in each, although writing the sets would not be a problem.</div>
+<div class="para logical" id="subsec-basic-probability-13-2-3">
 <div class="para">The probability of picking a dark chocolate truffle is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1579,10 +1580,10 @@ P(\text{dark chocolate})=\frac{\text{number of dark chocolate truffles}}{\text{t
 \end{equation*}
 </div>
 </div>
-<div class="para" id="subsec-basic-probability-12-2-4">We can simplify to <span class="process-math">\(\frac{7}{10}\text{.}\)</span> It would also be correct to express the probability as 0.7 or 70%.</div>
-</div></details></div></article><div class="para" id="subsec-basic-probability-13">What if someone asked you to find the probability of rolling a seven on a standard six-sided die? Since there isn’t a seven on a standard die, this event is impossible, so its probability is zero. Mathematically, that is <span class="process-math">\(P\left(\text{Rolling a 7}\right)=\frac{0}{6}=0.\)</span>
+<div class="para" id="subsec-basic-probability-13-2-4">We can simplify to <span class="process-math">\(\frac{7}{10}\text{.}\)</span> It would also be correct to express the probability as 0.7 or 70%.</div>
+</div></details></div></article><div class="para" id="subsec-basic-probability-14">What if someone asked you to find the probability of rolling a seven on a standard six-sided die? Since there isn’t a seven on a standard die, this event is impossible, so its probability is zero. Mathematically, that is <span class="process-math">\(P\left(\text{Rolling a 7}\right)=\frac{0}{6}=0.\)</span>
 </div>
-<div class="para" id="subsec-basic-probability-14">On the other extreme, the probability of rolling a one, two, three, four, five, or six is <span class="process-math">\(P\left(1,2,3,4,5,\text{ or}6\right)=\frac{6}{6}=1\text{.}\)</span> In words, there is a one hundred percent chance of rolling one of the six possible outcomes.</div>
+<div class="para" id="subsec-basic-probability-15">On the other extreme, the probability of rolling a one, two, three, four, five, or six is <span class="process-math">\(P\left(1,2,3,4,5,\text{ or}6\right)=\frac{6}{6}=1\text{.}\)</span> In words, there is a one hundred percent chance of rolling one of the six possible outcomes.</div>
 <article class="assemblage assemblage-like" id="assemblage-impossible-certain"><h4 class="heading"><span class="title">Probability of Impossible and Certain Events.</span></h4>
 <div class="para logical" id="assemblage-impossible-certain-2">
 <div class="para">If an event is impossible, its probability is zero, and if an event is guaranteed, its probability is one or 100%.</div>
@@ -1601,8 +1602,7 @@ P\left(\text{Something certain}\right) \amp=1
 \end{equation*}
 </div>
 </div>
-<div class="para" id="assemblage-impossible-certain-4">If you obtain a probability that is negative or greater than one, check your work—there is a mistake somewhere.</div></article><div class="para" id="subsec-basic-probability-16">While probability theory has far-reaching applications in such fields as medicine, business, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. In particular, we will take many examples from games involving cards and dice.</div>
-<article class="assemblage assemblage-like" id="assemblage-cards"><h4 class="heading"><span class="title">Cards.</span></h4>
+<div class="para" id="assemblage-impossible-certain-4">If you obtain a probability that is negative or greater than one, check your work—there is a mistake somewhere.</div></article><article class="assemblage assemblage-like" id="assemblage-cards"><h4 class="heading"><span class="title">Cards.</span></h4>
 <div class="para" id="assemblage-cards-2">A standard American deck of playing cards consists of four suits (hearts, spades, diamonds and clubs). Spades and clubs are black; hearts and diamonds are red.</div>
 <div class="para logical" id="assemblage-cards-3">
 <div class="para">Each suit contains 13 cards, each of a different rank:</div>
