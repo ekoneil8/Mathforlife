@@ -13,7 +13,7 @@
 		<ul>
 			<li>
 				<p>
-					Define and identify the population, parameter, sample and statistic
+					Define and identify the population, parameter, sample and statistic
 				</p>
 			</li>
 			<li>
@@ -39,69 +39,7 @@
 		</ul>
 </objectives>
 
-<introduction>
-	<title>Introduction to Statistics</title>
-	
-	<p>
-		We are bombarded by information and statistics every day. But if we cannot distinguish credible information from misleading information, then we are vulnerable to manipulation and making decisions that are not in our best interest. Statistics provides tools for us to evaluate information critically. In this sense, statistics is one of the most important things to know about.
-	</p>
-	<p>
-		Statistics are often presented to add credibility to an argument. To give some examples, here are some claims that we have heard on several occasions. (We are not saying that each one of these claims is true!)
-		 	<ul>
-		 		<li>
-		 			<p>
-		 				4 out of 5 dentists recommend Dentyne.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				Almost 85% of lung cancers in men and 45% in women are tobacco-related.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				Condoms are effective 94% of the time.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				People tend to be more persuasive when they look others directly in the eye and speak loudly and quickly.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				Women make 75 cents to every dollar a man makes when they work the same job.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				A surprising new study shows that eating egg whites can increase one's life span.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				People predict that it is very unlikely there will ever be another baseball player with a batting average over 400.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				There is an 80% chance that in a room full of 30 people that at least two people will share the same birthday.
-		 			</p>
-		 		</li>
-		 		<li>
-		 			<p>
-		 				79.48% of all statistics are made up on the spot.
-		 			</p>
-		 		</li>
-		 	</ul>
-		 </p>
-		<p>
-			All these claims are statistical in character. We suspect that some of them sound familiar; if not, you have probably heard other claims like them. Notice how diverse the examples are; they come from psychology, health, law, sports, business, etc. Data and data-interpretation show up in virtually every facet of contemporary life.
-		</p>
-		<p>
-			Many of these numbers do not represent careful statistical analysis. They can be misleading and push you into decisions that you might regret. This chapter will help you learn the skills to be a critical consumer of statistical claims. 
-		</p>
-</introduction>
+
 <subsection>
 	<title>Statistical Process</title>
 	<p>

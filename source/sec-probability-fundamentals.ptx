@@ -155,27 +155,24 @@
     </p>
   </solution>
 </example>
+<example>
+  <statement>
+    <p>
+      Consider
+    </p>
+  </statement>
+</example>
 <p>
-  To summarize, when all outcomes are equally likely, probability can be calculated as the number of ways what you are looking for occurs divided by the total number of things that can occur. A more formal definition follows.
+  When all outcomes are equally likely, probability can be calculated as the number of ways what you are looking for occurs divided by the total number of things that can occur. A more formal definition follows.
 </p>
-<assemblage xml:id="assemblage-basic-probability">
-  <title>Basic Probability</title>
+<assemblage xml:id="assemblage-equally-likely-probability">
+  <title>Probability Involving Equally-likely Outcomes</title>
   <p>
-    If all outcomes are equally likely, the probability that event <m>E</m> occurs can be calculated as follows.
+    If all outcomes are equally likely, the probability that event <m>E</m> occurs is equal to the proportion of outcomes in the sample space corresponding to event <m>E</m>.
     <me>
       P(E)=\frac{\text{Number of outcomes corresponding to E}}{\text{Number of outcomes in the sample space}}
     </me>
     
-  </p>
-  <p>
-    If an event is impossible, its probability is zero, and if an event is guaranteed, its probability is one or 100%. All other events have probabilities between zero and one:
-    <me>
-      0\le P(E) \le 1.
-    </me>
-    
-  </p>
-  <p>
-    If you obtain a probability that is negative or greater than one, check your work<mdash/>there is a mistake somewhere.
   </p>
 </assemblage>
 <example>
@@ -203,6 +200,34 @@
     </p>
   </solution>
 </example>
+<p>
+  What if someone asked you to find the probability of rolling a seven on a standard six-sided die? Since there isn't a seven on a standard die, this event is impossible, so its probability is zero. Mathematically, that is <m>P\left(\text{Rolling a 7}\right)=\frac{0}{6}=0.</m>
+</p>
+<p>
+  On the other extreme, the probability of rolling a one, two, three, four, five, or six is <m>P\left(1,2,3,4,5,\text{ or}6\right)=\frac{6}{6}=1</m>. In words, there is a one hundred percent chance of rolling one of the six possible outcomes.
+</p>
+<assemblage xml:id="assemblage-impossible-certain">
+  <title>Probability of Impossible and Certain Events</title>
+    <p>
+    If an event is impossible, its probability is zero, and if an event is guaranteed, its probability is one or 100%.
+    <md>
+      <mrow>P\left(\text{Something impossible}\right) \amp=0 </mrow>
+      <mrow>P\left(\text{Something certain}\right) \amp=1 </mrow>
+    </md>
+  </p>
+    <p>
+       All other events have probabilities between zero and one.
+    <me>
+      0\le P(E) \le 1.
+    </me>
+    
+  </p>
+  <p>
+    If you obtain a probability that is negative or greater than one, check your work<mdash/>there is a mistake somewhere.
+  </p>
+</assemblage>
+
+
 <p>
  While probability theory has far-reaching applications in such fields as medicine, business, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. In particular, we will take many examples from games involving cards and dice.
 </p>
