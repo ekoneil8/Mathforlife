@@ -87,7 +87,10 @@
       </dl>
       </p>
     </assemblage>
-  <p>
+ <p>
+ While probability theory has far-reaching applications in such fields as medicine, business, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. In particular, we will take many examples from games involving cards, spinners, and dice.
+</p>
+    <p>
     Consider the experiment of flipping a coin three times. We can denote, for example, the outcome of getting heads on the first flip, tails on the second flip, and tails on the third flip as <m>HTT</m>. Using this notation, the sample space can be written as follows:
   <me>
     S=\lbrace HHH{,}\, HHT{,}\, HTH{,}\, THH{,}\,HTT{,}\,THT{,}\,TTH{,}\,TTT\rbrace.
@@ -160,7 +163,7 @@
     <p>
       Consider a game involving the spinner below.
     </p>
-    <image source="images/Spinner.png">
+    <image source="images/Spinner.png" width="60%">
       <shortdescription>Spinner with thirty percent dark blue, twenty percent light blue, ten percent green, and forty percent orange</shortdescription>
     </image>
     <p>
@@ -242,9 +245,7 @@
 </assemblage>
 
 
-<p>
- While probability theory has far-reaching applications in such fields as medicine, business, politics, and science, we will focus mostly on applications in games and gambling because less background knowledge is required to understand them. In particular, we will take many examples from games involving cards and dice.
-</p>
+
 <assemblage xml:id="assemblage-cards">
   <title>Cards</title>
   <p>
