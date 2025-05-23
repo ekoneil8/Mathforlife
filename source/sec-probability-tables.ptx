@@ -25,6 +25,11 @@
                     Determine whether two events are independent.
                 </p>
             </li>
+            <li>
+                <p>
+                    Calculate probabilities of independent and dependent events.
+                </p>
+            </li>
         </ul>
     </objectives>
     
@@ -187,103 +192,10 @@
         </sidebyside>
     </subsection>
     
-    <subsection>
-    <title>Contingency Tables and Venn Diagrams
-    </title>
     
-        <p>
-            If the subtractions we just did seem familiar, they should! This is very similar to what we did for reporting data with a Venn diagram. The Venn diagram for this data is shown below. We also subtracted the intersection from the total of the cat and dog owners to find numbers in the crescent regions.
-        </p>
-    
-        <p>
-            Notice that the numbers in the four regions of the Venn diagram are the same as the four cells in the center of the contingency table and add to the grand total.
-        </p>
-        <sidebyside width="35%">
-            <image source="images/probability/4_1/cont_table_venn.png">
-            <shortdescription>A Venn diagram with two overlapping circles and a box around it. The Cat only region shows 180-52=128; The dog only region shows 95-52=43; the interesection is 52 and the number outside the circles in the universal set is 27.</shortdescription>
-            </image>
-        </sidebyside>
-    
-    </subsection>
     
     <subsection>
-        <title><q>And</q> Statements</title>
-        <p>
-            Now we can use the contingency table or the Venn diagram to determine the percentage of households that meet certain conditions. For instance, what percent of those surveyed own a cat <alert>and</alert> do not own a dog? In the Venn diagram, this is 128 households in the cat only region.
-        </p>
-    
-        <p>
-            In the contingency table we see the 128 households at the intersection of the row of households who own a cat and the column of households who do not own a dog. As a percentage, the total number of households surveyed, is <m>\frac{128}{250}=0.512</m> or 51.2% that have a cat and no dog.
-        </p>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Dog</cell>
-                    <cell>No Dog</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Cat</cell>
-                    <cell>52</cell>
-                    <cell><c>128</c></cell>
-                    <cell>180</cell>
-                </row>
-                <row>
-                    <cell>No Cat</cell>
-                    <cell>43</cell>
-                    <cell>27</cell>
-                    <cell>70</cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell>95</cell>
-                    <cell>155</cell>
-                    <cell><c>250</c></cell>
-                </row>
-            </tabular>
-    </subsection>
-    
-    <subsection>
-        <title><q>Or</q> Statements</title>
-        <p>
-            How about the percentage of households surveyed that have a cat <alert>or</alert> a dog? We know from Venn diagrams that the inclusive <em>or</em> includes the number of households who own a cat only, a dog only, and both a cat and a dog, or <m>128+52+43=223</m> households. As a percentage of the total surveyed, we get <m>\frac{223}{250}=0.892</m> or 89.2% of households in the sample have a dog <alert>or</alert> a cat (or both).
-        </p>
-        <p>
-            We can get the same answer from the contingency table. by adding the cells for households who have a cat and not a dog, a dog and not a cat, and the households that have both a cat and a dog. This also gives us 223 households.
-        </p>
-        <p>
-            There is another way to calculate an <em>or</em> statements from a contingency table. We could add the row and column totals for having a cat and having a dog, but then we have counted the 52 households in the intersection twice. We can subtract that number to get <m>180+95-52=223</m> households with a dog or a cat, which we know is 89.2% of those surveyed.
-        </p>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Dog</cell>
-                    <cell>No Dog</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Cat</cell>
-                    <cell><c>52</c></cell>
-                    <cell><c>128</c></cell>
-                    <cell>180</cell>
-                </row>
-                <row>
-                    <cell>No Cat</cell>
-                    <cell><c>43</c></cell>
-                    <cell>27</cell>
-                    <cell>70</cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell>95</cell>
-                    <cell>155</cell>
-                    <cell>250</cell>
-                </row>
-            </tabular>
-    </subsection>
-    
-    <subsection>
-        <title>Conditional Statements</title>
+        <title>Conditional Probability</title>
     
         <p>
             Another question we can answer using a contingency table is what percentage of dog owning households also own a cat? In this case the group that we are interested in isn't every household surveyed (the grand total), but just those households that own a dog.
@@ -315,16 +227,47 @@
                 </row>
             </tabular>
         <p>
-            We call this a <alert>conditional</alert> statement because we are only considering the households with a certain condition. If we focus on the column representing the households that own a dog, we see that there is a total of 95 households with a dog, and that 52 of those 95 households also have a cat. Therefore, <m>\frac{52}{95} \approx 0.547</m> or approximately 54.7% of the households with a dog also have a cat. Another way to phrase this conditional statement is, <q>What percent of households have a cat <alert>given</alert> they have a dog.</q> You will see the word given quite a bit in this chapter and that makes the denominator change. It is also possible to find this conditional percentage using the Venn diagram by taking the number in the intersection and dividing it by the total in the whole dog circle. 
+            We call this a <alert>conditional</alert> statement because we are only considering the households with a certain condition. If we focus on the column representing the households that own a dog, we see that there is a total of 95 households with a dog, and that 52 of those 95 households also have a cat. Therefore, <m>\frac{52}{95} \approx 0.547</m> or approximately 54.7% of the households with a dog also have a cat. Another way to phrase this conditional statement is, <q>What percent of households have a cat <alert>given</alert> they have a dog.</q> You will see the word given quite a bit in this chapter and that makes the denominator change. 
         </p>
-    </subsection>
-    
-    <subsection>
-    <title>Contingency Tables with More Than Two Categories</title>
         <p>
-            When there are only two categories for each variable, like yes/no questions, Venn diagrams and contingency tables provide basically the same information and can be used interchangeably. A Venn diagram works well for yes/no variables since a subject is either inside the circle (has the characteristic) or outside the circle (does not have the characteristic). If we have more than two possibilities for any of the variables, though, we cannot use a Venn diagram. We can use a contingency table, though. Here is an example where one variable has four categories and the other has three categories.
+            If <m>C</m> is the event "owning a cat" and <m>D</m> is the event "owning a dog", then the probability that someone owns a cat given that you know they own a dog is written <m>P(C|D)=\frac{52}{95}.</m>
         </p>
-    
+        <assemblage xml:id="assemblage-conditional-probability">
+            <title>Conditional Probability</title>
+            <p>
+                <m>P(E|F)</m> is the probability that event <m>E</m> occurs <em>given</em> that event <m>F</m> occurs or occurred.
+            </p>
+            <p>
+                <me>
+                    P(E|F)=\frac{\text{number of elements in }E\cap F}{\text{number of elements in }F}
+                </me>
+                or
+                <me>
+                    P(E|F)=\frac{P(E\cap F)}{P(F)}
+                </me>
+                
+            </p>
+            <p>
+                This is called <term>conditional probability</term> and can be interpreted as the probability of <m>E</m> with the condition or prior knowledge of <m>F</m>.
+            </p>
+        </assemblage>
+    <example>
+        <statement>
+            <p>
+                Find the probability that a card drawn at random is a king given that it is a face card.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                In this situation, we already know that the card drawn is one of the 12 face cards. Of those, four are kings. Therefore, the probability is
+                <me>
+                    P(\text{king}|\text{face card})=\frac{4}{12}=\frac{1}{3}.
+                </me>
+                
+            </p>
+        </solution>
+    </example>
+
     <example>
         <statement>
         <p>
@@ -492,30 +435,8 @@
         </p>
         </solution>
     </example>
-    </subsection>
     
-    <subsection>
-    <title>Empirical Probability</title>
-        <p>
-            If our sample is representative of the population, then we can also interpret a percentage we calculate from a contingency table as a <alert>probability</alert>, or the likelihood that something will happen. Since a contingency table is constructed from data collected through sampling or an experiment, we call it an <alert>empirical</alert> or <alert>experimental</alert> probability. This is different from a <alert>theoretical</alert> probability which we will look at in the next section. 
-        </p>
-    </subsection>
-    
-    <subsection>
-    <title>Finding Empirical Probabilities with a Contingency Table</title>
-    <p>
-        Suppose that 60% of students in our class have a summer birthday (June, July, or August). Now suppose everyone's name and birth month are written on slips of paper and thrown into a bag. If we pull a slip of paper out of the bag at random, what is the probability that the selected student has a summer birthday? If you think there should be a 60% chance, you are right! The relative frequency of the characteristic of interest will be equal to its empirical probability. To write this as a probability statement, it would look like
-    </p>
-    <p>
-        <md>
-            <mrow>\text{P(summer birthday)}=60\%</mrow>
-        </md>
-    </p>
-    
-    <p>
-        Probability is a function named <em>P</em>, and the function is applied to what follows in the parentheses. Let's look at another example where we write probability statements and find empirical probabilities.
-    </p>
-    
+   
     <example>
         <statement>
         <p>
@@ -826,138 +747,7 @@
         <p>
             We have mentioned conditional probabilities, which we find by isolating our attention to the given row or column. Here is another example of finding conditional probabilities.
         </p>
-        <example>
-            <statement>
-            <p>
-                A home pregnancy test was given to a sample of 93 cisgender women, and their pregnancy was then verified by a blood test. The contingency table below shows the home pregnancy test and whether or not they were actually pregnant as determined by the blood test. Find the probability that a randomly selected woman in the sample
-                <ol marker="a.">
-                    <li>
-                        <p>
-                            was not pregnant given the home test was positive.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            had a positive home pregnancy test given they were not pregnant.
-                        </p>
-                    </li>
-                </ol>
-            </p>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Positive Test</cell>
-                    <cell>Negative Test</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Pregnant</cell>
-                    <cell>70</cell>
-                    <cell>4</cell>
-                    <cell>74</cell>
-                </row>
-                <row>
-                    <cell>Not Pregnant</cell>
-                    <cell>5</cell>
-                    <cell>14</cell>
-                    <cell>19</cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell>75</cell>
-                    <cell>18</cell>
-                    <cell>93</cell>
-                </row>
-            </tabular>
-            </statement>
-            <solution>
-            <p>
-                 Here are the solutions:
-                 <ol marker="a.">
-                     <li>
-                         <p>
-                             Since we are given the home test result was positive, we are limited to the 75 women in the positive test column, of which 5 were not pregnant. This gives:
-                         </p>
-                         <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                            <row header="yes">
-                                <cell></cell>
-                                <cell>Positive Test</cell>
-                                <cell>Negative Test</cell>
-                                <cell>Total</cell>
-                            </row>
-                            <row>
-                                <cell>Pregnant</cell>
-                                <cell>70</cell>
-                                <cell>4</cell>
-                                <cell>74</cell>
-                            </row>
-                            <row>
-                                <cell>Not Pregnant</cell>
-                                <cell><c>5</c></cell>
-                                <cell>14</cell>
-                                <cell>19</cell>
-                            </row>
-                            <row>
-                                <cell>Total</cell>
-                                <cell><c>75</c></cell>
-                                <cell>18</cell>
-                                <cell>93</cell>
-                            </row>
-                        </tabular>
-                         <p>
-                             <md>
-                             <mrow>P(\text{not pregnant given positve test})=\frac{5}{75} \approx 0.067\text{ or } 6.7\%
-                             </mrow>
-                         </md>
-                         </p>
-                     </li>
-                     <li>
-                         <p>
-                             Since we are given the woman is not pregnant, we are limited to the 19 women in the not pregnant row, of which 5 had a positive test. This gives:
-                         </p>
-                         <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                            <row header="yes">
-                                <cell></cell>
-                                <cell>Positive Test</cell>
-                                <cell>Negative Test</cell>
-                                <cell>Total</cell>
-                            </row>
-                            <row>
-                                <cell>Pregnant</cell>
-                                <cell>70</cell>
-                                <cell>4</cell>
-                                <cell>74</cell>
-                            </row>
-                            <row>
-                                <cell>Not Pregnant</cell>
-                                <cell><c>5</c></cell>
-                                <cell>14</cell>
-                                <cell><c>19</c></cell>
-                            </row>
-                            <row>
-                                <cell>Total</cell>
-                                <cell>75</cell>
-                                <cell>18</cell>
-                                <cell>93</cell>
-                            </row>
-                        </tabular>
-                         <p>
-                             <md>
-                             <mrow>P(\text{positive test given not pregnant})=\frac{5}{19} \approx 0.263\text{ or } 26.3\% </mrow>
-                            </md>
-                        </p>
-                        <p>
-                             This result is referred to as a false positive: A positive test result when the woman is not actually pregnant.
-                         </p>
-                     </li>
-                 </ol>
-            </p>
-            
-        </solution>
-        </example>
-        <p>
-            In this section we have learned about empirical probability. In the next section we will discuss another kind of probability that you may be familiar with – theoretical probability.
-        </p>
+       
     </subsection>
     
     <exercises>
