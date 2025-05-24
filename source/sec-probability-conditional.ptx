@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-probability-tables" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Contingency Tables and Conditional Probability</title>
+<section xml:id="sec-probability-conditional" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Conditional Probability</title>
 
     <objectives>
         <introduction>
@@ -40,158 +40,7 @@
         </p>
     </introduction>
     
-    <subsection>
-    <title>Contingency Tables</title>
-        <p>
-            A <alert>contingency table</alert> summarizes all the possible combinations for two categorical variables. Each value in the table represents the number of times a particular combination of outcomes occurs. For example, suppose we randomly select 250 households from the greater Portland area and ask whether they have a cat and whether they have a dog. In this case, <q>have a cat</q> and <q>have a dog</q> are the two variables, and each variable has two categories: Yes and No. To create the contingency table, we make columns for the categories of one variable, and rows for the categories of the other variable. We also add a row and column for the subtotals of each category. Each cell of the resulting table contains the number of outcomes having the characteristics of the intersecting row and column categories. For our dog and cat example, the table would look like this: 
-        </p>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Dog</cell>
-                    <cell>No Dog</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Cat</cell>
-                    <cell><em>Yes Cat and Yes Dog</em></cell>
-                    <cell><em>Yes Cat and No Dog</em></cell>
-                    <cell><em>Yes Cat Total</em></cell>
-                </row>
-                <row>
-                    <cell>No Cat</cell>
-                    <cell><em>No Cat and Yes Dog</em></cell>
-                    <cell><em>No Cat and No Dog</em></cell>
-                    <cell><em>No Cat Total</em></cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell><em>Yes Dog Total</em></cell>
-                    <cell><em>No Dog Total</em></cell>
-                    <cell><em>Grand total</em></cell>
-                </row>
-            </tabular>
-        <p>
-            Suppose that of the 250 households surveyed, 180 said they have a cat, 95 said they have a dog, and 52 said they have both a cat and a dog. We can use this information to fill in the cells of the table.
-        </p>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Dog</cell>
-                    <cell>No Dog</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Cat</cell>
-                    <cell>52</cell>
-                    <cell></cell>
-                    <cell>180</cell>
-                </row>
-                <row>
-                    <cell>No Cat</cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell>95</cell>
-                    <cell></cell>
-                    <cell>250</cell>
-                </row>
-            </tabular>
-        <p>
-            The first cell we can fill in is the <alert>grand total</alert>, which is the total number of subjects in the study. In this case, there are 250 households participating in the survey. The next two cells we can fill in are the total number of households that have a cat, 180, and the total number of households that have a dog, 95. The final cell we can fill in from the given information is the intersection of the having a dog column and a having a cat row, which is 52 households.
-        </p>
-    
-        <p>
-            Since each row and column must sum to their totals, we can use subtraction to find the missing numbers as shown below.
-        </p>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Dog</cell>
-                    <cell>No Dog</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Cat</cell>
-                    <cell>52</cell>
-                    <cell><m>180-52=128</m></cell>
-                    <cell>180</cell>
-                </row>
-                <row>
-                    <cell>No Cat</cell>
-                    <cell><m>95-52=43</m></cell>
-                    <cell><line><m>155-128=27</m></line><line>or</line><line><m>70-43=27</m></line></cell>
-                    <cell><m>250-180=70</m></cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell>95</cell>
-                    <cell><m>250-95=155</m></cell>
-                    <cell>250</cell>
-                </row>
-            </tabular>
-        <p>
-            Now that we have our contingency table completed, notice that the numbers in the central four cells add to the grand total as shown in the table on the left. The total row and the total column also add to the grand total as shown in the right table.
-        </p>
-        <sidebyside>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Dog</cell>
-                    <cell>No Dog</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Cat</cell>
-                    <cell><c>52</c></cell>
-                    <cell><c>128</c></cell>
-                    <cell>180</cell>
-                </row>
-                <row>
-                    <cell>No Cat</cell>
-                    <cell><c>43</c></cell>
-                    <cell><c>27</c></cell>
-                    <cell>70</cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell>95</cell>
-                    <cell>155</cell>
-                    <cell><c>250</c></cell>
-                </row>
-            </tabular>
-            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row header="yes">
-                    <cell></cell>
-                    <cell>Dog</cell>
-                    <cell>No Dog</cell>
-                    <cell>Total</cell>
-                </row>
-                <row>
-                    <cell>Cat</cell>
-                    <cell>52</cell>
-                    <cell>128</cell>
-                    <cell><c>180</c></cell>
-                </row>
-                <row>
-                    <cell>No Cat</cell>
-                    <cell>43</cell>
-                    <cell>27</cell>
-                    <cell><c>70</c></cell>
-                </row>
-                <row>
-                    <cell>Total</cell>
-                    <cell><c>95</c></cell>
-                    <cell><c>155</c></cell>
-                    <cell><c>250</c></cell>
-                </row>
-            </tabular>
-        </sidebyside>
-    </subsection>
-    
+
     
     
     <subsection>
@@ -682,7 +531,7 @@
                         </row>
                     </tabular>
                     <p>
-                        The probability <m>P(\text{speeding ticket given red car})</m> is a conditional probability as we have seen before since it is conditional on the given characteristic occurring. In this problem, the given characteristic is owning a red car, so we isolate our attention to just the row of 150 red car owners and see how many have had a speeding ticket in the last year. Looking at the table, we see that there were 15 red car owners who had a speeding ticket in the last year, so we calculate:
+                        The probability <m>P(\text{speeding ticket}|\text{red car})</m> is a conditional probability as we have seen before since it is conditional on the given characteristic occurring. In this problem, the given characteristic is owning a red car, so we isolate our attention to just the row of 150 red car owners and see how many have had a speeding ticket in the last year. Looking at the table, we see that there were 15 red car owners who had a speeding ticket in the last year, so we calculate:
                     </p>
                     <p>
                         <md>

@@ -487,6 +487,270 @@
   </solution>
 </example>
 </subsection>
+    <subsection>
+    <title>Contingency Tables</title>
+        <p>
+            A <alert>contingency table</alert> summarizes all the possible combinations for two categorical variables. Each value in the table represents the number of times a particular combination of outcomes occurs. For example, suppose we randomly select 250 households from the greater Portland area and ask whether they have a cat and whether they have a dog. In this case, <q>have a cat</q> and <q>have a dog</q> are the two variables, and each variable has two categories: Yes and No. To create the contingency table, we make columns for the categories of one variable, and rows for the categories of the other variable. We also add a row and column for the subtotals of each category. Each cell of the resulting table contains the number of outcomes having the characteristics of the intersecting row and column categories. For our dog and cat example, the table would look like this: 
+        </p>
+            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                <row header="yes">
+                    <cell></cell>
+                    <cell>Dog</cell>
+                    <cell>No Dog</cell>
+                    <cell>Total</cell>
+                </row>
+                <row>
+                    <cell>Cat</cell>
+                    <cell><em>Yes Cat and Yes Dog</em></cell>
+                    <cell><em>Yes Cat and No Dog</em></cell>
+                    <cell><em>Yes Cat Total</em></cell>
+                </row>
+                <row>
+                    <cell>No Cat</cell>
+                    <cell><em>No Cat and Yes Dog</em></cell>
+                    <cell><em>No Cat and No Dog</em></cell>
+                    <cell><em>No Cat Total</em></cell>
+                </row>
+                <row>
+                    <cell>Total</cell>
+                    <cell><em>Yes Dog Total</em></cell>
+                    <cell><em>No Dog Total</em></cell>
+                    <cell><em>Grand total</em></cell>
+                </row>
+            </tabular>
+        <p>
+            Suppose that of the 250 households surveyed, 180 said they have a cat, 95 said they have a dog, and 52 said they have both a cat and a dog. We can use this information to fill in the cells of the table.
+        </p>
+            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                <row header="yes">
+                    <cell></cell>
+                    <cell>Dog</cell>
+                    <cell>No Dog</cell>
+                    <cell>Total</cell>
+                </row>
+                <row>
+                    <cell>Cat</cell>
+                    <cell>52</cell>
+                    <cell></cell>
+                    <cell>180</cell>
+                </row>
+                <row>
+                    <cell>No Cat</cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell>Total</cell>
+                    <cell>95</cell>
+                    <cell></cell>
+                    <cell>250</cell>
+                </row>
+            </tabular>
+        <p>
+            The first cell we can fill in is the <alert>grand total</alert>, which is the total number of subjects in the study. In this case, there are 250 households participating in the survey. The next two cells we can fill in are the total number of households that have a cat, 180, and the total number of households that have a dog, 95. The final cell we can fill in from the given information is the intersection of the having a dog column and a having a cat row, which is 52 households.
+        </p>
+    
+        <p>
+            Since each row and column must sum to their totals, we can use subtraction to find the missing numbers as shown below.
+        </p>
+            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                <row header="yes">
+                    <cell></cell>
+                    <cell>Dog</cell>
+                    <cell>No Dog</cell>
+                    <cell>Total</cell>
+                </row>
+                <row>
+                    <cell>Cat</cell>
+                    <cell>52</cell>
+                    <cell><m>180-52=128</m></cell>
+                    <cell>180</cell>
+                </row>
+                <row>
+                    <cell>No Cat</cell>
+                    <cell><m>95-52=43</m></cell>
+                    <cell><line><m>155-128=27</m></line><line>or</line><line><m>70-43=27</m></line></cell>
+                    <cell><m>250-180=70</m></cell>
+                </row>
+                <row>
+                    <cell>Total</cell>
+                    <cell>95</cell>
+                    <cell><m>250-95=155</m></cell>
+                    <cell>250</cell>
+                </row>
+            </tabular>
+        <p>
+            Now that we have our contingency table completed, notice that the numbers in the central four cells add to the grand total as shown in the table on the left. The total row and the total column also add to the grand total as shown in the right table.
+        </p>
+        <sidebyside>
+            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                <row header="yes">
+                    <cell></cell>
+                    <cell>Dog</cell>
+                    <cell>No Dog</cell>
+                    <cell>Total</cell>
+                </row>
+                <row>
+                    <cell>Cat</cell>
+                    <cell><c>52</c></cell>
+                    <cell><c>128</c></cell>
+                    <cell>180</cell>
+                </row>
+                <row>
+                    <cell>No Cat</cell>
+                    <cell><c>43</c></cell>
+                    <cell><c>27</c></cell>
+                    <cell>70</cell>
+                </row>
+                <row>
+                    <cell>Total</cell>
+                    <cell>95</cell>
+                    <cell>155</cell>
+                    <cell><c>250</c></cell>
+                </row>
+            </tabular>
+            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                <row header="yes">
+                    <cell></cell>
+                    <cell>Dog</cell>
+                    <cell>No Dog</cell>
+                    <cell>Total</cell>
+                </row>
+                <row>
+                    <cell>Cat</cell>
+                    <cell>52</cell>
+                    <cell>128</cell>
+                    <cell><c>180</c></cell>
+                </row>
+                <row>
+                    <cell>No Cat</cell>
+                    <cell>43</cell>
+                    <cell>27</cell>
+                    <cell><c>70</c></cell>
+                </row>
+                <row>
+                    <cell>Total</cell>
+                    <cell><c>95</c></cell>
+                    <cell><c>155</c></cell>
+                    <cell><c>250</c></cell>
+                </row>
+            </tabular>
+        </sidebyside>
+        <p>
+          We can use contingency tables to find probabilities involving "and" and "or". Note, for example that there are 52 respondents out of the grand total 250 who own both a cat and a dog. So, the probability that a respondent selected at random has both a dog and a cat is
+          <me>
+            P(D \cap C)=\frac{52}{250}=20.8\% 
+          </me>
+          where <m>D</m> is the event that the respondent owns a dog and <m>C</m> is the event that the respondent owns a cat.
+        </p>
+        <p>
+          Similarly, the probability that a respondent owns a cat or a dog is
+          <me>
+            P(D \cup D)=\frac{52+128+43}{250}=\frac{228}{250}=89.2\%.
+          </me>
+        </p>
+        <example>
+          <statement>
+            <p>
+              The contingency table shows the survival data for passengers and crew aboard the Titanic.
+            </p>
+            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+              <row header="yes">
+                <cell></cell>
+                <cell>First Class</cell>
+                <cell>Second Class</cell>
+                <cell>Third Class</cell>
+                <cell>Crew</cell>
+                <cell>Total</cell>
+              </row>
+              <row>
+                <cell>Survive</cell>
+                  <cell>203</cell>
+                  <cell>118</cell>
+                  <cell>178</cell>
+                  <cell>212</cell>
+                  <cell>711</cell>
+              </row>
+              <row>
+                <cell>Not Survive</cell>
+                <cell>122</cell>
+                <cell>167</cell>
+                <cell>528</cell>
+                <cell>673</cell>
+                <cell>1490</cell>
+              </row>
+              <row>
+                <cell>Total</cell>
+                <cell>325</cell>
+                <cell>285</cell>
+                <cell>706</cell>
+                <cell>885</cell>
+                <cell>2201</cell>
+              </row>
+            </tabular>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    What percent of people aboard the Titanic did not survive?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What percent of the people aboard the Titanic were members of the crew?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What is the probability that a person selected at random from the ship's manifest (list of all aboard) is a first class passenger who survived? 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What is the probability that a person selected at random from the ship's manifest was a first class passenger or survived?
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    A total of 1490 out of the 2201 people aboard did not survive. That is <m>\frac{1490}{2201}\approx67.7\%</m> of those aboard who lost their lives.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    There were 885 crew, which is <m>\frac{885}{2201}\approx 37.9\%</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Of the 2201 people aboard, 203 were first class passengers who survived. The resulting probability is 
+                    <me>(\text{first class}\cap \text{survived})\frac{203}{2201}\approx 9.2\%.</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Putting together the 711 survivors plus the remaining 122 first class passengers who did not survive gives us a total of 833 people who were first class or survived. Another approach to find this total is to add all the values, excluding totals, in the survive row and the first class column to get <m>203+122+118+178+212=833</m> people who were first class or survivors or both.
+                  </p>
+                  <p>
+                    Therefore, the probability is
+                    <me>
+                      P(\text{first class}\cup \text{survived})=\frac{833}{2201}\approx 37.8\%.
+                    </me>
+                    
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </example>
+    </subsection>
+    
 <subsection xml:id="subsec-complementary-events">
   <title>Complementary Events</title>
   <p>
