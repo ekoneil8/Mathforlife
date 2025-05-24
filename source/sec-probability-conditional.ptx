@@ -711,13 +711,7 @@
     </example>
     </subsection>
     
-    <subsection>
-    <title>Conditional Probabilities</title>
-        <p>
-            We have mentioned conditional probabilities, which we find by isolating our attention to the given row or column. Here is another example of finding conditional probabilities.
-        </p>
-       
-    </subsection>
+
     
     <exercises>
     <title>Exercises</title>
