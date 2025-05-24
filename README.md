@@ -1,1 +1,1 @@
-This is a work in progress and licensed under Creative Commons Attribution-ShareAlike 4.0 International License.
+This is a work in progress licensed under Creative Commons Attribution-ShareAlike 4.0 International.

@@ -103,7 +103,7 @@
     <example>
         <statement>
             <p>
-                Find the probability that a card drawn at random is a king given that it is a face card.
+                Find the probability that a card drawn at random from a standard 52-card deck is a king given that it is a face card.
             </p>
         </statement>
         <solution>
@@ -116,7 +116,127 @@
             </p>
         </solution>
     </example>
-
+<example>
+    <statement>
+        <p>
+            Suppose that two cards are drawn at random from a standard 52-card deck without replacement. (This means that the cards are not put back into the deck after being drawn.)
+        <ol>
+            <li>
+                <p>
+                    Find the probability that the second card is a heart given that the first card also is a heart.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Find the probability that the second card is a heart given that the first card is not a heart.
+                </p>
+            </li>
+        </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        A standard deck of cards contains 52 cards, thirteen of which are hearts. If the first card draws is a heart, then the total number of cards drops to 51 and the total number of hearts drops to twelve. Therefore,
+                        <me>
+                            P(\text{second card is a heart}|\text{first card is a heart})=\frac{12}{51}\approx23.5\%.
+                        </me>
+                         
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If the first card is not a heart, then all thirteen hearts still remain in the deck. Therefore,
+                        <me>
+                            P(\text{second card is a heart}|{first card is not a heart})=\frac{13}{51}\approx 25.5\%
+                        </me>
+                        
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+<example>
+    <statement>
+        <p>
+            Two dice are rolled. Find the probability that the second die shows a 5 given that the first die shows a 5.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            This is something of a trick question because the outcome of the first die is unrelated to the outcome of the second die. The probability that the second die shows a 5 is <m>P(5)=\frac{1}{6}</m> regardless of what the first die shows.
+        </p>
+    </solution>
+</example>
+</subsection>
+<subsection xml:id="subsec-independent-events">
+    <title>Independent and Dependent Events</title>
+    <p>
+        Two or more events are called <term>dependent</term> if the occurrence of one affects the probability of the other(s). For example, the probability that a second card drawn from a deck (without replacement) is a heart <em>depends</em> on whether the first card drawn was a heart.
+    </p>
+    <p>
+        Two or more events are called <term>independent</term> if the occurrence of one has not affect on the the probability of the other(s). For example, the probability that a second die rolled shows a 5 is <em>independent</em> of the result of the first die.
+    </p>
+    <example>
+        <statement>
+            <p>
+                Determine whether each pair of events is independent or dependent.
+                <ol>
+                    <li>
+                        <p>
+                            A jar has ten blue marbles and four white marbles. Two marbles are drawn with replacement. (This means that after the first marble is drawn, it is put back in the jar before the second marble is drawn.) Event <m>E</m> is "the first marble is white", and event <m>F</m> is "the second marble is white".
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A jar has ten blue marbles and four white marbles. Two marbles are drawn without replacement. (This means that after the first marble is drawn, it is not put back in the jar.) Event <m>E</m> is "the first marble is white", and event <m>F</m> is "the second marble is white".
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Three coins are flipped. Event <m>E</m> is "the first coin shows heads", event <m>F</m> is "the second coin shows heads", and event <m>G</m> is "the third coin shows tails".
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Independent
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dependent
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Independent
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
+<assemblage xml:id="assemblage-Independent-Events">
+    <title>Probability of Independent Events</title>
+    <p>
+        If events <m>E</m> and <m>F</m> are independent, then
+        <me>
+            P(E|F)=P(E).
+        </me>
+    </p>
+    <p>
+        If <m>P(E|F)=P(E)</m>, then events <m>E</m> and <m>F</m> are independent.
+    </p>
+</assemblage>
     <example>
         <statement>
         <p>
