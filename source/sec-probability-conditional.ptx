@@ -234,178 +234,48 @@
         </me>
     </p>
     <p>
-        If <m>P(E|F)=P(E)</m>, then events <m>E</m> and <m>F</m> are independent.
+        If <m>P(E|F)=P(E),</m> then events <m>E</m> and <m>F</m> are independent.
+    </p>
+    <p>
+        If <m>P(E|F) \ne P(E),</m> then the events <m>E</m> and <m>F</m> are dependent.
     </p>
 </assemblage>
     <example>
         <statement>
-        <p>
-            910 randomly sampled registered voters from Tampa, FL were asked if they thought workers who have illegally entered the US should (i) be allowed to keep their jobs and apply for US citizenship, (ii) be allowed to keep their jobs as temporary guest workers but not be allowed to apply for US citizenship, or (iii) lose their jobs and have to leave the country. Not sure was also an option (iv). The results of the survey by political ideology are shown below<fn>SurveyUSA, <url href="http://www.surveyusa.com/client/PollReport.aspx?g=60d6fa81-2698-4c51-a5f8-714f40976df2" visual="surveyusa.com/client/PollReport.aspx?g=60d6fa81-2698-4c51-a5f8-714f40976df2">News Poll #18927</url>, data collected Jan 27-29, 2012. Example adapted from <url href="https://www.openintro.org/" visual="openintro.org">Open Intro: Advanced High School Statistics</url>, by Diez et al, used under <url href="https://creativecommons.org/licenses/by-sa/3.0/us/" visual="creativecommons.org/licenses/by-sa/3.0/us">CC-BY-SA 3.0</url>.</fn>. Use the contingency table to answer the questions.
-        </p>
-        <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+            <p>
+                To determine which online advertisement is more effective, an online retailer conducted an A/B test. Some visitors to a particular social media platform were showed the original advertisement while the others were shown a new advertisement. Then the viewers were tracked to determine whether they subsequently made a purchase from the retailer. The results are shown in the table.
+            </p>
+            <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
             <row header="yes">
                 <cell></cell>
-                <cell>Conservative</cell>
-                <cell>Moderate</cell>
-                <cell>Liberal</cell>
+                <cell>Original Ad</cell>
+                <cell>New Ad</cell>
                 <cell>Total</cell>
             </row>
             <row>
-                <cell>(i) Apply for citizenship</cell>
-                <cell>57</cell>
+                <cell>Made Purchase</cell>
                 <cell>120</cell>
-                <cell>101</cell>
-                <cell>278</cell>
+                <cell>320</cell>
+                <cell>440</cell>
             </row>
             <row>
-                <cell>(ii) Guest worker</cell>
-                <cell>121</cell>
-                <cell>113</cell>
-                <cell>28</cell>
-                <cell>262</cell>
-            </row>
-            <row>
-                <cell>(iii) Leave the country</cell>
-                <cell>179</cell>
-                <cell>126</cell>
-                <cell>45</cell>
-                <cell>350</cell>
-            </row>
-            <row>
-                <cell>(iv) Not sure</cell>
-                <cell>15</cell>
-                <cell>4</cell>
-                <cell>1</cell>
-                <cell>20</cell>
+                <cell>No Purchase</cell>
+                <cell>972</cell>
+                <cell>617</cell>
+                <cell>1589</cell>
             </row>
             <row>
                 <cell>Total</cell>
-                <cell>372</cell>
-                <cell>363</cell>
-                <cell>175</cell>
-                <cell>910</cell>
+                <cell>1092</cell>
+                <cell>937</cell>
+                <cell>2029</cell>
             </row>
         </tabular>
         <p>
-        <ol marker="a.">
-            <li>
-                <p>
-                    What percent of the sampled Tampa, FL voters identified themselves as conservatives?
-                </p>
-            </li>
-            <li>
-                <p>
-                    What percent of the sampled voters are in favor of the citizenship option?
-                </p>
-            </li>
-            <li>
-                <p>
-                    What percent of the sampled voters identify themselves as conservatives <alert>and</alert> are in favor of the citizenship option?
-                </p>
-            </li>
-            <li>
-                <p>
-                    What percent of the sampled voters identify themselves as liberal <alert>or</alert> are in favor of the leaving the country option?
-                </p>
-            </li>
-            <li>
-                <p>
-                    What percent of the sampled voters who identify as conservatives are also in favor of the citizenship option? What percent of moderate and liberal voters share this view?
-                </p>
-            </li>
-        </ol>
+            Are the events "viewed the new advertisement" and "made a purchase" dependent?
         </p>
         </statement>
-        <solution>
-        <p>
-            <ol>
-                <li>
-                    <p>
-                        To answer this question, we find the conservative column and look to the bottom cell for the total number of conservative voters and divide that by the total number of voters surveyed. This gives us <m>\frac{372}{910}\approx 0.409</m> or approximately 41% of the Tampa, FL voters who identify as conservative.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        For this question we find the apply for citizenship row, look across to find the total, and divide this by the total number of voters surveyed. We get <m>\frac{278}{910} \approx 0.305</m> or approximately 31% of these voters are in favor of the citizenship option.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        For this question we are looking for the cell that is the intersection of those who identify as conservative and those who are in favor of the citizen option. This cell has 57 voters, so we divide that by the total number of voters. This gives us or <m>\frac{57}{910} \approx 0.063</m> or approximately 6.3% of these voters identify as conservatives and are in favor of the citizenship option.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        The <em>or</em> in this question is inclusive, so we need to determine the number of voters who identify as liberal, who are in favor of the leaving the country option, or both.
-                    </p>
-                <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                    <row header="yes">
-                        <cell></cell>
-                        <cell>Conservative</cell>
-                        <cell>Moderate</cell>
-                        <cell>Liberal</cell>
-                        <cell>Total</cell>
-                    </row>
-                    <row>
-                        <cell>(i) Apply for citizenship</cell>
-                        <cell>57</cell>
-                        <cell>120</cell>
-                        <cell><c>101</c></cell>
-                        <cell>278</cell>
-                    </row>
-                    <row>
-                        <cell>(ii) Guest worker</cell>
-                        <cell>121</cell>
-                        <cell>113</cell>
-                        <cell><c>28</c></cell>
-                        <cell>262</cell>
-                    </row>
-                    <row>
-                        <cell>(iii) Leave the country</cell>
-                        <cell><c>179</c></cell>
-                        <cell><c>126</c></cell>
-                        <cell><c>45</c></cell>
-                        <cell>350</cell>
-                    </row>
-                    <row>
-                        <cell>(iv) Not sure</cell>
-                        <cell>15</cell>
-                        <cell>4</cell>
-                        <cell><c>1</c></cell>
-                        <cell>20</cell>
-                    </row>
-                    <row>
-                        <cell>Total</cell>
-                        <cell>372</cell>
-                        <cell>363</cell>
-                        <cell>175</cell>
-                        <cell>910</cell>
-                    </row>
-                </tabular>
-                <p>
-                    In terms of the individual cells, the number of voters who have the specified characteristics is the sum <m>179+126+101+28+45+1=480</m>, which we can divide by the total number of voters surveyed to get the percent. So, we have <m>\frac{480}{910} \approx 0.527</m> or approximately 53% of the voters identify as liberal or are in favor of the leave the country option. 
-                </p>
-                <p>
-                    Another way to calculate this is to add the total number who identify as liberal (175 voters) and the total number who are in favor of the leave the country option (350 voters), then subtract the double counted cell (45 voters) who are liberal and in favor of the leave the country option: <m>175+350-45=480</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        As we saw before, these are conditional statements. For the first part of this question, we want to focus just on those voters who identify as conservatives, and from among that group determine the percent in favor of the citizenship option. We calculate that <m>\frac{57}{372} \approx 0.153</m> or approximately 15% of conservative voters are in favor of the citizenship option.
-                    </p>
-                    <p>
-                        For the second part, we want to focus on just those voters who identify as moderate, and from among that group determine the percent in favor of the citizenship option. Then we have <m>\frac{120}{363} \approx 0.33</m> or approximately 33% of moderate voters are in favor of the citizen option.
-                    </p>
-                    <p>
-                        Finally, we want to focus on just those voters who identify as liberal, and from among that group determine the percent in favor of the citizenship option. We calculate <m>\frac{101}{175} \approx 0.58</m> or approximately 58% of liberal voters are in favor of the citizenship option. Looking at these three percentages, it is clear that support of the citizenship option <alert>depends</alert> on political ideology. If support of the citizenship option were the same across political ideologies, then we would say that favoring the citizenship option and political ideology were <alert>independent</alert> of each other.
-                    </p>
-                </li>
-            </ol>
-        </p>
-        </solution>
     </example>
-    
-   
     <example>
         <statement>
         <p>
@@ -438,279 +308,89 @@
             </row>
         </tabular>
         <p>
-            Find the probability that a randomly selected survey participant:
-            <ol marker="a.">
-                <li>
-                    <p>
-                        has a red car.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        has had a speeding ticket in the last year.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        has a red car and has not had a speeding ticket in the last year.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        has a red car or has had a speeding ticket in the last year.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        has had a speeding ticket in the last year given they have a red car.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        who has received a speeding ticket in the last year also has a red car.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        What do the answers to b and e suggest about the relationship between owning a red car and getting a speeding ticket?
-                    </p>
-                </li>
-            </ol>
+            Determine whether the events "driving a red car" and "received a speeding ticket" are dependent or independent, if possible, and state what that means. The margin of error is three percentage points.
         </p>
         </statement>
         <solution>
         <p>
-            <ol marker="a.">
-                <li>
-                    <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                        <row header="yes">
-                            <cell></cell>
-                            <cell>Speeding Ticket</cell>
-                            <cell>No Speeding Ticket</cell>
-                            <cell>Total</cell>
-                        </row>
-                        <row>
-                            <cell>Red Car</cell>
-                            <cell>15</cell>
-                            <cell>135</cell>
-                            <cell><c>150</c></cell>
-                        </row>
-                        <row>
-                            <cell>Not Red Car</cell>
-                            <cell>45</cell>
-                            <cell>470</cell>
-                            <cell>515</cell>
-                        </row>
-                        <row>
-                            <cell>Total</cell>
-                            <cell>60</cell>
-                            <cell>605</cell>
-                            <cell><c>665</c></cell>
-                        </row>
-                    </tabular>
-                    <p>
-                        To find <m>P(\text{red car})</m>, we divide the number of participants who own a red car by the total number of people surveyed:<m>P(\text{red car})=\frac{150}{665} \approx 0.226</m> or 22.6%.
-                    </p>
-                </li>
-                <li>
-                    <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                        <row header="yes">
-                            <cell></cell>
-                            <cell>Speeding Ticket</cell>
-                            <cell>No Speeding Ticket</cell>
-                            <cell>Total</cell>
-                        </row>
-                        <row>
-                            <cell>Red Car</cell>
-                            <cell>15</cell>
-                            <cell>135</cell>
-                            <cell>150</cell>
-                        </row>
-                        <row>
-                            <cell>Not Red Car</cell>
-                            <cell>45</cell>
-                            <cell>470</cell>
-                            <cell>515</cell>
-                        </row>
-                        <row>
-                            <cell>Total</cell>
-                            <cell><c>60</c></cell>
-                            <cell>605</cell>
-                            <cell><c>665</c></cell>
-                        </row>
-                    </tabular>
-                    <p>
-                        <m>P(\text{speeding ticket})</m>, we divide the number of participants who got a speeding ticket in the last year by the total number of people surveyed: <m>P(\text{speeding ticket})=\frac{60}{665} \approx 0.09</m> or 9%.
-                    </p>
-                </li>
-                <li>
-                    <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                        <row header="yes">
-                            <cell></cell>
-                            <cell>Speeding Ticket</cell>
-                            <cell>No Speeding Ticket</cell>
-                            <cell>Total</cell>
-                        </row>
-                        <row>
-                            <cell>Red Car</cell>
-                            <cell>15</cell>
-                            <cell><c>135</c></cell>
-                            <cell>150</cell>
-                        </row>
-                        <row>
-                            <cell>Not Red Car</cell>
-                            <cell>45</cell>
-                            <cell>470</cell>
-                            <cell>515</cell>
-                        </row>
-                        <row>
-                            <cell>Total</cell>
-                            <cell>60</cell>
-                            <cell>605</cell>
-                            <cell><c>665</c></cell>
-                        </row>
-                    </tabular>
-                    <p>
-                        To find <m>P(\text{red and no ticket})</m> , we find the intersection of the red car category and the no ticket category and divide by the total number of participants: <m>P(\text{red and no ticket}) =\frac{135}{665} \approx 0.203</m> or 20.3%
-                    </p>
-                </li>
-                <li>
-                    <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                        <row header="yes">
-                            <cell></cell>
-                            <cell>Speeding Ticket</cell>
-                            <cell>No Speeding Ticket</cell>
-                            <cell>Total</cell>
-                        </row>
-                        <row>
-                            <cell>Red Car</cell>
-                            <cell><c>15</c></cell>
-                            <cell><c>135</c></cell>
-                            <cell>150</cell>
-                        </row>
-                        <row>
-                            <cell>Not Red Car</cell>
-                            <cell><c>45</c></cell>
-                            <cell>470</cell>
-                            <cell>515</cell>
-                        </row>
-                        <row>
-                            <cell>Total</cell>
-                            <cell>60</cell>
-                            <cell>605</cell>
-                            <cell><c>665</c></cell>
-                        </row>
-                    </tabular>
-                    <p>
-                        To find <m>P(\text{red or ticket})</m>, we need to add those who drive a red car and did not have a speeding ticket (just red), those who had a speeding ticket and do not drive a red car (just ticket) and those who drive a red car and had a speeding ticket (both), and divide by the total number of participants:
-                    </p>
-                    <p>
-                        <md>
-                        <mrow>P(\text{red and no ticket})=\frac{135+45+15}{665}=\frac{195}{665} \approx 0.293\text{ or } 29.3\%</mrow>
-                        </md>
-                    </p>
-                    <p>
-                        Recall from our earlier discussion that we could also calculate the or probability as:
-                    </p>
-                    <p>
-                        <md>
-                            <mrow>P(\text{red and no ticket})\amp= P(\text{red})+ P(\text{speeding ticket}) - P(\text{red and speeding ticket})</mrow>
-                            <mrow>\amp=\frac{150}{665}+\frac{60}{665}-\frac{15}{665}</mrow>
-                            <mrow>\amp=\frac{195}{665}</mrow>
-                        </md>
-                    </p>
-                    <p>
-                        which gives us the same answer as counting the individual cells.
-                    </p>
-                </li>
-                <li>
-                    <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                        <row header="yes">
-                            <cell></cell>
-                            <cell>Speeding Ticket</cell>
-                            <cell>No Speeding Ticket</cell>
-                            <cell>Total</cell>
-                        </row>
-                        <row>
-                            <cell>Red Car</cell>
-                            <cell><c>15</c></cell>
-                            <cell>135</cell>
-                            <cell><c>150</c></cell>
-                        </row>
-                        <row>
-                            <cell>Not Red Car</cell>
-                            <cell>45</cell>
-                            <cell>470</cell>
-                            <cell>515</cell>
-                        </row>
-                        <row>
-                            <cell>Total</cell>
-                            <cell>60</cell>
-                            <cell>605</cell>
-                            <cell>665</cell>
-                        </row>
-                    </tabular>
-                    <p>
-                        The probability <m>P(\text{speeding ticket}|\text{red car})</m> is a conditional probability as we have seen before since it is conditional on the given characteristic occurring. In this problem, the given characteristic is owning a red car, so we isolate our attention to just the row of 150 red car owners and see how many have had a speeding ticket in the last year. Looking at the table, we see that there were 15 red car owners who had a speeding ticket in the last year, so we calculate:
-                    </p>
-                    <p>
-                        <md>
-                        <mrow>P(\text{speeding ticket given red car})=\frac{15}{150} = 0.10\text{ or } 10\%</mrow>
-                        </md>
-                    </p>
-                </li>
-                <li>
-                    <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                        <row header="yes">
-                            <cell></cell>
-                            <cell>Speeding Ticket</cell>
-                            <cell>No Speeding Ticket</cell>
-                            <cell>Total</cell>
-                        </row>
-                        <row>
-                            <cell>Red Car</cell>
-                            <cell><c>15</c></cell>
-                            <cell>135</cell>
-                            <cell>150</cell>
-                        </row>
-                        <row>
-                            <cell>Not Red Car</cell>
-                            <cell>45</cell>
-                            <cell>470</cell>
-                            <cell>515</cell>
-                        </row>
-                        <row>
-                            <cell>Total</cell>
-                            <cell><c>60</c></cell>
-                            <cell>605</cell>
-                            <cell>665</cell>
-                        </row>
-                    </tabular>
-                    <p>
-                        This question is also asking for a conditional probability, <m>P(\text{red car given speeding ticket})</m>, but it is phrased more like we would say it. In this case the given characteristic is that the person has received a speeding ticket, so we will isolate our attention to just the speeding ticket column. Among the 60 people who had a speeding ticket in the last year, we see that 15 also drove a red car. Now we can calculate the probability:
-                    </p>
-                    <p>
-                        <md>
-                        <mrow>P(\text{red car given speeding ticket})=\frac{15}{60} = 0.25\text{ or }25\%</mrow>
-                        </md>
-                    </p>
-                    <p>
-                        Notice that compared with part e, when we change the conditional characteristic, we change the denominator of the fraction.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        In part b, we determined that there was a 9% chance of randomly selecting a participant who had received a speeding ticket in the last year. However, in part e we found that there was a 25% chance of receiving a ticket in the last year if the person had a red car. This seems to suggest that there is a higher likelihood of getting a speeding ticket if you own a red car. This means that getting a speeding ticket is <term>dependent</term> on whether the person drives a red car, since that increases the probability of getting a ticket. We cannot say, however, whether driving a red car makes you speed or whether people who tend to drive faster buy red cars.
-                    </p>
-                </li>
-            </ol>
+           Let <m>R</m> be the event "driving a red car", and let <m>S</m> be the event "received a speeding ticket". We will calculate <m>P(T|R)</m> and <m>P(T)</m> and determine whether the difference is greater than the margin of error.
+        <me>
+            P(S|R)=\frac{text{number of elements in }S\cap R}{\text{number of elements in }R}=\frac{15}{150}=10\%
+        </me>
+                </p>
+        <p>
+        <me>
+            P(S)=\frac{\text{total number of elements in }S}{\text{total number of elements}}=\frac{60}{665}\approx 9\%
+        </me>
+        
+        </p>
+        <p>
+            Since the two probabilities differ by 1% which is within the margin of error, we cannot conclude that driving a red car and getting a speeding ticket are dependent.
         </p>
         </solution>
     
     
     </example>
     </subsection>
-    
+    <subsection xml:id="subsec-sequential-events">
+        <title>Probability of Sequential Events</title>
+       <p>
+        Consider the experiment of selecting two marbles from a jar without replacement. The jar initially contains two green marbles, which we will call G1 and G2, and two blue marbles, which we will call B1 and B2. Using methods from <xref ref="sec-probability-fundamentals"/>, we can find the probability that both marbles are blue as follows.
+       </p> 
+       <p>
+        Using the notation that (B1,G2) represents drawing blue marble B1 followed by green marble G2, we write the sample space.
+        <md>
+            <mrow>
+            S=\{\amp (B1,B2),(B1,G1),(B1,G2),(B2,B1),  
+            </mrow>
+            <mrow> 
+                \amp (B2,G1),(B2,G2),(G1,B1),(G1,B2), 
+            </mrow>
+            <mrow> \amp (G1,G2),(G2,B1),(G2,B2),(G2,G1)\}</mrow>
+        </md>
+        
+       </p>
+       <p>
+        There are twelve elements in the sample space. We are interested in the event that both marbles are blue, <m>E=\{(B1,B2),(B2,B1)\}.</m> Therefore the probability is
+        <me>
+            P(E)=\frac{2}{12}=\frac{1}{6}.
+        </me>
+        
+       </p>
+       <p>
+        Isn't there a more efficient way to find this probability? Yes, there is!
+       </p>
+       <p>
+        The probability that the first marble is blue is <m>P(\text{first blue})=\frac{2}{4}=\frac{1}{2}</m> because two out of the four marbles are blue. Now, assuming that the first marble was blue, there will be three marbles left in the jar, only one of which is blue. The probability that the second marble also is blue is <m>P(\text{second blue}|\text{first blue})=\frac{1}{3}.</m>
+       </p>
+       <p>
+        The probability that both marbles are blue is the product of these two probabilities!
+        <md>
+            <mrow>
+            P(\text{first blue}\cap \text{second blue})= \amp P(\text{first blue})\cdot P(\text{second blue}|\text{first blue})
+            </mrow>
+            <mrow> =\amp \frac{1}{2}\cdot\frac{1}{3}</mrow>
+            <mrow> =\amp \frac{1}{6} </mrow>
+        </md>
+        
+       </p>
+       <assemblage xml:id="assemblage-probability-sequential">
+        <title>Probability of Sequential Events</title>
+        <p>
+            <me>
+                P(A\cap B)=P(A)\cdot P(B|A)
+            </me>
+            
+        </p>
+        <p>
+            If <m>A</m> and <m>B</m> are <em>independent</em>, then:
+            <me>
+                P(A\cap B)=P(A)\cdot P(B)
+            </me>
+            
+        </p>
+       </assemblage>
+    </subsection>
 
     
     <exercises>
