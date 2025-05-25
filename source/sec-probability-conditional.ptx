@@ -374,22 +374,65 @@
         </md>
         
        </p>
+       <p>
+        The probability of two or more events in sequence is the the product of the probability that the first event occurs and the probability that the second event occurs given or assuming that the first event occurred.
+       </p>
        <assemblage xml:id="assemblage-probability-sequential">
         <title>Probability of Sequential Events</title>
         <p>
+            For any events <m>A</m> and <m>B</m>:
             <me>
-                P(A\cap B)=P(A)\cdot P(B|A)
+                P(A\cap B)=P(A)\cdot P(B|A).
             </me>
             
         </p>
         <p>
-            If <m>A</m> and <m>B</m> are <em>independent</em>, then:
+            If <m>A</m> and <m>B</m> are <em>independent</em>, we can simplify to:
             <me>
-                P(A\cap B)=P(A)\cdot P(B)
+                P(A\cap B)=P(A)\cdot P(B).
             </me>
             
         </p>
+        <p>
+            For three or more events, we use additional factors as needed.
+        </p>
        </assemblage>
+       <p>
+        We will investigate why this rule works later in the chapter.
+       </p>
+       <example>
+        <statement>
+            <p>
+                Four cards are drawn at random from a standard 52-card deck <em>without replacement</em>. Find the probability that all four are hearts.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The solution is the product of <m>P(\text{first heart})</m>, <m>P(\text{second heart }|\text{ first heart})</m>, <m>P(\text{third heart }|\text{ first two hearts})</m>, and <m>P(\text{fourth heart }|\text{ first three hearts}).</m>
+                <me>
+                 P(\text{all four hearts})= \frac{13}{52} \cdot \frac{12}{51} \cdot \frac{11}{50} \cdot \frac{10}{49} \approx 0.26\%
+                </me>
+            </p>
+        </solution>
+       </example>
+       <example>
+           <statement>
+            <p>
+                Four cards are drawn at random from a standard 52-card deck <em>with replacement</em>. This means that each card is replaced in the deck before the next is drawn. Find the probability that all four are hearts.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The solution is the product of <m>P(\text{first heart})</m>, <m>P(\text{second heart }|\text{ first heart})</m>, <m>P(\text{third heart }|\text{ first two hearts})</m>, and <m>P(\text{fourth heart }|\text{ first three hearts}).</m>
+            </p>
+            <p>
+                However, in this situation, all four probabilities are the same because the cards are replaced. The events are independent!
+                <me>
+                 P(\text{all four hearts})= \frac{13}{52} \cdot \frac{13}{52} \cdot \frac{13}{52} \cdot \frac{13}{52} \approx 0.39\%
+                </me>
+            </p>
+        </solution>     
+       </example>
     </subsection>
 
     
