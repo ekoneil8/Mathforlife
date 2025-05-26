@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-probability-medicaltests" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Focus on Diagnostic Tests</title>
+<objectives>
+    <introduction>
+        <p>
+            Students will be able to:
+        </p>
+    </introduction>
+    <ul>
+        <li>
+            <p>
+                Interpret sensitivity and specificity of diagnostic tests in context.
+            </p>
+        </li>
+        <li>
+            <p>
+                Calculate and interpret true and false positive rates and true and false negative rates.
+            </p>
+        </li>
+
+    </ul>
+</objectives>
+
+  <introduction>
+    <p>
+        
+    </p>
+
+    
+</introduction>
+  <p> </p>
+<subsection xml:id="subsec-senstivity-specificity">
+    <title>Sensitivity and Specificity</title>
+    <p>
+        Introduce the importance of these measurements.
+    </p>
+    <p>
+        The <term>sensitivity</term> of a medical test indicates how well it <em>senses</em> the presence of an illness or condition. For example, a particular pregnancy test has 98% sensitivity when taken the first day of a missed period. 
+    </p>
+</subsection>
+</section>

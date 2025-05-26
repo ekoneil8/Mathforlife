@@ -275,6 +275,26 @@
             Are the events "viewed the new advertisement" and "made a purchase" dependent?
         </p>
         </statement>
+        <solution>
+            <p>
+                We will calculate <m>P(\text{made a purchase})</m> is the same as <m>P(\text{made a purchase}|\text{saw new ad})</m>.
+            </p>
+            <p>
+            <me>
+                P(\text{made a purchase})=\frac{440}{2029}\approx21.7\%
+            </me>
+            <me>
+                P(\text{made a purchase}|\text{new ad})=\frac{320}{937}\approx34.2\%
+            </me>
+        </p>
+        <p>
+            Since the two probabilities are different, we can conclude that the events are dependent. 
+        </p>
+        <p>
+            We also could observe that <m>P(\text{made a purchase}|\text{new ad})\gt P(\text{made a purchase}|\text{original ad})</m>, and, therefore, the new advertisement appears to be more effective than the original advertisement.
+        </p>
+            
+        </solution>
     </example>
     <example>
         <statement>
@@ -432,6 +452,49 @@
                 </me>
             </p>
         </solution>     
+       </example>
+       <example>
+        <statement>
+            <p>
+                Consider the experiment of flipping a coin five times.
+                <ol>
+                    <li>
+                        <p>
+                            Find the probability that all five flips result in heads.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the probability that at least one flip results in tails. 
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Each coin flip is an independent event with probability of heads <m>\frac{1}{2}</m>. Therefore, the probability that all five flips result in heads is
+                            <me>
+                                P(\text{all five heads})=\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}=\frac{1}{32}
+                            </me>
+                            
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Instead of calculating the probability of getting at least one tails directly, which would be quite onerous, we make use of the fact that "at least one tails" is the <em>complement</em> of "all heads". We can find the answer by subtracting our previous answer from one.
+                            <me>
+                                P(\text{at least one tails})=1-P(\text{all heads})=1-\frac{1}{32}=\frac{31}{32}
+                            </me>
+                            On average, if we repeated this experiment, we can expect to see all five heads once out of every 32 times, and we can expect to see at least one tails the other 31 out of 32 times.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
        </example>
     </subsection>
 
