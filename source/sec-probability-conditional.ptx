@@ -35,9 +35,7 @@
     
     <introduction>
     
-        <p>
-            When we looked at categorical data in the previous chapter, it was related to a single variable, or characteristic of interest, such as favorite movie or car color. To illustrate the data, we made a frequency table and used it to create a pie chart or bar chart. But what if we want to illustrate the relationship between two categorical variables? To do this, we can use a contingency table.
-        </p>
+        
     </introduction>
     
 
@@ -47,7 +45,7 @@
         <title>Conditional Probability</title>
     
         <p>
-            Another question we can answer using a contingency table is what percentage of dog owning households also own a cat? In this case the group that we are interested in isn't every household surveyed (the grand total), but just those households that own a dog.
+            Recall in the previous section we used a contingency table to determine the probability that a pet-owning household has a cat or a dog. We also may wonderwhat percentage of dog-owning households also own a cat? In this case the group that we are interested in isn't every household surveyed (the grand total), but just those households that own a dog.
         </p>
             <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
                 <row header="yes">
@@ -79,7 +77,13 @@
             We call this a <alert>conditional</alert> statement because we are only considering the households with a certain condition. If we focus on the column representing the households that own a dog, we see that there is a total of 95 households with a dog, and that 52 of those 95 households also have a cat. Therefore, <m>\frac{52}{95} \approx 0.547</m> or approximately 54.7% of the households with a dog also have a cat. Another way to phrase this conditional statement is, <q>What percent of households have a cat <alert>given</alert> they have a dog.</q> You will see the word given quite a bit in this chapter and that makes the denominator change. 
         </p>
         <p>
-            If <m>C</m> is the event "owning a cat" and <m>D</m> is the event "owning a dog", then the probability that someone owns a cat given that you know they own a dog is written <m>P(C|D)=\frac{52}{95}.</m>
+            If <m>C</m> is the event "owning a cat" and <m>D</m> is the event "owning a dog", then the probability that someone owns a cat given that you know they own a dog is written <m>P(C|D)=\frac{52}{95}\approx 57.7\%.</m>
+        </p>
+        <p>
+            Similarly, we can find the probability that a cat-owning household also owns a dog. In this case, we restrict our attention to the row corresponding to cat owners and find <m>P(D|C)=\frac{52}{180}\approx 28.9\%.</m>
+        </p>
+        <p>
+            What does this tell us? According to the poll data, if you see someone with a dog, there is a 54.7% chance that they also have a cat at home. However, if you meet a cat owner, there is only a 28.9% chance that they also have a dog.
         </p>
         <assemblage xml:id="assemblage-conditional-probability">
             <title>Conditional Probability</title>
