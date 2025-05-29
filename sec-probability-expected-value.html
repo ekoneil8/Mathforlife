@@ -969,9 +969,6 @@ eBookConfig.enable_chatcodes =  false;
 #sec-probability-conditional-7-17-2-1-1 { counter-set: sec-probability-conditional-7-17-2-1-1 0; }
 #sec-probability-conditional-7-17-2-1-1 > li::marker { content: ""counter(sec-probability-conditional-7-17-2-1-1,lower-alpha)"."; }
 #sec-probability-conditional-7-17-2-1-1 > li { counter-increment: sec-probability-conditional-7-17-2-1-1; }
-#sec-probability-expected-value-4-20-1-2-1 { counter-set: sec-probability-expected-value-4-20-1-2-1 0; }
-#sec-probability-expected-value-4-20-1-2-1 > li::marker { content: ""counter(sec-probability-expected-value-4-20-1-2-1,decimal)"."; }
-#sec-probability-expected-value-4-20-1-2-1 > li { counter-increment: sec-probability-expected-value-4-20-1-2-1; }
 #sec-probability-expected-value-5-2-1-2-1 { counter-set: sec-probability-expected-value-5-2-1-2-1 0; }
 #sec-probability-expected-value-5-2-1-2-1 > li::marker { content: ""counter(sec-probability-expected-value-5-2-1-2-1,lower-alpha)"."; }
 #sec-probability-expected-value-5-2-1-2-1 > li { counter-increment: sec-probability-expected-value-5-2-1-2-1; }
@@ -1494,7 +1491,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">$10</td>
 </tr>
 <tr>
-<th scope="row" class="c m b1 r1 l1 t0 lines">Roll not a 6 on the second roll but not the first</th>
+<th scope="row" class="c m b1 r1 l1 t0 lines">Roll a 6 on the second roll but not the first</th>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{5}{6}\cdot\frac{1}{6}=\frac{5}{36}\)</span></td>
 <td class="c m b1 r1 l0 t0 lines">$3</td>
 </tr>
@@ -1504,27 +1501,44 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">$0</td>
 </tr>
 </table></div>
-<div class="para" id="sec-probability-expected-value-4-8">Think of the expected value as a weighted average. We could take the average of $10, $3, and $0, but they are not all equally likely. It is much more likely to win $0 than to win $10. So, to find the average, we multiply each outcome by the chance it will happen and add the products together.</div>
-<article class="assemblage assemblage-like" id="sec-probability-expected-value-4-9"><h4 class="heading"><span class="title">Expected Value.</span></h4>
-<div class="para" id="sec-probability-expected-value-4-9-2">Multiply each outcome by its probability and add up the products</div></article><div class="para" id="sec-probability-expected-value-4-10">In this case we have:</div>
-<div class="para logical" id="sec-probability-expected-value-4-11"><div class="displaymath process-math" id="sec-probability-expected-value-4-11-1">
+<div class="para" id="sec-probability-expected-value-4-8">We observe that <span class="process-math">\(\frac{1}{6}+\frac{5}{36}+\frac{25}{36}=1\text{.}\)</span> Because the probabilities add to one, we know that all possible outcomes have been accounted for and our table is complete.</div>
+<div class="para logical" id="sec-probability-expected-value-4-9">
+<div class="para">Imagine running this game repeatedly. On average, for every 36 times the game is played, the player will win $10 six times, win $3 five times, and win $0 the remaining 25 times. This results in a total winnings of</div>
+<div class="displaymath process-math">
+\begin{equation*}
+6(10)+5(3)+0(25)=$75
+\end{equation*}
+</div>
+<div class="para">in 36 plays. Therefore, the winnings average out to <span class="process-math">\(75\div36\appprox $2.08\)</span> per play. This is the expected value!</div>
+</div>
+<div class="para logical" id="sec-probability-expected-value-4-10">
+<div class="para">A more efficient way to perform this calculation is to multiply the value corresponding to each outcome by the chance it will happen and add the products together.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+10\left(\frac{1}{6}\right)+3\left(\frac{5}{36}\right)+0\left(\frac{25}{36}\right)\approx $2.08
+\end{equation*}
+</div>
+</div>
+<div class="para" id="sec-probability-expected-value-4-11">In the long run, players can expect to win $2.08 per game. This also means that the carnival owner will be paying out an average of $2.08 per game! Since the carnival owner would rather not lose money, we need to make sure to charge players enough to offset the average payout.</div>
+<div class="para" id="sec-probability-expected-value-4-12">If the carnival owner charges exactly $2.08 to play, the game is considered a <em class="alert">fair game</em> since the expected winnings would be $0. In a fair game, the player isn’t expected to win anything, nor is the owner expected to earn anything over the long run. However, if the carnival owner charges the player more than $2.08 to play, they will earn money over the long run.</div>
+<div class="para" id="sec-probability-expected-value-4-13">Suppose you suggest charging $5 to play. We can determine the net expected value by subtracting the $5 the player has to pay from their expected winnings. This gives us:</div>
+<div class="para logical" id="sec-probability-expected-value-4-14">
+<div class="displaymath process-math" id="sec-probability-expected-value-4-14-1">
 \begin{gather*}
-\text{Expected winnings}=\$10(\frac{1}{6})+\$3(\frac{5}{36})+\$0(\frac{25}{36})=\$2.08
+\text{Net expected value}=\$2.08-\$5=-\$2.92.
 \end{gather*}
-</div></div>
-<div class="para" id="sec-probability-expected-value-4-12">This tells us that over the long run, players can expect to win $2.08 per game. This also means that the carnival owner will be paying out an average of $2.08 per game! Since the carnival owner would rather not lose money by paying players over the long run we need to make sure to charge players enough to offset the average payout.</div>
-<div class="para" id="sec-probability-expected-value-4-13">If the carnival owner charges exactly $2.08 to play, the game is considered a <em class="alert">fair game</em> since the expected winnings would be $0. In a fair game, the player isn’t expected to win anything, nor is the owner expected to earn anything over the long run. However, if the carnival owner charges the player more than $2.08 to play, they will earn money over the long run.</div>
-<div class="para" id="sec-probability-expected-value-4-14">Suppose you suggest charging $5 to play. We can determine the net winnings by subtracting the $5 the player has to pay from their expected winnings. This gives us:</div>
-<div class="para logical" id="sec-probability-expected-value-4-15"><div class="displaymath process-math" id="sec-probability-expected-value-4-15-1">
-\begin{gather*}
-\text{Net player winnings}=\$2.08-\$5=-\$2.92
-\end{gather*}
-</div></div>
-<div class="para" id="sec-probability-expected-value-4-16">This means that over the long run, players can expect to lose an average of $2.92 each game they play, and the carnival owner can expect to earn an average of $2.92 per game over the long run. Here’s another example.</div>
-<article class="example example-like" id="sec-probability-expected-value-4-17"><h4 class="heading">
+</div>
+<div class="para">With the price set at $5 per play, the player can expect to lose an average of $2.92 per play and the carnival owner can expect to earn an average of $2.92 per play.</div>
+</div>
+<article class="assemblage assemblage-like" id="sec-probability-expected-value-4-15"><h4 class="heading"><span class="title">Expected Value.</span></h4>
+<div class="para" id="sec-probability-expected-value-4-15-2">
+<dfn class="terminology">Expected value</dfn> is the average amount of gain or loss in a game, experiment, investment, or other venture.</div>
+<div class="para" id="sec-probability-expected-value-4-15-3">To calculate expected value, multiply the probability of each outcome by its corresponding value and add the products.</div>
+<div class="para" id="sec-probability-expected-value-4-15-4">
+<dfn class="terminology">Net Expected Value</dfn> is the resulting expected value after accounting for any costs.</div></article><article class="example example-like" id="sec-probability-expected-value-4-16"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-probability-expected-value-4-17-1-1">Pick4 is a game by the Oregon Lottery that costs $1 to play. In this game you pick 4 numbers in a specific pattern. If you get the exact sequence, you can in theory earn a lot of money. Suppose that the payouts are as follows. Determine the player’s expected net winnings.</div> <div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="sec-probability-expected-value-4-16-1-1">Pick4 is a game by the Oregon Lottery that costs $1 to play. In this game you pick 4 numbers in a specific pattern. If you get the exact sequence, you can in theory earn a lot of money. Suppose that the payouts are as follows. Determine the player’s expected net winnings.</div> <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines"><em class="alert">Prize ($)</em></th>
 <th scope="col" class="c m b1 r1 l0 t1 lines"><em class="alert">Probability</em></th>
@@ -1546,17 +1560,17 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\sfrac{1}{2500}\)</span></td>
 </tr>
 </table></div>
-<div class="solutions"><details id="sec-probability-expected-value-4-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-probability-expected-value-4-17-2-1">This table is not quite a complete probability distribution since it is missing one important outcome: when the player loses. In that case the prize is $0. We need to add a line for this. The prize for this missing outcome is $0, and since losing is the complement to winning <em class="emphasis">something</em>, the probability will be:</div>
-<div class="para logical" id="sec-probability-expected-value-4-17-2-2"><div class="displaymath process-math" id="sec-probability-expected-value-4-17-2-2-1">
+<div class="solutions"><details id="sec-probability-expected-value-4-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-probability-expected-value-4-16-2-1">This table is not quite a complete probability distribution since it is missing one important outcome: when the player loses. In that case the prize is $0. We need to add a line for this. The prize for this missing outcome is $0, and since losing is the complement to winning <em class="emphasis">something</em>, the probability will be:</div>
+<div class="para logical" id="sec-probability-expected-value-4-16-2-2"><div class="displaymath process-math" id="sec-probability-expected-value-4-16-2-2-1">
 \begin{align*}
 P(\text{Win }\$0)\amp=1-(\frac{1}{417}+\frac{1}{1833}+\frac{1}{1667}+\frac{1}{2500})\\
 \amp=1-0.0039\\
 \amp=0.9961
 \end{align*}
 </div></div>
-<div class="para" id="sec-probability-expected-value-4-17-2-3"></div>
-<div class="para" id="sec-probability-expected-value-4-17-2-4">Adding this information to the table gives a complete probability distribution. Now we can see that players are going to lose more than 99% of the time, so the expected value will be heavily weighted toward winning $0.</div>
+<div class="para" id="sec-probability-expected-value-4-16-2-3"></div>
+<div class="para" id="sec-probability-expected-value-4-16-2-4">Adding this information to the table gives a complete probability distribution. Now we can see that players are going to lose more than 99% of the time, so the expected value will be heavily weighted toward winning $0.</div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines"><em class="alert">Prize ($)</em></th>
@@ -1583,33 +1597,30 @@ P(\text{Win }\$0)\amp=1-(\frac{1}{417}+\frac{1}{1833}+\frac{1}{1667}+\frac{1}{25
 <td class="c m b1 r1 l0 t0 lines">0.9961</td>
 </tr>
 </table></div>
-<div class="para logical" id="sec-probability-expected-value-4-17-2-6"><div class="displaymath process-math" id="sec-probability-expected-value-4-17-2-6-1">
+<div class="para logical" id="sec-probability-expected-value-4-16-2-6"><div class="displaymath process-math" id="sec-probability-expected-value-4-16-2-6-1">
 \begin{align*}
 \text{Expected winnings}\amp=\$250(\frac{1}{417})+\$500(\frac{1}{1833})+\$1000(\frac{1}{16773})+\$1500(\frac{1}{2500})+\$0(0.9961)\\
 \amp=\$2.07
 \end{align*}
 </div></div>
-<div class="para" id="sec-probability-expected-value-4-17-2-7">Therefore, the player’s expected winnings are $2.07, on average, over the long run. To find the expected <em class="alert">net</em> winnings, we subtract the cost to play. Since it costs $1 to play,</div>
-<div class="para logical" id="sec-probability-expected-value-4-17-2-8"><div class="displaymath process-math" id="sec-probability-expected-value-4-17-2-8-1">
+<div class="para" id="sec-probability-expected-value-4-16-2-7">Therefore, the player’s expected winnings are $2.07, on average, over the long run. To find the expected <em class="alert">net</em> winnings, we subtract the cost to play. Since it costs $1 to play,</div>
+<div class="para logical" id="sec-probability-expected-value-4-16-2-8"><div class="displaymath process-math" id="sec-probability-expected-value-4-16-2-8-1">
 \begin{gather*}
 \text{Net Expected Winnings}=\$2.07-\$1.00=\$1.07.
 \end{gather*}
 </div></div>
-<div class="para" id="sec-probability-expected-value-4-17-2-9">Assuming the given payouts are correct, this would be one game you would want to play for investment purposes since you can expect to earn $1.07 per game, on average, over the long run. Play a million times, and you just might become a millionaire!</div>
-</div></details></div></article><div class="para" id="sec-probability-expected-value-4-18">In general, if the expected value of a game is negative, it is not a good idea to play, since in the long run you will lose money. It would be better to play a game with a positive expected value (good luck trying to find one!), although keep in mind that even if the average winnings are positive it could be the case that most people lose money and one very fortunate individual wins a great deal of money.</div>
-<div class="para" id="sec-probability-expected-value-4-19">Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. That is fine so long as you enjoy playing the game and think it is worth the cost, but it would be wrong to expect to come out ahead.</div>
-<article class="example example-like" id="sec-probability-expected-value-4-20"><h4 class="heading">
+<div class="para" id="sec-probability-expected-value-4-16-2-9">Assuming the given payouts are correct, this would be one game you would want to play for investment purposes since you can expect to earn $1.07 per game, on average, over the long run. Play a million times, and you just might become a millionaire!</div>
+</div></details></div></article><div class="para" id="sec-probability-expected-value-4-17">In general, if the expected value of a game is negative, it is not a good idea to play, since in the long run you will lose money. It would be better to play a game with a positive expected value (good luck trying to find one!), although keep in mind that even if the average winnings are positive it could be the case that most people lose money and one very fortunate individual wins a great deal of money.</div>
+<div class="para" id="sec-probability-expected-value-4-18">Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. That is fine so long as you enjoy playing the game and think it is worth the cost, but it would be wrong to expect to come out ahead.</div>
+<article class="example example-like" id="sec-probability-expected-value-4-19"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
 </h4>
 <figure class="figure figure-like" id="roulette"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/roulette-wheel.jpg" class="contained" alt="Wooden roulette wheel with alternately red and black numbers 1 through 36 and green numbers 0, and 00."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.3<span class="period">.</span></span><span class="space"> </span>19th century roulette wheel</figcaption></figure> <div class="para logical" id="sec-probability-expected-value-4-20-1-2">
-<div class="para">In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops.</div>
-<ol class="decimal" id="sec-probability-expected-value-4-20-1-2-1"><li id="sec-probability-expected-value-4-20-1-2-1-1"><div class="para" id="sec-probability-expected-value-4-20-1-2-1-1-1"></div></li></ol>
-</div></article><div class="para" id="sec-probability-expected-value-4-21">Expected value is not only used to determine the average amount won and lost at casinos and carnivals, it also has applications in business and insurance, just to name a few. Let’s look at a couple of those applications.</div>
-<article class="example example-like" id="sec-probability-expected-value-4-22"><h4 class="heading">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.3<span class="period">.</span></span><span class="space"> </span>19th century roulette wheel</figcaption></figure> <div class="para" id="sec-probability-expected-value-4-19-1-2">In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops. The payouts listed by the casinos and online are the net payouts, already taking into account the money spent on the bet. More on this will be coming soon...</div></article><div class="para" id="sec-probability-expected-value-4-20">Expected value is not only used to determine the average amount won and lost at casinos and carnivals, it also has applications in business and insurance, just to name a few. Let’s look at a couple of those applications.</div>
+<article class="example example-like" id="sec-probability-expected-value-4-21"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-probability-expected-value-4-22-1-1">For 3 months, a coffee shop tracked their morning sales of coffee, between 6am and 10am. The following results were recorded:</div> <div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="sec-probability-expected-value-4-21-1-1">For 3 months, a coffee shop tracked their morning sales of coffee, between 6am and 10am. The following results were recorded:</div> <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <th scope="row" class="c m b1 r1 l1 t1 lines">Number of cups sold</th>
 <td class="c m b1 r1 l0 t1 lines">145</td>
@@ -1626,26 +1637,26 @@ P(\text{Win }\$0)\amp=1-(\frac{1}{417}+\frac{1}{1833}+\frac{1}{1667}+\frac{1}{25
 <td class="c m b1 r1 l0 t0 lines">0.19</td>
 <td class="c m b1 r1 l0 t0 lines">0.07</td>
 </tr>
-</table></div> <div class="para" id="sec-probability-expected-value-4-22-1-3">How many cups of coffee should they expect to sell each morning?</div>
-<div class="solutions"><details id="sec-probability-expected-value-4-22-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-probability-expected-value-4-22-2-1">In this case the table tells us that 15% of the time they sell 145 cups of coffee between 6am and 10am, 22% of the time they sell 150 cups, 37% of the time they sell 155 cups, 19% of the time they sell 160 cups, and 7% of the time they sell 170 cups. Since the highest probability is associated with 155 cups, the expected value should lie somewhat close to this.</div>
-<div class="para" id="sec-probability-expected-value-4-22-2-2">To find the expected number of coffees sold, we multiply each number of cups of coffee by its respective probability and then add the products.</div>
-<div class="para logical" id="sec-probability-expected-value-4-22-2-3"><div class="displaymath process-math" id="sec-probability-expected-value-4-22-2-3-1">
+</table></div> <div class="para" id="sec-probability-expected-value-4-21-1-3">How many cups of coffee should they expect to sell each morning?</div>
+<div class="solutions"><details id="sec-probability-expected-value-4-21-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-probability-expected-value-4-21-2-1">In this case the table tells us that 15% of the time they sell 145 cups of coffee between 6am and 10am, 22% of the time they sell 150 cups, 37% of the time they sell 155 cups, 19% of the time they sell 160 cups, and 7% of the time they sell 170 cups. Since the highest probability is associated with 155 cups, the expected value should lie somewhat close to this.</div>
+<div class="para" id="sec-probability-expected-value-4-21-2-2">To find the expected number of coffees sold, we multiply each number of cups of coffee by its respective probability and then add the products.</div>
+<div class="para logical" id="sec-probability-expected-value-4-21-2-3"><div class="displaymath process-math" id="sec-probability-expected-value-4-21-2-3-1">
 \begin{align*}
 \text{Expected number of coffees sold}\amp=145(0.15)+150(0.22)+155(0.37)+160(0.19)+170(0.07)\\
 \amp=154.4\text{ cups of coffee}
 \end{align*}
 </div></div>
-<div class="para" id="sec-probability-expected-value-4-22-2-4"></div>
-<div class="para" id="sec-probability-expected-value-4-22-2-5">This means that over the long run, the coffee shop can expect, on average, to sell around 154 cups of coffee each morning. This is an important tool for businesses since it helps inform them how much stock they should keep on hand.</div>
-</div></details></div></article><article class="example example-like" id="sec-probability-expected-value-4-23"><h4 class="heading">
+<div class="para" id="sec-probability-expected-value-4-21-2-4"></div>
+<div class="para" id="sec-probability-expected-value-4-21-2-5">This means that over the long run, the coffee shop can expect, on average, to sell around 154 cups of coffee each morning. This is an important tool for businesses since it helps inform them how much stock they should keep on hand.</div>
+</div></details></div></article><article class="example example-like" id="sec-probability-expected-value-4-22"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-probability-expected-value-4-23-1-1">On average, a 40-year-old man in the US has a 0.242% chance of dying in the next year<details class="ptx-footnote" aria-live="polite" id="sec-probability-expected-value-4-23-1-1-1"><summary class="ptx-footnote__number" title="Footnote 5.3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-probability-expected-value-4-23-1-1-1">According to the estimator at <a class="external" href="http://www.numericalexample.com/index.php?view=article;&amp;ampid=91" target="_blank"><code class="code-inline tex2jax_ignore">numericalexample.com/index.php?view=article;&amp;ampid=91</code></a>
+<div class="para" id="sec-probability-expected-value-4-22-1-1">On average, a 40-year-old man in the US has a 0.242% chance of dying in the next year<details class="ptx-footnote" aria-live="polite" id="sec-probability-expected-value-4-22-1-1-1"><summary class="ptx-footnote__number" title="Footnote 5.3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-probability-expected-value-4-22-1-1-1">According to the estimator at <a class="external" href="http://www.numericalexample.com/index.php?view=article;&amp;ampid=91" target="_blank"><code class="code-inline tex2jax_ignore">numericalexample.com/index.php?view=article;&amp;ampid=91</code></a>
 </div></details>. An insurance company charges $275 annually for a life insurance policy that pays a $100,000 death benefit. What is the expected value for the insurance company on this policy?</div>
-<div class="solutions"><details id="sec-probability-expected-value-4-23-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-probability-expected-value-4-23-2-1">The first thing we want to do is organize the probabilities and outcomes in a probability distribution table. There are two outcomes – either the policy holder dies, and the insurance company pays the benefit, or the policy holder does not die, and they do not pay anything.</div>
-<div class="para" id="sec-probability-expected-value-4-23-2-2">The probability of paying the death benefit is equal to the chance of the person dying in the next year, and the probability of paying nothing is equal to the complement of the chance of dying in the next year.</div>
+<div class="solutions"><details id="sec-probability-expected-value-4-22-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-probability-expected-value-4-22-2-1">The first thing we want to do is organize the probabilities and outcomes in a probability distribution table. There are two outcomes – either the policy holder dies, and the insurance company pays the benefit, or the policy holder does not die, and they do not pay anything.</div>
+<div class="para" id="sec-probability-expected-value-4-22-2-2">The probability of paying the death benefit is equal to the chance of the person dying in the next year, and the probability of paying nothing is equal to the complement of the chance of dying in the next year.</div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Insurance payout</th>
@@ -1660,19 +1671,19 @@ P(\text{Win }\$0)\amp=1-(\frac{1}{417}+\frac{1}{1833}+\frac{1}{1667}+\frac{1}{25
 <td class="c m b1 r1 l0 t0 lines">1-0.00242=0.99758</td>
 </tr>
 </table></div>
-<div class="para" id="sec-probability-expected-value-4-23-2-4">Then we can calculate:</div>
-<div class="para logical" id="sec-probability-expected-value-4-23-2-5"><div class="displaymath process-math" id="sec-probability-expected-value-4-23-2-5-1">
+<div class="para" id="sec-probability-expected-value-4-22-2-4">Then we can calculate:</div>
+<div class="para logical" id="sec-probability-expected-value-4-22-2-5"><div class="displaymath process-math" id="sec-probability-expected-value-4-22-2-5-1">
 \begin{gather*}
 \text{Expected Payout}=\$100000(0.00242)+\$0(0.99758)=\$242
 \end{gather*}
 </div></div>
-<div class="para" id="sec-probability-expected-value-4-23-2-6">So, the expected payout for the insurance company is $242, but they are charging $275 for the policy. Their net revenue would be</div>
-<div class="para logical" id="sec-probability-expected-value-4-23-2-7"><div class="displaymath process-math" id="sec-probability-expected-value-4-23-2-7-1">
+<div class="para" id="sec-probability-expected-value-4-22-2-6">So, the expected payout for the insurance company is $242, but they are charging $275 for the policy. Their net revenue would be</div>
+<div class="para logical" id="sec-probability-expected-value-4-22-2-7"><div class="displaymath process-math" id="sec-probability-expected-value-4-22-2-7-1">
 \begin{gather*}
 \text{Net Value to Insurance Company}=\$275-\$242=\$33
 \end{gather*}
 </div></div>
-<div class="para" id="sec-probability-expected-value-4-23-2-8">The insurance company is making, on average, $33 per policy per year. It shouldn’t be too surprising because there are overhead costs and the insurance company can only afford to offer policies if they, on average, make money on them. But how much money should they make? As a consumer it is important to know about expected value.</div>
+<div class="para" id="sec-probability-expected-value-4-22-2-8">The insurance company is making, on average, $33 per policy per year. It shouldn’t be too surprising because there are overhead costs and the insurance company can only afford to offer policies if they, on average, make money on them. But how much money should they make? As a consumer it is important to know about expected value.</div>
 </div></details></div></article></section><section class="exercises" id="sec-probability-expected-value-5"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
