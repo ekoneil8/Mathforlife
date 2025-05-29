@@ -66,7 +66,7 @@
                 <cell>$10</cell>
             </row>
             <row>
-                <cell><line>Roll not a 6 on the second roll but not the first</line></cell>
+                <cell><line>Roll a 6 on the second roll but not the first</line></cell>
                 <cell><m>\frac{5}{6}\cdot\frac{1}{6}=\frac{5}{36}</m></cell>
                 <cell>$3</cell>
             </row>
@@ -77,43 +77,54 @@
             </row>
         </tabular>
         
-        <p>
-            Think of the expected value as a weighted average. We could take the average of $10, $3, and $0, but they are not all equally likely. It is much more likely to win $0 than to win $10. So, to find the average, we multiply each outcome by the chance it will happen and add the products together.
-        </p>
+       <p>
+        We observe that <m>\frac{1}{6}+\frac{5}{36}+\frac{25}{36}=1</m>. Because the probabilities add to one, we know that all possible outcomes have been accounted for and our table is complete.
+       </p>
+       <p>
+        Imagine running this game repeatedly. On average, for every 36 times the game is played, the player will win $10 six times, win $3 five times, and win $0 the remaining 25 times. This results in a total winnings of 
+        <me>
+            6(10)+5(3)+0(25)=$75
+        </me>
+        in 36 plays. Therefore, the winnings average out to <m>75\div36\appprox $2.08</m> per play. This is the expected value!
+       </p>
+       <p>
+        A more efficient way to perform this calculation is to multiply the value corresponding to each outcome by the chance it will happen and add the products together.
+        <me>
+            10\left(\frac{1}{6}\right)+3\left(\frac{5}{36}\right)+0\left(\frac{25}{36}\right)\approx $2.08
+        </me>
     
-        <assemblage>
-            <title>Expected Value</title>
-            <p>
-                 Multiply each outcome by its probability and add up the products
-            </p>
-        </assemblage>
-    
-        <p>
-            In this case we have:
         </p>
-        <p>
-            <md>
-            <mrow>\text{Expected winnings}=\$10(\frac{1}{6})+\$3(\frac{5}{36})+\$0(\frac{25}{36})=\$2.08</mrow>
-        </md>
-        </p>
-        <p>
-            This tells us that over the long run, players can expect to win $2.08 per game. This also means that the carnival owner will be paying out an average of $2.08 per game! Since the carnival owner would rather not lose money by paying players over the long run we need to make sure to charge players enough to offset the average payout.
+         <p>
+           In the long run, players can expect to win $2.08 per game. This also means that the carnival owner will be paying out an average of $2.08 per game! Since the carnival owner would rather not lose money, we need to make sure to charge players enough to offset the average payout.
         </p>
         <p>
             If the carnival owner charges exactly $2.08 to play, the game is considered a <alert>fair game</alert> since the expected winnings would be $0. In a fair game, the player isn't expected to win anything, nor is the owner expected to earn anything over the long run. However, if the carnival owner charges the player more than $2.08 to play, they will earn money over the long run.
         </p>
         <p>
-            Suppose you suggest charging $5 to play. We can determine the net winnings by subtracting the $5 the player has to pay from their expected winnings. This gives us:
+            Suppose you suggest charging $5 to play. We can determine the net expected value by subtracting the $5 the player has to pay from their expected winnings. This gives us:
         </p>
         <p>
             <md>
-            <mrow>\text{Net player winnings}=\$2.08-\$5=-\$2.92</mrow>
+            <mrow>\text{Net expected value}=\$2.08-\$5=-\$2.92.</mrow>
         </md>
+        With the price set at $5 per play, the player can expect to lose an average of $2.92 per play and the carnival owner can expect to earn an average of $2.92 per play.
         </p>
-        <p>
-            This means that over the long run, players can expect to lose an average of $2.92 each game they play, and the carnival owner can expect to earn an average of $2.92 per game over the long run. Here's another example.
-        </p>
-        <example>
+    
+        <assemblage>
+            <title>Expected Value</title>
+            <p>
+                <term>Expected value</term> is the average amount of gain or loss in a game, experiment, investment, or other venture.
+        
+            </p>
+            <p>
+                To calculate expected value, multiply the probability of each outcome by its corresponding value and add the products.
+            </p>
+            <p>
+                <term>Net Expected Value</term> is the resulting expected value after accounting for any costs.
+            </p>
+        </assemblage>
+    
+                <example>
             <statement>
             <p>
                 Pick4 is a game by the Oregon Lottery that costs $1 to play. In this game you pick 4 numbers in a specific pattern. If you get the exact sequence, you can in theory earn a lot of money. Suppose that the payouts are as follows. Determine the player's expected net winnings.
@@ -220,15 +231,8 @@
         </image>
       </figure>
                 <p>
-                    
-                    In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops.
-                    <ol>
-                        <li>
-                            <p>
-                                
-                            </p>
-                        </li>
-                    </ol>
+                    In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops. The payouts listed by the casinos and online are the net payouts, already taking into account the money spent on the bet.
+                More on this will be coming soon...
                 </p>
             </statement>
         </example>
