@@ -891,12 +891,12 @@ eBookConfig.enable_chatcodes =  false;
 #sec-probability-fundamentals-8-15-2-1-1 { counter-set: sec-probability-fundamentals-8-15-2-1-1 0; }
 #sec-probability-fundamentals-8-15-2-1-1 > li::marker { content: "("counter(sec-probability-fundamentals-8-15-2-1-1,lower-alpha)")"; }
 #sec-probability-fundamentals-8-15-2-1-1 > li { counter-increment: sec-probability-fundamentals-8-15-2-1-1; }
-#sec-probability-conditional-4-8-1-1-1 { counter-set: sec-probability-conditional-4-8-1-1-1 0; }
-#sec-probability-conditional-4-8-1-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-8-1-1-1,decimal)"."; }
-#sec-probability-conditional-4-8-1-1-1 > li { counter-increment: sec-probability-conditional-4-8-1-1-1; }
-#sec-probability-conditional-4-8-2-1-1 { counter-set: sec-probability-conditional-4-8-2-1-1 0; }
-#sec-probability-conditional-4-8-2-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-8-2-1-1,decimal)"."; }
-#sec-probability-conditional-4-8-2-1-1 > li { counter-increment: sec-probability-conditional-4-8-2-1-1; }
+#sec-probability-conditional-4-10-1-1-1 { counter-set: sec-probability-conditional-4-10-1-1-1 0; }
+#sec-probability-conditional-4-10-1-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-10-1-1-1,decimal)"."; }
+#sec-probability-conditional-4-10-1-1-1 > li { counter-increment: sec-probability-conditional-4-10-1-1-1; }
+#sec-probability-conditional-4-10-2-1-1 { counter-set: sec-probability-conditional-4-10-2-1-1 0; }
+#sec-probability-conditional-4-10-2-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-10-2-1-1,decimal)"."; }
+#sec-probability-conditional-4-10-2-1-1 > li { counter-increment: sec-probability-conditional-4-10-2-1-1; }
 #subsec-independent-events-4-1-1-1 { counter-set: subsec-independent-events-4-1-1-1 0; }
 #subsec-independent-events-4-1-1-1 > li::marker { content: ""counter(subsec-independent-events-4-1-1-1,decimal)"."; }
 #subsec-independent-events-4-1-1-1 > li { counter-increment: subsec-independent-events-4-1-1-1; }
@@ -1474,34 +1474,34 @@ eBookConfig.enable_chatcodes =  false;
 <li id="sec-probability-expected-value-2-2-1"><div class="para" id="sec-probability-expected-value-2-2-1-1">Make a probability model</div></li>
 <li id="sec-probability-expected-value-2-2-2"><div class="para" id="sec-probability-expected-value-2-2-2-1">Calculate the expected value for a probability model</div></li>
 <li id="sec-probability-expected-value-2-2-3"><div class="para" id="sec-probability-expected-value-2-2-3-1">Determine whether a game is fair</div></li>
-</ul></article><section class="introduction" id="sec-probability-expected-value-3"><div class="para" id="sec-probability-expected-value-3-1">Expected value is one of the useful probability concept we will discuss. It has many applications, from insurance policies to making financial decisions, and it’s one thing that the casinos and government agencies that run gambling operations and lotteries may hope most people never learn about.</div></section><section class="subsection" id="sec-probability-expected-value-4"><h3 class="heading hide-type">
+</ul></article><section class="introduction" id="sec-probability-expected-value-3"><div class="para" id="sec-probability-expected-value-3-1">Expected value is one of the useful probability concept we will discuss. It has many applications, from insurance policies to making financial decisions, and it’s one thing that the casinos and government agencies that run gambling operations and lotteries may hope most people never learn about.</div></section><section class="subsection" id="sec-probability-expected-value-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="space"> </span><span class="title">Expected Value</span>
 </h3>
 <div class="para" id="sec-probability-expected-value-4-2">The <em class="alert">expected value</em> is the average gain or loss of an event if the procedure is repeated many times. To help get a better understanding of what expected value is and how it is used, consider the following scenario:</div>
-<div class="para" id="sec-probability-expected-value-4-3">You are commissioned to design a game for a local carnival. Your proposed game will have players roll a six-sided die. If it comes up 6, they win $10. If not, they get to roll again. If they get a 6 on the second roll, then they win 3. If they do not get a 6 on the second roll, they lose. With the game design complete, you now need to decide how much the carnival game owner should charge players in order to make a profit over the long run.</div>
+<div class="para" id="sec-probability-expected-value-4-3">You are commissioned to design a game for a local carnival. Your proposed game will have players roll a six-sided die. If it comes up 6, they win $10. If not, they get to roll again. If they get a 6 on the second roll, then they win $3. If they do not get a 6 on the second roll, they lose. With the game design complete, you now need to decide how much the carnival game owner should charge players in order to make a profit over the long run.</div>
 <div class="para" id="sec-probability-expected-value-4-4">To make a profit, the carnival needs to know how much they will pay in winnings, on average, over the long run and charge more than that. In other words, they must charge more than the expected value of the game.</div>
 <div class="para" id="sec-probability-expected-value-4-5">One way to organize the outcomes and probabilities is with a probability model. A <em class="alert">probability model</em> or <em class="alert">probability distribution</em> is a table listing the possible outcomes and their corresponding probabilities. The outcomes will be the amounts a player can win, and we will calculate the probabilities using what we have learned about theoretical probability.</div>
 <div class="para" id="sec-probability-expected-value-4-6">As we have seen with complements, probabilities in a probability distribution must add to 1, so that is important to check. Here is the probability model for the carnival game:</div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
-<th scope="col" class="c m b1 r1 l1 t1 lines">Outcome ($ won)</th>
-<th scope="col" class="c m b1 r1 l0 t1 lines">Rolling Event</th>
+<th scope="col" class="c m b1 r1 l1 t1 lines">Outcome</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Probability</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Value</th>
 </tr>
 <tr>
-<th scope="row" class="c m b1 r1 l1 t0 lines">$10</th>
-<td class="c m b1 r1 l0 t0 lines">Roll a 6 on the first roll</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(P(\text{roll a 6})=\frac{1}{6}\)</span></td>
+<th scope="row" class="c m b1 r1 l1 t0 lines">Roll a 6 in one roll</th>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{1}{6}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">$10</td>
 </tr>
 <tr>
-<th scope="row" class="c m b1 r1 l1 t0 lines">$3</th>
-<td class="c m b1 r1 l0 t0 lines">Roll not a 6 on the first roll<br>and a 6 on the second roll</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(P(\text{roll not a 6 then roll a 6})=\frac{5}{6}\cdot\frac{1}{6}=\frac{5}{36}\)</span></td>
+<th scope="row" class="c m b1 r1 l1 t0 lines">Roll not a 6 on the second roll but not the first</th>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{5}{6}\cdot\frac{1}{6}=\frac{5}{36}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">$3</td>
 </tr>
 <tr>
-<th scope="row" class="c m b1 r1 l1 t0 lines">$0</th>
-<td class="c m b1 r1 l0 t0 lines">Roll not a 6 on the first roll<br>and not a 6 on the second roll</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(P(\text{roll not a 6 then not a 6})=\frac{5}{6}\cdot\frac{5}{6}=\frac{25}{36}\)</span></td>
+<th scope="row" class="c m b1 r1 l1 t0 lines">Do not roll a 6 in two rolls</th>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{5}{6}\cdot\frac{5}{6}=\frac{25}{36}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">$0</td>
 </tr>
 </table></div>
 <div class="para" id="sec-probability-expected-value-4-8">Think of the expected value as a weighted average. We could take the average of $10, $3, and $0, but they are not all equally likely. It is much more likely to win $0 than to win $10. So, to find the average, we multiply each outcome by the chance it will happen and add the products together.</div>

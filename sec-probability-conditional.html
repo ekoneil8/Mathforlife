@@ -891,12 +891,12 @@ eBookConfig.enable_chatcodes =  false;
 #sec-probability-fundamentals-8-15-2-1-1 { counter-set: sec-probability-fundamentals-8-15-2-1-1 0; }
 #sec-probability-fundamentals-8-15-2-1-1 > li::marker { content: "("counter(sec-probability-fundamentals-8-15-2-1-1,lower-alpha)")"; }
 #sec-probability-fundamentals-8-15-2-1-1 > li { counter-increment: sec-probability-fundamentals-8-15-2-1-1; }
-#sec-probability-conditional-4-8-1-1-1 { counter-set: sec-probability-conditional-4-8-1-1-1 0; }
-#sec-probability-conditional-4-8-1-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-8-1-1-1,decimal)"."; }
-#sec-probability-conditional-4-8-1-1-1 > li { counter-increment: sec-probability-conditional-4-8-1-1-1; }
-#sec-probability-conditional-4-8-2-1-1 { counter-set: sec-probability-conditional-4-8-2-1-1 0; }
-#sec-probability-conditional-4-8-2-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-8-2-1-1,decimal)"."; }
-#sec-probability-conditional-4-8-2-1-1 > li { counter-increment: sec-probability-conditional-4-8-2-1-1; }
+#sec-probability-conditional-4-10-1-1-1 { counter-set: sec-probability-conditional-4-10-1-1-1 0; }
+#sec-probability-conditional-4-10-1-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-10-1-1-1,decimal)"."; }
+#sec-probability-conditional-4-10-1-1-1 > li { counter-increment: sec-probability-conditional-4-10-1-1-1; }
+#sec-probability-conditional-4-10-2-1-1 { counter-set: sec-probability-conditional-4-10-2-1-1 0; }
+#sec-probability-conditional-4-10-2-1-1 > li::marker { content: ""counter(sec-probability-conditional-4-10-2-1-1,decimal)"."; }
+#sec-probability-conditional-4-10-2-1-1 > li { counter-increment: sec-probability-conditional-4-10-2-1-1; }
 #subsec-independent-events-4-1-1-1 { counter-set: subsec-independent-events-4-1-1-1 0; }
 #subsec-independent-events-4-1-1-1 > li::marker { content: ""counter(subsec-independent-events-4-1-1-1,decimal)"."; }
 #subsec-independent-events-4-1-1-1 > li { counter-increment: subsec-independent-events-4-1-1-1; }
@@ -1475,10 +1475,10 @@ eBookConfig.enable_chatcodes =  false;
 <li id="sec-probability-conditional-2-2-2"><div class="para" id="sec-probability-conditional-2-2-2-1">Calculate conditional probability.</div></li>
 <li id="sec-probability-conditional-2-2-3"><div class="para" id="sec-probability-conditional-2-2-3-1">Determine whether two events are independent.</div></li>
 <li id="sec-probability-conditional-2-2-4"><div class="para" id="sec-probability-conditional-2-2-4-1">Calculate probabilities of independent and dependent events.</div></li>
-</ul></article><section class="introduction" id="sec-probability-conditional-3"><div class="para" id="sec-probability-conditional-3-1">When we looked at categorical data in the previous chapter, it was related to a single variable, or characteristic of interest, such as favorite movie or car color. To illustrate the data, we made a frequency table and used it to create a pie chart or bar chart. But what if we want to illustrate the relationship between two categorical variables? To do this, we can use a contingency table.</div></section><section class="subsection" id="sec-probability-conditional-4"><h3 class="heading hide-type">
+</ul></article><section class="introduction" id="sec-probability-conditional-3"></section><section class="subsection" id="sec-probability-conditional-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="space"> </span><span class="title">Conditional Probability</span>
 </h3>
-<div class="para" id="sec-probability-conditional-4-2">Another question we can answer using a contingency table is what percentage of dog owning households also own a cat? In this case the group that we are interested in isn’t every household surveyed (the grand total), but just those households that own a dog.</div>
+<div class="para" id="sec-probability-conditional-4-2">Recall in the previous section we used a contingency table to determine the probability that a pet-owning household has a cat or a dog. We also may wonderwhat percentage of dog-owning households also own a cat? In this case the group that we are interested in isn’t every household surveyed (the grand total), but just those households that own a dog.</div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines"></th>
@@ -1506,8 +1506,11 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div>
 <div class="para" id="sec-probability-conditional-4-4">We call this a <em class="alert">conditional</em> statement because we are only considering the households with a certain condition. If we focus on the column representing the households that own a dog, we see that there is a total of 95 households with a dog, and that 52 of those 95 households also have a cat. Therefore, <span class="process-math">\(\frac{52}{95} \approx 0.547\)</span> or approximately 54.7% of the households with a dog also have a cat. Another way to phrase this conditional statement is, “What percent of households have a cat <em class="alert">given</em> they have a dog.” You will see the word given quite a bit in this chapter and that makes the denominator change.</div>
-<div class="para" id="sec-probability-conditional-4-5">If <span class="process-math">\(C\)</span> is the event "owning a cat" and <span class="process-math">\(D\)</span> is the event "owning a dog", then the probability that someone owns a cat given that you know they own a dog is written <span class="process-math">\(P(C|D)=\frac{52}{95}.\)</span>
+<div class="para" id="sec-probability-conditional-4-5">If <span class="process-math">\(C\)</span> is the event "owning a cat" and <span class="process-math">\(D\)</span> is the event "owning a dog", then the probability that someone owns a cat given that you know they own a dog is written <span class="process-math">\(P(C|D)=\frac{52}{95}\approx 57.7\%.\)</span>
 </div>
+<div class="para" id="sec-probability-conditional-4-6">Similarly, we can find the probability that a cat-owning household also owns a dog. In this case, we restrict our attention to the row corresponding to cat owners and find <span class="process-math">\(P(D|C)=\frac{52}{180}\approx 28.9\%.\)</span>
+</div>
+<div class="para" id="sec-probability-conditional-4-7">What does this tell us? According to the poll data, if you see someone with a dog, there is a 54.7% chance that they also have a cat at home. However, if you meet a cat owner, there is only a 28.9% chance that they also have a dog.</div>
 <article class="assemblage assemblage-like" id="assemblage-conditional-probability"><h4 class="heading"><span class="title">Conditional Probability.</span></h4>
 <div class="para" id="assemblage-conditional-probability-2">
 <span class="process-math">\(P(E|F)\)</span> is the probability that event <span class="process-math">\(E\)</span> occurs <em class="emphasis">given</em> that event <span class="process-math">\(F\)</span> occurs or occurred.</div>
@@ -1525,29 +1528,29 @@ P(E|F)=\frac{P(E\cap F)}{P(F)}
 </div>
 </div>
 <div class="para" id="assemblage-conditional-probability-4">This is called <dfn class="terminology">conditional probability</dfn> and can be interpreted as the probability of <span class="process-math">\(E\)</span> with the condition or prior knowledge of <span class="process-math">\(F\text{.}\)</span>
-</div></article><article class="example example-like" id="sec-probability-conditional-4-7"><h4 class="heading">
+</div></article><article class="example example-like" id="sec-probability-conditional-4-9"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-probability-conditional-4-7-1-1">Find the probability that a card drawn at random from a standard 52-card deck is a king given that it is a face card.</div>
-<div class="solutions"><details id="sec-probability-conditional-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-probability-conditional-4-7-2-1">
+<div class="para" id="sec-probability-conditional-4-9-1-1">Find the probability that a card drawn at random from a standard 52-card deck is a king given that it is a face card.</div>
+<div class="solutions"><details id="sec-probability-conditional-4-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-probability-conditional-4-9-2-1">
 <div class="para">In this situation, we already know that the card drawn is one of the 12 face cards. Of those, four are kings. Therefore, the probability is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(\text{king}|\text{face card})=\frac{4}{12}=\frac{1}{3}.
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="example example-like" id="sec-probability-conditional-4-8"><h4 class="heading">
+</div></div></details></div></article><article class="example example-like" id="sec-probability-conditional-4-10"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="sec-probability-conditional-4-8-1-1">
+<div class="para logical" id="sec-probability-conditional-4-10-1-1">
 <div class="para">Suppose that two cards are drawn at random from a standard 52-card deck without replacement. (This means that the cards are not put back into the deck after being drawn.)</div>
-<ol class="decimal" id="sec-probability-conditional-4-8-1-1-1">
-<li id="sec-probability-conditional-4-8-1-1-1-1"><div class="para" id="sec-probability-conditional-4-8-1-1-1-1-1">Find the probability that the second card is a heart given that the first card also is a heart.</div></li>
-<li id="sec-probability-conditional-4-8-1-1-1-2"><div class="para" id="sec-probability-conditional-4-8-1-1-1-2-1">Find the probability that the second card is a heart given that the first card is not a heart.</div></li>
+<ol class="decimal" id="sec-probability-conditional-4-10-1-1-1">
+<li id="sec-probability-conditional-4-10-1-1-1-1"><div class="para" id="sec-probability-conditional-4-10-1-1-1-1-1">Find the probability that the second card is a heart given that the first card also is a heart.</div></li>
+<li id="sec-probability-conditional-4-10-1-1-1-2"><div class="para" id="sec-probability-conditional-4-10-1-1-1-2-1">Find the probability that the second card is a heart given that the first card is not a heart.</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-probability-conditional-4-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-probability-conditional-4-8-2-1"><ol class="decimal" id="sec-probability-conditional-4-8-2-1-1">
-<li id="sec-probability-conditional-4-8-2-1-1-1"><div class="para logical" id="sec-probability-conditional-4-8-2-1-1-1-1">
+<div class="solutions"><details id="sec-probability-conditional-4-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-probability-conditional-4-10-2-1"><ol class="decimal" id="sec-probability-conditional-4-10-2-1-1">
+<li id="sec-probability-conditional-4-10-2-1-1-1"><div class="para logical" id="sec-probability-conditional-4-10-2-1-1-1-1">
 <div class="para">A standard deck of cards contains 52 cards, thirteen of which are hearts. If the first card draws is a heart, then the total number of cards drops to 51 and the total number of hearts drops to twelve. Therefore,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1555,7 +1558,7 @@ P(\text{second card is a heart}|\text{first card is a heart})=\frac{12}{51}\appr
 \end{equation*}
 </div>
 </div></li>
-<li id="sec-probability-conditional-4-8-2-1-1-2"><div class="para logical" id="sec-probability-conditional-4-8-2-1-1-2-1">
+<li id="sec-probability-conditional-4-10-2-1-1-2"><div class="para logical" id="sec-probability-conditional-4-10-2-1-1-2-1">
 <div class="para">If the first card is not a heart, then all thirteen hearts still remain in the deck. Therefore,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1563,11 +1566,11 @@ P(\text{second card is a heart}|{first card is not a heart})=\frac{13}{51}\appro
 \end{equation*}
 </div>
 </div></li>
-</ol></div></div></details></div></article><article class="example example-like" id="sec-probability-conditional-4-9"><h4 class="heading">
+</ol></div></div></details></div></article><article class="example example-like" id="sec-probability-conditional-4-11"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-probability-conditional-4-9-1-1">Two dice are rolled. Find the probability that the second die shows a 5 given that the first die shows a 5.</div>
-<div class="solutions"><details id="sec-probability-conditional-4-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-probability-conditional-4-9-2-1">This is something of a trick question because the outcome of the first die is unrelated to the outcome of the second die. The probability that the second die shows a 5 is <span class="process-math">\(P(5)=\frac{1}{6}\)</span> regardless of what the first die shows.</div></div></details></div></article></section><section class="subsection" id="subsec-independent-events"><h3 class="heading hide-type">
+<div class="para" id="sec-probability-conditional-4-11-1-1">Two dice are rolled. Find the probability that the second die shows a 5 given that the first die shows a 5.</div>
+<div class="solutions"><details id="sec-probability-conditional-4-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-probability-conditional-4-11-2-1">This is something of a trick question because the outcome of the first die is unrelated to the outcome of the second die. The probability that the second die shows a 5 is <span class="process-math">\(P(5)=\frac{1}{6}\)</span> regardless of what the first die shows.</div></div></details></div></article></section><section class="subsection" id="subsec-independent-events"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="space"> </span><span class="title">Independent and Dependent Events</span>
 </h3>
 <div class="para" id="subsec-independent-events-2">Two or more events are called <dfn class="terminology">dependent</dfn> if the occurrence of one affects the probability of the other(s). For example, the probability that a second card drawn from a deck (without replacement) is a heart <em class="emphasis">depends</em> on whether the first card drawn was a heart.</div>
@@ -1789,7 +1792,7 @@ P(\text{all five heads})=\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1
 </div>
 </div></li>
 <li id="subsec-sequential-events-13-2-1-1-2"><div class="para logical" id="subsec-sequential-events-13-2-1-1-2-1">
-<div class="para">Instead of calculating the probability of getting at least one tails directly, which would be quite onerous, we make use of the fact that "at least one tails" is the <em class="emphasis">complement</em> of "all heads". Therefore, we need only subtract our previous answer from one.</div>
+<div class="para">Instead of calculating the probability of getting at least one tails directly, which would be quite onerous, we make use of the fact that "at least one tails" is the <em class="emphasis">complement</em> of "all heads". We can find the answer by subtracting our previous answer from one.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(\text{at least one tails})=1-P(\text{all heads})=1-\frac{1}{32}=\frac{31}{32}
