@@ -2,7 +2,40 @@
 
 <section xml:id="sec-probability-combinatorics" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Combinatorics</title>
-
+<objectives>
+  <introduction>
+    <p>
+      Students will be able to:
+    </p>
+  </introduction>
+  <ul>
+    <li>
+      <p>
+        Create and apply tree diagrams.
+      </p>
+    </li>
+    <li>
+      <p>
+        Apply the fundamental counting principle.
+      </p>
+    </li>
+    <li>
+      <p>
+        Apply combinations and permutations.
+      </p>
+    </li>
+    <li>
+      <p>
+        Calculate probabilities involving multiple applications of the fundamental counting principle, combinations, and permutations.
+      </p>
+    </li>
+  </ul>
+</objectives>
+<introduction>
+  <p>
+    Combinatorics is the name applied to mathematical techniques for counting such things as how many different Washington State license plates are possible or how many possible five-card poker hands have three of a kind. In this section, we address strategies for counting.
+  </p>
+</introduction>
   <p> Text of section. </p>
 
 </section>
