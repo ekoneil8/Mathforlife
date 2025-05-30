@@ -220,7 +220,7 @@
             In general, if the expected value of a game is negative, it is not a good idea to play, since in the long run you will lose money. It would be better to play a game with a positive expected value (good luck trying to find one!), although keep in mind that even if the average winnings are positive it could be the case that most people lose money and one very fortunate individual wins a great deal of money.
         </p>
         <p>
-            Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. That is fine so long as you enjoy playing the game and think it is worth the cost, but it would be wrong to expect to come out ahead.
+            Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. Any potential moral implications related to gambling are not addressed in this book.
         </p>
         <example>
             <statement>
@@ -231,9 +231,25 @@
         </image>
       </figure>
                 <p>
-                    In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops. The payouts listed by the casinos and online are the net payouts, already taking into account the money spent on the bet.
-                More on this will be coming soon...
+                    In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops. The payouts listed by the casinos and online are the net payouts, already take into account the money spent on the bet. In other words, we will calculate the net expected value directly. Find the expected value of each bet.
                 </p>
+                <ol>
+                    <li>
+                        <p>
+                            Bet $4 on the number 15. The player puts their chips on the square with the number 15, and they win only if the roulette ball lands on 15. This bet pays 35 to 1.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Bet $10 on 1 to 18. The player puts their chips on the box that says "1 to 18", and they win if the ball lands on any number between 1 and 18, inclusive. This bet pays 1 to 1.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Bet $20 on a square. The player puts their chips on the corner where the squares 1, 2, 4, and 5 meet, and they win if the ball lands on any of those numbers. This bet pays 8 to 1.
+                        </p>
+                    </li>
+                </ol>
             </statement>
         </example>
         <p>

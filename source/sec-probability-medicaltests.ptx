@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-probability-medicaltests" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Focus on Diagnostic Tests</title>
+  <title>Focus on Diagnostic Testing</title>
 <objectives>
     <introduction>
         <p>
@@ -32,12 +32,18 @@
 </introduction>
   <p> </p>
 <subsection xml:id="subsec-senstivity-specificity">
-    <title>Sensitivity and Specificity</title>
+    <title>Terminology</title>
+<p>
+    We will use the terms senstivity, specificity, and prevalence frequently in this section.
+</p>
     <p>
-        Introduce the importance of these measurements.
+        The <term>sensitivity</term> of a medical test indicates how well it <em>senses</em> the presence of an illness or condition. Sensitivity is <m>P(\text{tests positive}|\text{has condition}).</m> For example, a particular pregnancy test has 98% sensitivity when taken the first day of a missed period; this means that someone who is pregnant has a 98% chance of receiving a positive result on the test. The other 2% of pregnant people will receive a negative result which is most commmonly due to pregnancy hormone levels in the urine sample not being high enough to be detected due to testing early in the pregnancy or using dilute urine.
     </p>
     <p>
-        The <term>sensitivity</term> of a medical test indicates how well it <em>senses</em> the presence of an illness or condition. For example, a particular pregnancy test has 98% sensitivity when taken the first day of a missed period. 
+        The <term>specificity</term> of a medical test indicates how well it detects the <em> absence</em> of an illnes of condition. Specificity is <m>P(\text{tests negative}|\text{does not have condition}).</m> For example, a particular antigen test for strep throat has 96% specificity; this means that someone who does not have strep throat has a 96% chance of receiving a negative test result. There is a 4% chance that a person who does not have strep throat will test positive. They could have non-viable streptococcus bacteria in their throats remaining from a previous infection, or the patient could be a carrier of streptococcal bacteria but it is not the cause of their illness. 
+    </p>
+    <p>
+        The <term>prevalence</term> of a condition is how often it occurs in the target population. Prevalence is <m>P(\text{has the condition}).</m> Because the prevalence of many conditions varies among demographic groups or periods of time, it is important to clearly define the population. For example, the prevalence of diabetes in the United States was about 11.6% in 2021. If we narrow our focus to adults age 65 and older, the prevalence was 29.2%.<fn>US Centers for Disease Control and Prevention<url href="https://www.cdc.gov/diabetes/php/data-research/index.html" visual="https://www.cdc.gov/diabetes/php/data-research/index.html">National Diabetes Statistics Report, May 14, 2024.</url></fn> 
     </p>
 </subsection>
 </section>
