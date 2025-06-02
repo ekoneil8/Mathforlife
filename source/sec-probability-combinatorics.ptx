@@ -33,9 +33,28 @@
 </objectives>
 <introduction>
   <p>
-    Combinatorics is the name applied to mathematical techniques for counting such things as how many different Washington State license plates are possible or how many possible five-card poker hands have three of a kind. In this section, we address strategies for counting.
+    Combinatorics is the name applied to mathematical techniques for counting how many possible arrangements or groupings are possible. For example, we can determine how many different Washington State license plates are possible or how many possible five-card poker hands have three kings.
   </p>
 </introduction>
+<subsection xml:id="subsec-tree-diagram-fundamental-counting-principle">
+  <title>Tree Diagrams and the Fundamental Counting Principle</title>
+  <p>
+    Recall from <xref ref="sec-probability-fundamentals" /> that the sample space when three coins are flipped is <m>\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\}.</m> There are eight elements. We can depict this sample space using a tree diagram.
+  </p>
+  <p>
+    In the diagram, we start with a node on the left. The first coin can result in either heads or tails, which is denoted by the first split or set of branches. Then, regardless of whether the first coin landed heads or tails, the second coin lands either heads or tails. The second flip is indicated using splits or branches from the ends of the first. Then the third flip is indcated by branches from the ends of the second.
+  </p>
+  <p>
+    In each step, the number of outcomes is multiplied by two. There are <m>2\cdot 2 \cdot 2 = 8</m> possible outcomes when flipping three coins.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Make a tree diagram to depict the all possible sandwiches using one kind of bread, one kind of meat and one kind of cheese. The bread choices are white, whole wheat, and rye, the meat choices are turkey and ham, and the cheese choices are cheddar and jack.
+      </p>
+    </statement>
+  </example>
+</subsection>
   <p> Text of section. </p>
 
 </section>
