@@ -42,19 +42,246 @@
     Recall from <xref ref="sec-probability-fundamentals" /> that the sample space when three coins are flipped is <m>\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\}.</m> There are eight elements. We can depict this sample space using a tree diagram.
   </p>
   <p>
-    In the diagram, we start with a node on the left. The first coin can result in either heads or tails, which is denoted by the first split or set of branches. Then, regardless of whether the first coin landed heads or tails, the second coin lands either heads or tails. The second flip is indicated using splits or branches from the ends of the first. Then the third flip is indcated by branches from the ends of the second.
+    In the diagram, we start with a node at the top. (Tree diagrams also can be oriented horizontally, from left to right.) The first coin can result in either heads or tails, which is denoted by the first split or set of branches. Then, regardless of whether the first coin landed heads or tails, the second coin lands either heads or tails. The second flip is indicated using splits or branches from the ends of the first. Then the third flip is indcated by branches from the ends of the second.
+  </p>
+  <figure xml:id="tree-diagram-3-coins">
+    <caption>Tree diagram for three coin flips</caption>
+    <image source="images/TreeDiagram3Coins.png" width="50%">
+      <shortdescription>Tree diagram showing all eight paths corresponding to the outcomes of three coin flips, one splitting for each flip.</shortdescription>
+    </image>
+  </figure>
+  <p>
+    To read the outcomes, we follow each path in the tree diagram. For example the path highlighted below shows heads on the first flip, tails on the second, and heads on the third.
+  </p>
+  <figure xml:id="tree-diagram-3-coins-highlighted">
+    <caption>Tree diagram for three coin flips one path highlighted for emphasis.</caption>
+    <image source="images/TreeDiagram3CoinsHighlight.png" width="50%">
+      <shortdescription>Tree diagram with one path highlighted. The path runs from start to heads in the first split to the connecting tails in the second split to the connecting heads in the third split.</shortdescription>
+    </image>
+  </figure>
+  <p>
+    Each path corresponds to a unique element in the sample space. In the bottom row, there are a total of eight endpoints, which are the ends of the eight paths representing the sample space. Using a tree diagram such as this, we can visualize all the elements in a sample space.
   </p>
   <p>
-    In each step, the number of outcomes is multiplied by two. There are <m>2\cdot 2 \cdot 2 = 8</m> possible outcomes when flipping three coins.
+    Observe that in each splitting, the number of branches was multiplied by two, representing the two possible outcomes of each coin flip. As illustrated in the tree diagram, there are <m>2\cdot 2 \cdot 2 = 8</m> possible outcomes when flipping three coins.
   </p>
   <example>
     <statement>
       <p>
-        Make a tree diagram to depict the all possible sandwiches using one kind of bread, one kind of meat and one kind of cheese. The bread choices are white, whole wheat, and rye, the meat choices are turkey and ham, and the cheese choices are cheddar and jack.
+        Make a tree diagram to depict the all possible sandwiches using one kind of bread, one kind of meat and one kind of cheese. The bread choices are white, whole wheat, and rye, the meat choices are turkey and ham, and the cheese choices are cheddar and jack. Then use the tree diagram to find how many different sandwiches can be made.
       </p>
     </statement>
+    <solution>
+      <image source="images/TreeDiagramSandwiches.png">
+        <shortdescription>Tree diagram showing sandwich options: White bread with turkey and cheddar, white bread with turkey and jack, white bread with ham and cheddar, white bread with ham and jack, and these same combinations using wheat bread and rye bread.</shortdescription>
+      </image>
+      <p>
+        To find the number of sandwiches that can be made, we can add the number of ending points on the tree diagram to get 12.
+      </p>
+      <p>
+        Alternatively, there are three bread choices. For each bread, there are two meat choices. This gives us <m>3\cdot2=6</m> bread and meat combinations. For each bread and meat combination, there are two cheese choices, resulting in a total of <m>6\cdot2=12</m> possible sandwiches.
+      </p>
+    </solution>
+  </example>
+  <p>
+    In the example above, there were three choices: bread, meat, and cheese. There were three options in the first choice, two options in the second choice, and two options in the third choice. The total number of possible sandwiches that result is the product <m>3\cdot2\cdot2=12.</m>
+  </p>
+  <p>
+    We can generalize this approach to obtain the <term>Fundamental Counting Principle</term>.
+  </p>
+  <assemblage xml:id="assemblage-fundamental-counting-principle">
+    <title>Fundamental Counting Principle</title>
+    <p>
+      To find the total number of outcomes of two or more events in succession, multiply the number of possible outcomes for each event given that each previous event occurred.
+    </p>
+  </assemblage>
+  <example>
+    <statement>
+      <p>
+        Suppose three cards are drawn from a standard 52-card deck without replacement.
+      </p>
+      <ol>
+        <li>
+          <p>
+            How many ways can three cards be drawn from the deck?
+          </p>
+        </li>
+        <li>
+          <p>
+            How many ways can three cards be drawn from the deck if all three cards are hearts?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability of drawing three hearts?
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>52\cdot51\cdot50=132\,600</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>13\cdot12\cdot11=1716</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1716}{132\,600}\approx1.29\%</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+  <example>
+    <statement>
+      <p>
+        A Washington State license plate consists of three letters followed by four numbers between zero and nine. What is the probability that a plate consists of three vowels followed by four even numbers? The English vowels are A, E, I, O, and U.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There are 26 letters in the English alphabet, and there are 10 digits between zero and nine. Taking each number or digit on the license plate as an event, the total number of license plates possible is 
+        <me>
+          26 \cdot 26 \cdot 16 \cdot 10 \cdot 10 \cdot 10 \cdot 10 =26^{3}\cdot 10^{4}=175\,760\,000.
+        </me>
+        
+      </p>
+      <p>
+        There are five vowels and five even digits. This results in five "choices" for each of the seven spots on the license plate. The resulting total is
+        <me>
+          5^{7}=78\,125.
+        </me>
+      </p>
+      <p>
+        Therefore, the probability of a randomly-generated license plate consisting of five vowels and five even numbers is <m>\frac{78125}{175760000}\approx0.044\%</m>
+      </p>
+    </solution>
   </example>
 </subsection>
-  <p> Text of section. </p>
+<subsection xml:id="subsec-factorial">
+  <title>Factorials</title>
+  <p>
+    Consider the example of how many ways a competition among six teams can end, assuming there are no ties. Any of the six teams can come in first, then one of the five remaining teams can come in second, and so forth. The total number of possible rankings of the six teams is
+    <me>
+      6\cdot 5\cdot 4 \cdot 3 \cdot 2 \cdot 1=720.
+    </me>
+  
+  </p>
+  <p>
+    Because we so frequently multiply whole numbers by each subsequent lesser whole number all the way down to one, we have a name and special notation for this calculation. We call it a <term>factorial</term> and write it <m>n!</m> with an exclamation point.
+  </p>
+<example>
+  <statement>
+    <p>
+      Calculate <m>4!</m> by hand.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <m>4\cdot 3 \cdot 2 \cdot 1 = 24</m>
+    </p>
+  </solution>
+</example>
+<example>
+  <statement>
+    <p>
+      Calculate <m>\frac{52!}{5!\cdot47!}</m> on a calculator.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The answer is <m>2\,598\,560</m>.
+    </p>
+    <p>
+      We will see later in this chapter that this number represents the number of five-card poker hands that are possible.
+    </p>
+  </solution>
+</example>
+<p>
+ Students may encounter <m>0!</m> when calculating some probabilities. In that situation, we use <m>0!=1</m>. 
+</p>
+<assemblage xml:id="assemblage-factorial">
+  <title>Factorial</title>
+  <p>
+    The first few factorials:
+    <md>
+      <mrow>0! \amp=1 </mrow>
+      <mrow>1! \amp=1 </mrow>
+      <mrow>2! \amp=2\cdot 1=2 </mrow>
+      <mrow>3! \amp= 3\cdot 2 \cdot 1 = 6 </mrow>
+      <mrow>4! \amp=4\cdot3\cdot2\cdot1=24 </mrow>
+    </md>
+  </p>
+  <p>
+    General formula:
+    <me>
+      n!=n(n-1)(n-1)...1
+    </me>
+    
+  </p>
+</assemblage>
+</subsection>
+<subsection xml:id="subsec-permutations">
+  <title>Permutations</title>
+  <p>
+    Suppose we have 25 books, and we want to arrange five of them on a display shelf. We can apply the fundamental counting principle to find the number of ways that can be accomplished. There are 25 choices for the first book, 24 remaining choices for the second book, and so on, resulting in <m>25\cdot24\cdot23\cdot22\cdot21=6\,375\,600</m> possible arrangements.
+    
+  </p>
+  <p>
+    We can make use of factorials to streamline this calculation. In order to end up with just the first five factors of <m>25!</m>, we can "divide away" the remaining <m>25-5=20</m> factors which amount to <m>20!</m>. In other words, we can calculate <m>\frac{25!}{20!}=6\,375\,600</m> to find the answer more quickly.
+  </p>
+  <p>
+    In general, the number of <em>arrangements</em> of <m>r</m> objects pulled from a set of <m>n</m> objects is equal to <m>\frac{n!}{(n-r)!},</m> and this calculation is called a <term>permutation</term>.
+  </p>
+  <assemblage xml:id="assemblage-permutation">
+    <title>Permutations</title>
+    <p>
+      A <term>permutation</term> is the number of arrangements of <m>r</m> objects pulled from a set of <m>n</m>.
+      <me>
+        {}_n P_r=\frac{n!}{(n-r)!}
+      </me>
+      
+    </p>
+    <p>
+      Permutations are groups of <m>r</m> items out of <m>n</m> in which the <em>order matters</em>.
+    </p>
+  </assemblage>
+
+ 
+  <example>
+    <statement>
+      <p>
+        In how many ways can a president, vice president, secretary, and treasurer be selected from a 16-person club?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We are finding how many arrangements of four people can be selected out of a total of 16. The order of selection matters because the four jobs are different. Therefore, we are finding the permutation <m>{}_{16}P_4</m>.
+        <me>
+          {}_{16}P_4=\frac{16!}{(16-4)!}=43\,680
+        </me>
+        
+      </p>
+      This value can also be calculated directly using the permutation function on a scientific calculator.
+    </solution>
+  </example>
+   <p>
+    Most scientific calculators have a permutation function. In <url href="www.desmos.com/scientific">DESMOS</url>, the permutation function is found in the func or functions area or by typing nPr. To find <m>{}_{16}P_4</m> in DESMOS, we enter nPr(16,4).
+  </p>
+</subsection>
+<subsection xml:id="subsec-combinations">
+  <title>Combinations</title>
+  <p>
+    More coming soon.
+  </p>
+</subsection>
 
 </section>
