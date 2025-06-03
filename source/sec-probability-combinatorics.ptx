@@ -280,7 +280,10 @@
 <subsection xml:id="subsec-combinations">
   <title>Combinations</title>
   <p>
-    More coming soon.
+    In the example above, we found that there were 43,680 different ways that four people out of a pool of 16 could be selected to fill four different positions. Consider now that the four people are being selected to serve as representatives and it doesn't matter which person is selected first, second, third, or fourth. Each grouping of four people can be selected in <m>4!=24</m> different orders. In other words, each grouping of four people will appear 24 times in the 43,680 arrangements. Therefore, we can divide to find that the number of ways four people can be selected as representatives is <m>\frac{43\,680}{24}=1820.</m> 
+  </p>
+  <p>
+    Looking back, what we calculated is <m>\frac{16!}{(16-4)!\cdot4!}=1820.</m> This is called a <term>combination</term> and is written <m>{}_n C_r =\frac{n!}{(n-r)!\cdot r!}.</m> A combination represents the number of ways that a group of <m>r</m> objects can be selected from a pool of <m>n</m> without replacement and where the order they are selected doesn't matter. We typically use combinations when finding probabilities related to card games because the order in which the cards are dealt doesn't matter.
   </p>
 </subsection>
 
