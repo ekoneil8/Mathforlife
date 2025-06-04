@@ -285,6 +285,82 @@
   <p>
     Looking back, what we calculated is <m>\frac{16!}{(16-4)!\cdot4!}=1820.</m> This is called a <term>combination</term> and is written <m>{}_n C_r =\frac{n!}{(n-r)!\cdot r!}.</m> A combination represents the number of ways that a group of <m>r</m> objects can be selected from a pool of <m>n</m> without replacement and where the order they are selected doesn't matter. We typically use combinations when finding probabilities related to card games because the order in which the cards are dealt doesn't matter.
   </p>
+  <assemblage xml:id="assemblage-combination">
+    <title>Combinations</title>
+    <p>
+      A <term>combination</term> is the number of ways to select <m>r</m> objects from a set of <m>n</m>.
+      <me>
+        {}_n C_r=\frac{n!}{(n-r)!\cdot r!}
+      </me>
+      
+    </p>
+    <p>
+      Combinations are groups of <m>r</m> items out of <m>n</m> in which the <em>order does not matter</em>.
+    </p>
+  </assemblage>
+<example>
+  <statement>
+    <p>
+      How many five-card poker hands can be dealt from a standard 52-card deck?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The order in which the cards are dealt does not matter, so we are looking for the number of combinations of five cards out of a total of 52. This is written as <m>{}_{52}C_5</m>.
+      <me>
+        {}_{52}C_5=\frac{52!}{(52-5)!\cdot 5!}=2\,598\,960.
+      </me>
+      
+    </p>
+    <p>
+      This value can also be calculated directly using the combination function on a scientific calculator.
+    </p>
+  </solution>
+</example>
+<example>
+  <statement>
+    <p>
+      There are 15 red marbles and 10 blue marbles in a bag. Suppose we will draw six marbles from the bag without replacement. What is the probability that all six marbles drawn are red?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To find the probability that all six marbles drawn are red, we need to find the number of ways any six marbles can be drawn from the bag and the number of ways six red marbles can be drawn from the bag.
+    </p>
+    <p>
+      The total number of marbles is 15 + 10 = 25. The total number of ways to draw six marbles from the bag is <m>{}_{25}C_6=177\,100.</m>
+    </p>
+    <p>
+      The number of ways to draw six red marbles from the bag is <m>{}_{15}C_6=5\,005.</m>
+    </p>
+    <p>
+      Therefore, the probability of drawing six red marbles is
+      <m>\frac{5\,005}{177\,100}\approx2.83\%.</m>
+    </p>
+  </solution>
+</example>
+</subsection>
+<subsection xml:id="subsec-multiple-combinations">
+  <title>Applications Involving Multiple Combinations</title>
+  <p>
+    Suppose we want to find the probability of drawing exactly three red marbles and three blue marbles from a bag containing 15 red marbles and 10 blue marbles. Using the fundamental counting principle together with combinations, we can find the number of ways to draw three red marbles and three blue marbles.
+
+    <p>
+      The number of ways to choose three red marbles from the 15 available is <m>{}_{15}C_3</m>. The number of ways to choose three blue marbles from the 10 available is <m>{}_{10}C_3</m>. By the fundamental counting principle, the total number of ways to draw three red marbles and three blue marbles is:
+      <me>
+        {}_{15}C_3 \times {}_{10}C_3 = 455 \times 120 = 54\,600.
+      </me>
+    </p>
+    <p>
+      The total number of ways to draw any six marbles from the bag is <m>{}_{25}C_6 = 177\,100</m>.
+    </p>
+    <p>
+      Therefore, the probability of drawing exactly three red marbles and three blue marbles is:
+      <me>
+        \frac{54\,600}{177\,100} \approx 30.8\%.
+      </me>
+    </p>
+  </p>
 </subsection>
 
 </section>
