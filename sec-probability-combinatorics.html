@@ -1414,6 +1414,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-factorial" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Factorials</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-permutations" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Permutations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-combinations" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Combinations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-multiple-combinations" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Applications Involving Multiple Combinations</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -1625,7 +1626,64 @@ n!=n(n-1)(n-1)...1
 </h3>
 <div class="para" id="subsec-combinations-2">In the example above, we found that there were 43,680 different ways that four people out of a pool of 16 could be selected to fill four different positions. Consider now that the four people are being selected to serve as representatives and it doesn’t matter which person is selected first, second, third, or fourth. Each grouping of four people can be selected in <span class="process-math">\(4!=24\)</span> different orders. In other words, each grouping of four people will appear 24 times in the 43,680 arrangements. Therefore, we can divide to find that the number of ways four people can be selected as representatives is <span class="process-math">\(\frac{43\,680}{24}=1820.\)</span>
 </div>
-<div class="para" id="subsec-combinations-3">Looking back, what we calculated is <span class="process-math">\(\frac{16!}{(16-4)!\cdot4!}=1820.\)</span> This is called a <dfn class="terminology">combination</dfn> and is written <span class="process-math">\({}_n C_r =\frac{n!}{(n-r)!\cdot r!}.\)</span> A combination represents the number of ways that a group of <span class="process-math">\(r\)</span> objects can be selected from a pool of <span class="process-math">\(n\)</span> without replacement and where the order they are selected doesn’t matter. We typically use combinations when finding probabilities related to card games because the order in which the cards are dealt doesn’t matter.</div></section></section></div>
+<div class="para" id="subsec-combinations-3">Looking back, what we calculated is <span class="process-math">\(\frac{16!}{(16-4)!\cdot4!}=1820.\)</span> This is called a <dfn class="terminology">combination</dfn> and is written <span class="process-math">\({}_n C_r =\frac{n!}{(n-r)!\cdot r!}.\)</span> A combination represents the number of ways that a group of <span class="process-math">\(r\)</span> objects can be selected from a pool of <span class="process-math">\(n\)</span> without replacement and where the order they are selected doesn’t matter. We typically use combinations when finding probabilities related to card games because the order in which the cards are dealt doesn’t matter.</div>
+<article class="assemblage assemblage-like" id="assemblage-combination"><h4 class="heading"><span class="title">Combinations.</span></h4>
+<div class="para logical" id="assemblage-combination-2">
+<div class="para">A <dfn class="terminology">combination</dfn> is the number of ways to select <span class="process-math">\(r\)</span> objects from a set of <span class="process-math">\(n\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{}_n C_r=\frac{n!}{(n-r)!\cdot r!}
+\end{equation*}
+</div>
+</div>
+<div class="para" id="assemblage-combination-3">Combinations are groups of <span class="process-math">\(r\)</span> items out of <span class="process-math">\(n\)</span> in which the <em class="emphasis">order does not matter</em>.</div></article><article class="example example-like" id="subsec-combinations-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-combinations-5-1-1">How many five-card poker hands can be dealt from a standard 52-card deck?</div>
+<div class="solutions"><details id="subsec-combinations-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-combinations-5-2-1">
+<div class="para">The order in which the cards are dealt does not matter, so we are looking for the number of combinations of five cards out of a total of 52. This is written as <span class="process-math">\({}_{52}C_5\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{}_{52}C_5=\frac{52!}{(52-5)!\cdot 5!}=2\,598\,960.
+\end{equation*}
+</div>
+</div>
+<div class="para" id="subsec-combinations-5-2-2">This value can also be calculated directly using the combination function on a scientific calculator.</div>
+</div></details></div></article><article class="example example-like" id="subsec-combinations-6"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-combinations-6-1-1">There are 15 red marbles and 10 blue marbles in a bag. Suppose we will draw six marbles from the bag without replacement. What is the probability that all six marbles drawn are red?</div>
+<div class="solutions"><details id="subsec-combinations-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-combinations-6-2-1">To find the probability that all six marbles drawn are red, we need to find the number of ways any six marbles can be drawn from the bag and the number of ways six red marbles can be drawn from the bag.</div>
+<div class="para" id="subsec-combinations-6-2-2">The total number of marbles is 15 + 10 = 25. The total number of ways to draw six marbles from the bag is <span class="process-math">\({}_{25}C_6=177\,100.\)</span>
+</div>
+<div class="para" id="subsec-combinations-6-2-3">The number of ways to draw six red marbles from the bag is <span class="process-math">\({}_{15}C_6=5\,005.\)</span>
+</div>
+<div class="para" id="subsec-combinations-6-2-4">Therefore, the probability of drawing six red marbles is <span class="process-math">\(\frac{5\,005}{177\,100}\approx2.83\%.\)</span>
+</div>
+</div></details></div></article></section><section class="subsection" id="subsec-multiple-combinations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="space"> </span><span class="title">Applications Involving Multiple Combinations</span>
+</h3>
+<div class="para" id="subsec-multiple-combinations-2">Suppose we want to find the probability of drawing exactly three red marbles and three blue marbles from a bag containing 15 red marbles and 10 blue marbles. Using the fundamental counting principle together with combinations, we can find the number of ways to draw three red marbles and three blue marbles. <div class="para logical" id="subsec-multiple-combinations-2-1">
+<div class="para">The number of ways to choose three red marbles from the 15 available is <span class="process-math">\({}_{15}C_3\text{.}\)</span> The number of ways to choose three blue marbles from the 10 available is <span class="process-math">\({}_{10}C_3\text{.}\)</span> By the fundamental counting principle, the total number of ways to draw three red marbles and three blue marbles is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{}_{15}C_3 \times {}_{10}C_3 = 455 \times 120 = 54\,600.
+\end{equation*}
+</div>
+</div> <div class="para" id="subsec-multiple-combinations-2-2">The total number of ways to draw any six marbles from the bag is <span class="process-math">\({}_{25}C_6 = 177\,100\text{.}\)</span>
+</div> <div class="para logical" id="subsec-multiple-combinations-2-3">
+<div class="para">Therefore, the probability of drawing exactly three red marbles and three blue marbles is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{54\,600}{177\,100} \approx 30.8\%.
+\end{equation*}
+</div>
+</div>
+</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-probability-expected-value.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-democracy.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
