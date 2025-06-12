@@ -215,6 +215,11 @@
         </p>
     </solution>
 </example>
+</subsection>
+<subsection xml:id="subsec-iv-infusions">
+    <title>IV Infusions</title>
+
+
 <figure xml:id="iv-bag">
     <caption>Person monitoring an IV</caption>
     <image source="images/IV-bag.jpg" width="50%">
@@ -249,7 +254,41 @@
         </p>
     </solution>
 </example>
-
+<example>
+    <statement>
+        <p>
+        The provider ordered 12 mg/kg/day in three divided doses (q8h) administered via IV. The medication comes in vials with 400 mg of kanamycin per 2 ml. The pateint weights 66 kg. The IV kit has a drop factor of 10 gtt/ml.Each dose should be diluted in 100 ml of <m>D_5 W</m> and invused over 30 minutes. Determine the IV drip rate. Round to the nearest whole number.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            First, we need to calculate the total daily dose in mg:
+            <m>12\text{ mg/kg/day} \cdot 66\text{ kg} = 792\text{ mg/day}</m>.
+        </p>
+        <p>
+            Since the medication is given in three divided doses, we divide by 3:
+            <m>\frac{792\text{ mg}}{3} = 264\text{ mg/dose}</m>.
+        </p>
+        <p>
+            Next, we need to determine how many mL of the medication to administer for each dose. Since each vial contains 400 mg in 2 mL, we can use that information to set up a conversion factor:
+            <me>
+                \frac{264\text{ mg}}{1} \cdot \frac{2\text{ mL}}{400\text{ mg}} = 1.32\text{ mL}
+            </me>
+        </p>
+        <p>
+            Each dose should be diluted in 100 mL of <m>D_5 W</m>, so the total volume to be infused is found by adding <m>100\text{ mL} + 1.32\text{ mL} = 101.32\text{ mL}</m>.
+        </p>
+        <p>
+            We will infuse the 101.32 mL over 30 minutes. Thus, the drip rate can be calculated as follows:
+            <me>
+                \frac{101.32\text{ mL}}{30\text{ min}} \cdot 10\text{ gtts/mL} \approx 34\text{ gtts/min}
+            </me>
+        </p>
+        <p>
+            Therefore, the IV drip rate should be set to 34 gtts/min.
+        </p>
+    </solution>
+</example>
 </subsection>
 <exercises>
     <exercise>
