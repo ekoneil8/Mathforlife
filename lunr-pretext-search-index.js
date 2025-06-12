@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Focus on Dosage Calculations",
-  "body": " Focus on Dosage Calculations    AI-generated image of assorted medications.   Assorted medications    Nurses, pharmacists, and other healthcare providers must be proficient in calculating dosages of medications to ensure that patients receive a safe but effective dose. In this section, we address the proportional reasoning involved in these calculations.     Students will be able to:     Calculate dosages of medications.    Determine if dosages meet safety guidelines.      Calculating Dosages  In calculating dosages, we will use the approach of multiplying by a conversion factor, or a \"fancy 1\".    The provider ordered 8,000 units of heparin. The vial is labeled 10,000 units\/ml. What volume will you administer?    We need to convert 8,000 units into mililiters to determine the volume of medication to be administered to the patient. Since , we have two conversion factors to choose from: or Starting with , we multiply by the conversion factor that has \"units\" in the denominator to ensure that the \"units\" divide out. Therefore, 0.8 ml of heparin should be administered to the patient.    Many prescriptions use latin abbreviations to indicate how often the medication should be administered. Some of the more common abbreviations are listed below.   Dosage Abbreviations     bid  Twice per day (Latin: bis in die)    tid  Three times per day (Latin: ter in die)    qid  Four times per day (Latin: quarter in die)    qd  Every day (Latin: quaqua die); may also be written as od for once daily    q3h  Every three hours (Latin: quaqua 3 hora); can generalize to any number of hours    gtt or gtts  Drops (Latin: gutta); typically drips of fluid administered intravenously (IV drip)      Additionally, dosage calculations may require converting units. Some of the more commonly used conversions are listed below.   Common Unit Conversions        Note: in the international system of units, micrograms are denoted as . To avoid potentially disastrous results that might arise from confusing with mg, the medical community uses the abbreviation mcg for micrograms.     The provider orders a maintenance dose of oral aminophylline, 3 mg\/kg q6h. The client weighs 110 lbs. How many mg should the nurse administer to the client in a 24-hour period?    First, we will find the client's weight in kg:   Next, we determine the amount of aminophylline administered in each dose:   Since the dose is given every 6 hours, there will be doses in each 24-hour period. This amounts to each day.      The physician ordered Norpace, 0.6 grams by mouth daily divided in four doses.   Norpace is available in 150 mg capsules. How many capsules are needed in each dose?    The safety guidelines for Norpace state that the safe effective dose is 6-15 mg\/kg\/day. The patient weighs 99 lbs. Is the prescribed dose safe?          First, we convert 0.6 grams to miligrams:   We divide to determine the size of each dose: .  Since each capsule contains 150 mg, we should administer 1 capsule for each dose.    To determine if this dose is within safety guidelines, we must first convert 99 pounds to kilograms:   From the previous part, we know that the daily dose is 600 mg. We divide to determine how many miligrams per kilogram this works out to be administered each day: .  Since 13.3 is between 6 and 15, we can confirm that this is a safe dose.        Person monitoring an IV   Someone wearing scrubs holds an IV bag; we see only their arm    Some intravenously-administered medications are given as an infusion , meaning the IV line is controlled to administer a set number of drops per minute. It is important to administer infusions at the correct rate for the given medication and patient.  IV tubing administration sets come in various sizes, and the size is measured by the drip factor, also called the drop factor. For example, if a tubing set has a drip factor of 12 gtts\/mL, then there are 12 drops in each milliliter.  While the size of each drop is fixed, the nurse can set how many drops of fluid are released each minute. A typical infusion dosage calculation will involve converting mL\/min to gtts\/min as follows.    A medication has been prepared in an IV bag. The patient needs 100 milliliters to be infused over 30 minutes. If the tubing drop factor is 20 gtts\/mL, how many gtts\/min should be administered? Round to the nearest whole number.    The fluid must be infused at a rate of 100 mL per 30 min, or mL\/min.  We use the drop factor to convert to gtts\/min: The IV should be set to administer 67 gtts\/min.       A nurse is preparing to 1 g of cefadroxil. The medication is supplied in 500 mg tablets. How many tablets should the nurse administer?   2 tablets   An adult client with renal cancer, weighing 95 kg, is to receive vincristing 25 mcg\/kg\/day. What is the daily dosage in mg?   2.375 mg    The physician orders acetaminophen 15 mg\/kg q4h or less frequently as needed for an infant's pain. The drug is supplied with 160 mg per 5 ml. The infant weighs 12 pounds. What volume of medication, in ml, should be administered in each dose?   2.56 ml    A pediatric patient weighing 33 lbs is receiving intravenous antibiotics for otitis media (ear infection). The drug guide states that a safe dose for this medication is 15-30 mg\/kg\/day in three divided doses. The provider has ordered 205 mg tid.     Is this a safe dose?    What are the safe doses parameters? In other words, what are the lowest and highest doses that should be administered?         This is not a safe dose.    75-150 mg tid       A patient is receiving a 0.9% saline solution, which is salt (sodium chloride) dissolved in water at a rate of 0.9 grams per 100 milliliters. The solution is administered via IV at a rate of 125 ml\/hr. How many milligrams of salt has the patient received after five hours?   5,625 mg    The physician ordered Nitroprusside 2.7 mcg\/kg\/min. The patient weighs 136 pounds. Available is 250 mg of Nitroprusside dissolved in 500 mL of a solution of dextrose and water (D5W). The medication will be administered via an infusion pump programmed by the nurse. How many mL per hour should the pump be programmed to give the patient? Round to the nearest whole number.   About 20 mL\/hr    The physician ordered Dopamine: 4.5 mcg\/kg\/min. The patient weighs 78.2 kilograms. Available is 400 mg of Dopammine dissolved in 500 mL of D5W. How many mL\/hr should the nurse program the infusion pump to administer? Round to the nearest whole number.   26 mL\/hr    The physician ordered 17 mg\/kg\/day of Carbamazepine to be divided into two daily doses. The patient weighs 29.4 kilograms. On hand are 100-mg tablets. How many tablets should be administered in each dose? Round to the nearest tenth.   2.5 tablets per dose    50 mL of Albumin 5% needs to be administered intravenously over 15 minutes. The tubing drop factor is 10 gtts\/mL, meaning that there are 10 drops in each milliliter of fluid. How many gtts\/minute, or drops per minute, should be administered?   33 gtts\/min    A medication is being administered at a rate of 48 gtts\/min, and the tubing drop factor is 60 gtts\/mL. How fast in mL\/hr is the medication being infused?   48 mL\/hr    "
+  "body": " Focus on Dosage Calculations    AI-generated image of assorted medications.   Assorted medications    Nurses, pharmacists, and other healthcare providers must be proficient in calculating dosages of medications to ensure that patients receive a safe but effective dose. In this section, we address the proportional reasoning involved in these calculations.     Students will be able to:     Calculate dosages of medications.    Determine if dosages meet safety guidelines.      Calculating Dosages  In calculating dosages, we will use the approach of multiplying by a conversion factor, or a \"fancy 1\".    The provider ordered 8,000 units of heparin. The vial is labeled 10,000 units\/ml. What volume will you administer?    We need to convert 8,000 units into mililiters to determine the volume of medication to be administered to the patient. Since , we have two conversion factors to choose from: or Starting with , we multiply by the conversion factor that has \"units\" in the denominator to ensure that the \"units\" divide out. Therefore, 0.8 ml of heparin should be administered to the patient.    Many prescriptions use latin abbreviations to indicate how often the medication should be administered. Some of the more common abbreviations are listed below.   Dosage Abbreviations     bid  Twice per day (Latin: bis in die)    tid  Three times per day (Latin: ter in die)    qid  Four times per day (Latin: quarter in die)    qd  Every day (Latin: quaqua die); may also be written as od for once daily    q3h  Every three hours (Latin: quaqua 3 hora); can generalize to any number of hours    gtt or gtts  Drops (Latin: gutta); typically drips of fluid administered intravenously (IV drip)      Additionally, dosage calculations may require converting units. Some of the more commonly used conversions are listed below.   Common Unit Conversions        Note: in the international system of units, micrograms are denoted as . To avoid potentially disastrous results that might arise from confusing with mg, the medical community uses the abbreviation mcg for micrograms.     The provider orders a maintenance dose of oral aminophylline, 3 mg\/kg q6h. The client weighs 110 lbs. How many mg should the nurse administer to the client in a 24-hour period?    First, we will find the client's weight in kg:   Next, we determine the amount of aminophylline administered in each dose:   Since the dose is given every 6 hours, there will be doses in each 24-hour period. This amounts to each day.      The physician ordered Norpace, 0.6 grams by mouth daily divided in four doses.   Norpace is available in 150 mg capsules. How many capsules are needed in each dose?    The safety guidelines for Norpace state that the safe effective dose is 6-15 mg\/kg\/day. The patient weighs 99 lbs. Is the prescribed dose safe?          First, we convert 0.6 grams to miligrams:   We divide to determine the size of each dose: .  Since each capsule contains 150 mg, we should administer 1 capsule for each dose.    To determine if this dose is within safety guidelines, we must first convert 99 pounds to kilograms:   From the previous part, we know that the daily dose is 600 mg. We divide to determine how many miligrams per kilogram this works out to be administered each day: .  Since 13.3 is between 6 and 15, we can confirm that this is a safe dose.         IV Infusions   Person monitoring an IV   Someone wearing scrubs holds an IV bag; we see only their arm    Some intravenously-administered medications are given as an infusion , meaning the IV line is controlled to administer a set number of drops per minute. It is important to administer infusions at the correct rate for the given medication and patient.  IV tubing administration sets come in various sizes, and the size is measured by the drip factor, also called the drop factor. For example, if a tubing set has a drip factor of 12 gtts\/mL, then there are 12 drops in each milliliter.  While the size of each drop is fixed, the nurse can set how many drops of fluid are released each minute. A typical infusion dosage calculation will involve converting mL\/min to gtts\/min as follows.    A medication has been prepared in an IV bag. The patient needs 100 milliliters to be infused over 30 minutes. If the tubing drop factor is 20 gtts\/mL, how many gtts\/min should be administered? Round to the nearest whole number.    The fluid must be infused at a rate of 100 mL per 30 min, or mL\/min.  We use the drop factor to convert to gtts\/min: The IV should be set to administer 67 gtts\/min.      The provider ordered 12 mg\/kg\/day in three divided doses (q8h) administered via IV. The medication comes in vials with 400 mg of kanamycin per 2 ml. The pateint weights 66 kg. The IV kit has a drop factor of 10 gtt\/ml.Each dose should be diluted in 100 ml of and invused over 30 minutes. Determine the IV drip rate. Round to the nearest whole number.    First, we need to calculate the total daily dose in mg: .  Since the medication is given in three divided doses, we divide by 3: .  Next, we need to determine how many mL of the medication to administer for each dose. Since each vial contains 400 mg in 2 mL, we can use that information to set up a conversion factor:   Each dose should be diluted in 100 mL of , so the total volume to be infused is found by adding .  We will infuse the 101.32 mL over 30 minutes. Thus, the drip rate can be calculated as follows:   Therefore, the IV drip rate should be set to 34 gtts\/min.       A nurse is preparing to 1 g of cefadroxil. The medication is supplied in 500 mg tablets. How many tablets should the nurse administer?   2 tablets   An adult client with renal cancer, weighing 95 kg, is to receive vincristing 25 mcg\/kg\/day. What is the daily dosage in mg?   2.375 mg    The physician orders acetaminophen 15 mg\/kg q4h or less frequently as needed for an infant's pain. The drug is supplied with 160 mg per 5 ml. The infant weighs 12 pounds. What volume of medication, in ml, should be administered in each dose?   2.56 ml    A pediatric patient weighing 33 lbs is receiving intravenous antibiotics for otitis media (ear infection). The drug guide states that a safe dose for this medication is 15-30 mg\/kg\/day in three divided doses. The provider has ordered 205 mg tid.     Is this a safe dose?    What are the safe doses parameters? In other words, what are the lowest and highest doses that should be administered?         This is not a safe dose.    75-150 mg tid       A patient is receiving a 0.9% saline solution, which is salt (sodium chloride) dissolved in water at a rate of 0.9 grams per 100 milliliters. The solution is administered via IV at a rate of 125 ml\/hr. How many milligrams of salt has the patient received after five hours?   5,625 mg    The physician ordered Nitroprusside 2.7 mcg\/kg\/min. The patient weighs 136 pounds. Available is 250 mg of Nitroprusside dissolved in 500 mL of a solution of dextrose and water (D5W). The medication will be administered via an infusion pump programmed by the nurse. How many mL per hour should the pump be programmed to give the patient? Round to the nearest whole number.   About 20 mL\/hr    The physician ordered Dopamine: 4.5 mcg\/kg\/min. The patient weighs 78.2 kilograms. Available is 400 mg of Dopammine dissolved in 500 mL of D5W. How many mL\/hr should the nurse program the infusion pump to administer? Round to the nearest whole number.   26 mL\/hr    The physician ordered 17 mg\/kg\/day of Carbamazepine to be divided into two daily doses. The patient weighs 29.4 kilograms. On hand are 100-mg tablets. How many tablets should be administered in each dose? Round to the nearest tenth.   2.5 tablets per dose    50 mL of Albumin 5% needs to be administered intravenously over 15 minutes. The tubing drop factor is 10 gtts\/mL, meaning that there are 10 drops in each milliliter of fluid. How many gtts\/minute, or drops per minute, should be administered?   33 gtts\/min    A medication is being administered at a rate of 48 gtts\/min, and the tubing drop factor is 60 gtts\/mL. How fast in mL\/hr is the medication being infused?   48 mL\/hr    "
 },
 {
   "id": "alg-dosage-calc",
@@ -811,110 +811,119 @@ var ptx_lunr_docs = [
   "body": " Person monitoring an IV   Someone wearing scrubs holds an IV bag; we see only their arm   "
 },
 {
-  "id": "subsubsec-dosages-11",
+  "id": "subsec-iv-infusions-3",
   "level": "2",
-  "url": "sec-proportion-dosage.html#subsubsec-dosages-11",
+  "url": "sec-proportion-dosage.html#subsec-iv-infusions-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "infusion "
 },
 {
-  "id": "subsubsec-dosages-14",
+  "id": "subsec-iv-infusions-6",
   "level": "2",
-  "url": "sec-proportion-dosage.html#subsubsec-dosages-14",
+  "url": "sec-proportion-dosage.html#subsec-iv-infusions-6",
   "type": "Example",
   "number": "1.3.6",
   "title": "",
   "body": "  A medication has been prepared in an IV bag. The patient needs 100 milliliters to be infused over 30 minutes. If the tubing drop factor is 20 gtts\/mL, how many gtts\/min should be administered? Round to the nearest whole number.    The fluid must be infused at a rate of 100 mL per 30 min, or mL\/min.  We use the drop factor to convert to gtts\/min: The IV should be set to administer 67 gtts\/min.   "
 },
 {
-  "id": "sec-proportion-dosage-5-1",
+  "id": "subsec-iv-infusions-7",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-1",
+  "url": "sec-proportion-dosage.html#subsec-iv-infusions-7",
+  "type": "Example",
+  "number": "1.3.7",
+  "title": "",
+  "body": "  The provider ordered 12 mg\/kg\/day in three divided doses (q8h) administered via IV. The medication comes in vials with 400 mg of kanamycin per 2 ml. The pateint weights 66 kg. The IV kit has a drop factor of 10 gtt\/ml.Each dose should be diluted in 100 ml of and invused over 30 minutes. Determine the IV drip rate. Round to the nearest whole number.    First, we need to calculate the total daily dose in mg: .  Since the medication is given in three divided doses, we divide by 3: .  Next, we need to determine how many mL of the medication to administer for each dose. Since each vial contains 400 mg in 2 mL, we can use that information to set up a conversion factor:   Each dose should be diluted in 100 mL of , so the total volume to be infused is found by adding .  We will infuse the 101.32 mL over 30 minutes. Thus, the drip rate can be calculated as follows:   Therefore, the IV drip rate should be set to 34 gtts\/min.   "
+},
+{
+  "id": "sec-proportion-dosage-6-1",
+  "level": "2",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-1",
   "type": "Exercise",
-  "number": "1.3.2.1",
+  "number": "1.3.3.1",
   "title": "",
   "body": " A nurse is preparing to 1 g of cefadroxil. The medication is supplied in 500 mg tablets. How many tablets should the nurse administer?   2 tablets  "
 },
 {
-  "id": "sec-proportion-dosage-5-2",
+  "id": "sec-proportion-dosage-6-2",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-2",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-2",
   "type": "Exercise",
-  "number": "1.3.2.2",
+  "number": "1.3.3.2",
   "title": "",
   "body": "An adult client with renal cancer, weighing 95 kg, is to receive vincristing 25 mcg\/kg\/day. What is the daily dosage in mg?   2.375 mg  "
 },
 {
-  "id": "sec-proportion-dosage-5-3",
+  "id": "sec-proportion-dosage-6-3",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-3",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-3",
   "type": "Exercise",
-  "number": "1.3.2.3",
+  "number": "1.3.3.3",
   "title": "",
   "body": " The physician orders acetaminophen 15 mg\/kg q4h or less frequently as needed for an infant's pain. The drug is supplied with 160 mg per 5 ml. The infant weighs 12 pounds. What volume of medication, in ml, should be administered in each dose?   2.56 ml  "
 },
 {
-  "id": "sec-proportion-dosage-5-4",
+  "id": "sec-proportion-dosage-6-4",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-4",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-4",
   "type": "Exercise",
-  "number": "1.3.2.4",
+  "number": "1.3.3.4",
   "title": "",
   "body": " A pediatric patient weighing 33 lbs is receiving intravenous antibiotics for otitis media (ear infection). The drug guide states that a safe dose for this medication is 15-30 mg\/kg\/day in three divided doses. The provider has ordered 205 mg tid.     Is this a safe dose?    What are the safe doses parameters? In other words, what are the lowest and highest doses that should be administered?         This is not a safe dose.    75-150 mg tid     "
 },
 {
-  "id": "sec-proportion-dosage-5-5",
+  "id": "sec-proportion-dosage-6-5",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-5",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-5",
   "type": "Exercise",
-  "number": "1.3.2.5",
+  "number": "1.3.3.5",
   "title": "",
   "body": " A patient is receiving a 0.9% saline solution, which is salt (sodium chloride) dissolved in water at a rate of 0.9 grams per 100 milliliters. The solution is administered via IV at a rate of 125 ml\/hr. How many milligrams of salt has the patient received after five hours?   5,625 mg  "
 },
 {
-  "id": "sec-proportion-dosage-5-6",
+  "id": "sec-proportion-dosage-6-6",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-6",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-6",
   "type": "Exercise",
-  "number": "1.3.2.6",
+  "number": "1.3.3.6",
   "title": "",
   "body": " The physician ordered Nitroprusside 2.7 mcg\/kg\/min. The patient weighs 136 pounds. Available is 250 mg of Nitroprusside dissolved in 500 mL of a solution of dextrose and water (D5W). The medication will be administered via an infusion pump programmed by the nurse. How many mL per hour should the pump be programmed to give the patient? Round to the nearest whole number.   About 20 mL\/hr  "
 },
 {
-  "id": "sec-proportion-dosage-5-7",
+  "id": "sec-proportion-dosage-6-7",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-7",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-7",
   "type": "Exercise",
-  "number": "1.3.2.7",
+  "number": "1.3.3.7",
   "title": "",
   "body": " The physician ordered Dopamine: 4.5 mcg\/kg\/min. The patient weighs 78.2 kilograms. Available is 400 mg of Dopammine dissolved in 500 mL of D5W. How many mL\/hr should the nurse program the infusion pump to administer? Round to the nearest whole number.   26 mL\/hr  "
 },
 {
-  "id": "sec-proportion-dosage-5-8",
+  "id": "sec-proportion-dosage-6-8",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-8",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-8",
   "type": "Exercise",
-  "number": "1.3.2.8",
+  "number": "1.3.3.8",
   "title": "",
   "body": " The physician ordered 17 mg\/kg\/day of Carbamazepine to be divided into two daily doses. The patient weighs 29.4 kilograms. On hand are 100-mg tablets. How many tablets should be administered in each dose? Round to the nearest tenth.   2.5 tablets per dose  "
 },
 {
-  "id": "sec-proportion-dosage-5-9",
+  "id": "sec-proportion-dosage-6-9",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-9",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-9",
   "type": "Exercise",
-  "number": "1.3.2.9",
+  "number": "1.3.3.9",
   "title": "",
   "body": " 50 mL of Albumin 5% needs to be administered intravenously over 15 minutes. The tubing drop factor is 10 gtts\/mL, meaning that there are 10 drops in each milliliter of fluid. How many gtts\/minute, or drops per minute, should be administered?   33 gtts\/min  "
 },
 {
-  "id": "sec-proportion-dosage-5-10",
+  "id": "sec-proportion-dosage-6-10",
   "level": "2",
-  "url": "sec-proportion-dosage.html#sec-proportion-dosage-5-10",
+  "url": "sec-proportion-dosage.html#sec-proportion-dosage-6-10",
   "type": "Exercise",
-  "number": "1.3.2.10",
+  "number": "1.3.3.10",
   "title": "",
   "body": " A medication is being administered at a rate of 48 gtts\/min, and the tubing drop factor is 60 gtts\/mL. How fast in mL\/hr is the medication being infused?   48 mL\/hr  "
 },
