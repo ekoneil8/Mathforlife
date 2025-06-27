@@ -12,17 +12,17 @@
                 <ul>
                     <li>
                         <p>
-                            Make a probability model
+                            Make a probability model.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Calculate the expected value for a probability model
+                            Calculate the expected value for a probability model.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Determine whether a game is fair
+                            Use expected value as a tool to make decisions about games, investments, and other ventures.
                         </p>
                     </li>
                 </ul>
@@ -30,7 +30,7 @@
     
         <introduction>
             <p>
-                Expected value is one of the useful probability concept we will discuss. It has many applications, from insurance policies to making financial decisions, and it's one thing that the casinos and government agencies that run gambling operations and lotteries may hope most people never learn about.
+                Expected value is a weighted average. It has many applications, from insurance policies to making financial decisions, and it's a key concept in understanding risk and reward.
             </p>
     
            
@@ -85,7 +85,7 @@
         <me>
             6(10)+5(3)+0(25)=$75
         </me>
-        in 36 plays. Therefore, the winnings average out to <m>75\div36\approx $2.08</m> per play. This is the expected value!
+        in 36 plays. Therefore, the winnings average out to <m>75\div36\approx $2.08</m> per play. This is the expected value if the game is free to play!
        </p>
        <p>
         You may have noticed that we started by multiplying each probability by 36 and in our last step we divided the result by 36. Because of the distributive property, those operations can be eliminated. Thus, a more efficient way to calculate expected value is to multiply the value corresponding to each outcome by the chance it will happen and add the products together.
@@ -104,10 +104,13 @@
             Suppose you suggest charging $5 to play. We can determine the net expected value by subtracting the $5 the player has to pay from their expected winnings. This gives us:
         </p>
         <p>
-            <md>
-            <mrow>\text{Net expected value}=\$2.08-\$5=-\$2.92.</mrow>
-        </md>
+            <me>
+                \text{Expected Value}=\text{Expected Winnings}-\text{Expected Cost}=\$2.08-\$5=-\$2.92.
+            </me>
         With the price set at $5 per play, the player can expect to lose an average of $2.92 per play and the carnival owner can expect to earn an average of $2.92 per play.
+        </p>
+        <p>
+            Note that the expected value can be calculated from the perspective of either the player or the carnival owner, and the signs will be opposite. If the expected value is negative for the player, it is positive for the carnival owner, and vice versa. In this case, the expected value is negative for the player and positive for the carnival owner.
         </p>
     
         <assemblage>
@@ -117,11 +120,9 @@
         
             </p>
             <p>
-                To calculate expected value, multiply the probability of each outcome by its corresponding value and add the products.
+                To calculate expected value, multiply the probability of each outcome by its corresponding value and add the products. If there are any costs associated with the game, subtract them.
             </p>
-            <p>
-                <term>Net Expected Value</term> is the resulting expected value after accounting for any costs.
-            </p>
+           
         </assemblage>
     
                 <example>
@@ -198,29 +199,36 @@
     
             <p>
                 <md>
-                <mrow>\text{Expected winnings}\amp=\$250(\frac{1}{417})+\$500(\frac{1}{1833})+\$1000(\frac{1}{16773})+\$1500(\frac{1}{2500})+\$0(0.9961)</mrow>
+                <mrow>\text{Expected Winnings}\amp=\$250(\frac{1}{417})+\$500(\frac{1}{1833})+\$1000(\frac{1}{16773})+\$1500(\frac{1}{2500})+\$0(0.9961)</mrow>
                 <mrow>\amp=\$2.07</mrow>
             </md>
             </p>
+           
     
             <p>
                 Therefore, the player's expected winnings are $2.07, on average, over the long run. To find the expected <alert>net</alert> winnings, we subtract the cost to play. Since it costs $1 to play,
             </p>
             <p>
                 <md>
-                <mrow>\text{Net Expected Winnings}=\$2.07-\$1.00=\$1.07.</mrow>
+                <mrow>\text{Expected Value}=\text{Expected Winnings}-\text{Expected Costs}=\$2.07-\$1.00=\$1.07.</mrow>
                 </md>
+            </p>
+             <p>
+                Note that the cost to play the game can be incorporated either before or after calculating the average winnings. If we do it before, then each prize must be reduced by the cost to play, which is $1.00. The expected winnings would then be:
+            <me>
+                \text{Expected Value}=\$249(\frac{1}{417})+\$499(\frac{1}{1833})+\$999(\frac{1}{1667})+\$1499(\frac{1}{2500})+\$(-1)(0.9961)=\$1.07.
+            </me>
+            
             </p>
             <p>
                 Assuming the given payouts are correct, this would be one game you would want to play for investment purposes since you can expect to earn $1.07 per game, on average, over the long run. Play a million times, and you just might become a millionaire!
             </p>
+            
             </solution>
         </example>
+        
         <p>
-            In general, if the expected value of a game is negative, it is not a good idea to play, since in the long run you will lose money. It would be better to play a game with a positive expected value (good luck trying to find one!), although keep in mind that even if the average winnings are positive it could be the case that most people lose money and one very fortunate individual wins a great deal of money.
-        </p>
-        <p>
-            Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. Any potential moral implications related to gambling are not addressed in this book.
+            Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. In the short term, gambling can result in significant wins or losses, but the casino always has the edge in the long run. Any potential moral implications related to gambling are not addressed in this book.
         </p>
         <example>
             <statement>
@@ -231,7 +239,7 @@
         </image>
       </figure>
                 <p>
-                    In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops. The payouts listed by the casinos and online are the net payouts, already take into account the money spent on the bet. In other words, we will calculate the net expected value directly. Find the expected value of each bet.
+                    In the casino game of roulette, a ball is dropped into a spinning wheel. Gamblers win or lose varying amounts based on where it stops. The payouts listed by the casinos and online are the net payouts, already take into account the money spent on the bet. In other words, we will calculate the expected value directly. Find the expected value of each bet.
                 </p>
                 <ol>
                     <li>
@@ -251,6 +259,37 @@
                     </li>
                 </ol>
             </statement>
+            <solution>
+                <ol>
+                    <li>
+                        <p>
+                            The probability of winning is <m>\frac{1}{38}</m> since there are 38 numbers on the wheel (1 through 36, plus 0 and 00). If the player wins, they receive <m>35</m> times their bet of <m>\$4</m>, or <m>\$140</m>. If they lose, they lose their $4 bet. The expected value is:
+                            <me>
+                                \text{Expected Value}=\$140\left(\frac{1}{38}\right)+\left(-\$4\right)\left(\frac{37}{38}\right)=-\$2.11.
+                            </me>
+                            Therefore, if they play this bet repeatedly, they should expect to lose an average of about $2.11 per play on this bet.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The probability of winning is <m>\frac{18}{38}</m> since there are 18 numbers between 1 and 18, inclusive. If the player wins, they receive <m>1</m> times their bet of <m>\$10</m>, or <m>\$10</m>. If they lose, they lose their $10 bet. The expected value is:
+                            <me>
+                                \text{Expected Value}=\$10\left(\frac{18}{38}\right)+\left(-\$10\right)\left(\frac{20}{38}\right)=-\$0.53.
+                            </me>
+                            Therefore, if they play this bet repeatedly, they should expect to lose an average of about $0.53 per play on this bet.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The probability of winning is <m>\frac{4}{38}</m> since there are 4 numbers in the square. If the player wins, they receive <m>8</m> times their bet of <m>\$20</m>, or <m>\$160</m>. If they lose, they lose their $20 bet. The expected value is:
+                            <me>
+                                \text{Expected Value}=\$160\left(\frac{4}{38}\right)+\left(-\$20\right)\left(\frac{34}{38}\right)=-\$1.05.
+                            </me>
+                            Therefore, if they play this bet repeatedly, they should expect to lose an average of about $1.05 per play on this bet.
+                        </p>
+                    </li>
+                </ol>
+            </solution>
         </example>
         <p>
             Expected value is not only used to determine the average amount won and lost at casinos and carnivals, it also has applications in business and insurance, just to name a few. Let's look at a couple of those applications.
