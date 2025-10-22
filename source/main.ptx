@@ -5,7 +5,7 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="math-in-society">
-    <title>Mathematics for Life Alpha Test edition</title>
+    <title>Mathematics for Life</title>
     <subtitle>Data, Dynamics, Dollars, and Decisions</subtitle>
 
     <!-- Include frontmatter -->

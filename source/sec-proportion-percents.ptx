@@ -132,7 +132,7 @@
             </p>
             
         <p>
-          Which do you think is the better deal? You would save more with jacket 2, but jacket 1 is cheaper. If the jackets are 
+          Which do you think is the better buy? You would save more with jacket 2, but jacket 1 is cheaper. If the jackets are 
           similar in quality and desirability, jacket 1 would be a good choice. If jacket 2 is warmer, looks better on you, or offers better 
           rain protection, you might consider whether it is worth spending an additional $10 to have a better jacket.
         </p>
@@ -146,8 +146,8 @@
         <me>82\% = \frac{82}{100}=0.82</me>
       </p>
       <p>
-        To go the other way, if we have <m>0.10</m>, we can multiply it by 100% or move the decimal two places to the right and add the % symbol.
-        <me>0.10 = 0.10(100\%)=10\%</me>
+        To go the other way, if we have <m>0.1</m>, we can multiply it by 100% or move the decimal two places to the right and add the % symbol.
+        <me>0.1 = 0.1(100\%)=10\%</me>
       </p>
         
     <example>
@@ -211,11 +211,7 @@
       <p>
         Change each fraction or decimal into percent form.
       <ol>
-        <li>
-          <p>
-            <m>\frac{4}{5}</m>
-          </p>
-        </li>
+        
         <li>
           <p>
             1.25
@@ -232,29 +228,35 @@
           </p>
         </li>
       </ol>
+      <li>
+          <p>
+            <m>\frac{4}{5}</m>
+          </p>
+        </li>
       </p>
     </statement>
       <solution>
         <p>
         <ol>
+          
           <li>
             <p>
-              First we divide <m>\frac{4}{5}</m> to get <m>0.80</m> and then multiply by 100%. <m>0.80(100\%) = 80\%</m>.
+              Multiplying <m>1.25(100\%)</m> or moving the decimal two places to the right gives 125%.
             </p>
           </li>
           <li>
             <p>
-              <m>1.25(100\%)</m> or moving the decimal two places to the right gives 125%.
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>0.06(100\%)</m> or moving the decimal two places to the right gives 6%.
+              Multiplying <m>0.06(100\%)</m> or moving the decimal two places to the right gives 6%.
             </p>
           </li>
             <li>
             <p>
-              <m>0.003(100\%)</m> or moving the decimal two places to the right gives 0.3%. Note this is less than one percent.
+              Multiplying <m>0.003(100\%)</m> or moving the decimal two places to the right gives 0.3%. Note this is less than one percent.
+            </p>
+          </li>
+          <li>
+            <p>
+              First we divide <m>4</m> by <m>5</m> to get <m>0.80</m> and then multiply by 100%. <m>0.80(100\%) = 80\%</m>.
             </p>
           </li>
         </ol>
@@ -272,6 +274,12 @@
           </p>
         
         </assemblage>
+        <assembalage>xml:id="percents-quick-tips">
+        <title>Quick Tips</title> 
+        <p>
+          Think about changing between dollars and cents. To go from dollars to cents, we multiply by 100. To go from cents to dollars, we divide by 100. The same idea applies to percents and decimals.
+        </p>
+          </assemblage>
   </subsection>
   
   <subsection>
