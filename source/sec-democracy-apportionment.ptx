@@ -47,10 +47,10 @@
 		The legislative, or law-making, branch of the United States government consists of the Senate and the House of Representatives. The members of the Senate are called senators, and the members of the House of Representatives are called congresspeople or representatives. Each state is represented by two senators and a number of congresspeople that is proportional to the population of the state.
 	</p>
 	<p>
-		While the total number of congresspeople has changed multiple times over the history of the United States, a public law established that from the year 1913 and onward, there would be exactly 435 representatives.
+		The total number of congresspeople has changed multiple times over the history of the United States before laws were enacted to fix the number of representatives. The Apportionment Act of 1911 brought the total number of representatives to 435, and the Permanent Apportionment Act of 1929 established that the number would not change again.
 	</p>
 	<p>
-		It sounds simple enough: a state with <m>x</m> percent of the population should receive <m>x</m> percent of the the representatives. The problem is that the calculations usually do not come out neat and simple. For example, Washington State residents make up about 2.325% of the US population, so they should have 2.325% of the 435 representatives. That is 10.11 people. Since 0.11 people doesn't make sense, Washington State receives 10 representatives. If we continue this approach and assign whole numbers of representatives to each state, we are very likely to end up with too few or too many representatives.
+		It sounds simple enough: a state with <m>x</m> percent of the population should receive <m>x</m> percent of the the representatives. The problem is that the calculations usually do not come out neat and simple. For example, Washington State residents make up about 2.325% of the US population, so they should have 2.325% of the 435 representatives. That is 10.11 people. Using standard rounding rules, Washington State should receives 10 representatives. If we continue this approach and assign whole numbers of representatives to each state, we could end up with too few or too many representatives.
 	</p>
 	<p>
 		This same problem also arises in other contexts, such as figuring out how many school counselors each high school shoud have on staff, or disbursing stocks.
