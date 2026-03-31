@@ -2,11 +2,13 @@
 
 <section xml:id="sec-finance-credit-cards" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Credit Cards</title>
-  
+  <image source="images/credit-card-image.png" width="50%">
+    <shortdescription>A credit card.</shortdescription>
+  </image>
 <introduction>
   <p>Credit cards are a common source of debt. The Federal Reserve Bank reported that in the second quarter of 2024, Americans 
     owed $1.14 trillion in credit card debt, which is an average of about $4,400 per adult. In this section, we will investigate 
-    how credit cards work with the goal of empowering readers to make educated financial decisions about these accounts.</p>
+    how credit cards work with the goal of empowering readers to make educated financial decisions.</p>
   </introduction>
     <objectives>
       <introduction>
