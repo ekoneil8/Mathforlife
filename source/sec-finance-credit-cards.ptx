@@ -207,9 +207,17 @@ The next several examples will illustrate how to calculate the ending balance an
         </p>
       </li>
      </ul>
-     <p>
-      To further complicate matters, the time period used in the simple interest formula can be measured in different ways. Some credit card agreements calculate interest based on the number of days in the billing cycle, while others use one month as one twelfth of a year.
+     
+     <subsubsection xml:id="subsubsec-unpaid-averagebalance-method"  xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Unpaid Balance and Average Daily Balance Methods</title>
+      <p>
+        The unpaid balance method and the average daily balance method are similar in that the finance charge is calculated at the end of the billing cycle. The difference is that the unpaid balance method uses the ending balance to calculate the finance charge, while the average daily balance method uses the average daily balance. 
+      
+      </p>
+      <p>
+      To complicate matters just a bit, the time period used in the simple interest formula can be measured in different ways. Some credit card agreements calculate interest based on the number of days in the billing cycle, while others use one month as one twelfth of a year.
      </p>
+     
      <example>
       <p>
         Suppose that a credit card account has an ending balance of $1,400 and an annual percentage rate of 18%. If the finance charge is calculated using the unpaid balance method based on the ending balance with the time period measured in one month as one twelfth of a year, find the finance charge and statement balancefor the billing cycle.
@@ -339,6 +347,93 @@ The next several examples will illustrate how to calculate the ending balance an
         <p>
           The finance charge is the same as the previous calculation.
         </p>
+        </subsubsection>
+<subsubsection xml:id="subsubsec-daily-balance-method">
+  <title>Daily Balance Method</title>
+  
+
+         <p>
+          With the daily balance method, finance charges are calculated daily using the current balance on each day of the billing cycle. The amount of interest is calculated and may be added each day. This method can be more complicated to calculate, but it enables the lender to charge interest on new purchases more quickly than the other methods, and it enables variable interest rates to be changed more frequently.  
+         </p>
+          <p>
+            To calculate the finance charge using the daily balance method, we find the current balance for each day of the billing cycle and then calculate the interest for each day. The interest for each day is calculated using the simple interest formula with the current balance as the principal, the daily rate as the rate, and one day as the time period. The total finance charge is then found by adding up the interest for each day of the billing cycle.
+          </p>
+          <example>
+            <p>
+              Consider the same credit card account which has a starting balance of $1,000 and the following transactions during the billing cycle: a $500 purchase on January 5, a $200 payment on January 10, and a $100 purchase on January 15. The billing cycle runs from January 1 to January 31, and the annual percentage rate is 18%. Using the daily balance method, we will calculate and apply the finance charge each day of the billing cycle. This is a more complicated calculation, so it's recommended to use a spreadsheet to keep track of the balances and interest for each day of the billing cycle.
+            </p>
+            <p>
+              We will label the columns of the spreadsheet as follows: Date, Starting Balance, Transactions, Ending Balance, and Finance Charge. The starting balance for January 1 is $1,000 and there were no transactions, so the daily balance is $1,000. Note that the <em>ending balance</em> is the daily balance that is used to calculate the finance charge.
+            </p>
+            <p>
+              Using the simple interest formula with <m>P=\$1\,000</m>, <m>r=0.18</m>, and <m>t=\frac{1}{365}</m>, we get:
+              <md>
+                <mrow>I \amp= Prt </mrow>
+                <mrow> I\amp=1000(0.18)\left(\frac{1}{365}\right) </mrow>
+                <mrow>I \amp\approx 0.49 </mrow>
+              </md>
+    Therefore, the finance charge for January 1 is approximately $0.49.
+            </p>
+            <p>
+              You may have noticed that <m>0.18\cdot \left(\frac{1}{365}\right) = \frac{0.18}{365}</m>. In practice, instead of calculating the daily finance charge using the simple interest formula, credit card companies typically calculate the daily finance charge by multiplying the current balance by the daily rate, which is the annual rate divided by 365 or <m>\frac{r}{365}</m>.
+            </p>
+            <p>
+              The spreadsheet or table for the first day of the billing cycle is shown below.
+            </p>
+          <table>
+            <title>Daily Balance Method First Day</title>
+            <tabular>
+              <row header="yes">
+                <cell>Date</cell>
+                <cell>Starting Balance</cell>
+                <cell>Transactions</cell>
+                <cell>Ending Balance</cell>
+                <cell>Finance Charge</cell>
+              </row>
+              <row>
+                <cell>Jan 1</cell>
+                <cell>$1,000</cell>
+                <cell>$0</cell>
+                <cell><m>1000+0=</m>$1,000</cell>
+                <cell><m>1000 \times \left(\frac{0.18}{365}\right) = </m>$0.54</cell>
+                </row>
+            </tabular>
+          </table>
+          <p>
+            The starting balance for January 2 is the ending balance from January 1 plus the finance charge from January 1, which is $1,000 + $0.49 = $1,000.49. We can then calculate the finance charge for January 2 using the same method.
+          </p>
+                    <table>
+            <title>Daily Balance Method Second Day</title>
+            <tabular>
+              <row header="yes">
+                <cell>Date</cell>
+                <cell>Starting Balance</cell>
+                <cell>Transactions</cell>
+                <cell>Ending Balance</cell>
+                <cell>Finance Charge</cell>
+              </row>
+              <row>
+                <cell>Jan 1</cell>
+                <cell>$1,000</cell>
+                <cell>$0</cell>
+                <cell><m>1000+0=</m>$1,000</cell>
+                <cell><m>1000 \times \left(\frac{0.18}{365}\right) = </m>$0.49</cell>
+                </row>
+                <row>
+                  <cell>Jan 2</cell>
+                  <cell>$1,000.49</cell>
+                  <cell>$0</cell>
+                  <cell><m>1000.49+0=</m>$1,000.49</cell>
+                  <cell><m>1000.49 \times \left(\frac{0.18}{365}\right) = </m>$0.49</cell> 
+                </row>
+            </tabular>
+          </table>
+          <p>
+            We would continue this process for each day of the billing cycle, calculating the starting balance, transactions, ending balance, and finance charge for each day. The resulting <url href="https://docs.google.com/spreadsheets/d/1rCkm9GJwPKizUfoVz4gaDKHpX4y1rfiATIktn-mrRYs/edit?usp=sharing">Daily Balance Method Spreadsheet</url> can be adapted for other accounts. 
+            </p>
+          </example>
+          </subsubsection>
+    
   </subsection>
   <subsection xml:id="finance-credit-fine-print"  xmlns:xi="http://www.w3.org/2001/XInclude"> 
     <title>Credit Card Agreements: Reading the Fine Print</title>
