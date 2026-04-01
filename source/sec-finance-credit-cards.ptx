@@ -24,12 +24,12 @@
         </li>
         <li>
           <p>
-            Calculate average daily balance.
+            Calculate ending balance, starting balance, and average daily balance.
           </p>
         </li>
         <li>
           <p>
-            Calculate credit card finance charges using the average daily balance method and the daily balance method.
+            Calculate credit card finance charges using the unpaid balance method, the average daily balance method, and the daily balance method.
           </p>
         </li>
         <li>
@@ -65,17 +65,35 @@
       </p>
     </subsection> 
   <subsection xml:id="subsec-finance-creditcard-balance"  xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Credit Card Balances and Finance Charges</title>
+    <title>Credit Card Balances</title>
     <p>
-      The balance in an account typically means the amount of money currently held in that account, whether it is a debt or an investment. With credit cards, the amount owed changes frequently and fees are accrued over time but applied once. As such, there are several different types of balance:
+      The balance in an account typically means the amount of money currently held in that account, whether it is a debt or an investment. With credit cards, the amount owed changes frequently. As such, there are several balances that are used in different contexts. It is important for consumers to understand the different types of balances and how they are calculated, as they can have a significant impact on the amount of interest charged and the total amount owed.
+    </p>
+    <p>
+      The <term>starting balance</term> is the balance at the beginning of a billing period. The starting balance is also called the previous balance or the opening balance. It is the amount shown on the previous billing statement as the total amount owed at the end of the previous billing cycle.
+    </p>
+    <p>
+      The <term>ending balance</term> is the balance at the end of a billing period. The ending balance is the amount owed at the end of a billing cycle before finance charges or other fees have been applied. It is calculated by starting with the previous balance, adding any purchases made during the billing cycle, and subtracting any payments made during the billing cycle. The ending balance is used in the unpaid balance method of calculating finance charges.
+    </p>
+    <p>
+      The <term>statement balance</term> is the total amount shown on the billing statement. It is the sum of the ending balance and any finance charges or fees that are applied at the end of the billing cycle. The statement balance is the amount that a consumer must pay by the due date to avoid finance charges on new purchases.
+    </p>
+    <p>
+      The <term>daily balance</term> is the total balance at a given time. Also called the current balance, it incorporates any unpaid debt carried over from the previous billing cycle and any activity (purchases, payments, etc.) that have been posted to the account. The daily balance is used in the daily balance method of calculating finance charges.
+    </p>
+    <p>
+      The <term>average daily balance</term> is the average of the current balances on each day of a billing cycle. It is calculated by adding up the daily balances for each day of the billing cycle and then dividing by the number of days in the billing cycle. The average daily balance is used in the average daily balance method of calculating finance charges.
+    </p>
+    <p>
+      The <term>payoff balance</term> is the total amount a consumer would have to pay to close out the account. It is the sum of the current balance and any prorated finance charges that have accumulated but not yet been applied. A prorated finance charge is also called residual interest. The payoff balance is important for consumers to understand because if they pay off their credit card account, they may still owe some money in the form of residual interest, which can be a surprise. This is because the finance charge is typically applied at the end of the billing cycle, so if a consumer pays off their balance before the end of the cycle, they may still owe interest for the time that has passed since their last statement. Consumers can avoid this surprise by asking their credit card company for a payoff balance, which will include any residual interest, before making a payment to close out the account.
     </p>
   <assemblage xml:id="assemblage-balance-types">
-    <title>Types of Balances</title>
+    <title>Summary of Balance Types</title>
     <p>
       <ul>
         <li>
           <p>
-            <term>Previous Balance:</term> the amount of debt carried over from the previous month.
+            <term>Starting Balance:</term> the amount of debt carried over from the previous month. 
           </p>
         </li>
         <li>
@@ -85,49 +103,40 @@
         </li>
         <li>
           <p>
-            <term>Statement Balance or New Balance:</term> the total amount shown on the billing statement. It is the sum of the ending balance and any finance charges or fees that are applied at the end of the billing cycle.
+            <term>Statement Balance:</term> the total amount shown on the billing statement. It is the sum of the ending balance and any finance charges or fees that are applied at the end of the billing cycle.
           </p>
         </li>
         <li>
           <p>
-            <term>Daily Balance or Current Balance:</term> the total balance at a given time. The current balance incorporates any unpaid debt carried over from the previous billing cycle and any activity (purchases, payments, etc.) that have been posted to the account.
+            <term>Daily Balance:</term> the balance on the account on a particular day. 
           </p>
         </li>
         <li>
           <p>
-            <term>Payoff Balance:</term> the total amount a consumer would have to pay to close out the account. It is the sum of the current balance and any prorated finance charges that have accumulated but not yet been applied. (A prorated finance charge is also called residual interest.)
+            <term>Average Daily Balance:</term> the average of the balances on each day of a billing cycle.
           </p>
         </li>
         <li>
           <p>
-            <term>Average Daily Balance:</term> the average of the current balances on each day of a billing cycle.
+            <term>Payoff Balance:</term> the total amount a consumer would have to pay to close out the account.
           </p>
         </li>
       </ul>
     </p> 
   </assemblage>
+<p>
+The next several examples will illustrate how to calculate the ending balance and the average daily balance. Statement and daily balance calculations are demostrated in the next portion of this section on finance charges.
+</p>
+<p>
+  The ending balance is calculated by starting with the previous balance, adding any purchases made during the billing cycle, and subtracting any payments made during the billing cycle. It does not include any finance charges or fees that are applied at the end of the billing cycle. 
+</p>
     <example>
-      <statement>
-        <p>
+              <p>
           A credit card account has the following transactions during the billing cycle: a $500 purchase on January 5, a $200 payment on January 10, and a $100 purchase on January 15. The billing cycle runs from January 1 to January 31. Assume that the previous balance was $1,000 and that a finance charge of $25 is applied at the end of the billing cycle.
-        </p>
-        <ol>
-          <li>
-            <p>
+
               What is the ending balance for the billing cycle before finance charges are applied?
             </p>
-          </li>
-          <li>
-            <p>
-              What is the statement balance for the billing cycle?
-            </p>
-          </li>
-        </ol>
-      </statement>
-      <solution>
-        <ol>
-          <li>
-            <p>
+                     <p>
               To find the ending balance, we start with the previous balance and add any purchases and subtract any payments. The transactions are as follows:
               <ul>
                 <li>
@@ -144,80 +153,21 @@
                 </li>
               </ul>
               Therefore, the ending balance is calculated as follows:
-              <me>Ending Balance = Previous Balance + Purchases - Payments</me>
-              <me>Ending Balance = 1000 + 500 - 200 + 100 = $1,400</me>
+              <me>\text{Ending Balance} = \text{Previous Balance} + \text{Purchases} - \text{Payments}</me>
+              <me>\text{Ending Balance} = 1000 + 500 - 200 + 100 = $1,400</me>
               Thus, the ending balance for the billing cycle is $1,400.
             </p>  
-          </li>
-          <li>
-            <p>
-              To find the statement balance, we add the finance charge to the ending balance. The statement balance is calculated as follows:
-              <me>\text{Statement Balance} = \text{Ending Balance} + \text{Finance Charge}</me>
-              <me>\text{Statement Balance} = 1400 + 25 = $1,425</me>
-              Thus, the statement balance for the billing cycle is $1,425.
-            </p>
-          </li>
-        </ol>
-        <p>
-          To find the ending balance, we start with the previous balance and add any purchases and subtract any payments. The transactions are as follows:
-          <ul>
-            <li>
-              Previous Balance: $1,000
-            </li>
-            <li>
-              January 5 Purchase: +$500
-            </li>
-            <li>
-              January 10 Payment: -$200
-            </li>
-            <li>
-              January 15 Purchase: +$100
-            </li>
-          </ul>
-          Therefore, the ending balance is calculated as follows:
-          <me>\text{Ending Balance} = \text{Previous Balance} + \text{Purchases} - \text{Payments}</me>
-          <me>\text{Ending Balance} = 1000 + 500 - 200 + 100 = $1,400</me>
-          Thus, the ending balance for the billing cycle is $1,400.
-        </p>
-        <p>
-          To find the statement balance, we add the finance charge to the ending balance. The statement balance is calculated as follows:
-          <me>\text{Statement Balance} = \text{Ending Balance} + \text{Finance Charge}</me>
-          <me>\text{Statement Balance} = 1400 + 25 = $1,425</me>
-          Thus, the statement balance for the billing cycle is $1,425.
-        </p>
-      </solution>
+         
     </example>
     <p>
-      When calculating the average daily balance, we find the current balance for each day of the billing cycle and then find the average of those balances. Be careful: this is a weighted average, not a simple average. The balance on each day is weighted by the number of days that balance was held. For example, if the balance was $1,000 for 10 days and $2,000 for 20 days, the average daily balance would be calculated as follows:
-    </p>
-    <p>
-      <me>
-        \frac{1000\cdot10+2000\cdot20}{30}\approx 1666.67
-      </me>
-      Therefore, the average daily balance is approximately $1,666.67.  
-    </p>
-   <p>
+      When calculating the average daily balance, we find the current balance for each day of the billing cycle and then find the average of those balances. Be careful: this is a weighted average, not a simple average. The balance on each day is weighted by the number of days that balance was held.
     It can be helpful to write the balances in a calendar or grid to keep track of the balance on each day of the billing cycle. A spreadsheet can also be used to calculate the average daily balance.
    </p>
    <example>
-    <statement>
-      <p>
-      Consider the following transactions on a credit card account during a billing cycle that runs from January 1 to January 31. The previous balance is $1,000.
-      <ul>
-        <li>
-          January 5: $500 purchase
-        </li>
-        <li>
-          January 10: $200 payment
-        </li>
-        <li>
-          January 15: $100 purchase
-        </li>
-      </ul>
-      Find the average daily balance for the billing cycle.
+    <p>
+      Calculate the average daily balance for the credit card account from the previous example, which has a starting balance of $1,000 and the following transactions during the billing cycle: a $500 purchase on January 5, a $200 payment on January 10, and a $100 purchase on January 15. The billing cycle runs from January 1 to January 31.
     </p>
-    </statement>
-    <solution>
+    
       <p>
         We will write the balance for each day of the billing cycle in a calendar.
       </p>
@@ -231,16 +181,19 @@
         </me>
         Therefore, the average daily balance is approximately $1,348.39.
         </p>
-    </solution>
-   </example>
-  
+       </example>
+ 
+    
+  </subsection>
+   <subsection xml:id="subsec-finance-credicard-charges"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Finance Charges</title>
     <p>
       A <em>finance charge</em> is the interest charged on the amount owed. It is calculated as the simple interest on the balance on the account. However, there are several ways this can be done. Each credit card agreement will indicate which method is used. Some of the more common approaches are as follows:
      </p>
      <ul>
       <li>
         <p>
-          <term>Ending Balance Method:</term> The finance charge is calculated using the ending balance. The amount of interest is calculated at the end of the billing cycle and added to the statement balance.
+          <term>Unpaid Balance Method:</term> The finance charge is calculated using the ending balance. The amount of interest is calculated at the end of the billing cycle and added to the statement balance.
         </p>
       </li>
       <li>
@@ -254,77 +207,53 @@
         </p>
       </li>
      </ul>
+     <p>
+      To further complicate matters, the time period used in the simple interest formula can be measured in different ways. Some credit card agreements calculate interest based on the number of days in the billing cycle, while others use one month as one twelfth of a year.
+     </p>
      <example>
-      <title>Finance Charge using Ending Balance Method</title>
-      
-      
-     </example>
-     <example>
-      <title>Finance Charge Calculation using Average Daily Balance</title>
-      <statement>
-        <p>
-          Suppose the average daily balance on a credit card account is $5,224.27. Calculalate the finance charge for a 30-day month if the annual percentage rate (APR) is 11.5% and the charge is calculated using each method.
-          <ol>
-            <li>
-              <p>
-                Based on the number of days in the billing period.
-              </p>
-            </li>
-            <li>
-              <p>
-                Based on one month as one twelfth of a year.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          The APR is the annual interest rate, <m>r</m>, and the finance charge is the interest, <m>I</m>, on the balance, <m>P</m>, for the given amount of time.
-        </p>
-        <p>
-        <ol>
-          <li>
-            <p>
-              If the finance charge is based on the number of days in the billing period, then the amount of time in years is <m>t=\frac{30}{365}</m>. Therefore, the finance charge is calculated as follows.
-            <md>
-              <mrow>I \amp=Prt </mrow>
-              <mrow>I \amp=(5224.27)(0.115)\left(\frac{30}{365}\right) </mrow>
-              <mrow>I \amp \approx \$49.38 </mrow>
-            </md>
-            The finance charge is rounded to the nearest cent.
-            </p>
-            <p>
-              An alternative approach is to convert the annual percentage rate to a daily rate <m>\frac{0.115}{365}</m>; then multiply the balance by the daily rate times the number of days. This results in the equivalent calculation
-            <me>
-              I=(5224.27)\left(\frac{0.115}{365}\right)(31)\approx \$49.38.
-            </me>
-          </p>
-          </li>
-          <li>
-            <p>
-              If the finance charge is based on just one month, each month is considered one twelfth of a year regardless of how many days it contains. Therefore, we will use <m>t=\frac{1}{12}</m>.
-            <md>
-              <mrow>I \amp=Prt</mrow>
-              <mrow>I \amp= (5224.27)(0.115)\left(\frac{1}{12}) </mrow>
-              <mrow>I \amp\approx \$50.07 </mrow>
-            </md>
-            </p>
-            <p>
-              An alternative approach is to convert the annual percentage rate to a monthly rate <m>\frac{0.115}{12}</m>; then multiply the balance by the monthly rate times the number of months, which is one. This results in the equivalent calculation
-            <me>I=(5224.27)\left(\frac{0.115}{12}\right)\approx \$50.07</me>
-            </p>
-          </li>
-        </ol>
+      <p>
+        Suppose that a credit card account has an ending balance of $1,400 and an annual percentage rate of 18%. If the finance charge is calculated using the unpaid balance method based on the ending balance with the time period measured in one month as one twelfth of a year, find the finance charge and statement balancefor the billing cycle.
       </p>
-      
-      </solution>
-      
+      <p>
+        To find the finance charge, we use the simple interest formula with the ending balance as the principal, the annual percentage rate as the rate, and one month as one twelfth of a year as the time period.
+        <md>
+          <mrow>I \amp= Prt </mrow>
+          <mrow> I\amp=1400(0.18)\left(\frac{1}{12}\right) </mrow>
+          <mrow>I \amp= 21 </mrow>
+        </md>
+        Therefore, the finance charge for the billing cycle is $21.
+      </p>
+      <p>
+        To find the statement balance, we add the finance charge to the ending balance: <m>1400+21=$1421</m>.
+      </p>
+      <p>
+        Therefore, the statement balance for the billing cycle is $1,421.
+      </p>
      </example>
+     <example>
+      <p>
+        Suppose that the same credit card account from the previous example uses the unpaid balance method but measures time in days instead of months. Find the finance charge and statement balance for the billing cycle.
+      </p>
+      <p>
+        To find the finance charge, we use the simple interest formula with the ending balance as the principal, the annual percentage rate as the rate, and the time period measured in days. The time period is 31 days (January 1 to January 31).
+        <md>
+          <mrow>I \amp= Prt </mrow>
+          <mrow> I\amp=1400(0.18)\left(\frac{31}{365}\right) </mrow>
+          <mrow>I \amp\approx 21.34 </mrow>
+        </md>
+        Therefore, the finance charge for the billing cycle is approximately $21.34.
+      </p>
+      <p>
+        To find the statement balance, we add the finance charge to the ending balance: <m>1400+21.34\approx$1421.34</m>.
+      </p>
+      <p>
+        Therefore, the statement balance for the billing cycle is approximately $1,421.34.
+      </p>
+     </example>
+     
   
     <example xml:id="ex-credit-card-adb">
-      <title>Average Daily Balance Method With Time Measured in Days</title>
-      
+            
       
       <statement>
         <p>
@@ -364,19 +293,13 @@
           </row>
         </tabular>
         <p>
-          Suppose this credit card uses the average daily balance method and charges an annual interest rate of 19.6%. We will find the ending balance, the average daily balance, the finance charge, and the total balance after the finance charge is applied. For calculating the finance charge, this account measures time in days.
+          Suppose this credit card uses the average daily balance method and charges an annual interest rate of 19.6%. Find the finance charge and statement balance if this account measures time in days.
         </p>
       </statement>
         <solution>
+        
         <p>
-          To find the <em>ending balance</em>, starting with the previous balance, we add the charges and subtract the credits.
-          <me>
-            1234+314-1000-192+30+120=386
-          </me>
-          Therefore, the ending balance is $386.
-        </p>
-        <p>
-          To find the <em>average daily balance</em>, we first find the balance at the end of each day. Then we find the average of the daily balances. It can be helpful to write the balances in a calendar or grid.
+         We will use a grid as a tool to calculate the average daily balance.
         </p>
         <image source="images/credit-card-daily-bal-calendar2.png">
           <shortdescription>Jan 23-26: $1234, Jan 27-29: $1548, Jan 30-Feb 3: $548, Feb 4-11: $356, Feb 12-13: $386, Feb 14-22: $506</shortdescription>
@@ -387,9 +310,7 @@
             \frac{1234\cdot4+1548\cdot3+548\cdot5+356\cdot7+385\cdot2+506\cdot9 }{31}\approx$649.55
           </me>
         </p>
-        <p>
-          Alternatively, a spreadsheet can be used.
-        </p>
+        
         <p>
           The <em>finance charge</em> is 31 days simple interest on the average daily balance at 19.6%.
           <md>
@@ -399,8 +320,14 @@
           </md>
           Therefore, the finance charge will be $10.98.
         </p>
+
         <p>
-          Alternatively, the annual percentage rate (APR) of 19.6% can be converted to a daily rate of <m>\frac{19.6\%}{365}</m> and multiplied by the number of days. The resulting finance charge calculation results in the same value: 
+          To find the total amount owed, we add the ending balance and the finance charge to obtain the statement balance: <m>386+10.81=$396.81</m>.
+        </p>
+      </solution>
+    </example>
+     <p>Many credit card agreements describe the interest calculation using a daily rate, which is the annual percentage rate divided by 365. For example, consider the credit card account from the previous example, which has an average daily balance of approximately $649.55 and an annual percentage rate of 19.6%. The finance charge can be calculated using the daily rate as follows:
+          
           <md>
             <mrow> I\amp =P\left(\text{Daily Rate}\right)\left(\text{Number of days}\right)</mrow>
             <mrow>I \amp= 649.55\left(\frac{0.196}{365}\right)\left(31\right)</mrow>
@@ -410,10 +337,8 @@
           
         </p>
         <p>
-          To find the total amount owed, we add the ending balance and the finance charge to obtain <m>386+10.81=$396.81</m>.
+          The finance charge is the same as the previous calculation.
         </p>
-      </solution>
-    </example>
   </subsection>
   <subsection xml:id="finance-credit-fine-print"  xmlns:xi="http://www.w3.org/2001/XInclude"> 
     <title>Credit Card Agreements: Reading the Fine Print</title>
