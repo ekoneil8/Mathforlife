@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-finance-annuity-loan" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Annuities and Amortized Loans</title>
+  <objectives>
+	<introduction>
+		<p>
+			Students will be able to:
+		</p>
+		<ul>
+
+			<li>
+				<p>
+					Calculate the future value of a savings annuity.
+				</p>
+			</li>
+			<li>
+				<p>
+					Calculate the present value of a savings annuity, a payout annuity, or an amortized loan.
+				</p>
+			</li>
+			<li>
+				<p>
+					Calculate the required payment on an annuity or amortized loan.
+				</p>
+			</li>
+			<li>
+				<p>
+					Calculate the interest and principal components of a payment on an amortized loan.
+				</p>
+			</li>
+			<li>
+				<p>
+					Calculate the total interest earned in a savings or payout annuity or paid on an amortized loan.
+				</p>
+			</li>
+			<li>
+				<p>
+					Analyze and compare options for savings and loan products to make informed financial recommendations.
+				</p>
+			</li>
+
+		</ul>
+	</introduction>
+  </objectives>
+  
+
+ <p>
+	In <xref ref="sec-finance-compound-interest"/>, we learned how to calculate the future value of a single deposit of money, known as a lump sum, invested at compound interest. In this section, we will explore situations where a series of payments are made or received at equal intervals.
+ </p>
+ <p>
+	We will consider three common situations involving regular payments:
+	<ul>
+		<li>
+		<p>
+			Saving for retirement or other future expense by making regular deposits into an account. This is called a <term>savings annuity</term>.
+		</p>
+		</li>
+		<li>
+		<p>
+			Receiving regular payments from a retirement account. This is called a <term>payout annuity</term>.
+		</p>
+		</li>
+		<li>
+		<p>
+			Making payments on a loan in which interest paid on each payment is based on the remaining balance. This is called an <term>amortized loan</term>.
+		</p>
+		</li>
+	</ul>
+ </p>
+
+
+ <subsection xml:id="subsec-finance-annuity-loan-savings-annuity">
+	<title>Savings Annuities</title>
+
+	
+ </subsection>
+
+</section>

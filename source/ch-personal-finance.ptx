@@ -12,5 +12,6 @@
   <xi:include href="sec-finance-simple-interest.ptx" />
   <xi:include href="sec-finance-credit-cards.ptx" />
   <xi:include href="sec-finance-compound-interest.ptx" />
+  <xi:include href="sec-finance-annuity-loan.ptx" />
   
 </chapter>
