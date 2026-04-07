@@ -3,12 +3,11 @@
 <section xml:id="sec-proportion-percents" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Percents</title>
   <introduction>
-        <figure xml:id="hundred-percent">
-      <caption>AI-generated image of 100%.</caption>
+       
       <image source="images/100-percent.png" width="50%">
         <shortdescription>The number 100 formed from percent symbols.</shortdescription>
       </image>
-    </figure>
+    
     <p>
       Suppose an administrator wants to compare the performance of two class sections. In one section, 23 out of 32 students passed; in the other, 18 out of 25 students passed. One way to compare their performance is by converting the fractions <m>\frac{23}{32}</m> and <m>\frac{18}{25}</m> to equivalent fractions with a common denominator. However, a more practical approach is to calculate and compare the percentage of students who passed each class. Using methods from this section, we find that 71.875% of the students in the first class passed, while 72% of the students in the second class passed. This shows that the second class performed slightly better than the first.
     </p>
@@ -227,12 +226,13 @@
             0.003
           </p>
         </li>
-      </ol>
+     
       <li>
           <p>
             <m>\frac{4}{5}</m>
           </p>
         </li>
+         </ol>
       </p>
     </statement>
       <solution>
