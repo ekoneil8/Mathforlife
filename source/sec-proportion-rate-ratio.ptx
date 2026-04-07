@@ -13,6 +13,7 @@
     <p>
       Students will be able to:
     </p>
+      </introduction>
     <ul>
       <li>
         <p>
@@ -21,7 +22,7 @@
       </li>
       <li>
         <p>
-          Apply conversion factors to change units.
+          Apply dimensional analysis to change units and solve problems involving physical quantities.
         </p>
       </li>
       <li>
@@ -29,13 +30,9 @@
           Solve problems involving rates and ratios.
         </p>
       </li>
-      <li>
-        <p>
-          Apply dimensional analysis to solve problems involving physical quantities.
-        </p>
-      </li>
+ 
     </ul>
-  </introduction>
+
 </objectives>
 
   <p>
@@ -48,31 +45,8 @@
     In this section, we will explore applications of proportional reasoning in such practical situations as cooking, travel, and home improvement.
   </p>
 </introduction>
-  <objectives>
-    <introduction>
-      <p>
-        Students will be able to:
-      </p>
-    </introduction>
-    <ul>
-      <li>
-        <p>
-          Find and interpret unit rates.
-        </p>
-      </li>
-      <li>
-        <p>
-          Apply conversion factors to change units.
-        </p>
-      </li>
-      <li>
-        <p>
-          Solve problems involving rates and ratios.
-        </p>
-      </li>
-    </ul>
-  </objectives>
-  <subsection xml:id="subsec-unit-rate">
+<subsection>
+ 
     <title>Unit Rates</title>
     <p>
       Imagine that you are at the grocery store comparing the prices for two brands of pasta sauce. One costs $3.50 for one jar while the other is on sale at $11.50 for three jars.
@@ -391,7 +365,7 @@
       </statement>
       <solution>
         <p>
-          Our goal is to convert 620 revolutions per minute (rpm) to miles per hour. To do this, we will start with the expression <m>\frac{620 \text{ revolutions}}{1 \text { minute}}</m> and apply the following conversions:
+          Our goal is to convert 620 revolutions per minute (rpm) to miles per hour. To do this, we will start with the expression <m>\frac{620 \text{ revolutions}}{1 \text { minute}}</m> and apply the following conversions using dimensional analysis:
           <ul>
             <li>
               <p>
