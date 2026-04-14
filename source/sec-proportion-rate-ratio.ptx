@@ -416,30 +416,30 @@
           
         </p>
         <p>
-          Now we will find the areas of the windows and door. Note that the units are converted from inches to feet.
-        </p>
-        <p>
-          Windows:
-          <md>
-            <mrow> \text{Area}\amp=\text{Width}\cdot\text{Height} </mrow>
-            <mrow>A \amp=\left( \frac{30 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}}\right)\cdot \left(\frac{80 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}} \right) </mrow>
-            <mrow>A \amp= 13 </mrow>
-          </md>
-          The area of each window is 13 square feet.
+          Now we will find the areas of the door and windows. Note that the units are converted from inches to feet.
         </p>
         <p>
           Door:
           <md>
             <mrow> \text{Area}\amp=\text{Width}\cdot\text{Height} </mrow>
-            <mrow>A \amp=\left( \frac{36 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}}\right)\cdot \left(\frac{52 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}} \right) </mrow>
+            <mrow>A \amp=\left( \frac{30 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}}\right)\cdot \left(\frac{80 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}} \right) </mrow>
             <mrow>A \amp \approx 16.67 </mrow>
           </md>
           The area of the door is about 16.67 square feet.
         </p>
         <p>
+          Windows:
+          <md>
+            <mrow> \text{Area}\amp=\text{Width}\cdot\text{Height} </mrow>
+            <mrow>A \amp=\left( \frac{36 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}}\right)\cdot \left(\frac{52 \text{ in}}{1}\cdot\frac{1 \text{ ft}}{12\text{ in}} \right) </mrow>
+            <mrow>A \amp =13 </mrow>
+          </md>
+          The area of each window is about 13 square feet.
+        </p>
+        <p>
           Now we subtract to find the resulting area that will be painted:
           <me>
-            540-2(13)-16.67=497.33
+            540-(16.67)-2(13)=497.33
           </me>
           The homeowner has about 497.33 square feet of wall space that need to be painted.
         </p>
