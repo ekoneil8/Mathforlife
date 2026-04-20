@@ -422,7 +422,7 @@
        
     </p>
     <p>
-      The resulting model is <m>P(t)=40(1+(-0.56126))^{t}</m>, which can be simplified to <m>P(t)=40(0.943874)^{t}</m>.
+      The resulting model is <m>P(t)=40(1+(-0.056126))^{t}</m>, which can be simplified to <m>P(t)=40(0.943874)^{t}</m>.
     </p>
     <p>
       We are looking for the amount remaining after 6 hours.
