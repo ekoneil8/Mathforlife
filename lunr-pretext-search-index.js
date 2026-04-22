@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Logarithms and Exponential Equations",
-  "body": " Logarithms and Exponential Equations  In , we developed exponential models and used them to predict populations, values of assets, and quantities of radioactive elements at given times. In this section, we learn the tools to determine how long it will take to reach a given population, value or amount. We will solve for the exponent in exponential equations.  You have seen several functions in mathematics that are primarily used to \"undo\" other functions. For example, the opposite of squaring is taking the square root, and the opposite of cubing is taking the cube root. But what is the opposite of an expnential function in which there is a variable in the exponent?     This is where logarithms come in!   The Common Logarithm  The common logarithm, written , answers the question, \"what power do you raise 10 to in order to get ?\"  For example, because . Similarly, because .    Evaluate and without a calculator.            You may be wondering how useful this common logarithm can be since it only works with powers of 10. We will make use of the exponent property for logarithms.   Common Logarithm Exponent Property      We can use this fact to solve exponential equations, such as .  The first step is to use algebra to isolate the exponential part, .     Now we take the common logarith of both sides of the equation and use the exponent property to simplify.   We now have multiplied by , so we can use division to solve for .      "
+  "body": " Logarithms and Exponential Equations  In , we developed exponential models and used them to predict populations, values of assets, and quantities of radioactive elements at given times. In this section, we learn the tools to determine how long it will take to reach a given population, value or amount. We will solve for the exponent in exponential equations.  You have seen several functions in mathematics that are primarily used to \"undo\" other functions. For example, the opposite of squaring is taking the square root, and the opposite of cubing is taking the cube root. But what is the opposite of an expnential function in which there is a variable in the exponent?     This is where logarithms come in!   The Common Logarithm  The common logarithm, written , answers the question, \"what power do you raise 10 to in order to get ?\"  For example, because . Similarly, because .    Evaluate and without a calculator.              Evaluate without a calculator.    Recall the negative exponent rule from algebra that .  Therefore, and so .  When we ask the question, \"what power do you raise 10 to in order to get ?\", the answer is because -2 is the exponent.   A more formal definition of the common logarithm is as follows:    Definition of the Common Logarithm  The common logarithm of a number , written , is the exponent to which 10 must be raised to get .  The two statements below are equivalent:   and    Based on this definition, another way to think about finding the value of is to set the logarithm equal to a variable, :   Next, use the definition to rewrite the equation in exponential form. (Here x is replaced by .)   Rewriting the right-hand side using the negative exponent rule gives   Finally, since the bases are the same, we can conclude that and, therefore, .    Solve the equation by converting to logarithmic form.    We start by using the definition of the common logarithm to rewrite the equation in logarithmic form. (Here x is replaced by 150.)   Therefore, the exact solution to the equation is .  We can use a calculator to find an approximate solution. We find that .      Using Common Logarithms to Solve Exponential Equations  You may be wondering how useful this common logarithm can be since it only applies to powers of 10. How can we solve exponential equations with bases other than 10? We will make use of the exponent property for logarithms.   Common Logarithm Exponent Property   The Common Logarithm Exponent Property states that the logarithm of a number raised to an exponent is the same as the exponent multiplied by the logarithm of the number. We \"bring down\" the exponent where it is multiplied with the logarithm.   A proof of the Common Logarithm Exponent Property is outside the scope of this text. However, we can test a few values to convince ourselves that it works. For example, is the same as   Similarly, is the same as   The property applies to bases other than 10, as well. For example, is the same as   How does the Common Logarithm Exponent Property help us solve exponential equations with bases other than 10? The key is that we can take the common logarithm of both sides of an equation, even if the base is not 10. Then we can use the exponent property to simplify and solve using algebraic techniques.   Solving Exponential Equations with Common Logarithms  To solve an exponential equation:   Use algebra to isolate the exponential part of the equation.    Take the common logarithm of both sides of the equation and use the Common Logarithm Exponent Property to simplify.    Use algebraic techniques to solve for the variable.       Solve the equation .  The first step is to use algebra to isolate the exponential part, which is .     Now we take the common logarith of both sides of the equation and use the exponent property to simplify.   We now have multiplied by , so we can use division to solve for .      Solve the equation . Round your answer to the nearest tenth.    First, we isolate the exponential part:   Next, we take the common logarithm of both sides and use the exponent property to simplify.   Finally, we use division to solve for .       Solve the equation . Round your answer to the nearest tenth.         Applications  We can use the techniques we have learned to solve real-world problems. For example, we can determine how long it will take for a population to reach a certain size, how long it will take for an asset to reach a certain value, or how long it will take for a quantity of a radioactive element to decay to a certain amount.    A population of 500 bacteria is growing at a rate of 4% per hour. How long will it take for the population to reach 1000 bacteria?    We can model the population growth using the exponential function , where is the initial population, is the growth rate, and is the time in hours. In this case, , , and we want to find when .  We start by setting up the equation:   Next, we use the techniques we learned in this section to solve for .   Therefore, it will take approximately 17.67 hours for the population to reach 1000 bacteria.      The half-life of a radioactive element is 5 years. If we start with 100 grams of the element, how long will it take for the quantity to decay to 10 grams? Round your answer to the nearest tenth of a year.    The first step is to set up the exponential decay model.  Using the formula for exponential decay, we have , where is the initial quantity, is the half-life, and is the time in years. In this case, , , and we want to find when .  We set the amount of the element at time equal to 10 grams and solve for .:   Next, we use the techniques we learned in this section to solve for .   Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.     "
 },
 {
   "id": "logs-common-log-4",
@@ -1268,6 +1268,78 @@ var ptx_lunr_docs = [
   "number": "2.4.1",
   "title": "",
   "body": "  Evaluate and without a calculator.           "
+},
+{
+  "id": "logs-common-log-5",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#logs-common-log-5",
+  "type": "Example",
+  "number": "2.4.2",
+  "title": "",
+  "body": "  Evaluate without a calculator.    Recall the negative exponent rule from algebra that .  Therefore, and so .  When we ask the question, \"what power do you raise 10 to in order to get ?\", the answer is because -2 is the exponent.   A more formal definition of the common logarithm is as follows:  "
+},
+{
+  "id": "assemblage-common-log-definition-2",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#assemblage-common-log-definition-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "common logarithm "
+},
+{
+  "id": "logs-common-log-14",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#logs-common-log-14",
+  "type": "Example",
+  "number": "2.4.3",
+  "title": "",
+  "body": "  Solve the equation by converting to logarithmic form.    We start by using the definition of the common logarithm to rewrite the equation in logarithmic form. (Here x is replaced by 150.)   Therefore, the exact solution to the equation is .  We can use a calculator to find an approximate solution. We find that .   "
+},
+{
+  "id": "subsec-modeling-exp-eq-9",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#subsec-modeling-exp-eq-9",
+  "type": "Example",
+  "number": "2.4.4",
+  "title": "",
+  "body": " Solve the equation .  The first step is to use algebra to isolate the exponential part, which is .     Now we take the common logarith of both sides of the equation and use the exponent property to simplify.   We now have multiplied by , so we can use division to solve for .   "
+},
+{
+  "id": "subsec-modeling-exp-eq-10",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#subsec-modeling-exp-eq-10",
+  "type": "Example",
+  "number": "2.4.5",
+  "title": "",
+  "body": "  Solve the equation . Round your answer to the nearest tenth.    First, we isolate the exponential part:   Next, we take the common logarithm of both sides and use the exponent property to simplify.   Finally, we use division to solve for .    "
+},
+{
+  "id": "subsec-modeling-exp-eq-11",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#subsec-modeling-exp-eq-11",
+  "type": "Example",
+  "number": "2.4.6",
+  "title": "",
+  "body": "  Solve the equation . Round your answer to the nearest tenth.      "
+},
+{
+  "id": "subsec-modeling-logs-applications-3",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#subsec-modeling-logs-applications-3",
+  "type": "Example",
+  "number": "2.4.7",
+  "title": "",
+  "body": "  A population of 500 bacteria is growing at a rate of 4% per hour. How long will it take for the population to reach 1000 bacteria?    We can model the population growth using the exponential function , where is the initial population, is the growth rate, and is the time in hours. In this case, , , and we want to find when .  We start by setting up the equation:   Next, we use the techniques we learned in this section to solve for .   Therefore, it will take approximately 17.67 hours for the population to reach 1000 bacteria.   "
+},
+{
+  "id": "subsec-modeling-logs-applications-4",
+  "level": "2",
+  "url": "sec-modeling-logarithms-and-exp-eq.html#subsec-modeling-logs-applications-4",
+  "type": "Example",
+  "number": "2.4.8",
+  "title": "",
+  "body": "  The half-life of a radioactive element is 5 years. If we start with 100 grams of the element, how long will it take for the quantity to decay to 10 grams? Round your answer to the nearest tenth of a year.    The first step is to set up the exponential decay model.  Using the formula for exponential decay, we have , where is the initial quantity, is the half-life, and is the time in years. In this case, , , and we want to find when .  We set the amount of the element at time equal to 10 grams and solve for .:   Next, we use the techniques we learned in this section to solve for .   Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.   "
 },
 {
   "id": "sec-modeling-logistic",
