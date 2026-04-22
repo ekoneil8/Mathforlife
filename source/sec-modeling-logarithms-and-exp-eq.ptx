@@ -43,20 +43,132 @@ For example, <m>\log (100) =2</m> because <m>10^{2}=100</m>. Similarly, <m>\log 
     </p>
   </solution>
 </example>
+<example>
+  <statement>
+    <p>
+      Evaluate <m>\log(\frac{1}{100})</m> without a calculator.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Recall the negative exponent rule from algebra that <m>x^{-n}=\frac{1}{x^n}</m>.
+    </p>
+    <p>
+      Therefore, <m>\frac{1}{100}=\frac{1}{10^2}=10^{-2}</m> and so <m>\log(\frac{1}{100})=\log(10^{-2})</m>.
+    </p>
+    <p>
+      When we ask the question, "what power do you raise 10 to in order to get <m>\frac{1}{100}</m>?", the answer is <m>-2</m> because -2 is the exponent.
+    </p>
+   
+  </solution>
   <p>
-   You may be wondering how useful this common logarithm can be since it only works with powers of 10. We will make use of the <em>exponent property</em> for logarithms.
+    A more formal definition of the common logarithm is as follows:
+  </p>
+</example>
+<assemblage xml:id="assemblage-common-log-definition">
+  <title>Definition of the Common Logarithm</title>
+  <p>
+    The <term>common logarithm</term> of a number <m>x</m>, written <m>\log(x)</m>, is the exponent to which 10 must be raised to get <m>x</m>.
+  </p>
+  <p>The two statements below are equivalent:</p>
+  <p>
+   <m>\log(x)=y</m> and <m>10^{y}=x</m>
+  </p>
+</assemblage>
+<p>
+  Based on this definition, another way to think about finding the value of <m>log\left(\frac{1}{100}\right)</m> is to set the logarithm equal to a variable, <m>y</m>:
+</p> 
+<me>\log\left(\frac{1}{100}\right)=y</me>
+ <p>
+  Next, use the definition to rewrite the equation in exponential form. (Here x is replaced by <m>\frac{1}{100}</m>.)
+ </p> 
+<me>10^{y}=\frac{1}{100}</me>
+<p>
+  Rewriting the right-hand side using the negative exponent rule gives
+</p>
+   <me>10^{y}=10^{-2}</me>
+   <p>
+  Finally, since the bases are the same, we can conclude that <m>y=-2</m> and, therefore, <m>\log\left(\frac{1}{100}\right)=-2</m>.
+  
+
+</p>
+<example>
+  <statement>
+    <p>
+      Solve the equation <m>10^{x}=150</m> by converting to logarithmic form.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We start by using the definition of the common logarithm to rewrite the equation in logarithmic form. (Here x is replaced by 150.)
+    </p>
+    <me>\log(150)=x</me>
+    <p>
+      Therefore, the <em>exact</em> solution to the equation is <m>x=\log(150)</m>.
+    </p>
+    <p>
+      We can use a calculator to find an <em>approximate</em> solution. We find that <m>\log(150)\approx 2.1761</m>.
+    </p>
+  </solution>
+</example>
+</subsection>
+<subsection xml:id="subsec-modeling-exp-eq">
+  <title>Using Common Logarithms to Solve Exponential Equations</title>
+  
+
+  <p>
+   You may be wondering how useful this common logarithm can be since it only applies to powers of 10. How can we solve exponential equations with bases other than 10? We will make use of the <em>exponent property</em> for logarithms.
   </p>
   <assemblage xml:id="assemblage-common-log-exponent-property">
     <title>Common Logarithm Exponent Property</title>
+    
+      <me>\log(b)^{x}=x\cdot \log(b)</me>
     <p>
-      <m>\log(b)^{x}=x\cdot \log(b)</m>
+      The Common Logarithm Exponent Property states that the logarithm of a number raised to an exponent is the same as the exponent multiplied by the logarithm of the number. We "bring down" the exponent where it is multiplied with the logarithm.
     </p>
   </assemblage>
-<p> 
-  We can use this fact to solve exponential equations, such as <m>120(1.04)^{t}=240</m>.
+  <p>
+    A proof of the Common Logarithm Exponent Property is outside the scope of this text. However, we can test a few values to convince ourselves that it works. For example, <me>\log(10^{3})=\log(1000)=3</me> is the same as <me>\log(10^{3})=3\cdot\log(10)=3\cdot 1=3.</me>
+  </p>
+  <p>
+    Similarly, <me>\log(10^{5})=\log(100\,000)=5</me> is the same as <me>\log(10^{5})=5\cdot\log(10)=5\cdot 1=5.</me>
+  </p>
+  <p>
+    The property applies to bases other than 10, as well. For example, <me>\log(2^{3})=\log(8)\approx 0.9031</me> is the same as <me>\log(2^{3})=3\cdot\log(2)=3\cdot 0.3010\approx 0.9031.</me>
+  </p>
+  <p>
+    How does the Common Logarithm Exponent Property help us solve exponential equations with bases other than 10? The key is that we can take the common logarithm of both sides of an equation, even if the base is not 10. Then we can use the exponent property to simplify and solve using algebraic techniques.
+  </p>
+  <assemblage xml:id="assemblage-exponential-equations">
+    <title>Solving Exponential Equations with Common Logarithms</title>
+    <p>
+      To solve an exponential equation:
+    
+    <ol>
+      <li>
+        <p>
+          Use algebra to isolate the exponential part of the equation.
+        </p>
+      </li>
+      <li>
+        <p>
+          Take the common logarithm of both sides of the equation and use the Common Logarithm Exponent Property to simplify.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use algebraic techniques to solve for the variable.
+        </p>
+      </li>
+    </ol>
+    </p>
+  </assemblage>
+  <example>
+    <p>
+      Solve the equation <m>120(1.04)^{t}=240</m>.
 </p>
 <p>
-  The first step is to use algebra to isolate the exponential part, <m>(1.04)^{t}</m>.
+  The first step is to use algebra to isolate the exponential part, which is <m>(1.04)^{t}</m>.
 </p>
 <p>
 <md>
@@ -78,9 +190,136 @@ For example, <m>\log (100) =2</m> because <m>10^{2}=100</m>. Similarly, <m>\log 
     <mrow>t \amp\approx 17.67 </mrow>
   </md>
 </p>
-<p>
-  
-</p>
+ 
+  </example>
+  <example>
+    <statement>
+      <p>
+        Solve the equation <m>110(1.05)^{t}=200</m>. Round your answer to the nearest tenth.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        First, we isolate the exponential part:
+      </p>
+      <md>
+        <mrow>\frac{110(1.05)^{t}}{110} \amp = \frac{200}{110} </mrow>
+        <mrow>(1.05)^{t} \amp=\frac{20}{11} </mrow>
+      </md>
+      <p>
+        Next, we take the common logarithm of both sides and use the exponent property to simplify.
+      </p>
+      <md>
+        <mrow>\log(1.05)^{t} \amp=\log\left(\frac{20}{11}\right) </mrow>
+        <mrow>t\cdot\log(1.05) \amp= \log\left(\frac{20}{11}\right) </mrow>
+      </md>
+      <p>
+        Finally, we use division to solve for <m>t</m>.
+      </p>
+      <md>
+        <mrow>\frac{t\cdot \log(1.05)}{\log(1.05)} \amp=\frac{\log\left(\frac{20}{11}\right)}{\log(1.05)} </mrow>
+        <mrow>t \amp\approx 12.3 </mrow>
+      </md> 
+    </solution>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Solve the equation <m>1000(0.95)^{2t}=500</m>. Round your answer to the nearest tenth.
+      </p>
+    </statement>
+    <solution>
+      
+      <md>
+        <mrow>1000(0.95)^{2t} \amp = 500 </mrow>
+        <mrow>\frac{1000(0.95)^{2t}}{1000} \amp = \frac{500}{1000} </mrow>
+        <mrow>(0.95)^{2t} \amp=\frac{1}{2} </mrow>
+        <mrow>\log((0.95)^{2t}) \amp= \log\left(\frac{1}{2}\right) </mrow>
+        <mrow>2t\cdot\log(0.95) \amp= \log\left(\frac{1}{2}\right) </mrow>
+        <mrow>\frac{2t\cdot \log(0.95)}{\log(0.95)} \amp=\frac{\log\left(\frac{1}{2}\right)}{\log(0.95)} </mrow>
+        <mrow>2t \amp=\frac{\log\left(\frac{1}{2}\right)}{\log(0.95)} </mrow>
+        <mrow>t \amp=\frac{1}{2} \cdot \frac{\log\left(\frac{1}{2}\right)}{\log(0.95)} </mrow>
+        <mrow>t \amp\approx 6.8 </mrow>
+      </md>
+      
+    </solution>
+  </example>
+
+</subsection>
+<subsection xml:id="subsec-modeling-logs-applications">
+  <title>Applications</title>
+  <p>
+    We can use the techniques we have learned to solve real-world problems. For example, we can determine how long it will take for a population to reach a certain size, how long it will take for an asset to reach a certain value, or how long it will take for a quantity of a radioactive element to decay to a certain amount.
+  </p>
+  <example>
+  <statement>
+    <p>
+      A population of 500 bacteria is growing at a rate of 4% per hour. How long will it take for the population to reach 1000 bacteria?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We can model the population growth using the exponential function <m>P(t)=P_{0}(1+r)^{t}</m>, where <m>P_{0}</m> is the initial population, <m>r</m> is the growth rate, and <m>t</m> is the time in hours. In this case, <m>P_{0}=500</m>, <m>r=0.04</m>, and we want to find <m>t</m> when <m>P(t)=1000</m>.
+    </p>
+    <p>
+      We start by setting up the equation:
+    </p>
+    <md>
+      <mrow>500(1.04)^{t} \amp= 1000 </mrow>
+    </md>
+    <p>
+      Next, we use the techniques we learned in this section to solve for <m>t</m>.
+    </p>
+    <md>
+      <mrow>\frac{500(1.04)^{t}}{500} \amp= \frac{1000}{500} </mrow>
+      <mrow>(1.04)^{t} \amp=2 </mrow>
+      <mrow>\log(1.04)^{t} \amp=\log(2) </mrow>
+      <mrow>t\cdot\log(1.04) \amp= \log(2) </mrow>
+      <mrow>\frac{t\cdot \log(1.04)}{\log(1.04)} \amp=\frac{\log(2)}{\log(1.04)} </mrow>
+      <mrow>t \amp\approx 17.67 </mrow>
+    </md>
+    <p>
+      Therefore, it will take approximately 17.67 hours for the population to reach 1000 bacteria.
+    </p>
+  </solution> 
+  </example>
+  <example>
+  <statement>
+    <p>
+      The half-life of a radioactive element is 5 years. If we start with 100 grams of the element, how long will it take for the quantity to decay to 10 grams? Round your answer to the nearest tenth of a year.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The first step is to set up the exponential decay model.
+    </p>
+    <p>
+      Using the formula for exponential decay, we have <m>P(t)=P_{0}\left(\frac{1}{2}\right)^{\frac{t}{h}}</m>, where <m>P_{0}</m> is the initial quantity, <m>h</m> is the half-life, and <m>t</m> is the time in years. In this case, <m>P_{0}=100</m>, <m>h=5</m>, and we want to find <m>t</m> when <m>P(t)=10</m>.
+    </p>
+    <p>
+      We set the amount of the element at time <m>t</m> equal to 10 grams and solve for <m>t</m>.:
+    </p>
+    <md>
+      <mrow>100\left(\frac{1}{2}\right)^{\frac{t}{5}} \amp= 10 </mrow>
+    </md>
+    <p>
+      Next, we use the techniques we learned in this section to solve for <m>t</m>.
+    </p>
+    <md>
+      <mrow>\frac{100\left(\frac{1}{2}\right)^{\frac{t}{5}}}{100} \amp= \frac{10}{100} </mrow>
+      <mrow>\left(\frac{1}{2}\right)^{\frac{t}{5}} \amp=\frac{1}{10} </mrow>
+      <mrow>\log\left(\left(\frac{1}{2}\right)^{\frac{t}{5}}\right) \amp=\log\left(\frac{1}{10}\right) </mrow>
+      <mrow>\frac{t}{5}\cdot\log\left(\frac{1}{2}\right) \amp= \log\left(\frac{1}{10}\right) </mrow>
+      <mrow>\frac{\frac{t}{5}\cdot \log\left(\frac{1}{2}\right)}{\log\left(\frac{1}{2}\right)} \amp=\frac{\log\left(\frac{1}{10}\right)}{\log\left(\frac{1}{2}\right)} </mrow>
+      <mrow>\frac{t}{5} \amp=\frac{\log\left(\frac{1}{10}\right)}{\log\left(\frac{1}{2}\right)} </mrow>
+      <mrow>t \amp=5\cdot\frac{\log\left(\frac{1}{10}\right)}{\log\left(\frac{1}{2}\right)} </mrow>
+      <mrow>t \amp\approx 16.6 </mrow>
+    </md>
+    <p>
+      Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.
+    </p>
+  </solution> 
+  </example>
 </subsection>
 
 </section>
