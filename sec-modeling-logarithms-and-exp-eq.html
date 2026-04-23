@@ -1741,20 +1741,21 @@ t \amp\approx 17.67
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.8</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-modeling-logs-applications-4-1-1">The half-life of a radioactive element is 5 years. If we start with 100 grams of the element, how long will it take for the quantity to decay to 10 grams? Round your answer to the nearest tenth of a year.</div>
-<div class="solutions"><details id="subsec-modeling-logs-applications-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="subsec-modeling-logs-applications-4-2-1">The first step is to set up the exponential decay model.</div>
-<div class="para" id="subsec-modeling-logs-applications-4-2-2">Using the formula for exponential decay, we have <span class="process-math">\(P(t)=P_{0}\left(\frac{1}{2}\right)^{\frac{t}{h}}\text{,}\)</span> where <span class="process-math">\(P_{0}\)</span> is the initial quantity, <span class="process-math">\(h\)</span> is the half-life, and <span class="process-math">\(t\)</span> is the time in years. In this case, <span class="process-math">\(P_{0}=100\text{,}\)</span> <span class="process-math">\(h=5\text{,}\)</span> and we want to find <span class="process-math">\(t\)</span> when <span class="process-math">\(P(t)=10\text{.}\)</span>
+<div class="solutions">
+<details id="subsec-modeling-logs-applications-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">Using the Exponential Decay Model</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-modeling-logs-applications-4-2-2">The first step is to set up the exponential decay model.</div>
+<div class="para" id="subsec-modeling-logs-applications-4-2-3">Using the formula for exponential decay, we have <span class="process-math">\(P(t)=P_{0}\left(\frac{1}{2}\right)^{\frac{t}{h}}\text{,}\)</span> where <span class="process-math">\(P_{0}\)</span> is the initial quantity, <span class="process-math">\(h\)</span> is the half-life, and <span class="process-math">\(t\)</span> is the time in years. In this case, <span class="process-math">\(P_{0}=100\text{,}\)</span> <span class="process-math">\(h=5\text{,}\)</span> and we want to find <span class="process-math">\(t\)</span> when <span class="process-math">\(P(t)=10\text{.}\)</span>
 </div>
-<div class="para" id="subsec-modeling-logs-applications-4-2-3">We set the amount of the element at time <span class="process-math">\(t\)</span> equal to 10 grams and solve for <span class="process-math">\(t\text{.:}\)</span>
+<div class="para" id="subsec-modeling-logs-applications-4-2-4">We set the amount of the element at time <span class="process-math">\(t\)</span> equal to 10 grams and solve for <span class="process-math">\(t\text{.:}\)</span>
 </div>
-<div class="displaymath process-math" id="subsec-modeling-logs-applications-4-2-4">
+<div class="displaymath process-math" id="subsec-modeling-logs-applications-4-2-5">
 \begin{align*}
 100\left(\frac{1}{2}\right)^{\frac{t}{5}} \amp= 10 
 \end{align*}
 </div>
-<div class="para" id="subsec-modeling-logs-applications-4-2-5">Next, we use the techniques we learned in this section to solve for <span class="process-math">\(t\text{.}\)</span>
+<div class="para" id="subsec-modeling-logs-applications-4-2-6">Next, we use the techniques we learned in this section to solve for <span class="process-math">\(t\text{.}\)</span>
 </div>
-<div class="displaymath process-math" id="subsec-modeling-logs-applications-4-2-6">
+<div class="displaymath process-math" id="subsec-modeling-logs-applications-4-2-7">
 \begin{align*}
 \frac{100\left(\frac{1}{2}\right)^{\frac{t}{5}}}{100} \amp= \frac{10}{100} \\
 \left(\frac{1}{2}\right)^{\frac{t}{5}} \amp=\frac{1}{10} \\
@@ -1766,8 +1767,31 @@ t \amp=5\cdot\frac{\log\left(\frac{1}{10}\right)}{\log\left(\frac{1}{2}\right)} 
 t \amp\approx 16.6 
 \end{align*}
 </div>
-<div class="para" id="subsec-modeling-logs-applications-4-2-7">Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.</div>
-</div></details></div></article></section></section></div>
+<div class="para" id="subsec-modeling-logs-applications-4-2-8">Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.</div>
+</div></details><details id="subsec-modeling-logs-applications-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">Using the Standard Exponential Model</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-modeling-logs-applications-4-3-2">We can also solve this problem using the standard exponential model, which is <span class="process-math">\(P(t)=P_{0}\left( M\right)^{t}\text{,}\)</span> where <span class="process-math">\(P_{0}\)</span> is the initial quantity, <span class="process-math">\(M\)</span> is the decay factor, and <span class="process-math">\(t\)</span> is the time in years. The decay factor can be found using the fact that after the half-life of 5 years, the amount remaining is half of the initial 100 grams. Therefore, we have <span class="process-math">\(P(5)=100(M)^{5}=50\text{.}\)</span> We solve for <span class="process-math">\(M\)</span> as follows:</div>
+<div class="displaymath process-math" id="subsec-modeling-logs-applications-4-3-3">
+\begin{align*}
+100(M)^{5} \amp= 50 \\
+(M)^{5} \amp= \frac{1}{2} \\
+M \amp= \sqrt[5]{\frac{1}{2}} 
+\end{align*}
+</div>
+<div class="para" id="subsec-modeling-logs-applications-4-3-4">Therefore the model for the quantity of the element at time <span class="process-math">\(t\)</span> is <span class="process-math">\(P(t)=100\left(\sqrt[5]{\frac{1}{2}}\right)^{t}\text{.}\)</span> We set this equal to 10 grams and solve for <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-modeling-logs-applications-4-3-5">
+\begin{align*}
+100\left(\sqrt[5]{\frac{1}{2}}\right)^{t} \amp= 10  \\
+\left(\sqrt[5]{\frac{1}{2}}\right)^{t}\amp= \frac{1}{10} \\
+\log\left(\left(\sqrt[5]{\frac{1}{2}}\right)^{t}\right) \amp=\log\left(\frac{1}{10}\right) \\
+t\cdot\log\left(\sqrt[5]{\frac{1}{2}}\right) \amp= \log\left(\frac{1}{10}\right) \\
+t \amp=\frac{\log\left(\frac{1}{10}\right)}{\log\left(\sqrt[5]{\frac{1}{2}}\right)} \\
+t \amp\approx 16.6 
+\end{align*}
+</div>
+<div class="para" id="subsec-modeling-logs-applications-4-3-6">Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.</div>
+</div></details>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-modeling-exponential.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-modeling-logistic.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
