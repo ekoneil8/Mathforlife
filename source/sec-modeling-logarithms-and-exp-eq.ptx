@@ -326,7 +326,27 @@ For example, <m>\log (100) =2</m> because <m>10^{2}=100</m>. Similarly, <m>\log 
     <title>Using the Standard Exponential Model</title>
   
     <p>
-      We can also solve this problem using the standard exponential model, which is <m>P(t)=P_{0}\left(M)^{t}</m>, where <m>P_{0}</m> is the initial quantity, <m>M</m> is the decay factor, and <m>t</m> is the time in years. The decay factor can be found using the half-life: <m>M=\left(\frac{1}{2}\right)^{\frac{1}{h}}=\left(\frac{1}{2}\right)^{\frac{1}{5}}.</m>  
+      We can also solve this problem using the standard exponential model, which is <m>P(t)=P_{0}\left( M\right)^{t}</m>, where <m>P_{0}</m> is the initial quantity, <m>M</m> is the decay factor, and <m>t</m> is the time in years. The decay factor can be found using the fact that after the half-life of 5 years, the amount remaining is half of the initial 100 grams. Therefore, we have <m>P(5)=100(M)^{5}=50</m>. 
+      We solve for <m>M</m> as follows:
+    </p>
+    <md>
+      <mrow>100(M)^{5} \amp= 50 </mrow>
+      <mrow>(M)^{5} \amp= \frac{1}{2} </mrow>
+      <mrow>M \amp= \sqrt[5]{\frac{1}{2}} </mrow>
+    </md>
+    <p>
+      Therefore the model for the quantity of the element at time <m>t</m> is <m>P(t)=100\left(\sqrt[5]{\frac{1}{2}}\right)^{t}</m>. We set this equal to 10 grams and solve for <m>t</m>.
+    </p>
+    <md>
+      <mrow>100\left(\sqrt[5]{\frac{1}{2}}\right)^{t} \amp= 10  </mrow>
+      <mrow> \left(\sqrt[5]{\frac{1}{2}}\right)^{t}\amp= \frac{1}{10} </mrow>
+      <mrow>\log\left(\left(\sqrt[5]{\frac{1}{2}}\right)^{t}\right) \amp=\log\left(\frac{1}{10}\right) </mrow>
+      <mrow>t\cdot\log\left(\sqrt[5]{\frac{1}{2}}\right) \amp= \log\left(\frac{1}{10}\right) </mrow>
+      <mrow>t \amp=\frac{\log\left(\frac{1}{10}\right)}{\log\left(\sqrt[5]{\frac{1}{2}}\right)} </mrow>
+      <mrow>t \amp\approx 16.6 </mrow>
+    </md>
+    <p>
+      Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.
     </p>
   </solution>
   </example>
