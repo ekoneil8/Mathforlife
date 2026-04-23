@@ -290,6 +290,9 @@ For example, <m>\log (100) =2</m> because <m>10^{2}=100</m>. Similarly, <m>\log 
     </p>
   </statement>
   <solution>
+    <title>Using the Exponential Decay Model</title>
+    
+    
     <p>
       The first step is to set up the exponential decay model.
     </p>
@@ -319,6 +322,13 @@ For example, <m>\log (100) =2</m> because <m>10^{2}=100</m>. Similarly, <m>\log 
       Therefore, it will take approximately 16.6 years for the quantity of the element to decay to 10 grams.
     </p>
   </solution> 
+  <solution>
+    <title>Using the Standard Exponential Model</title>
+  
+    <p>
+      We can also solve this problem using the standard exponential model, which is <m>P(t)=P_{0}\left(M)^{t}</m>, where <m>P_{0}</m> is the initial quantity, <m>M</m> is the decay factor, and <m>t</m> is the time in years. The decay factor can be found using the half-life: <m>M=\left(\frac{1}{2}\right)^{\frac{1}{h}}=\left(\frac{1}{2}\right)^{\frac{1}{5}}.</m>  
+    </p>
+  </solution>
   </example>
 </subsection>
 
