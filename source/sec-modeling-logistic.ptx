@@ -119,5 +119,36 @@
       For example, a population with a <em>continuous</em> growth rate of <m>20\%</m> per year will end up increasing by about <m>22\%</m> from one year to the next. This is because the growth is, effectively, broken down into infinitely many shorter time spans and the growth compounds. 
     </p>
   </assemblage>
+  <example>
+    <statement>
+      <p>
+        A population of bacteria grows at a continuous rate of <m>50\%</m> per hour from a starting population of 1000 bacteria. Write a function to model the population. Then find how long will it take for the population to double.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Because this is a <em>continuous</em> growth rate, we should use the natural growth model with <m>P_0</m> as the initial population and <m>k=0.5</m>. Therefore, the model is:
+        <me>
+          P(t)=1000 e^{0.5t}
+        </me>
+      </p>
+      <p>
+        To find how long it will take for the population to double, we set <m>P(t)=2P_0=2000</m> and solve for <m>t</m>:
+        
+      </p>
+      <md>
+        <mrow>1000 e^{0.5t} \amp= 2000 </mrow>
+        <mrow>e^{0.5t} \amp= 2 </mrow>
+        <mrow> \log\left( e^{0.5t} \right) \amp= \log(2) </mrow>
+        <mrow> 0.5t \log(e) \amp= \log(2) </mrow>
+        <mrow> 0.5t \amp= \frac{\log(2)}{\log(e) } </mrow>
+        <mrow> t \amp= \frac{\log(2)}{0.5\log(e) } </mrow>
+        <mrow> t \amp\approx 1.3863 </mrow>
+      </md>
+      <p>
+        Therefore, it will take about 1.3863 hours for the population to double.
+      </p>
+    </solution>
+  </example>
 </subsection>
 </section>
