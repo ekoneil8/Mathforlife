@@ -1583,7 +1583,34 @@ P(3)=27e^{0.04(3)}\approx 30.
 </div> <div class="para" id="subsec-logistic-natural-growth-10-1-4">Note: your calculator should have an <span class="process-math">\(e\)</span> button! You should never need to type in a decimal approximation for <span class="process-math">\(e\text{.}\)</span>
 </div></article><article class="assemblage assemblage-like" id="assemblage-natural-growth-caution"><h4 class="heading"><span class="title">Caution!</span></h4>
 <div class="para" id="assemblage-natural-growth-caution-2">Be careful not to confuse yearly growth rates with continuous growth rates.</div>
-<div class="para" id="assemblage-natural-growth-caution-3">For example, a population with a <em class="emphasis">continuous</em> growth rate of <span class="process-math">\(20\%\)</span> per year will end up increasing by about <span class="process-math">\(22\%\)</span> from one year to the next. This is because the growth is, effectively, broken down into infinitely many shorter time spans and the growth compounds.</div></article></section></section></div>
+<div class="para" id="assemblage-natural-growth-caution-3">For example, a population with a <em class="emphasis">continuous</em> growth rate of <span class="process-math">\(20\%\)</span> per year will end up increasing by about <span class="process-math">\(22\%\)</span> from one year to the next. This is because the growth is, effectively, broken down into infinitely many shorter time spans and the growth compounds.</div></article><article class="example example-like" id="subsec-logistic-natural-growth-12"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-logistic-natural-growth-12-1-1">A population of bacteria grows at a continuous rate of <span class="process-math">\(50\%\)</span> per hour from a starting population of 1000 bacteria. Write a function to model the population. Then find how long will it take for the population to double.</div>
+<div class="solutions"><details id="subsec-logistic-natural-growth-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-logistic-natural-growth-12-2-1">
+<div class="para">Because this is a <em class="emphasis">continuous</em> growth rate, we should use the natural growth model with <span class="process-math">\(P_0\)</span> as the initial population and <span class="process-math">\(k=0.5\text{.}\)</span> Therefore, the model is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t)=1000 e^{0.5t}
+\end{equation*}
+</div>
+</div>
+<div class="para" id="subsec-logistic-natural-growth-12-2-2">To find how long it will take for the population to double, we set <span class="process-math">\(P(t)=2P_0=2000\)</span> and solve for <span class="process-math">\(t\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-logistic-natural-growth-12-2-3">
+\begin{align*}
+1000 e^{0.5t} \amp= 2000 \\
+e^{0.5t} \amp= 2 \\
+\log\left( e^{0.5t} \right) \amp= \log(2) \\
+0.5t \log(e) \amp= \log(2) \\
+0.5t \amp= \frac{\log(2)}{\log(e) } \\
+t \amp= \frac{\log(2)}{0.5\log(e) } \\
+t \amp\approx 1.3863 
+\end{align*}
+</div>
+<div class="para" id="subsec-logistic-natural-growth-12-2-4">Therefore, it will take about 1.3863 hours for the population to double.</div>
+</div></details></div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-modeling-logarithms-and-exp-eq.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-personal-finance.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
