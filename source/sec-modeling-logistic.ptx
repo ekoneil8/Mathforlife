@@ -169,10 +169,16 @@
   </assemblage>
   
   <p>
-  Consider the function <m>f(x)=\frac{100}{1+99e^{-0.5x}}</m>. This function models a population with a carrying capacity of 100. The graph of this function is shown below.
+  Consider the function <m>f(x)=\frac{100}{1+19e^{-0.5x}}</m>. This function models a population with a carrying capacity of 100. The graph of this function is shown below.
+  </p>
+  <image source="images/Logistic-Growth-Curve.png">
+    <shortdescription>Graph of the logistic growth curve appears exponential at first, then levels off as it approaches the carrying capacity.</shortdescription>
+  </image>
+  <p>
+  Please note that the graph of the logistic growth curve appears exponential at first. However, as the population approaches the carrying capacity, the growth rate slows down and the graph levels off. The population will never reach or exceed the carrying capacity, but it will get closer and closer to it over time. (Students who have taken college algebra may recognize this as a horizontal asymptote.)
   </p>
   <p>
-    
+    The initial population can be found by evaluating the function at <m>t=0</m>. Recall that <m>b^0=1</m> for any base <m>b\ne 1</m>. In this case, <m>P(0)=\frac{100}{1+19e^{0}}=\frac{100}{1+19\cdot 1}=\frac{100}{20}=5</m>. 
   </p>
 </subsection>
 </section>
