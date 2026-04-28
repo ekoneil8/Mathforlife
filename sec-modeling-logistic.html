@@ -1236,7 +1236,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-modeling-logistic.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Natural Growth and Logistic Growth</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-modeling-logistic.html#subsec-logistic-natural-growth" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Natural Growth</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-modeling-logistic.html#subsec-logistic-natural-growth" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Natural Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-modeling-logistic.html#subsec-modeling-logistic-logistic" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Logistic Growth Model</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -1610,6 +1613,64 @@ t \amp\approx 1.3863
 \end{align*}
 </div>
 <div class="para" id="subsec-logistic-natural-growth-12-2-4">Therefore, it will take about 1.3863 hours for the population to double.</div>
+</div></details></div></article></section><section class="subsection" id="subsec-modeling-logistic-logistic"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="space"> </span><span class="title">Logistic Growth Model</span>
+</h3>
+<div class="para" id="subsec-modeling-logistic-logistic-2">The natural growth model is a good model for population growth when the population is small and resources are abundant. However, as the population grows, resources become more scarce and the growth rate slows down. The <em class="emphasis">Logistic Growth Model</em> is a more realistic model for population growth that takes into account the carrying capacity of the environment. The carrying capacity is the maximum population size that the environment can sustain indefinitely.</div>
+<article class="assemblage assemblage-like" id="assemblage-logistic-growth"><h4 class="heading"><span class="title">The Logistic Growth Model.</span></h4>
+<div class="para logical" id="assemblage-logistic-growth-2">
+<div class="para">The logistic growth model is given by the formula:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t)=\frac{c}{1+ae^{kt}}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(c\)</span> is the carrying capacity, <span class="process-math">\(a\)</span> and <span class="process-math">\(k\)</span> are constants, and <span class="process-math">\(t\)</span> is time.</div>
+</div></article><div class="para" id="subsec-modeling-logistic-logistic-4">Consider the function <span class="process-math">\(f(x)=\frac{100}{1+19e^{-0.5x}}\text{.}\)</span> This function models a population with a carrying capacity of 100. The graph of this function is shown below.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Logistic-Growth-Curve.png" class="contained" alt="Graph of the logistic growth curve appears exponential at first, then levels off as it approaches the carrying capacity."></div>
+<div class="para" id="subsec-modeling-logistic-logistic-6">Please note that the graph of the logistic growth curve appears exponential at first. However, as the population approaches the carrying capacity, the growth rate slows down and the graph levels off. The population will never reach or exceed the carrying capacity, but it will get closer and closer to it over time. (Students who have taken college algebra may recognize this as a horizontal asymptote.)</div>
+<div class="para" id="subsec-modeling-logistic-logistic-7">The initial population can be found by evaluating the function at <span class="process-math">\(t=0\text{.}\)</span> Recall that <span class="process-math">\(b^0=1\)</span> for any base <span class="process-math">\(b\ne 1\text{.}\)</span> In this case, <span class="process-math">\(P(0)=\frac{100}{1+19e^{0}}=\frac{100}{1+19\cdot 1}=\frac{100}{20}=5\text{.}\)</span>
+</div>
+<div class="para" id="subsec-modeling-logistic-logistic-8">
+<em class="alert">Be careful: the value of <span class="process-math">\(a\)</span> is related to the initial population, but it is not equal to the initial population.</em> This means that if we are given the initial population, we cannot simply set <span class="process-math">\(a\)</span> equal to that value. We must use the initial population and algebraic methods to find the value of <span class="process-math">\(a\)</span> in order to write the logistic growth model as we will see in the next example.</div>
+<div class="para" id="subsec-modeling-logistic-logistic-9">What does the value of <span class="process-math">\(k\)</span> represent in the logistic growth model? It is the opposite (negative) of the growth rate that would occur if the population were growing exponentially without any constraints. In other words, if the population were growing according to the natural growth model with a growth rate of <span class="process-math">\(r\text{,}\)</span> then the value of <span class="process-math">\(k\)</span> in the logistic growth model would be <span class="process-math">\(-r\text{.}\)</span> In practice, the value of <span class="process-math">\(k\)</span> is determine algebraically or through data fitting.</div>
+<article class="example example-like" id="subsec-modeling-logistic-logistic-10"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-modeling-logistic-logistic-10-1-1">A population of rabbits has a carrying capacity of 500 rabbits. The initial population is 20 rabbits and after 10 years the population is 100 rabbits. Write a function to model the population of rabbits over time.</div>
+<div class="solutions"><details id="subsec-modeling-logistic-logistic-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-modeling-logistic-logistic-10-2-1">Converting the given information into mathematical terms, we have: <span class="process-math">\(c = 500\text{,}\)</span> <span class="process-math">\(P(0) = 20\text{,}\)</span> and <span class="process-math">\(P(10) = 100\text{.}\)</span> We can use these values to find the constants <span class="process-math">\(a\)</span> and <span class="process-math">\(k\text{.}\)</span>
+</div>
+<div class="para" id="subsec-modeling-logistic-logistic-10-2-2">First, we can find the value of <span class="process-math">\(a\)</span> using the initial population:</div>
+<div class="displaymath process-math" id="subsec-modeling-logistic-logistic-10-2-3">
+\begin{align*}
+P(0) \amp= \frac{500}{1+ae^{k \cdot 0}} \\
+20 \amp= \frac{500}{1+a\cdot 1} \\
+\frac{20}{1} \amp= \frac{500}{1+a} \\
+20(1+a) \amp= 500(1) \\
+1+a \amp= 25 \\
+a \amp= 24 
+\end{align*}
+</div>
+<div class="para" id="subsec-modeling-logistic-logistic-10-2-4">Now that we have the value of <span class="process-math">\(a\text{,}\)</span> we can find the value of <span class="process-math">\(k\)</span> using the information that <span class="process-math">\(P(10) = 100\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-modeling-logistic-logistic-10-2-5">
+\begin{align*}
+P(10) \amp= \frac{500}{1+24e^{10k}} \\
+100 \amp= \frac{500}{1+24e^{10k}} \\
+1+24e^{10k} \amp= 5 \\
+24e^{10k} \amp= 4 \\
+e^{10k} \amp= \frac{1}{6} \\
+10k \amp= \ln\left(\frac{1}{6}\right) \\
+k \amp= \frac{1}{10}\ln\left(\frac{1}{6}\right) 
+\end{align*}
+</div>
+<div class="para" id="subsec-modeling-logistic-logistic-10-2-6">Therefore, the function to model the population of rabbits over time is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t)=\frac{500}{1+24e^{\frac{1}{10}\ln\left(\frac{1}{6}\right)t}}
+\end{equation*}
+</div>
 </div></details></div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-modeling-logarithms-and-exp-eq.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-personal-finance.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
