@@ -151,4 +151,28 @@
     </solution>
   </example>
 </subsection>
+<subsection xml:id="subsec-modeling-logistic-logistic">
+  <title>Logistic Growth Model</title>
+  <p>
+    The natural growth model is a good model for population growth when the population is small and resources are abundant. However, as the population grows, resources become more scarce and the growth rate slows down. The <em>Logistic Growth Model</em> is a more realistic model for population growth that takes into account the carrying capacity of the environment. The carrying capacity is the maximum population size that the environment can sustain indefinitely. 
+  </p>
+  <assemblage xml:id="assemblage-logistic-growth">
+    <title>The Logistic Growth Model</title>
+    <p>
+      The logistic growth model is given by the formula:
+    
+    <me>
+    P(t)=\frac{c}{1+ae^{kt}}
+  </me>
+  where <m>c</m> is the carrying capacity, <m>a</m> and <m>k</m> are constants, and <m>t</m> is time.
+</p>
+  </assemblage>
+  
+  <p>
+  Consider the function <m>f(x)=\frac{100}{1+99e^{-0.5x}}</m>. This function models a population with a carrying capacity of 100. The graph of this function is shown below.
+  </p>
+  <p>
+    
+  </p>
+</subsection>
 </section>
