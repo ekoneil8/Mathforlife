@@ -459,7 +459,7 @@
 <subsection>
 	<title>Continuously Compounded Interest</title>
 	<p>
-		In many bank accounts your interest is compounded continuously, or at each moment in time. The number of times per year, n, is infinite. As n approaches infinity the compound interest formula changes to the continuously compounded interest formula.
+		If interest is compounded continuously, or at each moment in time, the number of times per year, n, is infinite. As n approaches infinity the compound interest formula changes to the continuously compounded interest formula.
 	</p>
 	<assemblage>
 		<title>
@@ -509,6 +509,9 @@
 		<cd>=Principal*EXP(r*t) or =A/EXP(r*t)</cd>
 	</p>
 	</assemblage>
+	<p>
+		While compounding continuously is not something that happens in real life, it is a useful mathematical model for seeing the maximum amount of interest that can be earned on an investment with a given interest rate.
+	</p>
 
 	<example>
 		<statement>
