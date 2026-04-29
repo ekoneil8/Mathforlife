@@ -218,84 +218,145 @@
 		</statement>
 		<solution>
 			<p>
-				
+				We want to find the time <m>t</m> when the future value <m>A</m> is double the principal <m>P</m>. That is, <m>A = 2P</m>. While we do not know the principal, we can still solve for the time because the principal will cancel out in the calculations.
+			</p>
+			<p>
+				Using the future value formula <m>A=P(1+rt)</m>, we can substitute <m>2P</m> for <m>A</m> and solve for <m>t</m>.
+				<md>
+					<mrow> 2P\amp=P(1+rt) </mrow>
+					<mrow>\frac{2P}{P} \amp \frac{P(1+rt)}{P} </mrow>
+					<mrow> 2\amp=1+rt </mrow>
+					<mrow> 1\amp=rt </mrow>
+					<mrow> t\amp=\frac{1}{r} </mrow>
+					<mrow> t\amp=\frac{1}{0.07} </mrow>
+					<mrow> t\amp\approx14.29 </mrow>
+				</md>
+				Therefore, it will take approximately 14.29 years for the value to double.
+			</p>
+			<p>
+				Notice that in the first step, we divided both sides of the equation by <m>P</m>, which eliminated the variable <m>P</m> from the equation. 
 			</p>
 		</solution>
 	</example>
   </subsection>
-<subsection>
-	<title>APR – Annual Percentage Rate</title>
+  <subsection xml:id="subsec-finance-simple-amortized">
+	<title>Amortized Loans</title>
 	<p>
-		Interest rates are usually stated as an annual percentage rate (APR) – the total interest that will be paid in the year. If not stated otherwise, assume that the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of time periods.
+		An amortized loan is a loan that is paid off in equal payments over a specified period of time. In each payment, a portion goes toward the interest and the rest goes toward paying down the principal. The interest portion of each payment is calculated using the simple interest formula, and the rest of the payment goes toward reducing the principal or amount owed.
 	</p>
 	<p>
-		Note: The Federal Truth in Lending Act requires that every consumer be given the true APR which includes the interest and any fees included.
-	</p>
-	<p>
-		For example, a 6% APR paid monthly, would be divided by 12, because you would get one twelfth of the rate per month, which is half a percent per month.
-	</p>
-
-	<p>
-		<me>\frac{0.06}{12}=0.005</me>
-	</p>
-	
-	<p>
-		A 4% annual rate paid quarterly, would be divided by 4 to get 1% per quarter.
-	</p>
-	
-	<p>
-		<me>\frac{0.04}{4}=0.01</me>
-	</p>
-
-	<p>
-		Here is an example of a semi-annual rate.
+		Amortized loans are commonly used for car loans, mortgages, and student loans. The payment amount is calculated so that the loan will be completely paid off at the end of the loan term. This means that the payment amount is based on the original loan amount, the interest rate, and the length of the loan term. We will cover how to calculate the payment amount for an amortized loan in <xref ref="sec-finance-annuity-loan" />, but for now we will focus on how to calculate the interest and principal portions of each payment and the outstanding balance after each payment.
 	</p>
 	<example>
 		<statement>
-		<p>
-			Suppose you buy a $1,000 federal bond with a 4% annual simple interest rate, paid semi-annually, with a maturity in 4 years. How much interest will you earn? What will be the future value of the bond?
-		</p>
+			<p>				Find the interest and principal portions of the first payment on a 5-year amortized car loan of $10,000 with an annual interest rate of 6% and monthly payments of $193.33. Then find the outstanding balance after the first payment.</p>
 		</statement>
 		<solution>
-		<p>
-			<m>P = \$1000</m>, the principal
-		</p>
-		<p>
-			<m>r=\frac{0.04}{2}=0.02</m>, interest is being paid semi-annually (twice a year), so the 4% interest will be divided into two 2% payments.
-		</p>
-		<p>
-			<m>t = 8</m>, 4 years compounded twice a year gives <m>t=4\cdot 2=8</m> half-years
-		</p>
-		<p>
-			<md>
-				<mrow>I\amp=PRT</mrow>
-				<mrow>\amp=\$1000(0.02)(8)</mrow>
-				<mrow>\amp=\$160</mrow>
-			</md>
-		</p>
-		<p>
-			You will earn $160 in interest over the four years. The future value of the loan is
-		</p>
-		<p>
-			<md alignment="align">
-				<mrow>A\amp=P+I</mrow>
-				<mrow>\amp=\$1000+\$160</mrow>
-				<mrow>\amp=\$1{,}160</mrow>
-			</md>
-		</p>
-
-		<p>
-			We could also use a spreadsheet to do this calculation and enter:
-		</p>
-		<p>
-			<cd>=1000+1000*(0.04/2)*(4*2)</cd>
-		</p>
-		<p>
-			which also gives $1,160. The future value of the bond is $1,160. Remember that spreadsheets don't interpret parentheses as multiplication. We need the asterisks as well as the parentheses.
-		</p>
-	</solution>
+			<p>				First, we find the interest portion of the first payment using the simple interest formula with <m>P=$10\,000</m>, <m>r=0.06</m>, and <m>t=\frac{1}{12}</m>.
+				<md>
+					<mrow> I\amp=Prt </mrow>
+					<mrow> I\amp=10\,000(0.06)\left(\frac{1}{12}\right) </mrow>
+					<mrow> I\amp=50 </mrow>
+				</md>
+			</p>
+			<p>
+				Now we can find the principal portion of the first payment by subtracting the interest from the total payment.
+				<md>
+					<mrow> \text{Principal portion} \amp =\text{Total payment}-\text{Interest portion} </mrow>
+					<mrow> \text{Principal portion} \amp =193.33-50 </mrow>
+					<mrow> \text{Principal portion} \amp =143.33 </mrow>
+				</md>
+			</p>
+			<p>
+				Therefore, the interest portion of the first payment is $50, and the principal portion is $143.33.
+			</p>
+			<p>
+				To find the outstanding balance after the first payment, we subtract the principal portion from the original loan amount.
+				<md>
+					<mrow> \text{Outstanding balance} \amp =\text{Original loan amount}-\text{Principal portion} </mrow>
+					<mrow> \text{Outstanding balance} \amp =10\,000-143.33 </mrow>
+					<mrow> \text{Outstanding balance} \amp =9\,856.67 </mrow>
+				</md>
+			</p>
+		</solution>
 	</example>
-</subsection>
+	<p>
+		For each subsequent payment, the interest is calculated on the remaining balance. This means that the interest portion of each payment will decrease over time as the outstanding balance decreases, while the principal portion will increase over time. By the end of the loan term, the final payment will be mostly principal with very little interest.
+	</p>
+	<p>
+		An amortization table is a useful tool for keeping track of the interest and principal portions of each payment and the outstanding balance after each payment. It can help you see how much of each payment goes toward interest and how much goes toward paying down the principal over the life of the loan. 
+	</p>
+	<example>
+		<statement>
+			<p>
+				Complete an amortization table for the first 3 payments on the car loan in the previous example.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				We have already found the interest and principal portions of the first payment and the outstanding balance after the first payment. We can use this information to find the interest and principal portions of the second payment and the outstanding balance after the second payment, and then repeat the process for the third payment.
+			</p>
+			<p>
+				After the first payment, the outstanding balance is $9,856.67. We can find the interest portion of the second payment using the simple interest formula with <m>P=9\,856.67</m>, <m>r=0.06</m>, and <m>t=\frac{1}{12}</m>.
+				<md>
+					<mrow> I\amp=Prt </mrow>
+					<mrow> I\amp=9\,856.67(0.06)\left(\frac{1}{12}\right) </mrow>
+					<mrow> I\amp\approx49.28 </mrow>
+				</md>
+			</p>
+			<p>
+				Now we can find the principal portion of the second payment by subtracting the interest from the total payment.
+				<md>
+					<mrow> \text{Principal portion} \amp =\text{Total payment}-\text{Interest portion} </mrow>
+					<mrow> \text{Principal portion} \amp =193.33-49.28 </mrow>
+					<mrow> \text{Principal portion} \amp \approx144.05 </mrow>
+				</md>
+			</p>
+			<p>
+				Therefore, the interest portion of the second payment is approximately $49.28, and the principal portion is approximately $144.05.
+			</p>
+			<p>
+				To find the outstanding balance after the second payment, we subtract the principal portion from the outstanding balance after the first payment.
+				<md>
+					<mrow> \text{Outstanding balance} \amp =\text{Outstanding balance after first payment}-\text{Principal portion} </mrow>
+					<mrow> \text{Outstanding balance} \amp =9\,856.67-144.05 </mrow>
+					<mrow> \text{Outstanding balance} \amp \approx9\,712.62 </mrow>
+				</md>
+			</p>
+			<p>
+				After the second payment, the outstanding balance is approximately $9,712.62. Now we can find the interest portion of the third payment using the simple interest formula with <m>P=9\,712.62</m>, <m>r=0.06</m>, and <m>t=\frac{1}{12}</m>.
+				<md>
+					<mrow> I\amp=Prt </mrow>
+					<mrow> I\amp=9\,712.62(0.06)\left(\frac{1}{12}\right) </mrow>
+					<mrow> I\amp\approx48.56 </mrow>
+				</md>
+			</p>
+			<p>
+				Now we can find the principal portion of the third payment by subtracting the interest from the total payment.
+				<md>
+					<mrow> \text{Principal portion} \amp =\text{Total payment}-\text{Interest portion} </mrow>
+					<mrow> \text{Principal portion} \amp =193.33-48.56 </mrow>
+					<mrow> \text{Principal portion} \amp \approx144.77 </mrow>
+				</md>
+			</p>
+			<p>
+				Therefore, the interest portion of the third payment is approximately $48.56, and the principal portion is approximately $144.77.
+			</p>
+			<p>
+				To find the outstanding balance after the third payment, we subtract the principal portion from the outstanding balance after the second payment.
+				<md>
+					<mrow> \text{Outstanding balance} \amp =\text{Outstanding balance after second payment}-\text{Principal portion} </mrow>
+					<mrow> \text{Outstanding balance} \amp =9\,712.62-144.77 </mrow>
+					<mrow> \text{Outstanding balance} \amp \approx9\,567.85 </mrow>
+				</md>
+			</p>
+			<p>
+				After the third payment, the outstanding balance is approximately $9,567.85.
+			</p>
+		</solution>
+	</example>
+  </subsection>
+
 
 
 </section>
