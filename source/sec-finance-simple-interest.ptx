@@ -24,7 +24,7 @@
     
         <li>
             <p>
-                Calculate the interest and principle portions of amortized loan payments.
+                Calculate the interest, principal, and balance portions of amortized loan payments.
             </p>
         </li>
     </ul>
@@ -106,7 +106,52 @@
             </p>
 		</solution>
     </example>
-	
+	<p>
+		Interest rates are listed in years, but the time period for a loan or investment may be less than a year. In this case, we can still use the simple interest formula, but we need to convert the time period to years before substituting into the formula. For example, since there are 12 months in a year, a time period of 1 month would be <m>t=\frac{1}{12}</m>, and a time period of 6 months would be <m>t=\frac{6}{12}=\frac{1}{2}</m>. Similarly, since there are 365 days in a year, a time period of 1 day would be <m>t=\frac{1}{365}</m> and a time period of 31 days would be <m>t=\frac{31}{365}</m>.
+	</p>
+		<example>
+		<statement>
+			<p>
+				A payday loan company charges $15 for a 14-day loan of $100. What is the annual interest rate on this loan, assuming simple interest? Round to the nearest hundredth of a percent.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				We are given the interest <m>I=$15</m>, the principal <m>P=$100</m>, and the time is 14 days which is <m>t=\frac{14}{365}</m> years. We need to find the interest rate <m>r</m>.
+			</p>
+			<p>
+				Using the simple interest formula <m>I=Prt</m>, we can solve for <m>r</m>.
+				<md>
+					<mrow> I\amp=Prt </mrow>
+					<mrow> 15\amp=100r\left(\frac{14}{365}\right) </mrow>
+					<mrow> \frac{15}{100\left(\frac{14}{365}\right)}\amp=r </mrow>
+					<mrow> r\amp\approx 3.9107 </mrow>
+				</md>
+				
+			</p>
+			<p>
+				Converting to a percentage and rounding to the nearest hundredth of a percent, we find that the annual interest rate is approximately 391.07%.
+			</p>
+			<p>
+				Notes:
+				<ul>
+					<li>
+						<p>
+							 To find the value of <m>r</m> on a calculator, we type <m>15\div\left(100\times 14 \div 365\right)</m> using at set of parentheses around the denominator.
+						</p>
+					</li>
+					<li>
+						<p>
+							The decimal value of <m>r</m> is rounded to four places so that the answer will be accurate to two decimal places (the nearest hundredth) after converting to a percentage.
+						</p>
+					</li>
+				</ul> 
+			</p>
+		</solution>
+	</example>
+</subsection>
+  <subsection xml:id="subsec-finance-simple-future-value">
+	<title>Future Value</title>
 	<p>
         We use the term <term>future value</term> to refer to the total value of an account at maturity or the total amount repaid at the end of a simple interest loan. It is the sum of the principal (or present value) and the interest. We typically denote it with the variable <m>A</m> for amount.
     </p>
@@ -238,6 +283,7 @@
 			</p>
 		</solution>
 	</example>
+
   </subsection>
   <subsection xml:id="subsec-finance-simple-amortized">
 	<title>Amortized Loans</title>
@@ -298,63 +344,70 @@
 			</p>
 			<p>
 				After the first payment, the outstanding balance is $9,856.67. We can find the interest portion of the second payment using the simple interest formula with <m>P=9\,856.67</m>, <m>r=0.06</m>, and <m>t=\frac{1}{12}</m>.
-				<md>
-					<mrow> I\amp=Prt </mrow>
-					<mrow> I\amp=9\,856.67(0.06)\left(\frac{1}{12}\right) </mrow>
-					<mrow> I\amp\approx49.28 </mrow>
-				</md>
+				<me>I=Prt=9\,856.67(0.06)\left(\frac{1}{12}\right)\approx \$ 49.28</me>
+				
 			</p>
 			<p>
 				Now we can find the principal portion of the second payment by subtracting the interest from the total payment.
-				<md>
-					<mrow> \text{Principal portion} \amp =\text{Total payment}-\text{Interest portion} </mrow>
-					<mrow> \text{Principal portion} \amp =193.33-49.28 </mrow>
-					<mrow> \text{Principal portion} \amp \approx144.05 </mrow>
-				</md>
+				<me>
+					193.33-49.28=\$144.05
+				</me>
+				
 			</p>
-			<p>
-				Therefore, the interest portion of the second payment is approximately $49.28, and the principal portion is approximately $144.05.
-			</p>
+			
 			<p>
 				To find the outstanding balance after the second payment, we subtract the principal portion from the outstanding balance after the first payment.
-				<md>
-					<mrow> \text{Outstanding balance} \amp =\text{Outstanding balance after first payment}-\text{Principal portion} </mrow>
-					<mrow> \text{Outstanding balance} \amp =9\,856.67-144.05 </mrow>
-					<mrow> \text{Outstanding balance} \amp \approx9\,712.62 </mrow>
-				</md>
+				<me>
+					9\,856.67-144.05=\$ 9\,712.62
+				</me>
 			</p>
+			
 			<p>
-				After the second payment, the outstanding balance is approximately $9,712.62. Now we can find the interest portion of the third payment using the simple interest formula with <m>P=9\,712.62</m>, <m>r=0.06</m>, and <m>t=\frac{1}{12}</m>.
-				<md>
-					<mrow> I\amp=Prt </mrow>
-					<mrow> I\amp=9\,712.62(0.06)\left(\frac{1}{12}\right) </mrow>
-					<mrow> I\amp\approx48.56 </mrow>
-				</md>
+				The result is summarized in the following amortization table.
 			</p>
-			<p>
-				Now we can find the principal portion of the third payment by subtracting the interest from the total payment.
-				<md>
-					<mrow> \text{Principal portion} \amp =\text{Total payment}-\text{Interest portion} </mrow>
-					<mrow> \text{Principal portion} \amp =193.33-48.56 </mrow>
-					<mrow> \text{Principal portion} \amp \approx144.77 </mrow>
-				</md>
-			</p>
-			<p>
-				Therefore, the interest portion of the third payment is approximately $48.56, and the principal portion is approximately $144.77.
-			</p>
-			<p>
-				To find the outstanding balance after the third payment, we subtract the principal portion from the outstanding balance after the second payment.
-				<md>
-					<mrow> \text{Outstanding balance} \amp =\text{Outstanding balance after second payment}-\text{Principal portion} </mrow>
-					<mrow> \text{Outstanding balance} \amp =9\,712.62-144.77 </mrow>
-					<mrow> \text{Outstanding balance} \amp \approx9\,567.85 </mrow>
-				</md>
-			</p>
-			<p>
-				After the third payment, the outstanding balance is approximately $9,567.85.
-			</p>
+			<table>
+				<title>Amortization Table</title>
+				<tabular>
+					<row header="true">
+						<cell>Payment Number</cell>
+						<cell>Payment</cell>
+						<cell>Interest</cell>
+						<cell>Principal</cell>
+						<cell>Balance</cell>
+					</row>
+					<row>
+						<cell>1</cell>
+						<cell>$193.33</cell>
+						<cell>$50.00</cell>
+						<cell>$143.33</cell>
+						<cell>$9,856.67</cell>
+					</row>
+					<row>
+						<cell>2</cell>
+						<cell>$193.33</cell>
+						<cell>$49.28</cell>
+						<cell>$144.05</cell>
+						<cell>$9,712.62</cell>
+					</row>
+					<row>
+						<cell>3</cell>
+						<cell>$193.33</cell>
+						<cell>$48.56</cell>
+						<cell>$144.77</cell>
+						<cell>$9,567.85</cell>
+					</row>
+				</tabular>
+			</table>
+
 		</solution>
 	</example>
+	<p>
+		A spreadsheet program can be used to create an amortization table for the entire loan term, which can be very helpful for keeping track of the payments and the outstanding balance over time. Once the first few rows of the table are completed, you can use the fill-down feature to automatically fill in the rest of the table for the remaining payments. A <url href="https://docs.google.com/spreadsheets/d/1KWOdAlZzCc-_GcjmdUnZBuJDNvoFuJrVmib_M9hOQ60/edit?usp=sharing" visual="docs.google.com/spreadsheets/d/1KWOdAlZzCc-_GcjmdUnZBuJDNvoFuJrVmib_M9hOQ60/edit?usp=sharing">sample amortization table</url> is provided as an example. 
+	</p>
+	<p>
+		In the sample amortization table, the ending balance after 30 years was $2.69 rather than $0 because of rounding. The interest and principal portions are rounded to the nerest cent for each payment. In practice, the final payment would be adjusted to account for this rounding error so that the loan would be completely paid off at the end of the loan term.
+	</p>
+
   </subsection>
 
 
