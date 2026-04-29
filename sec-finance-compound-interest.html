@@ -1263,6 +1263,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#sec-finance-simple-interest-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Simple Interest</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#subsec-finance-simple-future-value" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Future Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#subsec-finance-simple-amortized" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Amortized Loans</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#exercises-finance-simple-interest" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -1290,8 +1291,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-6" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Finding the Principal, or Present Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-7" class="internal"><span class="codenumber">3.4.5</span> <span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-8" class="internal"><span class="codenumber">3.4.6</span> <span class="title">Continuously Compounded Interest</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-9" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-10" class="internal"><span class="codenumber">3.4.8</span> <span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-9" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Annual Percentage Yield (APY)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-finance-compound-interest.html#subsec-finance-compound-spreadsheets" class="internal"><span class="codenumber">3.4.8</span> <span class="title">Using Spreadsheets with Compound Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#subsubsec-" class="internal"><span class="codenumber">3.4.8.1</span> <span class="title"></span></a></div></li></ul>
+</li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-11" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -1813,118 +1817,176 @@ A=Pe^{rt} \text{ or } P=\frac{A}{e^{rt}}
 <dd><div class="para" id="sec-finance-compound-interest-8-3-3-1-5-2">is an irrational number that is approximately 2.718281828… Find <span class="process-math">\(e\)</span> on your calculator to use this formula</div></dd>
 </dl></div>
 <div class="para" id="sec-finance-compound-interest-8-3-4">To calculate this on a spreadsheet we use the <code class="code-inline tex2jax_ignore">=EXP</code> function. The spreadsheet formulas are</div>
-<div class="para logical" id="sec-finance-compound-interest-8-3-5"><pre class="code-display tex2jax_ignore">=Principal*EXP(r*t) or =A/EXP(r*t)</pre></div></article><div class="para" id="sec-finance-compound-interest-8-4">While continuous compounding is not something that happens in real life, it is a useful mathematical model for seeing the maximum amount of interest that can be earned on an investment with a given interest rate.</div>
+<div class="para logical" id="sec-finance-compound-interest-8-3-5"><pre class="code-display tex2jax_ignore">=Principal*EXP(r*t) or =A/EXP(r*t)</pre></div></article><div class="para" id="sec-finance-compound-interest-8-4">While continuous compounding is not something that happens in real life, it is a useful mathematical model for seeing the upper bound on the amount of interest that can be earned on an investment with a given interest rate.</div>
 <article class="example example-like" id="sec-finance-compound-interest-8-5"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-finance-compound-interest-8-5-1-1">You deposit $4000 in an account that earns 2.75% APR compounded continuously. How much will you have after 7 years? How much interest did you earn? What percentage of the final balance is interest?</div>
 <div class="solutions"><details id="sec-finance-compound-interest-8-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel middle" style="width:40%;">
-<div class="para" id="sec-finance-compound-interest-8-5-2-1-1-1">To use a spreadsheet, we look at the formula solved for A, the future value. We enter</div>
-<div class="para logical" id="sec-finance-compound-interest-8-5-2-1-1-2"><pre class="code-display tex2jax_ignore">=4000*EXP(0.0275*7)</pre></div>
-<div class="para" id="sec-finance-compound-interest-8-5-2-1-1-3">and get a result of $4,849.11.</div>
-</div>
-<div class="sbspanel middle" style="width:54%;"><img src="external/images/financial_math/2_2/continuous_interest.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div>
-<div class="para" id="sec-finance-compound-interest-8-5-2-2">To use the formula, we have:</div>
-<div class="para" id="sec-finance-compound-interest-8-5-2-3"><span class="process-math">\(A=Pe^{rt}\)</span></div>
-<div class="para" id="sec-finance-compound-interest-8-5-2-4">
+<div class="para" id="sec-finance-compound-interest-8-5-2-1"><span class="process-math">\(A=Pe^{rt}\)</span></div>
+<div class="para" id="sec-finance-compound-interest-8-5-2-2">
 <span class="process-math">\(P = 4000\text{,}\)</span> amount invested</div>
-<div class="para" id="sec-finance-compound-interest-8-5-2-5">
+<div class="para" id="sec-finance-compound-interest-8-5-2-3">
 <span class="process-math">\(r = 0.0275\text{,}\)</span> interest rate</div>
-<div class="para" id="sec-finance-compound-interest-8-5-2-6">
+<div class="para" id="sec-finance-compound-interest-8-5-2-4">
 <span class="process-math">\(t = 7\text{,}\)</span> number of years</div>
-<div class="para logical" id="sec-finance-compound-interest-8-5-2-7"><div class="displaymath process-math" id="sec-finance-compound-interest-8-5-2-7-1">
+<div class="para logical" id="sec-finance-compound-interest-8-5-2-5"><div class="displaymath process-math" id="sec-finance-compound-interest-8-5-2-5-1">
 \begin{align*}
 A\amp=4000e^{(0.0275\cdot 7)}\\
 \amp\approx\$4{,}849.11
 \end{align*}
 </div></div>
-<div class="para" id="sec-finance-compound-interest-8-5-2-8">After 7 years your account would be worth $4,849.11. Next, we will calculate the amount of interest earned and the percentage.</div>
+<div class="para" id="sec-finance-compound-interest-8-5-2-6">After 7 years your account would be worth $4,849.11.</div>
+<div class="para logical" id="sec-finance-compound-interest-8-5-2-7">
+<div class="para">To find the amount of interest earned, we subtract the principal from the total balance.</div>
+<div class="displaymath process-math" id="sec-finance-compound-interest-8-5-2-7-1">
+\begin{align*}
+\text{Interest} \amp= 4849.11 - 4000\\
+\amp= 849.11
+\end{align*}
+</div>
+</div>
+<div class="para" id="sec-finance-compound-interest-8-5-2-8">You would earn $849.11 in interest.</div>
+<div class="para logical" id="sec-finance-compound-interest-8-5-2-9">
+<div class="para">To find the percentage of the final balance that is interest, we divide the amount of interest by the total amount.</div>
+<div class="displaymath process-math" id="sec-finance-compound-interest-8-5-2-9-1">
+\begin{gather*}
+\frac{\$849.11}{\$4{,}849.11}\approx0.1751\text{ or } 17.5\%
+\end{gather*}
+</div>
+</div>
 </div></details></div></article></section><section class="subsection" id="sec-finance-compound-interest-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="space"> </span><span class="title">Finding the Amount of Interest Earned and the Percentage</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="space"> </span><span class="title">Annual Percentage Yield (APY)</span>
 </h3>
-<div class="para" id="sec-finance-compound-interest-9-2">In the previous example we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $4,849.11. Now to figure out how much of that was interest, we need to subtract the amount initially deposited.</div>
-<article class="example example-like" id="sec-finance-compound-interest-9-3"><h4 class="heading">
+<div class="para" id="sec-finance-compound-interest-9-2">If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it’s hard to know which account will give the better result. For example, is it better to invest in an account earning 3% interest with daily compounding or 3.02% interest with semiannual compounding?</div>
+<div class="para logical" id="sec-finance-compound-interest-9-3">
+<div class="para">To compare, let’s imagine that $1,000 is invested in each account at the end of one year. The account with 3% interest with daily compounding would give us</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=1\,000\left(1+\frac{0.03}{365}\right)^{365\cdot 1}\approx\$1\,030.45.
+\end{equation*}
+</div>
+<div class="para">The account with 3.02% interest with semiannual compounding would give us</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=1\,000\left(1+\frac{0.0302}{2}\right)^{2\cdot 1}\approx\$1\,030.43.
+\end{equation*}
+</div>
+</div>
+<div class="para" id="sec-finance-compound-interest-9-4">We can find the interest earned as a percentage of the initial investment for each account. For the 3% interest with daily compounding, we have <span class="process-math">\(\frac{30.45}{1000}=0.03045\text{ or }3.045\%\text{.}\)</span> For the 3.02% interest with semiannual compounding, we have <span class="process-math">\(\frac{30.43}{1000}=0.03043\text{ or }3.043\%\text{.}\)</span> The account with 3% interest with daily compounding gives a slightly higher return in this case.</div>
+<div class="para" id="sec-finance-compound-interest-9-5">The percentage that we calculated for each account is called the <em class="alert">annual percentage yield (APY)</em>, also called the <em class="alert">effective annual rate (EAR)</em>. The APY is the actual interest rate that you will earn on an account after compounding. It is a tool for comparing accounts with different rates and compounding periods.</div>
+<div class="para logical" id="sec-finance-compound-interest-9-6">
+<div class="para">We could have calculated the APY for each account without calculating the future value first or even knowing the principal. In the example above, we first calculated the future value after one year using the compound interest formuula with <span class="process-math">\(t=1\text{.}\)</span> Then we subtracted the principal <span class="process-math">\(P\text{.}\)</span> Finally, we divided that result by the principal. Putting this into a formula, we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+APY = \frac{P\left(1+\frac{r}{n}\right)^{nt}-P}{P}
+\end{equation*}
+</div>
+<div class="para">which simplifies to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+APY = \left(1+\frac{r}{n}\right)^{n}-1
+\end{equation*}
+</div>
+</div>
+<article class="example example-like" id="sec-finance-compound-interest-9-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-finance-compound-interest-9-3-1">Continued: To find the total amount of interest earned, we subtract the principal from the total balance.</div>
-<div class="para logical" id="sec-finance-compound-interest-9-3-2"><div class="displaymath process-math">
-\begin{equation*}
-\$4{,}849.11-\$4{,}000=\$849.11
-\end{equation*}
-</div></div>
-<div class="para" id="sec-finance-compound-interest-9-3-3">The spreadsheet calculation is</div>
-<div class="para logical" id="sec-finance-compound-interest-9-3-4"><pre class="code-display tex2jax_ignore">=4849.11-4000</pre></div>
-<div class="para" id="sec-finance-compound-interest-9-3-5">which gives a result of $849.11. You would earn $849.11 in interest.</div>
-<div class="para" id="sec-finance-compound-interest-9-3-6">To find the percentage that is interest, divide the amount of interest by the total amount.</div>
-<div class="para logical" id="sec-finance-compound-interest-9-3-7"><div class="displaymath process-math">
-\begin{equation*}
-\frac{\$849.11}{4{,}849.11}\approx0.1751\text{ or } 17.5\%
-\end{equation*}
-</div></div>
-<div class="para" id="sec-finance-compound-interest-9-3-8">The spreadsheet calculation is the same:</div>
-<div class="para logical" id="sec-finance-compound-interest-9-3-9"><pre class="code-display tex2jax_ignore">=849.11/4849.11</pre></div>
-<div class="para" id="sec-finance-compound-interest-9-3-10">which is 0.1751 or 17.5%. This tells us that after 7 years, 17.5% of the account was earned as interest.</div></article></section><section class="subsection" id="sec-finance-compound-interest-10"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="space"> </span><span class="title">Effective Rate</span>
-</h3>
-<div class="para" id="sec-finance-compound-interest-10-2">If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it’s hard to know which account will give the better result. There is a spreadsheet formula called <code class="code-inline tex2jax_ignore">=EFFECT</code> which will allow us to compare accounts. This is also sometimes called the annual percentage yield, or APY.</div>
-<article class="assemblage assemblage-like" id="sec-finance-compound-interest-10-3"><h4 class="heading"><span class="title">Effective Rate Formula.</span></h4>
-<div class="para logical" id="sec-finance-compound-interest-10-3-2"><pre class="code-display tex2jax_ignore">=EFFECT(stated rate, number of compounding periods)</pre></div>
-<div class="para logical" id="sec-finance-compound-interest-10-3-3"><dl class="description-list narrow">
-<dt id="sec-finance-compound-interest-10-3-3-1-1">stated rate</dt>
-<dd><div class="para" id="sec-finance-compound-interest-10-3-3-1-1-2">is the interest rate given (APR)</div></dd>
-<dt id="sec-finance-compound-interest-10-3-3-1-2">number of compounding periods</dt>
-<dd><div class="para" id="sec-finance-compound-interest-10-3-3-1-2-2">is the number of times the account is compounded per year, <span class="process-math">\(n\)</span>
-</div></dd>
-</dl></div></article><article class="example example-like" id="sec-finance-compound-interest-10-4"><h4 class="heading">
+<div class="para" id="sec-finance-compound-interest-9-7-1-1">Find the APY for an account that pays 4.5% with monthly compounding. Round to the nearest hundredth of a percent.</div>
+<div class="solutions"><details id="sec-finance-compound-interest-9-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-compound-interest-9-7-2-1">
+<div class="para">Using the formula for APY, we have</div>
+<div class="displaymath process-math" id="sec-finance-compound-interest-9-7-2-1-1">
+\begin{gather*}
+\end{gather*}
+</div>
+</div></div></details></div></article><article class="example example-like" id="sec-finance-compound-interest-9-8"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-finance-compound-interest-10-4-1-1">You are comparing an account that pays 5.25% APR compounded monthly, with an account that pays 5% APR compounded daily. Which account will earn you more interest?</div>
-<div class="solutions"><details id="sec-finance-compound-interest-10-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-finance-compound-interest-10-4-2-1">It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.</div>
-<div class="para" id="sec-finance-compound-interest-10-4-2-2">For the 5.25% APR account compounded monthly:</div>
+<div class="para" id="sec-finance-compound-interest-9-8-1-1">Which is a better deal: 4.5%  with monthly compounding or 4.6% with quarterly compounding?</div>
+<div class="solutions"><details id="sec-finance-compound-interest-9-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-compound-interest-9-8-2-1">
+<div class="para">We calculate the APY for each account. For the 4.5% APR compounded monthly, we have</div>
+<div class="displaymath process-math" id="sec-finance-compound-interest-9-8-2-1-1">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="para">and for the 4.6% APR compounded quarterly, we have</div>
+<div class="displaymath process-math" id="sec-finance-compound-interest-9-8-2-1-2">
+\begin{gather*}
+\end{gather*}
+</div>
+</div></div></details></div></article><article class="example example-like" id="sec-finance-compound-interest-9-9"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-finance-compound-interest-9-9-1-1">What nominal interest rate with monthly compounding would give the same APY as 4.6% with quarterly compounding?</div>
+<div class="solutions"><details id="sec-finance-compound-interest-9-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-compound-interest-9-9-2-1">
+<div class="para">We know that the APY for 4.6% with quarterly compounding is approximately 4.68%. We want to find the nominal interest rate, <span class="process-math">\(r\text{,}\)</span> with monthly compounding that gives us the same APY. Using the APY formula, we have</div>
+<div class="displaymath process-math" id="sec-finance-compound-interest-9-9-2-1-2">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="para">Solving for <span class="process-math">\(r\text{,}\)</span> we get <span class="process-math">\(r\approx0.0455\text{ or }4.55\%\text{.}\)</span>
+</div>
+</div></div></details></div></article><article class="assemblage assemblage-like" id="sec-finance-compound-interest-9-10"><h4 class="heading"><span class="title">Effective Rate Formula.</span></h4>
+<div class="para logical" id="sec-finance-compound-interest-9-10-2"><pre class="code-display tex2jax_ignore">=EFFECT(stated rate, number of compounding periods)</pre></div>
+<div class="para logical" id="sec-finance-compound-interest-9-10-3"><dl class="description-list narrow">
+<dt id="sec-finance-compound-interest-9-10-3-1-1">stated rate</dt>
+<dd><div class="para" id="sec-finance-compound-interest-9-10-3-1-1-2">is the interest rate given (APR)</div></dd>
+<dt id="sec-finance-compound-interest-9-10-3-1-2">number of compounding periods</dt>
+<dd><div class="para" id="sec-finance-compound-interest-9-10-3-1-2-2">is the number of times the account is compounded per year, <span class="process-math">\(n\)</span>
+</div></dd>
+</dl></div></article><article class="example example-like" id="sec-finance-compound-interest-9-11"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-finance-compound-interest-9-11-1-1">You are comparing an account that pays 5.25% APR compounded monthly, with an account that pays 5% APR compounded daily. Which account will earn you more interest?</div>
+<div class="solutions"><details id="sec-finance-compound-interest-9-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-finance-compound-interest-9-11-2-1">It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.</div>
+<div class="para" id="sec-finance-compound-interest-9-11-2-2">For the 5.25% APR account compounded monthly:</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<div class="para logical" id="sec-finance-compound-interest-10-4-2-3-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.0525,12)</pre></div>
-<div class="para" id="sec-finance-compound-interest-10-4-2-3-1-2">which gives 0.05378 or 5.38%</div>
+<div class="para logical" id="sec-finance-compound-interest-9-11-2-3-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.0525,12)</pre></div>
+<div class="para" id="sec-finance-compound-interest-9-11-2-3-1-2">which gives 0.05378 or 5.38%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/images/financial_math/2_2/effective_rate1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
 </div></div>
-<div class="para" id="sec-finance-compound-interest-10-4-2-4">For the 5% APR account compounded daily:</div>
+<div class="para" id="sec-finance-compound-interest-9-11-2-4">For the 5% APR account compounded daily:</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<div class="para logical" id="sec-finance-compound-interest-10-4-2-5-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.05,365)</pre></div>
-<div class="para" id="sec-finance-compound-interest-10-4-2-5-1-2">which gives 0.05127 or 5.13%</div>
+<div class="para logical" id="sec-finance-compound-interest-9-11-2-5-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.05,365)</pre></div>
+<div class="para" id="sec-finance-compound-interest-9-11-2-5-1-2">which gives 0.05127 or 5.13%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/images/financial_math/2_2/effective_rate2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
 </div></div>
-<div class="para" id="sec-finance-compound-interest-10-4-2-6">Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.</div>
-</div></details></div></article><article class="example example-like" id="sec-finance-compound-interest-10-5"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="period">.</span>
+<div class="para" id="sec-finance-compound-interest-9-11-2-6">Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.</div>
+</div></details></div></article><article class="example example-like" id="sec-finance-compound-interest-9-12"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.9</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-finance-compound-interest-10-5-1-1">Find the effective rates to compare an account that earns 6% APR compounded quarterly with an account that earns 5.975% APR compounded daily. Which one would you choose?</div>
-<div class="solutions"><details id="sec-finance-compound-interest-10-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-finance-compound-interest-10-5-2-1">Using the effective rate formula for each, we have:</div>
-<div class="para" id="sec-finance-compound-interest-10-5-2-2">For the 6% APR account compounded quarterly:</div>
+<div class="para" id="sec-finance-compound-interest-9-12-1-1">Find the effective rates to compare an account that earns 6% APR compounded quarterly with an account that earns 5.975% APR compounded daily. Which one would you choose?</div>
+<div class="solutions"><details id="sec-finance-compound-interest-9-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-finance-compound-interest-9-12-2-1">Using the effective rate formula for each, we have:</div>
+<div class="para" id="sec-finance-compound-interest-9-12-2-2">For the 6% APR account compounded quarterly:</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<div class="para logical" id="sec-finance-compound-interest-10-5-2-3-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.06,4)</pre></div>
-<div class="para" id="sec-finance-compound-interest-10-5-2-3-1-2">which gives 0.06136 or 6.14%</div>
+<div class="para logical" id="sec-finance-compound-interest-9-12-2-3-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.06,4)</pre></div>
+<div class="para" id="sec-finance-compound-interest-9-12-2-3-1-2">which gives 0.06136 or 6.14%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/images/financial_math/2_2/effective_rate3.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
 </div></div>
-<div class="para" id="sec-finance-compound-interest-10-5-2-4">For the 5.975% APR account compounded daily:</div>
+<div class="para" id="sec-finance-compound-interest-9-12-2-4">For the 5.975% APR account compounded daily:</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<div class="para logical" id="sec-finance-compound-interest-10-5-2-5-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.05975,365)</pre></div>
-<div class="para" id="sec-finance-compound-interest-10-5-2-5-1-2">which gives 0.06157 or 6.16%</div>
+<div class="para logical" id="sec-finance-compound-interest-9-12-2-5-1-1"><pre class="code-display tex2jax_ignore">=EFFECT(0.05975,365)</pre></div>
+<div class="para" id="sec-finance-compound-interest-9-12-2-5-1-2">which gives 0.06157 or 6.16%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/images/financial_math/2_2/effective_rate4.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
 </div></div>
-<div class="para" id="sec-finance-compound-interest-10-5-2-6">The account that was compounded more often has a slightly higher rate in this case.</div>
-</div></details></div></article></section><section class="exercises" id="sec-finance-compound-interest-11"><h3 class="heading hide-type">
+<div class="para" id="sec-finance-compound-interest-9-12-2-6">The account that was compounded more often has a slightly higher rate in this case.</div>
+</div></details></div></article></section><section class="subsection" id="subsec-finance-compound-spreadsheets"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="space"> </span><span class="title">Using Spreadsheets with Compound Interest</span>
+</h3>
+<div class="para" id="subsec-finance-compound-spreadsheets-2">Spreadsheets have several built-in functions that apply the formulas in this section. The spreadsheet functions to make calculations more quickly and efficiently, but they should not be used as a replacement for understanding the underlying mathematics or learning how to use the formulas.</div>
+<section class="subsubsection" id="subsubsec-"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">3.4.8.1</span><span class="space"> </span><span class="title"></span>
+</h4></section></section><section class="exercises" id="sec-finance-compound-interest-11"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">3.4.9</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-finance-compound-interest-11-2"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>

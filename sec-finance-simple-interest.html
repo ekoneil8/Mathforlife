@@ -1263,6 +1263,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#sec-finance-simple-interest-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Simple Interest</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#subsec-finance-simple-future-value" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Future Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#subsec-finance-simple-amortized" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Amortized Loans</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-interest.html#exercises-finance-simple-interest" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -1290,8 +1291,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-6" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Finding the Principal, or Present Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-7" class="internal"><span class="codenumber">3.4.5</span> <span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-8" class="internal"><span class="codenumber">3.4.6</span> <span class="title">Continuously Compounded Interest</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-9" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-10" class="internal"><span class="codenumber">3.4.8</span> <span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-9" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Annual Percentage Yield (APY)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-finance-compound-interest.html#subsec-finance-compound-spreadsheets" class="internal"><span class="codenumber">3.4.8</span> <span class="title">Using Spreadsheets with Compound Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#subsubsec-" class="internal"><span class="codenumber">3.4.8.1</span> <span class="title"></span></a></div></li></ul>
+</li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-compound-interest.html#sec-finance-compound-interest-11" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -1666,13 +1670,33 @@ A\amp\approx1\,119.29
 <article class="example example-like" id="subsec-finance-simple-future-value-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-finance-simple-future-value-7-1-1">If $275 is invested into an account that earns 7% simple interest, how long will it take for the value to double?</div>
+<div class="para" id="subsec-finance-simple-future-value-7-1-1">What is the present value of $1,500 to be received in 5 years if the annual interest rate is 6% simple interest?</div>
 <div class="solutions"><details id="subsec-finance-simple-future-value-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="subsec-finance-simple-future-value-7-2-1">We want to find the time <span class="process-math">\(t\)</span> when the future value <span class="process-math">\(A\)</span> is double the principal <span class="process-math">\(P\text{.}\)</span> That is, <span class="process-math">\(A = 2P\text{.}\)</span> While we do not know the principal, we can still solve for the time because the principal will cancel out in the calculations.</div>
-<div class="para logical" id="subsec-finance-simple-future-value-7-2-2">
+<div class="para logical" id="subsec-finance-simple-future-value-7-2-1">
+<div class="para">To find the present value, we use the formula <span class="process-math">\(P = A/(1 + rt)\text{,}\)</span> where <span class="process-math">\(A = 1500\text{,}\)</span> <span class="process-math">\(r = 0.06\text{,}\)</span> and <span class="process-math">\(t = 5\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-finance-simple-future-value-7-2-1-5">
+\begin{align*}
+P\amp=\frac{A}{1+rt} \\
+P\amp=\frac{1500}{1+(0.06)(5)} \\
+P\amp=\frac{1500}{1+0.3} \\
+P\amp=\frac{1500}{1.3} \\
+P\amp\approx1153.85 
+\end{align*}
+</div>
+</div>
+<div class="para" id="subsec-finance-simple-future-value-7-2-2">Therefore, the present value is approximately $1,153.85.</div>
+<div class="para" id="subsec-finance-simple-future-value-7-2-3">This represents the amount that would need to be invested today at 6% simple interest for 5 years in order to have $1,500 at the end of 5 years.</div>
+</div></details></div></article><article class="example example-like" id="subsec-finance-simple-future-value-8"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-finance-simple-future-value-8-1-1">If $275 is invested into an account that earns 7% simple interest, how long will it take for the value to double?</div>
+<div class="solutions"><details id="subsec-finance-simple-future-value-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-finance-simple-future-value-8-2-1">We want to find the time <span class="process-math">\(t\)</span> when the future value <span class="process-math">\(A\)</span> is double the principal <span class="process-math">\(P\text{.}\)</span> That is, <span class="process-math">\(A = 2P\text{.}\)</span> While we do not know the principal, we can still solve for the time because the principal will cancel out in the calculations.</div>
+<div class="para logical" id="subsec-finance-simple-future-value-8-2-2">
 <div class="para">Using the future value formula <span class="process-math">\(A=P(1+rt)\text{,}\)</span> we can substitute <span class="process-math">\(2P\)</span> for <span class="process-math">\(A\)</span> and solve for <span class="process-math">\(t\text{.}\)</span>
 </div>
-<div class="displaymath process-math" id="subsec-finance-simple-future-value-7-2-2-5">
+<div class="displaymath process-math" id="subsec-finance-simple-future-value-8-2-2-5">
 \begin{align*}
 2P\amp=P(1+rt) \\
 \frac{2P}{P} \amp \frac{P(1+rt)}{P} \\
@@ -1685,14 +1709,14 @@ t\amp\approx14.29
 </div>
 <div class="para">Therefore, it will take approximately 14.29 years for the value to double.</div>
 </div>
-<div class="para" id="subsec-finance-simple-future-value-7-2-3">Notice that in the first step, we divided both sides of the equation by <span class="process-math">\(P\text{,}\)</span> which eliminated the variable <span class="process-math">\(P\)</span> from the equation.</div>
+<div class="para" id="subsec-finance-simple-future-value-8-2-3">Notice that in the first step, we divided both sides of the equation by <span class="process-math">\(P\text{,}\)</span> which eliminated the variable <span class="process-math">\(P\)</span> from the equation.</div>
 </div></details></div></article></section><section class="subsection" id="subsec-finance-simple-amortized"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="space"> </span><span class="title">Amortized Loans</span>
 </h3>
 <div class="para" id="subsec-finance-simple-amortized-2">An amortized loan is a loan that is paid off in equal payments over a specified period of time. In each payment, a portion goes toward the interest and the rest goes toward paying down the principal. The interest portion of each payment is calculated using the simple interest formula, and the rest of the payment goes toward reducing the principal or amount owed.</div>
 <div class="para" id="subsec-finance-simple-amortized-3">Amortized loans are commonly used for car loans, mortgages, and student loans. The payment amount is calculated so that the loan will be completely paid off at the end of the loan term. This means that the payment amount is based on the original loan amount, the interest rate, and the length of the loan term. We will cover how to calculate the payment amount for an amortized loan in <a href="sec-finance-annuity-loan.html" class="internal" title="Section 3.5: Annuities and Amortized Loans">Section 3.5</a>, but for now we will focus on how to calculate the interest and principal portions of each payment and the outstanding balance after each payment.</div>
 <article class="example example-like" id="subsec-finance-simple-amortized-4"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-simple-amortized-4-1-1">Find the interest and principal portions of the first payment on a 5-year amortized car loan of $10,000 with an annual interest rate of 6% and monthly payments of $193.33. Then find the outstanding balance after the first payment.</div>
 <div class="solutions"><details id="subsec-finance-simple-amortized-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
@@ -1731,7 +1755,7 @@ I\amp=50
 </div></details></div></article><div class="para" id="subsec-finance-simple-amortized-5">For each subsequent payment, the interest is calculated on the remaining balance. This means that the interest portion of each payment will decrease over time as the outstanding balance decreases, while the principal portion will increase over time. By the end of the loan term, the final payment will be mostly principal with very little interest.</div>
 <div class="para" id="subsec-finance-simple-amortized-6">An amortization table is a useful tool for keeping track of the interest and principal portions of each payment and the outstanding balance after each payment. It can help you see how much of each payment goes toward interest and how much goes toward paying down the principal over the life of the loan.</div>
 <article class="example example-like" id="subsec-finance-simple-amortized-7"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-simple-amortized-7-1-1">Complete an amortization table for the first 3 payments on the car loan in the previous example.</div>
 <div class="solutions"><details id="subsec-finance-simple-amortized-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
@@ -1762,7 +1786,7 @@ I=Prt=9\,856.67(0.06)\left(\frac{1}{12}\right)\approx \$ 49.28
 </div>
 </div>
 <div class="para" id="subsec-finance-simple-amortized-7-2-5">The result is summarized in the following amortization table.</div>
-<figure class="table table-like" id="subsec-finance-simple-amortized-7-2-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.7<span class="period">.</span></span><span class="space"> </span>Amortization Table</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-finance-simple-amortized-7-2-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.8<span class="period">.</span></span><span class="space"> </span>Amortization Table</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">Payment Number</td>
 <td class="l m b0 r0 l0 t0 lines">Payment</td>
@@ -1793,7 +1817,22 @@ I=Prt=9\,856.67(0.06)\left(\frac{1}{12}\right)\approx \$ 49.28
 </tr>
 </table></div></figure>
 </div></details></div></article><div class="para" id="subsec-finance-simple-amortized-8">A spreadsheet program can be used to create an amortization table for the entire loan term, which can be very helpful for keeping track of the payments and the outstanding balance over time. Once the first few rows of the table are completed, you can use the fill-down feature to automatically fill in the rest of the table for the remaining payments. A <a class="external" href="https://docs.google.com/spreadsheets/d/1KWOdAlZzCc-_GcjmdUnZBuJDNvoFuJrVmib_M9hOQ60/edit?usp=sharing" target="_blank">sample amortization table</a><details class="ptx-footnote" aria-live="polite" id="subsec-finance-simple-amortized-8-2"><summary class="ptx-footnote__number" title="Footnote 3.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-finance-simple-amortized-8-2"><code class="code-inline tex2jax_ignore">docs.google.com/spreadsheets/d/1KWOdAlZzCc-_GcjmdUnZBuJDNvoFuJrVmib_M9hOQ60/edit?usp=sharing</code></div></details> is provided as an example.</div>
-<div class="para" id="subsec-finance-simple-amortized-9">In the sample amortization table, the ending balance after 30 years was $2.69 rather than $0 because of rounding. The interest and principal portions are rounded to the nerest cent for each payment. In practice, the final payment would be adjusted to account for this rounding error so that the loan would be completely paid off at the end of the loan term.</div></section></section></div>
+<div class="para" id="subsec-finance-simple-amortized-9">In the sample amortization table, the ending balance after 30 years was $2.69 rather than $0 because of rounding. The interest and principal portions are rounded to the nerest cent for each payment. In practice, the final payment would be adjusted to account for this rounding error so that the loan would be completely paid off at the end of the loan term.</div></section><section class="exercises" id="exercises-finance-simple-interest"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercises-finance-simple-interest-2"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-2-1-1">$1000 is invested at 5% simple interest for 3 years. How much interest will be earned? What will the value of the account be at maturity?</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-3-1-1">$2,500 is invested at 4% simple interest for 2 years. How much interest will be earned? What will the value of the account be at maturity?</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-4-1-1">You are borrowing $500 from a friend to be repaid in 6 months. If the annual interest rate is 5% simple interest, how much interest will you owe?</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-5-1-1">You are borrowing $1,200 from a friend to be repaid in 9 months. If the annual interest rate is 8% simple interest, how much interest will you owe?</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-6-1-1">Find the future value of $500 invested at 3% simple interest for 10 years.</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-7-1-1">Find the future value of $1,200 invested at 6% simple interest for 5 years.</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-8"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-8-1-1">Find the present value of $2,000 to be received in 4 years if the annual interest rate is 8% simple interest.</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-9-1-1">Find the present value of $5,000 to be received in 3 years if the annual interest rate is 10% simple interest.</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-10"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-10-1-1">If $200 is invested into an account that earns 4% simple interest, how long will it take for the value to double?</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-11"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-11-1-1">A payday loan company charges $20 for a 10-day loan of $100. What is the annual interest rate on this loan, assuming simple interest? Round to the nearest hundredth of a percent.</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-12"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-12-1-1">Find the interest and principal portions of the first payment on a 3-year amortized car loan of $15,000 with an annual interest rate of 5% and monthly payments of $449.22. Then find the outstanding balance after the first payment.</div></article><article class="exercise exercise-like" id="exercises-finance-simple-interest-13"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="para" id="exercises-finance-simple-interest-13-1-1">Complete an amortization table for the first 3 payments on the car loan in the previous exercise.</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-finance-spreadsheets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-finance-credit-cards.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
