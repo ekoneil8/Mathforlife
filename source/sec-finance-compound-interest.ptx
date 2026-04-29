@@ -510,7 +510,7 @@
 	</p>
 	</assemblage>
 	<p>
-		While continuous compounding is not something that happens in real life, it is a useful mathematical model for seeing the maximum amount of interest that can be earned on an investment with a given interest rate.
+		While continuous compounding is not something that happens in real life, it is a useful mathematical model for seeing the upper bound on the amount of interest that can be earned on an investment with a given interest rate.
 	</p>
 
 	<example>
@@ -520,26 +520,7 @@
 		</p>
 		</statement>
 		<solution>
-		
-		<sidebyside valign="middle" widths="40% 54%" margins="0%">
-			<stack>
-				<p>
-				To use a spreadsheet, we look at the formula solved for A, the future value. We enter
-				</p>
-				<p>
-				<cd>=4000*EXP(0.0275*7)</cd>
-				</p>
-				<p>
-				and get a result of $4,849.11.
-				</p>
-			</stack>
-			<image source="images/financial_math/2_2/continuous_interest.png">
-			<shortdescription>An image of the spreadsheet showing the formula used and the result.</shortdescription>
-			</image>
-		</sidebyside>
-		<p>
-			To use the formula, we have:
-		</p>
+
 		<p>
 			<m>A=Pe^{rt}</m>
 		</p>
@@ -559,56 +540,106 @@
 		</md>
 		</p>
 		<p>
-			After 7 years your account would be worth $4,849.11. Next, we will calculate the amount of interest earned and the percentage.
+			After 7 years your account would be worth $4,849.11.
+		</p>
+		<p>
+			To find the amount of interest earned, we subtract the principal from the total balance.
+			<md>
+			<mrow>\text{Interest} \amp= 4849.11 - 4000</mrow>
+			<mrow>\amp= 849.11</mrow>
+		</md>
+		</p>
+		<p>
+			You would earn $849.11 in interest.
+		</p>
+		<p>
+			To find the percentage of the final balance that is interest, we divide the amount of interest by the total amount.
+			<md>
+			<mrow>\frac{\$849.11}{\$4{,}849.11}\approx0.1751\text{ or } 17.5\%</mrow>
+		</md>
 		</p>
 	</solution>
 	</example>
 </subsection>
 
 <subsection>
-	<title>Finding the Amount of Interest Earned and the Percentage</title>
+	<title>Annual Percentage Yield (APY)</title>
 	<p>
-		In the previous example we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $4,849.11. Now to figure out how much of that was interest, we need to subtract the amount initially deposited.
+		If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it's hard to know which account will give the better result. For example, is it better to invest in an account earning 3% interest with daily compounding or 3.02% interest with semiannual compounding?
+	</p>
+	<p>
+		To compare, let's imagine that $1,000 is invested in each account at the end of one year. The account with 3% interest with daily compounding would give us <me>A=1\,000\left(1+\frac{0.03}{365}\right)^{365\cdot 1}\approx\$1\,030.45.</me> The account with 3.02% interest with semiannual compounding would give us <me>A=1\,000\left(1+\frac{0.0302}{2}\right)^{2\cdot 1}\approx\$1\,030.43.</me> 
+	</p>
+	<p>
+		We can find the interest earned as a percentage of the initial investment for each account. For the 3% interest with daily compounding, we have <m>\frac{30.45}{1000}=0.03045\text{ or }3.045\%</m>. For the 3.02% interest with semiannual compounding, we have <m>\frac{30.43}{1000}=0.03043\text{ or }3.043\%</m>. The account with 3% interest with daily compounding gives a slightly higher return in this case.
+	</p>
+	<p>
+		The percentage that we calculated for each account is called the <alert>annual percentage yield (APY)</alert>, also called the <alert>effective annual rate (EAR)</alert>. The APY is the actual interest rate that you will earn on an account after compounding. It is a tool for comparing accounts with different rates and compounding periods.
+	</p>
+	<p>
+		We could have calculated the APY for each account without calculating the future value first or even knowing the principal. In the example above, we first calculated the future value after one year using the compound interest formuula with <m>t=1</m>. Then we subtracted the principal <m>P</m>. Finally, we divided that result by the principal. Putting this into a formula, we get:
+		<me>
+			APY = \frac{P\left(1+\frac{r}{n}\right)^{nt}-P}{P}
+		</me>
+which simplifies to
+		<me>
+			APY = \left(1+\frac{r}{n}\right)^{n}-1
+		</me>			
 	</p>
 	<example>
-		<p>
-			Continued: To find the total amount of interest earned, we subtract the principal from the total balance.
-		</p>
-		<p>
-			<me>\$4{,}849.11-\$4{,}000=\$849.11</me>
-		</p>
-		<p>
-			The spreadsheet calculation is
-		</p>
-		<p>
-			<cd>=4849.11-4000</cd>
-		</p>
-		<p>
-			which gives a result of $849.11. You would earn $849.11 in interest.
-		</p>
-		<p>
-			To find the percentage that is interest, divide the amount of interest by the total amount.
-		</p>
-		<p>
-			<me>\frac{\$849.11}{4{,}849.11}\approx0.1751\text{ or } 17.5\%</me>
-		</p>
-		<p>
-			The spreadsheet calculation is the same:
-		</p>
-		<p>
-			<cd>=849.11/4849.11</cd>
-		</p>
-		<p>
-			which is 0.1751 or 17.5%. This tells us that after 7 years, 17.5% of the account was earned as interest.
-		</p>
+		<statement>
+			<p>
+				Find the APY for an account that pays 4.5% with monthly compounding. Round to the nearest hundredth of a percent.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Using the formula for APY, we have
+				<md>
+					APY=\left(1+\frac{0.045}{12}\right)^{12}\approx 0.04594\text{ or }4.59\%
+				</md>
+				
+			</p>
+		</solution>
 	</example>
-</subsection>
-
-<subsection>
-	<title>Effective Rate</title>
-	<p>
-		If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it's hard to know which account will give the better result. There is a spreadsheet formula called <c>=EFFECT</c> which will allow us to compare accounts. This is also sometimes called the annual percentage yield, or APY.
-	</p>
+	<example>
+		<statement>
+			<p>
+				Which is a better deal: 4.5%  with monthly compounding or 4.6% with quarterly compounding?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				We calculate the APY for each account. For the 4.5% APR compounded monthly, we have
+				<md>
+					APY=\left(1+\frac{0.045}{12}\right)^{12}\approx 0.04594\text{ or }4.59\%
+				</md>
+				and for the 4.6% APR compounded quarterly, we have
+				<md>
+					APY=\left(1+\frac{0.046}{4}\right)^{4}\approx 0.04678\text{ or }4.68\%
+				</md>
+				
+			</p>
+		</solution>
+	</example>
+	<example>
+		<statement>
+			<p>
+				What nominal interest rate with monthly compounding would give the same APY as 4.6% with quarterly compounding?
+	
+			</p>
+		</statement>
+		<solution>
+			<p>
+				We know that the APY for 4.6% with quarterly compounding is approximately 4.68%. We want to find the nominal interest rate, <m>r</m>, with monthly compounding that gives us the same APY. Using the APY formula, we have
+				<md>
+					0.04678=\left(1+\frac{r}{12}\right)^{12}-1
+				</md>
+				Solving for <m>r</m>, we get <m>r\approx0.0455\text{ or }4.55\%</m>.
+			</p>
+		</solution>
+	</example>
+	
 	<assemblage>
 		<title>Effective Rate Formula</title>
 		<p>
@@ -736,6 +767,17 @@
 		</p>
 	</solution>
 	</example>
+</subsection>
+<subsection xml:id="subsec-finance-compound-spreadsheets">
+	<title>Using Spreadsheets with Compound Interest</title>
+	<p>
+		Spreadsheets have several built-in functions that apply the formulas in this section. The spreadsheet functions to make calculations more quickly and efficiently, but they should not be used as a replacement for understanding the underlying mathematics or learning how to use the formulas.
+	</p>
+	<subsubsection xml:id="subsubsec-">
+		<title></title>
+		
+	</subsubsection>
+	
 </subsection>
 
 <exercises>

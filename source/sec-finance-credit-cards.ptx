@@ -553,6 +553,30 @@ The next several examples will illustrate how to calculate the ending balance an
   <exercise>
     <statement>
       <p>
+        Calculate the average daily balance for a credit card account with a starting balance of $1,219 and the following transactions during the billing cycle: a $307 purchase on April 3, a $200 payment on April 10, and a $50 purchase on April 20. The billing cycle runs from April 1 to April 30.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The average daily balance for the billing cycle is approximately $1,348.53.
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Calculate the finance charge and statement balance for the credit card account from the previous exercise if the annual percentage rate is 18% and the finance charge is calculated using the average daily balance method with time measured in days.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The finance charge for the billing cycle is approximately $6.66, and the statement balance is approximately $1,356.19.
+      </p>
+    </solution>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
         A credit card billing period runs from March 1 to March 31. The previous balance is $800 and the transactions are listed below.
         </p>
         <tabular row-headers="yes" halign="center">
@@ -586,6 +610,19 @@ The next several examples will illustrate how to calculate the ending balance an
         Suppose this credit card uses the average daily balance method and charges an annual interest rate of 18%. Find the ending balance, the average daily balance, the finance charge, and the total balance after the finance charge is applied. For calculating the finance charge, this account measures time in days.
       </statement>
   </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A credit card account has a starting balance of $1,000 on June 1. The billing cycle runs from June 1 to June 30. The annual percentage rate is 18% and finance charges are calculated using the daily balance method. If the consumer makes a purchase of $500 on June 5, a payment of $200 on June 10, and a purchase of $100 on June 15, find the statement balance for the billing cycle.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The statement balance for the billing cycle is approximately $1,420.06.
+      </p>
+    </solution>
+  </exercise>
+
 </exercises>  
 </section>
 
