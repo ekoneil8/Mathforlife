@@ -247,7 +247,7 @@
   <title>Finding a Future Value</title>
   <statement>
     <p>
-			A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?
+			A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate than regular savings accounts, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?
 		</p>
 		
 		
@@ -274,19 +274,7 @@
 </p>
 </statement>
 </example>
-		<p>
-			The calculation in the example above also can be done using the future value formula on a spreadsheet. The format is as follows:
-			<cd>=FV(rate per period, number of periods, payment amount, present value)</cd>
-      where the rate per period is <m>\frac{r}{n}</m>, the number of periods is <m>nt</m>, and the present value is the principal <m>P</m>. In this section, we only deal with one-time investments, so the payment amount will be $0.
-		</p>
-		<p>
-      In the exercise, we would type
-			<cd>=FV(0.06/12, 12*20, 0, 3000)</cd>
-		</p>
-		<p>
-			and get a result of $9,930.61, rounded to the nearest cent.
-		</p>
-  
+
 </subsection>
 
 <subsection>
@@ -343,7 +331,7 @@
 			<cell>$24,370.65</cell>
 		</row>
 	</tabular>
-	<image source="images/financial_math/2_2/comparing_interest.png">
+	<image source="images/compound-versus-simple-interest.png">
 	<shortdescription>A coordinate graph with years on the x-axis and account balance on the y-axis. The simple interest increases in a straight line; the compound interest curves up faster because it is an exponential function.</shortdescription>
 	</image>
 </sidebyside>
@@ -352,50 +340,11 @@
 <subsection>
 <title>Finding the Principal, or Present Value</title>
 	<p>
-		When we know the amount of money we want to have in the future, we can use the formula that is solved for <em>P</em>. It requires a little algebra to divide both sides of the formula by the quantity that was multiplied by <em>P</em>. There is also a spreadsheet formula which we will introduce now, and then do an example using both methods.
+		When we know the amount of money we want to have in the future, we can use the formula that is solved for <em>P</em>.
 	</p>
 
-</subsection>
 
-<subsection>
-<title>The Present Value Spreadsheet Formula</title>
-	<p>
-		The present value spreadsheet formula will calculate how much you need to deposit in the present to get a specified future value.
-	</p>
-	<assemblage>
-	<title>Present Value Spreadsheet Formula</title>
-		<p>
-			<cd>=PV(rate per period, number of periods, payment amount, future value)</cd>
-		</p>
-		<p>
-		<dl width="narrow">
-			<li>
-				<title>rate per period</title>
-				<p>
-					is the interest rate per compounding period, <m>r/n</m>
-				</p>
-			</li>
-			<li>
-				<title>number of periods</title>
-				<p>
-					is the total number of periods, <m>n*t</m>
-				</p>
-			</li>
-			<li>
-				<title>payment amount</title>
-				<p>
-					is the amount of regular payments. If none, enter <m>0</m>
-				</p>
-			</li>
-			<li>
-			<title>future value</title>
-			<p>
-				is the amount desired in the future, <m>A</m>
-			</p>
-			</li>
-		</dl>
-		</p>
-	</assemblage>
+
 
 	<example>
 		<statement>
@@ -404,28 +353,9 @@
 		</p>
 		</statement>
 		<solution>
+
 		<p>
-			We are looking for what we need to deposit now so we will use the present value formula. We type the formula and inputs the same way we used the future value formula.
-		</p>
-		<p>
-			<cd>=PV(rate per period, number of periods, payment amount, future value)</cd>
-		</p>
-		<p>
-			<cd>=PV(0.04/4, 4*18, 0, 40000)</cd>
-		</p>
-		<p>
-			which gives a value of $19,539.84. You would need to deposit $19,539.84 now and keep the same interest rate to have $40,000 in 18 years.
-		</p>
-		<sidebyside width="50%">
-			<image source="images/financial_math/2_2/present_value.png">
-			<shortdescription>An image of the spreadsheet showing the formula used and the result.</shortdescription>
-		</image>
-		</sidebyside>
-		<p>
-			Note that we cannot enter commas in numbers in a spreadsheet. Commas are used to separate the input values, so we would not get the same answer if we put in $40,000 for an input.
-		</p>
-		<p>
-			To use the mathematical formula, we use the one that is solved for <em>P</em>.
+			We will use the form of the compound interest formula in which <em>P</em> is isolated.
 		</p>
 		<p>
 			<m>r = 0.04</m>, 4% APR
@@ -473,41 +403,36 @@
 			<li>
 				<title>A</title>
 				<p>
-					is the future value or desired balance in the account
+					future value or desired balance in the account
 				</p>
 			</li>
 			<li>
 				<title>P</title>
 				<p>
-					is the principal or present value
+					principal or present value
 				</p>
 			</li>
 			<li>
 				<title>r</title>
 				<p>
-					is the annual interest rate in decimal form
+					annual interest rate in decimal form
 				</p>
 			</li>
 			<li>
 				<title>t</title>
 				<p>
-					is the number of years
+					time in years
 				</p>
 			</li>
 			<li>
 				<title>e</title>
 				<p>
-					is an irrational number that is approximately 2.718281828… Find <m>e</m> on your calculator to use this formula
+					an irrational number that is approximately 2.718281828… Find <m>e</m> on your calculator to use this formula
 				</p>
 			</li>
 		</dl>
 	</p>
-	<p>
-		To calculate this on a spreadsheet we use the <c>=EXP</c> function. The spreadsheet formulas are
-	</p>
-	<p>
-		<cd>=Principal*EXP(r*t) or =A/EXP(r*t)</cd>
-	</p>
+	
 	</assemblage>
 	<p>
 		While continuous compounding is not something that happens in real life, it is a useful mathematical model for seeing the upper bound on the amount of interest that can be earned on an investment with a given interest rate.
@@ -769,15 +694,151 @@ which simplifies to
 	</example>
 </subsection>
 <subsection xml:id="subsec-finance-compound-spreadsheets">
-	<title>Using Spreadsheets with Compound Interest</title>
+	<title>Using Spreadsheets for Compound Interest Applications</title>
 	<p>
-		Spreadsheets have several built-in functions that apply the formulas in this section. The spreadsheet functions to make calculations more quickly and efficiently, but they should not be used as a replacement for understanding the underlying mathematics or learning how to use the formulas.
+		Spreadsheets have several built-in functions that apply the formulas in this section. The spreadsheet functions to make calculations more quickly and efficiently, but they should not be used as a replacement for understanding the underlying mathematics or learning how to use the formulas. The formulas pertaining to compound interest are listed below. We will add to this list of formulas in the next section.
 	</p>
-	<subsubsection xml:id="subsubsec-">
-		<title></title>
-		
-	</subsubsection>
+	<assemblage xml:id="assemblage-finance-spreadsheet-APY">
+		<title>Annual Percentage Yield (APY)</title>
+		<p>
+		<cd>=EFFECT(nominal rate, npery)</cd>
+		</p>
+<p>
+	<term>nominal rate</term> is the stated interest rate (APR) and is entered as a decimal.
+</p>
+<p>
+	<term>npery</term> is the number of compounding periods per year.
+</p>
+	</assemblage>
+	<example>
+		<statement>
+			<p>
+				Find the APY for an account that pays 4.5% with monthly compounding. Round to the nearest hundredth of a percent.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Using the EFFECT function in a spreadsheet, we have nominal rate = 0.045 and npery = 12, so we enter
+			</p>
+			<p>
+				<cd>=EFFECT(0.045,12)</cd>
+			</p>
+			<p>
+				which gives 0.0459 or 4.59%.
+			</p>
+			<p>
+				Therefore, the APY for an account that pays 4.5% with monthly compounding is 4.59%.
+			</p>
+			<p>
+			Notes:	
+			
+				
+				<ul>
+					<li>
+						<p>
+							 If you set the cell format to percentage, the spreadsheet will display 4.59% directly as the result of the formula without having to multiply by 100.
+						</p>
+					</li>
+					<li>
+						<p>
+							If the spreadsheet shows the result as 0.05, you can click on the "Increase Decimal" button in the toolbar to show more decimal places and see the result as 0.0459 or 4.59%.
+						</p>
+					</li>
+				</ul>
+			</p>
+		</solution>
+	</example>
+
+	<assemblage xml:id="assemblage-finance-spreadsheet-FV">
+		<title>Future Value and Present Value</title>
+		<p>
+		<term>Future Value:</term>
+		</p>
+		<p>
+			<cd>=FV(rate,nper,pmt,[pv],[type])</cd>
+		</p>
+		<p>
+			<term>Present Value:</term>
+		</p>
+		<p>
+			<cd>=PV(rate,nper,pmt,[fv],[type])</cd>
+		</p>
+		<p>
+			<ul class="no-bullet">
+				<li>
+					<p>
+						<term>rate</term> is the stated interest rate (APR) and is entered as a decimal.
+					</p>
+				</li>
+				<li>
+					<p>
+						<term>npery</term> is the number of compounding periods per year.
+					</p>
+				</li>
+				<li>
+					<p>
+						<term>pmt</term> is the payment amount. If there are no payments, enter 0.
+					</p>
+				</li>
+				<li>
+					<p>
+						<term>pv</term> is the present value or initial amount. This is entered as a negative number when using the future value function.</p>
+				</li>
+				<li>
+					<p>				
+						<term>fv</term> is the future value or desired amount in the future. This is entered as a positive number when using the present value function.</p>
+				</li>
+			</ul>
+		</p>
+			
 	
+		<p>
+			Variables in square brackets are optional inputs. If you do not have a value for an optional input, you can just omit it when entering the formula in the spreadsheet. If you have a value, enter it but do not type the square brackets.
+		</p>
+	</assemblage>
+
+	<example>
+		<statement>
+			<p>
+				Suppose you deposit $3000 in a CD (certificate of deposit) account paying 6% APR, compounded monthly. How much will you have in the account after 20 years?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Using the FV function in a spreadsheet, we have rate = 0.06/12, nper = 20*12, pmt = 0, and pv = -3000, so we enter
+			</p>
+			<p>
+				<cd>=FV(0.06/12,20*12,0,-3000)</cd>
+			</p>
+			<p>
+				which gives $10,854.57.
+			</p>
+			<p>
+				Therefore, you will have $10,854.57 in the account after 20 years.
+			</p>
+		</solution>
+	</example>
+	<example>
+		<statement>
+			<p>
+				You know that you will need $40,000 for your child's education in 18 years. If your account earns 4% APR compounded quarterly, use a spreadsheet to find how much would you need to deposit now to reach your goal.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Using the PV function in a spreadsheet, we have rate = 0.04/4, nper = 18*4, pmt = 0, and fv = 40000, so we enter
+			</p>
+			<p>
+				<cd>=PV(0.04/4,18*4,0,40000)</cd>
+			</p>
+			<p>
+				which gives $19,258.63.
+			</p>
+			<p>
+				Therefore, you would need to deposit $19,258.63 now to reach your goal.
+			</p>
+		</solution>
+	</example>
 </subsection>
 
 <exercises>

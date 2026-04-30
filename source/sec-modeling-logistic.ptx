@@ -38,7 +38,7 @@
     </tabular>
   </table>
   <p>
-    The results are not the same! The more times we apply the increases, the larger the population grows in one year. This is happening even when the growth rate is scaled down proportionally. 
+    The more frequently we apply the increases, the larger the population grows in one year. 
   </p>
 <p>
   Let's generalize. If the frog population increases <m>n</m> times per year by <m>\frac{100}{n}\%</m>, then after one year the population will be <m>100\left( 1+\frac{1}{n} \right)^{n}</m>. If the value of <m>n</m> approaches infinity, meaning that the increases are applied continuously rather than at distinct points in time, the results approach about <m>272</m> frogs as seen in the table below.
