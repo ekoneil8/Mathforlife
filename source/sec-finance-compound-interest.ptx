@@ -182,9 +182,10 @@
 	<assemblage>
 		<title>Compound Interest</title>
 		<p>
-			<me>A=P\left(1+\frac{r}{n}\right)^{nt} \text{ or } P=\frac{A}{\left(1+\frac{r}{n}\right)^{nt}}</me>
+			<me>A=P\left(1+\frac{r}{n}\right)^{nt} \text{ or } P=A \left(1+\frac{r}{n}\right)^{-nt}</me>
 		</p>
 		<p>
+			where
 		<dl width="narrow">
 			<li>
 				<title>A</title>
@@ -241,42 +242,6 @@
 		The most important thing to remember about using this formula is that it assumes that we put money in the account <alert><insert>once</insert></alert> and let it sit there earning interest.
 	</p>
 </subsection>
-<subsection>
-  <title>Applications of the Compound Interest Formula</title>
-<example>
-  <title>Finding a Future Value</title>
-  <statement>
-    <p>
-			A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate than regular savings accounts, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?
-		</p>
-		
-		
-		<p>
-			<m>P = \$3\,000</m>, the initial deposit
-		</p>
-		<p>
-			<m>r = 0.06</m>, 6% annual rate
-		</p>
-		<p>
-			<m>n = 12</m>, 12 months in 1 year
-		</p>
-		<p>
-			<m>t = 20</m>, since we're looking for how much we'll have after 20 years
-		</p>
-    <p>
-      <me>
-        A=P\left(1+\frac{r}{n}\right)^{nt}=3000\left(1+\frac{0.06}{12}\right)^{12\cdot 20}\approx$9930.61
-      </me>
-      
-    </p>
-<p>
-  Therefore, we will end up with approximately $9,930.61 after 20 years.
-</p>
-</statement>
-</example>
-
-</subsection>
-
 <subsection>
 <title>Comparing Simple and Compound Interest</title>
 	<p>
@@ -336,9 +301,43 @@
 	</image>
 </sidebyside>
 </subsection>
-
 <subsection>
-<title>Finding the Principal, or Present Value</title>
+  <title>Applications of Compound Interest</title>
+<example>
+  <title>Finding a Future Value</title>
+  <statement>
+    <p>
+			A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate than regular savings accounts, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?
+		</p>
+		
+		
+		<p>
+			<m>P = \$3\,000</m>, the initial deposit
+		</p>
+		<p>
+			<m>r = 0.06</m>, 6% annual rate
+		</p>
+		<p>
+			<m>n = 12</m>, 12 months in 1 year
+		</p>
+		<p>
+			<m>t = 20</m>, since we're looking for how much we'll have after 20 years
+		</p>
+    <p>
+      <me>
+        A=P\left(1+\frac{r}{n}\right)^{nt}=3000\left(1+\frac{0.06}{12}\right)^{12\cdot 20}\approx$9930.61
+      </me>
+      
+    </p>
+<p>
+  Therefore, we will end up with approximately $9,930.61 after 20 years.
+</p>
+</statement>
+</example>
+
+
+
+
 	<p>
 		When we know the amount of money we want to have in the future, we can use the formula that is solved for <em>P</em>.
 	</p>
@@ -347,6 +346,7 @@
 
 
 	<example>
+		<title>Finding a Present Value</title>
 		<statement>
 		<p>
 			You know that you will need $40,000 for your child's education in 18 years. If your account earns 4% APR compounded quarterly, how much would you need to deposit now to reach your goal?
@@ -370,19 +370,105 @@
 			<m>A = \$40{,}000</m>, the amount we have in 18 years
 		</p>
 		<p>
-			In this case, we're going to have to set up the equation, and solve for P.
+			<me>P=A\left(1+\frac{r}{n}\right)^{-nt}\right)=40000\left(1+\frac{0.04}{4}\right)^{-4\cdot 18}\approx\$19{,}539.84</me>
 		</p>
 
-		<p>
-			<md>
-			<mrow>P\amp=\frac{40000}{\left(1+\frac{0.04}{4}\right)^{4\cdot 18}}</mrow>
-			<mrow>\amp\approx19{,}539.84</mrow>
-		</md>
-		</p>
 		<p>
 			You would need to deposit $19,539.84 now to have $40,000 in 18 years.
 		</p>
 	</solution>
+	</example>
+	<example>
+		<title>Solving for the Time</title>
+		<statement>
+		<p>
+			You want to have $10,000 in an account that pays 5% APR compounded annually. If you deposit $5000 now, how long will it take to reach your goal?
+		</p>
+		</statement>
+<solution>
+	<p>
+		We do not have a form of the compound interest formula in which <em>t</em> is isolated, so we will need to use logarithms to solve for <em>t</em>.
+	</p>
+	<p>
+		<m>P = \$5{,}000</m>, the initial deposit
+	</p>
+	<p>
+		<m>A = \$10{,}000</m>, the desired balance
+	</p>
+	<p>
+		<m>r = 0.05</m>, the annual interest rate
+	</p>
+	<p>
+		<m>n = 1</m>, since it's compounded annually
+	</p>
+	<p>
+		<md>
+			<mrow>A \amp= P\left(1+\frac{r}{n}\right)^{nt}</mrow>
+			<mrow>10000\amp=5000\left(1+\frac{0.05}{1}\right)^{1\cdot t}</mrow>
+			<mrow>1000\amp=5000(1.05)^{t}</mrow>
+			<mrow>2\amp=(1.05)^{t}</mrow>
+			<mrow>\log(2) \amp= \log\left((1.05)^{t}\right) </mrow>
+			<mrow>\log(2)\amp=t\cdot \log(1.05)</mrow>
+			<mrow>t\amp=\frac{\log(2)}{\log(1.05)}\approx14.21</mrow>
+		</md>
+	</p>	
+	<p>
+		It will take approximately 14.21 years to reach your goal of $10,000.
+	</p>
+	</solution>
+	</example>
+	<p>
+		In the previous example, we were able to simplify the equation to <m>2=(1.05)^{t}</m> before taking logarithms. If the base of the exponent cannot be simplified in this way, we can still use logarithms to solve for the unknown variable; we will just leave the base in the form <m>1+\frac{r}{n}</m> as seen in the next example.
+	</p>
+	<example>
+		<statement>
+			<p>
+				You want to have $10,000 in an account that pays 5% APR compounded monthly. If you deposit $3,000 now, how long will it take to reach your goal?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Using the compound interest formula, we have
+			</p>
+			<md>
+				<mrow>A \amp= P\left(1+\frac{r}{n}\right)^{nt} </mrow>
+				<mrow>10000\amp=3000\left(1+\frac{0.05}{12}\right)^{12t}</mrow>
+				<mrow>\frac{10}{3}\amp=\left(1+\frac{0.05}{12}\right)^{12t}</mrow>
+				<mrow>\log \left(\frac{10}{3}\right) \amp= \log\left(\left(1+\frac{0.05}{12}\right)^{12t}\right) </mrow>
+				<mrow>\log\left(\frac{10}{3}\right)\amp=12t \cdot\log\left(1+\frac{0.05}{12}\right)</mrow>
+				<mrow>t\amp=\frac{\log\left(\frac{10}{3}\right)}{12\log\left(1+\frac{0.05}{12}\right)}\approx14.87</mrow>
+			</md>
+			<p>
+				It will take approximately 14.87 years to reach your goal of $10,000.
+			</p>
+		</solution>
+	</example>
+	<p>
+		When solving for the interest rate, the exponent will be a number, not a variable, so we will use radicals instead of logarithms in the solution.
+	</p>
+	<example>
+		<title>Solving for the Interest Rate</title>
+		<statement>
+			<p>
+				You want to have $15,000 in an account that pays interest compounded annually. If you deposit $3,000 now and want to reach your goal in 15 years, what interest rate do you need?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Using the compound interest formula, we have
+			</p>
+			<md>
+				<mrow>A \amp= P\left(1+\frac{r}{n}\right)^{nt}</mrow>
+				<mrow>15000 \amp= 3000\left(1+\frac{r}{1}\right)^{1 \cdot 15}</mrow>
+				<mrow>5 \amp= (1+r)^{15}</mrow>
+				<mrow>\sqrt[15]{5} \amp= 1+r</mrow>
+				<mrow>r \amp= \sqrt[15]{5} - 1</mrow>
+				<mrow>r \amp\approx 0.1072 \text{ or } 10.72\%</mrow>
+			</md>
+			<p>
+				You would need an interest rate of approximately 10.72% to reach your goal.
+			</p>
+		</solution>
 	</example>
 </subsection>
 
