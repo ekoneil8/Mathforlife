@@ -222,15 +222,397 @@ and the future value of the second plan is
 	<p>
 		An <term>amortized loan</term> is mathematically equivalent to a payout annuity, but instead of the consumer making a lump sum deposit and receiving payments, they receive a lump sum loan and make regular payments to the lender. The roles of the consumer and lender are just reversed.
 	</p>
-	
- </subsection>
- <subsection xml:id="subsec-finance-annuity-loan-formula-derivations">
-	<title>Formula Derivations</title>
-<subsubsection xml:id="subsubsec-finance-annuity-loan-formula-derivations-savingsanuity">
-	<title>Savings Annuity Formula</title>
+	<assemblage xml:id="assemblage-amortized-loan">
+		<title>Amortized Loan Formulas</title>
+		<p>
+			The size of the regular payment on an amortized loan is found using the formula
+			<me>
+				d=\frac{P\cdot \frac{r}{n}}{1-\left(1+\frac{r}{n}\right)^{-nt}}
+			</me>
+			and the loan amount is found using the formula
+			<me>
+				P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}
+			</me>
+						where
+			<ul>
+				<li>
+					<term>P</term> is the present value of the loan, which is the amount borrowed,,
+				</li>
+				<li>
+					<term>d</term> is the amount of each regular payment,
+				</li>
+				<li>
+					<term>r</term> is the nominal interest rate,
+				</li>
+				<li>
+					<term>n</term> is the number of compounding periods per year, and
+				</li>
+				<li>
+					<term>t</term> is the number of years.
+				</li>
+			</ul>
+		</p>
+		<p>
+			The number of compounding periods per year is equal to the number of payments per year.
+		</p>
+	</assemblage>
 	<p>
-		
+		Most bank loans are amortized, including amortized loans used to purchase a house, which are called mortgages, automobile loans, student loans, and personal loans.
 	</p>
+	<example>
+		<statement>
+			<p>
+				A car loan of $25,000 is to be paid off in 5 years with monthly payments. If the interest rate is 6% compounded monthly, what will the monthly payment be, what is the total paid over the life of the loan, and how much interest will be paid?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				We are given the present value of the loan, <m>P=25,000</m>, the nominal interest rate, <m>r=0.06</m>, the number of compounding periods per year, <m>n=12</m>, and the number of years, <m>t=5</m>. Substituting these values into the formula for the regular payment amount on a payout annuity gives
+				<me>
+					d=\frac{25,000\cdot \frac{0.06}{12}}{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 5}}\approx \$483.32.
+				</me>
+				The monthly payment will be approximately $483.32. The total paid over the life of the loan is $483.32\cdot 12\cdot 5=$28,999.20, and the total interest paid is $28,999.20 - $25,000 = $3,999.20.
+			</p>
+		</solution>
+	</example>
+	<p>
+		Longer-term loans will tend to have more interest paid over the life of the loan. In the next example, we will compare a 15-year mortgage, a 30-year mortgage, and a 50-year mortgage. As of this writing, 50-year mortgages are not generally available in the United States, but they have been considered by the federal government as a way to make monthly payments more affordable for homebuyers.
+	</p>
+	<example>
+		<statement>
+			<p>
+				For a $400,000 mortgage with an interest rate of 5%, find the monthly payment, total paid over the life of the loan, and total interest paid if the loan is for 15 years, 30 years, and 50 years.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				For the 15-year mortgage, we have <m>P=400,000</m>, <m>r=0.05</m>, <m>n=12</m>, and <m>t=15</m>. Substituting these values into the formula for the regular payment amount gives
+				<me>
+					d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 15}}\approx \$3,163.17.
+				</me>
+				The total paid over the life of the loan is $3,163.17\cdot 12\cdot 15=$569,370.60, and the total interest paid is $569,370.60 - $400,000 = $169,370.60.
+			</p>
+			<p>
+				For the 30-year mortgage, we have <m>P=400,000</m>, <m>r=0.05</m>, <m>n=12</m>, and <m>t=30</m>. Substituting these values into the formula for the regular payment amount gives
+				<me>
+					d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 30}}\approx \$2,147.29.
+				</me>
+				The total paid over the life of the loan is $2,147.29\cdot 12\cdot 30=$773,024.40, and the total interest paid is $773,024.40 - $400,000 = $373,024.40.
+			</p>
+			<p>
+				For the 50-year mortgage, we have <m>P=400,000</m>, <m>r=0.05</m>, <m>n=12</m>, and <m>t=50</m>. Substituting these values into the formula for the regular payment amount gives
+				<me>
+					d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 50}}\approx \$1,816.56.
+				</me>
+				The total paid over the life of the loan is $1,816.56\cdot 12\cdot 50=$1,089,936.00, and the total interest paid is $1,089,936.00 - $400,000 = $689,936.00.
+			</p>
+
+		</solution>
+	</example>
+				<p>
+				The results of the above example are summarized in the table below:
+				
+					
+				<table>
+				<tabular column-headers="yes">
+					<row header="yes">
+						<cell>Loan Term</cell>
+						<cell>Monthly Payment</cell>
+						<cell>Total Paid</cell>
+						<cell>Total Interest Paid</cell>
+					</row>
+					<row>
+						<cell>15 years</cell>
+						<cell halign="right">$3,163.17</cell>
+						<cell halign="right">$569,370.60</cell>
+						<cell halign="right">$169,370.60</cell>
+					</row>
+					<row>
+						<cell>30 years</cell>
+						<cell halign="right">$2,147.29</cell>
+						<cell halign="right">$773,024.40</cell>
+						<cell halign="right">$373,024.40</cell>
+					</row>
+					<row>
+						<cell>50 years</cell>
+						<cell halign="right">$1,816.56</cell>
+						<cell halign="right">$1,089,936.00</cell>
+						<cell halign="right">$689,936.00</cell>
+					</row>
+				</tabular>
+				</table>
+				
+			</p>
+			<p>
+				The most common mortgage term is the 30-year loan. Note that the monthly payment for a 15-year loan is about 47% higher but the total interest paid is about 55% lower as compared to the 30-year loan. When comparing the 50-year loan to the 30-year loan, the monthly payment is about 15% lower but the total interest paid is about 85% higher.
+			</p>
+			<p>
+				Mortgage rates for 15-year loans are typically lower than those of 30-year loans, so the savings in selecting a 15-year loan can be even greater than is shown above.
+			</p>
+			<example>
+				<statement>
+					<p>
+						At a particular bank, the interest rate on a 15-year mortgage is 5.625% while the interest rate on a 30-year mortgage is 6.625%. Find the monthly payment for a $570,000 mortgage for both the 15-year and 30-year options.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						For the 15-year mortgage, we have <m>P=570,000</m>, <m>r=0.05625</m>, <m>n=12</m>, and <m>t=15</m>. Substituting these values into the formula for the regular payment amount gives
+						<me>
+							d=\frac{570,000\cdot \frac{0.05625}{12}}{1-\left(1+\frac{0.05625}{12}\right)^{-12\cdot 15}}\approx \$4,695.27.
+						</me>
+						The monthly payment for the 15-year mortgage is approximately $4,695.27.
+					</p>
+					<p>
+						For the 30-year mortgage, we have <m>P=570,000</m>, <m>r=0.06625</m>, <m>n=12</m>, and <m>t=30</m>. Substituting these values into the formula for the regular payment amount gives
+						<me>
+							d=\frac{570,000\cdot \frac{0.06625}{12}}{1-\left(1+\frac{0.06625}{12}\right)^{-12\cdot 30}}\approx \$3,649.77.
+						</me>
+						The monthly payment for the 30-year mortgage is approximately $3,649.77.
+					</p>
+				</solution>
+			</example>
+			<p>
+				When purchasing a home, the homebuyer typically makes a down payment, which is a portion of the purchase price paid at the time of purchase. It is common for lenders to require a minimum down payment of 20% of the purchase price, and borrowers who cannot afford this much money upfront may be required to an extra monthly fee for private mortgage insurance (PMI). The homebuyer then takes out a mortgage for the remaining amount. The down payment is not part of the mortgage, so it is not included in the present value of the loan when calculating the monthly payment.
+			</p>
+			<example>
+				<statement>
+					<p>
+						A homebuyer is purchasing a house for $400,000 and they will make a 20% down payment to avoid private mortgage insurance (PMI). If the interest rate on the mortgage is 5% compounded monthly and the loan term is 30 years, what will the monthly payment be?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The down payment is 20% of $400,000, which is $80,000. The amount of the mortgage is the purchase price minus the down payment, which is $400,000 - $80,000 = $320,000. We are given the present value of the loan, <m>P=320,000</m>, the nominal interest rate, <m>r=0.05</m>, the number of compounding periods per year, <m>n=12</m>, and the number of years, <m>t=30</m>. Substituting these values into the formula for the regular payment amount on a payout annuity gives
+						<me>
+							d=\frac{320,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 30}}\approx \$1,717.83.
+						</me>
+						The monthly payment will be approximately $1,717.83.
+					</p>
+				</solution>
+			</example>
+
+			<p>
+				A potential homebuyer may know how much they can afford to spend on a mortgage, after accounting for other costs of home ownership, and want to know how much they can borrow. The next example demonstrates how this can be calculated.
+			</p>
+			<example>
+				<statement>
+					<p>
+						A homebuyer has saved $50,000 for a down payment and can afford to spend $2,500 per month on a mortgage. If the interest rate is 5% compounded monthly and the loan term is 30 years, what is the most expensive house they can buy?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						We are given the monthly payment amount, <m>d=2,500</m>, the nominal interest rate, <m>r=0.05</m>, the number of compounding periods per year, <m>n=12</m>, and the number of years, <m>t=30</m>. Substituting these values into the formula for the present value of a payout annuity gives
+						<me>
+							P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}.
+						</me>
+						Substituting the values gives
+						<me>
+							P=\frac{2,500\left(1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 30}\right)}{\frac{0.05}{12}}\approx \$465\,704.04
+						</me>
+						The homebuyer can borrow approximately $465,704.04. Adding the down payment of $50,000 gives a total of approximately $515,704.04 for the most expensive house they can buy.
+					</p>
+				</solution>
+			</example>
+			<p>
+				In <xref ref="subsec-finance-simple-amortized"/>, we filled in an amortization tables for loans when the payment amount was given. Now we have the tools to calculate the payment amount before completing the amortization table.
+			</p>
+			<example>
+				<statement>
+					<p>
+						Find the monthly payment on a $25,000 car loan with an interest rate of 6% compounded monthly that is to be paid off in 3 years. Then complete the amortization table for the first four payments.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						We are given the present value of the loan, <m>P=25,000</m>, the nominal interest rate, <m>r=0.06</m>, the number of compounding periods per year, <m>n=12</m>, and the number of years, <m>t=3</m>. Substituting these values into the formula for the regular payment amount on a payout annuity gives
+						<me>
+							d=\frac{25,000\cdot \frac{0.06}{12}}{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 3}}\approx \$760.55.
+						</me>
+						The monthly payment will be approximately $760.55.
+					</p>
+					<p>
+						Now we can complete the amortization table as in <xref ref="subsec-finance-simple-amortized"/>. 
+					</p>
+					<table>
+						<title>Amortization Table</title>
+						<tabular>
+							<row header="yes">
+								<cell>Payment</cell>
+								<cell>Payment Amount</cell>
+								<cell>Interest</cell>
+								<cell>Principal</cell>
+								<cell>Balance</cell>
+							</row>
+							<row>
+								<cell>1</cell>
+								<cell halign="right">$760.55</cell>
+								<cell halign="right">$125.00</cell>
+								<cell halign="right">$635.55</cell>
+								<cell halign="right">$24,364.45</cell>
+							</row>
+							<row>
+								<cell>2</cell>
+								<cell halign="right">$760.55</cell>
+								<cell halign="right">$121.82</cell>
+								<cell halign="right">$638.73</cell>
+								<cell halign="right">$23,725.72</cell>
+							</row>
+							<row>
+								<cell>3</cell>
+								<cell halign="right">$760.55</cell>
+								<cell halign="right">$118.63</cell>
+								<cell halign="right">$641.92</cell>
+								<cell halign="right">$23,083.80</cell>
+							</row>
+							<row>
+								<cell>4</cell>
+								<cell halign="right">$760.55</cell>
+								<cell halign="right">$115.42</cell>
+								<cell halign="right">$645.13</cell>
+								<cell halign="right">$22,438.67</cell>
+							</row>
+						</tabular>
+					</table>
+					<p>
+						A complete amortization table could be created using a spreadsheet.
+					</p>
+				</solution>
+			</example>
+			<note>
+				<p>
+					The monthly cost of home ownership includes more than just the mortgage payment. Typically, the lender will handle payments of property taxes and homeowner's insurance, and these costs are added on to the monthly amount that the homeowner pays.
+				</p>
+				<p>
+					Homeowners are also responsible for maintenance, repairs, and any homeowners association fees.
+				</p>
+			</note>
+		</subsection>
+		 <subsection xml:id="subsec-finance-annuity-loan-formula-derivations">
+			<title>Formula Derivations</title>
+<subsubsection xml:id="subsubsec-finance-annuity-loan-formula-derivations-savingsanuity">
+	<title>Savings Annuity Formulas</title>
+	<p>
+		To derive the future value of a savings annuity formula, we start with the compound interest formula for a single deposit:
+		<me>
+	A = P\left(1+\frac{r}{n}\right)^{nt}
+		</me>
+	where <m>P</m> is the initial deposit, <m>r</m> is the nominal interest rate, <m>n</m> is the number of compounding periods per year, and <m>t</m> is the number of years. We will consider each payment made to the account as a separate deposit, and then sum the future values of all the deposits to get the total future value of the annuity.
+	</p>
+	<p>
+		Suppose we have a 6-month savings annuity with monthly payments of $100, a nominal interest rate of 12% compounded monthly, and a total of 6 payments. The first payment is deposited at the beginning of the first month, so it will earn interest for 5 only months. The future value of the first payment is
+<me>
+	A_1 = 100\left(1+\frac{0.12}{12}\right)^{12\cdot \frac{5}{12}}=100(1.01)^{5}\approx \$105.10
+</me>
+Similarly, the second payment will earn interest for 4 months, the third payment will earn interest for 3 months, the fourth payment will earn interest for 2 months, the fifth payment will earn interest for 1 month, and the sixth payment will not earn any interest. The future value of the annuity is the sum of the future values of all six payments:
+<me>
+	A = 100(1.01)^{5} + 100(1.01)^{4} + 100(1.01)^{3} + 100(1.01)^{2} + 100(1.01)^{1} + 100.
+</me>
+We will use a clever trick and multiply both sides of the equation by <m>1.01</m> to get
+<me>
+	1.01A = 100(1.01)^{6} + 100(1.01)^{5} + 100(1.01)^{4} + 100(1.01)^{3} + 100(1.01)^{2} + 100(1.01)^{1}.
+</me>
+Now we subtract the expression for <m>A</m> from the expression for <m>1.01A</m> to get:
+<md>
+	<mrow> 1.01A - A = 100(1.01)^{6}\amp +100(1.01)^{5}+100(1.01)^{4}+100(1.01)^{3}+100(1.01)^{2}+100(1.01)^{1}</mrow>
+	<mrow> \amp -100(1.01)^{5} - 100(1.01)^{4} -100(1.01)^{3} - 100(1.01)^{2} - 100(1.01)^{1} - 100.</mrow>
+</md>
+The left-hand side simplifies to <m>0.01A</m>, and the right-hand side simplifies to <m>100( (1.01)^{6} - 1 )</m>, so we have
+<me>
+	0.01A = 100( (1.01)^{6} - 1 ).
+</me>
+Now solving for <m>A</m> gives
+<me>
+	A = \frac{100\left((1.01)^{6} - 1\right)}{0.01}.
+</me>
+which aligns with the future value of an annuity formula <m>A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\frac{r}{n}}</m> when we substitute <m>d=100</m>, <m>r=0.12</m>, <m>n=12</m>, and <m>t=\frac{6}{12}</m>.
+	</p>
+	<p>
+		This process can be generalized to derive the future value of an annuity formula for any number of payments, any payment amount, any interest rate, and any compounding frequency. The payment size was $100, and we can replace it with a variable, <m>d</m>. The base of the exponent was <m>1.01</m> which was found using the formula <m>1+\frac{r}{n}</m>, and we can replace it with the general expression. The number of payments was 6, and we can replace it with the general expression for the total number of payments, <m>nt</m>. This gives us the future value of an annuity formula:
+<me>
+	A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\frac{r}{n}}.
+</me>
+	</p>
+
+	<p>
+		The formula for the deposit amount is derived by solving the future value of an annuity formula for <m>d</m>. We multiply both sides of the future value of an annuity formula by <m>\frac{r}{n}</m> and divide by <m>\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)</m> to get
+<me>
+	d=\frac{A\cdot \frac{r}{n}}{\left(1+\frac{r}{n}\right)^{nt}-1}.
+</me>	
+	</p>
+
+</subsubsection>
+<subsubsection xml:id="subsubsec-finance-annuity-loan-derivation-loan">
+	<title>Payout Annuity and Amortized Loan Formula</title>
+	<p>
+		We will start by considering a $1,000 payout annuity that will be paid off in four yearly payments with an interest rate of 8% compounded annually and determine what monthly payment will result in the account being empty after the fourth payment.
+	</p>
+	<p>
+		The account starts with $1,000. At the end of the first year, the account will earn 8% interest and then the first payment will be made. We are trying to find the payment amount, so we will call it <m>d</m>. Recall that adding 8% interest is the same as multiplying by 1.08, so the account balance after the first year will be <me>A_1 = 1000\cdot 1.08 - d.</me>
+	</p>
+	<p> The account will earn 8% interest and then the second payment will be made. The account balance after the second year will be 
+		<me>A_2 = A_1\cdot 1.08 - d=(1000\cdot 1.08 - d)\cdot 1.08 - d=1000(1.08)^2 - d(1.08) - d.</me>
+		The account will earn 8% interest and then the third payment will be made. The account balance after the third year will be
+		<me>A_3 = A_2\cdot 1.08 - d = (1000(1.08)^2 - d(1.08) - d)\cdot 1.08 - d=1000(1.08)^3 - d(1.08)^2 - d(1.08) - d.</me>
+		Notice the pattern that after each subsequent year, each term is multiplied by 1.08 and then the payment is subtracted, so the account balance after the fourth year will be
+		<me>A_4 = A_3\cdot 1.08 - d = 1000(1.08)^4 - d(1.08)^3 - d(1.08)^2 - d(1.08) - d.</me>
+We want the account to be empty after the fourth payment, so we set <m>A_4=0</m> and solve for <m>d</m>:
+<me>
+	0 = 1000(1.08)^4 - d(1.08)^3 - d(1.08)^2 - d(1.08) - d.
+</me>
+This can be rewritten as
+<me>
+	d(1.08)^3 + d(1.08)^2 + d(1.08) + d = 1000(1.08)^4.
+</me>
+Notice that the left-hand side is the future value of an annuity with payment amount <m>d</m>, interest rate 8% compounded annually, and 4 payments, so we can use the future value of an annuity formula to rewrite the left-hand side as
+<me>
+	d\cdot \frac{\left(1+\frac{0.08}{1}\right)^{1\cdot 4}-1}{\frac{0.08}{1}}=1000(1.08)^4.
+</me>
+Now we can solve for <m>d</m> to get
+<me>
+	d=\frac{1000(1.08)^4\cdot \frac{0.08}{1}}{\left(1+\frac{0.08}{1}\right)^{1\cdot 4}-1}.
+</me>
+
+</p>
+<p>
+	We can generalize by making the following replacements:
+	<ul>
+		<li>
+			<p>
+				The initial amount of $1,000 ie the the present value, <m>P</m>.
+			</p>
+		</li>
+		<li>
+			<p>
+				The value of 0.08 is the periodic interest rate, <m>\frac{r}{n}</m>.
+			</p>
+		</li>
+		<li>
+			<p>
+				The value of 1.08 is found using the formula <m>1+\frac{r}{n}</m>, so we can replace it with the general expression <m>\left(1+\frac{r}{n}\right)</m>.
+			</p>
+		</li>
+		<li>
+			<p>
+				The exponent 4 is the total number of payments, <m>nt</m>.
+			</p>
+		</li>
+	</ul>
+</p>
+<p>
+	These replacements give us the formula for the regular payment amount on a payout annuity or amortized loan:
+<me>
+	d=\frac{P\cdot \frac{r}{n}}{1-\left(1+\frac{r}{n}\right)^{-nt}}.
+</me>	
+</p>
+<p>
+	To find the present value of a payout annuity or amortized loan, we can solve the formula for the regular payment amount for <m>P</m> to get
+<me>
+	P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}.
+</me>
+</p>
 </subsubsection>
 </subsection>
 </section>
+

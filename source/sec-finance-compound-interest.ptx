@@ -470,7 +470,7 @@
 		<md>
 			<mrow>A \amp= P\left(1+\frac{r}{n}\right)^{nt}</mrow>
 			<mrow>10000\amp=5000\left(1+\frac{0.05}{1}\right)^{1\cdot t}</mrow>
-			<mrow>1000\amp=5000(1.05)^{t}</mrow>
+			<mrow>10000\amp=5000(1.05)^{t}</mrow>
 			<mrow>2\amp=(1.05)^{t}</mrow>
 			<mrow>\log(2) \amp= \log\left((1.05)^{t}\right) </mrow>
 			<mrow>\log(2)\amp=t\cdot \log(1.05)</mrow>
