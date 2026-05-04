@@ -3,13 +3,13 @@
 <section xml:id="sec-finance-compound-interest" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Compound Interest</title>
 
-  <p> </p>
+  <p>
+		In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest. This reinvestment of interest is called <alert>compounding</alert>. We will develop the mathematical formula for compound interest and then show the equivalent spreadsheet function.
+	</p>
 
   <subsection>
 	<title>Introduction to Compound Interest</title>
-	<p>
-		In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest. This reinvestment of interest is called <alert>compounding</alert>. We will develop the mathematical formula for compound interest and then show the equivalent spreadsheet function.
-	</p>
+	
 	<p>
 		Suppose that we deposit $1000 in a bank account offering 3% interest, compounded monthly. How will our money grow?
 	</p>
@@ -241,19 +241,19 @@
 	<p>
 		The most important thing to remember about using this formula is that it assumes that we put money in the account <alert><insert>once</insert></alert> and let it sit there earning interest.
 	</p>
-</subsection>
-<subsection>
+
+<subsubsection>
 <title>Comparing Simple and Compound Interest</title>
 	<p>
-		Let us compare the amount of money earned from compounding in the previous example against the amount you would earn from simple interest. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. You may recognize this as the difference between linear growth and exponential growth.
+		Let us compare the amount of money earned from compounding in the previous example against the amount you would earn from simple interest. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. 
 	</p>
-	<!-- Note: widths are set to make pdf look good, not as good for web version -->
-	<sidebyside valign="bottom" widths="60% 36%" margins="0%">
+
+
 		<tabular row-headers="yes">
 		<row header="yes">
 			<cell>Year</cell>
-			<cell><line>Simple Interest</line><line>($15 per month)</line></cell>
-			<cell><line>Compound Interest (6% compounded</line><line>monthly or 0.5% each month</line></cell>
+			<cell>Simple Interest Future Value</cell>
+			<cell>Compound Interest Future Value</cell>
 		</row>
 		<row>
 			<cell>0</cell>
@@ -296,10 +296,14 @@
 			<cell>$24,370.65</cell>
 		</row>
 	</tabular>
-	<image source="images/compound-versus-simple-interest.png">
+	<image source="images/compound-versus-simple-interest.png" width="50%">
 	<shortdescription>A coordinate graph with years on the x-axis and account balance on the y-axis. The simple interest increases in a straight line; the compound interest curves up faster because it is an exponential function.</shortdescription>
 	</image>
-</sidebyside>
+	<p>
+		You may have observed that simple interest has linear growth while compound interest has exponential growth. This is because with simple interest, the <em>amount</em> of interest earned each year is the same. While simple interest is based on a percentage, that percentage is calculated only once on the original amount and the amount of increase each year remains constant. With compound interest, the <em>percentage</em> of interest is applied each period, so the amount of interest earned each year increases as the account balance increases.
+	</p>
+
+</subsubsection>
 </subsection>
 <subsection>
   <title>Applications of Compound Interest</title>
@@ -309,7 +313,8 @@
     <p>
 			A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate than regular savings accounts, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?
 		</p>
-		
+		</statement>
+		<solution>
 		
 		<p>
 			<m>P = \$3\,000</m>, the initial deposit
@@ -332,11 +337,68 @@
 <p>
   Therefore, we will end up with approximately $9,930.61 after 20 years.
 </p>
-</statement>
+</solution>
 </example>
 
-
-
+<p>
+	In the example above, an initial deposit of $3,000 grew to $9,930.61 in 20 years. The difference between these two amounts, $6,930.61, is the amount of interest earned on the initial deposit. This is more than double the original deposit!
+</p>
+<example>
+	<statement>
+		<p>
+			If you deposit $20,000 in a CD paying 4% APR, compounded quarterly, how much interest will you earn in 5 years?
+		</p>
+		</statement>
+		<solution>
+		<p>
+			<m>P = \$20\,000</m>, the initial deposit
+		</p>
+		<p>
+			<m>r = 0.04</m>, 4% annual rate
+		</p>
+		<p>
+			<m>n = 4</m>, 4 quarters in 1 year
+		</p>
+		<p>
+			<m>t = 5</m>, since we're looking for how much we'll have after 5 years
+		</p>
+		<p>
+			<me>
+				A=P\left(1+\frac{r}{n}\right)^{nt}=20000\left(1+\frac{0.04}{4}\right)^{4\cdot 5}\approx\$24{,}403.80
+			</me>
+		</p>
+		<p>
+			The amount of interest earned is the final balance minus the initial deposit, which is the difference between the starting value of $20,000 and the final value of $24,403.80. Therefore, the interest earned is $4,403.80.
+		</p>
+	</solution>
+	
+</example>
+<example>
+	<statement>
+		<p>
+			What is the future value of a $5000 deposit in an account that pays 3% APR compounded monthly after 5 months?
+		</p>
+	</statement>
+		<solution>
+			<p>
+				Using the compound interest formula, we have
+			</p>
+			<md>
+				<mrow>A\amp= P\left(1+\frac{r}{n}\right)^{nt}</mrow>
+				<mrow>A\amp=5000\left(1+\frac{0.03}{12}\right)^{12\cdot \frac{5}{12}}</mrow>
+					<mrow>A\amp=5000\left(1+\frac{0.03}{12}\right)^{5} </mrow>
+				<mrow>A\amp\approx\$5062.80</mrow>
+			</md>
+			<p>
+				The future value of the $5000 deposit after 5 months is approximately $5062.80.
+			</p>
+			<p>
+			Notice that the time was given in months, so we converted it to years to obtain <m>t=\frac{5}{12}</m>; then the exponent became <m>12\cdot\frac{5}{12}=5</m>.	However, we could have also remembered that the exponent is always equal to the number of compounding periods and directly entered the exponent as 5 without converting the time to years first.
+			</p>
+		</solution>
+		
+	
+</example>
 
 	<p>
 		When we know the amount of money we want to have in the future, we can use the formula that is solved for <em>P</em>.
@@ -370,7 +432,7 @@
 			<m>A = \$40{,}000</m>, the amount we have in 18 years
 		</p>
 		<p>
-			<me>P=A\left(1+\frac{r}{n}\right)^{-nt}\right)=40000\left(1+\frac{0.04}{4}\right)^{-4\cdot 18}\approx\$19{,}539.84</me>
+			<me>P=A\left(1+\frac{r}{n}\right)^{-nt}=40000\left(1+\frac{0.04}{4}\right)^{-4\cdot 18}\approx\$19{,}539.84</me>
 		</p>
 
 		<p>
@@ -378,6 +440,9 @@
 		</p>
 	</solution>
 	</example>
+	<p>
+		In the examples below, we will need to set up and solve algebraic equations to solve for the time or rate.
+	</p>
 	<example>
 		<title>Solving for the Time</title>
 		<statement>
@@ -436,21 +501,21 @@
 				<mrow>\frac{10}{3}\amp=\left(1+\frac{0.05}{12}\right)^{12t}</mrow>
 				<mrow>\log \left(\frac{10}{3}\right) \amp= \log\left(\left(1+\frac{0.05}{12}\right)^{12t}\right) </mrow>
 				<mrow>\log\left(\frac{10}{3}\right)\amp=12t \cdot\log\left(1+\frac{0.05}{12}\right)</mrow>
-				<mrow>t\amp=\frac{\log\left(\frac{10}{3}\right)}{12\log\left(1+\frac{0.05}{12}\right)}\approx14.87</mrow>
+				<mrow>t\amp=\frac{\log\left(\frac{10}{3}\right)}{12\log\left(1+\frac{0.05}{12}\right)}\approx24.13</mrow>
 			</md>
 			<p>
-				It will take approximately 14.87 years to reach your goal of $10,000.
+				It will take approximately 24.13 years to reach your goal of $10,000.
 			</p>
 		</solution>
 	</example>
 	<p>
-		When solving for the interest rate, the exponent will be a number, not a variable, so we will use radicals instead of logarithms in the solution.
+		In the example above, we used logarithms to solve for the equation because the variable was in the exponent. When solving for the interest rate, the variable is in the base of the exponent, so we will use radicals instead of logarithms in the solution.
 	</p>
 	<example>
 		<title>Solving for the Interest Rate</title>
 		<statement>
 			<p>
-				You want to have $15,000 in an account that pays interest compounded annually. If you deposit $3,000 now and want to reach your goal in 15 years, what interest rate do you need?
+				You want to have $15,000 in an account that pays interest compounded annually. If you deposit $3,000 now and want to reach your goal in 15 years, what interest rate do you need? Round to the nearest hundredth of a percent.
 			</p>
 		</statement>
 		<solution>
@@ -463,10 +528,40 @@
 				<mrow>5 \amp= (1+r)^{15}</mrow>
 				<mrow>\sqrt[15]{5} \amp= 1+r</mrow>
 				<mrow>r \amp= \sqrt[15]{5} - 1</mrow>
-				<mrow>r \amp\approx 0.1072 \text{ or } 10.72\%</mrow>
+				<mrow>r \amp\approx 0.1133 \text{ or } 11.33\%</mrow>
 			</md>
 			<p>
-				You would need an interest rate of approximately 10.72% to reach your goal.
+				You would need an interest rate of approximately 11.33% to reach your goal.
+			</p>
+			<p>
+				<em>Note:</em> If your calculator does not have a key for the nth root, you can use the fact that the 15th root of 5 is the same as 5 raised to the power of <m>\frac{1}{15}</m>. This is entered as <m>5\text{^}{\left(1\div 15\right)}</m>.
+			</p>
+		</solution>
+	</example>
+	<p>
+		In the previous example, the compounding was done annually and the ending value was a multiple of the starting value, so we were able to simplify the equation to <m>5=(1+r)^{15}</m> before taking the 15th root. If the compounding is done more frequently or the ending value is not a nice round number, we can still use radicals to solve for the unknown variable; we will just leave the base in the form <m>1+\frac{r}{n}</m> as seen in the next example.
+	</p>
+	<example>
+		<statement>
+			<p>
+				What interest rate is required for an initial investment of $3,000 to reach a value of $11,000 in 15 years if interest is compounded monthly? Round to the nearest hundredth of a percent.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Using the compound interest formula, we have
+			</p>
+			<md>
+				<mrow>A \amp= P\left(1+\frac{r}{n}\right)^{nt} </mrow>
+				<mrow>11000 \amp= 3000\left(1+\frac{r}{12}\right)^{12 \cdot 15} </mrow>
+				<mrow>\frac{11}{3} \amp= \left(1+\frac{r}{12}\right)^{180} </mrow>
+				<mrow>\sqrt[180]{\frac{11}{3}} \amp= 1+\frac{r}{12} </mrow>
+				<mrow>\frac{r}{12} \amp= \sqrt[180]{\frac{11}{3}} - 1 </mrow>
+				<mrow>r \amp= 12\left(\sqrt[180]{\frac{11}{3}} - 1\right) </mrow>
+				<mrow>r \amp\approx 0.0869 \text{ or } 8.69\% </mrow>
+			</md>
+			<p>
+				You would need an interest rate of approximately 8.69% to reach your goal.
 			</p>
 		</solution>
 	</example>
@@ -565,9 +660,9 @@
 		</p>
 		<p>
 			To find the percentage of the final balance that is interest, we divide the amount of interest by the total amount.
-			<md>
-			<mrow>\frac{\$849.11}{\$4{,}849.11}\approx0.1751\text{ or } 17.5\%</mrow>
-		</md>
+			<me>
+			\frac{\$849.11}{\$4{,}849.11}\approx0.1751\text{ or } 17.5\%
+		</me>
 		</p>
 	</solution>
 	</example>
@@ -606,9 +701,9 @@ which simplifies to
 		<solution>
 			<p>
 				Using the formula for APY, we have
-				<md>
+				<me>
 					APY=\left(1+\frac{0.045}{12}\right)^{12}\approx 0.04594\text{ or }4.59\%
-				</md>
+				</me>
 				
 			</p>
 		</solution>
@@ -616,20 +711,20 @@ which simplifies to
 	<example>
 		<statement>
 			<p>
-				Which is a better deal: 4.5%  with monthly compounding or 4.6% with quarterly compounding?
+				Which is a better deal: 10.5%  with daily compounding or 10.6% with quarterly compounding?
 			</p>
 		</statement>
 		<solution>
 			<p>
-				We calculate the APY for each account. For the 4.5% APR compounded monthly, we have
-				<md>
-					APY=\left(1+\frac{0.045}{12}\right)^{12}\approx 0.04594\text{ or }4.59\%
-				</md>
-				and for the 4.6% APR compounded quarterly, we have
-				<md>
-					APY=\left(1+\frac{0.046}{4}\right)^{4}\approx 0.04678\text{ or }4.68\%
-				</md>
-				
+				We calculate the APY for each account. For the 10.5% APR compounded daily, we have
+				<me>
+					APY=\left(1+\frac{0.105}{365}\right)^{365}\approx 0.11069\text{ or }11.07\%
+				</me>
+				and for the 10.6% APR compounded quarterly, we have
+				<me>
+					APY=\left(1+\frac{0.106}{4}\right)^{4}\approx 0.11029\text{ or }11.03\%
+				</me>
+			The account with 10.5% APR compounded daily has a higher APY, so it is the better deal.	
 			</p>
 		</solution>
 	</example>
@@ -642,142 +737,26 @@ which simplifies to
 		</statement>
 		<solution>
 			<p>
-				We know that the APY for 4.6% with quarterly compounding is approximately 4.68%. We want to find the nominal interest rate, <m>r</m>, with monthly compounding that gives us the same APY. Using the APY formula, we have
+				To solve this, we set the APY for the monthly compounding in terms of <m>r</m> equal to the APY for the quarterly compounding with <m>r=4.6\%</m> and solve for <m>r</m>.
 				<md>
-					0.04678=\left(1+\frac{r}{12}\right)^{12}-1
+					<mrow>\left(1+\frac{r}{12}\right)^{12}-1 \amp =\left(1+\frac{0.046}{4}\right)^{4}-1 </mrow>
+					<mrow>\left(1+\frac{r}{12}\right)^{12} \amp =\left(1+\frac{0.046}{4}\right)^{4} </mrow>
+					<mrow>\sqrt[12]{\left(1+\frac{r}{12}\right)^{12}} \amp =\sqrt[12]{\left(1+\frac{0.046}{4}\right)^{4}} </mrow>
+					<mrow>1+\frac{r}{12} \amp =\sqrt[12]{\left(1+\frac{0.046}{4}\right)^{4}} </mrow>
+					<mrow>\frac{r}{12} \amp =\sqrt[12]{\left(1+\frac{0.046}{4}\right)^{4}} - 1 </mrow>
+					<mrow>r \amp = 12\left(\sqrt[12]{\left(1+\frac{0.046}{4}\right)^{4}} - 1\right) </mrow>
+					<mrow>r \amp\approx 0.0459 \text{ or } 4.59\%</mrow>
 				</md>
-				Solving for <m>r</m>, we get <m>r\approx0.0455\text{ or }4.55\%</m>.
+				
+			</p>
+				
+			<p>
+				Therefore, a nominal interest rate of approximately 4.59% with monthly compounding would give the same APY as 4.6% with quarterly compounding.
 			</p>
 		</solution>
 	</example>
 	
-	<assemblage>
-		<title>Effective Rate Formula</title>
-		<p>
-			<cd>=EFFECT(stated rate, number of compounding periods)</cd>
-		</p>
-		<p>
-		<dl width="narrow">
-			<li>
-				<title>stated rate</title>
-				<p>
-					is the interest rate given (APR)
-				</p>
-			</li>
-			<li>
-				<title>number of compounding periods</title>
-				<p>
-					is the number of times the account is compounded per year, <m>n</m>
-				</p>
-			</li>
-		</dl>  
-		</p>
-	</assemblage>
-
-	<example>
-		<statement>
-		<p>
-			You are comparing an account that pays 5.25% APR compounded monthly, with an account that pays 5% APR compounded daily. Which account will earn you more interest?
-		</p>
-		</statement>
-		<solution>
-		<p>
-			It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.
-		</p>
-
-		<p>
-			For the 5.25% APR account compounded monthly:
-		</p>
 	
-		<sidebyside valign="middle" widths="40% 54%" margins="0%">
-			<stack>
-				<p>
-			<cd>=EFFECT(0.0525,12)</cd>
-		</p>
-		<p>
-			which gives 0.05378 or 5.38%
-		</p>
-			</stack>
-			<image source="images/financial_math/2_2/effective_rate1.png">
-			<shortdescription>An image of the spreadsheet showing the formula used and the result.</shortdescription>
-			</image>
-		</sidebyside>
-		<p>
-			For the 5% APR account compounded daily:
-		</p>
-		
-		<sidebyside valign="middle" widths="40% 54%" margins="0%">
-			<stack>
-				<p>
-			<cd>=EFFECT(0.05,365)</cd>
-		</p>
-		<p>
-			which gives 0.05127 or 5.13%
-		</p>
-			</stack>
-			<image source="images/financial_math/2_2/effective_rate2.png">
-			<shortdescription>An image of the spreadsheet showing the formula used and the result.</shortdescription>
-			</image>
-		</sidebyside>
-		
-		<p>
-			Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.
-		</p>
-		</solution>
-	</example>
-
-	<example>
-		<statement>
-		<p>
-			Find the effective rates to compare an account that earns 6% APR compounded quarterly with an account that earns 5.975% APR compounded daily. Which one would you choose?
-		</p>
-		</statement>
-		<solution>
-		<p>
-			Using the effective rate formula for each, we have:
-		</p>
-
-		<p>
-			For the 6% APR account compounded quarterly:
-		</p>
-		
-		<sidebyside valign="middle" widths="40% 54%" margins="0%">
-			<stack>
-				<p>
-			<cd>=EFFECT(0.06,4)</cd>
-		</p>
-		<p>
-			which gives 0.06136 or 6.14%
-		</p>
-			</stack>
-			<image source="images/financial_math/2_2/effective_rate3.png">
-			<shortdescription>An image of the spreadsheet showing the formula used and the result.</shortdescription>
-			</image>
-		</sidebyside>
-
-		<p>
-			For the 5.975% APR account compounded daily:
-		</p>
-		
-		<sidebyside valign="middle" widths="40% 54%" margins="0%">
-			<stack>
-				<p>
-			<cd>=EFFECT(0.05975,365)</cd>
-		</p>
-		<p>
-			which gives 0.06157 or 6.16%
-		</p>
-			</stack>
-			<image source="images/financial_math/2_2/effective_rate4.png">
-			<shortdescription>An image of the spreadsheet showing the formula used and the result.</shortdescription>
-			</image>
-		</sidebyside>
-		
-		<p>
-			The account that was compounded more often has a slightly higher rate in this case.
-		</p>
-	</solution>
-	</example>
 </subsection>
 <subsection xml:id="subsec-finance-compound-spreadsheets">
 	<title>Using Spreadsheets for Compound Interest Applications</title>
@@ -1202,9 +1181,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{483.54}{3{,}483.54} \approx 0.1388 \text{ or } 13.88\%</mrow>
-				</md>
+				<me>
+					\frac{483.54}{3{,}483.54} \approx 0.1388 \text{ or } 13.88\%
+				</me>
 				</p>
 				<p>
 					13.88% of the balance is interest.
@@ -1269,9 +1248,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{188.67}{488.67} \approx 0.3861 \text{ or } 38.61\%</mrow>
-				</md>
+				<me>
+					\frac{188.67}{488.67} \approx 0.3861 \text{ or } 38.61\%
+				</me>
 				</p>
 				<p>
 					The interest makes up 38.61% of the balance.
@@ -1342,9 +1321,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{1{,}641.51}{3{,}641.51} \approx 0.4508 \rightarrow 45.08\%</mrow>
-				</md>
+				<me>
+					\frac{1{,}641.51}{3{,}641.51} \approx 0.4508 \rightarrow 45.08\%
+				</me>
 				</p>
 				<p>
 					The interest is 45.08% of the balance.
@@ -1352,9 +1331,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{2{,}000}{3{,}641.51} \approx 0.5492 \rightarrow 54.92%</mrow>
-				</md>
+				<me>
+					\frac{2{,}000}{3{,}641.51} \approx 0.5492 \rightarrow 54.92%
+				</me>
 				</p>
 				<p>
 					The principal is 54.92% of the balance.
@@ -1424,9 +1403,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{17{,}172.37}{27{,}172.37} \approx 0.632 \rightarrow 63.2\%</mrow>
-				</md>
+				<me>
+					\frac{17{,}172.37}{27{,}172.37} \approx 0.632 \rightarrow 63.2\%
+				</me>
 				</p>
 				<p>
 					The percent that is interest is 63.2%.
@@ -1434,9 +1413,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{10{,}000}{27{,}172.37} \approx 0.368 \rightarrow 36.8\%</mrow>
-				</md>
+				<me>
+					\frac{10{,}000}{27{,}172.37} \approx 0.368 \rightarrow 36.8\%
+				</me>
 				</p>
 				<p>
 					The percentage that is the principal is 36.2%.
@@ -1742,9 +1721,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{1{,}229.56}{3{,}729.56} \approx 0.3297 \rightarrow 32.97\%</mrow>
-				</md>
+				<me>
+					\frac{1{,}229.56}{3{,}729.56} \approx 0.3297 \rightarrow 32.97\%
+				</me>
 				</p>
 				<p>
 					32.97% of the balance is interest.
@@ -1809,9 +1788,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{1{,}368.08}{2{,}368.08} \approx 0.5777 \rightarrow 57.77\%</mrow>
-				</md>
+				<me>
+					\frac{1{,}368.08}{2{,}368.08} \approx 0.5777 \rightarrow 57.77\%
+				</me>
 				</p>
 				<p>
 					The interest is 57.77% of the account balance.
@@ -1876,9 +1855,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>
-				<md>
-					<mrow>\frac{1{,}261.61}{6{,}261.61} \approx 0.2015 \rightarrow 20.15\%</mrow>
-				</md>
+				<me>
+					\frac{1{,}261.61}{6{,}261.61} \approx 0.2015 \rightarrow 20.15\%
+				</me>
 				</p>
 				<p>
 					The interest is 20.15% of the balance.
@@ -1936,9 +1915,9 @@ which simplifies to
 			</li>
 			<li>
 				<p>The difference is:
-				<md>
-					<mrow>17{,}332.53-17{,}081.44=\$251.09</mrow>
-				</md>
+				<me>
+					17{,}332.53-17{,}081.44=\$251.09
+				</me>
 				</p>
 				<p>
 					You have $251.09 more than your friend.
