@@ -68,6 +68,7 @@
 		</li>
 	</ul>
  </p>
+ 
 
 
  <subsection xml:id="subsec-finance-annuity-loan-savings-annuity">
@@ -174,6 +175,56 @@ and the future value of the second plan is
 	<p>
 		In a <term>payout annuity</term>, you make a lump sum deposit into an account that earns compound interest, and then you receive regular payments from the account. Retirees often convert their savings into payout annuities to receive a steady stream of income during retirement. The present value of a payout annuity is the amount of money that must be deposited in the account to ensure that the payments can be made for a certain number of years.
 	</p>
+	<p>
+		To illustrate how a payout annuity works, consider a state lottery prize in which the winner will receive a price of $20,000 paid out in four yearly installments of $5,000 each. The state will deposit just $16,936.06 into an account that earns 7% interest compounded annually. Each year, the account will earn interest on the remaining balance, and the payments will be made from the account. The table below demonstrates how this deposit that is less than $20,000 will be sufficient to cover the four payments of $5,000 each.
+	</p>
+	<table>
+		<title>State Lottery Payout Annuity</title>
+		<tabular>
+			<row header="yes">
+				<cell>Year</cell>
+				<cell>Interest</cell>
+				<cell>Payment</cell>
+				<cell>Balance</cell>
+			</row>
+			<row>
+				<cell>0</cell>
+				<cell></cell>
+				<cell></cell>
+				<cell halign="right">$16,936.06</cell>
+			</row>
+			<row>
+				<cell>1</cell>
+				<cell halign="right">$1,185.52</cell>
+				<cell halign="right">$5,000.00</cell>
+				<cell halign="right">$13,121.58</cell>
+			</row>
+			<row>
+				<cell>2</cell>
+				<cell halign="right">$918.51</cell>
+				<cell halign="right">$5,000.00</cell>
+				<cell halign="right">$9,040.09</cell>
+			</row>
+			<row>
+				<cell>3</cell>
+				<cell halign="right">$632.81</cell>
+				<cell halign="right">$5,000.00</cell>
+				<cell halign="right">$4,672.90</cell>
+			</row>
+			<row>
+				<cell>4</cell>
+				<cell halign="right">$327.10</cell>
+				<cell halign="right">$5,000.00</cell>
+				<cell halign="right">$0.00</cell>
+			</row>
+		</tabular>
+	</table>
+	<p>
+		In the table, each year's interest is equal to 7% of the previous year's balance. The payment of $5,000 is made each year, and the balance is updated by adding the interest and subtracting the payment. At the end of the four years, the balance is zero, and the lottery winner has received $20,000 in payments, even though the initial deposit was only $16,936.06.
+	</p>
+	<p>
+		How does the state know that the initial deposit of $16,936.06 is sufficient to make the four payments of $5,000 each? They can use the formula for the present value of a payout annuity. 
+	</p>
 	<assemblage xml:id="assemblage-finance-annuity-loan-payout">
 		<title>Payout Annuity Formula</title>
 		<p>
@@ -188,10 +239,10 @@ and the future value of the second plan is
 			where
 			<ul>
 				<li>
-					<term>P</term> is the present value of the annuity,
+					<term>P</term> is the present value of the annuity, which is the amount deposited in the account before payouts begin,
 				</li>
 				<li>
-					<term>d</term> is the amount of each regular payment,
+					<term>d</term> is the amount of each regular payout,
 				</li>
 				<li>
 					<term>r</term> is the nominal interest rate,
@@ -205,15 +256,49 @@ and the future value of the second plan is
 			</ul>
 		</p>
 		<p>
-			The number of compounding periods per year is equal to the number of payments per year.
+			The number of compounding periods per year is equal to the number of payouts per year.
+		</p>
+		<p>
+			As with compound interest, the value of <m>nt</m> in the exponent represents the total number of compounding periods or payouts over the life of the annuity.
 		</p>
 	</assemblage>
+	<p>
+		To determine the initial deposit for the lottery payout annuity, we can substitute <m>d=5,000</m>, <m>r=0.07</m>, <m>n=1</m>, and <m>t=4</m> into the formula for the present value of a payout annuity:
+		<me>
+			P=\frac{5,000\left(1-\left(1+\frac{0.07}{1}\right)^{-1\cdot 4}\right)}{\frac{0.07}{1}}\approx \$16,936.06.
+		</me>
+	</p>
+	<p>
+		The derivation of the payout annuity formulas is given at the end of this section. Let's see how find the payment amount for a payout annuity.
+	</p>
 	<p>
 		Consider, for example, a retiree who has $500,000 in savings and wants to convert it into a payout annuity that will provide monthly payments for 25 years. If the account earns 4% interest compounded monthly, the regular payment amount can be found by substituting <m>P=500,000</m>, <m>r=0.04</m>, <m>n=12</m>, and <m>t=25</m> into the formula for the regular payment amount:
 		<me>
 			d=\frac{500,000\cdot \frac{0.04}{12}}{1-\left(1+\frac{0.04}{12}\right)^{-12\cdot 25}}\approx \$2,639.18.
 		</me>
 		The retiree will receive approximately $2,639.18 each month for 25 years, which is a total of$791,754.00 in payments. The $291,754.00 difference between the total payments and the initial deposit is the interest earned on the initial deposit of $500,000.
+	</p>
+	<example>
+		<statement>
+			<p>
+				How much money must be deposited in an account that pays 5% interest compounded monthly to provide monthly payments of $3,000 for 20 years? How much money will be paid out over the life of the annuity, and how much interest will be earned?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				We are given the regular payment amount, <m>d = $3,000</m>, the nominal interest rate, <m>r = 0.05</m>, the number of compounding periods per year, <m>n = 12</m>, and the number of years, <m>t = 20</m>. Substituting these values into the formula for the present value of a payout annuity gives
+				<me>
+					P=\frac{3,000\left(1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 20}\right)}{\frac{0.05}{12}}\approx \$454,575.94.
+				</me>
+				Therefore, approximately $454,575.94 must be deposited in the account.
+			</p>
+			<p>
+				The total paid out over the life of the annuity is <m>$3,000\cdot 12\cdot 20=$720,000</m>, and the total interest earned is <m>$720,000 - $454,575.94 = $265,424.06</m>.
+			</p>
+		</solution>
+	</example>
+	<p>
+		For the purposes of this book, we only address payout annuities with fixed interest rates, fixed payment amounts, and a fixed number of payments. In practice, there are many variations on payout annuities, including those with variable interest rates, variable payment amounts, and a variable number of payments. Some retirement annuities are guaranteed to provide payments for the lifetime of the retiree or the lifetime of the retiree and their spouse. Please do not use the small amount of information provided here as the sole basis for making decisions about retirement annuities.
 	</p>
 	
  </subsection>
@@ -480,6 +565,23 @@ and the future value of the second plan is
 					</p>
 				</solution>
 			</example>
+			<p>
+				Even though there are more columns in the amortization table than in the payout annuity table, the calculation of the balance column is exactly the same. In the payout annuity table the balance calculation for each row is:
+				<me>
+					\text{Previous Balance}+\text{Interest}-\text{Payment}=\text{New Balance}
+				</me>
+				and the balance calculation for the amortization table is:
+				<me>
+					\text{Previous Balance}-\text{Principal}=\text{New Balance}.
+				</me>
+			</p>
+			<p>
+				Since the principal is equal to the payment minus the interest, we can rewrite the balance calculation for the amortization table as
+				<me>
+					\text{Previous Balance}-\left(\text{Payment}-\text{Interest}\right)=\text{Previous Balance}-\text{Payment}+\text{Interest}=\text{New Balance}
+				</me>
+				which is the same as the balance calculation for the payout annuity.
+			</p>
 			<note>
 				<p>
 					The monthly cost of home ownership includes more than just the mortgage payment. Typically, the lender will handle payments of property taxes and homeowner's insurance, and these costs are added on to the monthly amount that the homeowner pays.

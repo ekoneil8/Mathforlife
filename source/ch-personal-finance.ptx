@@ -4,7 +4,12 @@
   <title>Personal Finance</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p>In this chapter, we will cover simple and compound interest, credit cards, loans, and annuities. The goal is to provide insight into how these financial concepts work. </p>
+    <note>
+	<p>
+		All information provided in this chapter is for educational purposes only and should not be used as the sole basis for making financial decisions or as a replacement for a qualified financial advisor. The formulas and examples provided here cover a limited range of scenarios and some are based on simplified assumptions. 
+	</p>
+ </note>
   </introduction>
 
   <!-- include sections -->
