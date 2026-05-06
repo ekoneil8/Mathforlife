@@ -1590,7 +1590,7 @@ A=\frac{500\left(\left(1+\frac{0.045}{12}\right)^{12\cdot 5}-1\right)}{\frac{0.0
 <div class="para">This expression can be entered into a calculator as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left( 500 \left(1+0.045 \div 12 \right)\text{^}\left( 12 \times 5 \right)-1\right)\div \left(0.045 \div 12 \right).
+500 \left( \left(1+0.045 \div 12 \right)\text{^}\left( 12 \times 5 \right)-1\right)\div \left(0.045 \div 12 \right).
 \end{equation*}
 </div>
 </div>
@@ -1626,6 +1626,46 @@ d=\frac{100,000\cdot \frac{0.05}{12}}{\left(1+\frac{0.05}{12}\right)^{12\cdot 15
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="space"> </span><span class="title">Payout Annuities</span>
 </h3>
 <div class="para" id="subsec-finance-annuity-loan-payout-annuity-2">In a <dfn class="terminology">payout annuity</dfn>, you make a lump sum deposit into an account that earns compound interest, and then you receive regular payments from the account. Retirees often convert their savings into payout annuities to receive a steady stream of income during retirement. The present value of a payout annuity is the amount of money that must be deposited in the account to ensure that the payments can be made for a certain number of years.</div>
+<div class="para" id="subsec-finance-annuity-loan-payout-annuity-3">To illustrate how a payout annuity works, consider a state lottery prize in which the winner will receive a price of $20,000 paid out in four yearly installments of $5,000 each. The state will deposit just $16,936.06 into an account that earns 7% interest compounded annually. Each year, the account will earn interest on the remaining balance, and the payments will be made from the account. The table below demonstrates how this deposit that is less than $20,000 will be sufficient to cover the four payments of $5,000 each.</div>
+<figure class="table table-like" id="subsec-finance-annuity-loan-payout-annuity-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.5.3<span class="period">.</span></span><span class="space"> </span>State Lottery Payout Annuity</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">Year</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Interest</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Payment</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Balance</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="r m b0 r0 l0 t0 lines">$16,936.06</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="r m b0 r0 l0 t0 lines">$1,185.52</td>
+<td class="r m b0 r0 l0 t0 lines">$5,000.00</td>
+<td class="r m b0 r0 l0 t0 lines">$13,121.58</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="r m b0 r0 l0 t0 lines">$918.51</td>
+<td class="r m b0 r0 l0 t0 lines">$5,000.00</td>
+<td class="r m b0 r0 l0 t0 lines">$9,040.09</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="r m b0 r0 l0 t0 lines">$632.81</td>
+<td class="r m b0 r0 l0 t0 lines">$5,000.00</td>
+<td class="r m b0 r0 l0 t0 lines">$4,672.90</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="r m b0 r0 l0 t0 lines">$327.10</td>
+<td class="r m b0 r0 l0 t0 lines">$5,000.00</td>
+<td class="r m b0 r0 l0 t0 lines">$0.00</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-finance-annuity-loan-payout-annuity-5">In the table, each year’s interest is equal to 7% of the previous year’s balance. The payment of $5,000 is made each year, and the balance is updated by adding the interest and subtracting the payment. At the end of the four years, the balance is zero, and the lottery winner has received $20,000 in payments, even though the initial deposit was only $16,936.06.</div>
+<div class="para" id="subsec-finance-annuity-loan-payout-annuity-6">How does the state know that the initial deposit of $16,936.06 is sufficient to make the four payments of $5,000 each? They can use the formula for the present value of a payout annuity.</div>
 <article class="assemblage assemblage-like" id="assemblage-finance-annuity-loan-payout"><h4 class="heading"><span class="title">Payout Annuity Formula.</span></h4>
 <div class="para logical" id="assemblage-finance-annuity-loan-payout-2">
 <div class="para">The present value of a payout annuity is found using the formula</div>
@@ -1643,9 +1683,9 @@ d=\frac{P\cdot \frac{r}{n}}{1-\left(1+\frac{r}{n}\right)^{-nt}}
 <div class="para">where</div>
 <ul class="disc" id="assemblage-finance-annuity-loan-payout-2-3">
 <li id="assemblage-finance-annuity-loan-payout-2-3-1"><div class="para" id="p-derived-assemblage-finance-annuity-loan-payout-2-3-1">
-<dfn class="terminology">P</dfn> is the present value of the annuity,</div></li>
+<dfn class="terminology">P</dfn> is the present value of the annuity, which is the amount deposited in the account before payouts begin,</div></li>
 <li id="assemblage-finance-annuity-loan-payout-2-3-2"><div class="para" id="p-derived-assemblage-finance-annuity-loan-payout-2-3-2">
-<dfn class="terminology">d</dfn> is the amount of each regular payment,</div></li>
+<dfn class="terminology">d</dfn> is the amount of each regular payout,</div></li>
 <li id="assemblage-finance-annuity-loan-payout-2-3-3"><div class="para" id="p-derived-assemblage-finance-annuity-loan-payout-2-3-3">
 <dfn class="terminology">r</dfn> is the nominal interest rate,</div></li>
 <li id="assemblage-finance-annuity-loan-payout-2-3-4"><div class="para" id="p-derived-assemblage-finance-annuity-loan-payout-2-3-4">
@@ -1654,7 +1694,17 @@ d=\frac{P\cdot \frac{r}{n}}{1-\left(1+\frac{r}{n}\right)^{-nt}}
 <dfn class="terminology">t</dfn> is the number of years.</div></li>
 </ul>
 </div>
-<div class="para" id="assemblage-finance-annuity-loan-payout-3">The number of compounding periods per year is equal to the number of payments per year.</div></article><div class="para logical" id="subsec-finance-annuity-loan-payout-annuity-4">
+<div class="para" id="assemblage-finance-annuity-loan-payout-3">The number of compounding periods per year is equal to the number of payouts per year.</div>
+<div class="para" id="assemblage-finance-annuity-loan-payout-4">As with compound interest, the value of <span class="process-math">\(nt\)</span> in the exponent represents the total number of compounding periods or payouts over the life of the annuity.</div></article><div class="para logical" id="subsec-finance-annuity-loan-payout-annuity-8">
+<div class="para">To determine the initial deposit for the lottery payout annuity, we can substitute <span class="process-math">\(d=5,000\text{,}\)</span> <span class="process-math">\(r=0.07\text{,}\)</span> <span class="process-math">\(n=1\text{,}\)</span> and <span class="process-math">\(t=4\)</span> into the formula for the present value of a payout annuity:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P=\frac{5,000\left(1-\left(1+\frac{0.07}{1}\right)^{-1\cdot 4}\right)}{\frac{0.07}{1}}\approx \$16,936.06.
+\end{equation*}
+</div>
+</div>
+<div class="para" id="subsec-finance-annuity-loan-payout-annuity-9">The derivation of the payout annuity formulas is given at the end of this section. Let’s see how find the payment amount for a payout annuity.</div>
+<div class="para logical" id="subsec-finance-annuity-loan-payout-annuity-10">
 <div class="para">Consider, for example, a retiree who has $500,000 in savings and wants to convert it into a payout annuity that will provide monthly payments for 25 years. If the account earns 4% interest compounded monthly, the regular payment amount can be found by substituting <span class="process-math">\(P=500,000\text{,}\)</span> <span class="process-math">\(r=0.04\text{,}\)</span> <span class="process-math">\(n=12\text{,}\)</span> and <span class="process-math">\(t=25\)</span> into the formula for the regular payment amount:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1662,7 +1712,24 @@ d=\frac{500,000\cdot \frac{0.04}{12}}{1-\left(1+\frac{0.04}{12}\right)^{-12\cdot
 \end{equation*}
 </div>
 <div class="para">The retiree will receive approximately $2,639.18 each month for 25 years, which is a total of$791,754.00 in payments. The $291,754.00 difference between the total payments and the initial deposit is the interest earned on the initial deposit of $500,000.</div>
-</div></section><section class="subsection" id="subsec-finance-annuity-amortized-loan"><h3 class="heading hide-type">
+</div>
+<article class="example example-like" id="subsec-finance-annuity-loan-payout-annuity-11"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-finance-annuity-loan-payout-annuity-11-1-1">How much money must be deposited in an account that pays 5% interest compounded monthly to provide monthly payments of $3,000 for 20 years? How much money will be paid out over the life of the annuity, and how much interest will be earned?</div>
+<div class="solutions"><details id="subsec-finance-annuity-loan-payout-annuity-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-finance-annuity-loan-payout-annuity-11-2-1">
+<div class="para">We are given the regular payment amount, <span class="process-math">\(d = $3,000\text{,}\)</span> the nominal interest rate, <span class="process-math">\(r = 0.05\text{,}\)</span> the number of compounding periods per year, <span class="process-math">\(n = 12\text{,}\)</span> and the number of years, <span class="process-math">\(t = 20\text{.}\)</span> Substituting these values into the formula for the present value of a payout annuity gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P=\frac{3,000\left(1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 20}\right)}{\frac{0.05}{12}}\approx \$454,575.94.
+\end{equation*}
+</div>
+<div class="para">Therefore, approximately $454,575.94 must be deposited in the account.</div>
+</div>
+<div class="para" id="subsec-finance-annuity-loan-payout-annuity-11-2-2">The total paid out over the life of the annuity is <span class="process-math">\($3,000\cdot 12\cdot 20=$720,000\text{,}\)</span> and the total interest earned is <span class="process-math">\($720,000 - $454,575.94 = $265,424.06\text{.}\)</span>
+</div>
+</div></details></div></article><div class="para" id="subsec-finance-annuity-loan-payout-annuity-12">For the purposes of this book, we only address payout annuities with fixed interest rates, fixed payment amounts, and a fixed number of payments. In practice, there are many variations on payout annuities, including those with variable interest rates, variable payment amounts, and a variable number of payments. Some retirement annuities are guaranteed to provide payments for the lifetime of the retiree or the lifetime of the retiree and their spouse. Please do not use the small amount of information provided here as the sole basis for making decisions about retirement annuities.</div></section><section class="subsection" id="subsec-finance-annuity-amortized-loan"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="space"> </span><span class="title">Amortized Loans</span>
 </h3>
 <div class="para" id="subsec-finance-annuity-amortized-loan-2">An <dfn class="terminology">amortized loan</dfn> is mathematically equivalent to a payout annuity, but instead of the consumer making a lump sum deposit and receiving payments, they receive a lump sum loan and make regular payments to the lender. The roles of the consumer and lender are just reversed.</div>
@@ -1696,7 +1763,7 @@ P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}
 </div>
 <div class="para" id="assemblage-amortized-loan-3">The number of compounding periods per year is equal to the number of payments per year.</div></article><div class="para" id="subsec-finance-annuity-amortized-loan-4">Most bank loans are amortized, including amortized loans used to purchase a house, which are called mortgages, automobile loans, student loans, and personal loans.</div>
 <article class="example example-like" id="subsec-finance-annuity-amortized-loan-5"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.5</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-annuity-amortized-loan-5-1-1">A car loan of $25,000 is to be paid off in 5 years with monthly payments. If the interest rate is 6% compounded monthly, what will the monthly payment be, what is the total paid over the life of the loan, and how much interest will be paid?</div>
 <div class="solutions"><details id="subsec-finance-annuity-amortized-loan-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-finance-annuity-amortized-loan-5-2-1">
@@ -1706,10 +1773,11 @@ P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}
 d=\frac{25,000\cdot \frac{0.06}{12}}{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 5}}\approx \$483.32.
 \end{equation*}
 </div>
-<div class="para">The monthly payment will be approximately $483.32. The total paid over the life of the loan is $483.32\cdot 12\cdot 5=$28,999.20, and the total interest paid is $28,999.20 - $25,000 = $3,999.20.</div>
+<div class="para">The monthly payment will be approximately $483.32. The total paid over the life of the loan is <span class="process-math">\(\$483.32\cdot 12\cdot 5=\$28,999.20\text{,}\)</span> and the total interest paid is <span class="process-math">\(\$28,999.20 - \$25,000 = \$3,999.20\text{.}\)</span>
+</div>
 </div></div></details></div></article><div class="para" id="subsec-finance-annuity-amortized-loan-6">Longer-term loans will tend to have more interest paid over the life of the loan. In the next example, we will compare a 15-year mortgage, a 30-year mortgage, and a 50-year mortgage. As of this writing, 50-year mortgages are not generally available in the United States, but they have been considered by the federal government as a way to make monthly payments more affordable for homebuyers.</div>
 <article class="example example-like" id="subsec-finance-annuity-amortized-loan-7"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.4</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.6</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-annuity-amortized-loan-7-1-1">For a $400,000 mortgage with an interest rate of 5%, find the monthly payment, total paid over the life of the loan, and total interest paid if the loan is for 15 years, 30 years, and 50 years.</div>
 <div class="solutions"><details id="subsec-finance-annuity-amortized-loan-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
@@ -1720,7 +1788,8 @@ d=\frac{25,000\cdot \frac{0.06}{12}}{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 
 d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 15}}\approx \$3,163.17.
 \end{equation*}
 </div>
-<div class="para">The total paid over the life of the loan is $3,163.17\cdot 12\cdot 15=$569,370.60, and the total interest paid is $569,370.60 - $400,000 = $169,370.60.</div>
+<div class="para">The total paid over the life of the loan is <span class="process-math">\(\$3\,163.17\cdot 12\cdot 15=\$569\,370.60\text{,}\)</span> and the total interest paid is <span class="process-math">\(\$569\,370.60 - \$400\,000 = \$169\,370.60\text{.}\)</span>
+</div>
 </div>
 <div class="para logical" id="subsec-finance-annuity-amortized-loan-7-2-2">
 <div class="para">For the 30-year mortgage, we have <span class="process-math">\(P=400,000\text{,}\)</span> <span class="process-math">\(r=0.05\text{,}\)</span> <span class="process-math">\(n=12\text{,}\)</span> and <span class="process-math">\(t=30\text{.}\)</span> Substituting these values into the formula for the regular payment amount gives</div>
@@ -1729,18 +1798,20 @@ d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot
 d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 30}}\approx \$2,147.29.
 \end{equation*}
 </div>
-<div class="para">The total paid over the life of the loan is $2,147.29\cdot 12\cdot 30=$773,024.40, and the total interest paid is $773,024.40 - $400,000 = $373,024.40.</div>
+<div class="para">The total paid over the life of the loan is <span class="process-math">\(\$2\,147.29\cdot 12\cdot 30=\$773\,024.40\text{,}\)</span> and the total interest paid is <span class="process-math">\(\$773\,024.40 - \$400\,000 = \$373\,024.40\text{.}\)</span>
+</div>
 </div>
 <div class="para logical" id="subsec-finance-annuity-amortized-loan-7-2-3">
 <div class="para">For the 50-year mortgage, we have <span class="process-math">\(P=400,000\text{,}\)</span> <span class="process-math">\(r=0.05\text{,}\)</span> <span class="process-math">\(n=12\text{,}\)</span> and <span class="process-math">\(t=50\text{.}\)</span> Substituting these values into the formula for the regular payment amount gives</div>
 <div class="displaymath process-math">
 \begin{equation*}
-d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 50}}\approx \$1,816.56.
+d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 50}}\approx \$1\,816.56.
 \end{equation*}
 </div>
-<div class="para">The total paid over the life of the loan is $1,816.56\cdot 12\cdot 50=$1,089,936.00, and the total interest paid is $1,089,936.00 - $400,000 = $689,936.00.</div>
+<div class="para">The total paid over the life of the loan is <span class="process-math">\(\$1\,816.56\cdot 12\cdot 50=\$1\,089\,936.00\text{,}\)</span> and the total interest paid is <span class="process-math">\(\$1\,089\,936.00 - \$400\,000 = \$689\,936.00\text{.}\)</span>
 </div>
-</div></details></div></article><div class="para" id="subsec-finance-annuity-amortized-loan-8">The results of the above example are summarized in the table below: <figure class="table table-like" id="subsec-finance-annuity-amortized-loan-8-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.5.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div>
+</div></details></div></article><div class="para" id="subsec-finance-annuity-amortized-loan-8">The results of the above example are summarized in the table below: <figure class="table table-like" id="subsec-finance-annuity-amortized-loan-8-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.5.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b0 r0 l0 t0 lines">Loan Term</th>
 <th scope="col" class="l m b0 r0 l0 t0 lines">Monthly Payment</th>
@@ -1770,7 +1841,7 @@ d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot
 <div class="para" id="subsec-finance-annuity-amortized-loan-9">The most common mortgage term is the 30-year loan. Note that the monthly payment for a 15-year loan is about 47% higher but the total interest paid is about 55% lower as compared to the 30-year loan. When comparing the 50-year loan to the 30-year loan, the monthly payment is about 15% lower but the total interest paid is about 85% higher.</div>
 <div class="para" id="subsec-finance-annuity-amortized-loan-10">Mortgage rates for 15-year loans are typically lower than those of 30-year loans, so the savings in selecting a 15-year loan can be even greater than is shown above.</div>
 <article class="example example-like" id="subsec-finance-annuity-amortized-loan-11"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.6</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.8</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-annuity-amortized-loan-11-1-1">At a particular bank, the interest rate on a 15-year mortgage is 5.625% while the interest rate on a 30-year mortgage is 6.625%. Find the monthly payment for a $570,000 mortgage for both the 15-year and 30-year options.</div>
 <div class="solutions"><details id="subsec-finance-annuity-amortized-loan-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
@@ -1794,7 +1865,7 @@ d=\frac{570,000\cdot \frac{0.06625}{12}}{1-\left(1+\frac{0.06625}{12}\right)^{-1
 </div>
 </div></details></div></article><div class="para" id="subsec-finance-annuity-amortized-loan-12">When purchasing a home, the homebuyer typically makes a down payment, which is a portion of the purchase price paid at the time of purchase. It is common for lenders to require a minimum down payment of 20% of the purchase price, and borrowers who cannot afford this much money upfront may be required to an extra monthly fee for private mortgage insurance (PMI). The homebuyer then takes out a mortgage for the remaining amount. The down payment is not part of the mortgage, so it is not included in the present value of the loan when calculating the monthly payment.</div>
 <article class="example example-like" id="subsec-finance-annuity-amortized-loan-13"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.7</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.9</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-annuity-amortized-loan-13-1-1">A homebuyer is purchasing a house for $400,000 and they will make a 20% down payment to avoid private mortgage insurance (PMI). If the interest rate on the mortgage is 5% compounded monthly and the loan term is 30 years, what will the monthly payment be?</div>
 <div class="solutions"><details id="subsec-finance-annuity-amortized-loan-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-finance-annuity-amortized-loan-13-2-1">
@@ -1807,7 +1878,7 @@ d=\frac{320,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot
 <div class="para">The monthly payment will be approximately $1,717.83.</div>
 </div></div></details></div></article><div class="para" id="subsec-finance-annuity-amortized-loan-14">A potential homebuyer may know how much they can afford to spend on a mortgage, after accounting for other costs of home ownership, and want to know how much they can borrow. The next example demonstrates how this can be calculated.</div>
 <article class="example example-like" id="subsec-finance-annuity-amortized-loan-15"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.8</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.10</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-annuity-amortized-loan-15-1-1">A homebuyer has saved $50,000 for a down payment and can afford to spend $2,500 per month on a mortgage. If the interest rate is 5% compounded monthly and the loan term is 30 years, what is the most expensive house they can buy?</div>
 <div class="solutions"><details id="subsec-finance-annuity-amortized-loan-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-finance-annuity-amortized-loan-15-2-1">
@@ -1826,7 +1897,7 @@ P=\frac{2,500\left(1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 30}\right)}{\frac{
 <div class="para">The homebuyer can borrow approximately $465,704.04. Adding the down payment of $50,000 gives a total of approximately $515,704.04 for the most expensive house they can buy.</div>
 </div></div></details></div></article><div class="para" id="subsec-finance-annuity-amortized-loan-16">In <a href="sec-finance-simple-interest.html#subsec-finance-simple-amortized" class="internal" title="Subsection 3.2.3: Amortized Loans">Subsection 3.2.3</a>, we filled in an amortization tables for loans when the payment amount was given. Now we have the tools to calculate the payment amount before completing the amortization table.</div>
 <article class="example example-like" id="subsec-finance-annuity-amortized-loan-17"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.9</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.11</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-finance-annuity-amortized-loan-17-1-1">Find the monthly payment on a $25,000 car loan with an interest rate of 6% compounded monthly that is to be paid off in 3 years. Then complete the amortization table for the first four payments.</div>
 <div class="solutions"><details id="subsec-finance-annuity-amortized-loan-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
@@ -1840,7 +1911,7 @@ d=\frac{25,000\cdot \frac{0.06}{12}}{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 
 <div class="para">The monthly payment will be approximately $760.55.</div>
 </div>
 <div class="para" id="subsec-finance-annuity-amortized-loan-17-2-2">Now we can complete the amortization table as in <a href="sec-finance-simple-interest.html#subsec-finance-simple-amortized" class="internal" title="Subsection 3.2.3: Amortized Loans">Subsection 3.2.3</a>.</div>
-<figure class="table table-like" id="subsec-finance-annuity-amortized-loan-17-2-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.5.10<span class="period">.</span></span><span class="space"> </span>Amortization Table</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="subsec-finance-annuity-amortized-loan-17-2-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.5.12<span class="period">.</span></span><span class="space"> </span>Amortization Table</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b0 r0 l0 t0 lines">Payment</th>
 <th scope="col" class="l m b0 r0 l0 t0 lines">Payment Amount</th>
@@ -1877,11 +1948,35 @@ d=\frac{25,000\cdot \frac{0.06}{12}}{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 
 <td class="r m b0 r0 l0 t0 lines">$22,438.67</td>
 </tr>
 </table></div></figure><div class="para" id="subsec-finance-annuity-amortized-loan-17-2-4">A complete amortization table could be created using a spreadsheet.</div>
-</div></details></div></article><article class="note remark-like" id="subsec-finance-annuity-amortized-loan-18"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.5.11</span><span class="period">.</span>
+</div></details></div></article><div class="para logical" id="subsec-finance-annuity-amortized-loan-18">
+<div class="para">Even though there are more columns in the amortization table than in the payout annuity table, the calculation of the balance column is exactly the same. In the payout annuity table the balance calculation for each row is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{New Balance}=\text{Previous Balance}+\text{Interest}-\text{Payment}
+\end{equation*}
+</div>
+<div class="para">and the balance calculation for the amortization table is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{New Balance} = \text{Previous Balance}-\text{Principal}.
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsec-finance-annuity-amortized-loan-19">
+<div class="para">Since the principal is equal to the payment minus the interest, we can rewrite the balance calculation for the amortization table as</div>
+<div class="displaymath process-math" id="subsec-finance-annuity-amortized-loan-19-1">
+\begin{align*}
+\text{New Balance} \amp = \text{Previous Balance}-\left(\text{Payment}-\text{Interest}\right)\\
+\amp	=\text{Previous Balance}-\text{Payment}+\text{Interest}
+\end{align*}
+</div>
+<div class="para">which is the same as the balance calculation for the payout annuity.</div>
+</div>
+<article class="note remark-like" id="subsec-finance-annuity-amortized-loan-20"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.5.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-finance-annuity-amortized-loan-18-1">The monthly cost of home ownership includes more than just the mortgage payment. Typically, the lender will handle payments of property taxes and homeowner’s insurance, and these costs are added on to the monthly amount that the homeowner pays.</div>
-<div class="para" id="subsec-finance-annuity-amortized-loan-18-2">Homeowners are also responsible for maintenance, repairs, and any homeowners association fees.</div></article></section><section class="subsection" id="subsec-finance-annuity-loan-formula-derivations"><h3 class="heading hide-type">
+<div class="para" id="subsec-finance-annuity-amortized-loan-20-1">The monthly cost of home ownership includes more than just the mortgage payment. Typically, the lender will handle payments of property taxes and homeowner’s insurance, and these costs are added on to the monthly amount that the homeowner pays.</div>
+<div class="para" id="subsec-finance-annuity-amortized-loan-20-2">Homeowners are also responsible for maintenance, repairs, and any homeowners association fees.</div></article></section><section class="subsection" id="subsec-finance-annuity-loan-formula-derivations"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.4</span><span class="space"> </span><span class="title">Formula Derivations</span>
 </h3>
 <section class="subsubsection" id="subsubsec-finance-annuity-loan-formula-derivations-savingsanuity"><h4 class="heading hide-type">
