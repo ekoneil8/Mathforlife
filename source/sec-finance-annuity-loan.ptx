@@ -130,7 +130,7 @@
 			</me>
 		</p>
 		<p>
-			This expression can be entered into a calculator as <me>\left( 500 \left(1+0.045 \div 12 \right)\text{^}\left( 12 \times 5 \right)-1\right)\div \left(0.045 \div 12 \right).</me>
+			This expression can be entered into a calculator as <me> 500 \left( \left(1+0.045 \div 12 \right)\text{^}\left( 12 \times 5 \right)-1\right)\div \left(0.045 \div 12 \right).</me>
 		</p>
 		
 	</solution>
@@ -271,7 +271,7 @@ and the future value of the second plan is
 				<me>
 					d=\frac{25,000\cdot \frac{0.06}{12}}{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 5}}\approx \$483.32.
 				</me>
-				The monthly payment will be approximately $483.32. The total paid over the life of the loan is $483.32\cdot 12\cdot 5=$28,999.20, and the total interest paid is $28,999.20 - $25,000 = $3,999.20.
+				The monthly payment will be approximately $483.32. The total paid over the life of the loan is <m>\$483.32\cdot 12\cdot 5=\$28,999.20</m>, and the total interest paid is <m>\$28,999.20 - \$25,000 = \$3,999.20</m>.
 			</p>
 		</solution>
 	</example>
@@ -290,21 +290,21 @@ and the future value of the second plan is
 				<me>
 					d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 15}}\approx \$3,163.17.
 				</me>
-				The total paid over the life of the loan is $3,163.17\cdot 12\cdot 15=$569,370.60, and the total interest paid is $569,370.60 - $400,000 = $169,370.60.
+				The total paid over the life of the loan is <m>\$3\,163.17\cdot 12\cdot 15=\$569\,370.60</m>, and the total interest paid is <m>\$569\,370.60 - \$400\,000 = \$169\,370.60</m>.
 			</p>
 			<p>
 				For the 30-year mortgage, we have <m>P=400,000</m>, <m>r=0.05</m>, <m>n=12</m>, and <m>t=30</m>. Substituting these values into the formula for the regular payment amount gives
 				<me>
 					d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 30}}\approx \$2,147.29.
 				</me>
-				The total paid over the life of the loan is $2,147.29\cdot 12\cdot 30=$773,024.40, and the total interest paid is $773,024.40 - $400,000 = $373,024.40.
+				The total paid over the life of the loan is <m>\$2\,147.29\cdot 12\cdot 30=\$773\,024.40</m>, and the total interest paid is <m>\$773\,024.40 - \$400\,000 = \$373\,024.40</m>.
 			</p>
 			<p>
 				For the 50-year mortgage, we have <m>P=400,000</m>, <m>r=0.05</m>, <m>n=12</m>, and <m>t=50</m>. Substituting these values into the formula for the regular payment amount gives
 				<me>
-					d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 50}}\approx \$1,816.56.
+					d=\frac{400,000\cdot \frac{0.05}{12}}{1-\left(1+\frac{0.05}{12}\right)^{-12\cdot 50}}\approx \$1\,816.56.
 				</me>
-				The total paid over the life of the loan is $1,816.56\cdot 12\cdot 50=$1,089,936.00, and the total interest paid is $1,089,936.00 - $400,000 = $689,936.00.
+				The total paid over the life of the loan is <m>\$1\,816.56\cdot 12\cdot 50=\$1\,089\,936.00</m>, and the total interest paid is <m>\$1\,089\,936.00 - \$400\,000 = \$689\,936.00</m>.
 			</p>
 
 		</solution>
