@@ -568,18 +568,19 @@ and the future value of the second plan is
 			<p>
 				Even though there are more columns in the amortization table than in the payout annuity table, the calculation of the balance column is exactly the same. In the payout annuity table the balance calculation for each row is:
 				<me>
-					\text{Previous Balance}+\text{Interest}-\text{Payment}=\text{New Balance}
+					\text{New Balance}=\text{Previous Balance}+\text{Interest}-\text{Payment}
 				</me>
 				and the balance calculation for the amortization table is:
 				<me>
-					\text{Previous Balance}-\text{Principal}=\text{New Balance}.
+					\text{New Balance} = \text{Previous Balance}-\text{Principal}.
 				</me>
 			</p>
 			<p>
 				Since the principal is equal to the payment minus the interest, we can rewrite the balance calculation for the amortization table as
-				<me>
-					\text{Previous Balance}-\left(\text{Payment}-\text{Interest}\right)=\text{Previous Balance}-\text{Payment}+\text{Interest}=\text{New Balance}
-				</me>
+				<md>
+					<mrow>\text{New Balance} \amp = \text{Previous Balance}-\left(\text{Payment}-\text{Interest}\right)</mrow>
+					<mrow>\amp	=\text{Previous Balance}-\text{Payment}+\text{Interest}</mrow>
+				</md>
 				which is the same as the balance calculation for the payout annuity.
 			</p>
 			<note>
