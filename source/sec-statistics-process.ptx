@@ -2,7 +2,9 @@
 
 <section xml:id="sec-statistics-process" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Statistical Process</title>
-
+<p>
+	Note: this section is still in development.
+</p>
 
   <objectives>
 	<introduction>
@@ -18,7 +20,7 @@
 			</li>
 			<li>
 				<p>
-					Identify four sampling methods: simple random sample (SRS), stratified, systematic and convenience
+					Identify sampling methods: simple random, stratified, systematic, and convenience
 				</p>
 			</li>
 			<li>
@@ -31,124 +33,181 @@
 					Distinguish between experimental, quasi-experimental, and observational studies
 				</p>
 			</li>
-			<li>
-				<p>
-					Explain margin of error and confidence intervals
-				</p>
-			</li>
+
 		</ul>
 </objectives>
 
 
 <subsection>
-	<title>Statistical Process</title>
-	<p>
-		To give you an overview, here is a diagram of the steps taken in a poll or other statistical study, and the elements in each step that we will discuss in this chapter. We will use many examples to illustrate the whole process.
-	</p>
-	<sidebyside>
-		<image width="80%" source="images/statistics/3_1/statistical_process.png">
-		<shortdescription>5 rectangles indicating the 5 steps of the statistical process; 1. Identify the group you want to study, which is the population; 2. Identify the quantity you want to know about the population, which is the parameter; 3. Gather data by taking an unbiased sample or performing an experiment; 4. Graph the data and calculate statistics; 5. Estimate the parameter that you wanted to know with the margin of error and confidence interval.</shortdescription>
-		</image>
-	</sidebyside>
+	<title>Statistical Process Overview</title>
+<p>
+	Statistics is a branch of mathematics that involves collecting, describing, and iterpreting data. It is used to test claims, such as whether a new drug is effective, and make predictions, such as how many people will vote for a certain candidate in an election. A statistical study typically involves the following steps:
+	<ol>
+		<li>
+			<p>
+				<term>Question:</term> Identify the question of interest.
+			</p>
+		</li>
+		<li>
+			<p>
+				<term>Design:</term> Determine what data are needed to answer the question and how to collect the data.
+			</p>
+		</li>
+		<li>
+			<p>
+				<term>Data:</term> Collect the data.
+			</p>
+		</li>
+		<li>
+			<p>
+				<term>Analysis:</term> Perform calculations and draw conclusions from the collected data.
+			</p>
+		</li>
+		<li>
+			<p>
+				<term>Report:</term> Communicate the results of the study to others.
+			</p>
+		</li>
+	</ol>
+</p>
+<example>
+	<statement>
+		<p>
+			A dentist wants to know if flossing daily results in healthier gums than brushing alone. To answer this question, they can use the statistical process:
+			<ol>
+				<li>
+					<p>
+						<term>Question:</term> Does flossing daily result in healthier gums than brushing alone?
+					</p>
+				</li>
+				<li>
+					<p>
+						<term>Design:</term> To answer this question, the dentist decides to survey their patients about their flossing habits and then compare the results of the survey with their clinical observations.
+					</p>
+				</li>
+				<li>
+					<p>
+						<term>Data:</term> To gather the data, the dentist creates a survey and asks patients to fill it out at the beginning of their appointment. The survey includes questions about how often they floss, how often they brush, and their gum health. The dentist does not look at the survey answers until after the appointment, so they can make their clinical observations without bias.
+					</p>
+				</li>
+				<li>
+					<p>
+						<term>Analysis:</term> After collecting the data, the dentist compares the survey answers with their clinical observations to see if there is a correlation between flossing habits and gum health.
+					</p>
+				</li>
+				<li>
+					<p>
+						<term>Report:</term> The dentist writes a report summarizing the findings of the study and shares it with their colleagues and patients.
+					</p>
+				</li>
+			</ol>
+		</p>
+	</statement>
+</example>
+<p>
+	You may have noticed some potential flaws in the dentist's study. For example, the patients may not answer the survey questions truthfully because they might be embarrassed about their flossing habits. There may be confounding variables, such as the patients' overall health or age, that impact both flossing and gum health. For example, the patients who participate may include a split of young people who do not floss regularly but have healthy gums due to their age and older people who do floss regularly but have unhealthy gums due to their age. We will explore ways to improve the quality of the data later in this section. First, we will introduce some terminology.
+</p>
+
 </subsection>
 
 <subsection>
-	<title>Population</title>
+	<title>Statistics Terminology</title>
 	<p>
-		Before we begin gathering any data to analyze, we need to identify the population we are studying. The population of a study is the group we want to know something about. The <alert>population</alert> could be people, auto parts or tomato plants.
+		Some of the more commonly used terms in statistics are explained below.
+	</p>
+	<subsubsection xml:id="subsubsec-PopulationandSample">
+		<title>Population and Sample</title>
+		
+	
+	<p>
+		Before we begin gathering any data to analyze, we need to identify the population we are studying. The <term>population</term> of a study is the group we want to know something about. For example, if we want to know the average height of 10-year-olds in the United States, the population is all 10-year-olds in the United States.
 	</p>
 	<p>
-		If we want to know the amount of money spent on textbooks by a typical college student, our population might be all students at Portland Community College. Or it might be:
-		<ol>
-			<li>
-				<p>
-					All community college students in the state of Oregon.
-				</p>
-			</li>
-			<li>
-				<p>
-					All students at public colleges and universities in the state of Oregon.
-				</p>
-			</li>
-			<li>
-				<p>
-					All students at all colleges and universities in the state of Oregon.
-				</p>
-			</li>
-			<li>
-				<p>
-					All students at all colleges and universities in the entire United States.
-				</p>
-			</li>
-			<li>
-				<p>
-					And so on.
-				</p>
-			</li>
-		</ol>
+		It isn't often feasible to collect data from the entire population, so we usually select a smaller group to study. The <term>sample</term> is the subset of the population that is studied.
 	</p>
+	
 
 	<p>
-		The intended population is also called the <alert>target population</alert>, since if we design our study badly, the collected data might not actually be representative of the intended population.
+		The intended population is also called the <term>target population</term>, since if we design our study badly, the collected data might not actually be representative of the intended population.
 	</p>
 	<example>
 		<statement>
 		<p>
-			A newspaper website contains a poll asking people their opinion on a recent news article. What is the population?
+			A newspaper posts a poll on their website asking people who they plan to vote for in the upcoming election, and 129 people respond. What are the target population, the real population of the study, and the sample?
 		</p>
 		</statement>
 		<solution>
 		<p>
-			While the target (intended) population may have been all people, the real population of the survey is readers of the website.
+			While the target (intended) population may have been all voters, the real population of the survey is readers of the website.
+		</p>
+		<p>
+			The sample is the 129 people who responded to the poll. 
 		</p>
 		</solution>
 	</example>
-</subsection>
-
-<subsection>
-	<title>Parameter</title>
 	<p>
-		A <alert>parameter</alert> is the value (percentage, average, etc.) that we are interested in for the whole population. Since it is often too time-consuming, expensive and/or impossible to get data for the entire population, the parameter is usually a theoretical quantity that we are trying to estimate. For example, the typical amount of money spent per year on textbooks by students at your college in a year is a parameter.
+		Be careful when identifying the sample; the sample consists of all the individuals in the study, not just those meeting a certain criteria. For example, if the newspaper poll asked, "Do you plan to vote for Candidate A?", the sample would still be the 129 people who responded to the poll, not just the people who said they planned to vote for Candidate A.
 	</p>
-</subsection>
-
-<subsection>
-	<title>Sample</title>
+	<example>
+		<statement>
+			<p>
+				A wildlife biologist heard reports of dark charcoal-colored squirrels in Bremerton, Washington. The biologist knows that these charcoal-colored squirrels are a rare genetic mutation of the eastern gray squirrel, called black morph, and they want to know what percentage of the squirrels in Bremerton are black. To find out, they set up a trail camera in a park and take pictures of 100 squirrels that come by. They find that 5 of the squirrels are black. What are the target population, the real population of the study, and the sample?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				The target population is all squirrels in Bremerton.
+			</p>
+			<p>
+				The real population of the study is the squirrels that come by the trail camera.
+			</p>
+			<p>
+				The sample is the 100 squirrels that come by the trail camera.
+			</p>
+		</solution>
+	</example>
 	<p>
-		To estimate the parameter, we select a <alert>sample</alert>, which is a smaller subset of the entire population. It is very important that we choose a <alert>representative sample</alert>, one that matches the characteristics of the population, to have a good estimate. If we survey 100 students at your college, those students would be our sample. We will talk about how to choose a representative sample later in this section.
+		In the squirrel example, the biologist observed that 5 out of the 100 squirrels were charcoal-colored and 95 were of the more common gray color. This data can be expressed as a percentage, with 5% of the squirrels being charcoal-colored and 95% being gray. The biologist can then use this data to estimate the percentage of all squirrels in Bremerton that are charcoal-colored. Because the percentage was calculated based on a sample, we call it a statistic, which brings us to the next set of terms.
 	</p>
-</subsection>
+</subsubsection>
 
-<subsection>
-	<title>Statistic</title>
+<subsubsection>
+	<title>Parameters and Statistics</title>
 	<p>
-		To get our <alert>data</alert>, we would then ask each student in the sample how much they spent on textbooks and record the answers, or <alert>raw data</alert>. Then we could calculate the average, which is our statistic. A <alert>statistic</alert> is a value (percentage, average, etc.) calculated using data from a sample.
+		A <term>parameter</term> is a number that describes a population. In the squirrel example, the parameter is the percentage of all squirrels in Bremerton that are charcoal-colored.
+	</p>
+	<p>
+		A <term>statistic</term> is a number that describes a sample. In the squirrel example, the statistic is the percentage of squirrels in the sample that are charcoal-colored, which is 5%.
+	</p>
+	<p>
+		We use statistics to estimate parameters. In the squirrel example, we are using the statistic of 5% to estimate the parameter of the percentage of all squirrels in Bremerton that are charcoal-colored.
 	</p>
 	<example>
 		<statement>
 		<p>
-			A researcher wants to know how the citizens of Portland feel about a voter initiative. To study this, they go downtown to the Pioneer Place Mall and survey 500 shoppers. Sixty percent indicate they are supportive of the initiative. Identify the population, parameter, sample and statistic. 
+			A medical researcher is testing whether a new vaccination is effective against a certain strain of rhinovirus, a common cold. They recruit 20,000 volunteers of various ages, genders, and health conditions. They give the vaccine to 10,000 of the volunteers and a placebo to the other 10,000 volunteers. After a year, they find that 500 of the vaccinated volunteers got sick with the rhinovirus, while 1000 of the placebo volunteers got sick. What are the population, sample, parameters, and statistics in this study?
 		</p>
 		</statement>
 		<solution>
-		<p>
-			<em>Population</em>: While the intended population of this survey is Portland citizens, the effective population is Pioneer Place Mall shoppers. There is no reason to assume that shoppers at this mall would be representative of all Portland citizens.
-		</p>
-		<p>
-			<em>Parameter</em>: The parameter is what we want to know about the population, the percentage of Portland citizens that support the initiative.
-		</p>
-		<p>
-			<em>Sample</em>: The sample is the subgroup of the population selected. The 500 shoppers questioned make up the sample, which, again, is probably not representative of the population.
-		</p>
-		<p>
-			<em>Statistic</em>: The statistic is calculated using the data from the sample. The percentage of people sampled who support the initiative is 60%.
-		</p>
+<p>
+The population is all people who could potentially get the rhinovirus.
+</p>
+<p>
+	The sample is the 20,000 volunteers who participated in the study. 
+</p>
+	<p>
+		The parameters are the percentage of all people who would still get sick with the rhinovirus if they were vaccinated and the percentage of all people who would get sick if they were not vaccinated. 
+	</p>
+	<p>
+		The statistics are the percentages of volunteers in each group who got sick (5% and 10%).	
+</p>
 	</solution>
 	</example>
+	</subsubsection>
 </subsection>
 
 <subsection>
-	<title>Sampling</title>
+	<title>Sampling and Bias</title>
 	<p>
 		As we mentioned in a previous section, the first thing we should do before conducting a survey is to identify the population that we want to study. Suppose we are hired by a politician to determine the amount of support they have among the electorate should they decide to run for another term. What population should we study? Every person in the district? Eligible voters might be better, but what if they don't register? Registered voters may not vote. What about <q>likely voters?</q>
 	</p>
@@ -257,10 +316,10 @@
 <subsection>
 	<title>Types of bias</title>
 	<p>
-		<alert>Sampling bias</alert> – when the sample is not representative of the population
+		<alert>Sampling bias</alert> occurs whenever the sample is not representative of the population. Some of the reasons for this include:
 	</p>
 	<p>
-		<alert>Voluntary response bias</alert> – the sampling bias that often occurs when the sample is made up of volunteers
+		<alert>Voluntary response bias</alert> – the sampling bias that can occur when the sample is made up of volunteers
 	</p>
 	<p>
 		<alert>Self-interest study</alert> – bias that can occur when the researchers have an interest in the outcome
