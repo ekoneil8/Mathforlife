@@ -398,7 +398,10 @@ The population is all people who could potentially get the rhinovirus.
 </subsubsection>
 
 <subsubsection>
-	<title>Statistical Bias</title>
+	<title>Sampling Bias</title>
+	<p>
+		The word "bias" as used in statistics is not the same as personal bias. Sampling bias occurs whenever the data collected is not representative of the intended population.
+	</p>
 	<p>
 		There is no way to correct for biased data, so it is very important to think through the entire study and data analysis before we start. We talked about <alert>sampling</alert> or <alert>selection bias</alert>, which is when the sample is not representative of the population. One example of this is <alert>voluntary response bias</alert>, which is bias introduced by only collecting data from those who volunteer to participate. This can lead to bias if the people who volunteer have different characteristics than the general population. Here is a summary of some additional sources of bias. 
 	</p>
