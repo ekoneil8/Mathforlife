@@ -351,21 +351,16 @@
                 We can also find the median using the spreadsheet formula <c>=MEDIAN</c>. Just like the spreadsheet function <c>=AVERAGE</c>, we can either list the individual data values in the formula, or we can enter the data values into a row (or column) and use the row range (or column range) in the formula.
             </p>
             <p>
-                Using the data values of the original distribution, we can write the function as
+                We can enter the function as
             </p>
             <p>
-                <cd>=MEDIAN(2, 4, 5, 6, 6, 7, 7, 8, 8, 10)</cd> or
+                <cd>=MEDIAN(2, 4, 5, 5, 6, 6, 7, 7, 8, 8, 10, 20)</cd>
             </p>
             <p>
-                <cd>=MEDIAN(A1:AK)</cd>
+                and we get 6.5 points for the median test score.
             </p>
-            <sidebyside width="50%">
-                <image source="images/median1.png">
-                <shortdescription>A screenshot of Excel showing the =MEDIAN formula typed in with the cell references. The data is in row 1</shortdescription>
-                </image>
-            </sidebyside>
             <p>
-                and we get 6 points for the median test score.
+                If the values are listed in the spreadsheet, after typing <c>=MEDIAN(</c> we can highlight the data values and then type <c>)</c> to complete the formula. This also gives us a median test score of 6.5 points.
             </p>
         </example>
     
