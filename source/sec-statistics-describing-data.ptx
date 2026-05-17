@@ -541,18 +541,62 @@
     
     
         <p>
-            If we have a large number of different data values, a frequency table listing every possible value would be way too long. There would be too many bars on the histogram to reveal any patterns. For this reason, it is common with quantitative data to group data into class intervals.
+            If we have a large number of different data values, a frequency table listing every possible value would be way too long. There would be too many bars on the histogram to reveal any patterns. For this reason, it is common with quantitative data to group data into class intervals. The three histograms below show the prices of home sales in Kitsap County, Washington, for the same two-week period in 2026. The only difference between the three is the size of the class intervals.
         </p>
     </subsection>
     
     <subsection>
         <title>Class Intervals</title>
         <p>
-            <alert>Class intervals</alert> are groupings of the data. In general, we define class intervals so that:
+            <alert>Class intervals</alert> are the intervals into which we group our data. For example, if we are studying the grade point averages (GPAs) of students, we might use class intervals of 0.0 to 0.49, 0.5 to 0.99, 1.0 to 1.49, and so on up to 4.0. 
+        </p>
+        <p>
+            A frequency table for GPAs might look like this:
+        </p>
+        <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
+            <row header="yes">
+                <cell>Class Interval</cell>
+                <cell>Frequency</cell>
+            </row>
+            <row>
+                <cell>0.0-0.49</cell>
+                <cell>2</cell>
+            </row>
+            <row>
+                <cell>0.5-0.99</cell>
+                <cell>4</cell>
+            </row>
+            <row>
+                <cell>1.0-1.49</cell>
+                <cell>8</cell>
+            </row>
+            <row>
+                <cell>1.5-1.99</cell>
+                <cell>12</cell>
+            </row>
+            <row>
+                <cell>2.0-2.49</cell>
+                <cell>20</cell>
+            </row>
+            <row>
+                <cell>2.5-2.99</cell>
+                <cell>30</cell>
+            </row>
+            <row>
+                <cell>3.0-3.49</cell>
+                <cell>25</cell>
+            </row>
+            <row>
+                <cell>3.5-4.0</cell>
+                <cell>10</cell>
+            </row>
+        </tabular>
+        <p>
+            In general, we define class intervals so that:
             <ol>
                 <li>
                     <p>
-                        Each interval is equal in size. For example, if the first class contains values from 120 up to but not including 135, the second class should include values from 135 up to but not including 150.
+                        Each interval should be equal in size. For example, if the first class contains values from 120 up to but not including 135, the second class should include values from 135 up to but not including 150.
                     </p>
                 </li>
                 <li>
