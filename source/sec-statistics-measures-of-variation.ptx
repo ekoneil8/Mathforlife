@@ -363,8 +363,8 @@
                 </row>
                 <row>
                     <cell>$3.29</cell>
-                    <cell><m>3.59-3.68=-0.09</m></cell>
-                    <cell><m>(-0.39)^{2}=1521</m></cell>
+                    <cell><m>3.29-3.68=-0.39</m></cell>
+                    <cell><m>(-0.39)^{2}=0.1521</m></cell>
                 </row>
                 <row>
                     <cell>$3.59</cell>
@@ -553,60 +553,32 @@
         <p>
             The IQR is calculated as the difference between the third quartile (Q3) and the first quartile (Q1). Before we can calculate the interquartile range, though, we need to learn how to find the first and third quartiles.
         </p>
-        <assemblage>
-        <title>Interquartile Range (IQR)</title>
-            <p>
-                <me>\text{IQR}=Q_{3} - Q_{1}</me>
-            </p>
-        </assemblage>
     
         <p>
-            As the name implies, <alert>quartiles</alert> are values that divide the data into quarters. The <alert>first quartile (Q1)</alert> is the value that 25% of the data lie below. The <alert>third quartile (Q3)</alert> is the value that 75% of the data lie below. As you might have guessed, the second quartile is the same as the median since 50% of the data values lie below it. 
+            As the name implies, <alert>quartiles</alert> are values that divide the data into quarters. The <alert>first quartile (Q1)</alert> is the value that 25% of the data lie below. The <alert>third quartile (Q3)</alert> is the value that 75% of the data lie below. As you might have guessed, the second quartile is the same as the median since 50% of the data values lie below it. Then the interquartile range is the difference between the third and first quartiles; it tells us how large the spread is of the middle 50% of data values.
         </p>
-        <p>
-            We have seen that the data is split in half by the median so to split it into quarters, we find the median of each half of the data.
-        </p>
+
         <assemblage>
         <title>Quartiles</title>
             <p>
-                <m>Q_{1}</m> the median of the lower half of the data
+                <m>Q_{1}</m> isthe first quartile: 25% of the data lie below this value
             </p>
             <p>
-                <m>Q_{2}</m> is the median of the whole data set
+                <m>Q_{2}</m> is the second quartile, which is the same as the median: 50% of the data lie below this value
             </p>
             <p>
-                <m>Q_{3}</m> is the median of the upper half of the data
+                <m>Q_{3}</m> is the third quartile: 75% of the data lie below this value
             </p>
             <p>
-                If there is an odd number of data values, we don't use the median in either half
+                <m>\text{IQR} = Q_{3} - Q_{1}</m> is the interquartile range
             </p>
+
         </assemblage>
-    
-        <example>
-            <statement>
-                <p>
-                    For an even number of data values: Suppose we have measured the height, in inches, of 12 people who identify as female. The data values are listed below. Find the interquartile range.
-                </p>
-                <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                    <row>
-                        <cell>59</cell>
-                        <cell>60</cell>
-                        <cell>69</cell>
-                        <cell>64</cell>
-                        <cell>70</cell>
-                        <cell>72</cell>
-                        <cell>66</cell>
-                        <cell>64</cell>
-                        <cell>67</cell>
-                        <cell>66</cell>
-                        <cell>63</cell>
-                        <cell>61</cell>
-                    </row>
-                </tabular>
-            </statement>
-            <solution>
-                <p>
-                    Just like when finding the median, we must first order the data.
+        <p>
+            There are several acceptable methods for finding quartiles, and you may see different methods used in different textbooks, spreadsheet programs, and statistical software. The resulting values may be slightly different depending on the method used. In this book, we will use the locator method.
+        </p>
+        <p>
+           Suppose, for example, we have measured the height, in inches, of 12 people who identify as female. The data values, in numerical order, are listed below.
                 </p>
                 <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
                     <row>
@@ -624,34 +596,24 @@
                         <cell>72</cell>
                     </row>
                 </tabular>
-                <p>
-                    Then we divide the data into two halves. In the case of an even sample size, we split the distribution down the middle. The first 6 data values are the lower half and the next 6 data values are the upper half. Then we find the median of each. The median of the lower half is Q1 and the median of the upper half is Q3.
-                </p>
-                <!-- Todo: can't figure out why the text isn't centered like it is in section 3.3-->
-                <p>
-                    <md>
-                    <mrow>\overbrace{59,60,\underbrace{61,63,}^{Q1=\frac{61+63}{2}=62} 64,64,}^{\text{Lower Half}} \overbrace{66,66,\underbrace{67, 69,}^{Q3 =\frac{67+69}{2}=68} 70,72}^{\text{Upper Half}}</mrow>
-                </md>
-                </p>
-    
-                <p>
-                    In this data <m>Q_{1}=62</m> inches, and <m>Q_{3}=68</m> inches. Then we subtract to find the IQR.
-                </p>
-                <p>
-                    <md>
-                    <mrow>IQR=Q_{3}-Q_{1}=68-62=6\text{ inches}</mrow>
-                    </md>
-                </p>
-                <p>
-                    This tells us the that the middle 50% of the women's heights lie within an interval of 6 inches.
-                </p>
-            </solution>
-        </example>
+   <p>
+    Since the number of data values is divisible by four, the data divide evenly into four groups: 
+    <me>
+        \{59, 60, 61\}, \{63, 64, 64\}, \{66, 66, 67\}, \{69, 70, 72\}
+    </me>
+    The first quartile occurs between the first and second groups of 3 values. This is between 61 and 63, so we take the average of these two values to get Q1=62 inches. 
+</p>
+<p>
+    The third quartile occurs at the dividing line between the third and fourth groups of 3 values which is between 67 and 69, so we take the average of these two values to get Q3=68 inches. Therefore, the interquartile range is Q3-Q1=68-62=6 inches. This means that the middle 50% of people in this data set are all within 6 inches of each other in height.
+   </p>
+   <p>
+    If the dividing points between the groups of data values do not occur between two data values, then we just use the next larger data value. For example, if we had 13 data values instead of 12, the first quartile would occur at the point where 3.25 data values lie below it. Since this is not a whole number, we would say that the first quartile is the value in the 4th position as seen in the example below.  
+   </p>
     
         <example>
             <statement>
                 <p>
-                    For an odd number of data values: Suppose we added one more height (68 inches) to the data set from the previous example. We will again find the interquartile range of the heights.
+                    Suppose we added one more height (68 inches) to the data set from the previous example. We will again find Q1, Q3, and the IQR of the heights.
                 </p>
                 <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
                     <row>
@@ -672,47 +634,43 @@
                 </tabular>
             </statement>
             <solution>
-            <p>
-                The data are already in order, but we have an odd number of values. To deal with this we do not use the median in the upper or lower halves. The lower half will include the values strictly below the median, and the upper half will include the values strictly above the median.
-            </p>
-            <p>
-                <md>
-                    <!-- Todo: can't figure out why the text isn't centered like it is in section 3.3-->
-                    <mrow>\overbrace{59,60, \underbrace{61, 63,}^{Q1 =\frac{61+63}{2}=62} 64, 64, }^{\text{Lower Half}} \overbrace{66}^{\text{Median(Ignore)}} \overbrace{66, 67, \underbrace{68, 69,}^{Q3 =\frac{68+69}{2}=68.5} 70, 72}^{\text{Upper Half}}</mrow>
-                </md>
-            </p>
-    
-            <p>
-                Then the interquartile range is:
-            </p>
-            <p>
-                <md>
-                <mrow>IQR=Q_{3}-Q_{1}=68.5-62=6.5\text{ inches}</mrow>
-            </md>
-            </p>
-    
-            <p>
-                If the data set is small, we can find the first and third quartiles by hand, but we have also seen that they are part of the output from GeoGebra. Here is the output for this data.
-            </p>
-            <sidebyside width="50%">
-                <image source="images/statistics/3_4/quartile.png">
-                <shortdescription>A screenshot of GeoGebra showing the data and the summary statistics.</shortdescription>
-                </image>
-            </sidebyside>
-    
-            <p>
-                From the list of summary statistics we can see that <m>=Q_{1}=62</m> and <m>=Q_{3}=68.5</m> inches. Now we can calculate the interquartile range.
-            </p>
-            <p>
-                <md>
-                <mrow>IQR=68.5-62=6.5\text{ inches}</mrow>
-            </md>
-            </p>
-            <p>
-            This is the same value we found by hand.
-        </p>
-        </solution>
+                <p>
+                    We have <m>n=13</m> data values which is not divisible by 4. So we calculate 25% of 13 is 3.25. The next larger whole number is 4, so we find the 4th value, which is Q1=63 inches.
+                </p>
+                <p>
+                    Similarly, for Q3, we calculate 75% of 13 to get 9.75. The next larger whole number is 10, so we find the 10th value, which is Q3=68 inches. 
+                </p>
+                <p>
+                    Therefore, the interquartile range is Q3-Q1=68-63=5 inches. This means that the middle 50% of people in this data set are all within 5 inches of each other in height.
+                </p>
+            </solution>
         </example>
+        <p>
+            We can summarize the locator method for finding quartiles as follows.
+        </p>
+        <assemblage xml:id="assemblage-locator-method">
+            <title>Locator Method for Finding Quartiles</title>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Find the locator <m>L</m>. For the first quartile, <m>L=0.25n</m>. For the third quartile, <m>L=0.75n</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If <m>L</m> is a whole number, then the quartile is the average of the data values in the <m>L</m>th and <m>(L+1)</m>th positions.
+                        </p>
+                        <p>
+                            If <m>L</m> is not a whole number, then the quartile is the value in the position of the whole number greater than <m>L</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                While we aren't actually rounding, many students find it helpful to think that we "round up" any decimal values.
+            </p>
+        </assemblage>
         <p>
             It is important to note that we are not using spreadsheets for the five-number summary because they do not calculate the quartiles in the same way, so they will not give the same results. Now that we have learned how to find the quartiles we can make a five-number summary and boxplot.
         </p>
@@ -720,6 +678,9 @@
     
     <subsection>
         <title>The Five-Number Summary and Boxplots</title>
+        <p>
+            <alert>PLEASE HOLD OFF ON THESE EXAMPLES UNTIL I'VE EDITED THIS MORE TO CHANGE THE METHODS!</alert>
+        </p>
         <p>
             The <alert>five-number summary</alert> is made up of the minimum, Q1, median, Q3, and the maximum. These five values divide the data into quarters. A <alert>boxplot</alert>, also called a <alert>box-and-whisker plot</alert>, is a graphical representation of the five-number summary. Each region of the boxplot contains approximately the same number of data values, so we can see the spread for each region. We can find the five-number summary and draw a boxplot by hand or by using GeoGebra. In our last example the five-number summary from GeoGebra is: 59, 62, 66, 68.5, 72 inches.
         </p>

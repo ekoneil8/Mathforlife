@@ -528,27 +528,43 @@
     <subsection>
         <title>Histograms</title>
         <p>
-            A <alert>histogram</alert> is like a bar graph, but the horizontal axis is a number line. Unlike a bar graph, there are no spaces between the bars. Here are two histograms for the data given above. Notice that in the one on the left, the two scores of 15 are to the right of 15, or between 15 and 16. The horizontal scales on histograms can be confusing for this reason. Some people choose to have bars start at ½ values to avoid this ambiguity, as in the one on the right.
+            A <alert>histogram</alert> is like a bar graph, but the horizontal axis is a number line. Unlike a bar graph, the data labels are placed on the horizontal axis between the bars. The histogram below shows the quiz scores from the previous example in graphical form.
         </p>
-        <sidebyside widths="47% 47%">
-            <image source="images/histogram1.png">
-            <shortdescription>This is a histogram the x-axis is labeled score and goes from 0 to 21, with a scale of 1. The y-axis is labeled frequency an goes from 0 to 9 with a scale of 1. There are no spaces between the bars.</shortdescription>
-            </image>
+
             <image source="images/histogram2.png">
-            <shortdescription>This is a histogram of the same data but this time the spaces are labeled 0 to 20 instead of the tick marks.</shortdescription>
+            <shortdescription>Histogram of the quiz scores.</shortdescription>
         </image>
-        </sidebyside>
-    
-    
+
+    <p>
+        To read the histogram, we look at the horizontal axis to find the score, then look at the height of the bar to find the frequency. For example, the bar above 18 has a height of 8, which means that 8 students scored an 18 on the quiz.
+    </p>
+        
         <p>
-            If we have a large number of different data values, a frequency table listing every possible value would be way too long. There would be too many bars on the histogram to reveal any patterns. For this reason, it is common with quantitative data to group data into class intervals. The three histograms below show the prices of home sales in Kitsap County, Washington, for the same two-week period in 2026. The only difference between the three is the size of the class intervals.
+            If we have a large number of different data values, a frequency table or histogram including every possible value would not be practical. There would be too many bars on the histogram to reveal any patterns. For this reason, it is common with quantitative data to group data into class intervals. The histograms below show the prices of home sales in Kitsap County, Washington, for the same two-week period in 2026. They are created from the same datset; the only difference is the size of the class intervals.
         </p>
-    </subsection>
-    
-    <subsection>
-        <title>Class Intervals</title>
+       
+        
+<sidebyside>
+    <figure xml:id="historam250k">
+        <caption>Home sales histogram with $250,000 class widths</caption>
+   
+        <image source="images/Histogram-250k.png">
+            <shortdescription>Histogram of home sale prices in Kitsap County, Washington, with $250,000 class intervals. The pattern of sales is slightly less easy to discern in this case, but the numbers are easy to read.</shortdescription>
+        </image>
+         </figure>
+         <figure xml:id="histogram100k">
+            <caption>Home sales histogram with $100,000 class widths</caption>
+         
+        <image source="images/Histogram-100k.png">
+            <shortdescription>Histogram of home sale prices in Kitsap County, Washington, with $100,000 class intervals. There is insufficient detail to discern the pattern of sales.</shortdescription>
+        </image>
+       </figure>
+   </sidebyside>
+   <p>
+    The histogram with $250,000 class widths is easier to read and reveals the broad pattern of sales, while the histogram with $100,000 class widths reveals more detail but may be harder to read.
+   </p>
         <p>
-            <alert>Class intervals</alert> are the intervals into which we group our data. For example, if we are studying the grade point averages (GPAs) of students, we might use class intervals of 0.0 to 0.49, 0.5 to 0.99, 1.0 to 1.49, and so on up to 4.0. 
+            <alert>Class intervals</alert> are the intervals into which we group our data. For example, if we are studying the grade point averages (GPAs) of students, we might use class intervals of 0.0 to 0.49, 0.5 to 0.99, 1.0 to 1.49, and so on up to 4.0. Spreadsheet programs may call these "bins" or "buckets" instead of class intervals.
         </p>
         <p>
             A frequency table for GPAs might look like this:
@@ -587,40 +603,48 @@
                 <cell>25</cell>
             </row>
             <row>
-                <cell>3.5-4.0</cell>
+                <cell>3.5-3.99</cell>
                 <cell>10</cell>
+            </row>
+            <row>
+                <cell>4.0-4.49</cell>
+                <cell>15</cell>
             </row>
         </tabular>
         <p>
-            In general, we define class intervals so that:
+            In this example, we could have eliminated the last class interval of 4.0-4.99 and adjusted the previous class interval to 3.5-4.0, since 4.0 is the maximum possible GPA. However, the readers are likely to be interested in the number of students with perfect 4.0 GPAs.
+        </p>
+        <p>
+            The size of each interval is called the <alert>class width</alert>. In the GPA example, the class width is 0.5 because each interval spans 0.5 units. 
+            For clarity and consistency, we generally define class intervals so that:
             <ol>
                 <li>
                     <p>
-                        Each interval should be equal in size. For example, if the first class contains values from 120 up to but not including 135, the second class should include values from 135 up to but not including 150.
+                        Each class width is the same.
                     </p>
                 </li>
                 <li>
                     <p>
-                        We typically have somewhere between 5 and 20 classes, depending on the number of data values we're working with.
+                        There are between 5 and 20 classes.
                     </p>
                 </li>
             </ol>
         </p>
         <p>
-            In the next example, we'll make a histogram using class intervals.
+            In the next example, we'll show the steps for creating a histogram by hand.
         </p>
         <example>
             <p>
-                Suppose we have collected weights from 100 subjects who identify as male, as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of <m>263-121 = 142</m>.
+                Suppose we have collected weights from 100 subjects who identify as male, as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of <m>263-121 = 142</m>. This means that the <term>range</term> of the data is 142.
             </p>
             <p>
-                There are many ways to draw a histogram and we will explain one way as an example. We will create 10 classes by doing the following calculation: Take the range of 142 and divide it by 10 to find the class width.
+                We decide to use 10 class intervals. To find the class width, we take the range of 142 and divide it by 10.
             </p>
             <p>
                 <m>142/10 = 14.2</m>
             </p>
             <p>
-                Then we round up the class width so that the largest data value will be in one of the classes. So we round up to a class width of 15. Since the minimum data value is 121, we will choose 120 to start with since it is a multiple of 15 that is less than 121.
+                Using a class width of 14.2 would result in awkward values for the bounds of our intervals, so we round up to 15. Since the minimum data value is 121, we will choose 120 for the lower limit of the first class because it is a nice round number that is less than 121. The first class interval will be 120-134.99, the second will be 135-149.99, and so on up to 255-269.99. Tabulating the number of data values that fall into each class interval and then graphing gives us the following frequency table and histogram:
             </p>
             <sidebyside valign="bottom" widths="47% 47%">
                 <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
@@ -670,76 +694,87 @@
                     </row>
                 </tabular>
                 <image source="images/class_intervals.png">
-            <shortdescription>This is a histogram of the data in the table; the x-axis is labeled weights(pounds) and goes from 120 to 270, with a scale of 15; The y-axis is labeled frequency and goes from 0 to 30 with a scale of 5. There are no spaces between the bars.</shortdescription>
+            <shortdescription>A histogram of the data in the table; the x-axis is labeled weights(pounds) and goes from 120 to 270, with a scale of 15; The y-axis is labeled frequency and goes from 0 to 30 with a scale of 5. There are no spaces between the bars.</shortdescription>
             </image>
             </sidebyside>
         </example>
     
-        <p>
-            When using class intervals, it is much easier to use technology that was specifically designed to make histograms. GeoGebra is one program that lets you adjust the class widths to see which graph best displays the data.
-        </p>
+        
     </subsection>
     
     <subsection>
-        <title>Histograms Using Technology</title>
-        <p>
-            We will be using GeoGebra throughout this chapter to make graphs and calculate summary statistics. There is an online version and one you can download at <url href="http://www.geogebra.org/" visual="geogebra.org"/>. To access the online version, select "GeoGebra Classic from the GeoGebra home page. To download it, select "App Downloads" from the home page. The instructions are similar for both.
-        </p>
-    
-        <sidebyside valign="middle" widths="60% 35%">
-            <p>
-                The first thing we need to do is enter the data in GeoGebra's spreadsheet. You can access the spreadsheet from Main Menu <m>\rightarrow</m>View <m>\rightarrow</m>Spreadsheet. Next, enter your data and select that column. Then click on the histogram icon in the menu bar on the left side and select One Variable Analysis.
-            </p>
-                <image source="images/histogram_tech1.png">
-                <shortdescription>A screenshot of GeoGebra showing the icon for One Variable Analysis</shortdescription>
-                </image>
-        </sidebyside>
-    
-        <sidebyside valign="middle" widths="60% 35%">
-            <p>
-                A new window will pop up showing a visual of the data. There is a drop-down menu for the type of graph, but histogram is the default. Notice that the bars are not lined up with the tick-marks at the bottom, so we want to edit this histogram. The slider bar at the top will let you see different class widths, but we want to choose our class widths manually.
-            </p>
-                <image source="images/histogram_tech2.png">
-                <shortdescription>A screenshot from GeoGebra showing the histogram</shortdescription>
-                </image>
-        </sidebyside>
-    
-        <sidebyside valign="middle" widths="60% 35%">
-            <p>
-                If you close the menu at the top right by clicking on the left pointing triangle, you will see a settings wheel. Click on the wheel and check the box for set classes manually. To match our previous histogram, we will start at 120 pounds and set a class width of 15 pounds.
-            </p>
-                <image source="images/histogram_tech3.png">
-                <shortdescription>A screenshot from GeoGebra showing the box checked for Set Classes Manually.</shortdescription>
-                </image>
-        </sidebyside>
-    
-        <sidebyside valign="middle" widths="60% 35%">
-            <p>
-                Now the bars of the histogram match our previous graph, but we need to edit the axis labels to match. Click on the graph tab on the right side and uncheck the box for automatic dimensions. We set the x min, x max, x step, y min, y max and y step as shown.
-            </p>
-                <image source="images/histogram_tech4.png">
-                <shortdescription>A screenshot from GeoGebra showing the box uncheckd for Automatic Dimensions. The dimensions entered are xMin 111; xMax 275; xStep 15; yMin -3.4033; yMax: 30.8; yStep 5 (The y-dimensions were automatic)</shortdescription>
-            </image>
-        </sidebyside>
-    
-        <sidebyside valign="middle" widths="60% 35%">
-            <p>
-                To put the graph in an assignment or a book such as this one, select the export icon and choose Export as Picture. The downloaded version also has a Copy to Clipboard option. Then insert the graph into any document and add axis labels.
-            </p>
-                <image source="images/histogram_tech5.png">
-                <shortdescription>A screenshot from GeoGebra showing the export icon</shortdescription>
-            </image>
-        </sidebyside>
-    
-        <p>
-            Here is our finished histogram:
-        </p>
-        <sidebyside width="40%">
-            <image source="images/histogram_tech6.png">
-            <shortdescription>The finished histogram from GeoGebra copied into a Word document. This is the same histogram as in Example 10.</shortdescription>
-        </image>
-    </sidebyside>
-    
+        <title>Create Histograms with Technology</title>
+       <p>
+        While Excel can be used to create histograms, it is not as user-friendly as Google Sheets for this purpose.
+       </p>
+       <p>
+        We will walk through the steps of creating a histogram in Google Sheets using the following data on the number of hours spent on homework per week for 30 students in a class:
+       </p>
+         <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>5</cell>
+                <cell>1</cell>
+                <cell>4</cell>
+                <cell>6</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>17</cell>
+                <cell>11</cell>
+                <cell>9</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+          </row>
+          <row>
+                <cell>10</cell>
+                <cell>14</cell>
+                <cell>5</cell>
+                <cell>21</cell>
+                <cell>3</cell>
+                <cell>6</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+                <cell>4</cell>
+                <cell>5</cell>
+                <cell>6</cell>
+                <cell>2</cell>
+                <cell>3</cell>
+                <cell>15</cell>
+                <cell>23</cell>
+          </row>
+         </tabular>
+         
+         <p>
+            To create a histogram:
+            <ol>
+                <li>
+                    <p>
+                        Enter the data <em>as a single column</em> in a Google Sheets spreadsheet.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Select the data, then click on the Insert menu and select Chart.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In the Chart Editor, click on the Chart Type dropdown menu and select Histogram.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In the Chart Editor, click on the Customize tab to adjust the settings. Most important, the class intervals are called "buckets" in Google Sheets, and the class widths are called "buckets". Change the bucket size in the Histogram area of the Customize tab.
+                    </p>
+                </li>
+            </ol>
+         </p>
+         <p>
+            The resulting histogram will be displayed in the spreadsheet. You can further customize the appearance of the histogram by double-clicking on the histogram to access the Chart Editor.
+         </p>
     </subsection>
     
     <subsection>
