@@ -480,9 +480,9 @@ eBookConfig.enable_chatcodes =  false;
 #sec-statistics-describing-data-4-9-1-1-2-1-1 { counter-set: sec-statistics-describing-data-4-9-1-1-2-1-1 0; }
 #sec-statistics-describing-data-4-9-1-1-2-1-1 > li::marker { content: ""counter(sec-statistics-describing-data-4-9-1-1-2-1-1,decimal)""; }
 #sec-statistics-describing-data-4-9-1-1-2-1-1 > li { counter-increment: sec-statistics-describing-data-4-9-1-1-2-1-1; }
-#sec-statistics-describing-data-16-12-2 { counter-set: sec-statistics-describing-data-16-12-2 0; }
-#sec-statistics-describing-data-16-12-2 > li::marker { content: ""counter(sec-statistics-describing-data-16-12-2,decimal)"."; }
-#sec-statistics-describing-data-16-12-2 > li { counter-increment: sec-statistics-describing-data-16-12-2; }
+#sec-statistics-describing-data-16-17-2 { counter-set: sec-statistics-describing-data-16-17-2 0; }
+#sec-statistics-describing-data-16-17-2 > li::marker { content: ""counter(sec-statistics-describing-data-16-17-2,decimal)"."; }
+#sec-statistics-describing-data-16-17-2 > li { counter-increment: sec-statistics-describing-data-16-17-2; }
 #sec-statistics-describing-data-17-5-1 { counter-set: sec-statistics-describing-data-17-5-1 0; }
 #sec-statistics-describing-data-17-5-1 > li::marker { content: ""counter(sec-statistics-describing-data-17-5-1,decimal)"."; }
 #sec-statistics-describing-data-17-5-1 > li { counter-increment: sec-statistics-describing-data-17-5-1; }
@@ -1854,17 +1854,20 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.13</span><span class="space"> </span><span class="title">Histograms</span>
 </h3>
 <div class="para" id="sec-statistics-describing-data-16-2">A <em class="alert">histogram</em> is like a bar graph, but the horizontal axis is a number line. Unlike a bar graph, the data labels are placed on the horizontal axis between the bars. The histogram below shows the quiz scores from the previous example in graphical form.</div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/histogram2.png" class="contained" alt="Histogram of the quiz scores."></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/histogram2.png" class="contained" alt="Histogram of the quiz scores."></div>
 <div class="para" id="sec-statistics-describing-data-16-4">To read the histogram, we look at the horizontal axis to find the score, then look at the height of the bar to find the frequency. For example, the bar above 18 has a height of 8, which means that 8 students scored an 18 on the quiz.</div>
 <div class="para" id="sec-statistics-describing-data-16-5">If we have a large number of different data values, a frequency table or histogram including every possible value would not be practical. There would be too many bars on the histogram to reveal any patterns. For this reason, it is common with quantitative data to group data into class intervals. The histograms below show the prices of home sales in Kitsap County, Washington, for the same two-week period in 2026. They are created from the same datset; the only difference is the size of the class intervals.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="historam250k"><img src="external/images/Histogram-250k.png" class="contained" alt="Histogram of home sale prices in Kitsap County, Washington, with $250,000 class intervals. The pattern of sales is slightly less easy to discern in this case, but the numbers are easy to read."><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.11<span class="period">.</span></span><span class="space"> </span>Home sales histogram with $250,000 class widths</figcaption></figure></div>
 <div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="histogram100k"><img src="external/images/Histogram-100k.png" class="contained" alt="Histogram of home sale prices in Kitsap County, Washington, with $100,000 class intervals. There is insufficient detail to discern the pattern of sales."><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.12<span class="period">.</span></span><span class="space"> </span>Home sales histogram with $100,000 class widths</figcaption></figure></div>
 </div></div>
-<div class="para" id="sec-statistics-describing-data-16-7">The histogram with $250,000 class widths is easier to read and reveals the broad pattern of sales, while the histogram with $100,000 class widths reveals more detail but may be harder to read.</div>
+<div class="para" id="sec-statistics-describing-data-16-7">The histogram with wider bars is easier to read and reveals the broad pattern of sales, while the histogram with narrower bars reveals more detail but may be harder to read. Based on the histogram with wider bars, we see that the most frequent home price is between $500,000 and $750,000. Looking at the histogram with smaller bars, we can hone in on the bar for homes selling for between $500,000 and $600,000 as the most frequent.</div>
 <div class="para" id="sec-statistics-describing-data-16-8">
-<em class="alert">Class intervals</em> are the intervals into which we group our data. For example, if we are studying the grade point averages (GPAs) of students, we might use class intervals of 0.0 to 0.49, 0.5 to 0.99, 1.0 to 1.49, and so on up to 4.0. Spreadsheet programs may call these "bins" or "buckets" instead of class intervals.</div>
-<div class="para" id="sec-statistics-describing-data-16-9">A frequency table for GPAs might look like this:</div>
+<em class="alert">Class intervals</em> are the intervals into which we group our data, and <dfn class="terminology">class widths</dfn> are the sizes of those intervals. The two histograms above show the same data with different class widths. The histogram on the left has class widths of 250,000, and the histogram on the right has class widths of 100,000.</div>
+<div class="para" id="sec-statistics-describing-data-16-9">Note: spreadsheet programs may call the class intervals "bins" or "buckets", and they may call the class widths "bin width" or "bucket size".</div>
+<div class="para" id="sec-statistics-describing-data-16-10">If a home sells for exactly $500,000, is that home counted in the class interval to the left of the $500,000 or the class interval to the right of the $500,000 in the histogram or both? Each home will only be counted once, but it is not possible to tell by inspection whether values that are at the dividing lines between class intervals are counted in the bar on the left or the bar on the right. In these particular histograms, they are counted in the bar on the right. So the interval between $500,000 and $600,000 includes $500,000 homes up to $599,999.99 homes.</div>
+<div class="para" id="sec-statistics-describing-data-16-11">Let’s work through another example. If we are studying the grade point averages (GPAs) of students, we might use class intervals of 0.0 to 0.49, 0.5 to 0.99, 1.0 to 1.49, and so on up to 4.0.</div>
+<div class="para" id="sec-statistics-describing-data-16-12">A frequency table for GPAs might look like this:</div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Class Interval</th>
@@ -1907,22 +1910,24 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">15</td>
 </tr>
 </table></div>
-<div class="para" id="sec-statistics-describing-data-16-11">In this example, we could have eliminated the last class interval of 4.0-4.99 and adjusted the previous class interval to 3.5-4.0, since 4.0 is the maximum possible GPA. However, the readers are likely to be interested in the number of students with perfect 4.0 GPAs.</div>
-<div class="para logical" id="sec-statistics-describing-data-16-12">
+<div class="para" id="sec-statistics-describing-data-16-14">The resulting histogram is below.</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/histogram-gpa.png" class="contained" alt="Histogram for GPA data"></div>
+<div class="para" id="sec-statistics-describing-data-16-16">In this example, we could have eliminated the last class interval of 4.0-4.99 and adjusted the previous class interval to 3.5-4.0, since 4.0 is the maximum possible GPA. Both approaches are correct, and this is just one of the many subjective decisions that is made when creating graphs of data.</div>
+<div class="para logical" id="sec-statistics-describing-data-16-17">
 <div class="para">The size of each interval is called the <em class="alert">class width</em>. In the GPA example, the class width is 0.5 because each interval spans 0.5 units. For clarity and consistency, we generally define class intervals so that:</div>
-<ol class="decimal" id="sec-statistics-describing-data-16-12-2">
-<li id="sec-statistics-describing-data-16-12-2-1"><div class="para" id="sec-statistics-describing-data-16-12-2-1-1">Each class width is the same.</div></li>
-<li id="sec-statistics-describing-data-16-12-2-2"><div class="para" id="sec-statistics-describing-data-16-12-2-2-1">There are between 5 and 20 classes.</div></li>
+<ol class="decimal" id="sec-statistics-describing-data-16-17-2">
+<li id="sec-statistics-describing-data-16-17-2-1"><div class="para" id="sec-statistics-describing-data-16-17-2-1-1">Each class width is the same.</div></li>
+<li id="sec-statistics-describing-data-16-17-2-2"><div class="para" id="sec-statistics-describing-data-16-17-2-2-1">There are between 5 and 20 classes.</div></li>
 </ol>
 </div>
-<div class="para" id="sec-statistics-describing-data-16-13">In the next example, we’ll show the steps for creating a histogram by hand.</div>
-<article class="example example-like" id="sec-statistics-describing-data-16-14"><h4 class="heading">
+<div class="para" id="sec-statistics-describing-data-16-18">In the next example, we’ll show the steps for creating a histogram by hand.</div>
+<article class="example example-like" id="sec-statistics-describing-data-16-19"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="sec-statistics-describing-data-16-14-1">Suppose we have collected weights from 100 subjects who identify as male, as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of <span class="process-math">\(263-121 = 142\text{.}\)</span> This means that the <dfn class="terminology">range</dfn> of the data is 142.</div>
-<div class="para" id="sec-statistics-describing-data-16-14-2">We decide to use 10 class intervals. To find the class width, we take the range of 142 and divide it by 10.</div>
-<div class="para" id="sec-statistics-describing-data-16-14-3"><span class="process-math">\(142/10 = 14.2\)</span></div>
-<div class="para" id="sec-statistics-describing-data-16-14-4">Using a class width of 14.2 would result in awkward values for the bounds of our intervals, so we round up to 15. Since the minimum data value is 121, we will choose 120 for the lower limit of the first class because it is a nice round number that is less than 121. The first class interval will be 120-134.99, the second will be 135-149.99, and so on up to 255-269.99. Tabulating the number of data values that fall into each class interval and then graphing gives us the following frequency table and histogram:</div>
+<div class="para" id="sec-statistics-describing-data-16-19-1">Suppose we have collected weights from 100 subjects who identify as male, as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of <span class="process-math">\(263-121 = 142\text{.}\)</span> This means that the <dfn class="terminology">range</dfn> of the data is 142.</div>
+<div class="para" id="sec-statistics-describing-data-16-19-2">We decide to use 10 class intervals. To find the class width, we take the range of 142 and divide it by 10.</div>
+<div class="para" id="sec-statistics-describing-data-16-19-3"><span class="process-math">\(142/10 = 14.2\)</span></div>
+<div class="para" id="sec-statistics-describing-data-16-19-4">Using a class width of 14.2 would result in awkward values for the bounds of our intervals, so we round up to 15. Since the minimum data value is 121, we will choose 120 for the lower limit of the first class because it is a nice round number that is less than 121. The first class interval will be 120-134.99, the second will be 135-149.99, and so on up to 255-269.99. Tabulating the number of data values that fall into each class interval and then graphing gives us the following frequency table and histogram:</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
 <div class="sbspanel fixed-width bottom" style="width:48.4536082474227%;"><table class="tabular">
 <tr class="header-horizontal">
@@ -2017,11 +2022,17 @@ eBookConfig.enable_chatcodes =  false;
 <ol class="decimal" id="sec-statistics-describing-data-17-5-1">
 <li id="sec-statistics-describing-data-17-5-1-1"><div class="para" id="sec-statistics-describing-data-17-5-1-1-1">Enter the data <em class="emphasis">as a single column</em> in a Google Sheets spreadsheet.</div></li>
 <li id="sec-statistics-describing-data-17-5-1-2"><div class="para" id="sec-statistics-describing-data-17-5-1-2-1">Select the data, then click on the Insert menu and select Chart.</div></li>
-<li id="sec-statistics-describing-data-17-5-1-3"><div class="para" id="sec-statistics-describing-data-17-5-1-3-1">In the Chart Editor, click on the Chart Type dropdown menu and select Histogram.</div></li>
-<li id="sec-statistics-describing-data-17-5-1-4"><div class="para" id="sec-statistics-describing-data-17-5-1-4-1">In the Chart Editor, click on the Customize tab to adjust the settings. Most important, the class intervals are called "buckets" in Google Sheets, and the class widths are called "buckets". Change the bucket size in the Histogram area of the Customize tab.</div></li>
+<li id="sec-statistics-describing-data-17-5-1-3"><div class="para" id="sec-statistics-describing-data-17-5-1-3-1">In the Chart Editor, click on the Chart Type dropdown menu and select Histogram. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/histogram-drive-0.png" class="contained" alt="Google drive chart editor use the chart type dropdown menu to select histogram."></div>
+</div></li>
+<li id="sec-statistics-describing-data-17-5-1-4">
+<div class="para" id="sec-statistics-describing-data-17-5-1-4-1">In the Chart Editor, click on the Customize tab to adjust the settings. Most important, the class intervals are called "buckets" in Google Sheets, and the class widths are called "buckets". Change the bucket size in the Histogram area of the Customize tab as seen in the second image below.</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/histogram-drive-1.png" class="contained" alt="Google drive histogram editor change bucket size."></div>
+</li>
 </ol>
 </div>
-<div class="para" id="sec-statistics-describing-data-17-6">The resulting histogram will be displayed in the spreadsheet. You can further customize the appearance of the histogram by double-clicking on the histogram to access the Chart Editor.</div></section><section class="subsection" id="sec-statistics-describing-data-18"><h3 class="heading hide-type">
+<div class="para" id="sec-statistics-describing-data-17-6">The resulting histogram will be displayed in the spreadsheet.</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/histogram-hours.png" class="contained" alt="Histogram of hours with class widths of 2."></div>
+<div class="para" id="sec-statistics-describing-data-17-8">You can further customize the appearance of the histogram by double-clicking on the histogram to access the Chart Editor.</div></section><section class="subsection" id="sec-statistics-describing-data-18"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.15</span><span class="space"> </span><span class="title">The Shape of a Distribution</span>
 </h3>
 <div class="para" id="sec-statistics-describing-data-18-2">Once we have our histogram, we can use it to determine the shape of the data or <em class="alert">distribution</em>. When describing distributions, we are going to look at four characteristics: shape, center, spread and outliers. Center and spread (variation) will be covered in the next two sections.</div></section><section class="subsection" id="sec-statistics-describing-data-19"><h3 class="heading hide-type">
