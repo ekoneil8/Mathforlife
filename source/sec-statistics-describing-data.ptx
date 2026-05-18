@@ -799,7 +799,9 @@
          <p>
             The resulting histogram will be displayed in the spreadsheet.
          </p>
-         
+         <image source="images/histogram-hours.png" width="50%">
+            <shortdescription>Histogram of hours with class widths of 2.</shortdescription>
+         </image>
          <p>
              You can further customize the appearance of the histogram by double-clicking on the histogram to access the Chart Editor.
          </p>
