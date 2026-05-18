@@ -531,7 +531,7 @@
             A <alert>histogram</alert> is like a bar graph, but the horizontal axis is a number line. Unlike a bar graph, the data labels are placed on the horizontal axis between the bars. The histogram below shows the quiz scores from the previous example in graphical form.
         </p>
 
-            <image source="images/histogram2.png">
+            <image source="images/histogram2.png" width="50%">
             <shortdescription>Histogram of the quiz scores.</shortdescription>
         </image>
 
@@ -612,7 +612,7 @@
             </row>
         </tabular>
         <p>
-            In this example, we could have eliminated the last class interval of 4.0-4.99 and adjusted the previous class interval to 3.5-4.0, since 4.0 is the maximum possible GPA. However, the readers are likely to be interested in the number of students with perfect 4.0 GPAs.
+            In this example, we could have eliminated the last class interval of 4.0-4.99 and adjusted the previous class interval to 3.5-4.0, since 4.0 is the maximum possible GPA. Both approaches are correct, and this is just one of the many subjective decisions that is made when creating graphs of data.
         </p>
         <p>
             The size of each interval is called the <alert>class width</alert>. In the GPA example, the class width is 0.5 because each interval spans 0.5 units. 
