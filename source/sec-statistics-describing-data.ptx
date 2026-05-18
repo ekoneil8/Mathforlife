@@ -561,10 +561,19 @@
        </figure>
    </sidebyside>
    <p>
-    The histogram with $250,000 class widths is easier to read and reveals the broad pattern of sales, while the histogram with $100,000 class widths reveals more detail but may be harder to read.
+    The histogram with wider bars is easier to read and reveals the broad pattern of sales, while the histogram with narrower bars reveals more detail but may be harder to read. Based on the histogram with wider bars, we see that the most frequent home price is between $500,000 and $750,000. Looking at the histogram with smaller bars, we can hone in on the bar for homes selling for between $500,000 and $600,000 as the most frequent. 
    </p>
         <p>
-            <alert>Class intervals</alert> are the intervals into which we group our data. For example, if we are studying the grade point averages (GPAs) of students, we might use class intervals of 0.0 to 0.49, 0.5 to 0.99, 1.0 to 1.49, and so on up to 4.0. Spreadsheet programs may call these "bins" or "buckets" instead of class intervals.
+            <alert>Class intervals</alert> are the intervals into which we group our data, and <term>class widths</term> are the sizes of those intervals. The two histograms above show the same data with different class widths. The histogram on the left has class widths of 250,000, and the histogram on the right has class widths of 100,000.
+        </p>
+        <p>
+            Note: spreadsheet programs may call the class intervals "bins" or "buckets", and they may call the class widths "bin width" or "bucket size".
+        </p>
+        <p>
+            If a home sells for exactly $500,000, is that home counted in the class interval to the left of the $500,000 or the class interval to the right of the $500,000 in the histogram or both? Each home will only be counted once, but it is not possible to tell by inspection whether values that are at the dividing lines between class intervals are counted in the bar on the left or the bar on the right. In these particular histograms, they are counted in the bar on the right. So the interval between $500,000 and $600,000 includes $500,000 homes up to $599,999.99 homes.
+        </p>
+        <p>  
+        Let's work through another example. If we are studying the grade point averages (GPAs) of students, we might use class intervals of 0.0 to 0.49, 0.5 to 0.99, 1.0 to 1.49, and so on up to 4.0.
         </p>
         <p>
             A frequency table for GPAs might look like this:
@@ -611,6 +620,13 @@
                 <cell>15</cell>
             </row>
         </tabular>
+        <p>
+            The resulting histogram is below.
+        </p>
+        <image source="images/histogram-gpa.png" width="50%">
+            <shortdescription>Histogram for GPA data</shortdescription>
+            
+        </image>
         <p>
             In this example, we could have eliminated the last class interval of 4.0-4.99 and adjusted the previous class interval to 3.5-4.0, since 4.0 is the maximum possible GPA. Both approaches are correct, and this is just one of the many subjective decisions that is made when creating graphs of data.
         </p>
