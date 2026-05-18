@@ -488,44 +488,11 @@
             </solution>
         </example>
         
-        <p>
-            In addition to a spreadsheet, we will continue our use of GeoGebra. Let's take a look at how to use GeoGeogebra to find the mean, median and standard deviation for the last example. We begin just like we did for making a histogram.
-        </p>
-    
-        <example>
-            <p>
-                <xref ref="textbook_example_mean_median_sd"></xref> continued: We enter the textbook data into column A of the spreadsheet in GeoGebra. (Main Menu →View →Spreadsheet). Next, select the column title of your data, click on the histogram in the menu bar on the left, and select One Variable Analysis.
-            </p>
-            <sidebyside width="40%">
-                <image source="images/statistics/3_4/stdev1.png">
-                <shortdescription>A screenshot of GeoGebra showing the icon for One Variable Analysis</shortdescription>
-                </image>
-            </sidebyside>
-            <p>
-                Then you will see the histogram. It is always a good idea to check the shape of your distribution before calculating anything. Notice our histogram matches what we found about the distribution from the mean and median. It is approximately symmetric or slightly skewed to the left.
-            </p>
-            <sidebyside width="50%">
-                <image source="images/statistics/3_4/stdev2.png">
-                <shortdescription>A screenshot of GeoGebra showing the histogram. The summation symbol to show summary statistics is on the right side.</shortdescription>
-                </image>
-            </sidebyside>
-    
-            <p>
-                Next, we click the summation symbol <m>(\sum x)</m> in the menu bar on the right. The list of summary statistics will pop up as you can see in the image below. We see that the mean is $299.58, the median is $307.50 and the sample standard deviation is $78.68 – just like we found using the spreadsheet formulas.
-            </p>
-            <p>
-                The statistics we will use are the sample size <m>(n)</m>, the mean, median, and the sample standard deviation <m>(s)</m>. The last five entries in the table – min, Q1, median, Q3, and max – together make up the 5-number summary which we will learn about shortly!
-            </p>
-            <sidebyside width="50%">
-                <image source="images/statistics/3_4/stdev3.png">
-                <shortdescription>A screenshot of GeoGebra showing the data, histogram and summary statistics.</shortdescription>
-                </image>
-            </sidebyside>
-        
+       
             <p>
                 The standard deviation is the measure of variation that we pair with the mean for approximately symmetric distributions. This pairing should make sense because the standard deviation uses the mean in its calculation. But what about the median? What measure of variation do we pair with it?
             </p>
-        </example>
+   
     </subsection>
     
     <subsection>
@@ -635,7 +602,11 @@
             </statement>
             <solution>
                 <p>
-                    We have <m>n=13</m> data values which is not divisible by 4. So we calculate 25% of 13 is 3.25. The next larger whole number is 4, so we find the 4th value, which is Q1=63 inches.
+                    We have <m>n=13</m> data values. Those cannot be split evenly into four groups because one fourth of 13 is 3.25. How can we make groups with 3.25 values in each group? A workaround in needed. Here's what we'll do:
+                
+                </p>
+                <p>
+                    For Q1, we first calculate 25% of 13 which is <m>0.25\cdot 13=3.25</m>. Since 3.25 is not a whole number, we will go up to the next whole number which is 4. Now looking back at the data, we find the 4th value, which is Q1=63.
                 </p>
                 <p>
                     Similarly, for Q3, we calculate 75% of 13 to get 9.75. The next larger whole number is 10, so we find the 10th value, which is Q3=68 inches. 
@@ -645,13 +616,19 @@
                 </p>
             </solution>
         </example>
+
         <p>
-            We can summarize the locator method for finding quartiles as follows.
+            The method used in the above example is called the locator method. We can summarize the locator method for finding quartiles as follows.
         </p>
         <assemblage xml:id="assemblage-locator-method">
             <title>Locator Method for Finding Quartiles</title>
             <p>
                 <ol>
+                    <li>
+                        <p>
+                            Write the data in order from smallest to largest.
+                        </p>
+                    </li>
                     <li>
                         <p>
                             Find the locator <m>L</m>. For the first quartile, <m>L=0.25n</m>. For the third quartile, <m>L=0.75n</m>.
@@ -672,14 +649,15 @@
             </p>
         </assemblage>
         <p>
-            It is important to note that we are not using spreadsheets for the five-number summary because they do not calculate the quartiles in the same way, so they will not give the same results. Now that we have learned how to find the quartiles we can make a five-number summary and boxplot.
+            The locator method can also be used to find the median, which is Q2, using <m>L=0.50n</m>. In the 13-number dataset above, the locator of the median (Q2) is <m>L=0.5\cdot13=6.5</m>. Since 6.5 is not a whole number, we round up to 7 and find that the 7th value, the median, is 66 inches. This approach can be broadened to find the value of particular percentiles, too!
         </p>
+
     </subsection>
     
     <subsection>
         <title>The Five-Number Summary and Boxplots</title>
         <p>
-            <alert>PLEASE HOLD OFF ON THESE EXAMPLES UNTIL I'VE EDITED THIS MORE TO CHANGE THE METHODS!</alert>
+            <alert>PLEASE HOLD OFF ON THESE EXAMPLES UNTIL I'VE EDITED THIS MORE!</alert>
         </p>
         <p>
             The <alert>five-number summary</alert> is made up of the minimum, Q1, median, Q3, and the maximum. These five values divide the data into quarters. A <alert>boxplot</alert>, also called a <alert>box-and-whisker plot</alert>, is a graphical representation of the five-number summary. Each region of the boxplot contains approximately the same number of data values, so we can see the spread for each region. We can find the five-number summary and draw a boxplot by hand or by using GeoGebra. In our last example the five-number summary from GeoGebra is: 59, 62, 66, 68.5, 72 inches.
