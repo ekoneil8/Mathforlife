@@ -779,18 +779,34 @@
                 <li>
                     <p>
                         In the Chart Editor, click on the Chart Type dropdown menu and select Histogram.
+                        <image source="images/histogram-drive-0.png" width="50%">
+                            <shortdescription>Google drive chart editor use the chart type dropdown menu to select histogram.</shortdescription>
+                        </image>
+                
                     </p>
                 </li>
                 <li>
                     <p>
-                        In the Chart Editor, click on the Customize tab to adjust the settings. Most important, the class intervals are called "buckets" in Google Sheets, and the class widths are called "buckets". Change the bucket size in the Histogram area of the Customize tab.
+                        In the Chart Editor, click on the Customize tab to adjust the settings. Most important, the class intervals are called "buckets" in Google Sheets, and the class widths are called "buckets". Change the bucket size in the Histogram area of the Customize tab as seen in the second image below.
                     </p>
+                               <image source="images/histogram-drive-1.png" width="50%">
+                <shortdescription>Google drive histogram editor change bucket size.</shortdescription>
+            </image>    
+            
                 </li>
             </ol>
          </p>
          <p>
-            The resulting histogram will be displayed in the spreadsheet. You can further customize the appearance of the histogram by double-clicking on the histogram to access the Chart Editor.
+            The resulting histogram will be displayed in the spreadsheet.
          </p>
+         
+         <p>
+             You can further customize the appearance of the histogram by double-clicking on the histogram to access the Chart Editor.
+         </p>
+         
+                       
+ 
+        
     </subsection>
     
     <subsection>
