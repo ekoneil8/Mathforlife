@@ -568,13 +568,16 @@
     <me>
         \{59, 60, 61\}, \{63, 64, 64\}, \{66, 66, 67\}, \{69, 70, 72\}
     </me>
-    The first quartile occurs between the first and second groups of 3 values. This is between 61 and 63, so we take the average of these two values to get Q1=62 inches. 
+    The first quartile occurs between the first and second groups of values. This is between 61 and 63, so we take the average of these two values to get Q1=62 inches. 
 </p>
 <p>
-    The third quartile occurs at the dividing line between the third and fourth groups of 3 values which is between 67 and 69, so we take the average of these two values to get Q3=68 inches. Therefore, the interquartile range is Q3-Q1=68-62=6 inches. This means that the middle 50% of people in this data set are all within 6 inches of each other in height.
+    The second quartile is the median which occurs between the second and third groups of values. This falls between 64 and 66, and averaging those values we get the median to be Q2=65.
+</p>
+<p>
+    The third quartile occurs at the dividing line between the third and fourth groups of values which is between 67 and 69, so we take the average of these two values to get Q3=68 inches. Therefore, the interquartile range is Q3-Q1=68-62=6 inches. This means that the middle 50% of people in this data set are all within 6 inches of each other in height.
    </p>
    <p>
-    If the dividing points between the groups of data values do not occur between two data values, then we just use the next larger data value. For example, if we had 13 data values instead of 12, the first quartile would occur at the point where 3.25 data values lie below it. Since this is not a whole number, we would say that the first quartile is the value in the 4th position as seen in the example below.  
+    What if the dataset cannot be divided evenly into four groups? For example, if we had 13 data values instead of 12, there would be <m>13\div 4 = 3.25</m> numbers in each group, which is a problem. There are several valid approaches to solve this problem, and we will use an approach called the <term>locator method</term>. Our locator is <m>L=0.25\cdot 13=3.25</m>. Any time the locator is not a whole number, we go up to the next whole number, which is 4 in this case. Then the first quartile is the data value in the fourth position as seen in the next example.
    </p>
     
         <example>
@@ -601,10 +604,7 @@
                 </tabular>
             </statement>
             <solution>
-                <p>
-                    We have <m>n=13</m> data values. Those cannot be split evenly into four groups because one fourth of 13 is 3.25. How can we make groups with 3.25 values in each group? A workaround in needed. Here's what we'll do:
                 
-                </p>
                 <p>
                     For Q1, we first calculate 25% of 13 which is <m>0.25\cdot 13=3.25</m>. Since 3.25 is not a whole number, we will go up to the next whole number which is 4. Now looking back at the data, we find the 4th value, which is Q1=63.
                 </p>
@@ -618,7 +618,7 @@
         </example>
 
         <p>
-            The method used in the above example is called the locator method. We can summarize the locator method for finding quartiles as follows.
+        We can summarize the locator method for finding quartiles as follows.
         </p>
         <assemblage xml:id="assemblage-locator-method">
             <title>Locator Method for Finding Quartiles</title>
@@ -651,6 +651,58 @@
         <p>
             The locator method can also be used to find the median, which is Q2, using <m>L=0.50n</m>. In the 13-number dataset above, the locator of the median (Q2) is <m>L=0.5\cdot13=6.5</m>. Since 6.5 is not a whole number, we round up to 7 and find that the 7th value, the median, is 66 inches. This approach can be broadened to find the value of particular percentiles, too!
         </p>
+        <example>
+            <statement>
+                <p>
+                    Find Q1, Q3, and the IQR for the dataset below that represents the scores on a recent exam in a mathematics class.
+                </p>
+                                <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                    <row>
+                        <cell>0</cell>
+                        <cell>9.4</cell>
+                        <cell>18.1</cell>
+                        <cell>65.6</cell>
+                        <cell>70.6</cell>
+                        <cell>80</cell>
+                        <cell>81.9</cell>
+                        <cell>82.5</cell>
+                    </row>
+                    <row>
+                        <cell>84.4</cell>
+                        <cell>88.5</cell>
+                        <cell>91.9</cell>
+                        <cell>92.5</cell>
+                        <cell>95</cell>
+                        <cell>99.4</cell>
+                        <cell>100</cell>
+                        <cell>100</cell>
+                    </row>
+                </tabular>
+            </statement>
+            <solution>
+                <p>
+                    There are <m>n=16</m> values. For the first quartile, the locator is <m>L=0.25\cdot16=4</m>. Since 4 is a whole number, we will find the average of the fourth and fifth values:
+                    <me>
+                        \frac{65.6+70.6}{2}=68.1
+                    </me>
+                    Therefore, the first quartile is Q1=68.1 which means that 25% of the students scoreded below 68.1 on the test.
+                </p>
+                <p>
+                    For the third quartile, the locator is <m>L=0.75\cdot16=12</m>. Since 12 is a whole number, we will find the average of the twelfth and thirteenth values:
+                    <me>
+                        \frac{92.5+95}{2}=93.75
+                    </me>
+                 Therefore, the third quartile is Q3=93.75, which means that 75% of the students scored below 93.75 on the test. It also means that 25% of the students scored above 93.75 on the test!
+                </p>
+                <p>
+                    The interquartile range is
+                    <me>
+                        IQR=Q3-Q1=93.75-68.1=25.65
+                    </me>
+                    There is a spread of 25.65 percentage points among the middle 50% of test scores.
+                </p>
+            </solution>
+        </example>
 
     </subsection>
     
