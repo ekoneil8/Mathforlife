@@ -390,6 +390,119 @@
             </solution>
         </example>
     </subsection>
+    <subsection>
+        <title>Z-Scores</title>
+        <p>
+            Have you ever heard the saying that you can't compare apples and oranges? It turns out that you can - provided we standardize their measures first!
+        </p>
+        <p>
+            We will be using the standard score called a Z-score, which is a method commonly used with unimodal and symmetric distributions (called <alert>normal</alert> or <alert>nearly normal distributions</alert>). Z-scores may be used with any data, but if the distribution is skewed, then the distribution of Z-scores will also be skewed. 
+        </p>
+        <p>
+            To calculate the Z-score for a data value, we find out how far away from the mean it is by subtracting. Then we divide by the standard deviation to see how many standard deviations that is. Thus, the <alert>Z-score</alert> of a data value is the number of standard deviations it is away from the mean.
+        </p>
+        <assemblage>
+            <title>Z-score</title>
+            <p>
+                <me>Z=\frac{\text{data value - mean}}{\text{standard deviation}}</me>
+            </p>
+            <p>
+                Be sure to calculate the difference first, then divide
+            </p>
+        </assemblage>
+    
+        <p>
+             If a data value is above the mean, its Z-score will be positive. If a data value is below the mean, its Z-score will be negative. Therefore, if a data value is one standard deviation above the mean, its Z-score is +1. If it is 2.5 standard deviations below the mean, its Z-score is -2.5. Note that the units of Z-scores are standard deviations, not the units of the data values.
+        </p>
+        <p>
+            We can use Z-scores to determine the relative unusualness of a data value with respect to its own distribution. That is what allows us to compare two unlike items. The convention in statistics is to say that a data value is <alert>unusual</alert> if it is more than 2 standard deviations from the mean, or in other words, if its Z-score is less than -2 or greater than +2.
+        </p>
+    
+        <example>
+            <p>
+                The oranges at a local grocery store have a mean diameter of 5.8 inches and a standard deviation of 1.2 inches. The apples, on the other hand, have a mean diameter of 4.2 inches and a standard deviation of 0.6 inches. 
+            </p>
+            <p>
+                Ali closes their eyes and selects and apple and an orange. When they look at both pieces of fruit, they seem small. If the orange has a diameter of 4.2 inches and the apple has a diameter of 3.5 inches, which is smaller relative to their respective piles of fruit?
+            </p>
+            <p>
+                To determine which fruit is relatively smaller, Ali can find each of their Z-scores.
+            </p>
+            <p>
+                <md>
+                <mrow>Z_{\text{Orange}}=\frac{4.2-5.8}{1.2}=-1.33\text{ standard deviations}</mrow>
+                <mrow>Z_{\text{Apple}}=\frac{3.5-4.2}{0.6}=-1.17\text { standard deviations}</mrow>
+                </md>
+            </p>
+    
+            <p>
+                By convention, Z-scores are rounded to two decimal places, so we see that the orange is 1.33 standard deviations below its mean and the apple is 1.17 standard deviation below its mean. The orange is therefore smaller relative to its distribution since its Z-score is less than the apple's Z-score.
+            </p>
+            <p>
+                We can also see from the Z-scores that neither fruit has an unusually small diameter since each piece of fruit is less than 2 standard deviations from its mean.
+            </p>
+            <p>
+                We can also find Z-scores using a spreadsheet with this formula:
+            </p>
+            <p>
+                <cd>=STANDARDIZE(data value, mean, standard deviation)</cd>
+            </p>
+            <p>
+                To verify our apple and orange Z-scores, we would write:
+            </p>
+            <sidebyside width="50%">
+                <p>
+                    Apple: <cd>=STANDARDIZE(4.2, 5.8, 1.2)</cd> and we get -1.33 standard deviations
+                </p>
+                <image source="images/statistics/3_4/z_score1.png">
+                <shortdescription>a screenshot of a spreadsheet showing the =STANDARDIZE formula.</shortdescription>
+                </image>
+            </sidebyside>
+    
+            <sidebyside width="50%">
+            <p>
+                Orange: <cd>=STANDARDIZE (3.5, 4.2, 0.6)</cd> and we get -1.17 standard deviations
+            </p>
+                <image source="images/statistics/3_4/z_score2.png">
+                <shortdescription>a screenshot of a spreadsheet showing the =STANDARDIZE formula.</shortdescription>
+                </image>
+            </sidebyside>
+        </example>
+    
+        <example>
+            <p>
+                The mean weight of men over the age of 20 is 195.7 pounds<fn>2016 CDC Report. <url href="https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf" visual="cdc.gov/nchs/data/series/sr_03/sr03_039.pdf"/>. The study included all ethnicities but the report does not say whether transgendered men were included.</fn> with a standard deviation of 29.8 pounds. The mean weight of domestic cats is 8.6 pounds with a standard deviation of 1.2 pounds. (The standard deviation for men's weights is estimated. The cat's mean weight is based on ideal cat weight and the standard deviation is approximate).
+            </p>
+            <p> 
+                At his peak, Andre the Giant, the 7-foot-4-inch French professional wrestler and actor, weighed 520 pounds. When Georgie the cat was at his peak he weighed 24 pounds. Who was more giant – Andre the Giant or Georgie the cat? 
+            </p>
+            <p>
+                Since the weights of cats and men cannot be compared directly, we will need to calculate the Z-scores.
+            </p>
+            <p>
+                <md>
+                <mrow>Z_{\text{Andre}}=\frac{520-195.7}{29.8}=10.88\text{ standard deviations.}</mrow>
+            
+                <mrow>Z_{\text{Georgie}}=\frac{24-8.6}{1.2}=12.83\text{ standard deviations.}</mrow>
+            </md>
+            </p>
+            <p>
+                Using the standardize function, we would write:
+            </p>
+            <sidebyside>
+            <p>
+                Andre: <cd>=STANDARDIZE (520, 197.5, 29.8)</cd> which gives us 10.88 standard deviations.
+            </p>
+            <p>
+                Georgie: <cd>=STANDARDIZE (24, 8.6, 1.2)</cd> which gives us 12.83 standard deviations.
+            </p>
+        </sidebyside>
+            <p>
+                Since both Z-scores are greater than 2 standard deviations, both weights are extremely unusual. However, since the Z-score for Georgie's weight is larger, he is even more giant than Andre the Giant.
+            </p>
+        </example>
+    </subsection>
+    
     
     <subsection>
             <title>Using Technology to Calculate Exact Probabilities</title>

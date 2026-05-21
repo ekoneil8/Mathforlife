@@ -17,7 +17,7 @@
                 </li>
                 <li>
                     <p>
-                        Calculate the 5-number summary and construct boxplots by hand and/or using technology (boxplots using technology may be modified or not)
+                        Calculate the 5-number summary and construct boxplots by hand and/or using technology
                     </p>
                 </li>
                 <li>
@@ -25,24 +25,14 @@
                         Compare distributions with side-by-side boxplots and percentiles
                     </p>
                 </li>
-                <li>
-                    <p>
-                        Calculate and apply Z-scores
-                    </p>
-                </li>
+
             </ul>
     </objectives>
     
     <introduction>
+
         <p>
-            text goes here
-        </p>
-    </introduction>
-    
-    <subsection>
-        <title>Measures of Variation</title>
-        <p>
-            Consider these three sets of quiz scores for a 10-point quiz:
+            Consider these four sets of quiz scores for a 10-point quiz:
         </p>
         <p>
             Section A:
@@ -95,36 +85,7 @@
                 <cell>6</cell>
             </row>
         </tabular>
-        <p>
-            All three data sets have a mean of 5 points and median of 5 points, yet the sets of scores are clearly quite different. In Section A, everyone had the same score; in Section B half the class got no points and the other half got a perfect score. Section C was not as consistent as section A, but not as widely varied as section B.
-        </p>
-        <p>
-            Thus, in addition to the mean and median, which are measures of center or the <q>average</q> value, we also need a measure of how <q>spread out</q>" or varied each data set is.
-        </p>
-        <p> 
-            There are several ways to measure the variation of a distribution. In this section we will look at the <alert>standard deviation</alert>, <alert>range</alert> and the <alert>interquartile range (IQR)</alert>.
-        </p>
-    </subsection>
-    
-    <subsection>
-        <title>Standard Deviation</title>
-        <p>
-            The <alert>sample standard deviation, s</alert>, is a measure of variation that tells us how far, on average, the data values deviate, or are different from, the mean. The mean and standard deviation are paired to provide a measure of center and spread for symmetric distributions.
-        </p>
-        <assemblage>
-            <title>Sample Standard Deviation</title>
-            <p>
-                <me>s=\sqrt{\frac{\text{Sum of the squared deviations from the mean}}{n-1}}</me>
-            </p>
-            <p>
-                where <m>n</m> is the sample size, or the number of data values
-            </p>
-        </assemblage>
-    
-        <p>
-            We will go through the whole process for calculating the standard deviation. Let's say there is another section of quiz scores:
-        </p>
-        <p>
+         <p>
             Section D:
         </p>
         <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
@@ -142,7 +103,48 @@
             </row>
         </tabular>
         <p>
-            The mean quiz score, like Sections A, B and C, is 5 points.
+            All four data sets have a mean of 5 points and median of 5 points, yet the sets of scores are clearly quite different. In Section A, everyone had the same score; in Section B half the class got no points and the other half got a perfect score. Section C was not as consistent as section A, but not as widely varied as section B. Section D is similar to section B in that it has a wide range of scores, but there are more scores in the middle and fewer at the extremes.
+        </p>
+        <p>
+            Thus, in addition to the mean and median, which are measures of center or the <q>average</q> value, we also need a measure of how <q>spread out</q>" or varied each data set is.
+        </p>
+        <p> 
+            There are several ways to measure the variation of a distribution. In this section we will look at the <alert>standard deviation</alert>, <alert>range</alert> and the <alert>interquartile range (IQR)</alert>.
+        </p>
+    </introduction>
+    
+    <subsection>
+        <title>Standard Deviation</title>
+        <image source="images/StandardDeviationBalance.png">
+            <shortdescription>Two balances with equal total weights. On one balance the weights are bunched up in the middle which means the standard deviation is small, and on the other they are spread out which means the standard deviation is large.</shortdescription>
+        </image>
+        <p>
+            The <alert>standard deviation</alert>, is a measure of variation that approximates how far, on average, the data values deviate, or are different from, the mean. The mean and standard deviation are paired to provide a measure of center and spread for symmetric distributions. We use the letter <m>s</m> for the standard deviation of a sample and the lowercase Greek letter <m>\sigma</m> (sigma) for the standard deviation of a population. 
+        </p>
+        <assemblage>
+            <title>Standard Deviation</title>
+            <p>
+                The <alert>sample standard deviation</alert> is
+                <me>s=\sqrt{\frac{\text{Sum of the squared deviations from the mean}}{n-1}}</me>
+            
+            and the <alert>population standard deviation</alert> is
+            <me>\sigma=\sqrt{\frac{\text{Sum of the squared deviations from the mean}}{n}}</me>
+        
+                where <m>n</m> is the sample size, or the number of data values.
+            </p>
+        </assemblage>
+    <p>
+        We can write these formulas using more formal mathematical notation as:
+        <me>s=\sqrt{\frac{\Sigma (x_i-\bar{x})^{2}}{n-1}}</me>
+        and
+        <me>\sigma=\sqrt{\frac{\Sigma (x_i-\mu)^{2}}{n}}.</me>
+    </p>
+        <p>
+            We will go through the whole process for calculating the standard deviation of Section D from above.  
+        </p>
+        
+        <p>
+            The mean quiz score, like in Sections A, B and C, is 5 points.
         </p>
         <p>
             The first step in finding the standard deviation is to find the deviation, or difference, of each data value from the mean. We will do this in a table. You could also use a spreadsheet to do these calculations.
@@ -195,7 +197,7 @@
             </tabular>
     
         <p>
-            We would like to get an idea of the <q>average</q> deviation from the mean, but if we find the average of the values in the second column, the negative and positive values cancel each other out (this will always happen), so to prevent this we square the deviations.
+            We would like to get an idea of the <q>average</q> deviation from the mean, but if we find the average of the values in the second column, the negative and positive values cancel each other out (this will always happen), so to prevent this we square the deviations which results in a postive number.
         </p>
             <tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
                 <row header="yes">
@@ -263,10 +265,10 @@
         </md>
         </p>
         <p>
-            Ordinarily, we would then divide by the number of scores, <m>n</m>, (in this case, 10) to find the mean of the deviations, but the division by <m>n</m> is only done if the data set represents a population. When the data set represents a sample (as it almost always does), we divide by <m>n–1</m> (in this case,).
+            Ordinarily, we would then divide by the number of scores, <m>n</m>, (in this case, 10) to find the mean of the deviations, but the division by <m>n</m> is only done if the data set represents a population. When the data set represents a sample (as it almost always does), we divide by <m>n–1</m> (in this case, 9). The reason for this is that we should assume the population is more diverse than the sample we are looking at, and dividing by a smaller number gives us a larger value for the standard deviation to better represent the variability. (The reason we use <m>n-1</m> exactly has to do with degrees of freedom which is beyond the scope of this text.)
         </p>
         <p>
-            We assume Section D represents a sample, so we will divide by 9. Note that our units are now points-squared since we squared all of the deviations. It is much more meaningful to use the units we started with, so to convert back to points we take the square root.
+            We assume Section D represents a sample, so we will divide by <m>10-1=9</m>. (If this had been a population, we would have divided by 10.) Note that our units are now points-squared since we squared all of the deviations. It is much more meaningful to use the units we started with, so to convert back to points we take the square root.
         </p>
     
         <p>
@@ -294,11 +296,17 @@
         </p>
     
         <p>
-            For the standard deviation, we usually use two more decimal places than the original data. This tells us that on average, scores were 2.36 points away from the mean of 5 points. In summary, here are the steps to calculate the standard deviation by hand.
+            For the standard deviation, we usually use two more decimal places than the original data. This tells us that on average, scores were approximately 2.36 points away from the mean of 5 points.
+        </p>
+        <p>
+            One technical side note: the sample standard deviation is the square root of an inflated average of the squared deviations from the mean, which isn't exactly the same as the average distance from the mean, but it is a good approximation and has some nice mathematical properties that make it the most commonly used measure of variation.
+        </p>
+        <p> 
+            In summary, here are the steps to calculate the standard deviation by hand.
         </p>
     
         <assemblage>
-            <title>Calculating the Sample Standard Deviation</title>
+            <title>Calculating the Standard Deviation</title>
             <p>
                 <ol>
                     <li>
@@ -308,7 +316,7 @@
                     </li>
                     <li>
                         <p>
-                            Square each deviation
+                            Square each deviation remembering that these values will all be positive
                         </p>
                     </li>
                     <li>
@@ -333,7 +341,7 @@
             <ul>
                 <li>
                     <p>
-                        The standard deviation is never negative. It will be zero if all the data values are equal and get larger as the data spreads out.
+                        The standard deviation is never negative. It will be zero if all the data values are equal, more spread out data will result in a larger standard deviation.
                     </p>
                 </li>
                 <li>
@@ -708,222 +716,13 @@
     
     <subsection>
         <title>The Five-Number Summary and Boxplots</title>
+       
         <p>
-            <alert>PLEASE HOLD OFF ON THESE EXAMPLES UNTIL I'VE EDITED THIS MORE!</alert>
+            The five-number summary consists of the minimum, first quartile, median, third quartile, and maximum, separated by commas. These five numbers give us a good summary of the center and spread of the data.
+            For example, the five-number summary of the dataset of test scores in the previous example is: 0, 68.1, 82.5, 93.75, 100.
         </p>
         <p>
-            The <alert>five-number summary</alert> is made up of the minimum, Q1, median, Q3, and the maximum. These five values divide the data into quarters. A <alert>boxplot</alert>, also called a <alert>box-and-whisker plot</alert>, is a graphical representation of the five-number summary. Each region of the boxplot contains approximately the same number of data values, so we can see the spread for each region. We can find the five-number summary and draw a boxplot by hand or by using GeoGebra. In our last example the five-number summary from GeoGebra is: 59, 62, 66, 68.5, 72 inches.
-        </p>
-        <assemblage>
-            <title>Five-Number Summary</title>
-            <p>
-                <me>\text{Minimum, } Q_{1}, \text{Median, } Q_{3}, \text{Maximum}</me>
-            </p>
-        </assemblage>
-    
-        <p>
-            We will use GeoGebra to find the five-number summary for the next example and then explain how to draw a boxplot.
-        </p>
-    
-        <example>
-            <statement>
-            <p>
-                Let's continue with the cost of textbook data in dollars from <xref ref="textbook_example_mean_median_sd"></xref>. Use GeoGebra to find the five-number summary for this sample and draw a boxplot by hand.
-            </p>
-            <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                <row>
-                    <cell>140</cell>
-                    <cell>160</cell>
-                    <cell>160</cell>
-                    <cell>165</cell>
-                    <cell>180</cell>
-                    <cell>220</cell>
-                    <cell>235</cell>
-                    <cell>240</cell>
-                    <cell>250</cell>
-                    <cell>260</cell>
-                    <cell>280</cell>
-                    <cell>285</cell>
-                </row>
-                <row>
-                    <cell>285</cell>
-                    <cell>285</cell>
-                    <cell>290</cell>
-                    <cell>300</cell>
-                    <cell>300</cell>
-                    <cell>305</cell>
-                    <cell>310</cell>
-                    <cell>310</cell>
-                    <cell>315</cell>
-                    <cell>315</cell>
-                    <cell>320</cell>
-                    <cell>320</cell>
-                </row>
-                <row>
-                    <cell>330</cell>
-                    <cell>340</cell>
-                    <cell>345</cell>
-                    <cell>350</cell>
-                    <cell>355</cell>
-                    <cell>360</cell>
-                    <cell>360</cell>
-                    <cell>380</cell>
-                    <cell>395</cell>
-                    <cell>420</cell>
-                    <cell>460</cell>
-                    <cell>460</cell>
-                </row>
-            </tabular>
-            </statement>
-            <solution>
-            <p>
-                As we found before, here is the GeoGebra output. The last five entries of the summary statistics are the five-number summary. Remember to label all of your statistics with units.
-            </p>
-            <sidebyside width="50%">
-                <image source="images/statistics/3_4/five_num1.png">
-                <shortdescription>A screenshot of GeoGebra showing the data and the summary statistics.</shortdescription>
-                </image>
-            </sidebyside>
-            <p>
-                The five-number summary is
-            </p>
-                <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                    <row header="yes">
-                        <cell>Min</cell>
-                        <cell><m>Q_{1}</m></cell>
-                        <cell>Median</cell>
-                        <cell><m>Q_{3}</m></cell>
-                        <cell>Max</cell>
-                    </row>
-                    <row>
-                        <cell>$140</cell>
-                        <cell>$255</cell>
-                        <cell>$307.50</cell>
-                        <cell>$347.50</cell>
-                        <cell>$460</cell>
-                    </row>
-                </tabular>
-            <p>
-                To draw the boxplot, we will first draw a number line that extends a little beyond the minimum and maximum values, and choose a scale. We decided to draw our number line from $120 to $480, in increments of $40. Then we add a meaningful title and units.
-            </p>
-    
-            <p>
-                Next, make vertical lines at the first quartile, median and third quartile and connect them to form a box. This is the middle 50% of the data and you might notice that the width of the box is the IQR. Then, extend the <q>whiskers</q> out to the minimum and maximum values. Note that a boxplot does not have a vertical scale and the height of the box does not matter. Our boxplot looks like this:
-            </p>
-            <sidebyside width="50%">
-                <image source="images/statistics/3_4/five_num2.png">
-                <shortdescription>A boxplot with a horizontal scale from $120 to $480 with a scale of $40.</shortdescription>
-                </image>
-            </sidebyside>
-            <p>
-                GeoGebra will also draw boxplots for us. We enter and select the data values like we have done before and select One Variable Statistics. This brings up the graphics window with a histogram by default. Use the drop-down menu to select the boxplot. We also click on <m>\sum x</m> to show the summary statistics.
-            </p>
-            </solution>
-        </example>
-    
-        <example>
-            <statement>
-            <p>
-                We will continue with our height data, in inches, from the 12 people who identify as women. Find the five-number summary and create a boxplot using GeoGebra.
-            </p>
-            </statement>
-            <solution>
-                <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                    <row>
-                        <cell>59</cell>
-                        <cell>60</cell>
-                        <cell>69</cell>
-                        <cell>64</cell>
-                        <cell>70</cell>
-                        <cell>72</cell>
-                        <cell>66</cell>
-                        <cell>64</cell>
-                        <cell>67</cell>
-                        <cell>66</cell>
-                        <cell>63</cell>
-                        <cell>61</cell>
-                    </row>
-                </tabular>
-                <p>
-                    Following the steps above we have the following GeoGebra output. The last five entries in the statistics table are the five-number summary and we have the boxplot on the right.
-                </p>
-                <sidebyside width="50%">
-                    <image source="images/statistics/3_4/five_num3.png">
-                    <shortdescription>A screenshot of GeoGebra showint the data, summary statistics and the boxplot.</shortdescription>
-                    </image>
-                </sidebyside>
-    
-                <p>
-                    Here is the five-number summary:
-                </p>
-                <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-                    <row header="yes">
-                        <cell>Min</cell>
-                        <cell><m>Q_{1}</m></cell>
-                        <cell>Median</cell>
-                        <cell><m>Q_{3}</m></cell>
-                        <cell>Max</cell>
-                    </row>
-                    <row>
-                        <cell>59in</cell>
-                        <cell>62in</cell>
-                        <cell>65in</cell>
-                        <cell>68in</cell>
-                        <cell>72in</cell>
-                    </row>
-                </tabular>
-                <p>
-                    For this data, the two sides of the box and the two whiskers are approximately the same width. This suggests that the distribution is symmetric. We can verify this by noticing that the mean is approximately equal to the median.
-                </p>
-                <p>
-                    The boxplot can tell us the shape of the distribution, but we cannot tell how many peaks the data has. For that we need a histogram. We can see the histogram and boxplot together by selecting the icon that looks like two rectangles stacked, or an = sign.
-                </p>
-                <sidebyside width="50%">
-                    <image source="images/statistics/3_4/five_num4.png">
-                    <shortdescription>A screenshot of GeoGebra showing the histogram and boxplot stacked.</shortdescription>
-                    </image>
-                </sidebyside>
-            
-                <p>
-                    Now we have a full picture of the data.
-                </p>
-            </solution>
-        </example>
-    
-        <p>
-            The default boxplot in GeoGebra is called a <alert>modified box plot</alert>, which shows the data values that are outliers with an X but requires a few more steps to make by hand. To change from the modified box plot to a regular box plot, click on the left pointing arrow in the boxplot window (downloaded version) or the settings wheel (online version) for options, and uncheck “show outliers.” The output window below shows two side-by-side boxplots (the regular boxplot on top and the modified boxplot on the bottom) illustrating the distribution of the annual salaries for 50 randomly selected full-time workers in the Portland Metro area.
-        </p>
-        <sidebyside width="50%">
-            <image source="images/statistics/3_4/five_num5.png">
-            <shortdescription>A screenshot of GeoGebra showing two boxplots for the same data stacked. The first one is the regular boxplot and show outliers is unchecked; the second one has 4 outliers on the right side and the box for show outliers is checked.</shortdescription>
-            </image>
-        </sidebyside>
-        <p>
-            From the upper boxplot we can see that this distribution is skewed to the right and the upper quarter of the data is very spread out. It is natural to think of the data values as being evenly spread out in each region, but that is quite often not the case. From the lower boxplot we can see that there are 4 data values that are considered outliers and how far away the last data value is from the others. This is why it is useful to show outliers on a boxplot.
-        </p>
-    </subsection>
-    
-    <subsection>
-    <title>Modified Boxplot (Optional)</title>
-        <p>
-            If you are curious to know how a modified boxplot is made, we will explain it briefly. There is a rule called the <alert>1.5*IQR</alert> rule to determine which points are considered outliers. An outlier is a point that is more than 1.5 IQRs away from the middle 50% of the data (the box in the boxplot). We know how to calculate the IQR and then we multiply that by 1.5. We subtract that from Q1 to find the <alert>lower fence</alert> and add that value to Q3 to find the <alert>upper fence</alert>. Values beyond the fences are considered outliers and are drawn with an X or a star. Then we draw the whiskers of a modified box plot to the furthest data value inside the fence on each side.
-        </p>
-    </subsection>
-    
-    <subsection>
-    <title>Percentiles</title>
-        <p>
-            Back when we were finding the median, we mentioned that the median is also called the 50th percentile, because 50% of the data values lie below it. We can define any <alert>percentile</alert> as the data value with that percentage of values below it. Since we have found the quartiles, we can also identify the 25th and 75th percentiles for our data. Q1 is the 25th percentile because 25% of the data values lie below it and Q3 is the 75th percentile because 75% of the data values lie below it.
-        </p>
-        <p>
-            Percentiles are used when comparing the growth of children to the population and in the results of standardized tests, such as the SAT test. If a person scored in the 83rd percentile, that means they scored higher than 83% of the people who took the test.
-        </p>
-    </subsection>
-    
-    <subsection>
-    <title>Comparing Distributions</title>
-        <p>
-            Box plots and percentiles are particularly useful for comparing data from two populations.
+            A boxplot, also called a box and whisker plot, is a visual representation of the five-number summary.
         </p>
         <example>
             <statement>
@@ -971,118 +770,6 @@
         </example>
     </subsection>
     
-    <subsection>
-        <title>Z-Scores</title>
-        <p>
-            Have you ever heard the saying that you can't compare apples and oranges? It turns out that you can - provided we standardize their measures first!
-        </p>
-        <p>
-            We will be using the standard score called a Z-score, which is a method commonly used with unimodal and symmetric distributions (called <alert>normal</alert> or <alert>nearly normal distributions</alert>). Z-scores may be used with any data, but if the distribution is skewed, then the distribution of Z-scores will also be skewed. 
-        </p>
-        <p>
-            To calculate the Z-score for a data value, we find out how far away from the mean it is by subtracting. Then we divide by the standard deviation to see how many standard deviations that is. Thus, the <alert>Z-score</alert> of a data value is the number of standard deviations it is away from the mean.
-        </p>
-        <assemblage>
-            <title>Z-score</title>
-            <p>
-                <me>Z=\frac{\text{data value - mean}}{\text{standard deviation}}</me>
-            </p>
-            <p>
-                Be sure to calculate the difference first, then divide
-            </p>
-        </assemblage>
-    
-        <p>
-             If a data value is above the mean, its Z-score will be positive. If a data value is below the mean, its Z-score will be negative. Therefore, if a data value is one standard deviation above the mean, its Z-score is +1. If it is 2.5 standard deviations below the mean, its Z-score is -2.5. Note that the units of Z-scores are standard deviations, not the units of the data values.
-        </p>
-        <p>
-            We can use Z-scores to determine the relative unusualness of a data value with respect to its own distribution. That is what allows us to compare two unlike items. The convention in statistics is to say that a data value is <alert>unusual</alert> if it is more than 2 standard deviations from the mean, or in other words, if its Z-score is less than -2 or greater than +2.
-        </p>
-    
-        <example>
-            <p>
-                The oranges at a local grocery store have a mean diameter of 5.8 inches and a standard deviation of 1.2 inches. The apples, on the other hand, have a mean diameter of 4.2 inches and a standard deviation of 0.6 inches. 
-            </p>
-            <p>
-                Ali closes their eyes and selects and apple and an orange. When they look at both pieces of fruit, they seem small. If the orange has a diameter of 4.2 inches and the apple has a diameter of 3.5 inches, which is smaller relative to their respective piles of fruit?
-            </p>
-            <p>
-                To determine which fruit is relatively smaller, Ali can find each of their Z-scores.
-            </p>
-            <p>
-                <md>
-                <mrow>Z_{\text{Orange}}=\frac{4.2-5.8}{1.2}=-1.33\text{ standard deviations}</mrow>
-                <mrow>Z_{\text{Apple}}=\frac{3.5-4.2}{0.6}=-1.17\text { standard deviations}</mrow>
-                </md>
-            </p>
-    
-            <p>
-                By convention, Z-scores are rounded to two decimal places, so we see that the orange is 1.33 standard deviations below its mean and the apple is 1.17 standard deviation below its mean. The orange is therefore smaller relative to its distribution since its Z-score is less than the apple's Z-score.
-            </p>
-            <p>
-                We can also see from the Z-scores that neither fruit has an unusually small diameter since each piece of fruit is less than 2 standard deviations from its mean.
-            </p>
-            <p>
-                We can also find Z-scores using a spreadsheet with this formula:
-            </p>
-            <p>
-                <cd>=STANDARDIZE(data value, mean, standard deviation)</cd>
-            </p>
-            <p>
-                To verify our apple and orange Z-scores, we would write:
-            </p>
-            <sidebyside width="50%">
-                <p>
-                    Apple: <cd>=STANDARDIZE(4.2, 5.8, 1.2)</cd> and we get -1.33 standard deviations
-                </p>
-                <image source="images/statistics/3_4/z_score1.png">
-                <shortdescription>a screenshot of a spreadsheet showing the =STANDARDIZE formula.</shortdescription>
-                </image>
-            </sidebyside>
-    
-            <sidebyside width="50%">
-            <p>
-                Orange: <cd>=STANDARDIZE (3.5, 4.2, 0.6)</cd> and we get -1.17 standard deviations
-            </p>
-                <image source="images/statistics/3_4/z_score2.png">
-                <shortdescription>a screenshot of a spreadsheet showing the =STANDARDIZE formula.</shortdescription>
-                </image>
-            </sidebyside>
-        </example>
-    
-        <example>
-            <p>
-                The mean weight of men over the age of 20 is 195.7 pounds<fn>2016 CDC Report. <url href="https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf" visual="cdc.gov/nchs/data/series/sr_03/sr03_039.pdf"/>. The study included all ethnicities but the report does not say whether transgendered men were included.</fn> with a standard deviation of 29.8 pounds. The mean weight of domestic cats is 8.6 pounds with a standard deviation of 1.2 pounds. (The standard deviation for men's weights is estimated. The cat's mean weight is based on ideal cat weight and the standard deviation is approximate).
-            </p>
-            <p> 
-                At his peak, Andre the Giant, the 7-foot-4-inch French professional wrestler and actor, weighed 520 pounds. When Georgie the cat was at his peak he weighed 24 pounds. Who was more giant – Andre the Giant or Georgie the cat? 
-            </p>
-            <p>
-                Since the weights of cats and men cannot be compared directly, we will need to calculate the Z-scores.
-            </p>
-            <p>
-                <md>
-                <mrow>Z_{\text{Andre}}=\frac{520-195.7}{29.8}=10.88\text{ standard deviations.}</mrow>
-            
-                <mrow>Z_{\text{Georgie}}=\frac{24-8.6}{1.2}=12.83\text{ standard deviations.}</mrow>
-            </md>
-            </p>
-            <p>
-                Using the standardize function, we would write:
-            </p>
-            <sidebyside>
-            <p>
-                Andre: <cd>=STANDARDIZE (520, 197.5, 29.8)</cd> which gives us 10.88 standard deviations.
-            </p>
-            <p>
-                Georgie: <cd>=STANDARDIZE (24, 8.6, 1.2)</cd> which gives us 12.83 standard deviations.
-            </p>
-        </sidebyside>
-            <p>
-                Since both Z-scores are greater than 2 standard deviations, both weights are extremely unusual. However, since the Z-score for Georgie's weight is larger, he is even more giant than Andre the Giant.
-            </p>
-        </example>
-    </subsection>
     
     <exercises>
     <title>Exercises</title>
@@ -1724,7 +1411,7 @@
     <exercise><!--  #5 -->
         <statement>
         <p>
-            The following table shows the cost of purchasing a car at a local dealership. Some of the cars sold were new and some were used.
+            The following table shows the cost of purchasing a car at a local dealership. Some of the cars sold were new and some were used.
             <ol marker="a.">
                 <li>
                     <p>
@@ -3368,7 +3055,7 @@
     <exercise><!--  #15 -->
         <statement>
         <p>
-            Suppose you buy a new car whose advertised gas mileage is 25 mpg (miles per gallon). After driving the car for several months, you find that you are getting only 21.4 mpg. You phone the manufacturer and learn that the standard deviation of gas mileage for cars of that model is 1.15 mpg.
+            Suppose you buy a new car whose advertised gas mileage is 25 mpg (miles per gallon). After driving the car for several months, you find that you are getting only 21.4 mpg. You phone the manufacturer and learn that the standard deviation of gas mileage for cars of that model is 1.15 mpg.
             <ol marker="a.">
                 <li>
                     <p>
@@ -3640,7 +3327,7 @@
     <exercise><!--  #21 -->
         <statement>
         <p>
-            Poe, the Clydesdale horse has a world record breaking height of 20.2 hands. All Clydesdale horses have a mean height of 16.5 hands and a standard deviation of 1.85 hands. The last Great Dane to hold the world record for dog height was Gibson who was 107 cm tall. Great Danes have a mean height of 81 cm and a standard deviation of 13 cm. Which animal is taller compared to their respective breed? Explain your answer using Z-scores.
+            Poe, the Clydesdale horse has a world record breaking height of 20.2 hands. All Clydesdale horses have a mean height of 16.5 hands and a standard deviation of 1.85 hands. The last Great Dane to hold the world record for dog height was Gibson who was 107 cm tall. Great Danes have a mean height of 81 cm and a standard deviation of 13 cm. Which animal is taller compared to their respective breed? Explain your answer using Z-scores.
         </p>
         </statement>
         <solution>

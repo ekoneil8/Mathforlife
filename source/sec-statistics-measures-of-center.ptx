@@ -61,36 +61,95 @@
     <subsection>
     <title>Mean</title>
         <p>
-            The <alert>mean</alert>, or more formally the arithmetic mean, is what probably comes to mind when you hear the word average. The calculation of the mean uses every data value in the distribution and is therefore strongly affected by skew and outliers.
+            The <alert>mean</alert>, or more formally the arithmetic mean, is what probably comes to mind when you hear the word average. The calculation of the mean uses every data value in the dataset and is therefore strongly affected by skew and outliers.
         </p>
         <p>
-            To calculate the mean of a distribution, we divide the sum of the data values by the number of data values we have. The sample mean is usually represented by, a lower-case with a bar over it, read-bar. The lower-case letter n is used to represent the number of data values or <alert>sample size</alert>.
+            To calculate the mean of a dataset, we divide the sum of the data values by the number of data values we have. The mean of a sample is usually represented by, a lower-case letter with a bar over it, such as <m>\bar{x}</m>, which we read aloud as "x bar". The mean of a population is usually represented by the Greek letter <m>\mu</m> (mu) which is pronounced "myoo" as a single syllable. The lower-case letter n is used to represent the number of data values; this is the <alert>sample size</alert> or <alert>population size</alert>. Fortunately, the formula for the mean is the same, regardless of whether the dataset represents a sample or the whole population.
         </p>
         <assemblage>
         <title>Mean</title>
-            <p>
+            <p>The mean of a sample is
                 <me>\bar{x}=\frac{\text{sum of data values}}{n}</me>
             </p>
+            <p>
+                and the mean of a population is
+                <me>\mu =\frac{\text{sum of data values}}{n} </me>
+            </p>
+            <p>
+                where <m>n</m> is the number of data values.
+            </p>
+            <p>
+                Round the mean to one more decimal place than is used in the original data.
+            </p>
+
         </assemblage>
+        <example>
+            <statement>
+                <p>
+                    Eleven students were randomly selected to take a five-question history quiz to assess the knowledge of students at a college. The number of questions that each student answered correctly is: 0, 1, 3, 3, 3, 4, 4, 5, 5, 5, 5. 
+                </p>
+                <p>
+                    Find the mean score.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The mean is:
+                    <md>
+                        <mrow> \bar{x}\amp= \frac{0+1+3+3+3+4+4+5+5+5+5}{11} </mrow>
+                        <mrow> \bar{x}\amp\approx 3.5 </mrow>
+                    </md>
+                </p>
+                <p>
+                    The mean is about 3.5 questions answered correctly. 
+                </p>
+                <p>
+                    We rounded to one decimal place because the original data was given to the nearest whole number. If the original data had included one decimal place, we would have rounded to two decimal places, and so on. Note also that we included units in our answer.
+                </p>
+                <p>
+                    We used <m>\bar{x}</m> rather than <m>\mu</m> because the dataset is a sample of 11 students rather than the whole population of students at the college.
+                </p>
+            </solution>
+        </example>
+        
+<p>
+    Before moving on to the next example, we will introduce some mathematical notation that you are likely to encounter in statistical reports.
+</p>            
+<p>
+    We use <m>x_1</m> to represent the first data value, <m>x_2</m> to represent the second data value, and so on until we get to <m>x_n</m> which represents the nth data value. When referring to a generic data value, we can just use <m>x_i</m> where the subscript <m>i</m> represents any number from 1 to n.
+</p>
+            <p>
+               The capital Greek letter <m>\Sigma</m> (Sigma) is used to indicate a sum. You may have noticed that spreadsheets use the <m>\Sigma</m> symbol for the summing function in spreadsheets. Therefore, <m>\Sigma x_i</m> means to add up all the data values. Using this notation, we can write the formula for the mean more compactly as
+                <me>\bar{x}=\frac{\Sigma x_i}{n}</me>
+                or
+                <me>\mu=\frac{\Sigma x_i}{n}</me>
+            </p>
         
         <example>
             <statement>
             <p>
-                Mirabel's exam scores for her last math class were: 79, 86, 82, and 94. What is her mean test score?
+                Mirabel's exam scores for their last math class were: 79, 86, 82, and 94. What is their mean test score for the class?
             </p>
             </statement>
             <solution>
+
             <p>
                 To find the mean test score we need to find the sum of her test scores, then divide the sum by the number of test scores (<m>n=4</m>). The mean is:
             </p>
             <p>
-                <me>\bar{x}=\frac{79+86+82+94}{4}=85.25\text{ points}</me>
+                <me>\mu=\frac{\Sigma x_i}{n}=\frac{79+86+82+94}{4}=85.25\text{ points}</me>
+            </p>
+
+            <p>
+                We will round the sample mean to one more decimal place than the original data. In this case, we would round 85.25 to 85.3 points. 
             </p>
             <p>
-                We will round the sample mean to one more decimal place than the original data. In this case, we would round 85.25 to 85.3 points. Also notice that the mean has the same units as the data and it is important to label it.
+                Since we have averaged <em>all</em> of the test scores, we use <m>\mu</m> rather than <m>\bar{x}</m> to denote the mean. Recall from <xref ref="sec-statistics-process"/>
             </p>
+
             </solution>
         </example>
+
     
         <p>
             It is reasonable to calculate the mean by hand when the data set is small, but if the data set is large, or if you will be finding additional statistics, then technology is the way to go. We can find the mean of a data set using the spreadsheet formula <c>=AVERAGE</c>.
@@ -238,7 +297,7 @@
         </sidebyside>
     
         <p>
-            For this reason, when working with data that is skewed or has outliers, it is common to use a different measure of center, the median.
+            For this reason, when working with data that is skewed or has outliers, it is common to use a different measure of center: the median.
         </p>
     </subsection>
     
@@ -489,6 +548,84 @@
         <p>
             Since the mean is greater than the median, we can expect the distribution to be skewed to the right.
         </p>
+        </solution>
+    </example>
+    <p>
+        It can be helpful as an exercise to invent data sets with a given mean and median to aid in understanding what they represent. 
+    </p>
+    <example>
+        <statement>
+        <p>
+            Invent a data set of 10 values with a mean of 20 and a median of 15.
+        </p>
+        </statement>
+        <solution>
+        <p>
+            We can first focus on the median. Since there are 10 values, the median will be the average of the 5th and 6th values when the data is listed in order. One way to get a median of 15 is to make the 5th value 14 and the 6th value 16 because halfway between 14 and 16 is 15. Now we have:
+            <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                <row>
+                    <cell>?</cell>
+                    <cell>?</cell>
+                    <cell>?</cell>
+                    <cell>?</cell>
+                    <cell>14</cell>
+                    <cell>16</cell>
+                    <cell>?</cell>
+                    <cell>?</cell>
+                    <cell>?</cell>
+                    <cell>?</cell>
+                </row>
+            </tabular>
+        </p>
+        <p>
+            Now we can make up all but one of the remaining values. We need the values to the left of 14 to be less than or equal to 14 and the values to the right of 16 to be greater than or equal to 16. For example, we could have:
+            <tabular>
+                <row>
+                    <cell>1</cell>
+                    <cell>2</cell>
+                    <cell>3</cell>
+                    <cell>4</cell>
+                    <cell>14</cell>
+                    <cell>16</cell>
+                    <cell>25</cell>
+                    <cell>26</cell>
+                    <cell>27</cell>
+                    <cell>?</cell>
+                </row>
+            </tabular>
+        </p>
+        <p>
+            Now we can find the value of the last data value by using the formula for the mean. We know that the mean is 20, so we can set up an equation and solve for the missing value:
+            <md>
+                <mrow>20\amp=\frac{1+2+3+4+14+16+25+26+27+x}{10}</mrow>
+                <mrow>20\amp=\frac{118+x}{10}</mrow>
+                <mrow>20\cdot 10\amp=118+x</mrow>
+                <mrow>200\amp=118+x</mrow>
+                <mrow>x\amp=82</mrow>
+            </md>
+
+        </p>
+        <p>
+            If we had ended up with a value for x that was less than the median of 15, we would have had to go back and change some of the other values and recalculate the missing value to make sure the median was still 15 and the mean was still 20. In this case, we got a value for x that is greater than 16, so we are good to go.
+        </p>
+        <p>
+            Therefore, one possible data set with a mean of 20 and a median of 15 is:
+            <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+                <row>
+                    <cell>1</cell>
+                    <cell>2</cell>
+                    <cell>3</cell>
+                    <cell>4</cell>
+                    <cell>14</cell>
+                    <cell>16</cell>
+                    <cell>25</cell>
+                    <cell>26</cell>
+                    <cell>27</cell>
+                    <cell>82</cell>
+                </row>
+            </tabular>
+        </p>
+ 
         </solution>
     </example>
     </subsection>
