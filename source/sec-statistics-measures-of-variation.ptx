@@ -740,13 +740,14 @@
             <image source="images/chart.png">
                 <shortdescription>Google Sheets boxplot does not include dots for outliers and does not indicate the location of the median.</shortdescription>
             </image>
+        </sidebyside>
             <p>
                 In addition to the use of dots to indicate outliers, Microsoft Excel boxplots include an X to indicate the mean. Boxplots created with Google Sheets provide less information: the do not indicate outliers or the locations of the mean or even the median.
             </p>
             <p>
                 The primary application of boxplots is in comparing multiple datasets. When multiple boxplots are displayed side-by-side of stacked above each other using the same scale, we can compare the datasets quickly.
             </p>
-        </sidebyside>
+
         <example>
             <statement>
             <p>
