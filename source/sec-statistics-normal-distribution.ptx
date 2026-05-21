@@ -454,7 +454,7 @@
                 <p>
                     Apple: <cd>=STANDARDIZE(4.2, 5.8, 1.2)</cd> and we get -1.33 standard deviations
                 </p>
-                <image source="images/statistics/3_4/z_score1.png">
+                <image source="images/z_score1.png">
                 <shortdescription>a screenshot of a spreadsheet showing the =STANDARDIZE formula.</shortdescription>
                 </image>
             </sidebyside>
@@ -463,7 +463,7 @@
             <p>
                 Orange: <cd>=STANDARDIZE (3.5, 4.2, 0.6)</cd> and we get -1.17 standard deviations
             </p>
-                <image source="images/statistics/3_4/z_score2.png">
+                <image source="images/sz_score2.png">
                 <shortdescription>a screenshot of a spreadsheet showing the =STANDARDIZE formula.</shortdescription>
                 </image>
             </sidebyside>
@@ -513,7 +513,7 @@
                 <p>
                     To use Onlinestatbook.com, go to the <url href="http://onlinestatbook.com/2/calculators/normal_dist.html" visual="onlinestatbook.com/2/calculators/normal_dist.html">OnlineStatbook Normal calculator</url> and enter the mean and standard deviation. Then select the option that matches the probability you want to find: Above, Below, Between or Outside and enter the probability you want to find. Then click on the Recalculate button.
                 </p>
-                <image source="images/statistics/3_6/onlinestatbook_general.png">
+                <image source="images/onlinestatbook_general.png">
                 <shortdescription>A screenshot of the onlinestatbook.com normal probability calculator. It shows a normal curve, an input box for the mean and median, and a choice to find above, below, between or outside.</shortdescription>
                 </image>
             </sidebyside>
@@ -592,7 +592,7 @@
                                 To use a spreadsheet, we enter <c>=NORM.DIST(12, 18, 4, 1)</c>. The last value is always a 1 to indicate that we want a cumulative probability or area. This also gives us a result of <m>0.0668</m> or <m>6.68\%</m>.
                             </p>
                         </stack>
-                        <image source="images/statistics/3_6/quiz_ex_a.png">
+                        <image source="images/quiz_ex_a.png">
                         <shortdescription>A screenshot of onlinestatbook showing the inputs and output described above.</shortdescription>
                         </image>
                         </sidebyside>
@@ -607,7 +607,7 @@
                                 To use a spreadsheet, NORM.DIST gives us the area to the left so if we want the area to the right we need to find the complement or subtract from 1. We enter <c>=1-NORM.DIST(27, 18, 4, 1)</c>. This also gives us a result of <m>0.0122</m> or <m>1.22\%</m>.
                             </p>
                             </stack>
-                        <image source="images/statistics/3_6/quiz_ex_b.png">
+                        <image source="images/quiz_ex_b.png">
                         <shortdescription>A screenshot of onlinestatbook showing the inputs and output described above.</shortdescription>
                         </image>
                         </sidebyside>
@@ -617,7 +617,7 @@
                         <p>
                             To use OnlineStatbook, we we will keep our mean of 18 points and standard deviation of 4 points. Then we select Between and enter 21 and 25. This gives us a result of <m>0.1866</m> as shown in the image or <m>18.66\%</m>.
                         </p>
-                        <image source="images/statistics/3_6/quiz_ex_c.png">
+                        <image source="images/quiz_ex_c.png">
                         <shortdescription>A screenshot of onlinestatbook showing the inputs and output described above.</shortdescription>
                         </image>
                         </sidebyside>
