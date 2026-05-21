@@ -724,6 +724,29 @@
         <p>
             A boxplot, also called a box and whisker plot, is a visual representation of the five-number summary.
         </p>
+        <figure xml:id="box-whiskers">
+            <image source="images/HorizontalBoxPlot.png">
+                <shortdescription>Vertical bars at x equals zero, sixty-eight point one, eighty-two point five, ninety-three point seventy-five, and one hundred. There is a horizontal line connecting all of the values and a box from the second to the fourth.</shortdescription>
+            </image>
+            <caption>Boxplot of test scores.</caption>
+        </figure>
+        <p>
+            Boxplots are often displayed vertically, and outliers, which are values significantly greater or lower than the other values, may be displayed as points and excluded from the five-number summary. The boxplots below were created using Microsoft Excel on the left and Google Sheets on the right. They represent the same test score data.
+        </p>
+        <sidebyside>
+            <image source="images/ExcelBoxPlot.png">
+                <shortdescription>Microsoft Excel boxplot includes three dots for low scores that are outliers, which results in the bar indicating the minimum at a score of 65.6.</shortdescription>
+            </image>
+            <image source="images/chart.png">
+                <shortdescription>Google Sheets boxplot does not include dots for outliers and does not indicate the location of the median.</shortdescription>
+            </image>
+            <p>
+                In addition to the use of dots to indicate outliers, Microsoft Excel boxplots include an X to indicate the mean. Boxplots created with Google Sheets provide less information: the do not indicate outliers or the locations of the mean or even the median.
+            </p>
+            <p>
+                The primary application of boxplots is in comparing multiple datasets. When multiple boxplots are displayed side-by-side of stacked above each other using the same scale, we can compare the datasets quickly.
+            </p>
+        </sidebyside>
         <example>
             <statement>
             <p>
@@ -732,7 +755,7 @@
             </statement>
             <solution>
             <sidebyside width="50%">
-                <image source="images/statistics/3_4/compare_dist1.png">
+                <image source="images/compare_dist1.png">
                 <shortdescription>The boxplot for Store 1 shows a 5-number summary of 0.7, 1.8, 2.3, 2.9, 6.3 minutes. The boxplot for Store 2 shows a 5-number summary of 0.5, 1.1, 2.1, 5.7, 9.6 minutes.</shortdescription>
                 </image>
             </sidebyside>
@@ -756,7 +779,7 @@
             </statement>
             <solution>
             <sidebyside width="50%">
-                <image source="images/statistics/3_4/compare_dist2.png">
+                <image source="images/compare_dist2.png">
                 <shortdescription>The boxplot for infants who survived shows a 5-number summary of approximately 1.2, 1.8, 2.2, 2.9, 3.7 kg. The boxplot for infants who died shows a 5-number summary of 1.1, 1.3, 1.5, 2.2, 2.8 kg.</shortdescription>
                 </image>
             </sidebyside>
@@ -946,11 +969,7 @@
                     </p>
                 </li>
                 <li>
-                    <p>
-                        In GeoGebra:
-                    </p>
-                    <p>
-                        In GeoGebra Classic, enter the data values into the column A of the spreadsheet and use the <q>One Variable Analysis</q> function. Then use the <q>Show Statistics</q> option to find the five-number summary.
+                    <p> Find the five-number summary.
                     </p>
                     <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
                         <row header="yes">
@@ -1114,10 +1133,7 @@
                 </li>
                 <li>
                     <p>
-                        In GeoGebra:
-                    </p>
-                    <p>
-                        In GeoGebra Classic, enter the data values into the column A of the spreadsheet and use the <q>One Variable Analysis</q> function. Then use the <q>Show Statistics</q> option to find the five-number summary.
+Find the five-number summary.
                     </p>
                     <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
                         <row header="yes">
@@ -1233,10 +1249,7 @@
                 </li>
                 <li>
                     <p>
-                        In GeoGebra:
-                    </p>
-                    <p>
-                        In GeoGebra Classic, enter the data values into the column A of the spreadsheet and use the <q>One Variable Analysis</q> function. Then use the <q>Show Statistics</q> option to find the five-number summary.
+Find the five-number summary.
                     </p>
                     <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
                         <row header="yes">
@@ -3052,304 +3065,7 @@
     
     </exercise>
     
-    <exercise><!--  #15 -->
-        <statement>
-        <p>
-            Suppose you buy a new car whose advertised gas mileage is 25 mpg (miles per gallon). After driving the car for several months, you find that you are getting only 21.4 mpg. You phone the manufacturer and learn that the standard deviation of gas mileage for cars of that model is 1.15 mpg.
-            <ol marker="a.">
-                <li>
-                    <p>
-                        Find the Z-score for the gas mileage of your car.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Does it appear that your car is getting unusually low gas mileage? Explain your answer using your Z-score.
-                    </p>
-                </li>
-            </ol>
-        </p>
-        </statement>
-        <solution>
-            <p>
-            <ol marker="a.">
-                <li>
-                    <p>
-                        <md>
-                            <mrow>Z\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                            <mrow>\amp=\frac{21.4-25}{1.15}</mrow>
-                            <mrow>\amp=-3.13 \text{ standard deviations}</mrow>
-                        </md>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        The <m>Z</m>-score for the gas mileage of the car is -3.13 standard deviations.
-                    </p>
-                </li>
-            </ol>
-            </p>
-        </solution>
-    </exercise>
     
-    <exercise><!--  #16 -->
-        <statement>
-        <p>
-            According to a local marathon club, the mean finishing time for a marathon is 274 minutes, with a standard deviation of 63 minutes.
-        </p>
-        <p>
-            <ol marker="a.">
-                <li>
-                    <p>
-                        If I can run a marathon with a finishing time of 170 minutes, find the Z-score for my marathon time.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Is my marathon finishing time of 170 minutes unusually fast? Explain your answer using the Z-score.
-                    </p>
-                </li>
-            </ol>
-        </p>
-        </statement>
-        <solution>
-            <p>
-            <ol marker="a.">
-                <li>
-                    <p>
-                        <md>
-                            <mrow>Z\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                            <mrow>\amp=\frac{170-274}{63}</mrow>
-                            <mrow>\amp=-1.65 \text{ standard deviations}</mrow>
-                        </md>
-                    </p>
-                    <p>
-                        The marathon time's <m>Z</m>-score is -1.65 standard deviations.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Because the marathon finishing time is within 2 standard deviations of the mean finishing time, no, this marathon finishing time is not usually fast.
-                    </p>
-                </li>
-            </ol>
-            </p>
-        </solution>
-    </exercise>
-    
-    <exercise><!--  #17 -->
-        <statement>
-        <p>
-            This data set is a sample of the average number of hours per year that a driver is delayed by road congestion in 11 cities:
-        </p>
-        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-            <row>
-                <cell>56</cell>
-                <cell>53</cell>
-                <cell>53</cell>
-                <cell>50</cell>
-                <cell>46</cell>
-                <cell>45</cell>
-                <cell>44</cell>
-                <cell>43</cell>
-                <cell>42</cell>
-                <cell>40</cell>
-                <cell>36</cell>
-            </row>
-        </tabular>
-        <p>
-            <ol marker="a.">
-                <li>
-                    <p>
-                        Find the mean and the standard deviation, including units.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        What is the Z-score for the city with an average delay time of 42 hours per year?
-                    </p>
-                </li>
-            </ol>
-        </p>
-        </statement>
-        <solution>
-            <p>
-            <ol marker="a.">
-                <li>
-                    <p>
-                        In GeoGebra:
-                    </p>
-                    <p>
-                        In GeoGebra Classic, enter the data values into the column A of the spreadsheet and use the <q>One Variable Analysis</q> function. Then use the <q>Show Statistics</q> option to find the mean and standard deviation.
-                    </p>
-                    <p>
-                        The mean is 46.2 hours per year, and the standard deviation is 6.16 hours per year.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <md>
-                            <mrow>Z\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                            <mrow>\amp=\frac{42-46.2}{6.16}</mrow>
-                            <mrow>\amp=-0.68 \text{ standard deviations}</mrow>
-                        </md>
-                    </p>
-                    <p>
-                        The <m>Z</m>-score for a city with an average delay time of 42 hours per year is -0.68 standard deviations.
-                    </p>
-                </li>
-            </ol>
-            </p>
-        </solution>
-    </exercise>
-    
-    <exercise><!--  #18 -->
-        <statement>
-        <p>
-            In a survey of 12 companies recruiting for recent college graduates, they reported the following numbers of job applicants per job posting:
-        </p>
-        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-            <row>
-                <cell>123</cell>
-                <cell>123</cell>
-                <cell>134</cell>
-                <cell>127</cell>
-                <cell>115</cell>
-                <cell>122</cell>
-                <cell>125</cell>
-                <cell>101</cell>
-                <cell>130</cell>
-                <cell>143</cell>
-                <cell>110</cell>
-                <cell>122</cell>
-            </row>
-        </tabular>
-        <p>
-            <ol marker="a.">
-                <li>
-                    <p>
-                        Find the mean and standard deviation, including units.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        What is the Z score for the company with 143 job applicants per job posting?
-                    </p>
-                </li>
-            </ol>
-        </p>
-        </statement>
-        <solution>
-        <p>
-            <ol marker="a.">
-                <li>
-                    <p>
-                        In GeoGebra:
-                    </p>
-                    <p>
-                        In GeoGebra Classic, enter the data values into the column A of the spreadsheet and use the <q>One Variable Analysis</q> function. Then use the <q>Show Statistics</q> option to find the mean and standard deviation.
-                    </p>
-                    <p>
-                        The mean is 122.9 job applicants per job posting, and the standard deviation is 10.91 job applicants per job posting.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <md>
-                            <mrow>Z\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                            <mrow>\amp=\frac{143-122.9}{10.91}</mrow>
-                            <mrow>\amp=1.84 \text{ standard deviations}</mrow>
-                        </md>
-                    </p>
-                    <p>
-                        The <m>Z</m>-score for a company with 143 job applicants per job posting is 1.84 standard deviations
-                    </p>
-                </li>
-            </ol>
-            </p>
-        </solution>
-    </exercise>
-    
-    <exercise><!--  #19 -->
-        <statement>
-        <p>
-            You scored an 89 on a math test where the class mean and standard deviation are 75 points and 7 points respectively. You scored a 65 on an English test where the mean and standard deviation are 53 points and 4 points, respectively. In which class did you do better? Explain your answer using Z-scores.
-        </p>
-        </statement>
-        <solution>
-            <p>
-                 <md>
-                    <mrow>Z_{Math}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                    <mrow>\amp=\frac{89-75}{7}</mrow>
-                    <mrow>\amp=2 \text{ standard deviations}</mrow>
-                </md>
-            </p>
-            <p>
-                <md>
-                    <mrow>Z_{English}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                    <mrow>\amp=\frac{65-53}{4}</mrow>
-                    <mrow>\amp=3 \text{ standard deviations}</mrow>
-                </md>
-            </p>
-            <p>
-                Because the <m>Z</m>-score of my English test is greater than the <m>Z</m>-score of my math test, I did better on the English test than I did on the math test.
-            </p>
-        </solution>
-    </exercise>
-    
-    <exercise><!--  #20 -->
-        <statement>
-        <p>
-            The mean running time for comedy movies is 139 minutes, with a standard deviation of 39.7 minutes. For action movies, the mean running time is 159 minutes, with a standard deviation of 26.2 minutes. A recent comedy movie had a running time of 102 minutes, while an action movie playing at the same theatre had a running time of 129 minutes. Which movie is shorter compared to other movies in the same genre? Explain your answer using Z-score.
-        </p>
-        </statement>
-        <solution>
-            <p>
-                <md>
-                    <mrow>Z_{comedy}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                    <mrow>\amp=\frac{102-139}{39.7}</mrow>
-                    <mrow>\amp=-0.93 \text{ standard deviations}</mrow>
-                </md>
-            </p>
-            <p>
-                <md>
-                    <mrow>Z_{action}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                    <mrow>\amp=\frac{129-159}{26.2}</mrow>
-                    <mrow>\amp=-1.14 \text{ standard deviations}</mrow>
-                </md>
-            </p>
-            <p>
-                Because the <m>Z</m>-score for the 129 minute action movie was less than the <m>Z</m>-score for the 102 comedy movie, the action movie was shorter than the comedy movie, when both movies are compared to other movies in their genres.
-            </p>
-        </solution>
-    </exercise>
-    
-    <exercise><!--  #21 -->
-        <statement>
-        <p>
-            Poe, the Clydesdale horse has a world record breaking height of 20.2 hands. All Clydesdale horses have a mean height of 16.5 hands and a standard deviation of 1.85 hands. The last Great Dane to hold the world record for dog height was Gibson who was 107 cm tall. Great Danes have a mean height of 81 cm and a standard deviation of 13 cm. Which animal is taller compared to their respective breed? Explain your answer using Z-scores.
-        </p>
-        </statement>
-        <solution>
-            <p>
-                <md>
-                    <mrow>Z_{Poe}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                    <mrow>\amp=\frac{20.2-16.5}{1.85}</mrow>
-                    <mrow>\amp=2 \text{ standard deviations}</mrow>
-                </md>
-            </p>
-            <p>
-                <md>
-                    <mrow>Z_{Gibson}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}</mrow>
-                    <mrow>\amp=\frac{107-81}{13}</mrow>
-                    <mrow>\amp=2 \text{ standard deviations}</mrow>
-                </md>
-            </p>
-            <p>
-                Because the <m>Z</m>-scores for the heights of Poe (the Clydesdale horse) and Gibson (the Great Dane) are the same, neither animal is taller than the other when compared to their respective breeds.
-            </p>
-        </solution>
-        </exercise>
     </exercises>
 
 </section>
