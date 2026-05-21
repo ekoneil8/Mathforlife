@@ -536,7 +536,7 @@
         <assemblage>
         <title>Quartiles</title>
             <p>
-                <m>Q_{1}</m> isthe first quartile: 25% of the data lie below this value
+                <m>Q_{1}</m> is the first quartile: 25% of the data lie below this value
             </p>
             <p>
                 <m>Q_{2}</m> is the second quartile, which is the same as the median: 50% of the data lie below this value
@@ -753,13 +753,12 @@
             <p>
                 The box plots of service times for two fast-food restaurants are shown below. Compare the length of time to get served at the two restaurants. Which one should you go to if you are in a hurry?
             </p>
-            </statement>
-            <solution>
-            <sidebyside width="50%">
-                <image source="images/compare_dist1.png">
+                            <image source="images/compare_dist1.png">
                 <shortdescription>The boxplot for Store 1 shows a 5-number summary of 0.7, 1.8, 2.3, 2.9, 6.3 minutes. The boxplot for Store 2 shows a 5-number summary of 0.5, 1.1, 2.1, 5.7, 9.6 minutes.</shortdescription>
                 </image>
-            </sidebyside>
+            </statement>
+            <solution>
+            
             <p>
                 Store 2 has a slightly shorter median service time (2.1 minutes vs. 2.3 minutes), but the service times are less consistent, with a wider spread of the data.
             </p>
@@ -777,13 +776,12 @@
             <p>
                 The boxplots below show the 5-number summaries of the birth weights, in kilograms, of infants with severe idiopathic respiratory distress syndrome (SIRDS)<fn>van Vliet, P.K. and Gupta, J.M. (1973) Sodium bicarbonate in idiopathic respiratory distress syndrome. Arch. Disease in Childhood, 48, 249–255. As quoted on <url href="http://openlearn.open.ac.uk/mod/oucontent/view.php?id=398296&amp;section=1.1.3" visual="openlearn.open.ac.uk/mod/oucontent/view.php?id=398296&amp;section=1.1.3"/></fn>. The boxplots are separated to show the birth weights of infants who survived and those that did not. What can we conclude from this data?
             </p>
-            </statement>
-            <solution>
-            <sidebyside width="50%">
-                <image source="images/compare_dist2.png">
+                            <image source="images/compare_dist2.png">
                 <shortdescription>The boxplot for infants who survived shows a 5-number summary of approximately 1.2, 1.8, 2.2, 2.9, 3.7 kg. The boxplot for infants who died shows a 5-number summary of 1.1, 1.3, 1.5, 2.2, 2.8 kg.</shortdescription>
                 </image>
-            </sidebyside>
+            </statement>
+            <solution>
+           
             <p>
                 Comparing the two groups, the boxplot reveals that the birth weights of the infants that died appear to be, overall, smaller than the weights of infants that survived. In fact, we can see that the median birth weight of infants that survived is about the same as the third quartile of the infants that died. Similarly, we can see that the 25th percentile of the survivors is larger than the 50th percentile of those that died, meaning that over 75% of the survivors had a birth weight larger than the median birth weight of those that died.
             </p>
