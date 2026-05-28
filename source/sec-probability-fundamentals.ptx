@@ -118,12 +118,12 @@
       </li>
       <li>
         <p>
-          What outcomes are in the event "rolling a three", and how many outcomes are in that event?
+          What outcomes are in the event "rolling an odd number", and how many outcomes are in that event?
         </p>
       </li>
       <li>
         <p>
-          What is the probability of the event "rolling a prime number"?
+          What is the probability of the event "rolling an odd number"?
         </p>
       </li>
     </ol>
@@ -141,15 +141,15 @@
         </li>
         <li>
           <p>
-            The event "rolling a three" is <me>E=\lbrace3\rbrace.</me>
-            There is just one outcome in event <m>E</m>.
+            The event "rolling an odd number" is <me>E=\lbrace 1{,}3 {,}5\rbrace.</me>
+            There are three outcomes in event <m>E</m>.
           </p>
         </li>
         <li>
           <p>
-            The probability of rolling a three is
+            The probability of rolling an odd number is
             <me>
-              P(E)=\frac{1}{6}.
+              P(E)=\frac{3}{6}=\frac{1}{2}.
             </me>
             
           </p>
@@ -375,7 +375,7 @@
       (Did you notice that entries with the same sum are aligned along diagonals of the sample space grid?)
     </p>
     <p>
-      All together, there are 10 ways to obtain a sum greater than eight. Therefore, the probability of rolling a sum greater than eight is
+      Altogether, there are 10 ways to obtain a sum greater than eight. Therefore, the probability of rolling a sum greater than eight is
       <me>
         P(\text{sum}\gt 8)=\frac{10}{36}=\frac{5}{18}
       </me>
@@ -647,7 +647,7 @@
         <p>
           Similarly, the probability that a respondent owns a cat or a dog is
           <me>
-            P(D \cup D)=\frac{52+128+43}{250}=\frac{228}{250}=89.2\%.
+            P(D \cup D)=\frac{52+128+43}{250}=\frac{223}{250}=89.2\%.
           </me>
         </p>
         <example>
@@ -804,9 +804,16 @@
     
       or
       <me>
+        P(\overline{E})=\frac{\text{Number of outcomes in the sample space }-\text{ Number of outcomes in E}}{\text{Number of outcomes in the sample space}}.
+      </me>
+    </p>
+    <p>
+      This can also be calculated as:
+    
+      <me>
         P(\overline{E})=1-P(E)
       </me>
-      
+      and
     </p>
     <p>
       <me>
@@ -830,6 +837,30 @@
       </p>
     </solution>
   </example>
+  <p>
+    We often use complements as a tool to make calculations easier as seen in the next example.
+  </p>
+  <example>
+    <statement>
+      <p>
+       There are 20 marbles in a bag. Two are green, three are yellow, five are blue, seven are white, and three are black. If one marble is drawn from the bag at random, what is the probability that is is yellow, blue, white, or black? 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We could add up all the yellow, blue, white, and black marbles, but it's much easier to note that we are looking for everything except the two green marbles. Therefore, the probability is:
+        <me>P(\text{yellow, blue, white or black})=\frac{20-2}{20}=\frac{18}{20}=0.9</me>
+      </p>
+      <p>
+        We also could use the formula that <m>P(E)=1-P(\overline{E})</m> and calculate:
+        <me>P(\text{yellow, blue, white or black})=1-P(\text{green})=1-\frac{2}{20}=0.9</me>
+      </p>
+    </solution>
+  </example>
+  <p>
+    When comparing the two approaches shown in the example above, the first approach is often simpler to understand. However, when we get into some of the more advanced applications later in this chapter, the second approach will be more useful.
+  </p>
+
 </subsection>
 <exercises>
 <exercise>
