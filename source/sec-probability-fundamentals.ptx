@@ -798,17 +798,17 @@
     </p>
     <p>
       <me>
-        P(\overline{E})=\frac{\text{Number of outcomes that do not correspond to }E}{\text{Number of outcomes in the sample space}}
+        P(\overline{E})=\frac{\text{Number of outcomes that do not correspond to }E}{\text{Total Outcomes}}
       </me>
       
     
       or
       <me>
-        P(\overline{E})=\frac{\text{Number of outcomes in the sample space }-\text{ Number of outcomes in E}}{\text{Number of outcomes in the sample space}}.
+        P(\overline{E})=\frac{\text{Total Outcomes }-\text{ Outcomes in E}}{\text{Total Outcomes}}.
       </me>
     </p>
     <p>
-      This can also be calculated as:
+      In mathematical terms, we have:
     
       <me>
         P(\overline{E})=1-P(E)
@@ -817,7 +817,7 @@
     </p>
     <p>
       <me>
-        P(E)=1-P(\overline{E})
+        P(E)=1-P(\overline{E}).
       </me>
       
     </p>
