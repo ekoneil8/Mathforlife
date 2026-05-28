@@ -97,14 +97,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.0.0';
+eBookConfig.runestone_version = '8.1.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
 <style>
@@ -1541,8 +1541,8 @@ P(E)=\frac{4}{8}=\frac{1}{2}.
 <div class="para">Consider the experiment: rolling a single standard six-sided die. (Die the singular of dice, so we can have one die or two or more dice.)</div>
 <ol class="decimal" id="subsec-basic-probability-8-1-1-1">
 <li id="subsec-basic-probability-8-1-1-1-1"><div class="para" id="subsec-basic-probability-8-1-1-1-1-1">What is the sample space, and how many outcomes are in the sample space?</div></li>
-<li id="subsec-basic-probability-8-1-1-1-2"><div class="para" id="subsec-basic-probability-8-1-1-1-2-1">What outcomes are in the event "rolling a three", and how many outcomes are in that event?</div></li>
-<li id="subsec-basic-probability-8-1-1-1-3"><div class="para" id="subsec-basic-probability-8-1-1-1-3-1">What is the probability of the event "rolling a prime number"?</div></li>
+<li id="subsec-basic-probability-8-1-1-1-2"><div class="para" id="subsec-basic-probability-8-1-1-1-2-1">What outcomes are in the event "rolling an odd number", and how many outcomes are in that event?</div></li>
+<li id="subsec-basic-probability-8-1-1-1-3"><div class="para" id="subsec-basic-probability-8-1-1-1-3-1">What is the probability of the event "rolling an odd number"?</div></li>
 </ol>
 </div>
 <div class="solutions"><details id="subsec-basic-probability-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-basic-probability-8-2-1"><ol class="decimal" id="subsec-basic-probability-8-2-1-1">
@@ -1556,20 +1556,20 @@ S=\lbrace1{,}2{,}3{,}4{,}5{,}6\rbrace.
 <div class="para">There are six outcomes in the sample space.</div>
 </div></li>
 <li id="subsec-basic-probability-8-2-1-1-2"><div class="para logical" id="subsec-basic-probability-8-2-1-1-2-1">
-<div class="para">The event "rolling a three" is</div>
+<div class="para">The event "rolling an odd number" is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-E=\lbrace3\rbrace.
+E=\lbrace 1{,}3 {,}5\rbrace.
 \end{equation*}
 </div>
-<div class="para">There is just one outcome in event <span class="process-math">\(E\text{.}\)</span>
+<div class="para">There are three outcomes in event <span class="process-math">\(E\text{.}\)</span>
 </div>
 </div></li>
 <li id="subsec-basic-probability-8-2-1-1-3"><div class="para logical" id="subsec-basic-probability-8-2-1-1-3-1">
-<div class="para">The probability of rolling a three is</div>
+<div class="para">The probability of rolling an odd number is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(E)=\frac{1}{6}.
+P(E)=\frac{3}{6}=\frac{1}{2}.
 \end{equation*}
 </div>
 </div></li>
@@ -1691,7 +1691,7 @@ P\left(\text{doubles}\right)=\frac{6}{36}=\frac{1}{6}
 </div>
 <div class="para" id="subsec-basic-probability-22-2-5">(Did you notice that entries with the same sum are aligned along diagonals of the sample space grid?)</div>
 <div class="para logical" id="subsec-basic-probability-22-2-6">
-<div class="para">All together, there are 10 ways to obtain a sum greater than eight. Therefore, the probability of rolling a sum greater than eight is</div>
+<div class="para">Altogether, there are 10 ways to obtain a sum greater than eight. Therefore, the probability of rolling a sum greater than eight is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(\text{sum}\gt 8)=\frac{10}{36}=\frac{5}{18}
@@ -1936,7 +1936,7 @@ P(D \cap C)=\frac{52}{250}=20.8\%
 <div class="para">Similarly, the probability that a respondent owns a cat or a dog is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(D \cup D)=\frac{52+128+43}{250}=\frac{228}{250}=89.2\%.
+P(D \cup D)=\frac{52+128+43}{250}=\frac{223}{250}=89.2\%.
 \end{equation*}
 </div>
 </div>
@@ -2041,19 +2041,28 @@ P(\text{sum}\lt 11)=1-\frac{3}{36}
 <div class="para logical" id="assemblage-complementary-events-4">
 <div class="displaymath process-math">
 \begin{equation*}
-P(\overline{E})=\frac{\text{Number of outcomes that do not correspond to }E}{\text{Number of outcomes in the sample space}}
+P(\overline{E})=\frac{\text{Number of outcomes that do not correspond to }E}{\text{Total Outcomes}}
 \end{equation*}
 </div>
 <div class="para">or</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(\overline{E})=1-P(E)
+P(\overline{E})=\frac{\text{Total Outcomes }-\text{ Outcomes in E}}{\text{Total Outcomes}}.
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="assemblage-complementary-events-5"><div class="displaymath process-math">
+<div class="para logical" id="assemblage-complementary-events-5">
+<div class="para">In mathematical terms, we have:</div>
+<div class="displaymath process-math">
 \begin{equation*}
-P(E)=1-P(\overline{E})
+P(\overline{E})=1-P(E)
+\end{equation*}
+</div>
+<div class="para">and</div>
+</div>
+<div class="para logical" id="assemblage-complementary-events-6"><div class="displaymath process-math">
+\begin{equation*}
+P(E)=1-P(\overline{E}).
 \end{equation*}
 </div></div></article><article class="example example-like" id="subsec-complementary-events-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.13</span><span class="period">.</span>
@@ -2064,7 +2073,29 @@ P(E)=1-P(\overline{E})
 </div>
 <div class="para" id="subsec-complementary-events-7-2-2">Thus the probability that the card <em class="emphasis">is not</em> a diamond is <span class="process-math">\(1-0.25=0.75\text{.}\)</span>
 </div>
-</div></details></div></article></section><section class="exercises" id="sec-probability-fundamentals-8"><h3 class="heading hide-type">
+</div></details></div></article><div class="para" id="subsec-complementary-events-8">We often use complements as a tool to make calculations easier as seen in the next example.</div>
+<article class="example example-like" id="subsec-complementary-events-9"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.14</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-complementary-events-9-1-1">There are 20 marbles in a bag. Two are green, three are yellow, five are blue, seven are white, and three are black. If one marble is drawn from the bag at random, what is the probability that is is yellow, blue, white, or black?</div>
+<div class="solutions"><details id="subsec-complementary-events-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-complementary-events-9-2-1">
+<div class="para">We could add up all the yellow, blue, white, and black marbles, but it’s much easier to note that we are looking for everything except the two green marbles. Therefore, the probability is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{yellow, blue, white or black})=\frac{20-2}{20}=\frac{18}{20}=0.9
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsec-complementary-events-9-2-2">
+<div class="para">We also could use the formula that <span class="process-math">\(P(E)=1-P(\overline{E})\)</span> and calculate:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{yellow, blue, white or black})=1-P(\text{green})=1-\frac{2}{20}=0.9
+\end{equation*}
+</div>
+</div>
+</div></details></div></article><div class="para" id="subsec-complementary-events-10">When comparing the two approaches shown in the example above, the first approach is often simpler to understand. However, when we get into some of the more advanced applications later in this chapter, the second approach will be more useful.</div></section><section class="exercises" id="sec-probability-fundamentals-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">5.1.5</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-probability-fundamentals-8-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
@@ -2121,7 +2152,7 @@ P(E)=1-P(\overline{E})
 <li id="sec-probability-fundamentals-8-13-1-2-1-1"><div class="para" id="sec-probability-fundamentals-8-13-1-2-1-1-1">What is the probability that an athlete selected at random is on a soccer or swim team?</div></li>
 <li id="sec-probability-fundamentals-8-13-1-2-1-2"><div class="para" id="sec-probability-fundamentals-8-13-1-2-1-2-1">What is the probability that an athlete selected at random is on neither a soccer team nor a swim team? (Use your answer to the previous part.)</div></li>
 </ol></div></article><article class="exercise exercise-like" id="sec-probability-fundamentals-8-14"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
-<div class="para" id="sec-probability-fundamentals-8-14-1-1">The results of a Pew Research Center survey of pet owners<details class="ptx-footnote" aria-live="polite" id="sec-probability-fundamentals-8-14-1-1-1"><summary class="ptx-footnote__number" title="Footnote 5.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-probability-fundamentals-8-14-1-1-1">Brown, A. (2023, July 7). About half of U.S. pet owners say their pets are as much a part of their family as a human member. Pew Research Center. https://www.pewresearch.org/short-reads/2023/07/07/about-half-us-of-pet-owners-say-their-pets-are-as-much-a-part-of-their-family-as-a-human-member/</div></details>  are shown in the table.</div> <figure class="table table-like" id="sec-probability-fundamentals-8-14-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.1.14<span class="period">.</span></span><span class="space"> </span>Pet Ownership</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="sec-probability-fundamentals-8-14-1-1">The results of a Pew Research Center survey of pet owners<details class="ptx-footnote" aria-live="polite" id="sec-probability-fundamentals-8-14-1-1-1"><summary class="ptx-footnote__number" title="Footnote 5.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-probability-fundamentals-8-14-1-1-1">Brown, A. (2023, July 7). About half of U.S. pet owners say their pets are as much a part of their family as a human member. Pew Research Center. https://www.pewresearch.org/short-reads/2023/07/07/about-half-us-of-pet-owners-say-their-pets-are-as-much-a-part-of-their-family-as-a-human-member/</div></details>  are shown in the table.</div> <figure class="table table-like" id="sec-probability-fundamentals-8-14-1-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.1.15<span class="period">.</span></span><span class="space"> </span>Pet Ownership</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b0 r0 l0 t0 lines">Response</th>
 <th scope="col" class="c m b0 r0 l0 t0 lines">Percentage</th>
