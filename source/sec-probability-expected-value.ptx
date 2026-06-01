@@ -265,9 +265,9 @@
                         <p>
                             The probability of winning is <m>\frac{1}{38}</m> since there are 38 numbers on the wheel (1 through 36, plus 0 and 00). If the player wins, they receive <m>35</m> times their bet of <m>\$4</m>, or <m>\$140</m>. If they lose, they lose their $4 bet. The expected value is:
                             <me>
-                                \text{Expected Value}=\$140\left(\frac{1}{38}\right)+\left(-\$4\right)\left(\frac{37}{38}\right)=-\$2.11.
+                                \text{Expected Value}=\$140\left(\frac{1}{38}\right)+\left(-\$4\right)\left(\frac{37}{38}\right)=-\$0.21.
                             </me>
-                            Therefore, if they play this bet repeatedly, they should expect to lose an average of about $2.11 per play on this bet.
+                            Therefore, if they play this bet repeatedly, they should expect to lose an average of about $0.21 per play on this bet.
                         </p>
                     </li>
                     <li>
