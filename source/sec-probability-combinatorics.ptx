@@ -148,7 +148,7 @@
       <p>
         There are 26 letters in the English alphabet, and there are 10 digits between zero and nine. Taking each number or digit on the license plate as an event, the total number of license plates possible is 
         <me>
-          26 \cdot 26 \cdot 16 \cdot 10 \cdot 10 \cdot 10 \cdot 10 =26^{3}\cdot 10^{4}=175\,760\,000.
+          26 \cdot 26 \cdot 26 \cdot 10 \cdot 10 \cdot 10 \cdot 10 =26^{3}\cdot 10^{4}=175\,760\,000.
         </me>
         
       </p>
@@ -159,7 +159,7 @@
         </me>
       </p>
       <p>
-        Therefore, the probability of a randomly-generated license plate consisting of five vowels and five even numbers is <m>\frac{78125}{175760000}\approx0.044\%</m>
+        Therefore, the probability of a randomly-generated license plate consisting of three vowels and four even numbers is <m>\frac{78125}{175760000}\approx0.044\%</m>
       </p>
     </solution>
   </example>
@@ -199,7 +199,11 @@
       The answer is <m>2\,598\,560</m>.
     </p>
     <p>
-      We will see later in this chapter that this number represents the number of five-card poker hands that are possible.
+      Using the factorial function on a scientific calculator, this is entered as:
+      <me>52!\div (5!\times  47!)</me>
+    </p>
+    <p>
+      We will see later in this section that the value <m>\frac{52!}{5!\cdot 47!}</m> represents the number of five-card poker hands that are possible.
     </p>
   </solution>
 </example>
@@ -226,23 +230,43 @@
     
   </p>
 </assemblage>
+<example>
+  <statement>
+    <p>
+      Seven volumes of a book series are placed randomly on a shelf. What is the probability that they are arranged in the correct order, volume 1 followed by volume 2, and so on?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      When placing the books on the shelf, there are seven choices for the first book, six remaining choices for the second book, five choices for the third book, et cetera. The total number of arrangements is 
+      <m>7!</m>. Only one of these arrangements is correct. Therefore, the probability is
+      <me>
+        \frac{1}{7!} = \frac{1}{5040}\approx 0.02\%.
+      </me>
+    </p>
+  </solution>
+</example>
+<p>
+  Factorials can be used to calculate the number of arrangments of subsets of objects as well. For example, the number of ways that four cards can be dealt from a standard 52-card deck is <m>52\cdot51\cdot50\cdot49=5,\!245,\!736</m>. This is the same as <m>\frac{52!}{48!}=5,\!245,\!736</m> because the <m>48!</m> in the denominator "divides away" the remaining factors of <m>52\cdot51\cdot50\cdot49\cdot48\cdot47\cdots1</m> leaving just the first four factors. The resulting calculation is called a permutation, which we discuss next.
+</p>
 </subsection>
 <subsection xml:id="subsec-permutations">
   <title>Permutations</title>
   <p>
-    Suppose we have 25 books, and we want to arrange five of them on a display shelf. We can apply the fundamental counting principle to find the number of ways that can be accomplished. There are 25 choices for the first book, 24 remaining choices for the second book, and so on, resulting in <m>25\cdot24\cdot23\cdot22\cdot21=6\,375\,600</m> possible arrangements.
-    
+    Suppose we wanted to find the number of ways that 20 cards can be dealt from a standard 52-card deck. It would be tedious to multiply 52 by 51 by 50 and so on all the way down to 33. Instead, we can use factorials to calculate this more efficiently. The number of ways that 20 cards can be dealt from a standard 52-card deck is
+  <me>\frac{52!}{32!}\approx 3.07\times 10^{32}</me>
+  which is such a large number that we have expressed in scientific notation.
   </p>
   <p>
-    We can make use of factorials to streamline this calculation. In order to end up with just the first five factors of <m>25!</m>, we can "divide away" the remaining <m>25-5=20</m> factors which amount to <m>20!</m>. In other words, we can calculate <m>\frac{25!}{20!}=6\,375\,600</m> to find the answer more quickly.
+    In this example, we are considering different <em>arrangements</em> of 20 cards. For example, if the first card dealt is the ace of spades and the second card dealt is the two of hearts, this is a different arrangement than if the first card dealt is the two of hearts and the second card dealt is the ace of spades. We will only consider such scenarios right now and address how to handle situations where the order doesn't matter later in this section. 
   </p>
   <p>
-    In general, the number of <em>arrangements</em> of <m>r</m> objects pulled from a set of <m>n</m> objects is equal to <m>\frac{n!}{(n-r)!},</m> and this calculation is called a <term>permutation</term>.
+    To generalize, we notice that the factorial in the denominator is the factorial of <m>52-20</m>. So the numerator is the factorial of the total number of objects, and the denominator is the factorial of the total number of objects minus the number of objects we are arranging. Thus, tthe number of <em>arrangements</em> of <m>r</m> objects pulled from a set of <m>n</m> objects is equal to <m>\frac{n!}{(n-r)!},</m> and this calculation is called a <term>permutation</term>.
   </p>
   <assemblage xml:id="assemblage-permutation">
     <title>Permutations</title>
     <p>
-      A <term>permutation</term> is the number of arrangements of <m>r</m> objects pulled from a set of <m>n</m>.
+      A <term>permutation</term> is the number of arrangements of <m>r</m> objects selected from a set of <m>n</m>.
       <me>
         {}_n P_r=\frac{n!}{(n-r)!}
       </me>
@@ -272,7 +296,10 @@
     </solution>
   </example>
    <p>
-    Most scientific calculators have a permutation function. In <url href="www.desmos.com/scientific">DESMOS</url>, the permutation function is found in the func or functions area or by typing nPr. To find <m>{}_{16}P_4</m> in DESMOS, we enter nPr(16,4).
+    Most scientific calculators have a permutation function. To find <m>{}_{16}P_4</m> on a scientific calculator, we enter 16, then the permutation function, then 4.
+   </p>
+   <p>
+    In <url href="www.desmos.com/scientific">DESMOS</url>, the permutation function is found in the func or functions area or by typing nPr, and both then <m>n</m> and <m>r</m> values are entered as arguments of the permutation function. To find <m>{}_{16}P_4</m> in DESMOS, we enter nPr(16,4).
   </p>
 </subsection>
 <subsection xml:id="subsec-combinations">
@@ -296,6 +323,9 @@
       Combinations are groups of <m>r</m> items out of <m>n</m> in which the <em>order does not matter</em>.
     </p>
   </assemblage>
+  <p>
+    Combinations may also be read as "n choose r" because they are the number of ways to choose <m>r</m> objects from a set of <m>n</m>. You may also see a combination written as <m>C(n,r)</m> or <m>\binom{n}{r}</m>.
+  </p>
 <example>
   <statement>
     <p>
@@ -342,11 +372,11 @@
   <title>Applications Involving Multiple Combinations</title>
   <p>
     Suppose we want to find the probability of drawing exactly three red marbles and three blue marbles from a bag containing 15 red marbles and 10 blue marbles. Using the fundamental counting principle together with combinations, we can find the number of ways to draw three red marbles and three blue marbles.
-
+  </p>
     <p>
       The number of ways to choose three red marbles from the 15 available is <m>{}_{15}C_3</m>. The number of ways to choose three blue marbles from the 10 available is <m>{}_{10}C_3</m>. By the fundamental counting principle, the total number of ways to draw three red marbles and three blue marbles is:
       <me>
-        {}_{15}C_3 \times {}_{10}C_3 = 455 \times 120 = 54\,600.
+        {}_{15}C_3 \cdot {}_{10}C_3 = 54\,600.
       </me>
     </p>
     <p>
@@ -358,7 +388,138 @@
         \frac{54\,600}{177\,100} \approx 30.8\%.
       </me>
     </p>
-  </p>
+    <example>
+      <statement>
+        <p>
+          There are 17 seniors, 20 juniors, and 15 sophomores in a high school band. Four of them wil be randomly selected to represent the band at a music festival. Read each question carefully and find the probability of the indicated outcome.
+        </p>
+          <ol>
+            <li>
+              <p>
+                What is the probability that two seniors and two juniors will be selected?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the probability that exactly one sophomore will be selected?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the probability that no sophomores will be selected?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the probability that at least one sophomore will be selected?
+              </p>
+            </li>
+          </ol>
+        
+      </statement>
+      <solution>
+        <p>
+          First, we find the total number of ways to select four representatives from the band. There are 52 total members of the band, so the total number of ways to select four representatives is <m>{}_{52}C_4=270\,725.</m> This will be the denominator for each of the probabilities.
+          <ol>
+            <li>
+              <p>
+                We are looking for two of the 17 seniors and two of the 20 juniors. This results in:
+                <me>\frac{{}_{17} C_2\cdot{}_{20}C_2}{270725}\approx9.54\%</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                We are looking for exactly one of the 15 sophomores, which means the other three representatives must be selected from the 37 non-sophomores. This results in:
+                <me>\frac{{}_{15}C_1\cdot{}_{37}C_3}{270725}\approx 43.1\%</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                We are looking for all four representatives to be selected from the 37 non-sophomores. This results in:
+                <me>\frac{{}_{37}C_4}{270725}\approx 24.4\%</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                The event of at least one sophomore being selected is the complement of no sophomores being selected, which is approximately 24.4%. Therefore, the probability of at least one sophomore being selected is approximately <m>100\%-24.4\%=75.6\%.</m>
+              </p>
+              <p>
+                Alternatively, we could find the probability of at least one sophomore being selected by finding the number of ways to select one sophomore and three non-sophomores, two sophomores and two non-sophomores, three sophomores and one non-sophomore, and four sophomores, adding these values together, and then dividing by the total number of ways to select four representatives. This results in:
+                <me>\frac{{}_{15}C_1\cdot{}_{37}C_3+{}_{15}C_2\cdot{}_{37}C_2+{}_{15}C_3\cdot{}_{37}C_1+{}_{15}C_4\cdot{}_{37}C_0}{270725}\approx 75.6\%.</me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+
+  <example>
+    <statement>
+      <p>
+        Find the probability of being dealt a five-card poker hand with three kings and two jacks from a standard 52-card deck.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The number of ways to choose three kings from the four available is <m>{}_{4}C_3</m>. The number of ways to choose two jacks from the four available is <m>{}_{4}C_2</m>. By the fundamental counting principle, the total number of ways to be dealt a five-card poker hand with three kings and two jacks is:
+        <me>
+          {}_{4}C_3 \cdot {}_{4}C_2
+        </me>
+        and the total number of five-card poker hands is <me>{}_{52}C_5</me>. Therefore, the probability of being dealt a five-card poker hand with three kings and two jacks is:
+        <me>\frac{{}_{4}C_3 \cdot {}_{4}C_2}{{}_{52}C_5}\approx0.00923\%</me>
+      </p>
+    </solution>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Find the probability of being dealt a full house, which is a five-card poker hand with three cards of one rank and two cards of another rank, from a standard 52-card deck.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Recall from the previous example that the number of ways to be dealt a five-card poker hand with three kings and two jacks is 24. However, there are 13 different ranks that could be the three of a kind and 12 different ranks that could be the pair. Therefore, the total number of ways to be dealt a full house is:
+        <me>
+          \frac{13\cdot {}_{4}C_{3} \cdot 12\cdot {}_{4}C_2}{{}_{52}C_5}\approx0.144\%
+        </me>
+      </p>
+      <p>
+        There is a 0.144% chance of being dealt a full house in five-card poker.
+      </p>
+    </solution>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Find the probability of being dealt three of a kind, which is a five-card poker hand with three cards of one rank and two additional cards of different ranks, from a standard 52-card deck.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There are 13 different ranks that could be the three of a kind, and for each of these ranks, there are <m>{}_{4}C_3</m> ways to choose the three cards. The two additional cards must be of different ranks than the three of a kind and different from each other, so there are <m>{}_{12}C_2</m> ways to pick the ranks of the two additional cards and <m>{}_{4}C_1</m> ways to choose each of these cards. Therefore, the probability of being dealt three of a kind is: 
+        <me>
+          \frac{13\cdot {}_{4}C_3 \cdot {}_{12}C_2 \cdot {}_{4}C_1 \cdot {}_{4}C_1}{{}_{52}C_5}\approx2.11\%
+        </me>
+      </p>
+      <p>
+        We have just shown that there is a 2.11% chance of being dealt three of a kind in five-card poker.
+      </p>
+    </solution>
+  </example>
 </subsection>
+<exercises>
+  <exercise>
+    <statement>
+      <p>
+        How many different license plates are possible in the state of Washington if a license plate consists of three letters followed by three numbers between zero and nine?
+      </p>
+    </statement>
+  </exercise>
+<p>
+  More exercises to come!
+</p>
+  
+</exercises>
 
 </section>
