@@ -78,16 +78,14 @@
       <p>
         To find the number of sandwiches that can be made, we can add the number of ending points on the tree diagram to get 12.
       </p>
-      <p>
-        Alternatively, there are three bread choices. For each bread, there are two meat choices. This gives us <m>3\cdot2=6</m> bread and meat combinations. For each bread and meat combination, there are two cheese choices, resulting in a total of <m>6\cdot2=12</m> possible sandwiches.
-      </p>
+
     </solution>
   </example>
   <p>
-    In the example above, there were three choices: bread, meat, and cheese. There were three options in the first choice, two options in the second choice, and two options in the third choice. The total number of possible sandwiches that result is the product <m>3\cdot2\cdot2=12.</m>
+    Note that after each decision, the number of branches is multiplied by the number of choices for that decision. For example, after choosing the bread, there were three branches, and after choosing the meat, there were two branches for each bread choice resulting in <m>3\cdot2=6</m> bread and meat combinations. In general, we can multiply the number of choices for each decision to find the total number of possible outcomes. In the example above, there were three choices for bread, two choices for meat, and two choices for cheese. Multiplying the number of choices for each decision gives the total number of possible sandwiches: <m>3\cdot2\cdot2=12.</m>
   </p>
   <p>
-    We can generalize this approach to obtain the <term>Fundamental Counting Principle</term>.
+    This approach of multiplying the number of choices (outcomes) for each decision (event) is known as the <term>Fundamental Counting Principle</term>.
   </p>
   <assemblage xml:id="assemblage-fundamental-counting-principle">
     <title>Fundamental Counting Principle</title>
