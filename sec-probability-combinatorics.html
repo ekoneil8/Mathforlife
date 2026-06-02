@@ -987,6 +987,12 @@ eBookConfig.enable_chatcodes =  false;
 #subsec-tree-diagram-fundamental-counting-principle-13-2-1-1 { counter-set: subsec-tree-diagram-fundamental-counting-principle-13-2-1-1 0; }
 #subsec-tree-diagram-fundamental-counting-principle-13-2-1-1 > li::marker { content: ""counter(subsec-tree-diagram-fundamental-counting-principle-13-2-1-1,decimal)"."; }
 #subsec-tree-diagram-fundamental-counting-principle-13-2-1-1 > li { counter-increment: subsec-tree-diagram-fundamental-counting-principle-13-2-1-1; }
+#subsec-combinations-11-1-1-1 { counter-set: subsec-combinations-11-1-1-1 0; }
+#subsec-combinations-11-1-1-1 > li::marker { content: ""counter(subsec-combinations-11-1-1-1,decimal)"."; }
+#subsec-combinations-11-1-1-1 > li { counter-increment: subsec-combinations-11-1-1-1; }
+#subsec-combinations-11-2-1-1 { counter-set: subsec-combinations-11-2-1-1 0; }
+#subsec-combinations-11-2-1-1 > li::marker { content: ""counter(subsec-combinations-11-2-1-1,decimal)"."; }
+#subsec-combinations-11-2-1-1 > li { counter-increment: subsec-combinations-11-2-1-1; }
 #subsec-multiple-combinations-6-1-2 { counter-set: subsec-multiple-combinations-6-1-2 0; }
 #subsec-multiple-combinations-6-1-2 > li::marker { content: ""counter(subsec-multiple-combinations-6-1-2,decimal)"."; }
 #subsec-multiple-combinations-6-1-2 > li { counter-increment: subsec-multiple-combinations-6-1-2; }
@@ -1427,7 +1433,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-factorial" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Factorials</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-permutations" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Permutations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-combinations" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Combinations</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-multiple-combinations" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Applications Involving Multiple Combinations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#subsec-multiple-combinations" class="internal"><span class="codenumber">5.4.5</span> <span class="title">More Applications Involving Combinations and the Fundamental Counting Principle</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-probability-combinatorics.html#sec-probability-combinatorics-9" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -1698,30 +1704,130 @@ n!=n(n-1)(n-1)...1
 </div></details></div></article><article class="example example-like" id="subsec-combinations-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.11</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-combinations-7-1-1">There are 15 red marbles and 10 blue marbles in a bag. Suppose we will draw six marbles from the bag without replacement. What is the probability that all six marbles drawn are red?</div>
+<div class="para" id="subsec-combinations-7-1-1">How many different five-card poker hands can be dealt from a standard 52-card deck that consist of all hearts, and what is the probability of being dealt such a hand?</div>
 <div class="solutions"><details id="subsec-combinations-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="subsec-combinations-7-2-1">To find the probability that all six marbles drawn are red, we need to find the number of ways any six marbles can be drawn from the bag and the number of ways six red marbles can be drawn from the bag.</div>
-<div class="para" id="subsec-combinations-7-2-2">The total number of marbles is 15 + 10 = 25. The total number of ways to draw six marbles from the bag is <span class="process-math">\({}_{25}C_6=177\,100.\)</span>
+<div class="para logical" id="subsec-combinations-7-2-1">
+<div class="para">Since we want all five cards to be hearts, we are looking for the number of ways to choose five cards from the thirteen available hearts. This is written as <span class="process-math">\({}_{13}C_5\text{.}\)</span>
 </div>
-<div class="para" id="subsec-combinations-7-2-3">The number of ways to draw six red marbles from the bag is <span class="process-math">\({}_{15}C_6=5\,005.\)</span>
-</div>
-<div class="para" id="subsec-combinations-7-2-4">Therefore, the probability of drawing six red marbles is <span class="process-math">\(\frac{5\,005}{177\,100}\approx2.83\%.\)</span>
-</div>
-</div></details></div></article></section><section class="subsection" id="subsec-multiple-combinations"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="space"> </span><span class="title">Applications Involving Multiple Combinations</span>
-</h3>
-<div class="para" id="subsec-multiple-combinations-2">Suppose we want to find the probability of drawing exactly three red marbles and three blue marbles from a bag containing 15 red marbles and 10 blue marbles. Using the fundamental counting principle together with combinations, we can find the number of ways to draw three red marbles and three blue marbles.</div>
-<div class="para logical" id="subsec-multiple-combinations-3">
-<div class="para">The number of ways to choose three red marbles from the 15 available is <span class="process-math">\({}_{15}C_3\text{.}\)</span> The number of ways to choose three blue marbles from the 10 available is <span class="process-math">\({}_{10}C_3\text{.}\)</span> By the fundamental counting principle, the total number of ways to draw three red marbles and three blue marbles is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-{}_{15}C_3 \cdot {}_{10}C_3 = 54\,600.
+{}_{13}C_5=\frac{13!}{(13-5)!\cdot 5!}=1\,287.
 \end{equation*}
 </div>
 </div>
-<div class="para" id="subsec-multiple-combinations-4">The total number of ways to draw any six marbles from the bag is <span class="process-math">\({}_{25}C_6 = 177\,100\text{.}\)</span>
+<div class="para" id="subsec-combinations-7-2-2">The total number of five-card poker hands that can be dealt from a standard 52-card deck is <span class="process-math">\({}_{52}C_5=2\,598\,960\text{.}\)</span>
 </div>
-<div class="para logical" id="subsec-multiple-combinations-5">
+<div class="para" id="subsec-combinations-7-2-3">Therefore, the probability of being dealt a hand of all hearts is <span class="process-math">\(\frac{1\,287}{2\,598\,960}\approx0.0495\%.\)</span>
+</div>
+</div></details></div></article><article class="example example-like" id="subsec-combinations-8"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-combinations-8-1-1">There are 15 red marbles and 10 blue marbles in a bag. Suppose we will draw six marbles from the bag without replacement. What is the probability that all six marbles drawn are red?</div>
+<div class="solutions"><details id="subsec-combinations-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-combinations-8-2-1">To find the probability that all six marbles drawn are red, we need to find the number of ways any six marbles can be drawn from the bag and the number of ways six red marbles can be drawn from the bag.</div>
+<div class="para" id="subsec-combinations-8-2-2">The total number of marbles is 15 + 10 = 25. The total number of ways to draw six marbles from the bag is <span class="process-math">\({}_{25}C_6=177\,100.\)</span>
+</div>
+<div class="para" id="subsec-combinations-8-2-3">The number of ways to draw six red marbles from the bag is <span class="process-math">\({}_{15}C_6=5\,005.\)</span>
+</div>
+<div class="para" id="subsec-combinations-8-2-4">Therefore, the probability of drawing six red marbles is <span class="process-math">\(\frac{5\,005}{177\,100}\approx2.83\%.\)</span>
+</div>
+</div></details></div></article><div class="para" id="subsec-combinations-9">How do you know when to use the fundamental counting principle, permutations, or combinations when solving a problem?</div>
+<article class="assemblage assemblage-like" id="assemblage-When-Each"><h4 class="heading"><span class="title">When to Use Each Counting Method.</span></h4>
+<div class="para logical" id="assemblage-When-Each-2">
+<div class="para">The <dfn class="terminology">fundamental counting principle</dfn> can be used when you are making a series of decisions or random selections and:</div>
+<ul class="disc" id="assemblage-When-Each-2-2">
+<li id="assemblage-When-Each-2-2-1"><div class="para" id="assemblage-When-Each-2-2-1-1">The order of the decisions or random selections matters (AB is different from BA), or</div></li>
+<li id="assemblage-When-Each-2-2-2"><div class="para" id="assemblage-When-Each-2-2-2-1">The decisions or random selections are independent (the outcome of one decision or random selection does not affect the outcomes of the other decisions or random selections), or</div></li>
+<li id="assemblage-When-Each-2-2-3"><div class="para" id="assemblage-When-Each-2-2-3-1">Repetitions are allowed (e.g., each card is put back in the deck before the next card is drawn).</div></li>
+</ul>
+</div>
+<div class="para logical" id="assemblage-When-Each-3">
+<div class="para">A <dfn class="terminology">permutation</dfn> can be used when you are making a series of decisions or random selections and:</div>
+<ul class="disc" id="assemblage-When-Each-3-2">
+<li id="assemblage-When-Each-3-2-1"><div class="para" id="assemblage-When-Each-3-2-1-1">The order of the decisions or random selections matters (AB is different from BA), and</div></li>
+<li id="assemblage-When-Each-3-2-2"><div class="para" id="assemblage-When-Each-3-2-2-1">Repetitions are not allowed (e.g., each card is left out of the deck before the next card is drawn).</div></li>
+</ul>
+<div class="para">A permutation is a special case of the fundamental counting principle, so any application requiring a permutation could also be solved using the fundamental counting principle.</div>
+</div>
+<div class="para logical" id="assemblage-When-Each-4">
+<div class="para">A <dfn class="terminology">combination</dfn> can be used when you are making a series of decisions or random selections and:</div>
+<ul class="disc" id="assemblage-When-Each-4-2">
+<li id="assemblage-When-Each-4-2-1"><div class="para" id="assemblage-When-Each-4-2-1-1">The order of the decisions or random selections does not matter (AB is the same as BA), and</div></li>
+<li id="assemblage-When-Each-4-2-2"><div class="para" id="assemblage-When-Each-4-2-2-1">Repetitions are not allowed (e.g., each card is left out of the deck before the next card is drawn).</div></li>
+</ul>
+</div></article><article class="example example-like" id="subsec-combinations-11"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.13</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="subsec-combinations-11-1-1">
+<div class="para">Determine whether the fundamental counting principle, permutations, or combinations should be used to find the number of outcomes in each of the following scenarios. Then find the number of outcomes for each scenario.</div>
+<ol class="decimal" id="subsec-combinations-11-1-1-1">
+<li id="subsec-combinations-11-1-1-1-1"><div class="para" id="subsec-combinations-11-1-1-1-1-1">How many different ways can the letters in the word "HELP" be arranged?</div></li>
+<li id="subsec-combinations-11-1-1-1-2"><div class="para" id="subsec-combinations-11-1-1-1-2-1">How many different outfits can be made if we have three shirts, two pairs of pants, and four pairs of shoes?</div></li>
+<li id="subsec-combinations-11-1-1-1-3"><div class="para" id="subsec-combinations-11-1-1-1-3-1">How many ways can we select three students from a class of 30 to be on a committee?</div></li>
+</ol>
+</div>
+<div class="solutions"><details id="subsec-combinations-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-combinations-11-2-1"><ol class="decimal" id="subsec-combinations-11-2-1-1">
+<li id="subsec-combinations-11-2-1-1-1">
+<div class="para" id="subsec-combinations-11-2-1-1-1-1">The order of the letters matters, and the letters cannot be repeated, so we would use either a permutation or the fundamental counting principle.</div>
+<div class="para logical" id="subsec-combinations-11-2-1-1-1-2">
+<div class="para">There are four different letters, and we are arranging all four of them, so the number of arrangements is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{}_4 P_4=24
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+4\cdot 3 \cdot 2 \cdot 1=24
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="subsec-combinations-11-2-1-1-2">
+<div class="para" id="subsec-combinations-11-2-1-1-2-1">The order of the items in an outfit does not matter, and the items cannot be repeated, so we would use the fundamental counting principle.</div>
+<div class="para logical" id="subsec-combinations-11-2-1-1-2-2">
+<div class="para">The number of outfits is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3\cdot 2\cdot 4 = 24
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="subsec-combinations-11-2-1-1-3">
+<div class="para" id="subsec-combinations-11-2-1-1-3-1">The order of the students selected does not matter, and the students cannot be repeated, so we would use a combination.</div>
+<div class="para logical" id="subsec-combinations-11-2-1-1-3-2">
+<div class="para">The number of ways to select three students from a class of 30 is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{}_{30}C_3=4\,060
+\end{equation*}
+</div>
+</div>
+</li>
+</ol></div></div></details></div></article></section><section class="subsection" id="subsec-multiple-combinations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="space"> </span><span class="title">More Applications Involving Combinations and the Fundamental Counting Principle</span>
+</h3>
+<div class="para logical" id="subsec-multiple-combinations-2">
+<div class="para">In the previous examples, we have only had to use one of the counting methods to find the number of outcomes for a scenario. However, some scenarios require multiple applications of the fundamental counting principle, combinations, and/or permutations together. For example, suppose we want to find the probability of drawing exactly three red marbles and three blue marbles from a bag containing 15 red marbles and 10 blue marbles. Using the fundamental couunting priciple, we can find the number of ways to draw three red marbles and three blue marbles as the product of the number of ways to draw three red marbles and the number of ways to draw three blue marbles:</div>
+<div class="displaymath process-math" id="subsec-multiple-combinations-2-1">
+\begin{align*}
+\amp \text{(Ways to select the red marbles)} \cdot \text{(Ways to select the blue marbles)} \\
+\amp= {}_{15}C_3 \cdot {}_{10}C_3 \\
+\amp= 54\,600 
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-multiple-combinations-3">
+<div class="para">To find the probability, we also need to know the total number of ways to draw any six marbles from the bag:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Ways to draw any 6 marbles} = {}_{25}C_6 = 177\,100
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsec-multiple-combinations-4">
 <div class="para">Therefore, the probability of drawing exactly three red marbles and three blue marbles is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1729,14 +1835,16 @@ n!=n(n-1)(n-1)...1
 \end{equation*}
 </div>
 </div>
-<article class="example example-like" id="subsec-multiple-combinations-6"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.12</span><span class="period">.</span>
+<article class="assemblage assemblage-like" id="assemblage-combination-groups"><h4 class="heading"><span class="title">Selecting Items from Multiple Groups.</span></h4>
+<div class="para" id="assemblage-combination-groups-2">The number of ways to select items from multiple groups is the product of the number of ways to select items from each group.</div>
+<div class="para" id="assemblage-combination-groups-3">Very often, this will be a product of combinations.</div></article><article class="example example-like" id="subsec-multiple-combinations-6"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.14</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-multiple-combinations-6-1-1">There are 17 seniors, 20 juniors, and 15 sophomores in a high school band. Four of them wil be randomly selected to represent the band at a music festival. Read each question carefully and find the probability of the indicated outcome.</div> <ol class="decimal" id="subsec-multiple-combinations-6-1-2">
 <li id="subsec-multiple-combinations-6-1-2-1"><div class="para" id="subsec-multiple-combinations-6-1-2-1-1">What is the probability that two seniors and two juniors will be selected?</div></li>
-<li id="subsec-multiple-combinations-6-1-2-2"><div class="para" id="subsec-multiple-combinations-6-1-2-2-1">What is the probability that exactly one sophomore will be selected?</div></li>
-<li id="subsec-multiple-combinations-6-1-2-3"><div class="para" id="subsec-multiple-combinations-6-1-2-3-1">What is the probability that no sophomores will be selected?</div></li>
-<li id="subsec-multiple-combinations-6-1-2-4"><div class="para" id="subsec-multiple-combinations-6-1-2-4-1">What is the probability that at least one sophomore will be selected?</div></li>
+<li id="subsec-multiple-combinations-6-1-2-2"><div class="para" id="subsec-multiple-combinations-6-1-2-2-1">What is the probability that two seniors, one junior, and one sophomore will be selected?</div></li>
+<li id="subsec-multiple-combinations-6-1-2-3"><div class="para" id="subsec-multiple-combinations-6-1-2-3-1">What is the probability that exactly one sophomore will be selected?</div></li>
+<li id="subsec-multiple-combinations-6-1-2-4"><div class="para" id="subsec-multiple-combinations-6-1-2-4-1">What is the probability that no sophomores will be selected?</div></li>
 </ol>
 <div class="solutions"><details id="subsec-multiple-combinations-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-multiple-combinations-6-2-1">
 <div class="para">First, we find the total number of ways to select four representatives from the band. There are 52 total members of the band, so the total number of ways to select four representatives is <span class="process-math">\({}_{52}C_4=270\,725.\)</span> This will be the denominator for each of the probabilities.</div>
@@ -1750,6 +1858,14 @@ n!=n(n-1)(n-1)...1
 </div>
 </div></li>
 <li id="subsec-multiple-combinations-6-2-1-2-2"><div class="para logical" id="subsec-multiple-combinations-6-2-1-2-2-1">
+<div class="para">We are looking for two of the 17 seniors, one of the 20 juniors, and one of the 15 sophomores. This results in:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{{}_{17}C_2\cdot{}_{20}C_1\cdot{}_{15}C_1}{270725}\approx 15.1\%
+\end{equation*}
+</div>
+</div></li>
+<li id="subsec-multiple-combinations-6-2-1-2-3"><div class="para logical" id="subsec-multiple-combinations-6-2-1-2-3-1">
 <div class="para">We are looking for exactly one of the 15 sophomores, which means the other three representatives must be selected from the 37 non-sophomores. This results in:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1757,7 +1873,7 @@ n!=n(n-1)(n-1)...1
 \end{equation*}
 </div>
 </div></li>
-<li id="subsec-multiple-combinations-6-2-1-2-3"><div class="para logical" id="subsec-multiple-combinations-6-2-1-2-3-1">
+<li id="subsec-multiple-combinations-6-2-1-2-4"><div class="para logical" id="subsec-multiple-combinations-6-2-1-2-4-1">
 <div class="para">We are looking for all four representatives to be selected from the 37 non-sophomores. This results in:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1765,24 +1881,74 @@ n!=n(n-1)(n-1)...1
 \end{equation*}
 </div>
 </div></li>
-<li id="subsec-multiple-combinations-6-2-1-2-4">
-<div class="para" id="subsec-multiple-combinations-6-2-1-2-4-1">The event of at least one sophomore being selected is the complement of no sophomores being selected, which is approximately 24.4%. Therefore, the probability of at least one sophomore being selected is approximately <span class="process-math">\(100\%-24.4\%=75.6\%.\)</span>
-</div>
-<div class="para logical" id="subsec-multiple-combinations-6-2-1-2-4-2">
-<div class="para">Alternatively, we could find the probability of at least one sophomore being selected by finding the number of ways to select one sophomore and three non-sophomores, two sophomores and two non-sophomores, three sophomores and one non-sophomore, and four sophomores, adding these values together, and then dividing by the total number of ways to select four representatives. This results in:</div>
+</ol>
+</div></div></details></div></article><div class="para" id="subsec-multiple-combinations-7">In the previous example, when finding the probability of exactly one sophomore being selected, we had to include the condition that the other three representatives must be selected from the non-sophomores. To ensure that you are including all the necessary conditions, it is helpful to check that the values of <span class="process-math">\(r\)</span> in each factor of the numerator add up to the total number of representatives being selected. (Note that this is not a hard-and-fast rule, but it is a good way to check your work.) In this case, we are selecting four representatives, and the values of <span class="process-math">\(r\)</span> in the numerator are 1 for the sophomores and 3 for the non-sophomores, which add to 4.</div>
+<div class="para logical" id="subsec-multiple-combinations-8">
+<div class="para">What if we wanted to find the probability of at least one sophomore being selected? One approach is to find the number of ways to select one sophomore and three non-sophomores, two sophomores and two non-sophomores, three sophomores and one non-sophomore, and four sophomores, adding these values together, and then dividing by the total number of ways to select four representatives. This results in:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{{}_{15}C_1\cdot{}_{37}C_3+{}_{15}C_2\cdot{}_{37}C_2+{}_{15}C_3\cdot{}_{37}C_1+{}_{15}C_4\cdot{}_{37}C_0}{270725}\approx 75.6\%.
 \end{equation*}
 </div>
 </div>
-</li>
-</ol>
-</div></div></details></div></article><article class="example example-like" id="subsec-multiple-combinations-7"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.13</span><span class="period">.</span>
+<div class="para" id="subsec-multiple-combinations-9">However, it is simpler to find this probability using the complement. The event of at least one sophomore being selected is the complement of no sophomores being selected, which we found to have probability 24.4%. Therefore, the probability of at least one sophomore being selected is approximately <span class="process-math">\(100\%-24.4\%=75.6\%.\)</span>
+</div>
+<article class="assemblage assemblage-like" id="assemblage-Complement-Combination"><h4 class="heading"><span class="title">Probability of At Least One.</span></h4>
+<div class="para" id="assemblage-Complement-Combination-2">The complment of "at least one" is "none".</div>
+<div class="para logical" id="assemblage-Complement-Combination-3">
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{at least one})=100\% - P(\text{none})
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(\text{at least one})=1-P(\text{none})
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="subsec-multiple-combinations-11"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.15</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-multiple-combinations-7-1-1">Find the probability of being dealt a five-card poker hand with three kings and two jacks from a standard 52-card deck.</div>
-<div class="solutions"><details id="subsec-multiple-combinations-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-multiple-combinations-7-2-1">
+<div class="para" id="subsec-multiple-combinations-11-1-1">A jury pool consists of 60 people, and 12 of them will be selected to serve on a jury. Of the 60 people in the pool, the highest level of education is shown in the table below. All members of the pool have at least a high school diploma.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Highest Education Level</td>
+<td class="l m b0 r0 l0 t0 lines">Number of People</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">High School Diploma</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Associate’s Degree</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Bachelor’s Degree</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Graduate Degree</td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+</tr>
+</table></div> <div class="para" id="subsec-multiple-combinations-11-1-3">What is the probability that at least one person with a graduate degree will be selected to serve on the jury?</div>
+<div class="solutions"><details id="subsec-multiple-combinations-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-multiple-combinations-11-2-1">
+<div class="para">The probability of at least one person with a graduate degree being selected is the complement of no people with a graduate degree being selected. The number of ways to select any 12 people from the pool is <span class="process-math">\({}_{60}C_{12}\text{,}\)</span> and the number of ways to select 12 people from the 50 people without a graduate degree is <span class="process-math">\({}_{50}C_{12}\text{.}\)</span> Therefore, the probability that at least one person with a graduate degree will be selected to serve on the jury is approximately</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1-\frac{{}_{50}C_{12}}{{}_{60}C_{12}}\approx91.3\%\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="para" id="subsec-multiple-combinations-11-2-2">Probabilities of this type are often used in determining whether there is evidence of discrimination in jury selection.</div>
+</div></details></div></article><div class="para" id="subsec-multiple-combinations-12">We will conclude this section with several examples from five-card poker. Notice that some of the "selections" involve two steps: first selecting a rank or suit and then selecting cards of that rank or suit. This means that the numerator may have additional factors or the <span class="process-math">\(r\)</span> values in the numerator may sometimes be greater than five.</div>
+<article class="example example-like" id="subsec-multiple-combinations-13"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.16</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-multiple-combinations-13-1-1">Find the probability of being dealt a five-card poker hand with three kings and two jacks from a standard 52-card deck. Then find the probability of being dealt a full house, which is a five-card poker hand with three cards of one rank and two cards of another rank, from a standard 52-card deck. Finally, find the probability of being dealt three of a kind, which is a five-card poker hand with three cards of one rank and two additional cards of different ranks, from a standard 52-card deck.</div>
+<div class="solutions"><details id="subsec-multiple-combinations-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-multiple-combinations-13-2-1">
 <div class="para">The number of ways to choose three kings from the four available is <span class="process-math">\({}_{4}C_3\text{.}\)</span> The number of ways to choose two jacks from the four available is <span class="process-math">\({}_{4}C_2\text{.}\)</span> By the fundamental counting principle, the total number of ways to be dealt a five-card poker hand with three kings and two jacks is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1801,26 +1967,22 @@ n!=n(n-1)(n-1)...1
 \frac{{}_{4}C_3 \cdot {}_{4}C_2}{{}_{52}C_5}\approx0.00923\%
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="example example-like" id="subsec-multiple-combinations-8"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.14</span><span class="period">.</span>
-</h4>
-<div class="para" id="subsec-multiple-combinations-8-1-1">Find the probability of being dealt a full house, which is a five-card poker hand with three cards of one rank and two cards of another rank, from a standard 52-card deck.</div>
-<div class="solutions"><details id="subsec-multiple-combinations-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="subsec-multiple-combinations-8-2-1">
-<div class="para">Recall from the previous example that the number of ways to be dealt a five-card poker hand with three kings and two jacks is 24. However, there are 13 different ranks that could be the three of a kind and 12 different ranks that could be the pair. Therefore, the total number of ways to be dealt a full house is:</div>
+</div>
+<div class="para logical" id="subsec-multiple-combinations-13-2-2">
+<div class="para">There are 13 different ranks that the three of a kind could be and 12 different ranks that could be the pair. Therefore, the total number of ways to be dealt a full house is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{13\cdot {}_{4}C_{3} \cdot 12\cdot {}_{4}C_2}{{}_{52}C_5}\approx0.144\%
 \end{equation*}
 </div>
 </div>
-<div class="para" id="subsec-multiple-combinations-8-2-2">There is a 0.144% chance of being dealt a full house in five-card poker.</div>
-</div></details></div></article><article class="example example-like" id="subsec-multiple-combinations-9"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.15</span><span class="period">.</span>
+<div class="para" id="subsec-multiple-combinations-13-2-3">There is a 0.144% chance of being dealt a full house in five-card poker.</div>
+</div></details></div></article><article class="example example-like" id="subsec-multiple-combinations-14"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.17</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-multiple-combinations-9-1-1">Find the probability of being dealt three of a kind, which is a five-card poker hand with three cards of one rank and two additional cards of different ranks, from a standard 52-card deck.</div>
-<div class="solutions"><details id="subsec-multiple-combinations-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="subsec-multiple-combinations-9-2-1">
+<div class="para" id="subsec-multiple-combinations-14-1-1">Find the probability of being dealt three of a kind, which is a five-card poker hand with three cards of one rank and two additional cards of different ranks, from a standard 52-card deck.</div>
+<div class="solutions"><details id="subsec-multiple-combinations-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-multiple-combinations-14-2-1">
 <div class="para">There are 13 different ranks that could be the three of a kind, and for each of these ranks, there are <span class="process-math">\({}_{4}C_3\)</span> ways to choose the three cards. The two additional cards must be of different ranks than the three of a kind and different from each other, so there are <span class="process-math">\({}_{12}C_2\)</span> ways to pick the ranks of the two additional cards and <span class="process-math">\({}_{4}C_1\)</span> ways to choose each of these cards. Therefore, the probability of being dealt three of a kind is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1828,8 +1990,19 @@ n!=n(n-1)(n-1)...1
 \end{equation*}
 </div>
 </div>
-<div class="para" id="subsec-multiple-combinations-9-2-2">We have just shown that there is a 2.11% chance of being dealt three of a kind in five-card poker.</div>
-</div></details></div></article></section><section class="exercises" id="sec-probability-combinatorics-9"><h3 class="heading hide-type">
+<div class="para" id="subsec-multiple-combinations-14-2-2">We have just shown that there is a 2.11% chance of being dealt three of a kind in five-card poker.</div>
+</div></details></div></article><article class="example example-like" id="subsec-multiple-combinations-15"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.18</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-multiple-combinations-15-1-1">Find the probablity of being dealt two pairs, which is a five-card poker hand with two cards of one rank, two cards of another rank, and one additional card of a different rank, from a standard 52-card deck.</div>
+<div class="solutions"><details id="subsec-multiple-combinations-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsec-multiple-combinations-15-2-1">
+<div class="para">First, we choose the two ranks that will be the pairs. There are <span class="process-math">\({}_{13}C_2\)</span> ways to do this. For each of these ranks, there are <span class="process-math">\({}_{4}C_2\)</span> ways to choose the two cards of that rank. The additional card must be of a different rank than the pairs, so there are 11 remaining ranks to choose from and <span class="process-math">\({}_{4}C_1\)</span> ways to choose the card of that rank. Therefore, the probability of being dealt two pairs is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{{}_{13}C_2 \cdot {}_{4}C_2 \cdot {}_{4}C_2 \cdot 11\cdot {}_{4}C_1}{{}_{52}C_5}\approx 4.75\%.
+\end{equation*}
+</div>
+</div></div></details></div></article><div class="para" id="subsec-multiple-combinations-16">The type of reasoning use in this section can be applied to transportation and reservation logistics, molecular biology, and many other fields in addition to card games.</div></section><section class="exercises" id="sec-probability-combinatorics-9"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-probability-combinatorics-9-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
