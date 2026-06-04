@@ -513,11 +513,11 @@
  <p>
   In the previous examples, we have only had to use one of the counting methods to find the number of outcomes for a scenario. However, some scenarios require multiple applications of the fundamental counting principle, combinations, and/or permutations together. For example, suppose we want to find the probability of drawing exactly three red marbles and three blue marbles from a bag containing 15 red marbles and 10 blue marbles. Using the fundamental couunting priciple, we can find the number of ways to draw three red marbles and three blue marbles as the product of the number of ways to draw three red marbles and the number of ways to draw three blue marbles:
 
-<md number="yes">
-  <mrow> \amp \text{(Ways to select the red marbles)} \cdot \text{(Ways to select the blue marbles)} </mrow>
-  <mrow> \amp= {}_{15}C_3 \cdot {}_{10}C_3 </mrow>
-  <mrow> \amp= 54\,600 </mrow>
-</md>
+
+  <me>\text{(Ways to select the red marbles)} \cdot \text{(Ways to select the blue marbles)} </me>
+  <me>= {}_{15}C_3 \cdot {}_{10}C_3 </me>
+  <me> = 54\,600 </me>
+
 </p>
     
     <p>
