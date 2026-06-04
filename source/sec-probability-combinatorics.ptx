@@ -196,7 +196,7 @@
   </statement>
   <solution>
     <p>
-      The answer is <m>2\,598\,560</m>.
+      The answer is <m>2\,598\,960</m>.
     </p>
     <p>
       Using the factorial function on a scientific calculator, this is entered as:
@@ -247,7 +247,7 @@
   </solution>
 </example>
 <p>
-  Factorials can be used to calculate the number of arrangments of subsets of objects as well. For example, the number of ways that four cards can be dealt from a standard 52-card deck is <m>52\cdot51\cdot50\cdot49=5,\!245,\!736</m>. This is the same as <m>\frac{52!}{48!}=5,\!245,\!736</m> because the <m>48!</m> in the denominator "divides away" the remaining factors of <m>52\cdot51\cdot50\cdot49\cdot48\cdot47\cdots1</m> leaving just the first four factors. The resulting calculation is called a permutation, which we discuss next.
+  Factorials can be used to calculate the number of arrangments of subsets of objects as well. For example, the number of ways that four cards can be dealt from a standard 52-card deck is <m>52\cdot51\cdot50\cdot49=6,\!497,\!400</m>. This is the same as <m>\frac{52!}{48!}=6,\!497,\!400</m> because the <m>48!</m> in the denominator "divides away" the remaining factors of <m>52\cdot51\cdot50\cdot49\cdot48\cdot47\cdots1</m> leaving just the first four factors. The resulting calculation is called a permutation, which we discuss next.
 </p>
 </subsection>
 <subsection xml:id="subsec-permutations">
